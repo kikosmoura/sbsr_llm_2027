@@ -1,0 +1,11 @@
+{
+  "schema_version": "exemplos-perguntas-v1",
+  "questions": [
+    "Qual era a área de pastagem de Riachuelo/RN em 2015, em hectares?",
+    "Qual a diferença líquida de área urbanizada de Natal/RN entre 2015 e 2025, em hectares?",
+    "Qual a participação de pastagem na área observada de Riachuelo/RN em 2025?",
+    "Qual a área de pastagem de Santa Cruz em 2015, em hectares?",
+    "Qual a área de floresta de Riachuelo/RN em 2015, em hectares?",
+    "Qual a área de pastagem de Riachuelo/RN em 2016, em hectares?"
+  ]
+}

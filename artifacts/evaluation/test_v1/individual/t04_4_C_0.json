@@ -1,0 +1,121 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "fa7686659da9449d811d154641021724",
+  "case_id": "t04_4",
+  "family_id": "teste_area_direta",
+  "territory_codes": [
+    "2402006"
+  ],
+  "condition": "C",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:39:11.031481+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Apresente, em ha, a área mapeada de Rio, Lago e Oceano no território municipal de Caicó/RN para 2015.",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": null,
+  "messages_sha256": null,
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "precisa_esclarecimento",
+    "plan": null,
+    "values": [],
+    "clarification_field": "territorio",
+    "reason": "vinculo_municipio_uf_ambiguo"
+  },
+  "final_answer": "Qual território? Informe código IBGE ou nome e UF, escolhendo um dos candidatos quando houver.",
+  "plan": null,
+  "result": null,
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "state": "precisa_esclarecimento",
+      "latency_seconds": 6.736166586051695,
+      "usage": {
+        "prompt_tokens": 4702,
+        "total_tokens": 5375,
+        "completion_tokens": 673
+      },
+      "chat_requests": 1,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "output_sha256": "0866b04a016a082b20e471e866f4f169e68dafc4d20f39d8a0035b09257e60f2",
+      "output_chars": 537,
+      "candidate": {
+        "action": "consultar",
+        "intent": {
+          "operation": "area",
+          "territories": [
+            {
+              "mention": "Caicó/RN",
+              "uf_mention": "RN",
+              "kind": "municipio"
+            }
+          ],
+          "scope_uf_mention": "RN",
+          "classes": [
+            {
+              "mention": "rio lago e oceano"
+            }
+          ],
+          "years": [
+            2015
+          ],
+          "metric": "area",
+          "metric_mention": "área mapeada",
+          "unit_mention": "ha",
+          "denominator": null,
+          "direction": null,
+          "limit": null
+        },
+        "clarification_fields": []
+      },
+      "issues": [],
+      "gateway_error": null,
+      "http_status": null,
+      "messages_sha256": "08e27bf42f0aefafaf79020a061ff1da2b17056a3c3ceaf8e6a01ff164de2b0d",
+      "explanation_fallback": null
+    }
+  ],
+  "latency_seconds": 6.835412731044926,
+  "scores": {
+    "status": false,
+    "plan": null,
+    "values": null,
+    "clarification": null,
+    "correct": false
+  },
+  "cost": null,
+  "source_context": {
+    "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+    "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+    "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+    "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+  },
+  "C_session_id": "e7e41f51c2cd438cb894d5c849a5258e",
+  "C_turn_id": "741faeead5c5452c845031df6271f0e4",
+  "C_candidate_intent": null,
+  "C_decision": null
+}

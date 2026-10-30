@@ -1,0 +1,15 @@
+{
+  "class_codes": [
+    24
+  ],
+  "metric": "diferenca_liquida",
+  "operation": "comparacao_temporal",
+  "territory_codes": [
+    "2408102"
+  ],
+  "unit": "ha",
+  "years": [
+    2015,
+    2025
+  ]
+}

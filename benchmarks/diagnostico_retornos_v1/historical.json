@@ -1,0 +1,1482 @@
+[
+  {
+    "case_id": "t01_1",
+    "family_id": "teste_area_direta",
+    "original_record_sha256": "d0c157339bbbd4db6a3bce373dc1f6e41307657448f92819dfcc912cc2647c71",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5462,
+      "total_tokens": 5965,
+      "completion_tokens": 503
+    },
+    "latency_seconds": 6.786041048937477,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t01_2",
+    "family_id": "teste_area_direta",
+    "original_record_sha256": "af7aba11350916d6eeb6a8d6e6c2b74a1d4c024142c0271e8989903a69fafa1e",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5461,
+      "total_tokens": 5935,
+      "completion_tokens": 474
+    },
+    "latency_seconds": 10.319402525085025,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t01_3",
+    "family_id": "teste_area_direta",
+    "original_record_sha256": "23cae3ffe5030b24804c13a03ef007563274934e090d315d0b458d5475e0bf06",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5463,
+      "total_tokens": 5946,
+      "completion_tokens": 483
+    },
+    "latency_seconds": 5.627669628011063,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t01_4",
+    "family_id": "teste_area_direta",
+    "original_record_sha256": "e3d3d3219e096639cc2a62f69758f12ded043e0f85ec7da2472ab96f5478e9ec",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5506,
+      "total_tokens": 5944,
+      "completion_tokens": 438
+    },
+    "latency_seconds": 6.421026444993913,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t02_1",
+    "family_id": "teste_area_direta",
+    "original_record_sha256": "5f5b5403c20197112f947d12ee6404a6b62840651cae7ce592c67c6241a6fa33",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5498,
+      "total_tokens": 6169,
+      "completion_tokens": 671
+    },
+    "latency_seconds": 7.9341283770045266,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t02_2",
+    "family_id": "teste_area_direta",
+    "original_record_sha256": "72ea8f8bab8343fe67a6a60132616ab949ec69c3b3e9c73fdecba045b37748a6",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5496,
+      "total_tokens": 6096,
+      "completion_tokens": 600
+    },
+    "latency_seconds": 5.9787465130211785,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t02_3",
+    "family_id": "teste_area_direta",
+    "original_record_sha256": "eb6a51832310b851620aa19bdd40675b58f72d624d15715b348d624fcbea0cc9",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5499,
+      "total_tokens": 5981,
+      "completion_tokens": 482
+    },
+    "latency_seconds": 6.163358362973668,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t02_4",
+    "family_id": "teste_area_direta",
+    "original_record_sha256": "a64f2f35c45928eb4269ce9adb75a825c69e47ade9dd7a000e58fa21d93c5972",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5541,
+      "total_tokens": 5931,
+      "completion_tokens": 390
+    },
+    "latency_seconds": 4.742628615000285,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t03_1",
+    "family_id": "teste_area_direta",
+    "original_record_sha256": "ec12ab0bf7c259673f1661267c28eca212e7ca4ce1146754d15c7f8071a108b9",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5560,
+      "total_tokens": 6129,
+      "completion_tokens": 569
+    },
+    "latency_seconds": 6.192865737946704,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t03_2",
+    "family_id": "teste_area_direta",
+    "original_record_sha256": "760b559d7655145304ac65245ce866844b2c3644e2bb45803871645ffd2ee151",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5558,
+      "total_tokens": 6055,
+      "completion_tokens": 497
+    },
+    "latency_seconds": 6.66829753795173,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t03_3",
+    "family_id": "teste_area_direta",
+    "original_record_sha256": "7d2a87d13021c8bd040182146e6d3fd555ea1219989118203e09e95a17303212",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5561,
+      "total_tokens": 6180,
+      "completion_tokens": 619
+    },
+    "latency_seconds": 8.027515285997652,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t03_4",
+    "family_id": "teste_area_direta",
+    "original_record_sha256": "2284b1df503855b11073dd5bf49df4eedb10bed28a098d19f82271366e0df201",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5603,
+      "total_tokens": 6239,
+      "completion_tokens": 636
+    },
+    "latency_seconds": 6.835568035021424,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t04_1",
+    "family_id": "teste_area_direta",
+    "original_record_sha256": "cffbc0b904d02b829beee9c08e96e172c3d81d7c72faee396363eb38d8a7c7c7",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5477,
+      "total_tokens": 5977,
+      "completion_tokens": 500
+    },
+    "latency_seconds": 5.3424847149290144,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t04_2",
+    "family_id": "teste_area_direta",
+    "original_record_sha256": "e1a6c1ee5a615b2a93a371ce52c675d412b4ada89ff240e78a07e4b7a2560274",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5476,
+      "total_tokens": 6021,
+      "completion_tokens": 545
+    },
+    "latency_seconds": 5.3139721100451425,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t04_3",
+    "family_id": "teste_area_direta",
+    "original_record_sha256": "590b1f6f9fd806ff485ef9af5c863b0ee81ac7a706a54a937a9066a5238d2b12",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5478,
+      "total_tokens": 5985,
+      "completion_tokens": 507
+    },
+    "latency_seconds": 6.347148407017812,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t04_4",
+    "family_id": "teste_area_direta",
+    "original_record_sha256": "5e4ef5470b9de4d1bbf9c9d696899c726591e6a4e496042c62bb27355f9660b2",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5521,
+      "total_tokens": 5966,
+      "completion_tokens": 445
+    },
+    "latency_seconds": 6.059279398061335,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t05_1",
+    "family_id": "teste_area_direta",
+    "original_record_sha256": "5d16ae63d2d9b6354404e25dbd781869ecb66b1554e20e90d5b74b803e74e513",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5493,
+      "total_tokens": 6145,
+      "completion_tokens": 652
+    },
+    "latency_seconds": 6.3094743229448795,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t05_2",
+    "family_id": "teste_area_direta",
+    "original_record_sha256": "3468ae4b7507b598cb06c4ea7cca50d6fd84e17802e1fc632b156a9dcbc0a91d",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5491,
+      "total_tokens": 6087,
+      "completion_tokens": 596
+    },
+    "latency_seconds": 6.457751250010915,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t05_3",
+    "family_id": "teste_area_direta",
+    "original_record_sha256": "20093619f917e185cb7834cc7485e0fbaef00be4a61364f900505f81b5997347",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5494,
+      "total_tokens": 6382,
+      "completion_tokens": 888
+    },
+    "latency_seconds": 7.481627220986411,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t05_4",
+    "family_id": "teste_area_direta",
+    "original_record_sha256": "39537bf7b5bed79ee06a72ee2338902ea6e144cec318f68487be0c640e0cee31",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5536,
+      "total_tokens": 6229,
+      "completion_tokens": 693
+    },
+    "latency_seconds": 6.873197817942128,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t06_1",
+    "family_id": "teste_t06",
+    "original_record_sha256": "2812636cf37ba9f4ad1233e10e822849f38a3c6fe4df6ed0b3e1aeb751b12ff9",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5513,
+      "total_tokens": 6283,
+      "completion_tokens": 770
+    },
+    "latency_seconds": 9.261416370980442,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t06_2",
+    "family_id": "teste_t06",
+    "original_record_sha256": "94089421115a8799d9c21acdda54ce3a6879385e80fb670e9b6f4486f82c8066",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5511,
+      "total_tokens": 6221,
+      "completion_tokens": 710
+    },
+    "latency_seconds": 5.6821633169893175,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t06_3",
+    "family_id": "teste_t06",
+    "original_record_sha256": "43ba2d199656c2597a83decc8c8ae12ad27416cffda8d772a509be9eda8cef6a",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5519,
+      "total_tokens": 6286,
+      "completion_tokens": 767
+    },
+    "latency_seconds": 10.452039897092618,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t06_4",
+    "family_id": "teste_t06",
+    "original_record_sha256": "362f97605b7f5219437e9d0f32d39c3b03174ffc54ace745799b10ec70aec692",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5418,
+      "total_tokens": 6149,
+      "completion_tokens": 731
+    },
+    "latency_seconds": 9.72962831100449,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t07_1",
+    "family_id": "teste_participacao",
+    "original_record_sha256": "5bdda15974f7586979ff66f6ad6399239f449982ea591a5beda94eccfe6d5c47",
+    "original_correct": false,
+    "original_status": "erro_tecnico",
+    "gateway_error": "texto_final_ausente",
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": null,
+    "latency_seconds": 17.829956723027863,
+    "empty_final_text": true,
+    "http_inference": "2xx e JSON objeto decodificado; inferido do cliente congelado, nao status HTTP capturado"
+  },
+  {
+    "case_id": "t07_2",
+    "family_id": "teste_participacao",
+    "original_record_sha256": "dedc1d2a3d3edf365c67940bf2561a4dc63f0446034c4cce465a3835bbda7844",
+    "original_correct": false,
+    "original_status": "erro_tecnico",
+    "gateway_error": "texto_final_ausente",
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": null,
+    "latency_seconds": 18.231914648087695,
+    "empty_final_text": true,
+    "http_inference": "2xx e JSON objeto decodificado; inferido do cliente congelado, nao status HTTP capturado"
+  },
+  {
+    "case_id": "t07_3",
+    "family_id": "teste_participacao",
+    "original_record_sha256": "df84d5e4cd15677e1cc9d06298c9676dffc394f2b4b38b4100ba975836d956d3",
+    "original_correct": false,
+    "original_status": "erro_tecnico",
+    "gateway_error": "texto_final_ausente",
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": null,
+    "latency_seconds": 16.814080825075507,
+    "empty_final_text": true,
+    "http_inference": "2xx e JSON objeto decodificado; inferido do cliente congelado, nao status HTTP capturado"
+  },
+  {
+    "case_id": "t07_4",
+    "family_id": "teste_participacao",
+    "original_record_sha256": "9c82c1d6966a944427122c15ed0093f6a7ba5c8edf42b99eac6f03c05a46abbf",
+    "original_correct": false,
+    "original_status": "erro_tecnico",
+    "gateway_error": "texto_final_ausente",
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": null,
+    "latency_seconds": 17.94163772801403,
+    "empty_final_text": true,
+    "http_inference": "2xx e JSON objeto decodificado; inferido do cliente congelado, nao status HTTP capturado"
+  },
+  {
+    "case_id": "t08_1",
+    "family_id": "teste_participacao",
+    "original_record_sha256": "e5ef0ed0bcc9074e782dd3c1207bb8a0fd6dd7fa840e968eee52472d1cf14263",
+    "original_correct": false,
+    "original_status": "erro_tecnico",
+    "gateway_error": "texto_final_ausente",
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": null,
+    "latency_seconds": 37.34077298792545,
+    "empty_final_text": true,
+    "http_inference": "2xx e JSON objeto decodificado; inferido do cliente congelado, nao status HTTP capturado"
+  },
+  {
+    "case_id": "t08_2",
+    "family_id": "teste_participacao",
+    "original_record_sha256": "2e4a0ef4a266cd443a966b64ec39897f65f4366df8f47d92f5cf8700ac40ee68",
+    "original_correct": false,
+    "original_status": "erro_tecnico",
+    "gateway_error": "texto_final_ausente",
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": null,
+    "latency_seconds": 33.03708152391482,
+    "empty_final_text": true,
+    "http_inference": "2xx e JSON objeto decodificado; inferido do cliente congelado, nao status HTTP capturado"
+  },
+  {
+    "case_id": "t08_3",
+    "family_id": "teste_participacao",
+    "original_record_sha256": "e1ed60a1d82de411e9450af21681cfddf943d62cb73bfc4469e9cf26fd757d1d",
+    "original_correct": false,
+    "original_status": "erro_tecnico",
+    "gateway_error": "texto_final_ausente",
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": null,
+    "latency_seconds": 35.11776414094493,
+    "empty_final_text": true,
+    "http_inference": "2xx e JSON objeto decodificado; inferido do cliente congelado, nao status HTTP capturado"
+  },
+  {
+    "case_id": "t08_4",
+    "family_id": "teste_participacao",
+    "original_record_sha256": "80ea49644c650ad5fa908709bd6ac5da80e18a37fab6cf366766361ecac0a4f5",
+    "original_correct": false,
+    "original_status": "erro_tecnico",
+    "gateway_error": "texto_final_ausente",
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": null,
+    "latency_seconds": 28.837704526027665,
+    "empty_final_text": true,
+    "http_inference": "2xx e JSON objeto decodificado; inferido do cliente congelado, nao status HTTP capturado"
+  },
+  {
+    "case_id": "t11_1",
+    "family_id": "teste_delta",
+    "original_record_sha256": "e9c35ce4a9a9c7bbf0f673a3e707735e403562f2050a2ee4bf085dbe485c588c",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5494,
+      "total_tokens": 6137,
+      "completion_tokens": 643
+    },
+    "latency_seconds": 8.509048815933056,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t11_2",
+    "family_id": "teste_delta",
+    "original_record_sha256": "75b5444672e3af374e67bddb7149f0a639429b4631bc847369fccdf83675533b",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5535,
+      "total_tokens": 6229,
+      "completion_tokens": 694
+    },
+    "latency_seconds": 13.240685808006674,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t11_3",
+    "family_id": "teste_delta",
+    "original_record_sha256": "c25e95206774f91ab5a36612cdba49941e6fe42b0ddac53c6fdba9406ae1d812",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5492,
+      "total_tokens": 6048,
+      "completion_tokens": 556
+    },
+    "latency_seconds": 4.648877930943854,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t11_4",
+    "family_id": "teste_delta",
+    "original_record_sha256": "c5a446400c652657cd770bb9df04d42eee28b12ba4ac27c5daa212def8252be2",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5491,
+      "total_tokens": 6132,
+      "completion_tokens": 641
+    },
+    "latency_seconds": 13.377853367943317,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t12_1",
+    "family_id": "teste_delta",
+    "original_record_sha256": "b61cce3d53f6c6361533f1fa3c9f4b62a997e50454c456c3333b014f9b241367",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5513,
+      "total_tokens": 6100,
+      "completion_tokens": 587
+    },
+    "latency_seconds": 11.406289451988414,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t12_2",
+    "family_id": "teste_delta",
+    "original_record_sha256": "d9c2602adada12ceeb4cae533d8bc56b15f1d17f20fc855a73d78ec591ee3d48",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5554,
+      "total_tokens": 6180,
+      "completion_tokens": 626
+    },
+    "latency_seconds": 6.9802753299009055,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t12_3",
+    "family_id": "teste_delta",
+    "original_record_sha256": "737b6ed6e74b05a7d36048dc3bbc054aaa05f6262f65102ae738dc8565774cea",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5511,
+      "total_tokens": 6087,
+      "completion_tokens": 576
+    },
+    "latency_seconds": 6.315490524051711,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t12_4",
+    "family_id": "teste_delta",
+    "original_record_sha256": "81232b590627f6a91596d051507410ccbb38c6bc0d0718f2c41b23fcabc0784e",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5510,
+      "total_tokens": 6150,
+      "completion_tokens": 640
+    },
+    "latency_seconds": 6.877326279995032,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t13_1",
+    "family_id": "teste_delta",
+    "original_record_sha256": "e45e4304e90d5359dd0918aec01ba313f4f7e8633c1958b5bbdcab2946a0a5c9",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5468,
+      "total_tokens": 6241,
+      "completion_tokens": 773
+    },
+    "latency_seconds": 12.408322404953651,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t13_2",
+    "family_id": "teste_delta",
+    "original_record_sha256": "c30ff69288ac273c725b1e5015367f9d1a2ebc06e9624ac338cbbf7eabc8059f",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5509,
+      "total_tokens": 6211,
+      "completion_tokens": 702
+    },
+    "latency_seconds": 12.432310034986585,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t13_3",
+    "family_id": "teste_delta",
+    "original_record_sha256": "875f38e426d1ce781e6b3b52e6493bce2abafbcc670be4d6a438b377eae626bf",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5466,
+      "total_tokens": 6090,
+      "completion_tokens": 624
+    },
+    "latency_seconds": 6.713654218940064,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t13_4",
+    "family_id": "teste_delta",
+    "original_record_sha256": "eac2f111ca85e16d378eab1187bcb0357d8b4c4f1211c66d117d7a4aeefa4fce",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5465,
+      "total_tokens": 6194,
+      "completion_tokens": 729
+    },
+    "latency_seconds": 19.209472602931783,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t14_1",
+    "family_id": "teste_delta",
+    "original_record_sha256": "58bd3a9189e3e93d82995d9da98f130bdb1c8fb6c22f5c0f68b07f40bdbd763a",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5605,
+      "total_tokens": 6167,
+      "completion_tokens": 562
+    },
+    "latency_seconds": 4.755866145947948,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t14_2",
+    "family_id": "teste_delta",
+    "original_record_sha256": "7184ff6b94abfa08de3475debf07dc574ac83a54a27fc7869a701b5dbe0bf8fb",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5646,
+      "total_tokens": 6280,
+      "completion_tokens": 634
+    },
+    "latency_seconds": 5.920878333039582,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t14_3",
+    "family_id": "teste_delta",
+    "original_record_sha256": "634af1c27bddf0674aea5a298ebd35b2bacb4ded0c70169d08d5fab585174c98",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5603,
+      "total_tokens": 6287,
+      "completion_tokens": 684
+    },
+    "latency_seconds": 6.868846223922446,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t14_4",
+    "family_id": "teste_delta",
+    "original_record_sha256": "ada5a137e03d24c035b89027d533ac93aa1a429b2a466041c3f7f5ad5e8bcc11",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5602,
+      "total_tokens": 6200,
+      "completion_tokens": 598
+    },
+    "latency_seconds": 12.683867741026916,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t15_1",
+    "family_id": "teste_variacao",
+    "original_record_sha256": "5dfa074fe9006b5e6f4ea1ec924d54d4d1d5b211a35e6be4df2a6c92d5773e72",
+    "original_correct": false,
+    "original_status": "erro_tecnico",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5470,
+      "total_tokens": 7518,
+      "completion_tokens": 2048
+    },
+    "latency_seconds": 51.871623186045326,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t15_2",
+    "family_id": "teste_variacao",
+    "original_record_sha256": "665fc4174b1e6a58b331853b36bdd7fce07836c55c8a901f1156a56cf595bace",
+    "original_correct": false,
+    "original_status": "erro_tecnico",
+    "gateway_error": "texto_final_ausente",
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": null,
+    "latency_seconds": 26.32498064194806,
+    "empty_final_text": true,
+    "http_inference": "2xx e JSON objeto decodificado; inferido do cliente congelado, nao status HTTP capturado"
+  },
+  {
+    "case_id": "t15_3",
+    "family_id": "teste_variacao",
+    "original_record_sha256": "4cd9f23500625187b4be54b381ac361169f01fa1df6ff2ed61e2ab911f7f69d8",
+    "original_correct": false,
+    "original_status": "erro_tecnico",
+    "gateway_error": "texto_final_ausente",
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": null,
+    "latency_seconds": 27.679970721015707,
+    "empty_final_text": true,
+    "http_inference": "2xx e JSON objeto decodificado; inferido do cliente congelado, nao status HTTP capturado"
+  },
+  {
+    "case_id": "t15_4",
+    "family_id": "teste_variacao",
+    "original_record_sha256": "d46e8ed6e9845c30279e09c2a0570e24c39fa4e0c977663a12bc36bb7e7eaa18",
+    "original_correct": false,
+    "original_status": "erro_tecnico",
+    "gateway_error": "texto_final_ausente",
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": null,
+    "latency_seconds": 19.893608883023262,
+    "empty_final_text": true,
+    "http_inference": "2xx e JSON objeto decodificado; inferido do cliente congelado, nao status HTTP capturado"
+  },
+  {
+    "case_id": "t16_1",
+    "family_id": "teste_variacao",
+    "original_record_sha256": "3d9a26aeadad2a80da0e97d4f76efb52dfef9efb12bc5a0832023d8af92c5cb1",
+    "original_correct": false,
+    "original_status": "erro_tecnico",
+    "gateway_error": "texto_final_ausente",
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": null,
+    "latency_seconds": 23.370603414950892,
+    "empty_final_text": true,
+    "http_inference": "2xx e JSON objeto decodificado; inferido do cliente congelado, nao status HTTP capturado"
+  },
+  {
+    "case_id": "t16_2",
+    "family_id": "teste_variacao",
+    "original_record_sha256": "971592dc78c5086cb5a442a8fb388d6c87c1955c91927cb8dd2c69a58a607622",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5467,
+      "total_tokens": 7221,
+      "completion_tokens": 1754
+    },
+    "latency_seconds": 14.93593063694425,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t16_3",
+    "family_id": "teste_variacao",
+    "original_record_sha256": "73e679dad9bf9f588561ee790b30f7828357b1d21754a8386ad2a2162fffd4ee",
+    "original_correct": false,
+    "original_status": "erro_tecnico",
+    "gateway_error": "texto_final_ausente",
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": null,
+    "latency_seconds": 45.27341000700835,
+    "empty_final_text": true,
+    "http_inference": "2xx e JSON objeto decodificado; inferido do cliente congelado, nao status HTTP capturado"
+  },
+  {
+    "case_id": "t16_4",
+    "family_id": "teste_variacao",
+    "original_record_sha256": "567bef0bf7bddd5421445375316feadc46f87a2c77204d85c72cb9ae9d03055a",
+    "original_correct": false,
+    "original_status": "erro_tecnico",
+    "gateway_error": "texto_final_ausente",
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": null,
+    "latency_seconds": 19.140571843949147,
+    "empty_final_text": true,
+    "http_inference": "2xx e JSON objeto decodificado; inferido do cliente congelado, nao status HTTP capturado"
+  },
+  {
+    "case_id": "t17_1",
+    "family_id": "teste_variacao",
+    "original_record_sha256": "a8720103dca01164fc95c193aeadbd145872ec012d7aa14cc1995f231ac5c18a",
+    "original_correct": false,
+    "original_status": "erro_tecnico",
+    "gateway_error": "texto_final_ausente",
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": null,
+    "latency_seconds": 19.48499694908969,
+    "empty_final_text": true,
+    "http_inference": "2xx e JSON objeto decodificado; inferido do cliente congelado, nao status HTTP capturado"
+  },
+  {
+    "case_id": "t17_2",
+    "family_id": "teste_variacao",
+    "original_record_sha256": "ef04a70c4f4ea35f90509c271c71e7e3bae5e9de8777769734a222b9d96a802a",
+    "original_correct": false,
+    "original_status": "erro_tecnico",
+    "gateway_error": "texto_final_ausente",
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": null,
+    "latency_seconds": 29.793279315927066,
+    "empty_final_text": true,
+    "http_inference": "2xx e JSON objeto decodificado; inferido do cliente congelado, nao status HTTP capturado"
+  },
+  {
+    "case_id": "t17_3",
+    "family_id": "teste_variacao",
+    "original_record_sha256": "4b0417870959572cd87d9415553908dd192705afe1f3dcfd008e75e3720e6bff",
+    "original_correct": false,
+    "original_status": "erro_tecnico",
+    "gateway_error": "texto_final_ausente",
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": null,
+    "latency_seconds": 20.87593843007926,
+    "empty_final_text": true,
+    "http_inference": "2xx e JSON objeto decodificado; inferido do cliente congelado, nao status HTTP capturado"
+  },
+  {
+    "case_id": "t17_4",
+    "family_id": "teste_variacao",
+    "original_record_sha256": "8865181390df88bb3a5b9ac387657c985ea6c6b62bbf0e19d6aec53c941c17cc",
+    "original_correct": false,
+    "original_status": "erro_tecnico",
+    "gateway_error": "texto_final_ausente",
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": null,
+    "latency_seconds": 23.934387414017692,
+    "empty_final_text": true,
+    "http_inference": "2xx e JSON objeto decodificado; inferido do cliente congelado, nao status HTTP capturado"
+  },
+  {
+    "case_id": "t18_1",
+    "family_id": "teste_variacao",
+    "original_record_sha256": "d1bd9732ca4cf19093de0db571db0065bd98086c05e9319dc4380364012867e2",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5477,
+      "total_tokens": 5904,
+      "completion_tokens": 427
+    },
+    "latency_seconds": 4.28591952600982,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t18_2",
+    "family_id": "teste_variacao",
+    "original_record_sha256": "aa631da3865b724806a133f6214e7b89cce4e779394cc6c4dee20956a19b6db8",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5477,
+      "total_tokens": 5865,
+      "completion_tokens": 388
+    },
+    "latency_seconds": 3.3803385969949886,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t18_3",
+    "family_id": "teste_variacao",
+    "original_record_sha256": "f271d86dae902131978e5b3ec3404542300dab26fac396101abcc050c339a1c2",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5531,
+      "total_tokens": 6016,
+      "completion_tokens": 485
+    },
+    "latency_seconds": 6.568922884995118,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t18_4",
+    "family_id": "teste_variacao",
+    "original_record_sha256": "1ad5d9dbfdcbff7c828ec547ac0cdc1257a969bae631395930404759b4a2e544",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5479,
+      "total_tokens": 5971,
+      "completion_tokens": 492
+    },
+    "latency_seconds": 5.499270909000188,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t19_1",
+    "family_id": "teste_pontos",
+    "original_record_sha256": "600a2ff8086d9e502b4222e28347ae5f6fa03b78522cc65e7554f6d6c749a682",
+    "original_correct": false,
+    "original_status": "erro_tecnico",
+    "gateway_error": "texto_final_ausente",
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": null,
+    "latency_seconds": 25.167807025951333,
+    "empty_final_text": true,
+    "http_inference": "2xx e JSON objeto decodificado; inferido do cliente congelado, nao status HTTP capturado"
+  },
+  {
+    "case_id": "t19_2",
+    "family_id": "teste_pontos",
+    "original_record_sha256": "957e67f563ff9e5a50b52697d1e7fcea89c00f6595025990319d672874190ecd",
+    "original_correct": false,
+    "original_status": "erro_tecnico",
+    "gateway_error": "texto_final_ausente",
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": null,
+    "latency_seconds": 26.816883063991554,
+    "empty_final_text": true,
+    "http_inference": "2xx e JSON objeto decodificado; inferido do cliente congelado, nao status HTTP capturado"
+  },
+  {
+    "case_id": "t19_3",
+    "family_id": "teste_pontos",
+    "original_record_sha256": "517899b8c50afdc149c365c19e6d5be0ccb060039f987c58167c3a0a82d9fa8c",
+    "original_correct": false,
+    "original_status": "erro_tecnico",
+    "gateway_error": "texto_final_ausente",
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": null,
+    "latency_seconds": 25.18655950098764,
+    "empty_final_text": true,
+    "http_inference": "2xx e JSON objeto decodificado; inferido do cliente congelado, nao status HTTP capturado"
+  },
+  {
+    "case_id": "t19_4",
+    "family_id": "teste_pontos",
+    "original_record_sha256": "948d5988b9817e9099dd8cdb9c688807ecd386acf04a63198b75354a4c564e86",
+    "original_correct": false,
+    "original_status": "erro_tecnico",
+    "gateway_error": "texto_final_ausente",
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": null,
+    "latency_seconds": 18.507135153980926,
+    "empty_final_text": true,
+    "http_inference": "2xx e JSON objeto decodificado; inferido do cliente congelado, nao status HTTP capturado"
+  },
+  {
+    "case_id": "t20_1",
+    "family_id": "teste_pontos",
+    "original_record_sha256": "c62dc0e70d0ec9b559affa311d946f4a0e03e5737554b78e5063d2dd559af51e",
+    "original_correct": false,
+    "original_status": "erro_tecnico",
+    "gateway_error": "texto_final_ausente",
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": null,
+    "latency_seconds": 19.7225283869775,
+    "empty_final_text": true,
+    "http_inference": "2xx e JSON objeto decodificado; inferido do cliente congelado, nao status HTTP capturado"
+  },
+  {
+    "case_id": "t20_2",
+    "family_id": "teste_pontos",
+    "original_record_sha256": "3185496fbc46a788cd4ace244cb224f16a6904fc32d4c71352d0761a1e2e5c7a",
+    "original_correct": false,
+    "original_status": "erro_tecnico",
+    "gateway_error": "texto_final_ausente",
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": null,
+    "latency_seconds": 18.276738996966742,
+    "empty_final_text": true,
+    "http_inference": "2xx e JSON objeto decodificado; inferido do cliente congelado, nao status HTTP capturado"
+  },
+  {
+    "case_id": "t20_3",
+    "family_id": "teste_pontos",
+    "original_record_sha256": "29281082badfa81bad8a41d5e92ff1f758e7357550eb7d4091a66ffdb18eab0e",
+    "original_correct": false,
+    "original_status": "erro_tecnico",
+    "gateway_error": "texto_final_ausente",
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": null,
+    "latency_seconds": 21.173625308903866,
+    "empty_final_text": true,
+    "http_inference": "2xx e JSON objeto decodificado; inferido do cliente congelado, nao status HTTP capturado"
+  },
+  {
+    "case_id": "t20_4",
+    "family_id": "teste_pontos",
+    "original_record_sha256": "d6ad7b46a842ec96c53866d43d76d81b8dbf319caa0a882008281e209606f6f8",
+    "original_correct": false,
+    "original_status": "erro_tecnico",
+    "gateway_error": "texto_final_ausente",
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": null,
+    "latency_seconds": 17.19995200599078,
+    "empty_final_text": true,
+    "http_inference": "2xx e JSON objeto decodificado; inferido do cliente congelado, nao status HTTP capturado"
+  },
+  {
+    "case_id": "t21_1",
+    "family_id": "teste_serie",
+    "original_record_sha256": "334683368bb57451179402255691fffbea93c4dddebbf3b662b2bd5a967ae831",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5545,
+      "total_tokens": 6239,
+      "completion_tokens": 694
+    },
+    "latency_seconds": 6.896692818030715,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t21_2",
+    "family_id": "teste_serie",
+    "original_record_sha256": "0221cdb6ae2467a754e3d5888ac329b5a88fa61318eabb635bd6b8622b20f66a",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5545,
+      "total_tokens": 6188,
+      "completion_tokens": 643
+    },
+    "latency_seconds": 5.721198881976306,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t21_3",
+    "family_id": "teste_serie",
+    "original_record_sha256": "e87daf54f85ed0db46e55314912dae026276cd45e9d664dff029276fefb4e2b7",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5546,
+      "total_tokens": 6092,
+      "completion_tokens": 546
+    },
+    "latency_seconds": 5.682645297027193,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t21_4",
+    "family_id": "teste_serie",
+    "original_record_sha256": "72d8e2d2307853ffd1c3f9de8ab4e414ac8056a26bb92ef11444e473c8ae6df3",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5589,
+      "total_tokens": 6238,
+      "completion_tokens": 649
+    },
+    "latency_seconds": 7.0306153340497985,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t22_1",
+    "family_id": "teste_serie",
+    "original_record_sha256": "fa2e7b049241e8dc8e00efc9f3b588bc0517a23742834a8d48667bcc69c3bd02",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5526,
+      "total_tokens": 6307,
+      "completion_tokens": 781
+    },
+    "latency_seconds": 7.263585569919087,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t22_2",
+    "family_id": "teste_serie",
+    "original_record_sha256": "74084ca1f7a52779336965831b3bed187b54d4ef4b355571433bd5b6403da7af",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5526,
+      "total_tokens": 6105,
+      "completion_tokens": 579
+    },
+    "latency_seconds": 6.164140398032032,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t22_3",
+    "family_id": "teste_serie",
+    "original_record_sha256": "fb9fa2f05eed5869f11d32d2f9889d1a2b568c50d6c345b162a201d47afab7c3",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5527,
+      "total_tokens": 6091,
+      "completion_tokens": 564
+    },
+    "latency_seconds": 5.837669157073833,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t22_4",
+    "family_id": "teste_serie",
+    "original_record_sha256": "50667e1a2615215b783051a9df4a27cf5b218494db1947502574babffc665711",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 5570,
+      "total_tokens": 6222,
+      "completion_tokens": 652
+    },
+    "latency_seconds": 7.057609141920693,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t23_1",
+    "family_id": "teste_territorial",
+    "original_record_sha256": "4a429cb4314136189d32af3df8bda081a9afefa9257d7184a1ce7a45c8213e7d",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 7712,
+      "total_tokens": 8225,
+      "completion_tokens": 513
+    },
+    "latency_seconds": 12.407305145054124,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t23_2",
+    "family_id": "teste_territorial",
+    "original_record_sha256": "be44d99b37bc54e3e04970690d3a3a532f9617aa02aa5911cc740476c55c28ff",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 7675,
+      "total_tokens": 8315,
+      "completion_tokens": 640
+    },
+    "latency_seconds": 7.750179644091986,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t23_3",
+    "family_id": "teste_territorial",
+    "original_record_sha256": "c49312964fef2fe5ac363918495fbf3f93baa9f3db0ad0ff29a4a542941254dd",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 7672,
+      "total_tokens": 8280,
+      "completion_tokens": 608
+    },
+    "latency_seconds": 5.581483588088304,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t23_4",
+    "family_id": "teste_territorial",
+    "original_record_sha256": "e6ebcabf229fc62eed82602740e8032f97f8358368f72393647b31450a7164eb",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 7676,
+      "total_tokens": 8330,
+      "completion_tokens": 654
+    },
+    "latency_seconds": 7.066076079965569,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t24_1",
+    "family_id": "teste_territorial",
+    "original_record_sha256": "26d539bfd8262015365cb89f286403419812e44f47511e004e89af98d5ed4ea9",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 7788,
+      "total_tokens": 8356,
+      "completion_tokens": 568
+    },
+    "latency_seconds": 6.684155495953746,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t24_2",
+    "family_id": "teste_territorial",
+    "original_record_sha256": "9040babb3a5038457050b5498f4ddffabe0325d754a2898f965d905d89a58016",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 7788,
+      "total_tokens": 8485,
+      "completion_tokens": 697
+    },
+    "latency_seconds": 6.157930197077803,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t24_3",
+    "family_id": "teste_territorial",
+    "original_record_sha256": "2e6132f7bd49f972bbc0ca7d09b46fc713899ea4767fcde36f21cd774b57a3dd",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 7785,
+      "total_tokens": 8377,
+      "completion_tokens": 592
+    },
+    "latency_seconds": 7.993398933089338,
+    "empty_final_text": false,
+    "http_inference": null
+  },
+  {
+    "case_id": "t24_4",
+    "family_id": "teste_territorial",
+    "original_record_sha256": "a51956b968a68f249b786a70d57ae5ad10bf71ade9ff91a1abc031834984ef05",
+    "original_correct": true,
+    "original_status": "respondida",
+    "gateway_error": null,
+    "http_status_logged": null,
+    "finish_reason": null,
+    "usage": {
+      "prompt_tokens": 7789,
+      "total_tokens": 8377,
+      "completion_tokens": 588
+    },
+    "latency_seconds": 6.871354455011897,
+    "empty_final_text": false,
+    "http_inference": null
+  }
+]

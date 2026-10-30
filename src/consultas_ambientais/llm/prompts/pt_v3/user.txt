@@ -1,0 +1,10 @@
+Pergunta original (dados JSON):
+$question_json
+
+Contexto mínimo do catálogo e da execução, sem áreas calculadas:
+$context_json
+
+Contrato JSON local (sem depender de suporte nativo do gateway):
+$schema_json
+
+Entregue apenas o objeto do contrato. As escolhas confirmadas pertencem exclusivamente a esta sessão e pergunta.

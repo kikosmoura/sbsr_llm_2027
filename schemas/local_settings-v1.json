@@ -1,0 +1,139 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "run_id": {
+      "pattern": "^[0-9a-f]{64}$",
+      "title": "Run Id",
+      "type": "string"
+    },
+    "territories": {
+      "default": "data/territories_v1.json",
+      "title": "Territories",
+      "type": "string"
+    },
+    "capabilities": {
+      "default": "data/capabilities_stage3.json",
+      "title": "Capabilities",
+      "type": "string"
+    },
+    "storage_dir": {
+      "default": "artifacts/local_service",
+      "title": "Storage Dir",
+      "type": "string"
+    },
+    "bind_host": {
+      "default": "127.0.0.1",
+      "enum": [
+        "127.0.0.1",
+        "::1"
+      ],
+      "title": "Bind Host",
+      "type": "string"
+    },
+    "port": {
+      "default": 8765,
+      "maximum": 65535,
+      "minimum": 1024,
+      "title": "Port",
+      "type": "integer"
+    },
+    "max_body_bytes": {
+      "default": 32768,
+      "maximum": 65536,
+      "minimum": 1024,
+      "title": "Max Body Bytes",
+      "type": "integer"
+    },
+    "body_timeout_seconds": {
+      "default": 10,
+      "exclusiveMinimum": 0,
+      "maximum": 30,
+      "title": "Body Timeout Seconds",
+      "type": "number"
+    },
+    "max_query_seconds": {
+      "default": 90,
+      "exclusiveMinimum": 0,
+      "maximum": 300,
+      "title": "Max Query Seconds",
+      "type": "number"
+    },
+    "llm_timeout_seconds": {
+      "default": 30,
+      "exclusiveMinimum": 0,
+      "maximum": 120,
+      "title": "Llm Timeout Seconds",
+      "type": "number"
+    },
+    "llm_max_tokens": {
+      "default": 2048,
+      "maximum": 2048,
+      "minimum": 256,
+      "title": "Llm Max Tokens",
+      "type": "integer"
+    },
+    "llm_max_attempts": {
+      "default": 2,
+      "maximum": 3,
+      "minimum": 1,
+      "title": "Llm Max Attempts",
+      "type": "integer"
+    },
+    "temperature": {
+      "default": 0,
+      "maximum": 2,
+      "minimum": 0,
+      "title": "Temperature",
+      "type": "number"
+    },
+    "max_sessions": {
+      "default": 32,
+      "maximum": 4096,
+      "minimum": 1,
+      "title": "Max Sessions",
+      "type": "integer"
+    },
+    "max_results_per_session": {
+      "default": 25,
+      "maximum": 500,
+      "minimum": 1,
+      "title": "Max Results Per Session",
+      "type": "integer"
+    },
+    "session_ttl_seconds": {
+      "default": 86400,
+      "maximum": 604800,
+      "minimum": 60,
+      "title": "Session Ttl Seconds",
+      "type": "integer"
+    },
+    "max_storage_bytes": {
+      "default": 134217728,
+      "maximum": 1073741824,
+      "minimum": 65536,
+      "title": "Max Storage Bytes",
+      "type": "integer"
+    },
+    "max_result_bytes": {
+      "default": 4194304,
+      "maximum": 8388608,
+      "minimum": 65536,
+      "title": "Max Result Bytes",
+      "type": "integer"
+    },
+    "data_kind": {
+      "default": "real",
+      "enum": [
+        "real",
+        "synthetic"
+      ],
+      "title": "Data Kind",
+      "type": "string"
+    }
+  },
+  "required": [
+    "run_id"
+  ],
+  "title": "LocalSettings",
+  "type": "object"
+}

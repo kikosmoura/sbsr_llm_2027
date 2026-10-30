@@ -1,0 +1,198 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "fa7686659da9449d811d154641021724",
+  "case_id": "t25_2",
+  "family_id": "teste_ranking",
+  "territory_codes": [],
+  "condition": "C",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:53:52.684700+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Liste os 5 municípios do RN com maior redução líquida de Formação Florestal entre 2015 e 2025, em hectares.",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": null,
+  "messages_sha256": null,
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "dados_indisponiveis",
+    "plan": {
+      "operation": "ranking_delimitado",
+      "metric": "reducao_liquida",
+      "unit": "ha",
+      "territory_codes": [],
+      "scope_uf": "RN",
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": 5
+    },
+    "values": [],
+    "clarification_field": null,
+    "reason": "ranking_com_cobertura_incompleta"
+  },
+  "final_answer": "As estatisticas completas necessarias ainda nao foram materializadas.",
+  "plan": {
+    "operation": "ranking_delimitado",
+    "metric": "reducao_liquida",
+    "unit": "ha",
+    "territory_codes": [],
+    "scope_uf": "RN",
+    "class_codes": [
+      3
+    ],
+    "years": [
+      2015,
+      2025
+    ],
+    "denominator": null,
+    "direction": "desc",
+    "limit": 5
+  },
+  "result": null,
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "state": "valida",
+      "latency_seconds": 7.495593236060813,
+      "usage": {
+        "prompt_tokens": 4576,
+        "total_tokens": 5418,
+        "completion_tokens": 842
+      },
+      "chat_requests": 1,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "output_sha256": "c5b5197294714ca7859f35ac3ea69ad4513c97971d2402523094d818b7c93d7e",
+      "output_chars": 469,
+      "candidate": {
+        "action": "consultar",
+        "intent": {
+          "operation": "ranking_delimitado",
+          "territories": [],
+          "scope_uf_mention": "RN",
+          "classes": [
+            {
+              "mention": "Formação Florestal"
+            }
+          ],
+          "years": [
+            2015,
+            2025
+          ],
+          "metric": "reducao_liquida",
+          "metric_mention": "redução líquida",
+          "unit_mention": "hectares",
+          "denominator": null,
+          "direction": "desc",
+          "limit": 5
+        },
+        "clarification_fields": []
+      },
+      "issues": [],
+      "gateway_error": null,
+      "http_status": null,
+      "messages_sha256": "d8af48571906c348c2dcdaf4f0e82a0c67a1953f3f83493262d53f1c353d136a",
+      "explanation_fallback": null
+    }
+  ],
+  "latency_seconds": 7.587634596042335,
+  "scores": {
+    "status": true,
+    "plan": true,
+    "values": null,
+    "clarification": null,
+    "correct": true
+  },
+  "cost": null,
+  "source_context": {
+    "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+    "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+    "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+    "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+  },
+  "C_session_id": "80ac035d3e6a41a395f8430e525ca7c1",
+  "C_turn_id": "03f8e5e7404f4720989ed1a5c3e273e2",
+  "C_candidate_intent": {
+    "schema_version": "intencao-semantica-v1",
+    "operation": "ranking_delimitado",
+    "territories": [],
+    "scope_uf": "RN",
+    "classes": [
+      {
+        "code": 3,
+        "term": null
+      }
+    ],
+    "years": [
+      2015,
+      2025
+    ],
+    "metric": "reducao_liquida",
+    "metric_term": null,
+    "unit": "ha",
+    "unit_term": null,
+    "denominator": null,
+    "direction": "desc",
+    "limit": 5,
+    "requested_concept": "cobertura"
+  },
+  "C_decision": {
+    "status": "dados_indisponiveis",
+    "reason": "ranking_com_cobertura_incompleta",
+    "message": "As estatisticas completas necessarias ainda nao foram materializadas.",
+    "normalized_plan": {
+      "operation": "ranking_delimitado",
+      "metric": "reducao_liquida",
+      "unit": "ha",
+      "territory_codes": [],
+      "scope_uf": "RN",
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": 5
+    },
+    "territory_candidates": [],
+    "class_candidates": [],
+    "notes": [
+      "Selecoes sem cobertura completa: 1."
+    ],
+    "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+    "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9",
+    "capabilities_sha256": "91d83a3973e66c772f3db8942bee78b526e737d54ae89d464cd9d0385eb92321"
+  }
+}

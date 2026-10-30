@@ -1,0 +1,84 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "fa7686659da9449d811d154641021724",
+  "case_id": "t26_4",
+  "family_id": "teste_ranking",
+  "territory_codes": [],
+  "condition": "B",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:54:26.104379+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Dentro do RN, quais são os cinco municípios com maior área de Pastagem em 2025, em hectares?",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": "5484760840dff5175ad83fc9bef44b93b9d18b72991415e983416b58fc1c91e1",
+  "messages_sha256": "a8c37182223a5ba65e8fbef080d18fb0ab08b667192aa1b3fe87c5bfb607ac4c",
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "dados_indisponiveis",
+    "plan": null,
+    "values": [],
+    "clarification_field": null,
+    "reason": "dados_indisponiveis"
+  },
+  "final_answer": "{\"status\": \"dados_indisponiveis\", \"plan\": null, \"values\": [], \"clarification_field\": null, \"reason\": \"dados_indisponiveis\"}",
+  "plan": null,
+  "result": [],
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "messages_sha256": "a8c37182223a5ba65e8fbef080d18fb0ab08b667192aa1b3fe87c5bfb607ac4c",
+      "issues": [],
+      "usage": {
+        "prompt_tokens": 3555,
+        "total_tokens": 3924,
+        "completion_tokens": 369
+      },
+      "latency_seconds": 8.167307721916586,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "a7facdbf1fb1ef352232c7f7051903dc3e199edb18795386f8c65ec26c8c5b91",
+      "output_chars": 135,
+      "state": "valida"
+    }
+  ],
+  "latency_seconds": 8.16982062801253,
+  "scores": {
+    "status": true,
+    "plan": null,
+    "values": null,
+    "clarification": null,
+    "correct": true
+  },
+  "cost": null,
+  "source_context": {
+    "data_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+  },
+  "C_session_id": null,
+  "C_turn_id": null,
+  "C_candidate_intent": null,
+  "C_decision": null
+}

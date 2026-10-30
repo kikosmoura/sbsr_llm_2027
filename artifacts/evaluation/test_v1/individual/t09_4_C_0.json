@@ -1,0 +1,123 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "fa7686659da9449d811d154641021724",
+  "case_id": "t09_4",
+  "family_id": "teste_t09",
+  "territory_codes": [
+    "2403251",
+    "2610400"
+  ],
+  "condition": "C",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:42:29.017260+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Preciso do percentual de Pastagem de Parnamirim/RN nos anos 2015 e 2025.",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": null,
+  "messages_sha256": null,
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "precisa_esclarecimento",
+    "plan": null,
+    "values": [],
+    "clarification_field": "metrica",
+    "reason": "denominador_nao_definido"
+  },
+  "final_answer": "Você deseja área, participação na área observada, diferença líquida, redução líquida, variação percentual em relação à área inicial ou pontos percentuais?",
+  "plan": null,
+  "result": null,
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "state": "precisa_esclarecimento",
+      "latency_seconds": 9.669194149901159,
+      "usage": {
+        "prompt_tokens": 4679,
+        "total_tokens": 5954,
+        "completion_tokens": 1275
+      },
+      "chat_requests": 1,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "output_sha256": "e1df18fa018ccc51a636a088ca3e893a0952ba1e0c1b720ec3b5b349035a3f13",
+      "output_chars": 540,
+      "candidate": {
+        "action": "consultar",
+        "intent": {
+          "operation": "participacao",
+          "territories": [
+            {
+              "mention": "Parnamirim",
+              "uf_mention": "RN",
+              "kind": "municipio"
+            }
+          ],
+          "scope_uf_mention": "RN",
+          "classes": [
+            {
+              "mention": "Pastagem"
+            }
+          ],
+          "years": [
+            2015,
+            2025
+          ],
+          "metric": null,
+          "metric_mention": "percentual",
+          "unit_mention": null,
+          "denominator": null,
+          "direction": null,
+          "limit": null
+        },
+        "clarification_fields": []
+      },
+      "issues": [],
+      "gateway_error": null,
+      "http_status": null,
+      "messages_sha256": "180561c7bab4d45d157e9b6764c64ce4785d4f98fd9c305849b917d078726526",
+      "explanation_fallback": null
+    }
+  ],
+  "latency_seconds": 9.772860119002871,
+  "scores": {
+    "status": true,
+    "plan": null,
+    "values": null,
+    "clarification": true,
+    "correct": true
+  },
+  "cost": null,
+  "source_context": {
+    "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+    "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+    "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+    "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+  },
+  "C_session_id": "b58966f56dca4db39ba5d41f10e3039a",
+  "C_turn_id": "ed72089a523a49329e716297859146e6",
+  "C_candidate_intent": null,
+  "C_decision": null
+}

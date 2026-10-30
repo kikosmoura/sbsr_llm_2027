@@ -1,0 +1,166 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "fa7686659da9449d811d154641021724",
+  "case_id": "t01_2",
+  "family_id": "teste_area_direta",
+  "territory_codes": [
+    "2400109"
+  ],
+  "condition": "B",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:37:22.475500+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Dê a extensão de Formação Florestal em Acari/RN, ano 2015, como área em ha.",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": "410edf50ec7b8f71d3a5236c95843d69ebe8dcc5b81db143585cf40a1e196daa",
+  "messages_sha256": "8c7f96bfba7fe3ecc5a013e3eb6f508f0bb6aa0780f5fb4568cad9b107d51073",
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "respondida",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2400109"
+      ],
+      "scope_uf": null,
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2015
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2400109",
+        "years": [
+          2015
+        ],
+        "value": 14.69290777929301,
+        "unit": "ha",
+        "undefined_reason": null,
+        "denominators_ha": [],
+        "rank": null
+      }
+    ],
+    "clarification_field": null,
+    "reason": "ok"
+  },
+  "final_answer": "{\"status\": \"respondida\", \"plan\": {\"operation\": \"area\", \"metric\": \"area\", \"unit\": \"ha\", \"territory_codes\": [\"2400109\"], \"scope_uf\": null, \"class_codes\": [3], \"years\": [2015], \"denominator\": null, \"direction\": \"desc\", \"limit\": null}, \"values\": [{\"territory_code\": \"2400109\", \"years\": [2015], \"value\": 14.69290777929301, \"unit\": \"ha\", \"undefined_reason\": null, \"denominators_ha\": [], \"rank\": null}], \"clarification_field\": null, \"reason\": \"ok\"}",
+  "plan": {
+    "operation": "area",
+    "metric": "area",
+    "unit": "ha",
+    "territory_codes": [
+      "2400109"
+    ],
+    "scope_uf": null,
+    "class_codes": [
+      3
+    ],
+    "years": [
+      2015
+    ],
+    "denominator": null,
+    "direction": "desc",
+    "limit": null
+  },
+  "result": [
+    {
+      "territory_code": "2400109",
+      "years": [
+        2015
+      ],
+      "value": 14.69290777929301,
+      "unit": "ha",
+      "undefined_reason": null,
+      "denominators_ha": [],
+      "rank": null
+    }
+  ],
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "messages_sha256": "8c7f96bfba7fe3ecc5a013e3eb6f508f0bb6aa0780f5fb4568cad9b107d51073",
+      "issues": [
+        {
+          "path": [],
+          "code": "value_error"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 5728,
+        "total_tokens": 6324,
+        "completion_tokens": 596
+      },
+      "latency_seconds": 4.969828824978322,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "d7fd227e2197db0f5328170e4a2079f6c4e12793886fe152aafe7de31eb8ec0e",
+      "output_chars": 226,
+      "state": "invalida"
+    },
+    {
+      "number": 2,
+      "kind": "reparo",
+      "messages_sha256": "7aa2ffce9881bcb48be530a7dffecb7331554b75e88bd8a64f5392e715113c27",
+      "issues": [],
+      "usage": {
+        "prompt_tokens": 5763,
+        "total_tokens": 6468,
+        "completion_tokens": 705
+      },
+      "latency_seconds": 5.752804677002132,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "bf6b3a049123ee95435696178961d1b65acde8967c5c7b32317a8d8199a67f6e",
+      "output_chars": 553,
+      "state": "valida"
+    }
+  ],
+  "latency_seconds": 10.727143275085837,
+  "scores": {
+    "status": true,
+    "plan": true,
+    "values": true,
+    "clarification": null,
+    "correct": true
+  },
+  "cost": null,
+  "source_context": {
+    "data_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+  },
+  "C_session_id": null,
+  "C_turn_id": null,
+  "C_candidate_intent": null,
+  "C_decision": null
+}

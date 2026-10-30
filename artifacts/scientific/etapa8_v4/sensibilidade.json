@@ -1,0 +1,4026 @@
+{
+  "schema_version": "sensibilidade-exploratoria-v2",
+  "analysis_kind": "exploratoria_pos_hoc; nao substitui o protocolo principal congelado",
+  "primary_scores_changed": false,
+  "new_condition_executed": false,
+  "new_model_calls": false,
+  "primary_cases": 120,
+  "per_case": [
+    {
+      "case_id": "t01_1",
+      "family_id": "teste_area_direta",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "rejeicao_contrato_indeterminada",
+      "terminal_issue_codes": [
+        "value_error"
+      ],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t01_1",
+      "family_id": "teste_area_direta",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t01_2",
+      "family_id": "teste_area_direta",
+      "condition": "B",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t01_2",
+      "family_id": "teste_area_direta",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t01_3",
+      "family_id": "teste_area_direta",
+      "condition": "B",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t01_3",
+      "family_id": "teste_area_direta",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t01_4",
+      "family_id": "teste_area_direta",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "rejeicao_contrato_indeterminada",
+      "terminal_issue_codes": [
+        "value_error"
+      ],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t01_4",
+      "family_id": "teste_area_direta",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t02_1",
+      "family_id": "teste_area_direta",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "rejeicao_contrato_indeterminada",
+      "terminal_issue_codes": [
+        "value_error"
+      ],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t02_1",
+      "family_id": "teste_area_direta",
+      "condition": "C",
+      "original_status": "precisa_esclarecimento",
+      "original_technical_flag": false,
+      "original_correct": false,
+      "diagnosis": "erro_semantico_decisao",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t02_2",
+      "family_id": "teste_area_direta",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "rejeicao_contrato_indeterminada",
+      "terminal_issue_codes": [
+        "value_error"
+      ],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t02_2",
+      "family_id": "teste_area_direta",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t02_3",
+      "family_id": "teste_area_direta",
+      "condition": "B",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t02_3",
+      "family_id": "teste_area_direta",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t02_4",
+      "family_id": "teste_area_direta",
+      "condition": "B",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t02_4",
+      "family_id": "teste_area_direta",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t03_1",
+      "family_id": "teste_area_direta",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "rejeicao_contrato_indeterminada",
+      "terminal_issue_codes": [
+        "value_error"
+      ],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t03_1",
+      "family_id": "teste_area_direta",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t03_2",
+      "family_id": "teste_area_direta",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "rejeicao_contrato_indeterminada",
+      "terminal_issue_codes": [
+        "value_error"
+      ],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t03_2",
+      "family_id": "teste_area_direta",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t03_3",
+      "family_id": "teste_area_direta",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "rejeicao_contrato_indeterminada",
+      "terminal_issue_codes": [
+        "value_error"
+      ],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t03_3",
+      "family_id": "teste_area_direta",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t03_4",
+      "family_id": "teste_area_direta",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "rejeicao_contrato_indeterminada",
+      "terminal_issue_codes": [
+        "value_error"
+      ],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t03_4",
+      "family_id": "teste_area_direta",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t04_1",
+      "family_id": "teste_area_direta",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "rejeicao_contrato_indeterminada",
+      "terminal_issue_codes": [
+        "value_error"
+      ],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t04_1",
+      "family_id": "teste_area_direta",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t04_2",
+      "family_id": "teste_area_direta",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "rejeicao_contrato_indeterminada",
+      "terminal_issue_codes": [
+        "value_error"
+      ],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t04_2",
+      "family_id": "teste_area_direta",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t04_3",
+      "family_id": "teste_area_direta",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "rejeicao_contrato_indeterminada",
+      "terminal_issue_codes": [
+        "value_error"
+      ],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t04_3",
+      "family_id": "teste_area_direta",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t04_4",
+      "family_id": "teste_area_direta",
+      "condition": "B",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t04_4",
+      "family_id": "teste_area_direta",
+      "condition": "C",
+      "original_status": "precisa_esclarecimento",
+      "original_technical_flag": false,
+      "original_correct": false,
+      "diagnosis": "erro_semantico_decisao",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t05_1",
+      "family_id": "teste_area_direta",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "rejeicao_contrato_indeterminada",
+      "terminal_issue_codes": [
+        "value_error"
+      ],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t05_1",
+      "family_id": "teste_area_direta",
+      "condition": "C",
+      "original_status": "precisa_esclarecimento",
+      "original_technical_flag": false,
+      "original_correct": false,
+      "diagnosis": "erro_semantico_decisao",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t05_2",
+      "family_id": "teste_area_direta",
+      "condition": "B",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t05_2",
+      "family_id": "teste_area_direta",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t05_3",
+      "family_id": "teste_area_direta",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "rejeicao_contrato_indeterminada",
+      "terminal_issue_codes": [
+        "value_error"
+      ],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t05_3",
+      "family_id": "teste_area_direta",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t05_4",
+      "family_id": "teste_area_direta",
+      "condition": "B",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t05_4",
+      "family_id": "teste_area_direta",
+      "condition": "C",
+      "original_status": "precisa_esclarecimento",
+      "original_technical_flag": false,
+      "original_correct": false,
+      "diagnosis": "erro_semantico_decisao",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t06_1",
+      "family_id": "teste_t06",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "rejeicao_contrato_indeterminada",
+      "terminal_issue_codes": [
+        "value_error"
+      ],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t06_1",
+      "family_id": "teste_t06",
+      "condition": "C",
+      "original_status": "precisa_esclarecimento",
+      "original_technical_flag": false,
+      "original_correct": false,
+      "diagnosis": "erro_semantico_decisao",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t06_2",
+      "family_id": "teste_t06",
+      "condition": "B",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t06_2",
+      "family_id": "teste_t06",
+      "condition": "C",
+      "original_status": "precisa_esclarecimento",
+      "original_technical_flag": false,
+      "original_correct": false,
+      "diagnosis": "erro_semantico_decisao",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t06_3",
+      "family_id": "teste_t06",
+      "condition": "B",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t06_3",
+      "family_id": "teste_t06",
+      "condition": "C",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "rejeicao_semantica",
+      "terminal_issue_codes": [
+        "territorio_citado_omitido"
+      ],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t06_4",
+      "family_id": "teste_t06",
+      "condition": "B",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t06_4",
+      "family_id": "teste_t06",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t07_1",
+      "family_id": "teste_participacao",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "retorno_textual_ausente",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": "texto_final_ausente"
+    },
+    {
+      "case_id": "t07_1",
+      "family_id": "teste_participacao",
+      "condition": "C",
+      "original_status": "precisa_esclarecimento",
+      "original_technical_flag": false,
+      "original_correct": false,
+      "diagnosis": "erro_semantico_decisao",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t07_2",
+      "family_id": "teste_participacao",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "retorno_textual_ausente",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": "texto_final_ausente"
+    },
+    {
+      "case_id": "t07_2",
+      "family_id": "teste_participacao",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t07_3",
+      "family_id": "teste_participacao",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "retorno_textual_ausente",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": "texto_final_ausente"
+    },
+    {
+      "case_id": "t07_3",
+      "family_id": "teste_participacao",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t07_4",
+      "family_id": "teste_participacao",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "retorno_textual_ausente",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": "texto_final_ausente"
+    },
+    {
+      "case_id": "t07_4",
+      "family_id": "teste_participacao",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t08_1",
+      "family_id": "teste_participacao",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "retorno_textual_ausente",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": "texto_final_ausente"
+    },
+    {
+      "case_id": "t08_1",
+      "family_id": "teste_participacao",
+      "condition": "C",
+      "original_status": "precisa_esclarecimento",
+      "original_technical_flag": false,
+      "original_correct": false,
+      "diagnosis": "erro_semantico_decisao",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t08_2",
+      "family_id": "teste_participacao",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "retorno_textual_ausente",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": "texto_final_ausente"
+    },
+    {
+      "case_id": "t08_2",
+      "family_id": "teste_participacao",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t08_3",
+      "family_id": "teste_participacao",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "retorno_textual_ausente",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": "texto_final_ausente"
+    },
+    {
+      "case_id": "t08_3",
+      "family_id": "teste_participacao",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t08_4",
+      "family_id": "teste_participacao",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "retorno_textual_ausente",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": "texto_final_ausente"
+    },
+    {
+      "case_id": "t08_4",
+      "family_id": "teste_participacao",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t09_1",
+      "family_id": "teste_t09",
+      "condition": "B",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": false,
+      "diagnosis": "erro_semantico_decisao",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t09_1",
+      "family_id": "teste_t09",
+      "condition": "C",
+      "original_status": "precisa_esclarecimento",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t09_2",
+      "family_id": "teste_t09",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "retorno_textual_ausente",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": "texto_final_ausente"
+    },
+    {
+      "case_id": "t09_2",
+      "family_id": "teste_t09",
+      "condition": "C",
+      "original_status": "precisa_esclarecimento",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t09_3",
+      "family_id": "teste_t09",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "retorno_textual_ausente",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": "texto_final_ausente"
+    },
+    {
+      "case_id": "t09_3",
+      "family_id": "teste_t09",
+      "condition": "C",
+      "original_status": "precisa_esclarecimento",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t09_4",
+      "family_id": "teste_t09",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "retorno_textual_ausente",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": "texto_final_ausente"
+    },
+    {
+      "case_id": "t09_4",
+      "family_id": "teste_t09",
+      "condition": "C",
+      "original_status": "precisa_esclarecimento",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t10_1",
+      "family_id": "teste_t10",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "rejeicao_contrato_indeterminada",
+      "terminal_issue_codes": [
+        "value_error"
+      ],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t10_1",
+      "family_id": "teste_t10",
+      "condition": "C",
+      "original_status": "precisa_esclarecimento",
+      "original_technical_flag": false,
+      "original_correct": false,
+      "diagnosis": "erro_semantico_decisao",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t10_2",
+      "family_id": "teste_t10",
+      "condition": "B",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": false,
+      "diagnosis": "erro_semantico_decisao",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t10_2",
+      "family_id": "teste_t10",
+      "condition": "C",
+      "original_status": "precisa_esclarecimento",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t10_3",
+      "family_id": "teste_t10",
+      "condition": "B",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": false,
+      "diagnosis": "erro_semantico_decisao",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t10_3",
+      "family_id": "teste_t10",
+      "condition": "C",
+      "original_status": "precisa_esclarecimento",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t10_4",
+      "family_id": "teste_t10",
+      "condition": "B",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": false,
+      "diagnosis": "erro_semantico_decisao",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t10_4",
+      "family_id": "teste_t10",
+      "condition": "C",
+      "original_status": "precisa_esclarecimento",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t11_1",
+      "family_id": "teste_delta",
+      "condition": "B",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t11_1",
+      "family_id": "teste_delta",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t11_2",
+      "family_id": "teste_delta",
+      "condition": "B",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t11_2",
+      "family_id": "teste_delta",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t11_3",
+      "family_id": "teste_delta",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "rejeicao_contrato_indeterminada",
+      "terminal_issue_codes": [
+        "value_error"
+      ],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t11_3",
+      "family_id": "teste_delta",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t11_4",
+      "family_id": "teste_delta",
+      "condition": "B",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t11_4",
+      "family_id": "teste_delta",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t12_1",
+      "family_id": "teste_delta",
+      "condition": "B",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t12_1",
+      "family_id": "teste_delta",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t12_2",
+      "family_id": "teste_delta",
+      "condition": "B",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t12_2",
+      "family_id": "teste_delta",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t12_3",
+      "family_id": "teste_delta",
+      "condition": "B",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t12_3",
+      "family_id": "teste_delta",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t12_4",
+      "family_id": "teste_delta",
+      "condition": "B",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t12_4",
+      "family_id": "teste_delta",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t13_1",
+      "family_id": "teste_delta",
+      "condition": "B",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t13_1",
+      "family_id": "teste_delta",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t13_2",
+      "family_id": "teste_delta",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "rejeicao_contrato_indeterminada",
+      "terminal_issue_codes": [
+        "value_error"
+      ],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t13_2",
+      "family_id": "teste_delta",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t13_3",
+      "family_id": "teste_delta",
+      "condition": "B",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t13_3",
+      "family_id": "teste_delta",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t13_4",
+      "family_id": "teste_delta",
+      "condition": "B",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t13_4",
+      "family_id": "teste_delta",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t14_1",
+      "family_id": "teste_delta",
+      "condition": "B",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t14_1",
+      "family_id": "teste_delta",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t14_2",
+      "family_id": "teste_delta",
+      "condition": "B",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t14_2",
+      "family_id": "teste_delta",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t14_3",
+      "family_id": "teste_delta",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "rejeicao_contrato_indeterminada",
+      "terminal_issue_codes": [
+        "value_error"
+      ],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t14_3",
+      "family_id": "teste_delta",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t14_4",
+      "family_id": "teste_delta",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "rejeicao_contrato_indeterminada",
+      "terminal_issue_codes": [
+        "value_error"
+      ],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t14_4",
+      "family_id": "teste_delta",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t15_1",
+      "family_id": "teste_variacao",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "retorno_textual_ausente",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": "texto_final_ausente"
+    },
+    {
+      "case_id": "t15_1",
+      "family_id": "teste_variacao",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t15_2",
+      "family_id": "teste_variacao",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "retorno_textual_ausente",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": "texto_final_ausente"
+    },
+    {
+      "case_id": "t15_2",
+      "family_id": "teste_variacao",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t15_3",
+      "family_id": "teste_variacao",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "retorno_textual_ausente",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": "texto_final_ausente"
+    },
+    {
+      "case_id": "t15_3",
+      "family_id": "teste_variacao",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t15_4",
+      "family_id": "teste_variacao",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "retorno_textual_ausente",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": "texto_final_ausente"
+    },
+    {
+      "case_id": "t15_4",
+      "family_id": "teste_variacao",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t16_1",
+      "family_id": "teste_variacao",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "retorno_textual_ausente",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": "texto_final_ausente"
+    },
+    {
+      "case_id": "t16_1",
+      "family_id": "teste_variacao",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t16_2",
+      "family_id": "teste_variacao",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "retorno_textual_ausente",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": "texto_final_ausente"
+    },
+    {
+      "case_id": "t16_2",
+      "family_id": "teste_variacao",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t16_3",
+      "family_id": "teste_variacao",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "retorno_textual_ausente",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": "texto_final_ausente"
+    },
+    {
+      "case_id": "t16_3",
+      "family_id": "teste_variacao",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t16_4",
+      "family_id": "teste_variacao",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "retorno_textual_ausente",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": "texto_final_ausente"
+    },
+    {
+      "case_id": "t16_4",
+      "family_id": "teste_variacao",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t17_1",
+      "family_id": "teste_variacao",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "retorno_textual_ausente",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": "texto_final_ausente"
+    },
+    {
+      "case_id": "t17_1",
+      "family_id": "teste_variacao",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t17_2",
+      "family_id": "teste_variacao",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "retorno_textual_ausente",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": "texto_final_ausente"
+    },
+    {
+      "case_id": "t17_2",
+      "family_id": "teste_variacao",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t17_3",
+      "family_id": "teste_variacao",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "retorno_textual_ausente",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": "texto_final_ausente"
+    },
+    {
+      "case_id": "t17_3",
+      "family_id": "teste_variacao",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t17_4",
+      "family_id": "teste_variacao",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "retorno_textual_ausente",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": "texto_final_ausente"
+    },
+    {
+      "case_id": "t17_4",
+      "family_id": "teste_variacao",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t18_1",
+      "family_id": "teste_variacao",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "rejeicao_contrato_indeterminada",
+      "terminal_issue_codes": [
+        "value_error"
+      ],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t18_1",
+      "family_id": "teste_variacao",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t18_2",
+      "family_id": "teste_variacao",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "rejeicao_contrato_indeterminada",
+      "terminal_issue_codes": [
+        "value_error"
+      ],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t18_2",
+      "family_id": "teste_variacao",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t18_3",
+      "family_id": "teste_variacao",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "rejeicao_contrato_indeterminada",
+      "terminal_issue_codes": [
+        "value_error"
+      ],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t18_3",
+      "family_id": "teste_variacao",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t18_4",
+      "family_id": "teste_variacao",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "rejeicao_contrato_indeterminada",
+      "terminal_issue_codes": [
+        "value_error"
+      ],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t18_4",
+      "family_id": "teste_variacao",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t19_1",
+      "family_id": "teste_pontos",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "retorno_textual_ausente",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": "texto_final_ausente"
+    },
+    {
+      "case_id": "t19_1",
+      "family_id": "teste_pontos",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t19_2",
+      "family_id": "teste_pontos",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "retorno_textual_ausente",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": "texto_final_ausente"
+    },
+    {
+      "case_id": "t19_2",
+      "family_id": "teste_pontos",
+      "condition": "C",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "rejeicao_semantica",
+      "terminal_issue_codes": [
+        "anos_divergem_da_pergunta"
+      ],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t19_3",
+      "family_id": "teste_pontos",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "retorno_textual_ausente",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": "texto_final_ausente"
+    },
+    {
+      "case_id": "t19_3",
+      "family_id": "teste_pontos",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t19_4",
+      "family_id": "teste_pontos",
+      "condition": "B",
+      "original_status": "precisa_esclarecimento",
+      "original_technical_flag": false,
+      "original_correct": false,
+      "diagnosis": "erro_semantico_decisao",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t19_4",
+      "family_id": "teste_pontos",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t20_1",
+      "family_id": "teste_pontos",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "retorno_textual_ausente",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": "texto_final_ausente"
+    },
+    {
+      "case_id": "t20_1",
+      "family_id": "teste_pontos",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t20_2",
+      "family_id": "teste_pontos",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "retorno_textual_ausente",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": "texto_final_ausente"
+    },
+    {
+      "case_id": "t20_2",
+      "family_id": "teste_pontos",
+      "condition": "C",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "rejeicao_semantica",
+      "terminal_issue_codes": [
+        "anos_divergem_da_pergunta"
+      ],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t20_3",
+      "family_id": "teste_pontos",
+      "condition": "B",
+      "original_status": "precisa_esclarecimento",
+      "original_technical_flag": false,
+      "original_correct": false,
+      "diagnosis": "erro_semantico_decisao",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t20_3",
+      "family_id": "teste_pontos",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t20_4",
+      "family_id": "teste_pontos",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "retorno_textual_ausente",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": "texto_final_ausente"
+    },
+    {
+      "case_id": "t20_4",
+      "family_id": "teste_pontos",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t21_1",
+      "family_id": "teste_serie",
+      "condition": "B",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t21_1",
+      "family_id": "teste_serie",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t21_2",
+      "family_id": "teste_serie",
+      "condition": "B",
+      "original_status": "precisa_esclarecimento",
+      "original_technical_flag": false,
+      "original_correct": false,
+      "diagnosis": "erro_semantico_decisao",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t21_2",
+      "family_id": "teste_serie",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t21_3",
+      "family_id": "teste_serie",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "rejeicao_contrato_indeterminada",
+      "terminal_issue_codes": [
+        "value_error"
+      ],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t21_3",
+      "family_id": "teste_serie",
+      "condition": "C",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "rejeicao_semantica",
+      "terminal_issue_codes": [
+        "operacao_diverge_da_pergunta"
+      ],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t21_4",
+      "family_id": "teste_serie",
+      "condition": "B",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t21_4",
+      "family_id": "teste_serie",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t22_1",
+      "family_id": "teste_serie",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "rejeicao_contrato_indeterminada",
+      "terminal_issue_codes": [
+        "value_error"
+      ],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t22_1",
+      "family_id": "teste_serie",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t22_2",
+      "family_id": "teste_serie",
+      "condition": "B",
+      "original_status": "precisa_esclarecimento",
+      "original_technical_flag": false,
+      "original_correct": false,
+      "diagnosis": "erro_semantico_decisao",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t22_2",
+      "family_id": "teste_serie",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t22_3",
+      "family_id": "teste_serie",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "rejeicao_contrato_indeterminada",
+      "terminal_issue_codes": [
+        "value_error"
+      ],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t22_3",
+      "family_id": "teste_serie",
+      "condition": "C",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "rejeicao_semantica",
+      "terminal_issue_codes": [
+        "operacao_diverge_da_pergunta"
+      ],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t22_4",
+      "family_id": "teste_serie",
+      "condition": "B",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t22_4",
+      "family_id": "teste_serie",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t23_1",
+      "family_id": "teste_territorial",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "rejeicao_contrato_indeterminada",
+      "terminal_issue_codes": [
+        "value_error"
+      ],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t23_1",
+      "family_id": "teste_territorial",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t23_2",
+      "family_id": "teste_territorial",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "rejeicao_contrato_indeterminada",
+      "terminal_issue_codes": [
+        "value_error"
+      ],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t23_2",
+      "family_id": "teste_territorial",
+      "condition": "C",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "rejeicao_semantica",
+      "terminal_issue_codes": [
+        "operacao_diverge_da_pergunta"
+      ],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t23_3",
+      "family_id": "teste_territorial",
+      "condition": "B",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t23_3",
+      "family_id": "teste_territorial",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t23_4",
+      "family_id": "teste_territorial",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "rejeicao_contrato_indeterminada",
+      "terminal_issue_codes": [
+        "value_error"
+      ],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t23_4",
+      "family_id": "teste_territorial",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t24_1",
+      "family_id": "teste_territorial",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "rejeicao_contrato_indeterminada",
+      "terminal_issue_codes": [
+        "value_error"
+      ],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t24_1",
+      "family_id": "teste_territorial",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t24_2",
+      "family_id": "teste_territorial",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "rejeicao_contrato_indeterminada",
+      "terminal_issue_codes": [
+        "value_error"
+      ],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t24_2",
+      "family_id": "teste_territorial",
+      "condition": "C",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "rejeicao_semantica",
+      "terminal_issue_codes": [
+        "operacao_diverge_da_pergunta"
+      ],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t24_3",
+      "family_id": "teste_territorial",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "rejeicao_contrato_indeterminada",
+      "terminal_issue_codes": [
+        "value_error"
+      ],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t24_3",
+      "family_id": "teste_territorial",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t24_4",
+      "family_id": "teste_territorial",
+      "condition": "B",
+      "original_status": "erro_tecnico",
+      "original_technical_flag": true,
+      "original_correct": false,
+      "diagnosis": "rejeicao_contrato_indeterminada",
+      "terminal_issue_codes": [
+        "value_error"
+      ],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t24_4",
+      "family_id": "teste_territorial",
+      "condition": "C",
+      "original_status": "respondida",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t25_1",
+      "family_id": "teste_ranking",
+      "condition": "B",
+      "original_status": "dados_indisponiveis",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t25_1",
+      "family_id": "teste_ranking",
+      "condition": "C",
+      "original_status": "dados_indisponiveis",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t25_2",
+      "family_id": "teste_ranking",
+      "condition": "B",
+      "original_status": "dados_indisponiveis",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t25_2",
+      "family_id": "teste_ranking",
+      "condition": "C",
+      "original_status": "dados_indisponiveis",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t25_3",
+      "family_id": "teste_ranking",
+      "condition": "B",
+      "original_status": "dados_indisponiveis",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t25_3",
+      "family_id": "teste_ranking",
+      "condition": "C",
+      "original_status": "dados_indisponiveis",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t25_4",
+      "family_id": "teste_ranking",
+      "condition": "B",
+      "original_status": "precisa_esclarecimento",
+      "original_technical_flag": false,
+      "original_correct": false,
+      "diagnosis": "erro_semantico_decisao",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t25_4",
+      "family_id": "teste_ranking",
+      "condition": "C",
+      "original_status": "dados_indisponiveis",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t26_1",
+      "family_id": "teste_ranking",
+      "condition": "B",
+      "original_status": "dados_indisponiveis",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t26_1",
+      "family_id": "teste_ranking",
+      "condition": "C",
+      "original_status": "dados_indisponiveis",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t26_2",
+      "family_id": "teste_ranking",
+      "condition": "B",
+      "original_status": "dados_indisponiveis",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t26_2",
+      "family_id": "teste_ranking",
+      "condition": "C",
+      "original_status": "dados_indisponiveis",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t26_3",
+      "family_id": "teste_ranking",
+      "condition": "B",
+      "original_status": "dados_indisponiveis",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t26_3",
+      "family_id": "teste_ranking",
+      "condition": "C",
+      "original_status": "dados_indisponiveis",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t26_4",
+      "family_id": "teste_ranking",
+      "condition": "B",
+      "original_status": "dados_indisponiveis",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t26_4",
+      "family_id": "teste_ranking",
+      "condition": "C",
+      "original_status": "dados_indisponiveis",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t27_1",
+      "family_id": "teste_t27",
+      "condition": "B",
+      "original_status": "dados_indisponiveis",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t27_1",
+      "family_id": "teste_t27",
+      "condition": "C",
+      "original_status": "dados_indisponiveis",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t27_2",
+      "family_id": "teste_t27",
+      "condition": "B",
+      "original_status": "dados_indisponiveis",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t27_2",
+      "family_id": "teste_t27",
+      "condition": "C",
+      "original_status": "dados_indisponiveis",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t27_3",
+      "family_id": "teste_t27",
+      "condition": "B",
+      "original_status": "dados_indisponiveis",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t27_3",
+      "family_id": "teste_t27",
+      "condition": "C",
+      "original_status": "dados_indisponiveis",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t27_4",
+      "family_id": "teste_t27",
+      "condition": "B",
+      "original_status": "dados_indisponiveis",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t27_4",
+      "family_id": "teste_t27",
+      "condition": "C",
+      "original_status": "dados_indisponiveis",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t28_1",
+      "family_id": "teste_t28",
+      "condition": "B",
+      "original_status": "precisa_esclarecimento",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t28_1",
+      "family_id": "teste_t28",
+      "condition": "C",
+      "original_status": "precisa_esclarecimento",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t28_2",
+      "family_id": "teste_t28",
+      "condition": "B",
+      "original_status": "precisa_esclarecimento",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t28_2",
+      "family_id": "teste_t28",
+      "condition": "C",
+      "original_status": "precisa_esclarecimento",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t28_3",
+      "family_id": "teste_t28",
+      "condition": "B",
+      "original_status": "precisa_esclarecimento",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t28_3",
+      "family_id": "teste_t28",
+      "condition": "C",
+      "original_status": "precisa_esclarecimento",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t28_4",
+      "family_id": "teste_t28",
+      "condition": "B",
+      "original_status": "precisa_esclarecimento",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t28_4",
+      "family_id": "teste_t28",
+      "condition": "C",
+      "original_status": "precisa_esclarecimento",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t29_1",
+      "family_id": "teste_t29",
+      "condition": "B",
+      "original_status": "precisa_esclarecimento",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t29_1",
+      "family_id": "teste_t29",
+      "condition": "C",
+      "original_status": "precisa_esclarecimento",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t29_2",
+      "family_id": "teste_t29",
+      "condition": "B",
+      "original_status": "precisa_esclarecimento",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t29_2",
+      "family_id": "teste_t29",
+      "condition": "C",
+      "original_status": "precisa_esclarecimento",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t29_3",
+      "family_id": "teste_t29",
+      "condition": "B",
+      "original_status": "precisa_esclarecimento",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t29_3",
+      "family_id": "teste_t29",
+      "condition": "C",
+      "original_status": "precisa_esclarecimento",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t29_4",
+      "family_id": "teste_t29",
+      "condition": "B",
+      "original_status": "precisa_esclarecimento",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t29_4",
+      "family_id": "teste_t29",
+      "condition": "C",
+      "original_status": "precisa_esclarecimento",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t30_1",
+      "family_id": "teste_t30",
+      "condition": "B",
+      "original_status": "fora_do_escopo",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t30_1",
+      "family_id": "teste_t30",
+      "condition": "C",
+      "original_status": "fora_do_escopo",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t30_2",
+      "family_id": "teste_t30",
+      "condition": "B",
+      "original_status": "fora_do_escopo",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t30_2",
+      "family_id": "teste_t30",
+      "condition": "C",
+      "original_status": "fora_do_escopo",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t30_3",
+      "family_id": "teste_t30",
+      "condition": "B",
+      "original_status": "fora_do_escopo",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t30_3",
+      "family_id": "teste_t30",
+      "condition": "C",
+      "original_status": "fora_do_escopo",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t30_4",
+      "family_id": "teste_t30",
+      "condition": "B",
+      "original_status": "fora_do_escopo",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    },
+    {
+      "case_id": "t30_4",
+      "family_id": "teste_t30",
+      "condition": "C",
+      "original_status": "fora_do_escopo",
+      "original_technical_flag": false,
+      "original_correct": true,
+      "diagnosis": "acerto",
+      "terminal_issue_codes": [],
+      "terminal_gateway_error": null
+    }
+  ],
+  "diagnostic_counts": [
+    {
+      "condition": "B",
+      "diagnosis": "acerto",
+      "count": 49,
+      "denominator": 120
+    },
+    {
+      "condition": "B",
+      "diagnosis": "retorno_textual_ausente",
+      "count": 29,
+      "denominator": 120
+    },
+    {
+      "condition": "B",
+      "diagnosis": "outra_falha_gateway",
+      "count": 0,
+      "denominator": 120
+    },
+    {
+      "condition": "B",
+      "diagnosis": "rejeicao_semantica",
+      "count": 0,
+      "denominator": 120
+    },
+    {
+      "condition": "B",
+      "diagnosis": "rejeicao_contrato_indeterminada",
+      "count": 33,
+      "denominator": 120
+    },
+    {
+      "condition": "B",
+      "diagnosis": "erro_semantico_decisao",
+      "count": 9,
+      "denominator": 120
+    },
+    {
+      "condition": "B",
+      "diagnosis": "erro_semantico_plano",
+      "count": 0,
+      "denominator": 120
+    },
+    {
+      "condition": "B",
+      "diagnosis": "erro_estrutura_resultado",
+      "count": 0,
+      "denominator": 120
+    },
+    {
+      "condition": "B",
+      "diagnosis": "erro_numerico_isolavel",
+      "count": 0,
+      "denominator": 120
+    },
+    {
+      "condition": "B",
+      "diagnosis": "outro_indeterminado",
+      "count": 0,
+      "denominator": 120
+    },
+    {
+      "condition": "C",
+      "diagnosis": "acerto",
+      "count": 104,
+      "denominator": 120
+    },
+    {
+      "condition": "C",
+      "diagnosis": "retorno_textual_ausente",
+      "count": 0,
+      "denominator": 120
+    },
+    {
+      "condition": "C",
+      "diagnosis": "outra_falha_gateway",
+      "count": 0,
+      "denominator": 120
+    },
+    {
+      "condition": "C",
+      "diagnosis": "rejeicao_semantica",
+      "count": 7,
+      "denominator": 120
+    },
+    {
+      "condition": "C",
+      "diagnosis": "rejeicao_contrato_indeterminada",
+      "count": 0,
+      "denominator": 120
+    },
+    {
+      "condition": "C",
+      "diagnosis": "erro_semantico_decisao",
+      "count": 9,
+      "denominator": 120
+    },
+    {
+      "condition": "C",
+      "diagnosis": "erro_semantico_plano",
+      "count": 0,
+      "denominator": 120
+    },
+    {
+      "condition": "C",
+      "diagnosis": "erro_estrutura_resultado",
+      "count": 0,
+      "denominator": 120
+    },
+    {
+      "condition": "C",
+      "diagnosis": "erro_numerico_isolavel",
+      "count": 0,
+      "denominator": 120
+    },
+    {
+      "condition": "C",
+      "diagnosis": "outro_indeterminado",
+      "count": 0,
+      "denominator": 120
+    }
+  ],
+  "condition_specific_rates": [
+    {
+      "condition": "B",
+      "original_cases": 120,
+      "original_technical_errors": 62,
+      "nontechnical_cases": 58,
+      "correct": 49,
+      "accuracy_conditional_on_own_success": 0.8448275862068966,
+      "numeric_semantics_assessable": 26,
+      "isolated_numeric_errors": 0
+    },
+    {
+      "condition": "C",
+      "original_cases": 120,
+      "original_technical_errors": 7,
+      "nontechnical_cases": 113,
+      "correct": 104,
+      "accuracy_conditional_on_own_success": 0.9203539823008849,
+      "numeric_semantics_assessable": 73,
+      "isolated_numeric_errors": 0
+    }
+  ],
+  "paired_analyses": [
+    {
+      "analysis": "ambas_sem_erro_tecnico",
+      "cases": 57,
+      "excluded": 63,
+      "case_ids": [
+        "t01_2",
+        "t01_3",
+        "t02_3",
+        "t02_4",
+        "t04_4",
+        "t05_2",
+        "t05_4",
+        "t06_2",
+        "t06_4",
+        "t09_1",
+        "t10_2",
+        "t10_3",
+        "t10_4",
+        "t11_1",
+        "t11_2",
+        "t11_4",
+        "t12_1",
+        "t12_2",
+        "t12_3",
+        "t12_4",
+        "t13_1",
+        "t13_3",
+        "t13_4",
+        "t14_1",
+        "t14_2",
+        "t19_4",
+        "t20_3",
+        "t21_1",
+        "t21_2",
+        "t21_4",
+        "t22_2",
+        "t22_4",
+        "t23_3",
+        "t25_1",
+        "t25_2",
+        "t25_3",
+        "t25_4",
+        "t26_1",
+        "t26_2",
+        "t26_3",
+        "t26_4",
+        "t27_1",
+        "t27_2",
+        "t27_3",
+        "t27_4",
+        "t28_1",
+        "t28_2",
+        "t28_3",
+        "t28_4",
+        "t29_1",
+        "t29_2",
+        "t29_3",
+        "t29_4",
+        "t30_1",
+        "t30_2",
+        "t30_3",
+        "t30_4"
+      ],
+      "B_correct": 48,
+      "C_correct": 54,
+      "B_accuracy": 0.8421052631578947,
+      "C_accuracy": 0.9473684210526315,
+      "paired": {
+        "state": "verificado",
+        "estimator": "diferenca de proporcoes por caso; clusters reamostrados",
+        "difference_C_minus_B": 0.10526315789473684,
+        "ci95": [
+          -0.05,
+          0.31581140350877157
+        ],
+        "groups": 13,
+        "cases": 57,
+        "replicas": 10000,
+        "seed": 20271020,
+        "method": "percentil; numpy PCG64; quantile linear",
+        "group_key": "family_id"
+      },
+      "exploratory": true,
+      "conditioned_on_observed_outcome": true
+    },
+    {
+      "analysis": "ambas_sem_erro_tecnico_gabarito_quantitativo",
+      "cases": 29,
+      "excluded": 91,
+      "case_ids": [
+        "t01_2",
+        "t01_3",
+        "t02_3",
+        "t02_4",
+        "t04_4",
+        "t05_2",
+        "t05_4",
+        "t06_2",
+        "t06_4",
+        "t11_1",
+        "t11_2",
+        "t11_4",
+        "t12_1",
+        "t12_2",
+        "t12_3",
+        "t12_4",
+        "t13_1",
+        "t13_3",
+        "t13_4",
+        "t14_1",
+        "t14_2",
+        "t19_4",
+        "t20_3",
+        "t21_1",
+        "t21_2",
+        "t21_4",
+        "t22_2",
+        "t22_4",
+        "t23_3"
+      ],
+      "B_correct": 25,
+      "C_correct": 26,
+      "B_accuracy": 0.8620689655172413,
+      "C_accuracy": 0.896551724137931,
+      "paired": {
+        "state": "verificado",
+        "estimator": "diferenca de proporcoes por caso; clusters reamostrados",
+        "difference_C_minus_B": 0.034482758620689655,
+        "ci95": [
+          -0.2,
+          0.4
+        ],
+        "groups": 6,
+        "cases": 29,
+        "replicas": 10000,
+        "seed": 20271020,
+        "method": "percentil; numpy PCG64; quantile linear",
+        "group_key": "family_id"
+      },
+      "exploratory": true,
+      "conditioned_on_observed_outcome": true
+    }
+  ],
+  "technical_strata": [
+    {
+      "B_technical": false,
+      "C_technical": false,
+      "cases": 57,
+      "B_correct": 48,
+      "C_correct": 54,
+      "net_correct_C_minus_B": 6,
+      "contribution_to_full_difference": 0.05
+    },
+    {
+      "B_technical": true,
+      "C_technical": false,
+      "cases": 56,
+      "B_correct": 0,
+      "C_correct": 50,
+      "net_correct_C_minus_B": 50,
+      "contribution_to_full_difference": 0.4166666666666667
+    },
+    {
+      "B_technical": false,
+      "C_technical": true,
+      "cases": 1,
+      "B_correct": 1,
+      "C_correct": 0,
+      "net_correct_C_minus_B": -1,
+      "contribution_to_full_difference": -0.008333333333333333
+    },
+    {
+      "B_technical": true,
+      "C_technical": true,
+      "cases": 6,
+      "B_correct": 0,
+      "C_correct": 0,
+      "net_correct_C_minus_B": 0,
+      "contribution_to_full_difference": 0.0
+    }
+  ],
+  "paired_cases": [
+    {
+      "case_id": "t01_1",
+      "family_id": "teste_area_direta",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t01_2",
+      "family_id": "teste_area_direta",
+      "B": 1,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t01_3",
+      "family_id": "teste_area_direta",
+      "B": 1,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t01_4",
+      "family_id": "teste_area_direta",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t02_1",
+      "family_id": "teste_area_direta",
+      "B": 0,
+      "C": 0,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t02_2",
+      "family_id": "teste_area_direta",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t02_3",
+      "family_id": "teste_area_direta",
+      "B": 1,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t02_4",
+      "family_id": "teste_area_direta",
+      "B": 1,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t03_1",
+      "family_id": "teste_area_direta",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t03_2",
+      "family_id": "teste_area_direta",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t03_3",
+      "family_id": "teste_area_direta",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t03_4",
+      "family_id": "teste_area_direta",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t04_1",
+      "family_id": "teste_area_direta",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t04_2",
+      "family_id": "teste_area_direta",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t04_3",
+      "family_id": "teste_area_direta",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t04_4",
+      "family_id": "teste_area_direta",
+      "B": 1,
+      "C": 0,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t05_1",
+      "family_id": "teste_area_direta",
+      "B": 0,
+      "C": 0,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t05_2",
+      "family_id": "teste_area_direta",
+      "B": 1,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t05_3",
+      "family_id": "teste_area_direta",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t05_4",
+      "family_id": "teste_area_direta",
+      "B": 1,
+      "C": 0,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t06_1",
+      "family_id": "teste_t06",
+      "B": 0,
+      "C": 0,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t06_2",
+      "family_id": "teste_t06",
+      "B": 1,
+      "C": 0,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t06_3",
+      "family_id": "teste_t06",
+      "B": 1,
+      "C": 0,
+      "B_technical": false,
+      "C_technical": true
+    },
+    {
+      "case_id": "t06_4",
+      "family_id": "teste_t06",
+      "B": 1,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t07_1",
+      "family_id": "teste_participacao",
+      "B": 0,
+      "C": 0,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t07_2",
+      "family_id": "teste_participacao",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t07_3",
+      "family_id": "teste_participacao",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t07_4",
+      "family_id": "teste_participacao",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t08_1",
+      "family_id": "teste_participacao",
+      "B": 0,
+      "C": 0,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t08_2",
+      "family_id": "teste_participacao",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t08_3",
+      "family_id": "teste_participacao",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t08_4",
+      "family_id": "teste_participacao",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t09_1",
+      "family_id": "teste_t09",
+      "B": 0,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t09_2",
+      "family_id": "teste_t09",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t09_3",
+      "family_id": "teste_t09",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t09_4",
+      "family_id": "teste_t09",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t10_1",
+      "family_id": "teste_t10",
+      "B": 0,
+      "C": 0,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t10_2",
+      "family_id": "teste_t10",
+      "B": 0,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t10_3",
+      "family_id": "teste_t10",
+      "B": 0,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t10_4",
+      "family_id": "teste_t10",
+      "B": 0,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t11_1",
+      "family_id": "teste_delta",
+      "B": 1,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t11_2",
+      "family_id": "teste_delta",
+      "B": 1,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t11_3",
+      "family_id": "teste_delta",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t11_4",
+      "family_id": "teste_delta",
+      "B": 1,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t12_1",
+      "family_id": "teste_delta",
+      "B": 1,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t12_2",
+      "family_id": "teste_delta",
+      "B": 1,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t12_3",
+      "family_id": "teste_delta",
+      "B": 1,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t12_4",
+      "family_id": "teste_delta",
+      "B": 1,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t13_1",
+      "family_id": "teste_delta",
+      "B": 1,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t13_2",
+      "family_id": "teste_delta",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t13_3",
+      "family_id": "teste_delta",
+      "B": 1,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t13_4",
+      "family_id": "teste_delta",
+      "B": 1,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t14_1",
+      "family_id": "teste_delta",
+      "B": 1,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t14_2",
+      "family_id": "teste_delta",
+      "B": 1,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t14_3",
+      "family_id": "teste_delta",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t14_4",
+      "family_id": "teste_delta",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t15_1",
+      "family_id": "teste_variacao",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t15_2",
+      "family_id": "teste_variacao",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t15_3",
+      "family_id": "teste_variacao",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t15_4",
+      "family_id": "teste_variacao",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t16_1",
+      "family_id": "teste_variacao",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t16_2",
+      "family_id": "teste_variacao",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t16_3",
+      "family_id": "teste_variacao",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t16_4",
+      "family_id": "teste_variacao",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t17_1",
+      "family_id": "teste_variacao",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t17_2",
+      "family_id": "teste_variacao",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t17_3",
+      "family_id": "teste_variacao",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t17_4",
+      "family_id": "teste_variacao",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t18_1",
+      "family_id": "teste_variacao",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t18_2",
+      "family_id": "teste_variacao",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t18_3",
+      "family_id": "teste_variacao",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t18_4",
+      "family_id": "teste_variacao",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t19_1",
+      "family_id": "teste_pontos",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t19_2",
+      "family_id": "teste_pontos",
+      "B": 0,
+      "C": 0,
+      "B_technical": true,
+      "C_technical": true
+    },
+    {
+      "case_id": "t19_3",
+      "family_id": "teste_pontos",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t19_4",
+      "family_id": "teste_pontos",
+      "B": 0,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t20_1",
+      "family_id": "teste_pontos",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t20_2",
+      "family_id": "teste_pontos",
+      "B": 0,
+      "C": 0,
+      "B_technical": true,
+      "C_technical": true
+    },
+    {
+      "case_id": "t20_3",
+      "family_id": "teste_pontos",
+      "B": 0,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t20_4",
+      "family_id": "teste_pontos",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t21_1",
+      "family_id": "teste_serie",
+      "B": 1,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t21_2",
+      "family_id": "teste_serie",
+      "B": 0,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t21_3",
+      "family_id": "teste_serie",
+      "B": 0,
+      "C": 0,
+      "B_technical": true,
+      "C_technical": true
+    },
+    {
+      "case_id": "t21_4",
+      "family_id": "teste_serie",
+      "B": 1,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t22_1",
+      "family_id": "teste_serie",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t22_2",
+      "family_id": "teste_serie",
+      "B": 0,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t22_3",
+      "family_id": "teste_serie",
+      "B": 0,
+      "C": 0,
+      "B_technical": true,
+      "C_technical": true
+    },
+    {
+      "case_id": "t22_4",
+      "family_id": "teste_serie",
+      "B": 1,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t23_1",
+      "family_id": "teste_territorial",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t23_2",
+      "family_id": "teste_territorial",
+      "B": 0,
+      "C": 0,
+      "B_technical": true,
+      "C_technical": true
+    },
+    {
+      "case_id": "t23_3",
+      "family_id": "teste_territorial",
+      "B": 1,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t23_4",
+      "family_id": "teste_territorial",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t24_1",
+      "family_id": "teste_territorial",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t24_2",
+      "family_id": "teste_territorial",
+      "B": 0,
+      "C": 0,
+      "B_technical": true,
+      "C_technical": true
+    },
+    {
+      "case_id": "t24_3",
+      "family_id": "teste_territorial",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t24_4",
+      "family_id": "teste_territorial",
+      "B": 0,
+      "C": 1,
+      "B_technical": true,
+      "C_technical": false
+    },
+    {
+      "case_id": "t25_1",
+      "family_id": "teste_ranking",
+      "B": 1,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t25_2",
+      "family_id": "teste_ranking",
+      "B": 1,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t25_3",
+      "family_id": "teste_ranking",
+      "B": 1,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t25_4",
+      "family_id": "teste_ranking",
+      "B": 0,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t26_1",
+      "family_id": "teste_ranking",
+      "B": 1,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t26_2",
+      "family_id": "teste_ranking",
+      "B": 1,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t26_3",
+      "family_id": "teste_ranking",
+      "B": 1,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t26_4",
+      "family_id": "teste_ranking",
+      "B": 1,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t27_1",
+      "family_id": "teste_t27",
+      "B": 1,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t27_2",
+      "family_id": "teste_t27",
+      "B": 1,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t27_3",
+      "family_id": "teste_t27",
+      "B": 1,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t27_4",
+      "family_id": "teste_t27",
+      "B": 1,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t28_1",
+      "family_id": "teste_t28",
+      "B": 1,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t28_2",
+      "family_id": "teste_t28",
+      "B": 1,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t28_3",
+      "family_id": "teste_t28",
+      "B": 1,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t28_4",
+      "family_id": "teste_t28",
+      "B": 1,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t29_1",
+      "family_id": "teste_t29",
+      "B": 1,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t29_2",
+      "family_id": "teste_t29",
+      "B": 1,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t29_3",
+      "family_id": "teste_t29",
+      "B": 1,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t29_4",
+      "family_id": "teste_t29",
+      "B": 1,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t30_1",
+      "family_id": "teste_t30",
+      "B": 1,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t30_2",
+      "family_id": "teste_t30",
+      "B": 1,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t30_3",
+      "family_id": "teste_t30",
+      "B": 1,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    },
+    {
+      "case_id": "t30_4",
+      "family_id": "teste_t30",
+      "B": 1,
+      "C": 1,
+      "B_technical": false,
+      "C_technical": false
+    }
+  ],
+  "limitations": [
+    "Selecao por sucesso observado pode enviesar os subconjuntos; nao equaliza os contratos.",
+    "Taxas por condicao usam denominadores diferentes e nao sao comparacao pareada.",
+    "Rejeicoes genericas de B nao permitem distinguir erro JSON, semantico ou numerico.",
+    "Ausencia de erro numerico isolavel nao prova capacidade aritmetica: so e avaliavel apos semantica/contrato validos.",
+    "Rejeicoes semanticas de C continuam contadas como erro_tecnico na pontuacao original.",
+    "Analises exploratorias apos inspecao do teste; o IC principal predefinido e preservado."
+  ]
+}

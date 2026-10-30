@@ -1,0 +1,125 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "fa7686659da9449d811d154641021724",
+  "case_id": "t28_4",
+  "family_id": "teste_t28",
+  "territory_codes": [
+    "2201903",
+    "2401701",
+    "2502201",
+    "4202537",
+    "4302303"
+  ],
+  "condition": "C",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:55:29.122228+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Em 2025, a área de Pastagem do município de Bom Jesus mede quantos ha?",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": null,
+  "messages_sha256": null,
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "precisa_esclarecimento",
+    "plan": null,
+    "values": [],
+    "clarification_field": "territorio",
+    "reason": "territorio_homonimo"
+  },
+  "final_answer": "Qual território? Informe código IBGE ou nome e UF, escolhendo um dos candidatos quando houver.",
+  "plan": null,
+  "result": null,
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "state": "precisa_esclarecimento",
+      "latency_seconds": 7.541222379077226,
+      "usage": {
+        "prompt_tokens": 4769,
+        "total_tokens": 5467,
+        "completion_tokens": 698
+      },
+      "chat_requests": 1,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "output_sha256": "a7dc981ce9b23031a71884a0d6a7cd037000caf2c27be2a015391e2eb4608888",
+      "output_chars": 521,
+      "candidate": {
+        "action": "consultar",
+        "intent": {
+          "operation": "area",
+          "territories": [
+            {
+              "mention": "bom jesus",
+              "uf_mention": "RN",
+              "kind": "municipio"
+            }
+          ],
+          "scope_uf_mention": "RN",
+          "classes": [
+            {
+              "mention": "pastagem"
+            }
+          ],
+          "years": [
+            2025
+          ],
+          "metric": "area",
+          "metric_mention": "área",
+          "unit_mention": "ha",
+          "denominator": null,
+          "direction": null,
+          "limit": null
+        },
+        "clarification_fields": []
+      },
+      "issues": [],
+      "gateway_error": null,
+      "http_status": null,
+      "messages_sha256": "d534914b14899a0595a8e31918e3ff617978a0dc69fd2055e38b79a5840b0f1e",
+      "explanation_fallback": null
+    }
+  ],
+  "latency_seconds": 7.655906522995792,
+  "scores": {
+    "status": true,
+    "plan": null,
+    "values": null,
+    "clarification": true,
+    "correct": true
+  },
+  "cost": null,
+  "source_context": {
+    "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+    "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+    "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+    "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+  },
+  "C_session_id": "74f86d9550cd45fc9aa3ec7695a3a9dd",
+  "C_turn_id": "0f4ed08f8bc3453ea1cbb7a75cbcf0da",
+  "C_candidate_intent": null,
+  "C_decision": null
+}

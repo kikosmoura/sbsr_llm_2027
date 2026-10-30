@@ -1,0 +1,112 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "fa7686659da9449d811d154641021724",
+  "case_id": "t28_4",
+  "family_id": "teste_t28",
+  "territory_codes": [
+    "2201903",
+    "2401701",
+    "2502201",
+    "4202537",
+    "4302303"
+  ],
+  "condition": "B",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:55:26.980523+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Em 2025, a área de Pastagem do município de Bom Jesus mede quantos ha?",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": "153dc14b22a15f7431cbb114b2141b0f7fd57c44d768c4f61aef29a9e2247096",
+  "messages_sha256": "2568e090a8b0888a4ccff03b552f9f3df5f4623f0150ebdde4ecb7260c8f5b89",
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "precisa_esclarecimento",
+    "plan": null,
+    "values": [],
+    "clarification_field": "territorio",
+    "reason": "ambig_territorio"
+  },
+  "final_answer": "{\"status\": \"precisa_esclarecimento\", \"plan\": null, \"values\": [], \"clarification_field\": \"territorio\", \"reason\": \"ambig_territorio\"}",
+  "plan": null,
+  "result": [],
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "messages_sha256": "2568e090a8b0888a4ccff03b552f9f3df5f4623f0150ebdde4ecb7260c8f5b89",
+      "issues": [
+        {
+          "path": [],
+          "code": "value_error"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 5828,
+        "total_tokens": 6255,
+        "completion_tokens": 427
+      },
+      "latency_seconds": 3.724872473976575,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "87434dd3d53bd8df3cf018ca248e6f49d58c6e58280071b83d642732dd7ac6ea",
+      "output_chars": 285,
+      "state": "invalida"
+    },
+    {
+      "number": 2,
+      "kind": "reparo",
+      "messages_sha256": "e66d023ead9b5721d795dff3ed027ff7a6fe2557ff96b8c880b4015252ceb945",
+      "issues": [],
+      "usage": {
+        "prompt_tokens": 5863,
+        "total_tokens": 6284,
+        "completion_tokens": 421
+      },
+      "latency_seconds": 3.1308875960530713,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "dd65efabe7e44f58a305f587fd0d34757d18627cd86837de12a062c151134479",
+      "output_chars": 127,
+      "state": "valida"
+    }
+  ],
+  "latency_seconds": 6.860146195045672,
+  "scores": {
+    "status": true,
+    "plan": null,
+    "values": null,
+    "clarification": true,
+    "correct": true
+  },
+  "cost": null,
+  "source_context": {
+    "data_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+  },
+  "C_session_id": null,
+  "C_turn_id": null,
+  "C_candidate_intent": null,
+  "C_decision": null
+}

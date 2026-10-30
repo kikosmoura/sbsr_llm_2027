@@ -1,0 +1,1898 @@
+{
+  "$defs": {
+    "Attempt": {
+      "additionalProperties": false,
+      "properties": {
+        "number": {
+          "title": "Number",
+          "type": "integer"
+        },
+        "kind": {
+          "enum": [
+            "inicial",
+            "reparo"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "state": {
+          "enum": [
+            "valida",
+            "precisa_esclarecimento",
+            "invalida",
+            "falha_gateway"
+          ],
+          "title": "State",
+          "type": "string"
+        },
+        "latency_seconds": {
+          "minimum": 0,
+          "title": "Latency Seconds",
+          "type": "number"
+        },
+        "usage": {
+          "anyOf": [
+            {
+              "additionalProperties": {
+                "type": "integer"
+              },
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Usage"
+        },
+        "chat_requests": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Chat Requests"
+        },
+        "returned_model": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Returned Model"
+        },
+        "output_sha256": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Output Sha256"
+        },
+        "output_chars": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Output Chars"
+        },
+        "candidate": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Candidate"
+        },
+        "issues": {
+          "items": {
+            "$ref": "#/$defs/ValidationIssue"
+          },
+          "title": "Issues",
+          "type": "array"
+        },
+        "gateway_error": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Gateway Error"
+        },
+        "http_status": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Http Status"
+        },
+        "messages_sha256": {
+          "title": "Messages Sha256",
+          "type": "string"
+        },
+        "explanation_fallback": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Explanation Fallback"
+        }
+      },
+      "required": [
+        "number",
+        "kind",
+        "state",
+        "latency_seconds",
+        "messages_sha256"
+      ],
+      "title": "Attempt",
+      "type": "object"
+    },
+    "Clarification": {
+      "additionalProperties": false,
+      "properties": {
+        "clarification_id": {
+          "pattern": "^[0-9a-f]{32}$",
+          "title": "Clarification Id",
+          "type": "string"
+        },
+        "field": {
+          "enum": [
+            "territorio",
+            "classe",
+            "metrica",
+            "unidade",
+            "periodo",
+            "escopo",
+            "limite",
+            "ordenacao",
+            "operacao"
+          ],
+          "title": "Field",
+          "type": "string"
+        },
+        "reason": {
+          "title": "Reason",
+          "type": "string"
+        },
+        "question": {
+          "title": "Question",
+          "type": "string"
+        },
+        "mention": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Mention"
+        },
+        "candidates": {
+          "items": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "title": "Candidates",
+          "type": "array"
+        }
+      },
+      "required": [
+        "clarification_id",
+        "field",
+        "reason",
+        "question"
+      ],
+      "title": "Clarification",
+      "type": "object"
+    },
+    "ClassCandidate": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "title": "Code",
+          "type": "integer"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "grupo",
+            "classe_folha"
+          ],
+          "title": "Kind",
+          "type": "string"
+        }
+      },
+      "required": [
+        "code",
+        "name",
+        "kind"
+      ],
+      "title": "ClassCandidate",
+      "type": "object"
+    },
+    "ClassReference": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Code"
+        },
+        "term": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Term"
+        }
+      },
+      "title": "ClassReference",
+      "type": "object"
+    },
+    "ExecutionContext": {
+      "additionalProperties": false,
+      "properties": {
+        "run_id": {
+          "title": "Run Id",
+          "type": "string"
+        },
+        "run_manifest_sha256": {
+          "title": "Run Manifest Sha256",
+          "type": "string"
+        },
+        "collection": {
+          "title": "Collection",
+          "type": "integer"
+        },
+        "source_revision": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Source Revision"
+        },
+        "territorial_edition": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Territorial Edition"
+        },
+        "method": {
+          "title": "Method",
+          "type": "string"
+        },
+        "mesh_sha256": {
+          "title": "Mesh Sha256",
+          "type": "string"
+        },
+        "catalog_sha256": {
+          "title": "Catalog Sha256",
+          "type": "string"
+        },
+        "years": {
+          "items": {
+            "type": "integer"
+          },
+          "title": "Years",
+          "type": "array"
+        },
+        "class_names": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Class Names",
+          "type": "array"
+        },
+        "sources": {
+          "items": {
+            "$ref": "#/$defs/SourceReference"
+          },
+          "minItems": 1,
+          "title": "Sources",
+          "type": "array"
+        }
+      },
+      "required": [
+        "run_id",
+        "run_manifest_sha256",
+        "collection",
+        "source_revision",
+        "territorial_edition",
+        "method",
+        "mesh_sha256",
+        "catalog_sha256",
+        "years",
+        "class_names",
+        "sources"
+      ],
+      "title": "ExecutionContext",
+      "type": "object"
+    },
+    "Metric": {
+      "enum": [
+        "area",
+        "participacao",
+        "diferenca_liquida",
+        "reducao_liquida",
+        "variacao_percentual",
+        "diferenca_pontos_percentuais"
+      ],
+      "title": "Metric",
+      "type": "string"
+    },
+    "Observation": {
+      "additionalProperties": false,
+      "properties": {
+        "year": {
+          "title": "Year",
+          "type": "integer"
+        },
+        "class_area_ha": {
+          "minimum": 0,
+          "title": "Class Area Ha",
+          "type": "number"
+        },
+        "observed_area_ha": {
+          "minimum": 0,
+          "title": "Observed Area Ha",
+          "type": "number"
+        },
+        "support": {
+          "enum": [
+            "anual",
+            "comum"
+          ],
+          "title": "Support",
+          "type": "string"
+        },
+        "nodata_area_ha": {
+          "default": 0,
+          "minimum": 0,
+          "title": "Nodata Area Ha",
+          "type": "number"
+        },
+        "unknown_area_ha": {
+          "default": 0,
+          "minimum": 0,
+          "title": "Unknown Area Ha",
+          "type": "number"
+        },
+        "outside_raster_area_ha": {
+          "default": 0,
+          "minimum": 0,
+          "title": "Outside Raster Area Ha",
+          "type": "number"
+        }
+      },
+      "required": [
+        "year",
+        "class_area_ha",
+        "observed_area_ha",
+        "support"
+      ],
+      "title": "Observation",
+      "type": "object"
+    },
+    "Operation": {
+      "enum": [
+        "area",
+        "participacao",
+        "comparacao_temporal",
+        "serie_disponivel",
+        "comparacao_territorial",
+        "ranking_delimitado"
+      ],
+      "title": "Operation",
+      "type": "string"
+    },
+    "ProcessingQuality": {
+      "additionalProperties": false,
+      "properties": {
+        "state": {
+          "enum": [
+            "nao_processado",
+            "parcial",
+            "completo"
+          ],
+          "title": "State",
+          "type": "string"
+        },
+        "observed_area_ha": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Observed Area Ha"
+        },
+        "nodata_area_ha": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Nodata Area Ha"
+        },
+        "unknown_codes": {
+          "items": {
+            "type": "integer"
+          },
+          "title": "Unknown Codes",
+          "type": "array"
+        },
+        "common_support_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Common Support Id"
+        },
+        "area_method": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Area Method"
+        },
+        "notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Notes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "state"
+      ],
+      "title": "ProcessingQuality",
+      "type": "object"
+    },
+    "QueryAnswer": {
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": "resposta-consulta-v1",
+          "default": "resposta-consulta-v1",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "status": {
+          "$ref": "#/$defs/ResponseStatus"
+        },
+        "reason": {
+          "title": "Reason",
+          "type": "string"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        },
+        "answer_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Answer Id"
+        },
+        "plan_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Plan Id"
+        },
+        "executor_sha256": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Executor Sha256"
+        },
+        "requested_plan": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/QueryPlan"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "plan": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/QueryPlan"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/QueryEvidence"
+          },
+          "title": "Evidence",
+          "type": "array"
+        },
+        "values": {
+          "items": {
+            "$ref": "#/$defs/QueryValue"
+          },
+          "title": "Values",
+          "type": "array"
+        },
+        "execution": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ExecutionContext"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "ranking": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/RankingInfo"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Notes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "status",
+        "reason",
+        "message"
+      ],
+      "title": "QueryAnswer",
+      "type": "object"
+    },
+    "QueryEvidence": {
+      "additionalProperties": false,
+      "properties": {
+        "evidence_id": {
+          "minLength": 1,
+          "title": "Evidence Id",
+          "type": "string"
+        },
+        "run_id": {
+          "minLength": 1,
+          "title": "Run Id",
+          "type": "string"
+        },
+        "territory": {
+          "$ref": "#/$defs/Territory"
+        },
+        "class_codes": {
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 1,
+          "title": "Class Codes",
+          "type": "array"
+        },
+        "years": {
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 1,
+          "title": "Years",
+          "type": "array"
+        },
+        "collection": {
+          "default": 11,
+          "title": "Collection",
+          "type": "integer"
+        },
+        "source_revision": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Source Revision"
+        },
+        "source_ids": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Source Ids",
+          "type": "array"
+        },
+        "area_method": {
+          "minLength": 1,
+          "title": "Area Method",
+          "type": "string"
+        },
+        "quality": {
+          "$ref": "#/$defs/ProcessingQuality"
+        },
+        "plan_id": {
+          "title": "Plan Id",
+          "type": "string"
+        },
+        "metric": {
+          "$ref": "#/$defs/Metric"
+        },
+        "requested_class_codes": {
+          "items": {
+            "type": "integer"
+          },
+          "title": "Requested Class Codes",
+          "type": "array"
+        },
+        "class_names": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Class Names",
+          "type": "array"
+        },
+        "observations": {
+          "items": {
+            "$ref": "#/$defs/Observation"
+          },
+          "minItems": 1,
+          "title": "Observations",
+          "type": "array"
+        },
+        "denominator_definition": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Denominator Definition"
+        },
+        "denominator_values_ha": {
+          "items": {
+            "type": "number"
+          },
+          "title": "Denominator Values Ha",
+          "type": "array"
+        },
+        "provenance": {
+          "enum": [
+            "municipio_direto",
+            "uf_direta"
+          ],
+          "title": "Provenance",
+          "type": "string"
+        },
+        "mesh_sha256": {
+          "title": "Mesh Sha256",
+          "type": "string"
+        },
+        "catalog_sha256": {
+          "title": "Catalog Sha256",
+          "type": "string"
+        },
+        "run_manifest_sha256": {
+          "title": "Run Manifest Sha256",
+          "type": "string"
+        },
+        "sources": {
+          "items": {
+            "$ref": "#/$defs/SourceReference"
+          },
+          "minItems": 1,
+          "title": "Sources",
+          "type": "array"
+        }
+      },
+      "required": [
+        "evidence_id",
+        "run_id",
+        "territory",
+        "class_codes",
+        "years",
+        "source_revision",
+        "source_ids",
+        "area_method",
+        "quality",
+        "plan_id",
+        "metric",
+        "requested_class_codes",
+        "class_names",
+        "observations",
+        "denominator_definition",
+        "provenance",
+        "mesh_sha256",
+        "catalog_sha256",
+        "run_manifest_sha256",
+        "sources"
+      ],
+      "title": "QueryEvidence",
+      "type": "object"
+    },
+    "QueryIntent": {
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": "intencao-semantica-v1",
+          "default": "intencao-semantica-v1",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "operation": {
+          "$ref": "#/$defs/Operation"
+        },
+        "territories": {
+          "items": {
+            "$ref": "#/$defs/TerritoryReference"
+          },
+          "title": "Territories",
+          "type": "array"
+        },
+        "scope_uf": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Z]{2}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Scope Uf"
+        },
+        "classes": {
+          "items": {
+            "$ref": "#/$defs/ClassReference"
+          },
+          "minItems": 1,
+          "title": "Classes",
+          "type": "array"
+        },
+        "years": {
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 1,
+          "title": "Years",
+          "type": "array"
+        },
+        "metric": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Metric"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "metric_term": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Metric Term"
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Unit"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "unit_term": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Unit Term"
+        },
+        "denominator": {
+          "anyOf": [
+            {
+              "enum": [
+                "area_observada",
+                "area_inicial",
+                "participacao_por_ano"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Denominator"
+        },
+        "direction": {
+          "default": "desc",
+          "enum": [
+            "asc",
+            "desc"
+          ],
+          "title": "Direction",
+          "type": "string"
+        },
+        "limit": {
+          "anyOf": [
+            {
+              "maximum": 100,
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Limit"
+        },
+        "requested_concept": {
+          "default": "cobertura",
+          "enum": [
+            "cobertura",
+            "perda_bruta",
+            "ganho_bruto",
+            "evento_inundacao",
+            "desmatamento",
+            "vegetacao_nativa",
+            "causa",
+            "ilegalidade",
+            "projecao"
+          ],
+          "title": "Requested Concept",
+          "type": "string"
+        }
+      },
+      "required": [
+        "operation",
+        "classes",
+        "years"
+      ],
+      "title": "QueryIntent",
+      "type": "object"
+    },
+    "QueryPlan": {
+      "additionalProperties": false,
+      "properties": {
+        "operation": {
+          "$ref": "#/$defs/Operation"
+        },
+        "metric": {
+          "$ref": "#/$defs/Metric"
+        },
+        "unit": {
+          "$ref": "#/$defs/Unit"
+        },
+        "territory_codes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Territory Codes",
+          "type": "array"
+        },
+        "scope_uf": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Z]{2}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Scope Uf"
+        },
+        "class_codes": {
+          "items": {
+            "type": "integer"
+          },
+          "maxItems": 41,
+          "minItems": 1,
+          "title": "Class Codes",
+          "type": "array"
+        },
+        "years": {
+          "items": {
+            "type": "integer"
+          },
+          "maxItems": 11,
+          "minItems": 1,
+          "title": "Years",
+          "type": "array"
+        },
+        "denominator": {
+          "anyOf": [
+            {
+              "enum": [
+                "area_observada",
+                "area_inicial",
+                "participacao_por_ano"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Denominator"
+        },
+        "direction": {
+          "default": "desc",
+          "enum": [
+            "asc",
+            "desc"
+          ],
+          "title": "Direction",
+          "type": "string"
+        },
+        "limit": {
+          "anyOf": [
+            {
+              "maximum": 100,
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Limit"
+        }
+      },
+      "required": [
+        "operation",
+        "metric",
+        "unit",
+        "class_codes",
+        "years"
+      ],
+      "title": "QueryPlan",
+      "type": "object"
+    },
+    "QueryValue": {
+      "additionalProperties": false,
+      "properties": {
+        "evidence_id": {
+          "title": "Evidence Id",
+          "type": "string"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Value"
+        },
+        "unit": {
+          "$ref": "#/$defs/Unit"
+        },
+        "denominator_value": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Denominator Value"
+        },
+        "undefined_reason": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Undefined Reason"
+        },
+        "metric": {
+          "$ref": "#/$defs/Metric"
+        },
+        "area_value_ha": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Area Value Ha"
+        },
+        "denominator_unit": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Unit"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "rank": {
+          "anyOf": [
+            {
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Rank"
+        }
+      },
+      "required": [
+        "evidence_id",
+        "value",
+        "unit",
+        "metric"
+      ],
+      "title": "QueryValue",
+      "type": "object"
+    },
+    "RankingInfo": {
+      "additionalProperties": false,
+      "properties": {
+        "scope_uf": {
+          "title": "Scope Uf",
+          "type": "string"
+        },
+        "universe": {
+          "const": "municipios_da_uf",
+          "default": "municipios_da_uf",
+          "title": "Universe",
+          "type": "string"
+        },
+        "candidate_codes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Candidate Codes",
+          "type": "array"
+        },
+        "candidate_count": {
+          "minimum": 1,
+          "title": "Candidate Count",
+          "type": "integer"
+        },
+        "verified_count": {
+          "minimum": 1,
+          "title": "Verified Count",
+          "type": "integer"
+        },
+        "coverage": {
+          "const": "completa",
+          "default": "completa",
+          "title": "Coverage",
+          "type": "string"
+        },
+        "metric": {
+          "$ref": "#/$defs/Metric"
+        },
+        "sign_convention": {
+          "title": "Sign Convention",
+          "type": "string"
+        },
+        "direction": {
+          "enum": [
+            "asc",
+            "desc"
+          ],
+          "title": "Direction",
+          "type": "string"
+        },
+        "tie_break": {
+          "const": "codigo_ibge_asc",
+          "default": "codigo_ibge_asc",
+          "title": "Tie Break",
+          "type": "string"
+        },
+        "limit": {
+          "maximum": 100,
+          "minimum": 1,
+          "title": "Limit",
+          "type": "integer"
+        },
+        "filtered_non_reductions": {
+          "default": 0,
+          "minimum": 0,
+          "title": "Filtered Non Reductions",
+          "type": "integer"
+        },
+        "undefined_codes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Undefined Codes",
+          "type": "array"
+        },
+        "qualifying_count": {
+          "minimum": 0,
+          "title": "Qualifying Count",
+          "type": "integer"
+        },
+        "returned_count": {
+          "minimum": 0,
+          "title": "Returned Count",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "scope_uf",
+        "candidate_codes",
+        "candidate_count",
+        "verified_count",
+        "metric",
+        "sign_convention",
+        "direction",
+        "limit",
+        "qualifying_count",
+        "returned_count"
+      ],
+      "title": "RankingInfo",
+      "type": "object"
+    },
+    "ResponseStatus": {
+      "enum": [
+        "respondida",
+        "precisa_esclarecimento",
+        "fora_do_escopo",
+        "dados_indisponiveis",
+        "erro_tecnico"
+      ],
+      "title": "ResponseStatus",
+      "type": "string"
+    },
+    "SemanticDecision": {
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "enum": [
+            "plano_validado",
+            "precisa_esclarecimento",
+            "fora_do_escopo",
+            "dados_indisponiveis",
+            "erro_tecnico"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "reason": {
+          "title": "Reason",
+          "type": "string"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        },
+        "normalized_plan": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/QueryPlan"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "territory_candidates": {
+          "items": {
+            "$ref": "#/$defs/TerritoryCandidate"
+          },
+          "title": "Territory Candidates",
+          "type": "array"
+        },
+        "class_candidates": {
+          "items": {
+            "$ref": "#/$defs/ClassCandidate"
+          },
+          "title": "Class Candidates",
+          "type": "array"
+        },
+        "notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Notes",
+          "type": "array"
+        },
+        "class_catalog_sha256": {
+          "anyOf": [
+            {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Class Catalog Sha256"
+        },
+        "territory_catalog_sha256": {
+          "anyOf": [
+            {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Territory Catalog Sha256"
+        },
+        "capabilities_sha256": {
+          "anyOf": [
+            {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Capabilities Sha256"
+        }
+      },
+      "required": [
+        "status",
+        "reason",
+        "message"
+      ],
+      "title": "SemanticDecision",
+      "type": "object"
+    },
+    "SourceReference": {
+      "additionalProperties": false,
+      "properties": {
+        "source_id": {
+          "title": "Source Id",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "execucao",
+            "malha",
+            "catalogo",
+            "raster_espelho",
+            "recorte",
+            "particao_areas",
+            "particao_qualidade"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "sha256": {
+          "anyOf": [
+            {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Sha256"
+        },
+        "year": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Year"
+        },
+        "public_url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Public Url"
+        },
+        "etag": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Etag"
+        }
+      },
+      "required": [
+        "source_id",
+        "kind"
+      ],
+      "title": "SourceReference",
+      "type": "object"
+    },
+    "Territory": {
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "enum": [
+            "municipio",
+            "uf"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "uf": {
+          "pattern": "^[A-Z]{2}$",
+          "title": "Uf",
+          "type": "string"
+        },
+        "geometry_hash": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Geometry Hash",
+          "type": "string"
+        },
+        "edition": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Edition"
+        }
+      },
+      "required": [
+        "kind",
+        "code",
+        "name",
+        "uf",
+        "geometry_hash"
+      ],
+      "title": "Territory",
+      "type": "object"
+    },
+    "TerritoryCandidate": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "name_original": {
+          "title": "Name Original",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "municipio",
+            "uf"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "uf": {
+          "title": "Uf",
+          "type": "string"
+        },
+        "alias_notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Alias Notes",
+          "type": "array"
+        }
+      },
+      "required": [
+        "code",
+        "name_original",
+        "kind",
+        "uf",
+        "alias_notes"
+      ],
+      "title": "TerritoryCandidate",
+      "type": "object"
+    },
+    "TerritoryReference": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "anyOf": [
+            {
+              "pattern": "^(?:[0-9]{2}|[0-9]{7})$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Code"
+        },
+        "name": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Name"
+        },
+        "uf": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Z]{2}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Uf"
+        },
+        "kind": {
+          "anyOf": [
+            {
+              "enum": [
+                "municipio",
+                "uf"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Kind"
+        }
+      },
+      "title": "TerritoryReference",
+      "type": "object"
+    },
+    "Unit": {
+      "enum": [
+        "ha",
+        "km2",
+        "m2",
+        "percentual",
+        "pontos_percentuais"
+      ],
+      "title": "Unit",
+      "type": "string"
+    },
+    "ValidationIssue": {
+      "additionalProperties": false,
+      "properties": {
+        "path": {
+          "items": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              }
+            ]
+          },
+          "title": "Path",
+          "type": "array"
+        },
+        "code": {
+          "title": "Code",
+          "type": "string"
+        }
+      },
+      "required": [
+        "path",
+        "code"
+      ],
+      "title": "ValidationIssue",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "pergunta-verificavel-v1",
+      "default": "pergunta-verificavel-v1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "created_at": {
+      "format": "date-time",
+      "title": "Created At",
+      "type": "string"
+    },
+    "session_id": {
+      "pattern": "^[0-9a-f]{32}$",
+      "title": "Session Id",
+      "type": "string"
+    },
+    "turn_id": {
+      "pattern": "^[0-9a-f]{32}$",
+      "title": "Turn Id",
+      "type": "string"
+    },
+    "parent_turn_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Parent Turn Id"
+    },
+    "question": {
+      "title": "Question",
+      "type": "string"
+    },
+    "original_question": {
+      "title": "Original Question",
+      "type": "string"
+    },
+    "status": {
+      "$ref": "#/$defs/ResponseStatus"
+    },
+    "reason": {
+      "title": "Reason",
+      "type": "string"
+    },
+    "message": {
+      "title": "Message",
+      "type": "string"
+    },
+    "integration_kind": {
+      "enum": [
+        "gateway_real",
+        "mock_contrato"
+      ],
+      "title": "Integration Kind",
+      "type": "string"
+    },
+    "gateway_called": {
+      "default": false,
+      "title": "Gateway Called",
+      "type": "boolean"
+    },
+    "requested_model": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Requested Model"
+    },
+    "safe_configuration": {
+      "additionalProperties": true,
+      "title": "Safe Configuration",
+      "type": "object"
+    },
+    "prompt_hashes": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Prompt Hashes",
+      "type": "object"
+    },
+    "interpreter_sha256": {
+      "title": "Interpreter Sha256",
+      "type": "string"
+    },
+    "context_sha256": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Context Sha256"
+    },
+    "context": {
+      "anyOf": [
+        {
+          "additionalProperties": true,
+          "type": "object"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Context"
+    },
+    "attempts": {
+      "items": {
+        "$ref": "#/$defs/Attempt"
+      },
+      "title": "Attempts",
+      "type": "array"
+    },
+    "intent": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/QueryIntent"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "decision": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/SemanticDecision"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "query": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/QueryAnswer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "clarification": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Clarification"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "source_context": {
+      "additionalProperties": true,
+      "title": "Source Context",
+      "type": "object"
+    },
+    "entities": {
+      "additionalProperties": true,
+      "title": "Entities",
+      "type": "object"
+    },
+    "explanation_fallback": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Explanation Fallback"
+    },
+    "latency_seconds": {
+      "default": 0,
+      "minimum": 0,
+      "title": "Latency Seconds",
+      "type": "number"
+    },
+    "redactions": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Redactions",
+      "type": "array"
+    }
+  },
+  "required": [
+    "session_id",
+    "turn_id",
+    "question",
+    "original_question",
+    "status",
+    "reason",
+    "message",
+    "integration_kind",
+    "requested_model",
+    "safe_configuration",
+    "prompt_hashes",
+    "interpreter_sha256"
+  ],
+  "title": "AskAnswer",
+  "type": "object"
+}

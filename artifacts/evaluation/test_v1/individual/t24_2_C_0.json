@@ -1,0 +1,197 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "fa7686659da9449d811d154641021724",
+  "case_id": "t24_2",
+  "family_id": "teste_territorial",
+  "territory_codes": [
+    "2401206",
+    "2402204"
+  ],
+  "condition": "C",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:53:28.551936+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Em 2025, qual a área em hectares de Área Urbanizada em cada um destes municípios: Arez/RN e Canguaretama/RN?",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": null,
+  "messages_sha256": null,
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "erro_tecnico",
+    "plan": null,
+    "values": [],
+    "clarification_field": null,
+    "reason": "saida_modelo_invalida_apos_limite"
+  },
+  "final_answer": "O modelo não produziu um plano válido após o limite de reparo; nenhum número foi publicado.",
+  "plan": null,
+  "result": null,
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "state": "invalida",
+      "latency_seconds": 8.62675279204268,
+      "usage": {
+        "prompt_tokens": 4706,
+        "total_tokens": 5634,
+        "completion_tokens": 928
+      },
+      "chat_requests": 1,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "output_sha256": "99d0cf6c5b48c5f216e69b1c9f857745e778cd8040d722d1a7c0737c1fb8e44c",
+      "output_chars": 619,
+      "candidate": {
+        "action": "consultar",
+        "intent": {
+          "operation": "area",
+          "territories": [
+            {
+              "mention": "arez",
+              "uf_mention": "RN",
+              "kind": "municipio"
+            },
+            {
+              "mention": "canguaretama",
+              "uf_mention": "RN",
+              "kind": "municipio"
+            }
+          ],
+          "scope_uf_mention": "RN",
+          "classes": [
+            {
+              "mention": "area urbanizada"
+            }
+          ],
+          "years": [
+            2025
+          ],
+          "metric": "area",
+          "metric_mention": "área",
+          "unit_mention": "hectares",
+          "denominator": null,
+          "direction": null,
+          "limit": null
+        },
+        "clarification_fields": []
+      },
+      "issues": [
+        {
+          "path": [
+            "intent",
+            "operation"
+          ],
+          "code": "operacao_diverge_da_pergunta"
+        }
+      ],
+      "gateway_error": null,
+      "http_status": null,
+      "messages_sha256": "3f616beb6321470ba82c35b7ca0e0e6549f782ef401dce899ecac5a25af67be3",
+      "explanation_fallback": null
+    },
+    {
+      "number": 2,
+      "kind": "reparo",
+      "state": "invalida",
+      "latency_seconds": 8.590976024977863,
+      "usage": {
+        "prompt_tokens": 4806,
+        "total_tokens": 5769,
+        "completion_tokens": 963
+      },
+      "chat_requests": 1,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "output_sha256": "87a64cb5a4c62af2f662e71aec2da86f641db8dd7250c5e5f9b32d2e7041dad2",
+      "output_chars": 649,
+      "candidate": {
+        "action": "consultar",
+        "intent": {
+          "operation": "area",
+          "territories": [
+            {
+              "mention": "arez",
+              "uf_mention": "RN",
+              "kind": "municipio"
+            },
+            {
+              "mention": "canguaretama",
+              "uf_mention": "RN",
+              "kind": "municipio"
+            }
+          ],
+          "scope_uf_mention": "RN",
+          "classes": [
+            {
+              "mention": "Área Urbanizada"
+            }
+          ],
+          "years": [
+            2025
+          ],
+          "metric": "area",
+          "metric_mention": "área",
+          "unit_mention": "hectares",
+          "denominator": null,
+          "direction": null,
+          "limit": null
+        },
+        "clarification_fields": []
+      },
+      "issues": [
+        {
+          "path": [
+            "intent",
+            "operation"
+          ],
+          "code": "operacao_diverge_da_pergunta"
+        }
+      ],
+      "gateway_error": null,
+      "http_status": null,
+      "messages_sha256": "def09bf5acfa17c5dbbcc5fe8c8a4fbf1ba2061369b54cfa589beee5d60b123a",
+      "explanation_fallback": null
+    }
+  ],
+  "latency_seconds": 17.344001349061728,
+  "scores": {
+    "status": false,
+    "plan": null,
+    "values": null,
+    "clarification": null,
+    "correct": false
+  },
+  "cost": null,
+  "source_context": {
+    "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+    "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+    "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+    "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+  },
+  "C_session_id": "6b6dc03743a84b15893c4669807e585b",
+  "C_turn_id": "2365b421b2304cdfa9cd6febd4054136",
+  "C_candidate_intent": null,
+  "C_decision": null
+}

@@ -1,0 +1,5 @@
+selected_on,max_tokens,cases,nonempty_final_text,valid_contract,empty_final_text,finish_reason_counts,completion_equals_requested_limit,empty_and_length,missing_usage,prompt_tokens_sum_observed,completion_tokens_sum_observed,latency_mean_seconds,latency_median_seconds
+old_empty,2048,26,3,3,23,"{""length"": 23, ""stop"": 3}",23,23,0,144266,52366,18.443694640577842,18.145867509476375
+old_empty,4096,26,20,20,6,"{""stop"": 20, ""length"": 6}",6,6,0,144266,84597,30.33945577491809,31.273469476029277
+positive_control,2048,2,2,2,0,"{""stop"": 2}",0,0,0,10929,2408,12.696992266981397,12.696992266981397
+positive_control,4096,2,2,2,0,"{""stop"": 2}",0,0,0,10929,3109,14.185748721996788,14.185748721996788

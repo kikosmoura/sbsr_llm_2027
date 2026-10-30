@@ -1,0 +1,1081 @@
+{
+  "schema_version": "mapbiomas-col11-semantica-v1",
+  "collection": 11,
+  "published_date": "2026-08-13",
+  "sources": [
+    {
+      "source_id": "legend.pdf",
+      "url": "https://brasil.mapbiomas.org/wp-content/uploads/sites/3/2026/08/CodigosDeLegenda_LegendCodes_MapBiomas_Brazil_Collection11_PDF.pdf",
+      "sha256": "19ddb657d66ce1039be8aba31f20689d9ab66af7d39b86d976727dc3265b7865",
+      "bytes": 117734,
+      "retrieved_at": "2026-10-19T15:32:15.965230+00:00",
+      "content_type": "application/pdf",
+      "last_modified": "Thu, 13 Aug 2026 18:01:11 GMT",
+      "status": "obtido"
+    },
+    {
+      "source_id": "legend.csv",
+      "url": "https://brasil.mapbiomas.org/wp-content/uploads/sites/3/2026/08/legend_code_mapbiomas_brazil_collection_11.csv",
+      "sha256": "603239c5de7cca95799c788ab553a73ec3fc16477f681f63bb5af191d2f54dbe",
+      "bytes": 1521,
+      "retrieved_at": "2026-10-19T15:32:16.196887+00:00",
+      "content_type": "text/csv",
+      "last_modified": "Fri, 14 Aug 2026 17:25:15 GMT",
+      "status": "obtido"
+    },
+    {
+      "source_id": "official_page.html",
+      "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/",
+      "sha256": "a6cbf4a44eaa5f7f82a127a0cd3865dd72f83000ef71feeeca8727c0ba8bf7d4",
+      "bytes": 473165,
+      "retrieved_at": "2026-10-19T15:34:04.360412+00:00",
+      "status": "obtido"
+    }
+  ],
+  "extraction": {
+    "tool": "pdftotext -layout",
+    "text_sha256": "7f2f10704edc3bf9abee9a10d6d68ebeeca860591b5af19ffb279b0b922cc45c",
+    "csv_leaf_count": 33,
+    "pdf_node_count": 41,
+    "hierarchy_authority": "legend.pdf; excecao 48 corroborada pela pagina oficial"
+  },
+  "discrepancies": [
+    {
+      "code": 84,
+      "field": "name",
+      "pdf": "Marisma (beta)",
+      "csv": "Marismas (beta)",
+      "chosen_source": "legend.pdf"
+    },
+    {
+      "code": 29,
+      "field": "name_en",
+      "pdf": "Rocky Outcrop",
+      "csv": "Rocky Outrcrop",
+      "chosen_source": "legend.pdf"
+    },
+    {
+      "code": 46,
+      "field": "name_en",
+      "pdf": "Coffee",
+      "csv": "Coffe",
+      "chosen_source": "legend.pdf"
+    },
+    {
+      "code": 48,
+      "field": "hierarchy_path",
+      "pdf": "3.2.1.4",
+      "canonical": "3.2.2.4",
+      "reason": "Numeracao PDF repete ramo temporario; posicao sob Lavoura Perene e pagina oficial confirmam ramo perene.",
+      "corroborating_source": "official_page.html"
+    },
+    {
+      "code": 21,
+      "field": "name",
+      "pdf": "Mosaico de Usos",
+      "csv": "Mosaico de usos",
+      "chosen_source": "legend.pdf"
+    },
+    {
+      "code": 25,
+      "field": "name",
+      "pdf": "Outras Áreas não Vegetadas",
+      "csv": "Outras Área não Vegetadas",
+      "chosen_source": "legend.pdf"
+    }
+  ],
+  "classes": [
+    {
+      "code": 1,
+      "name": "Floresta",
+      "parent_code": null,
+      "leaf_codes": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        49
+      ],
+      "aliases": [
+        "grupo Floresta",
+        "floresta",
+        "área florestal"
+      ],
+      "beta": false,
+      "source_hash": "19ddb657d66ce1039be8aba31f20689d9ab66af7d39b86d976727dc3265b7865",
+      "name_en": "Forest",
+      "printed_path": "1",
+      "canonical_path": "1",
+      "kind": "grupo",
+      "color": "#1f8d49",
+      "descendant_codes": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        49
+      ],
+      "sources": [
+        "legend.pdf"
+      ]
+    },
+    {
+      "code": 3,
+      "name": "Formação Florestal",
+      "parent_code": 1,
+      "leaf_codes": [
+        3
+      ],
+      "aliases": [
+        "floresta",
+        "área florestal"
+      ],
+      "beta": false,
+      "source_hash": "19ddb657d66ce1039be8aba31f20689d9ab66af7d39b86d976727dc3265b7865",
+      "name_en": "Forest Formation",
+      "printed_path": "1.1",
+      "canonical_path": "1.1",
+      "kind": "classe_folha",
+      "color": "#1f8d49",
+      "descendant_codes": [],
+      "sources": [
+        "legend.pdf",
+        "legend.csv"
+      ]
+    },
+    {
+      "code": 6,
+      "name": "Floresta Alagável",
+      "parent_code": 1,
+      "leaf_codes": [
+        6
+      ],
+      "aliases": [],
+      "beta": false,
+      "source_hash": "19ddb657d66ce1039be8aba31f20689d9ab66af7d39b86d976727dc3265b7865",
+      "name_en": "Floodable Forest",
+      "printed_path": "1.2",
+      "canonical_path": "1.2",
+      "kind": "classe_folha",
+      "color": "#007785",
+      "descendant_codes": [],
+      "sources": [
+        "legend.pdf",
+        "legend.csv"
+      ]
+    },
+    {
+      "code": 4,
+      "name": "Formação Savânica",
+      "parent_code": 1,
+      "leaf_codes": [
+        4
+      ],
+      "aliases": [],
+      "beta": false,
+      "source_hash": "19ddb657d66ce1039be8aba31f20689d9ab66af7d39b86d976727dc3265b7865",
+      "name_en": "Savanna Formation",
+      "printed_path": "1.3",
+      "canonical_path": "1.3",
+      "kind": "classe_folha",
+      "color": "#7dc975",
+      "descendant_codes": [],
+      "sources": [
+        "legend.pdf",
+        "legend.csv"
+      ]
+    },
+    {
+      "code": 7,
+      "name": "Savana Alagada (beta)",
+      "parent_code": 1,
+      "leaf_codes": [
+        7
+      ],
+      "aliases": [],
+      "beta": true,
+      "source_hash": "19ddb657d66ce1039be8aba31f20689d9ab66af7d39b86d976727dc3265b7865",
+      "name_en": "Flooded Savanna (beta)",
+      "printed_path": "1.4",
+      "canonical_path": "1.4",
+      "kind": "classe_folha",
+      "color": "#228c70",
+      "descendant_codes": [],
+      "sources": [
+        "legend.pdf",
+        "legend.csv"
+      ]
+    },
+    {
+      "code": 5,
+      "name": "Mangue",
+      "parent_code": 1,
+      "leaf_codes": [
+        5
+      ],
+      "aliases": [],
+      "beta": false,
+      "source_hash": "19ddb657d66ce1039be8aba31f20689d9ab66af7d39b86d976727dc3265b7865",
+      "name_en": "Mangrove",
+      "printed_path": "1.5",
+      "canonical_path": "1.5",
+      "kind": "classe_folha",
+      "color": "#04381d",
+      "descendant_codes": [],
+      "sources": [
+        "legend.pdf",
+        "legend.csv"
+      ]
+    },
+    {
+      "code": 49,
+      "name": "Restinga Arbórea",
+      "parent_code": 1,
+      "leaf_codes": [
+        49
+      ],
+      "aliases": [],
+      "beta": false,
+      "source_hash": "19ddb657d66ce1039be8aba31f20689d9ab66af7d39b86d976727dc3265b7865",
+      "name_en": "Wooded Sandbank Vegetation",
+      "printed_path": "1.6",
+      "canonical_path": "1.6",
+      "kind": "classe_folha",
+      "color": "#02d659",
+      "descendant_codes": [],
+      "sources": [
+        "legend.pdf",
+        "legend.csv"
+      ]
+    },
+    {
+      "code": 10,
+      "name": "Vegetação Herbácea e Arbustiva",
+      "parent_code": null,
+      "leaf_codes": [
+        11,
+        12,
+        29,
+        32,
+        50,
+        77,
+        84
+      ],
+      "aliases": [],
+      "beta": false,
+      "source_hash": "19ddb657d66ce1039be8aba31f20689d9ab66af7d39b86d976727dc3265b7865",
+      "name_en": "Herbaceous or Shrubby Vegetation",
+      "printed_path": "2",
+      "canonical_path": "2",
+      "kind": "grupo",
+      "color": "#d6bc74",
+      "descendant_codes": [
+        11,
+        12,
+        29,
+        32,
+        50,
+        77,
+        84
+      ],
+      "sources": [
+        "legend.pdf"
+      ]
+    },
+    {
+      "code": 12,
+      "name": "Formação Campestre",
+      "parent_code": 10,
+      "leaf_codes": [
+        12
+      ],
+      "aliases": [],
+      "beta": false,
+      "source_hash": "19ddb657d66ce1039be8aba31f20689d9ab66af7d39b86d976727dc3265b7865",
+      "name_en": "Grassland Formation",
+      "printed_path": "2.1",
+      "canonical_path": "2.1",
+      "kind": "classe_folha",
+      "color": "#d6bc74",
+      "descendant_codes": [],
+      "sources": [
+        "legend.pdf",
+        "legend.csv"
+      ]
+    },
+    {
+      "code": 77,
+      "name": "Formação Herbáceo Arbustiva",
+      "parent_code": 10,
+      "leaf_codes": [
+        77
+      ],
+      "aliases": [],
+      "beta": false,
+      "source_hash": "19ddb657d66ce1039be8aba31f20689d9ab66af7d39b86d976727dc3265b7865",
+      "name_en": "Herbaceous and Shrub Formation",
+      "printed_path": "2.2",
+      "canonical_path": "2.2",
+      "kind": "classe_folha",
+      "color": "#86b074",
+      "descendant_codes": [],
+      "sources": [
+        "legend.pdf",
+        "legend.csv"
+      ]
+    },
+    {
+      "code": 11,
+      "name": "Campo Alagado e Área Pantanosa",
+      "parent_code": 10,
+      "leaf_codes": [
+        11
+      ],
+      "aliases": [],
+      "beta": false,
+      "source_hash": "19ddb657d66ce1039be8aba31f20689d9ab66af7d39b86d976727dc3265b7865",
+      "name_en": "Wetland",
+      "printed_path": "2.3",
+      "canonical_path": "2.3",
+      "kind": "classe_folha",
+      "color": "#519799",
+      "descendant_codes": [],
+      "sources": [
+        "legend.pdf",
+        "legend.csv"
+      ]
+    },
+    {
+      "code": 84,
+      "name": "Marisma (beta)",
+      "parent_code": 10,
+      "leaf_codes": [
+        84
+      ],
+      "aliases": [
+        "Marismas (beta)"
+      ],
+      "beta": true,
+      "source_hash": "19ddb657d66ce1039be8aba31f20689d9ab66af7d39b86d976727dc3265b7865",
+      "name_en": "Salt Marsh (beta)",
+      "printed_path": "2.4",
+      "canonical_path": "2.4",
+      "kind": "classe_folha",
+      "color": "#81dbbf",
+      "descendant_codes": [],
+      "sources": [
+        "legend.pdf",
+        "legend.csv"
+      ]
+    },
+    {
+      "code": 50,
+      "name": "Restinga Herbácea ou Arbustiva",
+      "parent_code": 10,
+      "leaf_codes": [
+        50
+      ],
+      "aliases": [],
+      "beta": false,
+      "source_hash": "19ddb657d66ce1039be8aba31f20689d9ab66af7d39b86d976727dc3265b7865",
+      "name_en": "Herbaceous Sandbank Vegetation",
+      "printed_path": "2.5",
+      "canonical_path": "2.5",
+      "kind": "classe_folha",
+      "color": "#ffaa5f",
+      "descendant_codes": [],
+      "sources": [
+        "legend.pdf",
+        "legend.csv"
+      ]
+    },
+    {
+      "code": 32,
+      "name": "Apicum",
+      "parent_code": 10,
+      "leaf_codes": [
+        32
+      ],
+      "aliases": [],
+      "beta": false,
+      "source_hash": "19ddb657d66ce1039be8aba31f20689d9ab66af7d39b86d976727dc3265b7865",
+      "name_en": "Hypersaline Tidal Flat",
+      "printed_path": "2.6",
+      "canonical_path": "2.6",
+      "kind": "classe_folha",
+      "color": "#fc8114",
+      "descendant_codes": [],
+      "sources": [
+        "legend.pdf",
+        "legend.csv"
+      ]
+    },
+    {
+      "code": 29,
+      "name": "Afloramento Rochoso",
+      "parent_code": 10,
+      "leaf_codes": [
+        29
+      ],
+      "aliases": [],
+      "beta": false,
+      "source_hash": "19ddb657d66ce1039be8aba31f20689d9ab66af7d39b86d976727dc3265b7865",
+      "name_en": "Rocky Outcrop",
+      "printed_path": "2.7",
+      "canonical_path": "2.7",
+      "kind": "classe_folha",
+      "color": "#ad5100",
+      "descendant_codes": [],
+      "sources": [
+        "legend.pdf",
+        "legend.csv"
+      ]
+    },
+    {
+      "code": 14,
+      "name": "Agropecuária",
+      "parent_code": null,
+      "leaf_codes": [
+        9,
+        15,
+        20,
+        21,
+        35,
+        39,
+        40,
+        41,
+        46,
+        47,
+        48,
+        62
+      ],
+      "aliases": [],
+      "beta": false,
+      "source_hash": "19ddb657d66ce1039be8aba31f20689d9ab66af7d39b86d976727dc3265b7865",
+      "name_en": "Farming",
+      "printed_path": "3",
+      "canonical_path": "3",
+      "kind": "grupo",
+      "color": "#ffefc3",
+      "descendant_codes": [
+        9,
+        15,
+        18,
+        19,
+        20,
+        21,
+        35,
+        36,
+        39,
+        40,
+        41,
+        46,
+        47,
+        48,
+        62
+      ],
+      "sources": [
+        "legend.pdf"
+      ]
+    },
+    {
+      "code": 15,
+      "name": "Pastagem",
+      "parent_code": 14,
+      "leaf_codes": [
+        15
+      ],
+      "aliases": [
+        "pastagens"
+      ],
+      "beta": false,
+      "source_hash": "19ddb657d66ce1039be8aba31f20689d9ab66af7d39b86d976727dc3265b7865",
+      "name_en": "Pasture",
+      "printed_path": "3.1",
+      "canonical_path": "3.1",
+      "kind": "classe_folha",
+      "color": "#edde8e",
+      "descendant_codes": [],
+      "sources": [
+        "legend.pdf",
+        "legend.csv"
+      ]
+    },
+    {
+      "code": 18,
+      "name": "Agricultura",
+      "parent_code": 14,
+      "leaf_codes": [
+        20,
+        35,
+        39,
+        40,
+        41,
+        46,
+        47,
+        48,
+        62
+      ],
+      "aliases": [],
+      "beta": false,
+      "source_hash": "19ddb657d66ce1039be8aba31f20689d9ab66af7d39b86d976727dc3265b7865",
+      "name_en": "Agriculture",
+      "printed_path": "3.2",
+      "canonical_path": "3.2",
+      "kind": "grupo",
+      "color": "#e974ed",
+      "descendant_codes": [
+        19,
+        20,
+        35,
+        36,
+        39,
+        40,
+        41,
+        46,
+        47,
+        48,
+        62
+      ],
+      "sources": [
+        "legend.pdf"
+      ]
+    },
+    {
+      "code": 19,
+      "name": "Lavoura Temporária",
+      "parent_code": 18,
+      "leaf_codes": [
+        20,
+        39,
+        40,
+        41,
+        62
+      ],
+      "aliases": [],
+      "beta": false,
+      "source_hash": "19ddb657d66ce1039be8aba31f20689d9ab66af7d39b86d976727dc3265b7865",
+      "name_en": "Temporary Crop",
+      "printed_path": "3.2.1",
+      "canonical_path": "3.2.1",
+      "kind": "grupo",
+      "color": "#c27ba0",
+      "descendant_codes": [
+        20,
+        39,
+        40,
+        41,
+        62
+      ],
+      "sources": [
+        "legend.pdf"
+      ]
+    },
+    {
+      "code": 39,
+      "name": "Soja",
+      "parent_code": 19,
+      "leaf_codes": [
+        39
+      ],
+      "aliases": [],
+      "beta": false,
+      "source_hash": "19ddb657d66ce1039be8aba31f20689d9ab66af7d39b86d976727dc3265b7865",
+      "name_en": "Soybean",
+      "printed_path": "3.2.1.1",
+      "canonical_path": "3.2.1.1",
+      "kind": "classe_folha",
+      "color": "#f5b3c8",
+      "descendant_codes": [],
+      "sources": [
+        "legend.pdf",
+        "legend.csv"
+      ]
+    },
+    {
+      "code": 20,
+      "name": "Cana",
+      "parent_code": 19,
+      "leaf_codes": [
+        20
+      ],
+      "aliases": [],
+      "beta": false,
+      "source_hash": "19ddb657d66ce1039be8aba31f20689d9ab66af7d39b86d976727dc3265b7865",
+      "name_en": "Sugar cane",
+      "printed_path": "3.2.1.2",
+      "canonical_path": "3.2.1.2",
+      "kind": "classe_folha",
+      "color": "#db7093",
+      "descendant_codes": [],
+      "sources": [
+        "legend.pdf",
+        "legend.csv"
+      ]
+    },
+    {
+      "code": 40,
+      "name": "Arroz",
+      "parent_code": 19,
+      "leaf_codes": [
+        40
+      ],
+      "aliases": [],
+      "beta": false,
+      "source_hash": "19ddb657d66ce1039be8aba31f20689d9ab66af7d39b86d976727dc3265b7865",
+      "name_en": "Rice",
+      "printed_path": "3.2.1.3",
+      "canonical_path": "3.2.1.3",
+      "kind": "classe_folha",
+      "color": "#c71585",
+      "descendant_codes": [],
+      "sources": [
+        "legend.pdf",
+        "legend.csv"
+      ]
+    },
+    {
+      "code": 62,
+      "name": "Algodão (beta)",
+      "parent_code": 19,
+      "leaf_codes": [
+        62
+      ],
+      "aliases": [],
+      "beta": true,
+      "source_hash": "19ddb657d66ce1039be8aba31f20689d9ab66af7d39b86d976727dc3265b7865",
+      "name_en": "Cotton (beta)",
+      "printed_path": "3.2.1.4",
+      "canonical_path": "3.2.1.4",
+      "kind": "classe_folha",
+      "color": "#ff69b4",
+      "descendant_codes": [],
+      "sources": [
+        "legend.pdf",
+        "legend.csv"
+      ]
+    },
+    {
+      "code": 41,
+      "name": "Outras Lavouras Temporárias",
+      "parent_code": 19,
+      "leaf_codes": [
+        41
+      ],
+      "aliases": [],
+      "beta": false,
+      "source_hash": "19ddb657d66ce1039be8aba31f20689d9ab66af7d39b86d976727dc3265b7865",
+      "name_en": "Other Temporary Crops",
+      "printed_path": "3.2.1.5",
+      "canonical_path": "3.2.1.5",
+      "kind": "classe_folha",
+      "color": "#f54ca9",
+      "descendant_codes": [],
+      "sources": [
+        "legend.pdf",
+        "legend.csv"
+      ]
+    },
+    {
+      "code": 36,
+      "name": "Lavoura Perene",
+      "parent_code": 18,
+      "leaf_codes": [
+        35,
+        46,
+        47,
+        48
+      ],
+      "aliases": [],
+      "beta": false,
+      "source_hash": "19ddb657d66ce1039be8aba31f20689d9ab66af7d39b86d976727dc3265b7865",
+      "name_en": "Perennial Crop",
+      "printed_path": "3.2.2",
+      "canonical_path": "3.2.2",
+      "kind": "grupo",
+      "color": "#d082de",
+      "descendant_codes": [
+        35,
+        46,
+        47,
+        48
+      ],
+      "sources": [
+        "legend.pdf"
+      ]
+    },
+    {
+      "code": 46,
+      "name": "Café",
+      "parent_code": 36,
+      "leaf_codes": [
+        46
+      ],
+      "aliases": [],
+      "beta": false,
+      "source_hash": "19ddb657d66ce1039be8aba31f20689d9ab66af7d39b86d976727dc3265b7865",
+      "name_en": "Coffee",
+      "printed_path": "3.2.2.1",
+      "canonical_path": "3.2.2.1",
+      "kind": "classe_folha",
+      "color": "#d68fe2",
+      "descendant_codes": [],
+      "sources": [
+        "legend.pdf",
+        "legend.csv"
+      ]
+    },
+    {
+      "code": 47,
+      "name": "Citrus",
+      "parent_code": 36,
+      "leaf_codes": [
+        47
+      ],
+      "aliases": [],
+      "beta": false,
+      "source_hash": "19ddb657d66ce1039be8aba31f20689d9ab66af7d39b86d976727dc3265b7865",
+      "name_en": "Citrus",
+      "printed_path": "3.2.2.2",
+      "canonical_path": "3.2.2.2",
+      "kind": "classe_folha",
+      "color": "#9932cc",
+      "descendant_codes": [],
+      "sources": [
+        "legend.pdf",
+        "legend.csv"
+      ]
+    },
+    {
+      "code": 35,
+      "name": "Dendê",
+      "parent_code": 36,
+      "leaf_codes": [
+        35
+      ],
+      "aliases": [],
+      "beta": false,
+      "source_hash": "19ddb657d66ce1039be8aba31f20689d9ab66af7d39b86d976727dc3265b7865",
+      "name_en": "Palm Oil",
+      "printed_path": "3.2.2.3",
+      "canonical_path": "3.2.2.3",
+      "kind": "classe_folha",
+      "color": "#9065d0",
+      "descendant_codes": [],
+      "sources": [
+        "legend.pdf",
+        "legend.csv"
+      ]
+    },
+    {
+      "code": 48,
+      "name": "Outras Lavouras Perenes",
+      "parent_code": 36,
+      "leaf_codes": [
+        48
+      ],
+      "aliases": [],
+      "beta": false,
+      "source_hash": "19ddb657d66ce1039be8aba31f20689d9ab66af7d39b86d976727dc3265b7865",
+      "name_en": "Other Perennial Crops",
+      "printed_path": "3.2.1.4",
+      "canonical_path": "3.2.2.4",
+      "kind": "classe_folha",
+      "color": "#e6ccff",
+      "descendant_codes": [],
+      "sources": [
+        "legend.pdf",
+        "legend.csv"
+      ]
+    },
+    {
+      "code": 9,
+      "name": "Silvicultura",
+      "parent_code": 14,
+      "leaf_codes": [
+        9
+      ],
+      "aliases": [],
+      "beta": false,
+      "source_hash": "19ddb657d66ce1039be8aba31f20689d9ab66af7d39b86d976727dc3265b7865",
+      "name_en": "Forest Plantation",
+      "printed_path": "3.3",
+      "canonical_path": "3.3",
+      "kind": "classe_folha",
+      "color": "#7a5900",
+      "descendant_codes": [],
+      "sources": [
+        "legend.pdf",
+        "legend.csv"
+      ]
+    },
+    {
+      "code": 21,
+      "name": "Mosaico de Usos",
+      "parent_code": 14,
+      "leaf_codes": [
+        21
+      ],
+      "aliases": [
+        "Mosaico de usos"
+      ],
+      "beta": false,
+      "source_hash": "19ddb657d66ce1039be8aba31f20689d9ab66af7d39b86d976727dc3265b7865",
+      "name_en": "Mosaic of Uses",
+      "printed_path": "3.4",
+      "canonical_path": "3.4",
+      "kind": "classe_folha",
+      "color": "#ffefc3",
+      "descendant_codes": [],
+      "sources": [
+        "legend.pdf",
+        "legend.csv"
+      ]
+    },
+    {
+      "code": 22,
+      "name": "Área não vegetada",
+      "parent_code": null,
+      "leaf_codes": [
+        23,
+        24,
+        25,
+        30,
+        75,
+        91
+      ],
+      "aliases": [],
+      "beta": false,
+      "source_hash": "19ddb657d66ce1039be8aba31f20689d9ab66af7d39b86d976727dc3265b7865",
+      "name_en": "Non vegetated area",
+      "printed_path": "4",
+      "canonical_path": "4",
+      "kind": "grupo",
+      "color": "#d4271e",
+      "descendant_codes": [
+        23,
+        24,
+        25,
+        30,
+        75,
+        91
+      ],
+      "sources": [
+        "legend.pdf"
+      ]
+    },
+    {
+      "code": 23,
+      "name": "Praia, Duna e Areal",
+      "parent_code": 22,
+      "leaf_codes": [
+        23
+      ],
+      "aliases": [],
+      "beta": false,
+      "source_hash": "19ddb657d66ce1039be8aba31f20689d9ab66af7d39b86d976727dc3265b7865",
+      "name_en": "Beach, Dune and Sand Spot",
+      "printed_path": "4.1",
+      "canonical_path": "4.1",
+      "kind": "classe_folha",
+      "color": "#ffa07a",
+      "descendant_codes": [],
+      "sources": [
+        "legend.pdf",
+        "legend.csv"
+      ]
+    },
+    {
+      "code": 24,
+      "name": "Área Urbanizada",
+      "parent_code": 22,
+      "leaf_codes": [
+        24
+      ],
+      "aliases": [
+        "área urbana",
+        "áreas urbanizadas"
+      ],
+      "beta": false,
+      "source_hash": "19ddb657d66ce1039be8aba31f20689d9ab66af7d39b86d976727dc3265b7865",
+      "name_en": "Urban Area",
+      "printed_path": "4.2",
+      "canonical_path": "4.2",
+      "kind": "classe_folha",
+      "color": "#d4271e",
+      "descendant_codes": [],
+      "sources": [
+        "legend.pdf",
+        "legend.csv"
+      ]
+    },
+    {
+      "code": 30,
+      "name": "Mineração",
+      "parent_code": 22,
+      "leaf_codes": [
+        30
+      ],
+      "aliases": [],
+      "beta": false,
+      "source_hash": "19ddb657d66ce1039be8aba31f20689d9ab66af7d39b86d976727dc3265b7865",
+      "name_en": "Mining",
+      "printed_path": "4.3",
+      "canonical_path": "4.3",
+      "kind": "classe_folha",
+      "color": "#9c0027",
+      "descendant_codes": [],
+      "sources": [
+        "legend.pdf",
+        "legend.csv"
+      ]
+    },
+    {
+      "code": 75,
+      "name": "Usina Fotovoltaica",
+      "parent_code": 22,
+      "leaf_codes": [
+        75
+      ],
+      "aliases": [],
+      "beta": false,
+      "source_hash": "19ddb657d66ce1039be8aba31f20689d9ab66af7d39b86d976727dc3265b7865",
+      "name_en": "Photovoltaic Power Plant",
+      "printed_path": "4.4",
+      "canonical_path": "4.4",
+      "kind": "classe_folha",
+      "color": "#757272",
+      "descendant_codes": [],
+      "sources": [
+        "legend.pdf",
+        "legend.csv"
+      ]
+    },
+    {
+      "code": 91,
+      "name": "Parque eólico (beta)",
+      "parent_code": 22,
+      "leaf_codes": [
+        91
+      ],
+      "aliases": [],
+      "beta": true,
+      "source_hash": "19ddb657d66ce1039be8aba31f20689d9ab66af7d39b86d976727dc3265b7865",
+      "name_en": "Wind farm (beta)",
+      "printed_path": "4.5",
+      "canonical_path": "4.5",
+      "kind": "classe_folha",
+      "color": "#403d3e",
+      "descendant_codes": [],
+      "sources": [
+        "legend.pdf",
+        "legend.csv"
+      ]
+    },
+    {
+      "code": 25,
+      "name": "Outras Áreas não Vegetadas",
+      "parent_code": 22,
+      "leaf_codes": [
+        25
+      ],
+      "aliases": [
+        "Outras Área não Vegetadas"
+      ],
+      "beta": false,
+      "source_hash": "19ddb657d66ce1039be8aba31f20689d9ab66af7d39b86d976727dc3265b7865",
+      "name_en": "Other non Vegetated Areas",
+      "printed_path": "4.6",
+      "canonical_path": "4.6",
+      "kind": "classe_folha",
+      "color": "#db4d4f",
+      "descendant_codes": [],
+      "sources": [
+        "legend.pdf",
+        "legend.csv"
+      ]
+    },
+    {
+      "code": 26,
+      "name": "Corpo D'água",
+      "parent_code": null,
+      "leaf_codes": [
+        31,
+        33
+      ],
+      "aliases": [
+        "grupo Corpo D'água",
+        "água",
+        "superfície de água"
+      ],
+      "beta": false,
+      "source_hash": "19ddb657d66ce1039be8aba31f20689d9ab66af7d39b86d976727dc3265b7865",
+      "name_en": "Water",
+      "printed_path": "5",
+      "canonical_path": "5",
+      "kind": "grupo",
+      "color": "#2532e4",
+      "descendant_codes": [
+        31,
+        33
+      ],
+      "sources": [
+        "legend.pdf"
+      ]
+    },
+    {
+      "code": 33,
+      "name": "Rio, Lago e Oceano",
+      "parent_code": 26,
+      "leaf_codes": [
+        33
+      ],
+      "aliases": [
+        "rio/lago/oceano",
+        "água",
+        "superfície de água"
+      ],
+      "beta": false,
+      "source_hash": "19ddb657d66ce1039be8aba31f20689d9ab66af7d39b86d976727dc3265b7865",
+      "name_en": "River, Lake and Ocean",
+      "printed_path": "5.1",
+      "canonical_path": "5.1",
+      "kind": "classe_folha",
+      "color": "#2532e4",
+      "descendant_codes": [],
+      "sources": [
+        "legend.pdf",
+        "legend.csv"
+      ]
+    },
+    {
+      "code": 31,
+      "name": "Aquicultura",
+      "parent_code": 26,
+      "leaf_codes": [
+        31
+      ],
+      "aliases": [],
+      "beta": false,
+      "source_hash": "19ddb657d66ce1039be8aba31f20689d9ab66af7d39b86d976727dc3265b7865",
+      "name_en": "Aquaculture",
+      "printed_path": "5.2",
+      "canonical_path": "5.2",
+      "kind": "classe_folha",
+      "color": "#091077",
+      "descendant_codes": [],
+      "sources": [
+        "legend.pdf",
+        "legend.csv"
+      ]
+    }
+  ],
+  "initial_leaf_codes": [
+    3,
+    15,
+    24,
+    33
+  ]
+}

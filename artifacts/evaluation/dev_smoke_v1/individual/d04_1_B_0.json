@@ -1,0 +1,170 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "9f9225242f404ef29eefe630dd614d0b",
+  "case_id": "d04_1",
+  "family_id": "d04",
+  "territory_codes": [
+    "2410900"
+  ],
+  "condition": "B",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:34:40.819364+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Qual a variação percentual de Mangue em Riachuelo/RN entre 2015 e 2025, em relação à área inicial?",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": "d8744718d7d317ffab5bd6b738b67ed7f45489fbf76cc062c06a2d70186ac9fb",
+  "messages_sha256": "f4198ed844c878c09856049333cff17399625fd82d6540b594d1168322f8c59b",
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "variacao_percentual",
+      "unit": "percentual",
+      "territory_codes": [
+        "2410900"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        5
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": "area_inicial",
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2410900",
+        "years": [
+          2015,
+          2025
+        ],
+        "value": null,
+        "unit": "percentual",
+        "undefined_reason": "base_inicial_zero",
+        "denominators_ha": [],
+        "rank": null
+      }
+    ],
+    "clarification_field": null,
+    "reason": "variacao_percentual"
+  },
+  "final_answer": "{\"status\": \"respondida\", \"plan\": {\"operation\": \"comparacao_temporal\", \"metric\": \"variacao_percentual\", \"unit\": \"percentual\", \"territory_codes\": [\"2410900\"], \"scope_uf\": \"RN\", \"class_codes\": [5], \"years\": [2015, 2025], \"denominator\": \"area_inicial\", \"direction\": \"desc\", \"limit\": null}, \"values\": [{\"territory_code\": \"2410900\", \"years\": [2015, 2025], \"value\": null, \"unit\": \"percentual\", \"undefined_reason\": \"base_inicial_zero\", \"denominators_ha\": [], \"rank\": null}], \"clarification_field\": null, \"reason\": \"variacao_percentual\"}",
+  "plan": {
+    "operation": "comparacao_temporal",
+    "metric": "variacao_percentual",
+    "unit": "percentual",
+    "territory_codes": [
+      "2410900"
+    ],
+    "scope_uf": "RN",
+    "class_codes": [
+      5
+    ],
+    "years": [
+      2015,
+      2025
+    ],
+    "denominator": "area_inicial",
+    "direction": "desc",
+    "limit": null
+  },
+  "result": [
+    {
+      "territory_code": "2410900",
+      "years": [
+        2015,
+        2025
+      ],
+      "value": null,
+      "unit": "percentual",
+      "undefined_reason": "base_inicial_zero",
+      "denominators_ha": [],
+      "rank": null
+    }
+  ],
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "messages_sha256": "f4198ed844c878c09856049333cff17399625fd82d6540b594d1168322f8c59b",
+      "issues": [
+        {
+          "path": [],
+          "code": "value_error"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 5739,
+        "total_tokens": 6601,
+        "completion_tokens": 862
+      },
+      "latency_seconds": 10.579912098008208,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "b34949e859eb754f23fe1435963f120626ee62cb29cbbdc5d73a8faf3c937f64",
+      "output_chars": 347,
+      "state": "invalida"
+    },
+    {
+      "number": 2,
+      "kind": "reparo",
+      "messages_sha256": "91214b183cf221f3eb3328214ccd6f5e7311a6fb92edb6f812f55f71f5883ba0",
+      "issues": [],
+      "usage": {
+        "prompt_tokens": 5774,
+        "total_tokens": 6680,
+        "completion_tokens": 906
+      },
+      "latency_seconds": 8.184428736916743,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "bf30be115d1a4afb89dc1f3422ce01cd02ef458de770b93f6bbd3f5c0370eb79",
+      "output_chars": 609,
+      "state": "valida"
+    }
+  ],
+  "latency_seconds": 18.769188618985936,
+  "scores": {
+    "status": true,
+    "plan": true,
+    "values": false,
+    "clarification": null,
+    "correct": false
+  },
+  "cost": null,
+  "source_context": {
+    "data_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+  },
+  "C_session_id": null,
+  "C_turn_id": null,
+  "C_candidate_intent": null,
+  "C_decision": null
+}

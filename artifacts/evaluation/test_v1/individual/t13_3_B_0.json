@@ -1,0 +1,170 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "fa7686659da9449d811d154641021724",
+  "case_id": "t13_3",
+  "family_id": "teste_delta",
+  "territory_codes": [
+    "2401008"
+  ],
+  "condition": "B",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:45:28.611126+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Dê o saldo líquido em m2 de Rio, Lago e Oceano em Apodi/RN: cobertura final de 2025 menos inicial de 2015.",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": "e1a844bb8517e03ba39d5234efc3ce3cf3ec1bd7caf0145b53e082d496e6b822",
+  "messages_sha256": "fbb59eefa0b79860c05bad3e80d13e85cdeb5855e17b38a460c3b4226ef67b84",
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_liquida",
+      "unit": "m2",
+      "territory_codes": [
+        "2401008"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        33
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2401008",
+        "years": [
+          2015,
+          2025
+        ],
+        "value": 11404253.572228018,
+        "unit": "m2",
+        "undefined_reason": null,
+        "denominators_ha": [],
+        "rank": null
+      }
+    ],
+    "clarification_field": null,
+    "reason": "saldo_liquido"
+  },
+  "final_answer": "{\"status\": \"respondida\", \"plan\": {\"operation\": \"comparacao_temporal\", \"metric\": \"diferenca_liquida\", \"unit\": \"m2\", \"territory_codes\": [\"2401008\"], \"scope_uf\": \"RN\", \"class_codes\": [33], \"years\": [2015, 2025], \"denominator\": null, \"direction\": \"desc\", \"limit\": null}, \"values\": [{\"territory_code\": \"2401008\", \"years\": [2015, 2025], \"value\": 11404253.572228018, \"unit\": \"m2\", \"undefined_reason\": null, \"denominators_ha\": [], \"rank\": null}], \"clarification_field\": null, \"reason\": \"saldo_liquido\"}",
+  "plan": {
+    "operation": "comparacao_temporal",
+    "metric": "diferenca_liquida",
+    "unit": "m2",
+    "territory_codes": [
+      "2401008"
+    ],
+    "scope_uf": "RN",
+    "class_codes": [
+      33
+    ],
+    "years": [
+      2015,
+      2025
+    ],
+    "denominator": null,
+    "direction": "desc",
+    "limit": null
+  },
+  "result": [
+    {
+      "territory_code": "2401008",
+      "years": [
+        2015,
+        2025
+      ],
+      "value": 11404253.572228018,
+      "unit": "m2",
+      "undefined_reason": null,
+      "denominators_ha": [],
+      "rank": null
+    }
+  ],
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "messages_sha256": "fbb59eefa0b79860c05bad3e80d13e85cdeb5855e17b38a460c3b4226ef67b84",
+      "issues": [
+        {
+          "path": [],
+          "code": "value_error"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 5721,
+        "total_tokens": 6490,
+        "completion_tokens": 769
+      },
+      "latency_seconds": 7.874792121001519,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "c93848d0ef6d25623efdb313fb92247b5925e923f16d599ec4578426f76f16bf",
+      "output_chars": 323,
+      "state": "invalida"
+    },
+    {
+      "number": 2,
+      "kind": "reparo",
+      "messages_sha256": "15fa91e2176c64d241bb6079133da5aa61346d006f4408e7153613bfb290b4f0",
+      "issues": [],
+      "usage": {
+        "prompt_tokens": 5756,
+        "total_tokens": 6731,
+        "completion_tokens": 975
+      },
+      "latency_seconds": 9.124757241108455,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "194bad046ab5cf3539a2f55cb11ca769acffe8f8fd1873319717708e04335cd5",
+      "output_chars": 606,
+      "state": "valida"
+    }
+  ],
+  "latency_seconds": 17.00271289702505,
+  "scores": {
+    "status": true,
+    "plan": true,
+    "values": true,
+    "clarification": null,
+    "correct": true
+  },
+  "cost": null,
+  "source_context": {
+    "data_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+  },
+  "C_session_id": null,
+  "C_turn_id": null,
+  "C_candidate_intent": null,
+  "C_decision": null
+}

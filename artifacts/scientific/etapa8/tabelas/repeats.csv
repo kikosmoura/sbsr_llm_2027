@@ -1,0 +1,13 @@
+case_id,condition,same_answer,same_correctness
+t01_1,A,True,True
+t01_1,B,True,True
+t01_1,C,True,True
+t15_1,A,True,True
+t15_1,B,True,True
+t15_1,C,True,True
+t25_1,A,True,True
+t25_1,B,True,True
+t25_1,C,True,True
+t28_1,A,False,False
+t28_1,B,True,True
+t28_1,C,True,True

@@ -1,0 +1,193 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "fa7686659da9449d811d154641021724",
+  "case_id": "t26_4",
+  "family_id": "teste_ranking",
+  "territory_codes": [],
+  "condition": "C",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:54:28.928375+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Dentro do RN, quais são os cinco municípios com maior área de Pastagem em 2025, em hectares?",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": null,
+  "messages_sha256": null,
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "dados_indisponiveis",
+    "plan": {
+      "operation": "ranking_delimitado",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": 5
+    },
+    "values": [],
+    "clarification_field": null,
+    "reason": "ranking_com_cobertura_incompleta"
+  },
+  "final_answer": "As estatisticas completas necessarias ainda nao foram materializadas.",
+  "plan": {
+    "operation": "ranking_delimitado",
+    "metric": "area",
+    "unit": "ha",
+    "territory_codes": [],
+    "scope_uf": "RN",
+    "class_codes": [
+      15
+    ],
+    "years": [
+      2025
+    ],
+    "denominator": null,
+    "direction": "desc",
+    "limit": 5
+  },
+  "result": null,
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "state": "valida",
+      "latency_seconds": 10.349004035932012,
+      "usage": {
+        "prompt_tokens": 4567,
+        "total_tokens": 5342,
+        "completion_tokens": 775
+      },
+      "chat_requests": 1,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "output_sha256": "38d6a5c6d1b50f44562f2dad057072bc74d27c059338ac710b102dbb8f0b923f",
+      "output_chars": 413,
+      "candidate": {
+        "action": "consultar",
+        "intent": {
+          "operation": "ranking_delimitado",
+          "territories": [],
+          "scope_uf_mention": "RN",
+          "classes": [
+            {
+              "mention": "Pastagem"
+            }
+          ],
+          "years": [
+            2025
+          ],
+          "metric": "area",
+          "metric_mention": "área",
+          "unit_mention": "hectares",
+          "denominator": null,
+          "direction": "desc",
+          "limit": 5
+        },
+        "clarification_fields": []
+      },
+      "issues": [],
+      "gateway_error": null,
+      "http_status": null,
+      "messages_sha256": "455ea53753be0dd1cb818ab5128f15b722730a72d182b00550d70496ed2f1a8b",
+      "explanation_fallback": null
+    }
+  ],
+  "latency_seconds": 10.435667251935229,
+  "scores": {
+    "status": true,
+    "plan": true,
+    "values": null,
+    "clarification": null,
+    "correct": true
+  },
+  "cost": null,
+  "source_context": {
+    "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+    "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+    "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+    "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+  },
+  "C_session_id": "8508d04d494649d4ac4d5c56e4439e01",
+  "C_turn_id": "b083a87d2ad749adb61f377eaf8ab59f",
+  "C_candidate_intent": {
+    "schema_version": "intencao-semantica-v1",
+    "operation": "ranking_delimitado",
+    "territories": [],
+    "scope_uf": "RN",
+    "classes": [
+      {
+        "code": 15,
+        "term": null
+      }
+    ],
+    "years": [
+      2025
+    ],
+    "metric": "area",
+    "metric_term": null,
+    "unit": "ha",
+    "unit_term": null,
+    "denominator": null,
+    "direction": "desc",
+    "limit": 5,
+    "requested_concept": "cobertura"
+  },
+  "C_decision": {
+    "status": "dados_indisponiveis",
+    "reason": "ranking_com_cobertura_incompleta",
+    "message": "As estatisticas completas necessarias ainda nao foram materializadas.",
+    "normalized_plan": {
+      "operation": "ranking_delimitado",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": 5
+    },
+    "territory_candidates": [],
+    "class_candidates": [],
+    "notes": [
+      "Selecoes sem cobertura completa: 1."
+    ],
+    "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+    "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9",
+    "capabilities_sha256": "91d83a3973e66c772f3db8942bee78b526e737d54ae89d464cd9d0385eb92321"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "class_codes": [
+    24
+  ],
+  "denominator": "participacao_por_ano",
+  "metric": "diferenca_pontos_percentuais",
+  "operation": "comparacao_temporal",
+  "territory_codes": [
+    "2408102"
+  ],
+  "unit": "pontos_percentuais",
+  "years": [
+    2015,
+    2025
+  ]
+}

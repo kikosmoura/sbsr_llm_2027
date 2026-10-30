@@ -1,0 +1,420 @@
+{
+  "schema_version": "controle-contrato-caso-v1",
+  "run_id": "4b61f2ecb5454fce9cf4325f3b3d43fd",
+  "case_id": "d03_1",
+  "family_id": "d03",
+  "territory_codes": [
+    "2410900"
+  ],
+  "condition": "C_eq",
+  "repeat": 0,
+  "integration_kind": "gateway_real",
+  "created_at": "2026-10-21T14:54:55.207982+00:00",
+  "freeze_sha256": "55593ae2e52cbd2890ddce5bfed4183977a20b43a9c95123ba43f53e2b1332f0",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 4096,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "native_tools": false,
+    "native_response_format": false,
+    "workers": 3
+  },
+  "question": "Qual a participação de Pastagem na área observada de Riachuelo/RN em 2015?",
+  "fixed_plan": {
+    "operation": "participacao",
+    "metric": "participacao",
+    "unit": "percentual",
+    "territory_codes": [
+      "2410900"
+    ],
+    "scope_uf": "RN",
+    "class_codes": [
+      15
+    ],
+    "years": [
+      2015
+    ],
+    "denominator": "area_observada",
+    "direction": "desc",
+    "limit": null
+  },
+  "common_input_sha256": "9b50203a08d9c8f2d735e0ef70d280ed0f2f3584e91d3d88bc820d6c72e0637b",
+  "output_contract_sha256": "7cb672668bdaf0cb31f785651d91ec6475f990de121edab04b748bd0da63c955",
+  "system_sha256": "2805f7312e5288c2499d8bc4b6fd55f3a0adc3b8d5ea53aab2533894c62b290d",
+  "messages_sha256": "ec76d754a1a7b76e6f2d7059df5918c9e7131a5121aae464f438125622d095f0",
+  "execution_observations": [
+    {
+      "status": "respondida",
+      "values": [
+        {
+          "territory_code": "2410900",
+          "years": [
+            2015
+          ],
+          "value": 33.03461206717101,
+          "unit": "percentual",
+          "undefined_reason": null,
+          "denominators_ha": [
+            26287.69526975249
+          ],
+          "rank": null
+        }
+      ],
+      "reason": "consulta_executada"
+    }
+  ],
+  "executor_result": {
+    "schema_version": "resposta-consulta-v1",
+    "status": "respondida",
+    "reason": "consulta_executada",
+    "message": "Riachuelo/RN (IBGE 2410900): participação na área observada de Pastagem [15], em 2015: 33,03 %. Denominador: area observada no ano e suporte selecionados (26.287,70 ha).\nColeção 11; revisão desconhecida; malha edição desconhecida; método ellipsoid-linear-lonlat-fractional-v1; execução a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802.",
+    "answer_id": "7dbe4c36d375453770953b5320ca81600c1c46feaebef5bb053931836b816c1c",
+    "plan_id": "9f98bf0d5f19aa7e4ed110cc7284e00ecfee2b9a36872a2419749b05a6a8db81",
+    "executor_sha256": "64bb18ecbfecf2fd623d8fd10e616a1f816bbf529feeec5749f554ac7d4ed81a",
+    "requested_plan": {
+      "operation": "participacao",
+      "metric": "participacao",
+      "unit": "percentual",
+      "territory_codes": [
+        "2410900"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2015
+      ],
+      "denominator": "area_observada",
+      "direction": "desc",
+      "limit": null
+    },
+    "plan": {
+      "operation": "participacao",
+      "metric": "participacao",
+      "unit": "percentual",
+      "territory_codes": [
+        "2410900"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2015
+      ],
+      "denominator": "area_observada",
+      "direction": "desc",
+      "limit": null
+    },
+    "evidence": [
+      {
+        "evidence_id": "db14715571929875c6d122dfc12cae0ae5375db87e27453913bfbeafa0af1ac8",
+        "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+        "territory": {
+          "kind": "municipio",
+          "code": "2410900",
+          "name": "Riachuelo",
+          "uf": "RN",
+          "geometry_hash": "401955e758b1dc83707a1b6282dbed7c3e69e7a451e5b5d5b2b50245ddacf900",
+          "edition": null
+        },
+        "class_codes": [
+          15
+        ],
+        "years": [
+          2015
+        ],
+        "collection": 11,
+        "source_revision": null,
+        "source_ids": [
+          "run:a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+          "mesh:3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+          "classes:04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+          "areas.parquet:6f1b400f79a19b67d09f9f932c76c7e17c505425fbe34e4f2b72419e8d2782ad",
+          "quality.parquet:3886447582d8ff9b9c7fb518b2d20fa41d2b2ef46f238d3ae0b3e7b33bf5e423",
+          "mirror:fd0a4f02551f26230b156d60f6f409dcadb9d198bb56de37ec055b47e2d1076e",
+          "crop:99c7a24c07d0b6cf29969ea2385592b9f3e0845b667b1877c7e163e3fd17739a"
+        ],
+        "area_method": "ellipsoid-linear-lonlat-fractional-v1",
+        "quality": {
+          "state": "completo",
+          "observed_area_ha": 26287.69526975249,
+          "nodata_area_ha": 0.0,
+          "unknown_codes": [],
+          "common_support_id": null,
+          "area_method": "ellipsoid-linear-lonlat-fractional-v1",
+          "notes": [
+            "Revisao oficial do espelho e edicao territorial nao comprovadas."
+          ]
+        },
+        "plan_id": "9f98bf0d5f19aa7e4ed110cc7284e00ecfee2b9a36872a2419749b05a6a8db81",
+        "metric": "participacao",
+        "requested_class_codes": [
+          15
+        ],
+        "class_names": [
+          "Pastagem [15]"
+        ],
+        "observations": [
+          {
+            "year": 2015,
+            "class_area_ha": 8684.038153762798,
+            "observed_area_ha": 26287.69526975249,
+            "support": "anual",
+            "nodata_area_ha": 0.0,
+            "unknown_area_ha": 0.0,
+            "outside_raster_area_ha": 0.0
+          }
+        ],
+        "denominator_definition": "area observada no ano e suporte selecionados",
+        "denominator_values_ha": [
+          26287.69526975249
+        ],
+        "provenance": "municipio_direto",
+        "mesh_sha256": "3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+        "catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+        "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+        "sources": [
+          {
+            "source_id": "run:a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+            "kind": "execucao",
+            "sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "mesh:3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+            "kind": "malha",
+            "sha256": "3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "classes:04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+            "kind": "catalogo",
+            "sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "areas.parquet:6f1b400f79a19b67d09f9f932c76c7e17c505425fbe34e4f2b72419e8d2782ad",
+            "kind": "particao_areas",
+            "sha256": "6f1b400f79a19b67d09f9f932c76c7e17c505425fbe34e4f2b72419e8d2782ad",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "quality.parquet:3886447582d8ff9b9c7fb518b2d20fa41d2b2ef46f238d3ae0b3e7b33bf5e423",
+            "kind": "particao_qualidade",
+            "sha256": "3886447582d8ff9b9c7fb518b2d20fa41d2b2ef46f238d3ae0b3e7b33bf5e423",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "mirror:fd0a4f02551f26230b156d60f6f409dcadb9d198bb56de37ec055b47e2d1076e",
+            "kind": "raster_espelho",
+            "sha256": null,
+            "year": 2015,
+            "public_url": "https://storage.example.invalid/BUCKET_NAME/brazil_coverage-col11_2015.tif",
+            "etag": "\"c0f687289217d0c8c7da1caa33827855-138\""
+          },
+          {
+            "source_id": "crop:99c7a24c07d0b6cf29969ea2385592b9f3e0845b667b1877c7e163e3fd17739a",
+            "kind": "recorte",
+            "sha256": "99c7a24c07d0b6cf29969ea2385592b9f3e0845b667b1877c7e163e3fd17739a",
+            "year": 2015,
+            "public_url": null,
+            "etag": null
+          }
+        ]
+      }
+    ],
+    "values": [
+      {
+        "evidence_id": "db14715571929875c6d122dfc12cae0ae5375db87e27453913bfbeafa0af1ac8",
+        "value": 33.03461206717101,
+        "unit": "percentual",
+        "denominator_value": 26287.69526975249,
+        "undefined_reason": null,
+        "metric": "participacao",
+        "area_value_ha": null,
+        "denominator_unit": "ha",
+        "rank": null
+      }
+    ],
+    "execution": {
+      "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+      "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+      "collection": 11,
+      "source_revision": null,
+      "territorial_edition": null,
+      "method": "ellipsoid-linear-lonlat-fractional-v1",
+      "mesh_sha256": "3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+      "catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+      "years": [
+        2015
+      ],
+      "class_names": [
+        "Pastagem [15]"
+      ],
+      "sources": [
+        {
+          "source_id": "run:a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+          "kind": "execucao",
+          "sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+          "year": null,
+          "public_url": null,
+          "etag": null
+        },
+        {
+          "source_id": "mesh:3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+          "kind": "malha",
+          "sha256": "3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+          "year": null,
+          "public_url": null,
+          "etag": null
+        },
+        {
+          "source_id": "classes:04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+          "kind": "catalogo",
+          "sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+          "year": null,
+          "public_url": null,
+          "etag": null
+        },
+        {
+          "source_id": "mirror:fd0a4f02551f26230b156d60f6f409dcadb9d198bb56de37ec055b47e2d1076e",
+          "kind": "raster_espelho",
+          "sha256": null,
+          "year": 2015,
+          "public_url": "https://storage.example.invalid/BUCKET_NAME/brazil_coverage-col11_2015.tif",
+          "etag": "\"c0f687289217d0c8c7da1caa33827855-138\""
+        },
+        {
+          "source_id": "crop:99c7a24c07d0b6cf29969ea2385592b9f3e0845b667b1877c7e163e3fd17739a",
+          "kind": "recorte",
+          "sha256": "99c7a24c07d0b6cf29969ea2385592b9f3e0845b667b1877c7e163e3fd17739a",
+          "year": 2015,
+          "public_url": null,
+          "etag": null
+        }
+      ]
+    },
+    "ranking": null,
+    "notes": [
+      "Valores sem arredondamento no JSON/CSV; texto com duas casas decimais.",
+      "Diferenca liquida nao mede perda bruta, desmatamento ou causas."
+    ]
+  },
+  "observed": {
+    "status": "respondida",
+    "values": [
+      {
+        "territory_code": "2410900",
+        "years": [
+          2015
+        ],
+        "value": 33.03461206717101,
+        "unit": "percentual",
+        "undefined_reason": null,
+        "denominators_ha": [
+          26287.69526975249
+        ],
+        "rank": null
+      }
+    ],
+    "reason": "consulta_executada",
+    "plan": {
+      "operation": "participacao",
+      "metric": "participacao",
+      "unit": "percentual",
+      "territory_codes": [
+        "2410900"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2015
+      ],
+      "denominator": "area_observada",
+      "direction": "desc",
+      "limit": null
+    },
+    "clarification_field": null
+  },
+  "final_answer": "{\"reason\":\"consulta_executada\",\"status\":\"respondida\",\"values\":[{\"denominators_ha\":[26287.69526975249],\"rank\":null,\"territory_code\":\"2410900\",\"undefined_reason\":null,\"unit\":\"percentual\",\"value\":33.03461206717101,\"years\":[2015]}]}",
+  "attempts": [
+    {
+      "number": 1,
+      "messages_sha256": "ec76d754a1a7b76e6f2d7059df5918c9e7131a5121aae464f438125622d095f0",
+      "usage": {
+        "prompt_tokens": 5538,
+        "total_tokens": 5945,
+        "completion_tokens": 407
+      },
+      "issues": [],
+      "latency_seconds": 4.172948514926247,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "b3500d8d7bbfecde96651d36b4c5188865e19441a3a673c10dfbca362dbd3a62",
+      "output_chars": 228,
+      "state": "valida"
+    }
+  ],
+  "latency_seconds": 4.274648717022501,
+  "model_seconds": 4.173281389055774,
+  "http_events": [
+    {
+      "endpoint": "oauth",
+      "http_status": 200,
+      "bytes_read": 91,
+      "body_complete": true,
+      "response_metadata": null,
+      "elapsed_seconds": 0.17609270906541497
+    },
+    {
+      "endpoint": "chat",
+      "http_status": 200,
+      "bytes_read": 2291,
+      "body_complete": true,
+      "response_metadata": {
+        "json_object": true,
+        "choices_count": 1,
+        "finish_reason": "stop",
+        "content_state": "texto",
+        "final_content_chars": 228,
+        "reasoning_field_present": true,
+        "usage": {
+          "prompt_tokens": 5538,
+          "total_tokens": 5945,
+          "completion_tokens": 407
+        },
+        "reasoning_tokens": null
+      },
+      "elapsed_seconds": 3.9967897209571674
+    }
+  ],
+  "executor_seconds": 0.09866620902903378,
+  "scores": {
+    "status": true,
+    "plan": true,
+    "values": true,
+    "clarification": null,
+    "correct": true
+  },
+  "cost": null,
+  "source_geo_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+}

@@ -1,0 +1,5 @@
+condition,type,count
+B_eq,acerto,61
+B_eq,contrato_invalido,1
+B_eq,texto_final_ausente,26
+C_eq,acerto,88

@@ -1,0 +1,10 @@
+{
+  "source_sha256": "aeacbb2b2d3b92e02d1ef19eb950d0bb669a46ac737571d6754b64881ed017ff",
+  "matplotlib": "3.5.1",
+  "files": [
+    "fig15_controle_v4.png",
+    "fig15_controle_v4.svg",
+    "fig15_controle_v4.pdf"
+  ],
+  "manual_numeric_editing": false
+}

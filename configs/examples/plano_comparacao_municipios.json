@@ -1,0 +1,15 @@
+{
+  "class_codes": [
+    24
+  ],
+  "metric": "area",
+  "operation": "comparacao_territorial",
+  "territory_codes": [
+    "2410900",
+    "2408102"
+  ],
+  "unit": "ha",
+  "years": [
+    2025
+  ]
+}

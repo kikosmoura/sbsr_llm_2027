@@ -1,0 +1,51 @@
+{
+  "run_id": "be1b52a4f868406e917879873a5581fe",
+  "created_at": "2026-10-21T13:32:00.229185+00:00",
+  "split": "dev",
+  "case_ids": [
+    "d01_1",
+    "d01_2",
+    "d01_3",
+    "d01_4",
+    "d02_1",
+    "d02_2",
+    "d03_1",
+    "d04_1"
+  ],
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "native_tools": false,
+    "native_response_format": false,
+    "workers": 3
+  },
+  "freeze_sha256": "784d7e714d514197d4d07f3c82a000724b1671a64295a13616e6b9c6134beb2c",
+  "repeat_requested": false,
+  "state": "concluida",
+  "integration_kind": "gateway_real",
+  "completed_at": "2026-10-21T13:32:53.851649+00:00",
+  "individual_hashes": {
+    "d01_1_B_eq_0.json": "05bb3514b1455b21f80fc0207712ba98b40527d9a1aa77ac984ec1a38e111c61",
+    "d01_1_C_eq_0.json": "bff208fd62740fb9ac65d81f6522c242044c182a5ea511aaa087f4652c02ba11",
+    "d01_2_B_eq_0.json": "7cec9ca261bcc125cf95b67b6a74b859624ddd581fffca90c979fb7081bd71c5",
+    "d01_2_C_eq_0.json": "aac42291bc26ea57b71631a1c8ac4fae341dc5a36456cf51a27cae58a446b2a2",
+    "d01_3_B_eq_0.json": "4fd9d057f3607ab950349fbf3834881eacc64418b7ca0dc22dcbded8328eefc5",
+    "d01_3_C_eq_0.json": "58cdeda13746de935693d73ff9089237a62da4efa66b72f1708b20a34d55b234",
+    "d01_4_B_eq_0.json": "6274576e8a5b32631cacaad0f94b47bef1cf03031d9e29e3658497c2141c64e4",
+    "d01_4_C_eq_0.json": "882bf2bb4b2aea0d034e1e67cd4870882126c4d0829832a4d334933e442d529c",
+    "d02_1_B_eq_0.json": "681858d0adbe2f3088d199db9207f37a00456613bb5e7a06fa2771c8a481cdd3",
+    "d02_1_C_eq_0.json": "09267ecd6eee1175b513b09142abf225ab322304c54e4f94e308b066fd7c99e8",
+    "d02_2_B_eq_0.json": "fe0d943daa82c3b2b841500b2bcbaceb01dbffd0648f1b5665236776e276ffa5",
+    "d02_2_C_eq_0.json": "ff4b245bcf23f1fc4ba4628aed2718482f48f24a9dd5c1a9ec9f6230e2d47c16",
+    "d03_1_B_eq_0.json": "ba02475229b898b9fa6e5576f9354285cfe71bec408afa68a345a2dc8826441d",
+    "d03_1_C_eq_0.json": "353d05644812f19ee757dc2235b6d4337e9da90aec1d57165e840fc6f4828310",
+    "d04_1_B_eq_0.json": "8ef4c430f07ffb25d6d6c10c94bfa694d315a9e8ae383032fcb1e0850727a8a3",
+    "d04_1_C_eq_0.json": "0c26e6238955b89333c96feb18344edeb74a1aede805a4e7b36ac2b05aff888c"
+  }
+}

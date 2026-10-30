@@ -1,0 +1,4898 @@
+{
+  "d01_1": {
+    "status": "respondida",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2410900"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2015
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2410900",
+        "years": [
+          2015
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "8684.038153762798",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "d01_2": {
+    "status": "respondida",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2410900"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2015
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2410900",
+        "years": [
+          2015
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "8684.038153762798",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "d01_3": {
+    "status": "respondida",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2410900"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2015
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2410900",
+        "years": [
+          2015
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "8684.038153762798",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "d01_4": {
+    "status": "respondida",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2410900"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2015
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2410900",
+        "years": [
+          2015
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "8684.038153762798",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "d02_1": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_liquida",
+      "unit": "ha",
+      "territory_codes": [
+        "2408102"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        24
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2408102",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "358.027093102254",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "d02_2": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_liquida",
+      "unit": "ha",
+      "territory_codes": [
+        "2408102"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        24
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2408102",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "358.027093102254",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "d02_3": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_liquida",
+      "unit": "ha",
+      "territory_codes": [
+        "2408102"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        24
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2408102",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "358.027093102254",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "d02_4": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_liquida",
+      "unit": "ha",
+      "territory_codes": [
+        "2408102"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        24
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2408102",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "358.027093102254",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "d03_1": {
+    "status": "respondida",
+    "plan": {
+      "operation": "participacao",
+      "metric": "participacao",
+      "unit": "percentual",
+      "territory_codes": [
+        "2410900"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2015
+      ],
+      "denominator": "area_observada",
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2410900",
+        "years": [
+          2015
+        ],
+        "unit": "percentual",
+        "rank": null,
+        "value": "33.03461206717100676558266782908235401629",
+        "undefined_reason": null,
+        "denominators_ha": [
+          "26287.69526975249"
+        ]
+      }
+    ],
+    "clarification_field": null
+  },
+  "d03_2": {
+    "status": "respondida",
+    "plan": {
+      "operation": "participacao",
+      "metric": "participacao",
+      "unit": "percentual",
+      "territory_codes": [
+        "2410900"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2015
+      ],
+      "denominator": "area_observada",
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2410900",
+        "years": [
+          2015
+        ],
+        "unit": "percentual",
+        "rank": null,
+        "value": "33.03461206717100676558266782908235401629",
+        "undefined_reason": null,
+        "denominators_ha": [
+          "26287.69526975249"
+        ]
+      }
+    ],
+    "clarification_field": null
+  },
+  "d03_3": {
+    "status": "respondida",
+    "plan": {
+      "operation": "participacao",
+      "metric": "participacao",
+      "unit": "percentual",
+      "territory_codes": [
+        "2410900"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2015
+      ],
+      "denominator": "area_observada",
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2410900",
+        "years": [
+          2015
+        ],
+        "unit": "percentual",
+        "rank": null,
+        "value": "33.03461206717100676558266782908235401629",
+        "undefined_reason": null,
+        "denominators_ha": [
+          "26287.69526975249"
+        ]
+      }
+    ],
+    "clarification_field": null
+  },
+  "d03_4": {
+    "status": "respondida",
+    "plan": {
+      "operation": "participacao",
+      "metric": "participacao",
+      "unit": "percentual",
+      "territory_codes": [
+        "2410900"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2015
+      ],
+      "denominator": "area_observada",
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2410900",
+        "years": [
+          2015
+        ],
+        "unit": "percentual",
+        "rank": null,
+        "value": "33.03461206717100676558266782908235401629",
+        "undefined_reason": null,
+        "denominators_ha": [
+          "26287.69526975249"
+        ]
+      }
+    ],
+    "clarification_field": null
+  },
+  "d04_1": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "variacao_percentual",
+      "unit": "percentual",
+      "territory_codes": [
+        "2410900"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        5
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": "area_inicial",
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2410900",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "percentual",
+        "rank": null,
+        "value": null,
+        "undefined_reason": "base_inicial_zero",
+        "denominators_ha": [
+          "0.0"
+        ]
+      }
+    ],
+    "clarification_field": null
+  },
+  "d04_2": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "variacao_percentual",
+      "unit": "percentual",
+      "territory_codes": [
+        "2410900"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        5
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": "area_inicial",
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2410900",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "percentual",
+        "rank": null,
+        "value": null,
+        "undefined_reason": "base_inicial_zero",
+        "denominators_ha": [
+          "0.0"
+        ]
+      }
+    ],
+    "clarification_field": null
+  },
+  "d04_3": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "variacao_percentual",
+      "unit": "percentual",
+      "territory_codes": [
+        "2410900"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        5
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": "area_inicial",
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2410900",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "percentual",
+        "rank": null,
+        "value": null,
+        "undefined_reason": "base_inicial_zero",
+        "denominators_ha": [
+          "0.0"
+        ]
+      }
+    ],
+    "clarification_field": null
+  },
+  "d04_4": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "variacao_percentual",
+      "unit": "percentual",
+      "territory_codes": [
+        "2410900"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        5
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": "area_inicial",
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2410900",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "percentual",
+        "rank": null,
+        "value": null,
+        "undefined_reason": "base_inicial_zero",
+        "denominators_ha": [
+          "0.0"
+        ]
+      }
+    ],
+    "clarification_field": null
+  },
+  "d05_1": {
+    "status": "respondida",
+    "plan": {
+      "operation": "serie_disponivel",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2411205"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        24
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2411205",
+        "years": [
+          2015
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "504.5929789974192",
+        "undefined_reason": null,
+        "denominators_ha": []
+      },
+      {
+        "territory_code": "2411205",
+        "years": [
+          2025
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "695.336406528739",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "d05_2": {
+    "status": "respondida",
+    "plan": {
+      "operation": "serie_disponivel",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2411205"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        24
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2411205",
+        "years": [
+          2015
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "504.5929789974192",
+        "undefined_reason": null,
+        "denominators_ha": []
+      },
+      {
+        "territory_code": "2411205",
+        "years": [
+          2025
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "695.336406528739",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "d05_3": {
+    "status": "respondida",
+    "plan": {
+      "operation": "serie_disponivel",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2411205"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        24
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2411205",
+        "years": [
+          2015
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "504.5929789974192",
+        "undefined_reason": null,
+        "denominators_ha": []
+      },
+      {
+        "territory_code": "2411205",
+        "years": [
+          2025
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "695.336406528739",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "d05_4": {
+    "status": "respondida",
+    "plan": {
+      "operation": "serie_disponivel",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2411205"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        24
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2411205",
+        "years": [
+          2015
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "504.5929789974192",
+        "undefined_reason": null,
+        "denominators_ha": []
+      },
+      {
+        "territory_code": "2411205",
+        "years": [
+          2025
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "695.336406528739",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "d06_1": {
+    "status": "respondida",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2410900"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        1
+      ],
+      "years": [
+        2015
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2410900",
+        "years": [
+          2015
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "16986.24096833954349",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "d06_2": {
+    "status": "respondida",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2410900"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        1
+      ],
+      "years": [
+        2015
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2410900",
+        "years": [
+          2015
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "16986.24096833954349",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "d06_3": {
+    "status": "respondida",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2410900"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        1
+      ],
+      "years": [
+        2015
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2410900",
+        "years": [
+          2015
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "16986.24096833954349",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "d06_4": {
+    "status": "respondida",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2410900"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        1
+      ],
+      "years": [
+        2015
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2410900",
+        "years": [
+          2015
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "16986.24096833954349",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "d07_1": {
+    "status": "precisa_esclarecimento",
+    "plan": null,
+    "values": [],
+    "clarification_field": "territorio"
+  },
+  "d07_2": {
+    "status": "precisa_esclarecimento",
+    "plan": null,
+    "values": [],
+    "clarification_field": "territorio"
+  },
+  "d07_3": {
+    "status": "precisa_esclarecimento",
+    "plan": null,
+    "values": [],
+    "clarification_field": "territorio"
+  },
+  "d07_4": {
+    "status": "precisa_esclarecimento",
+    "plan": null,
+    "values": [],
+    "clarification_field": "territorio"
+  },
+  "d08_1": {
+    "status": "precisa_esclarecimento",
+    "plan": null,
+    "values": [],
+    "clarification_field": "classe"
+  },
+  "d08_2": {
+    "status": "precisa_esclarecimento",
+    "plan": null,
+    "values": [],
+    "clarification_field": "classe"
+  },
+  "d08_3": {
+    "status": "precisa_esclarecimento",
+    "plan": null,
+    "values": [],
+    "clarification_field": "classe"
+  },
+  "d08_4": {
+    "status": "precisa_esclarecimento",
+    "plan": null,
+    "values": [],
+    "clarification_field": "classe"
+  },
+  "d09_1": {
+    "status": "dados_indisponiveis",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2410900"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2020
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [],
+    "clarification_field": null
+  },
+  "d09_2": {
+    "status": "dados_indisponiveis",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2410900"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2020
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [],
+    "clarification_field": null
+  },
+  "d09_3": {
+    "status": "dados_indisponiveis",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2410900"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2020
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [],
+    "clarification_field": null
+  },
+  "d09_4": {
+    "status": "dados_indisponiveis",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2410900"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2020
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [],
+    "clarification_field": null
+  },
+  "d10_1": {
+    "status": "fora_do_escopo",
+    "plan": null,
+    "values": [],
+    "clarification_field": null
+  },
+  "d10_2": {
+    "status": "fora_do_escopo",
+    "plan": null,
+    "values": [],
+    "clarification_field": null
+  },
+  "d10_3": {
+    "status": "fora_do_escopo",
+    "plan": null,
+    "values": [],
+    "clarification_field": null
+  },
+  "d10_4": {
+    "status": "fora_do_escopo",
+    "plan": null,
+    "values": [],
+    "clarification_field": null
+  },
+  "t01_1": {
+    "status": "respondida",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2400109"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2015
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2400109",
+        "years": [
+          2015
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "14.69290777929301",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t01_2": {
+    "status": "respondida",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2400109"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2015
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2400109",
+        "years": [
+          2015
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "14.69290777929301",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t01_3": {
+    "status": "respondida",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2400109"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2015
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2400109",
+        "years": [
+          2015
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "14.69290777929301",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t01_4": {
+    "status": "respondida",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2400109"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2015
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2400109",
+        "years": [
+          2015
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "14.69290777929301",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t02_1": {
+    "status": "respondida",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "km2",
+      "territory_codes": [
+        "2400208"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2400208",
+        "years": [
+          2025
+        ],
+        "unit": "km2",
+        "rank": null,
+        "value": "331.2892037171243",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t02_2": {
+    "status": "respondida",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "km2",
+      "territory_codes": [
+        "2400208"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2400208",
+        "years": [
+          2025
+        ],
+        "unit": "km2",
+        "rank": null,
+        "value": "331.2892037171243",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t02_3": {
+    "status": "respondida",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "km2",
+      "territory_codes": [
+        "2400208"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2400208",
+        "years": [
+          2025
+        ],
+        "unit": "km2",
+        "rank": null,
+        "value": "331.2892037171243",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t02_4": {
+    "status": "respondida",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "km2",
+      "territory_codes": [
+        "2400208"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2400208",
+        "years": [
+          2025
+        ],
+        "unit": "km2",
+        "rank": null,
+        "value": "331.2892037171243",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t03_1": {
+    "status": "respondida",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "m2",
+      "territory_codes": [
+        "2408003"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        24
+      ],
+      "years": [
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2408003",
+        "years": [
+          2025
+        ],
+        "unit": "m2",
+        "rank": null,
+        "value": "65454455.980912980000",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t03_2": {
+    "status": "respondida",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "m2",
+      "territory_codes": [
+        "2408003"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        24
+      ],
+      "years": [
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2408003",
+        "years": [
+          2025
+        ],
+        "unit": "m2",
+        "rank": null,
+        "value": "65454455.980912980000",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t03_3": {
+    "status": "respondida",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "m2",
+      "territory_codes": [
+        "2408003"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        24
+      ],
+      "years": [
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2408003",
+        "years": [
+          2025
+        ],
+        "unit": "m2",
+        "rank": null,
+        "value": "65454455.980912980000",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t03_4": {
+    "status": "respondida",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "m2",
+      "territory_codes": [
+        "2408003"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        24
+      ],
+      "years": [
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2408003",
+        "years": [
+          2025
+        ],
+        "unit": "m2",
+        "rank": null,
+        "value": "65454455.980912980000",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t04_1": {
+    "status": "respondida",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2402006"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        33
+      ],
+      "years": [
+        2015
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2402006",
+        "years": [
+          2015
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "542.6574332982508",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t04_2": {
+    "status": "respondida",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2402006"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        33
+      ],
+      "years": [
+        2015
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2402006",
+        "years": [
+          2015
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "542.6574332982508",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t04_3": {
+    "status": "respondida",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2402006"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        33
+      ],
+      "years": [
+        2015
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2402006",
+        "years": [
+          2015
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "542.6574332982508",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t04_4": {
+    "status": "respondida",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2402006"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        33
+      ],
+      "years": [
+        2015
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2402006",
+        "years": [
+          2015
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "542.6574332982508",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t05_1": {
+    "status": "respondida",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "km2",
+      "territory_codes": [
+        "2403103"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        1
+      ],
+      "years": [
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2403103",
+        "years": [
+          2025
+        ],
+        "unit": "km2",
+        "rank": null,
+        "value": "640.9963083355101424",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t05_2": {
+    "status": "respondida",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "km2",
+      "territory_codes": [
+        "2403103"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        1
+      ],
+      "years": [
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2403103",
+        "years": [
+          2025
+        ],
+        "unit": "km2",
+        "rank": null,
+        "value": "640.9963083355101424",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t05_3": {
+    "status": "respondida",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "km2",
+      "territory_codes": [
+        "2403103"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        1
+      ],
+      "years": [
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2403103",
+        "years": [
+          2025
+        ],
+        "unit": "km2",
+        "rank": null,
+        "value": "640.9963083355101424",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t05_4": {
+    "status": "respondida",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "km2",
+      "territory_codes": [
+        "2403103"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        1
+      ],
+      "years": [
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2403103",
+        "years": [
+          2025
+        ],
+        "unit": "km2",
+        "rank": null,
+        "value": "640.9963083355101424",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t06_1": {
+    "status": "respondida",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2409407"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        1,
+        3
+      ],
+      "years": [
+        2015
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2409407",
+        "years": [
+          2015
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "5871.29818796534864",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t06_2": {
+    "status": "respondida",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2409407"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        1,
+        3
+      ],
+      "years": [
+        2015
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2409407",
+        "years": [
+          2015
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "5871.29818796534864",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t06_3": {
+    "status": "respondida",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2409407"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        1,
+        3
+      ],
+      "years": [
+        2015
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2409407",
+        "years": [
+          2015
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "5871.29818796534864",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t06_4": {
+    "status": "respondida",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2409407"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        1,
+        3
+      ],
+      "years": [
+        2015
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2409407",
+        "years": [
+          2015
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "5871.29818796534864",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t07_1": {
+    "status": "respondida",
+    "plan": {
+      "operation": "participacao",
+      "metric": "participacao",
+      "unit": "percentual",
+      "territory_codes": [
+        "2412203"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2025
+      ],
+      "denominator": "area_observada",
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2412203",
+        "years": [
+          2025
+        ],
+        "unit": "percentual",
+        "rank": null,
+        "value": "13.68441140179475982633367698654580399422",
+        "undefined_reason": null,
+        "denominators_ha": [
+          "28998.722832958037"
+        ]
+      }
+    ],
+    "clarification_field": null
+  },
+  "t07_2": {
+    "status": "respondida",
+    "plan": {
+      "operation": "participacao",
+      "metric": "participacao",
+      "unit": "percentual",
+      "territory_codes": [
+        "2412203"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2025
+      ],
+      "denominator": "area_observada",
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2412203",
+        "years": [
+          2025
+        ],
+        "unit": "percentual",
+        "rank": null,
+        "value": "13.68441140179475982633367698654580399422",
+        "undefined_reason": null,
+        "denominators_ha": [
+          "28998.722832958037"
+        ]
+      }
+    ],
+    "clarification_field": null
+  },
+  "t07_3": {
+    "status": "respondida",
+    "plan": {
+      "operation": "participacao",
+      "metric": "participacao",
+      "unit": "percentual",
+      "territory_codes": [
+        "2412203"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2025
+      ],
+      "denominator": "area_observada",
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2412203",
+        "years": [
+          2025
+        ],
+        "unit": "percentual",
+        "rank": null,
+        "value": "13.68441140179475982633367698654580399422",
+        "undefined_reason": null,
+        "denominators_ha": [
+          "28998.722832958037"
+        ]
+      }
+    ],
+    "clarification_field": null
+  },
+  "t07_4": {
+    "status": "respondida",
+    "plan": {
+      "operation": "participacao",
+      "metric": "participacao",
+      "unit": "percentual",
+      "territory_codes": [
+        "2412203"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2025
+      ],
+      "denominator": "area_observada",
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2412203",
+        "years": [
+          2025
+        ],
+        "unit": "percentual",
+        "rank": null,
+        "value": "13.68441140179475982633367698654580399422",
+        "undefined_reason": null,
+        "denominators_ha": [
+          "28998.722832958037"
+        ]
+      }
+    ],
+    "clarification_field": null
+  },
+  "t08_1": {
+    "status": "respondida",
+    "plan": {
+      "operation": "participacao",
+      "metric": "participacao",
+      "unit": "percentual",
+      "territory_codes": [
+        "2406106"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2015
+      ],
+      "denominator": "area_observada",
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2406106",
+        "years": [
+          2015
+        ],
+        "unit": "percentual",
+        "rank": null,
+        "value": "27.10558164390180317185280839277550962560",
+        "undefined_reason": null,
+        "denominators_ha": [
+          "93373.18962317286"
+        ]
+      }
+    ],
+    "clarification_field": null
+  },
+  "t08_2": {
+    "status": "respondida",
+    "plan": {
+      "operation": "participacao",
+      "metric": "participacao",
+      "unit": "percentual",
+      "territory_codes": [
+        "2406106"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2015
+      ],
+      "denominator": "area_observada",
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2406106",
+        "years": [
+          2015
+        ],
+        "unit": "percentual",
+        "rank": null,
+        "value": "27.10558164390180317185280839277550962560",
+        "undefined_reason": null,
+        "denominators_ha": [
+          "93373.18962317286"
+        ]
+      }
+    ],
+    "clarification_field": null
+  },
+  "t08_3": {
+    "status": "respondida",
+    "plan": {
+      "operation": "participacao",
+      "metric": "participacao",
+      "unit": "percentual",
+      "territory_codes": [
+        "2406106"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2015
+      ],
+      "denominator": "area_observada",
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2406106",
+        "years": [
+          2015
+        ],
+        "unit": "percentual",
+        "rank": null,
+        "value": "27.10558164390180317185280839277550962560",
+        "undefined_reason": null,
+        "denominators_ha": [
+          "93373.18962317286"
+        ]
+      }
+    ],
+    "clarification_field": null
+  },
+  "t08_4": {
+    "status": "respondida",
+    "plan": {
+      "operation": "participacao",
+      "metric": "participacao",
+      "unit": "percentual",
+      "territory_codes": [
+        "2406106"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2015
+      ],
+      "denominator": "area_observada",
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2406106",
+        "years": [
+          2015
+        ],
+        "unit": "percentual",
+        "rank": null,
+        "value": "27.10558164390180317185280839277550962560",
+        "undefined_reason": null,
+        "denominators_ha": [
+          "93373.18962317286"
+        ]
+      }
+    ],
+    "clarification_field": null
+  },
+  "t09_1": {
+    "status": "precisa_esclarecimento",
+    "plan": null,
+    "values": [],
+    "clarification_field": "metrica"
+  },
+  "t09_2": {
+    "status": "precisa_esclarecimento",
+    "plan": null,
+    "values": [],
+    "clarification_field": "metrica"
+  },
+  "t09_3": {
+    "status": "precisa_esclarecimento",
+    "plan": null,
+    "values": [],
+    "clarification_field": "metrica"
+  },
+  "t09_4": {
+    "status": "precisa_esclarecimento",
+    "plan": null,
+    "values": [],
+    "clarification_field": "metrica"
+  },
+  "t10_1": {
+    "status": "precisa_esclarecimento",
+    "plan": null,
+    "values": [],
+    "clarification_field": "unidade"
+  },
+  "t10_2": {
+    "status": "precisa_esclarecimento",
+    "plan": null,
+    "values": [],
+    "clarification_field": "unidade"
+  },
+  "t10_3": {
+    "status": "precisa_esclarecimento",
+    "plan": null,
+    "values": [],
+    "clarification_field": "unidade"
+  },
+  "t10_4": {
+    "status": "precisa_esclarecimento",
+    "plan": null,
+    "values": [],
+    "clarification_field": "unidade"
+  },
+  "t11_1": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_liquida",
+      "unit": "ha",
+      "territory_codes": [
+        "2406700"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2406700",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "1.601421987628938",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t11_2": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_liquida",
+      "unit": "ha",
+      "territory_codes": [
+        "2406700"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2406700",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "1.601421987628938",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t11_3": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_liquida",
+      "unit": "ha",
+      "territory_codes": [
+        "2406700"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2406700",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "1.601421987628938",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t11_4": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_liquida",
+      "unit": "ha",
+      "territory_codes": [
+        "2406700"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2406700",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "1.601421987628938",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t12_1": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_liquida",
+      "unit": "km2",
+      "territory_codes": [
+        "2400802"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2400802",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "km2",
+        "rank": null,
+        "value": "-8.70333933044486",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t12_2": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_liquida",
+      "unit": "km2",
+      "territory_codes": [
+        "2400802"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2400802",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "km2",
+        "rank": null,
+        "value": "-8.70333933044486",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t12_3": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_liquida",
+      "unit": "km2",
+      "territory_codes": [
+        "2400802"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2400802",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "km2",
+        "rank": null,
+        "value": "-8.70333933044486",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t12_4": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_liquida",
+      "unit": "km2",
+      "territory_codes": [
+        "2400802"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2400802",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "km2",
+        "rank": null,
+        "value": "-8.70333933044486",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t13_1": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_liquida",
+      "unit": "m2",
+      "territory_codes": [
+        "2401008"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        33
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2401008",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "m2",
+        "rank": null,
+        "value": "11404253.5722280180000",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t13_2": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_liquida",
+      "unit": "m2",
+      "territory_codes": [
+        "2401008"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        33
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2401008",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "m2",
+        "rank": null,
+        "value": "11404253.5722280180000",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t13_3": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_liquida",
+      "unit": "m2",
+      "territory_codes": [
+        "2401008"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        33
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2401008",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "m2",
+        "rank": null,
+        "value": "11404253.5722280180000",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t13_4": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_liquida",
+      "unit": "m2",
+      "territory_codes": [
+        "2401008"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        33
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2401008",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "m2",
+        "rank": null,
+        "value": "11404253.5722280180000",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t14_1": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_liquida",
+      "unit": "ha",
+      "territory_codes": [
+        "2402600"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        24
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2402600",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "414.0651247880696",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t14_2": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_liquida",
+      "unit": "ha",
+      "territory_codes": [
+        "2402600"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        24
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2402600",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "414.0651247880696",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t14_3": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_liquida",
+      "unit": "ha",
+      "territory_codes": [
+        "2402600"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        24
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2402600",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "414.0651247880696",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t14_4": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_liquida",
+      "unit": "ha",
+      "territory_codes": [
+        "2402600"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        24
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2402600",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "414.0651247880696",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t15_1": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "variacao_percentual",
+      "unit": "percentual",
+      "territory_codes": [
+        "2412500"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": "area_inicial",
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2412500",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "percentual",
+        "rank": null,
+        "value": "44.53725809448663770751539039595815278963",
+        "undefined_reason": null,
+        "denominators_ha": [
+          "106.3905280849594"
+        ]
+      }
+    ],
+    "clarification_field": null
+  },
+  "t15_2": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "variacao_percentual",
+      "unit": "percentual",
+      "territory_codes": [
+        "2412500"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": "area_inicial",
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2412500",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "percentual",
+        "rank": null,
+        "value": "44.53725809448663770751539039595815278963",
+        "undefined_reason": null,
+        "denominators_ha": [
+          "106.3905280849594"
+        ]
+      }
+    ],
+    "clarification_field": null
+  },
+  "t15_3": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "variacao_percentual",
+      "unit": "percentual",
+      "territory_codes": [
+        "2412500"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": "area_inicial",
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2412500",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "percentual",
+        "rank": null,
+        "value": "44.53725809448663770751539039595815278963",
+        "undefined_reason": null,
+        "denominators_ha": [
+          "106.3905280849594"
+        ]
+      }
+    ],
+    "clarification_field": null
+  },
+  "t15_4": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "variacao_percentual",
+      "unit": "percentual",
+      "territory_codes": [
+        "2412500"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": "area_inicial",
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2412500",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "percentual",
+        "rank": null,
+        "value": "44.53725809448663770751539039595815278963",
+        "undefined_reason": null,
+        "denominators_ha": [
+          "106.3905280849594"
+        ]
+      }
+    ],
+    "clarification_field": null
+  },
+  "t16_1": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "variacao_percentual",
+      "unit": "percentual",
+      "territory_codes": [
+        "2400505"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": "area_inicial",
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2400505",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "percentual",
+        "rank": null,
+        "value": "-0.03441187015687210377696168785156447532048",
+        "undefined_reason": null,
+        "denominators_ha": [
+          "17657.582522383058"
+        ]
+      }
+    ],
+    "clarification_field": null
+  },
+  "t16_2": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "variacao_percentual",
+      "unit": "percentual",
+      "territory_codes": [
+        "2400505"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": "area_inicial",
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2400505",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "percentual",
+        "rank": null,
+        "value": "-0.03441187015687210377696168785156447532048",
+        "undefined_reason": null,
+        "denominators_ha": [
+          "17657.582522383058"
+        ]
+      }
+    ],
+    "clarification_field": null
+  },
+  "t16_3": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "variacao_percentual",
+      "unit": "percentual",
+      "territory_codes": [
+        "2400505"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": "area_inicial",
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2400505",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "percentual",
+        "rank": null,
+        "value": "-0.03441187015687210377696168785156447532048",
+        "undefined_reason": null,
+        "denominators_ha": [
+          "17657.582522383058"
+        ]
+      }
+    ],
+    "clarification_field": null
+  },
+  "t16_4": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "variacao_percentual",
+      "unit": "percentual",
+      "territory_codes": [
+        "2400505"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": "area_inicial",
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2400505",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "percentual",
+        "rank": null,
+        "value": "-0.03441187015687210377696168785156447532048",
+        "undefined_reason": null,
+        "denominators_ha": [
+          "17657.582522383058"
+        ]
+      }
+    ],
+    "clarification_field": null
+  },
+  "t17_1": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "variacao_percentual",
+      "unit": "percentual",
+      "territory_codes": [
+        "2403608"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        24
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": "area_inicial",
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2403608",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "percentual",
+        "rank": null,
+        "value": "65.19697822394888669782782955618686813267",
+        "undefined_reason": null,
+        "denominators_ha": [
+          "1707.029328258777"
+        ]
+      }
+    ],
+    "clarification_field": null
+  },
+  "t17_2": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "variacao_percentual",
+      "unit": "percentual",
+      "territory_codes": [
+        "2403608"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        24
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": "area_inicial",
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2403608",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "percentual",
+        "rank": null,
+        "value": "65.19697822394888669782782955618686813267",
+        "undefined_reason": null,
+        "denominators_ha": [
+          "1707.029328258777"
+        ]
+      }
+    ],
+    "clarification_field": null
+  },
+  "t17_3": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "variacao_percentual",
+      "unit": "percentual",
+      "territory_codes": [
+        "2403608"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        24
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": "area_inicial",
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2403608",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "percentual",
+        "rank": null,
+        "value": "65.19697822394888669782782955618686813267",
+        "undefined_reason": null,
+        "denominators_ha": [
+          "1707.029328258777"
+        ]
+      }
+    ],
+    "clarification_field": null
+  },
+  "t17_4": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "variacao_percentual",
+      "unit": "percentual",
+      "territory_codes": [
+        "2403608"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        24
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": "area_inicial",
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2403608",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "percentual",
+        "rank": null,
+        "value": "65.19697822394888669782782955618686813267",
+        "undefined_reason": null,
+        "denominators_ha": [
+          "1707.029328258777"
+        ]
+      }
+    ],
+    "clarification_field": null
+  },
+  "t18_1": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "variacao_percentual",
+      "unit": "percentual",
+      "territory_codes": [
+        "2403806"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        5
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": "area_inicial",
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2403806",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "percentual",
+        "rank": null,
+        "value": null,
+        "undefined_reason": "base_inicial_zero",
+        "denominators_ha": [
+          "0.0"
+        ]
+      }
+    ],
+    "clarification_field": null
+  },
+  "t18_2": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "variacao_percentual",
+      "unit": "percentual",
+      "territory_codes": [
+        "2403806"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        5
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": "area_inicial",
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2403806",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "percentual",
+        "rank": null,
+        "value": null,
+        "undefined_reason": "base_inicial_zero",
+        "denominators_ha": [
+          "0.0"
+        ]
+      }
+    ],
+    "clarification_field": null
+  },
+  "t18_3": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "variacao_percentual",
+      "unit": "percentual",
+      "territory_codes": [
+        "2403806"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        5
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": "area_inicial",
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2403806",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "percentual",
+        "rank": null,
+        "value": null,
+        "undefined_reason": "base_inicial_zero",
+        "denominators_ha": [
+          "0.0"
+        ]
+      }
+    ],
+    "clarification_field": null
+  },
+  "t18_4": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "variacao_percentual",
+      "unit": "percentual",
+      "territory_codes": [
+        "2403806"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        5
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": "area_inicial",
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2403806",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "percentual",
+        "rank": null,
+        "value": null,
+        "undefined_reason": "base_inicial_zero",
+        "denominators_ha": [
+          "0.0"
+        ]
+      }
+    ],
+    "clarification_field": null
+  },
+  "t19_1": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_pontos_percentuais",
+      "unit": "pontos_percentuais",
+      "territory_codes": [
+        "2412005"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        24
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": "participacao_por_ano",
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2412005",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "pontos_percentuais",
+        "rank": null,
+        "value": "3.598364008148831255543432107069395264787",
+        "undefined_reason": null,
+        "denominators_ha": [
+          "24979.984031764206",
+          "24979.984031764206"
+        ]
+      }
+    ],
+    "clarification_field": null
+  },
+  "t19_2": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_pontos_percentuais",
+      "unit": "pontos_percentuais",
+      "territory_codes": [
+        "2412005"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        24
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": "participacao_por_ano",
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2412005",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "pontos_percentuais",
+        "rank": null,
+        "value": "3.598364008148831255543432107069395264787",
+        "undefined_reason": null,
+        "denominators_ha": [
+          "24979.984031764206",
+          "24979.984031764206"
+        ]
+      }
+    ],
+    "clarification_field": null
+  },
+  "t19_3": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_pontos_percentuais",
+      "unit": "pontos_percentuais",
+      "territory_codes": [
+        "2412005"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        24
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": "participacao_por_ano",
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2412005",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "pontos_percentuais",
+        "rank": null,
+        "value": "3.598364008148831255543432107069395264787",
+        "undefined_reason": null,
+        "denominators_ha": [
+          "24979.984031764206",
+          "24979.984031764206"
+        ]
+      }
+    ],
+    "clarification_field": null
+  },
+  "t19_4": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_pontos_percentuais",
+      "unit": "pontos_percentuais",
+      "territory_codes": [
+        "2412005"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        24
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": "participacao_por_ano",
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2412005",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "pontos_percentuais",
+        "rank": null,
+        "value": "3.598364008148831255543432107069395264787",
+        "undefined_reason": null,
+        "denominators_ha": [
+          "24979.984031764206",
+          "24979.984031764206"
+        ]
+      }
+    ],
+    "clarification_field": null
+  },
+  "t20_1": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_pontos_percentuais",
+      "unit": "pontos_percentuais",
+      "territory_codes": [
+        "2407203"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        33
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": "participacao_por_ano",
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2407203",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "pontos_percentuais",
+        "rank": null,
+        "value": "1.618298360882237120857040293250694403711",
+        "undefined_reason": null,
+        "denominators_ha": [
+          "77528.95337298771",
+          "77528.95337298771"
+        ]
+      }
+    ],
+    "clarification_field": null
+  },
+  "t20_2": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_pontos_percentuais",
+      "unit": "pontos_percentuais",
+      "territory_codes": [
+        "2407203"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        33
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": "participacao_por_ano",
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2407203",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "pontos_percentuais",
+        "rank": null,
+        "value": "1.618298360882237120857040293250694403711",
+        "undefined_reason": null,
+        "denominators_ha": [
+          "77528.95337298771",
+          "77528.95337298771"
+        ]
+      }
+    ],
+    "clarification_field": null
+  },
+  "t20_3": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_pontos_percentuais",
+      "unit": "pontos_percentuais",
+      "territory_codes": [
+        "2407203"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        33
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": "participacao_por_ano",
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2407203",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "pontos_percentuais",
+        "rank": null,
+        "value": "1.618298360882237120857040293250694403711",
+        "undefined_reason": null,
+        "denominators_ha": [
+          "77528.95337298771",
+          "77528.95337298771"
+        ]
+      }
+    ],
+    "clarification_field": null
+  },
+  "t20_4": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_pontos_percentuais",
+      "unit": "pontos_percentuais",
+      "territory_codes": [
+        "2407203"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        33
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": "participacao_por_ano",
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2407203",
+        "years": [
+          2015,
+          2025
+        ],
+        "unit": "pontos_percentuais",
+        "rank": null,
+        "value": "1.618298360882237120857040293250694403711",
+        "undefined_reason": null,
+        "denominators_ha": [
+          "77528.95337298771",
+          "77528.95337298771"
+        ]
+      }
+    ],
+    "clarification_field": null
+  },
+  "t21_1": {
+    "status": "respondida",
+    "plan": {
+      "operation": "serie_disponivel",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2401453"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2401453",
+        "years": [
+          2015
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "4422.801997864103",
+        "undefined_reason": null,
+        "denominators_ha": []
+      },
+      {
+        "territory_code": "2401453",
+        "years": [
+          2025
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "4474.7939118378796",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t21_2": {
+    "status": "respondida",
+    "plan": {
+      "operation": "serie_disponivel",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2401453"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2401453",
+        "years": [
+          2015
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "4422.801997864103",
+        "undefined_reason": null,
+        "denominators_ha": []
+      },
+      {
+        "territory_code": "2401453",
+        "years": [
+          2025
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "4474.7939118378796",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t21_3": {
+    "status": "respondida",
+    "plan": {
+      "operation": "serie_disponivel",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2401453"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2401453",
+        "years": [
+          2015
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "4422.801997864103",
+        "undefined_reason": null,
+        "denominators_ha": []
+      },
+      {
+        "territory_code": "2401453",
+        "years": [
+          2025
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "4474.7939118378796",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t21_4": {
+    "status": "respondida",
+    "plan": {
+      "operation": "serie_disponivel",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2401453"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2401453",
+        "years": [
+          2015
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "4422.801997864103",
+        "undefined_reason": null,
+        "denominators_ha": []
+      },
+      {
+        "territory_code": "2401453",
+        "years": [
+          2025
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "4474.7939118378796",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t22_1": {
+    "status": "respondida",
+    "plan": {
+      "operation": "serie_disponivel",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2402303"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2402303",
+        "years": [
+          2015
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "241.61593238465404",
+        "undefined_reason": null,
+        "denominators_ha": []
+      },
+      {
+        "territory_code": "2402303",
+        "years": [
+          2025
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "244.17318566668294",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t22_2": {
+    "status": "respondida",
+    "plan": {
+      "operation": "serie_disponivel",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2402303"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2402303",
+        "years": [
+          2015
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "241.61593238465404",
+        "undefined_reason": null,
+        "denominators_ha": []
+      },
+      {
+        "territory_code": "2402303",
+        "years": [
+          2025
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "244.17318566668294",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t22_3": {
+    "status": "respondida",
+    "plan": {
+      "operation": "serie_disponivel",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2402303"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2402303",
+        "years": [
+          2015
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "241.61593238465404",
+        "undefined_reason": null,
+        "denominators_ha": []
+      },
+      {
+        "territory_code": "2402303",
+        "years": [
+          2025
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "244.17318566668294",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t22_4": {
+    "status": "respondida",
+    "plan": {
+      "operation": "serie_disponivel",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2402303"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2402303",
+        "years": [
+          2015
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "241.61593238465404",
+        "undefined_reason": null,
+        "denominators_ha": []
+      },
+      {
+        "territory_code": "2402303",
+        "years": [
+          2025
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "244.17318566668294",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t23_1": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_territorial",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2411056",
+        "2404200"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2404200",
+        "years": [
+          2025
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "3296.2420803042892",
+        "undefined_reason": null,
+        "denominators_ha": []
+      },
+      {
+        "territory_code": "2411056",
+        "years": [
+          2025
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "43.50348778584749",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t23_2": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_territorial",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2411056",
+        "2404200"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2404200",
+        "years": [
+          2025
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "3296.2420803042892",
+        "undefined_reason": null,
+        "denominators_ha": []
+      },
+      {
+        "territory_code": "2411056",
+        "years": [
+          2025
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "43.50348778584749",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t23_3": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_territorial",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2411056",
+        "2404200"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2404200",
+        "years": [
+          2025
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "3296.2420803042892",
+        "undefined_reason": null,
+        "denominators_ha": []
+      },
+      {
+        "territory_code": "2411056",
+        "years": [
+          2025
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "43.50348778584749",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t23_4": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_territorial",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2411056",
+        "2404200"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2404200",
+        "years": [
+          2025
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "3296.2420803042892",
+        "undefined_reason": null,
+        "denominators_ha": []
+      },
+      {
+        "territory_code": "2411056",
+        "years": [
+          2025
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "43.50348778584749",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t24_1": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_territorial",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2401206",
+        "2402204"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        24
+      ],
+      "years": [
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2401206",
+        "years": [
+          2025
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "217.93167490038513",
+        "undefined_reason": null,
+        "denominators_ha": []
+      },
+      {
+        "territory_code": "2402204",
+        "years": [
+          2025
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "814.18411916291425",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t24_2": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_territorial",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2401206",
+        "2402204"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        24
+      ],
+      "years": [
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2401206",
+        "years": [
+          2025
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "217.93167490038513",
+        "undefined_reason": null,
+        "denominators_ha": []
+      },
+      {
+        "territory_code": "2402204",
+        "years": [
+          2025
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "814.18411916291425",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t24_3": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_territorial",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2401206",
+        "2402204"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        24
+      ],
+      "years": [
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2401206",
+        "years": [
+          2025
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "217.93167490038513",
+        "undefined_reason": null,
+        "denominators_ha": []
+      },
+      {
+        "territory_code": "2402204",
+        "years": [
+          2025
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "814.18411916291425",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t24_4": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_territorial",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2401206",
+        "2402204"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        24
+      ],
+      "years": [
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2401206",
+        "years": [
+          2025
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "217.93167490038513",
+        "undefined_reason": null,
+        "denominators_ha": []
+      },
+      {
+        "territory_code": "2402204",
+        "years": [
+          2025
+        ],
+        "unit": "ha",
+        "rank": null,
+        "value": "814.18411916291425",
+        "undefined_reason": null,
+        "denominators_ha": []
+      }
+    ],
+    "clarification_field": null
+  },
+  "t25_1": {
+    "status": "dados_indisponiveis",
+    "plan": {
+      "operation": "ranking_delimitado",
+      "metric": "reducao_liquida",
+      "unit": "ha",
+      "territory_codes": [],
+      "scope_uf": "RN",
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": 5
+    },
+    "values": [],
+    "clarification_field": null
+  },
+  "t25_2": {
+    "status": "dados_indisponiveis",
+    "plan": {
+      "operation": "ranking_delimitado",
+      "metric": "reducao_liquida",
+      "unit": "ha",
+      "territory_codes": [],
+      "scope_uf": "RN",
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": 5
+    },
+    "values": [],
+    "clarification_field": null
+  },
+  "t25_3": {
+    "status": "dados_indisponiveis",
+    "plan": {
+      "operation": "ranking_delimitado",
+      "metric": "reducao_liquida",
+      "unit": "ha",
+      "territory_codes": [],
+      "scope_uf": "RN",
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": 5
+    },
+    "values": [],
+    "clarification_field": null
+  },
+  "t25_4": {
+    "status": "dados_indisponiveis",
+    "plan": {
+      "operation": "ranking_delimitado",
+      "metric": "reducao_liquida",
+      "unit": "ha",
+      "territory_codes": [],
+      "scope_uf": "RN",
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": 5
+    },
+    "values": [],
+    "clarification_field": null
+  },
+  "t26_1": {
+    "status": "dados_indisponiveis",
+    "plan": {
+      "operation": "ranking_delimitado",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": 5
+    },
+    "values": [],
+    "clarification_field": null
+  },
+  "t26_2": {
+    "status": "dados_indisponiveis",
+    "plan": {
+      "operation": "ranking_delimitado",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": 5
+    },
+    "values": [],
+    "clarification_field": null
+  },
+  "t26_3": {
+    "status": "dados_indisponiveis",
+    "plan": {
+      "operation": "ranking_delimitado",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": 5
+    },
+    "values": [],
+    "clarification_field": null
+  },
+  "t26_4": {
+    "status": "dados_indisponiveis",
+    "plan": {
+      "operation": "ranking_delimitado",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": 5
+    },
+    "values": [],
+    "clarification_field": null
+  },
+  "t27_1": {
+    "status": "dados_indisponiveis",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2409902"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2024
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [],
+    "clarification_field": null
+  },
+  "t27_2": {
+    "status": "dados_indisponiveis",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2409902"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2024
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [],
+    "clarification_field": null
+  },
+  "t27_3": {
+    "status": "dados_indisponiveis",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2409902"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2024
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [],
+    "clarification_field": null
+  },
+  "t27_4": {
+    "status": "dados_indisponiveis",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2409902"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2024
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [],
+    "clarification_field": null
+  },
+  "t28_1": {
+    "status": "precisa_esclarecimento",
+    "plan": null,
+    "values": [],
+    "clarification_field": "territorio"
+  },
+  "t28_2": {
+    "status": "precisa_esclarecimento",
+    "plan": null,
+    "values": [],
+    "clarification_field": "territorio"
+  },
+  "t28_3": {
+    "status": "precisa_esclarecimento",
+    "plan": null,
+    "values": [],
+    "clarification_field": "territorio"
+  },
+  "t28_4": {
+    "status": "precisa_esclarecimento",
+    "plan": null,
+    "values": [],
+    "clarification_field": "territorio"
+  },
+  "t29_1": {
+    "status": "precisa_esclarecimento",
+    "plan": null,
+    "values": [],
+    "clarification_field": "classe"
+  },
+  "t29_2": {
+    "status": "precisa_esclarecimento",
+    "plan": null,
+    "values": [],
+    "clarification_field": "classe"
+  },
+  "t29_3": {
+    "status": "precisa_esclarecimento",
+    "plan": null,
+    "values": [],
+    "clarification_field": "classe"
+  },
+  "t29_4": {
+    "status": "precisa_esclarecimento",
+    "plan": null,
+    "values": [],
+    "clarification_field": "classe"
+  },
+  "t30_1": {
+    "status": "fora_do_escopo",
+    "plan": null,
+    "values": [],
+    "clarification_field": null
+  },
+  "t30_2": {
+    "status": "fora_do_escopo",
+    "plan": null,
+    "values": [],
+    "clarification_field": null
+  },
+  "t30_3": {
+    "status": "fora_do_escopo",
+    "plan": null,
+    "values": [],
+    "clarification_field": null
+  },
+  "t30_4": {
+    "status": "fora_do_escopo",
+    "plan": null,
+    "values": [],
+    "clarification_field": null
+  }
+}

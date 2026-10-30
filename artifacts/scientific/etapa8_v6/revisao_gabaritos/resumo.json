@@ -1,0 +1,834 @@
+{
+  "kind": "recalculo_automatico_independente_sobre_derivados",
+  "cases": 88,
+  "value_rows": 104,
+  "all_passed": true,
+  "numeric_tolerance": "mesma do protocolo original congelado; nao incerteza do mapa",
+  "input_hashes": {
+    "artifacts/processing/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/manifest.json": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2400109/areas.parquet": "d66383de6bd56c63bde883abdc69306231e9ddb3aa36a1125b3e4426b2dc2de1",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2400109/quality.parquet": "0cb3bff022b9ca6ab54b70fe3b6d24ff1ff1cdbd986594828faab26072ebe956",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2400208/areas.parquet": "1eb9be1bc6e081aed514f63977fe7d66d289ca6897a3bcc55d0f4a44ffa18ccf",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2400208/quality.parquet": "f17faa3546f35d35f8e7ee4d125938568b2c8d722697eb4a100557610e06af54",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2408003/areas.parquet": "d0bb058954a0e8129834953f9c4725621fdf039684deaf6db595ca60040c4f36",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2408003/quality.parquet": "0f02b7e9b16a9bc334bcecef2fb83e84b95bbd3b67c943e323ba4c0af99839e4",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2402006/areas.parquet": "5e8977144109484a23bf0293e96aaa0530e1698a6aff5b22d5ef13b51893d481",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2402006/quality.parquet": "9885d39d6f4d89bc36e2e72fbcb460b871ebb79ad8d63bb63d8f50def62865bb",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2403103/areas.parquet": "e0af0d87381bf8e6f00217db0b37777e6e688a9d4fed3915722b5f41fb27c490",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2403103/quality.parquet": "c67ae90124ffa8c62a6e1805bc8f517b3b1e3b4a31355f3a10909715cc8e2cae",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2409407/areas.parquet": "aa90ca6d5d363bd95e0d38c09749ac780295b5a1de765bff1cd085c53cc612fd",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2409407/quality.parquet": "2d7eaec2f8e747f65ad01fd30c6a5988adebc5c0b0ab50f27d352f0d9233889b",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2412203/areas.parquet": "1ca81450e97a445af9117a27f6363815443e2c4451ebf15dd79e34cf8f33f7d0",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2412203/quality.parquet": "2ccf1bdfd4ac2177844ca50907630fa27e18d6f7de221eca1d57a815b3362d3d",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2406106/areas.parquet": "41784f7bafe222031c9e85945a67f965e4b9376f63931eca2542cba323a5c79f",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2406106/quality.parquet": "19ff4dffcbbd9ad34e757d709b00a94b483de2757b59d362a6a3838bcf9c2077",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2406700/areas.parquet": "c45a7ec062ecaefe1bd464bdfc7b2e5da3470b2ada7ba6d47f9ccc27dce1a1b5",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2406700/quality.parquet": "5c802474df023cebdbf9e65316470c751d1c7cbcafa2dc78f3e567622941f17a",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2400802/areas.parquet": "7a2fa22a243226e534fe1b2638abd271b279c7ccbf2a937a4181365dd7c5ba48",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2400802/quality.parquet": "99392f4e4e25f40cb1ea929381a4e63e07481fa45db5f9da0ccffc9740c62547",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2401008/areas.parquet": "76102eea9d88697415218f104fda747c7e88db8cb7fade71568d4bed71c2810a",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2401008/quality.parquet": "9f76c60210752bc7219c29e364fd84c30059438d83e38f70888c6578c6db1f49",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2402600/areas.parquet": "3e03c4b231312e55b78e45ff8c62e82e3b73c96c178569a249c174019b09e58d",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2402600/quality.parquet": "0d067aa30b17d6fbc5380c9a529e40247ee28e3ecc40ccf6843617444be3cb3d",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2412500/areas.parquet": "cb7750dc1b98a279dcfd1275f3368cbe33b43e10cb855ffcf166ee995937d015",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2412500/quality.parquet": "c931d600944c43a51bea3e29e7b056ea308af874be85dc92891f6b6ecea732d0",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2400505/areas.parquet": "cbf3e56ba4322c7fe08ed512c57b648f92b3129d34af316f2574778f991eea20",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2400505/quality.parquet": "1cef5429732bd4b4192f907cef2f204542886e4b0c7851dfbff80608c8e24ffc",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2403608/areas.parquet": "5e36ee6ce718c54d3cefed2d82af03af145454fc80104a014eb71c65539d0848",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2403608/quality.parquet": "508a6e3d83f0b4803327b4a4457ff21546a8337f91f70dfac85042e56b6172dc",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2403806/areas.parquet": "29f737ddc5510244d9179b188a19800a5d377537d1add8cabd7acd1768ceb02c",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2403806/quality.parquet": "f1a3ec11f64d0492922a953696b6d405deed64938107dc62d8f0083962bafbee",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2412005/areas.parquet": "706d9861b4154173c9e7693cf63c4b59426836860fa6d3aaa9c1704bcd1b05fc",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2412005/quality.parquet": "5aba6fe6c5bad084272a957745ef1fd222b2ff05771c569c34bf11adbcdf22ff",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2407203/areas.parquet": "ebbdbc55008e714749dff3e564a2a422690e0f24ac277793d0a4f23168d61a24",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2407203/quality.parquet": "e5c2b4abb529376fea9a15daee1e5bb3dfa64d0bd142c2af279d0cdc482f756e",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2401453/areas.parquet": "90e2b6851e8605d43b07eedfa07b5f6e1ee4f654c93aea35aba7a92bb5c7cc44",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2401453/quality.parquet": "2131ad9a344ff3d3e5894d37e835ce44eaba5139eda27552fb115826c71b28f0",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2402303/areas.parquet": "7b2a0f1cecf7a8f0f0b040af99d4c2b1692843ddd950acc994a50e96a766c75f",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2402303/quality.parquet": "30b64393b02816f2735c17de309bc14b16de190aa3a6a988aa2606a25c2e61f7",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2404200/areas.parquet": "d85662fcbdea6916b0ff9526b76b3fc6911a63fa1d0c1b122a789c31e4241909",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2404200/quality.parquet": "5feda4e13db2ea964759634265aa7c0d0f8e6dd31aa2a9462d97d97eb2ec462f",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2411056/areas.parquet": "651b6b89a9cd6197b2c8429feb85192b34b63373580fb029835de21dbbce225f",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2411056/quality.parquet": "f667e0f7d58850de886fb4ed9ce7363854406790558b585e9bde425e568cbfdd",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2401206/areas.parquet": "89a51ee6a54cd1b6eb8a71d54f59860b3729d2f6083c616eb128e7e26a4f143a",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2401206/quality.parquet": "b6b335fbfc7f395e9467e26ddbb02343178be49e0d7713181a2f0a6afa483deb",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2402204/areas.parquet": "440f4951fe1d472ce0eceaac435758e19ff5949a6c7fa0140997ba5cfd8c5bc3",
+    "data/processed/a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802/2402204/quality.parquet": "666a5937c2cb5f3ccd0f4641651f7ab8619caaa8ab669f721d43a6d431dcb388"
+  },
+  "conservation_invariants": [
+    {
+      "territory_code": "2400109",
+      "support": "anual",
+      "year": 2015,
+      "error_m2": "0.00004839146",
+      "tolerance_m2": "0.6184659527736944",
+      "passed": true
+    },
+    {
+      "territory_code": "2400109",
+      "support": "comum",
+      "year": 2015,
+      "error_m2": "0.00004839146",
+      "tolerance_m2": "0.6184659527736944",
+      "passed": true
+    },
+    {
+      "territory_code": "2400109",
+      "support": "anual",
+      "year": 2025,
+      "error_m2": "0.0000613304",
+      "tolerance_m2": "0.6184659527736944",
+      "passed": true
+    },
+    {
+      "territory_code": "2400109",
+      "support": "comum",
+      "year": 2025,
+      "error_m2": "0.0000613304",
+      "tolerance_m2": "0.6184659527736944",
+      "passed": true
+    },
+    {
+      "territory_code": "2400208",
+      "support": "anual",
+      "year": 2015,
+      "error_m2": "0.00000863338",
+      "tolerance_m2": "1.3134517067322998",
+      "passed": true
+    },
+    {
+      "territory_code": "2400208",
+      "support": "comum",
+      "year": 2015,
+      "error_m2": "0.00000863338",
+      "tolerance_m2": "1.3134517067322998",
+      "passed": true
+    },
+    {
+      "territory_code": "2400208",
+      "support": "anual",
+      "year": 2025,
+      "error_m2": "0.0000097453",
+      "tolerance_m2": "1.3134517067322998",
+      "passed": true
+    },
+    {
+      "territory_code": "2400208",
+      "support": "comum",
+      "year": 2025,
+      "error_m2": "0.0000097453",
+      "tolerance_m2": "1.3134517067322998",
+      "passed": true
+    },
+    {
+      "territory_code": "2408003",
+      "support": "anual",
+      "year": 2015,
+      "error_m2": "0.0002475228317",
+      "tolerance_m2": "2.1093285002134843",
+      "passed": true
+    },
+    {
+      "territory_code": "2408003",
+      "support": "comum",
+      "year": 2015,
+      "error_m2": "0.0002475228317",
+      "tolerance_m2": "2.1093285002134843",
+      "passed": true
+    },
+    {
+      "territory_code": "2408003",
+      "support": "anual",
+      "year": 2025,
+      "error_m2": "0.0002273029157",
+      "tolerance_m2": "2.1093285002134843",
+      "passed": true
+    },
+    {
+      "territory_code": "2408003",
+      "support": "comum",
+      "year": 2025,
+      "error_m2": "0.0002273029157",
+      "tolerance_m2": "2.1093285002134843",
+      "passed": true
+    },
+    {
+      "territory_code": "2402006",
+      "support": "anual",
+      "year": 2015,
+      "error_m2": "0.00000656916",
+      "tolerance_m2": "1.2385824308861542",
+      "passed": true
+    },
+    {
+      "territory_code": "2402006",
+      "support": "comum",
+      "year": 2015,
+      "error_m2": "0.00000656916",
+      "tolerance_m2": "1.2385824308861542",
+      "passed": true
+    },
+    {
+      "territory_code": "2402006",
+      "support": "anual",
+      "year": 2025,
+      "error_m2": "0.00000695815",
+      "tolerance_m2": "1.2385824308861542",
+      "passed": true
+    },
+    {
+      "territory_code": "2402006",
+      "support": "comum",
+      "year": 2025,
+      "error_m2": "0.00000695815",
+      "tolerance_m2": "1.2385824308861542",
+      "passed": true
+    },
+    {
+      "territory_code": "2403103",
+      "support": "anual",
+      "year": 2015,
+      "error_m2": "0.0000432374",
+      "tolerance_m2": "0.8743497372495642",
+      "passed": true
+    },
+    {
+      "territory_code": "2403103",
+      "support": "comum",
+      "year": 2015,
+      "error_m2": "0.0000432374",
+      "tolerance_m2": "0.8743497372495642",
+      "passed": true
+    },
+    {
+      "territory_code": "2403103",
+      "support": "anual",
+      "year": 2025,
+      "error_m2": "0.0000298232",
+      "tolerance_m2": "0.8743497372495642",
+      "passed": true
+    },
+    {
+      "territory_code": "2403103",
+      "support": "comum",
+      "year": 2025,
+      "error_m2": "0.0000298232",
+      "tolerance_m2": "0.8743497372495642",
+      "passed": true
+    },
+    {
+      "territory_code": "2409407",
+      "support": "anual",
+      "year": 2015,
+      "error_m2": "0.00002144014",
+      "tolerance_m2": "0.2699594372868745",
+      "passed": true
+    },
+    {
+      "territory_code": "2409407",
+      "support": "comum",
+      "year": 2015,
+      "error_m2": "0.00002144014",
+      "tolerance_m2": "0.2699594372868745",
+      "passed": true
+    },
+    {
+      "territory_code": "2409407",
+      "support": "anual",
+      "year": 2025,
+      "error_m2": "0.00002170113",
+      "tolerance_m2": "0.2699594372868745",
+      "passed": true
+    },
+    {
+      "territory_code": "2409407",
+      "support": "comum",
+      "year": 2025,
+      "error_m2": "0.00002170113",
+      "tolerance_m2": "0.2699594372868745",
+      "passed": true
+    },
+    {
+      "territory_code": "2412203",
+      "support": "anual",
+      "year": 2015,
+      "error_m2": "3.87314E-7",
+      "tolerance_m2": "0.2999872283295972",
+      "passed": true
+    },
+    {
+      "territory_code": "2412203",
+      "support": "comum",
+      "year": 2015,
+      "error_m2": "3.87314E-7",
+      "tolerance_m2": "0.2999872283295972",
+      "passed": true
+    },
+    {
+      "territory_code": "2412203",
+      "support": "anual",
+      "year": 2025,
+      "error_m2": "0.0000061125",
+      "tolerance_m2": "0.2999872283295972",
+      "passed": true
+    },
+    {
+      "territory_code": "2412203",
+      "support": "comum",
+      "year": 2025,
+      "error_m2": "0.0000061125",
+      "tolerance_m2": "0.2999872283295972",
+      "passed": true
+    },
+    {
+      "territory_code": "2406106",
+      "support": "anual",
+      "year": 2015,
+      "error_m2": "0.0000571199",
+      "tolerance_m2": "0.943731896231756",
+      "passed": true
+    },
+    {
+      "territory_code": "2406106",
+      "support": "comum",
+      "year": 2015,
+      "error_m2": "0.0000571199",
+      "tolerance_m2": "0.943731896231756",
+      "passed": true
+    },
+    {
+      "territory_code": "2406106",
+      "support": "anual",
+      "year": 2025,
+      "error_m2": "0.0000186124",
+      "tolerance_m2": "0.943731896231756",
+      "passed": true
+    },
+    {
+      "territory_code": "2406106",
+      "support": "comum",
+      "year": 2025,
+      "error_m2": "0.0000186124",
+      "tolerance_m2": "0.943731896231756",
+      "passed": true
+    },
+    {
+      "territory_code": "2406700",
+      "support": "anual",
+      "year": 2015,
+      "error_m2": "0.000106419612",
+      "tolerance_m2": "0.6866296459372417",
+      "passed": true
+    },
+    {
+      "territory_code": "2406700",
+      "support": "comum",
+      "year": 2015,
+      "error_m2": "0.000106419612",
+      "tolerance_m2": "0.6866296459372417",
+      "passed": true
+    },
+    {
+      "territory_code": "2406700",
+      "support": "anual",
+      "year": 2025,
+      "error_m2": "0.000053648585",
+      "tolerance_m2": "0.6866296459372417",
+      "passed": true
+    },
+    {
+      "territory_code": "2406700",
+      "support": "comum",
+      "year": 2025,
+      "error_m2": "0.000053648585",
+      "tolerance_m2": "0.6866296459372417",
+      "passed": true
+    },
+    {
+      "territory_code": "2400802",
+      "support": "anual",
+      "year": 2015,
+      "error_m2": "0.00001657497",
+      "tolerance_m2": "0.7515963159873981",
+      "passed": true
+    },
+    {
+      "territory_code": "2400802",
+      "support": "comum",
+      "year": 2015,
+      "error_m2": "0.00001657497",
+      "tolerance_m2": "0.7515963159873981",
+      "passed": true
+    },
+    {
+      "territory_code": "2400802",
+      "support": "anual",
+      "year": 2025,
+      "error_m2": "0.00000779959",
+      "tolerance_m2": "0.7515963159873981",
+      "passed": true
+    },
+    {
+      "territory_code": "2400802",
+      "support": "comum",
+      "year": 2025,
+      "error_m2": "0.00000779959",
+      "tolerance_m2": "0.7515963159873981",
+      "passed": true
+    },
+    {
+      "territory_code": "2401008",
+      "support": "anual",
+      "year": 2015,
+      "error_m2": "0.00001289018",
+      "tolerance_m2": "1.5791723690007997",
+      "passed": true
+    },
+    {
+      "territory_code": "2401008",
+      "support": "comum",
+      "year": 2015,
+      "error_m2": "0.00001289018",
+      "tolerance_m2": "1.5791723690007997",
+      "passed": true
+    },
+    {
+      "territory_code": "2401008",
+      "support": "anual",
+      "year": 2025,
+      "error_m2": "0.00005161931",
+      "tolerance_m2": "1.5791723690007997",
+      "passed": true
+    },
+    {
+      "territory_code": "2401008",
+      "support": "comum",
+      "year": 2025,
+      "error_m2": "0.00005161931",
+      "tolerance_m2": "1.5791723690007997",
+      "passed": true
+    },
+    {
+      "territory_code": "2402600",
+      "support": "anual",
+      "year": 2015,
+      "error_m2": "5.94184E-7",
+      "tolerance_m2": "0.7348377983869698",
+      "passed": true
+    },
+    {
+      "territory_code": "2402600",
+      "support": "comum",
+      "year": 2015,
+      "error_m2": "5.94184E-7",
+      "tolerance_m2": "0.7348377983869698",
+      "passed": true
+    },
+    {
+      "territory_code": "2402600",
+      "support": "anual",
+      "year": 2025,
+      "error_m2": "0.000020606016",
+      "tolerance_m2": "0.7348377983869698",
+      "passed": true
+    },
+    {
+      "territory_code": "2402600",
+      "support": "comum",
+      "year": 2025,
+      "error_m2": "0.000020606016",
+      "tolerance_m2": "0.7348377983869698",
+      "passed": true
+    },
+    {
+      "territory_code": "2412500",
+      "support": "anual",
+      "year": 2015,
+      "error_m2": "7.13E-9",
+      "tolerance_m2": "0.1762305992438856",
+      "passed": true
+    },
+    {
+      "territory_code": "2412500",
+      "support": "comum",
+      "year": 2015,
+      "error_m2": "7.13E-9",
+      "tolerance_m2": "0.1762305992438856",
+      "passed": true
+    },
+    {
+      "territory_code": "2412500",
+      "support": "anual",
+      "year": 2025,
+      "error_m2": "0.000001793604",
+      "tolerance_m2": "0.1762305992438856",
+      "passed": true
+    },
+    {
+      "territory_code": "2412500",
+      "support": "comum",
+      "year": 2025,
+      "error_m2": "0.000001793604",
+      "tolerance_m2": "0.1762305992438856",
+      "passed": true
+    },
+    {
+      "territory_code": "2400505",
+      "support": "anual",
+      "year": 2015,
+      "error_m2": "0.000042284517",
+      "tolerance_m2": "0.39120573282630455",
+      "passed": true
+    },
+    {
+      "territory_code": "2400505",
+      "support": "comum",
+      "year": 2015,
+      "error_m2": "0.000042284517",
+      "tolerance_m2": "0.39120573282630455",
+      "passed": true
+    },
+    {
+      "territory_code": "2400505",
+      "support": "anual",
+      "year": 2025,
+      "error_m2": "0.000034070014",
+      "tolerance_m2": "0.39120573282630455",
+      "passed": true
+    },
+    {
+      "territory_code": "2400505",
+      "support": "comum",
+      "year": 2025,
+      "error_m2": "0.000034070014",
+      "tolerance_m2": "0.39120573282630455",
+      "passed": true
+    },
+    {
+      "territory_code": "2403608",
+      "support": "anual",
+      "year": 2015,
+      "error_m2": "9.7564E-7",
+      "tolerance_m2": "0.15063951750799465",
+      "passed": true
+    },
+    {
+      "territory_code": "2403608",
+      "support": "comum",
+      "year": 2015,
+      "error_m2": "9.7564E-7",
+      "tolerance_m2": "0.15063951750799465",
+      "passed": true
+    },
+    {
+      "territory_code": "2403608",
+      "support": "anual",
+      "year": 2025,
+      "error_m2": "0.00000184215",
+      "tolerance_m2": "0.15063951750799465",
+      "passed": true
+    },
+    {
+      "territory_code": "2403608",
+      "support": "comum",
+      "year": 2025,
+      "error_m2": "0.00000184215",
+      "tolerance_m2": "0.15063951750799465",
+      "passed": true
+    },
+    {
+      "territory_code": "2403806",
+      "support": "anual",
+      "year": 2015,
+      "error_m2": "0.000039511702",
+      "tolerance_m2": "0.51789212684379727",
+      "passed": true
+    },
+    {
+      "territory_code": "2403806",
+      "support": "comum",
+      "year": 2015,
+      "error_m2": "0.000039511702",
+      "tolerance_m2": "0.51789212684379727",
+      "passed": true
+    },
+    {
+      "territory_code": "2403806",
+      "support": "anual",
+      "year": 2025,
+      "error_m2": "0.00004003686",
+      "tolerance_m2": "0.51789212684379727",
+      "passed": true
+    },
+    {
+      "territory_code": "2403806",
+      "support": "comum",
+      "year": 2025,
+      "error_m2": "0.00004003686",
+      "tolerance_m2": "0.51789212684379727",
+      "passed": true
+    },
+    {
+      "territory_code": "2412005",
+      "support": "anual",
+      "year": 2015,
+      "error_m2": "0.0000140210605",
+      "tolerance_m2": "0.25979984031765515",
+      "passed": true
+    },
+    {
+      "territory_code": "2412005",
+      "support": "comum",
+      "year": 2015,
+      "error_m2": "0.0000140210605",
+      "tolerance_m2": "0.25979984031765515",
+      "passed": true
+    },
+    {
+      "territory_code": "2412005",
+      "support": "anual",
+      "year": 2025,
+      "error_m2": "0.00000166170",
+      "tolerance_m2": "0.25979984031765515",
+      "passed": true
+    },
+    {
+      "territory_code": "2412005",
+      "support": "comum",
+      "year": 2025,
+      "error_m2": "0.00000166170",
+      "tolerance_m2": "0.25979984031765515",
+      "passed": true
+    },
+    {
+      "territory_code": "2407203",
+      "support": "anual",
+      "year": 2015,
+      "error_m2": "0.00001951624",
+      "tolerance_m2": "0.7852895337299026",
+      "passed": true
+    },
+    {
+      "territory_code": "2407203",
+      "support": "comum",
+      "year": 2015,
+      "error_m2": "0.00001951624",
+      "tolerance_m2": "0.7852895337299026",
+      "passed": true
+    },
+    {
+      "territory_code": "2407203",
+      "support": "anual",
+      "year": 2025,
+      "error_m2": "0.00001421296",
+      "tolerance_m2": "0.7852895337299026",
+      "passed": true
+    },
+    {
+      "territory_code": "2407203",
+      "support": "comum",
+      "year": 2025,
+      "error_m2": "0.00001421296",
+      "tolerance_m2": "0.7852895337299026",
+      "passed": true
+    },
+    {
+      "territory_code": "2401453",
+      "support": "anual",
+      "year": 2015,
+      "error_m2": "0.000011364614",
+      "tolerance_m2": "0.835672869856077",
+      "passed": true
+    },
+    {
+      "territory_code": "2401453",
+      "support": "comum",
+      "year": 2015,
+      "error_m2": "0.000011364614",
+      "tolerance_m2": "0.835672869856077",
+      "passed": true
+    },
+    {
+      "territory_code": "2401453",
+      "support": "anual",
+      "year": 2025,
+      "error_m2": "0.000006646781",
+      "tolerance_m2": "0.835672869856077",
+      "passed": true
+    },
+    {
+      "territory_code": "2401453",
+      "support": "comum",
+      "year": 2025,
+      "error_m2": "0.000006646781",
+      "tolerance_m2": "0.835672869856077",
+      "passed": true
+    },
+    {
+      "territory_code": "2402303",
+      "support": "anual",
+      "year": 2015,
+      "error_m2": "0.000121151456",
+      "tolerance_m2": "1.1044886702508903",
+      "passed": true
+    },
+    {
+      "territory_code": "2402303",
+      "support": "comum",
+      "year": 2015,
+      "error_m2": "0.000121151456",
+      "tolerance_m2": "1.1044886702508903",
+      "passed": true
+    },
+    {
+      "territory_code": "2402303",
+      "support": "anual",
+      "year": 2025,
+      "error_m2": "0.000115963085",
+      "tolerance_m2": "1.1044886702508903",
+      "passed": true
+    },
+    {
+      "territory_code": "2402303",
+      "support": "comum",
+      "year": 2025,
+      "error_m2": "0.000115963085",
+      "tolerance_m2": "1.1044886702508903",
+      "passed": true
+    },
+    {
+      "territory_code": "2404200",
+      "support": "anual",
+      "year": 2015,
+      "error_m2": "0.000005586592",
+      "tolerance_m2": "0.202279655431439",
+      "passed": true
+    },
+    {
+      "territory_code": "2404200",
+      "support": "comum",
+      "year": 2015,
+      "error_m2": "0.000005586592",
+      "tolerance_m2": "0.202279655431439",
+      "passed": true
+    },
+    {
+      "territory_code": "2404200",
+      "support": "anual",
+      "year": 2025,
+      "error_m2": "0.00000842940",
+      "tolerance_m2": "0.202279655431439",
+      "passed": true
+    },
+    {
+      "territory_code": "2404200",
+      "support": "comum",
+      "year": 2025,
+      "error_m2": "0.00000842940",
+      "tolerance_m2": "0.202279655431439",
+      "passed": true
+    },
+    {
+      "territory_code": "2411056",
+      "support": "anual",
+      "year": 2015,
+      "error_m2": "0.0000116506",
+      "tolerance_m2": "0.17936984859840733",
+      "passed": true
+    },
+    {
+      "territory_code": "2411056",
+      "support": "comum",
+      "year": 2015,
+      "error_m2": "0.0000116506",
+      "tolerance_m2": "0.17936984859840733",
+      "passed": true
+    },
+    {
+      "territory_code": "2411056",
+      "support": "anual",
+      "year": 2025,
+      "error_m2": "0.0000110891",
+      "tolerance_m2": "0.17936984859840733",
+      "passed": true
+    },
+    {
+      "territory_code": "2411056",
+      "support": "comum",
+      "year": 2025,
+      "error_m2": "0.0000110891",
+      "tolerance_m2": "0.17936984859840733",
+      "passed": true
+    },
+    {
+      "territory_code": "2401206",
+      "support": "anual",
+      "year": 2015,
+      "error_m2": "0.000001836536",
+      "tolerance_m2": "0.12540553538597192",
+      "passed": true
+    },
+    {
+      "territory_code": "2401206",
+      "support": "comum",
+      "year": 2015,
+      "error_m2": "0.000001836536",
+      "tolerance_m2": "0.12540553538597192",
+      "passed": true
+    },
+    {
+      "territory_code": "2401206",
+      "support": "anual",
+      "year": 2025,
+      "error_m2": "6.37541E-7",
+      "tolerance_m2": "0.12540553538597192",
+      "passed": true
+    },
+    {
+      "territory_code": "2401206",
+      "support": "comum",
+      "year": 2025,
+      "error_m2": "6.37541E-7",
+      "tolerance_m2": "0.12540553538597192",
+      "passed": true
+    },
+    {
+      "territory_code": "2402204",
+      "support": "anual",
+      "year": 2015,
+      "error_m2": "0.000003057778",
+      "tolerance_m2": "0.2554847519211382",
+      "passed": true
+    },
+    {
+      "territory_code": "2402204",
+      "support": "comum",
+      "year": 2015,
+      "error_m2": "0.000003057778",
+      "tolerance_m2": "0.2554847519211382",
+      "passed": true
+    },
+    {
+      "territory_code": "2402204",
+      "support": "anual",
+      "year": 2025,
+      "error_m2": "0.000008223976",
+      "tolerance_m2": "0.2554847519211382",
+      "passed": true
+    },
+    {
+      "territory_code": "2402204",
+      "support": "comum",
+      "year": 2025,
+      "error_m2": "0.000008223976",
+      "tolerance_m2": "0.2554847519211382",
+      "passed": true
+    }
+  ],
+  "human_declaration_sha256": "005b341ee97c2edb91058abe3b3d7ec5ec7dc030d399243c0acebc66d474c248",
+  "limitations": [
+    "Compartilha os Parquets de referencia; nao valida verdade de campo nem geracao geoespacial.",
+    "Declaracao humana global, sem fichas originais, cegamento ou revisor independente.",
+    "Recalculo valida o plano canonico; entendimento da pergunta foi revisado conforme declaracao do autor."
+  ]
+}

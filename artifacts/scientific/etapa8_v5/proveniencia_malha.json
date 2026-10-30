@@ -1,0 +1,4600 @@
+{
+  "schema_version": "proveniencia-malha-v5",
+  "checked_at": "2026-10-21T15:03:58.629598+00:00",
+  "author_declaration": {
+    "received_on": "2026-10-21",
+    "provider": "IBGE",
+    "edition": 2025,
+    "scope": [
+      "municipios",
+      "uf"
+    ],
+    "basis": "usuario confirmou origem IBGE e respondeu 2025 ao esclarecimento de ano para municipios/UF",
+    "original_archive_or_import_log_supplied": false
+  },
+  "raster_provider_reported": "MapBiomas; verificacao dos intervalos utilizados permanece na V2",
+  "snapshot_file_sha256": "42850b2d17fbfe9279f09e25417ec94a679b3d4080705a18374feaeceaf98b11",
+  "mesh_logical_sha256": "3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+  "snapshot_created_at": "2026-10-19T16:20:39.783206+00:00",
+  "snapshot_source_tables": [
+    "sbsr.municipios",
+    "sbsr.uf"
+  ],
+  "snapshot_crs": "EPSG:4326",
+  "snapshot_changed": false,
+  "areas_reprocessed": false,
+  "official_files": [
+    {
+      "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2025/UFs/RN/RN_Municipios_2025.zip",
+      "state": "indisponivel",
+      "http_status": null,
+      "reason": "timeout",
+      "error_body_stored": false
+    },
+    {
+      "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2025/UFs/RN/RN_UF_2025.zip",
+      "state": "indisponivel",
+      "http_status": null,
+      "reason": "timeout",
+      "error_body_stored": false
+    }
+  ],
+  "limits": [
+    "Edicao declarada e comparacao geometrica nao recuperam o historico de importacao.",
+    "SRID 4326 do snapshot difere do CRS SIRGAS 2000 descrito pelo IBGE; comparar coordenadas nao prova transformacao de datum."
+  ],
+  "acquisition_checked_at": "2026-10-21T15:01:41.439913+00:00",
+  "recorded_acquisition_sha256": "b64a0ffbbd9a37ca12d203fa1d1d30def41c1a8d27068030d7279439c36329dd",
+  "official_product_documentation": {
+    "url": "https://www.ibge.gov.br/geociencias/organizacao-do-territorio/malhas-territoriais/15774-mlhas.html",
+    "checked_on": "2026-10-21",
+    "crs_described": "SIRGAS 2000, coordenadas geograficas; documentacao do produto, nao leitura do arquivo historico",
+    "license_of_imported_archive_verified": false,
+    "original_publication_date_verified": false
+  },
+  "snapshot_geometry_inventory": [
+    {
+      "code": "2400109",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "4ffca9a6cc614752fc1708f49c50269102f778276f345b91b36cf7cd43d267ee",
+      "source_ewkb_sha256": "a414d7a0a11f75b0b6c2f433bf5d9afb4e8e7734c3e60483d46ff62e5cd24cdf",
+      "normalized_2d_wkb_sha256": "b6fb7f95f916b802cfde728963a2d78bc2cae27b92971e4423c47d4648008285",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 261,
+      "bounds": [
+        -36.7743156,
+        -6.57934919999997,
+        -36.5043775,
+        -6.26851309999995
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 608465952.7736944,
+        "original_area_m2": 608465952.7736944,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2400208",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "d1e367a3ff690fcfcdac949f78fea5b3e79e42fceacdc86efd21225b7f678de0",
+      "source_ewkb_sha256": "094422168ca36242bcfe383ca4eb080be64d47c57e0d185c5b6804285e3c5ee6",
+      "normalized_2d_wkb_sha256": "d80df7546e40d0b99b58644023dd0dcf5dfb5d5332a825efc344c59c4372ea89",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 197,
+      "bounds": [
+        -37.1727592999999,
+        -5.89106919999995,
+        -36.8384315,
+        -5.29342449999996
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 1303451706.7322998,
+        "original_area_m2": 1303451706.7322998,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2400307",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "99ec88198c9d87f54793668d8ab4ccdbe3c9e9f5389cadce8d4008c402a07273",
+      "source_ewkb_sha256": "454540374919715dcc238fdf87ab3e7490711cf7aeeb38b6e703c673490d1187",
+      "normalized_2d_wkb_sha256": "a8b107ed2213ea2852ce7adc773d9435c8efee65370a70f7ee2e9351fdb00581",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 68,
+      "bounds": [
+        -36.860405,
+        -5.59837239999996,
+        -36.4398684999999,
+        -5.36988139999994
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 576178908.8429251,
+        "original_area_m2": 576178908.8429251,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2400406",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "613a9ff80f381517fe6df388f64df0a2509363514ba25e3c3c73bdc5e3955ea3",
+      "source_ewkb_sha256": "42a10db0c35c015e39f89fc88fc4fee16ffe9832941e99e84b9bfec14419b541",
+      "normalized_2d_wkb_sha256": "6e463c4e6fddd8eefc4b34f1ba9771f592e3cd7bfb4790c134943952a88ba596",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 28,
+      "bounds": [
+        -38.3578838,
+        -6.24130759999997,
+        -38.2652831,
+        -6.17639489999993
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 50683709.48255692,
+        "original_area_m2": 50683709.48255692,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2400505",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "ed1734514281491e83650f2d960323ed6a7522cdc2daf530d45080c29434dadc",
+      "source_ewkb_sha256": "42c0a13d8450683db96a9aa391e6e350745f3e1621fda58fa500e3b89faecaca",
+      "normalized_2d_wkb_sha256": "28c2f0fc7e36e8c825aad14d7e45f9717b1369e6690ef6cccacff79157da0d06",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 199,
+      "bounds": [
+        -38.1256088,
+        -6.47584739999996,
+        -37.83426,
+        -6.25645469999995
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 381205732.82630455,
+        "original_area_m2": 381205732.82630455,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2400604",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "46284f97fc57e8d06a5df2e1ab4357259eec664599bdd9f80153ec70ceed6127",
+      "source_ewkb_sha256": "679d495dd20f859e822fae9d0f2ce14f3b0dd8421df8101b0a070dea8cfabc96",
+      "normalized_2d_wkb_sha256": "76d7010b1256d25c742a51926593700a44f0b759f14eb212f23c6a22a71acba7",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 202,
+      "bounds": [
+        -37.811249,
+        -6.24587489999993,
+        -37.6876376,
+        -6.06777719999997
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 128036845.49095051,
+        "original_area_m2": 128036845.49095051,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2400703",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "2af741ed93902152346a878f74302cdcafb8e7cb9d38aeba6ef8c35f993d16b9",
+      "source_ewkb_sha256": "4aa72c486a93b01e8d1c84275112ebff037ea4f89d9d2b3b7985caa9dbc6001c",
+      "normalized_2d_wkb_sha256": "2af741ed93902152346a878f74302cdcafb8e7cb9d38aeba6ef8c35f993d16b9",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 77,
+      "bounds": [
+        -36.8424654999999,
+        -5.41279569999995,
+        -36.5373817999999,
+        -5.27267599999993
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 191335438.94438842,
+        "original_area_m2": 191335438.94438842,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2400802",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "ddbfce407a4294eb553849e537c45095698f6aa36d17b8e64410ea29c55d4d64",
+      "source_ewkb_sha256": "903345814fa7d8b379890eb0c526af146fc4f474a381d3f965317a2bd0b9b527",
+      "normalized_2d_wkb_sha256": "b19cb07dbbdac4edf612bf5640d0d51ba905e629062144c4e208235218b0586d",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 309,
+      "bounds": [
+        -36.7717948,
+        -5.75892519999996,
+        -36.2622375999999,
+        -5.52605829999993
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 741596315.9873981,
+        "original_area_m2": 741596315.9873981,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2400901",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "3bc3bf85744304f96b06eebf1c2d6be789e2aa1b484ba436b7ca4affafffe672",
+      "source_ewkb_sha256": "966e7c9887e0c9358609180a18a189fe63f389eb3b887e37f382a8aae523181c",
+      "normalized_2d_wkb_sha256": "dc1954f0796262a8102b72986ef9612d8b2f391742331967a100611e7b3f5828",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 292,
+      "bounds": [
+        -38.0635432,
+        -6.27309749999995,
+        -37.7766131999999,
+        -6.14058589999996
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 244897102.4867519,
+        "original_area_m2": 244897102.4867519,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2401008",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "f6139c7f85225a09422dcf1635b33f417a1c62cdda5c5054427c0299aa35634d",
+      "source_ewkb_sha256": "c993354990d3269fd2bdb16d4f6879089a5236bc20c193ccdcaef5afb53c7e8d",
+      "normalized_2d_wkb_sha256": "5b5d8e0fc7530ea8e6adb24a5f39695b242a5be4719458ee0ec77ae93a41b4fc",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 224,
+      "bounds": [
+        -38.0901382,
+        -5.93980319999997,
+        -37.6422062,
+        -5.31656919999995
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 1569172369.0007997,
+        "original_area_m2": 1569172369.0007997,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2401107",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "ebe465835774f642b20355672d7cc0fe4835f5c6d10892007fcb5a1d06fcfc35",
+      "source_ewkb_sha256": "bf655e59e789dce6abd80ce794915b1dc6ea9005bbe1f1212a97c1e6c21e9fa2",
+      "normalized_2d_wkb_sha256": "ebe465835774f642b20355672d7cc0fe4835f5c6d10892007fcb5a1d06fcfc35",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 523,
+      "bounds": [
+        -37.1532481,
+        -5.12465069999996,
+        -36.8556672999999,
+        -4.81635919999997
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 342747408.81889427,
+        "original_area_m2": 342747408.81889427,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2401206",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "4f47f88f8449e8062363a7427cdf6f1d1d22312d068ba824ae25688161129de1",
+      "source_ewkb_sha256": "46f7709d9cd8e69b907767ee1fb5111be09c448f03765046bffa700e537b67d0",
+      "normalized_2d_wkb_sha256": "4839d5badb465a65b4a7d6a0ec8ee5d34c6d1fd5b7937a5461767b9af05835c8",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 121,
+      "bounds": [
+        -35.2980691,
+        -6.24286629999995,
+        -35.1107888,
+        -6.14816179999997
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 115405535.38597192,
+        "original_area_m2": 115405535.38597192,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2401305",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "1d2989e54203075f95eaa90b91285c2de3292140c13cb4d760f15b8dd2e5571c",
+      "source_ewkb_sha256": "0e49d5bc8c0050a3556df61726a2d0f8d6a2bd19019f84a6dde9acb0d692924a",
+      "normalized_2d_wkb_sha256": "44ac276c873190c3fa343dcada6b7488de078463fbd282f1cb75d60db5af5cf9",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 166,
+      "bounds": [
+        -37.4674525999999,
+        -6.08648589999996,
+        -37.1623382,
+        -5.70800419999995
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 890894321.9981261,
+        "original_area_m2": 890894321.9981261,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2401404",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "a4a0247cd6d4a7c0a4f66ed1c37471ec6bee7502173dd732f5c86ac6cdbaf658",
+      "source_ewkb_sha256": "c6b6e95a481566b11e56a498da2ed8f636c035eb16d7469b06ba40ee07649cee",
+      "normalized_2d_wkb_sha256": "dcd54918f1713037a956c84c90daa999bd87b9ec2f524f20f4c54117756299f4",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 488,
+      "bounds": [
+        -35.1318449,
+        -6.52779119999997,
+        -34.968454,
+        -6.31083849999993
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 247483730.41821712,
+        "original_area_m2": 247483730.41821712,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2401453",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "78716732a4133da8c2d27e8f645a92ab02d1defe31f32d6cc76da19e22014e4c",
+      "source_ewkb_sha256": "acf7e844735ee56648e27491845ba700f1edd9fd6bd3f5ae194f976ca7c6e443",
+      "normalized_2d_wkb_sha256": "b27111a3bdc808f579362f022ca7aa06fea82eefc60e554d7f07e1ba78200f51",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 103,
+      "bounds": [
+        -37.7900289,
+        -5.27793229999997,
+        -37.4659819,
+        -4.88592469999998
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 825672869.856077,
+        "original_area_m2": 825672869.856077,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2401503",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "07765bd6b67387deec8dbad673b57bf48d11f62ca0f8593881b44855565b3735",
+      "source_ewkb_sha256": "9454e9e9432f026dba7b0073ae9cae61ef553311e9809449849988a9dda7cf06",
+      "normalized_2d_wkb_sha256": "07765bd6b67387deec8dbad673b57bf48d11f62ca0f8593881b44855565b3735",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 182,
+      "bounds": [
+        -36.031832,
+        -6.06938939999998,
+        -35.8347719999999,
+        -5.89325809999997
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 152623685.99491963,
+        "original_area_m2": 152623685.99491963,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2401602",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "5e289e0ca358b5830a578526499685e1b1b9d1cd01fbc9e82ef12bfad4b3bf0d",
+      "source_ewkb_sha256": "9f9d636726ccbcb0c1f721a6159573caa20d8843f550f3f64715d4a3f3d8782e",
+      "normalized_2d_wkb_sha256": "a1e4ccf589d9c7ebc1b2cc2d63836ee45cfb8bd35843a4939b37bd9c4de83040",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 187,
+      "bounds": [
+        -35.9416651999999,
+        -5.73301189999995,
+        -35.6321363,
+        -5.60536499999995
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 301067371.801967,
+        "original_area_m2": 301067371.801967,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2401651",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "dcbb1b340509495a147d5d9864ac24cb88ce5065fcf3f039bca8ac91b2d29b29",
+      "source_ewkb_sha256": "9d6f9330cc64f37e64ceeeb68c7d0574f2d6a170f58a6c302ee0ca3f275b264d",
+      "normalized_2d_wkb_sha256": "dcbb1b340509495a147d5d9864ac24cb88ce5065fcf3f039bca8ac91b2d29b29",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 112,
+      "bounds": [
+        -36.5474391,
+        -6.05627459999994,
+        -36.3299691,
+        -5.85191039999995
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 253519802.88457292,
+        "original_area_m2": 253519802.88457292,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2401701",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "b1e75cbac9a9b3bd42de356d0b9b4f3ce91ce44078f30f322bf37a624fc8f1c3",
+      "source_ewkb_sha256": "86c67432086518bd7c5501344e514bf567989f24bcdcf4ebf0a8e5b6443b628d",
+      "normalized_2d_wkb_sha256": "66c4ebd93a10bf4198e0a1ed114294c23e5d63401bfaf503367cd94d7af0d946",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 20,
+      "bounds": [
+        -35.6501929,
+        -6.07954469999993,
+        -35.5374012,
+        -5.93230809999994
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 122033662.93408164,
+        "original_area_m2": 122033662.93408164,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2401800",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "2c4af8361b77a027550affe3dfcbbd49f74d2203961aff3346e8e384c76242bc",
+      "source_ewkb_sha256": "12ba061fba98329a5669d2e0ad7721e81c139625fab61462705c3ef9dc12b38e",
+      "normalized_2d_wkb_sha256": "7a177b3fe490d18f44c5b354c146a2d5953c2d754c645a0e4f880a818c4f8b63",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 68,
+      "bounds": [
+        -35.4364252,
+        -6.27323109999998,
+        -35.3393718999999,
+        -6.15845969999998
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 61559167.34573253,
+        "original_area_m2": 61559167.34573253,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2401859",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "658bee872ae16631be39940e65cfd6d7fd488d6ec62eceff1608e6f5bfd17ade",
+      "source_ewkb_sha256": "945656825b06f25f3a623bcbfb35a1353879944390272ae3ac699fbc6d93d919",
+      "normalized_2d_wkb_sha256": "956730d3ec308b7490c3c5022dc824b803d68f38f652881628ba63aa115960ef",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 176,
+      "bounds": [
+        -36.1517302999999,
+        -5.30401489999997,
+        -36.0019485999999,
+        -5.05138209999996
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 225647755.47085902,
+        "original_area_m2": 225647755.47085902,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2401909",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "37806fb0135d0fcd49d5e89392e86cc016bf1769f1d5d8767f10dd1992848946",
+      "source_ewkb_sha256": "7cd52bdf8f05037af0588d9c84daf5a211b02421434a62c48989d9b0277250b8",
+      "normalized_2d_wkb_sha256": "aadfc575767ad2e8c8c642b5710d8e869dd425fccf70467dcd42d8b81c0283ce",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 154,
+      "bounds": [
+        -36.1156033999999,
+        -5.85875459999994,
+        -35.9239150999999,
+        -5.65528679999994
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 261195394.98514596,
+        "original_area_m2": 261195394.98514596,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2402006",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "581a136759972b4e26a9c4d32e50ac8105465718c37b39148ceb0fbfba7abb25",
+      "source_ewkb_sha256": "f8a5affa8d48c1960bd8f086026cd2415d22383727769372f642ff603a59ee9a",
+      "normalized_2d_wkb_sha256": "f3ed31f2897ae8f82d286b41cc63eb045b14def2b253fde9c6c2c419315442a7",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 274,
+      "bounds": [
+        -37.2308829,
+        -6.73416579999997,
+        -36.8608158,
+        -6.19071839999998
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 1228582430.8861542,
+        "original_area_m2": 1228582430.8861542,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2402105",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "10ba8d14df31777d36758357335e4d9bed5e90961b1dd7451b788915f454589e",
+      "source_ewkb_sha256": "49272945dcfd2ee98fd2b520d49bd54d3ada14764c55eac7ca34147032b9d521",
+      "normalized_2d_wkb_sha256": "1b199d12f44c5092097f6770b08dadd063a3014b3d4050dea2c2084bb26ffae6",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 92,
+      "bounds": [
+        -36.2953965999999,
+        -6.31762709999992,
+        -36.1337594,
+        -6.15801519999997
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 213726794.2330199,
+        "original_area_m2": 213726794.2330199,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2402204",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "091bbf1d1d92ee6ae34343f67d8fbea8b096b501cfeaeae130df3009ab1cf128",
+      "source_ewkb_sha256": "f8b42e01cd803f7b2c8ec90026d5853b3291aa6b0db14d01f34984fb8512543b",
+      "normalized_2d_wkb_sha256": "cff47da7d2ab299ced7d5ee74591b66a0a7cb0856b9bbbce46410f4e3f3b80a6",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 262,
+      "bounds": [
+        -35.2722146,
+        -6.55275979999993,
+        -35.0310643,
+        -6.28175299999998
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 245484751.9211382,
+        "original_area_m2": 245484751.9211382,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2402303",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "1c7f14b2c71d5e0ebb6f45e83b3161d995514271eebba950665ffe9e409fb4eb",
+      "source_ewkb_sha256": "542d6b1b11e1f87765f6bfd4930b0c01dd14b6f8e4d7d933a2cead39e21f2359",
+      "normalized_2d_wkb_sha256": "1c7f14b2c71d5e0ebb6f45e83b3161d995514271eebba950665ffe9e409fb4eb",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 211,
+      "bounds": [
+        -37.7337899,
+        -5.98191979999996,
+        -37.4421202,
+        -5.56684469999993
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 1094488670.2508903,
+        "original_area_m2": 1094488670.2508903,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2402402",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "aadfb774f02066af21aa085a41832e29ec2afac2edde06bfcbc517ae73b0e78c",
+      "source_ewkb_sha256": "caeca59a4880e58dc6913bcc0d311f931c37ee2ec6993b613d3631ae9c45f914",
+      "normalized_2d_wkb_sha256": "187eeac9f5adf23584716815aa5990fd1e171a69d158bcd3e14520359381603d",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 151,
+      "bounds": [
+        -36.679748,
+        -6.63446569999996,
+        -36.4358581,
+        -6.47290829999997
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 246307947.73413974,
+        "original_area_m2": 246307947.73413974,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2402501",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "6f38b03b82c937d5dcdc5f5ec4fe630b84bda34679edd479096d3365cc1ca0ea",
+      "source_ewkb_sha256": "4ae8bc810ed360f6b57b944bf11e3b2ee63d80b336a67e030e290d2869999992",
+      "normalized_2d_wkb_sha256": "bfa87b0f93d176c2480ef8dfb75400fb38157c843ad0bc5f31037dd94687616b",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 154,
+      "bounds": [
+        -37.0512313,
+        -5.40375719999997,
+        -36.7153322,
+        -5.13101219999993
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 517738812.9948102,
+        "original_area_m2": 517738812.9948102,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2402600",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "378b6c005d114e40845c72010eec0d345f859d2be7961f1d2576cf5f369a7ef4",
+      "source_ewkb_sha256": "dcd677286ea8d07c83167f6a08afce07608bcd99453d3cffc27b09e1b997436f",
+      "normalized_2d_wkb_sha256": "378b6c005d114e40845c72010eec0d345f859d2be7961f1d2576cf5f369a7ef4",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 701,
+      "bounds": [
+        -35.5518999,
+        -5.73780159999995,
+        -35.2249236,
+        -5.45715979999994
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 724837798.3869698,
+        "original_area_m2": 724837798.3869698,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2402709",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "869f150a2f001af311e8c33b230b1664fc66f36766dafc972881c9ba7bd6e84a",
+      "source_ewkb_sha256": "95cee422a6f6ad61f221cc2b3fce8510299465bed29327f55f0ed34595462fd5",
+      "normalized_2d_wkb_sha256": "4510b6412b8997e5f3057a72c3b1db0d5971fcd92d5224954bf278b8afa5663d",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 87,
+      "bounds": [
+        -36.44873,
+        -6.12216619999998,
+        -36.2241794,
+        -5.83036259999994
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 393570002.81887287,
+        "original_area_m2": 393570002.81887287,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2402808",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "08aa33c6eb1573cf3a69fe70ac40b8009bbfddd47cbfda435e728787f8dda9da",
+      "source_ewkb_sha256": "0349abd3f7c048c1745bfd2d0b04c9a4fedf650107dd2282a14b312c0d9ff644",
+      "normalized_2d_wkb_sha256": "fd7f915f95b3d1bd463c117c715bdbb5cb455de3456ca61f132954176ea1c7ad",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 56,
+      "bounds": [
+        -36.2963384,
+        -6.42025959999995,
+        -36.0961043,
+        -6.29791189999997
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 185747099.61787647,
+        "original_area_m2": 185747099.61787647,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2402907",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "5483f5d3f80e5184a80ec7d344cd8f43fabc001fa923e22debf8d264d8abd523",
+      "source_ewkb_sha256": "41d5d40938016a5b4ec658de839c5278466b4f157d0e5665b2fd8f780ef1abd8",
+      "normalized_2d_wkb_sha256": "1df3bb4f5471d899e3daef7334ee9a55d438233cdbd058acdaf5a106a6a5b6bb",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 65,
+      "bounds": [
+        -38.4881872999999,
+        -6.32970679999994,
+        -38.3574996,
+        -6.17289679999993
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 117140536.884937,
+        "original_area_m2": 117140536.884937,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2403004",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "bddd2b59c8435e5fe80cb89dd2f237dd7d40cdbced9d2b1f574d72eb381d8124",
+      "source_ewkb_sha256": "e564d891d4737b95c3cb0249de059268a43e4f12f4200afd268dcd2307e9a8b5",
+      "normalized_2d_wkb_sha256": "5c37a2a0fdbe59cfb31e43976d117313b166f3a6e9e36eee702a46de21536e42",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 235,
+      "bounds": [
+        -36.9300292,
+        -6.47854639999997,
+        -36.7391512,
+        -6.23940059999995
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 295830389.75759983,
+        "original_area_m2": 295830389.75759983,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2403103",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "084327278003fa6009e0ec78c69c99d78544723dcb13f06634cdb6fe900694d1",
+      "source_ewkb_sha256": "18e16a9d7fdde71e3d627a89b24be80574d217ece20b5670d0bc194d0c3f9a22",
+      "normalized_2d_wkb_sha256": "9fc7dfabe822466dd13e6cd2e60e2b4f2cd823db7b0f38c1724627c07cc09aa0",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 393,
+      "bounds": [
+        -36.6279435,
+        -6.38645089999994,
+        -36.2568489,
+        -6.09794979999998
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 864349737.2495642,
+        "original_area_m2": 864349737.2495642,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2403202",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "da47b18e348651158c10b8f244d7c48fedb729247475185d88f423f1b8055cf6",
+      "source_ewkb_sha256": "5d661b49fbbc6a164969247089b91467f191c2fd76f6799470bf9953fb5673fe",
+      "normalized_2d_wkb_sha256": "9c5deced7f4cb050c4ea344ef4c491b9cb022663744e4e3bea870718260bff04",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 151,
+      "bounds": [
+        -38.4659796,
+        -6.17787299999998,
+        -38.3395874,
+        -6.05233459999994
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 113736825.39796734,
+        "original_area_m2": 113736825.39796734,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2403251",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "7a0af1e5c1906607aa7d069150ca61feca6672f38a4f4e40342a9181b59afd2a",
+      "source_ewkb_sha256": "b652105b908e786fdccc1b0034747f3bd7242893367d6b67a57260e20696ccca",
+      "normalized_2d_wkb_sha256": "56f2d2dc7c13e7888790cc65311b0d404b1c8e04e39b77ae32b0f61e281850be",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 481,
+      "bounds": [
+        -35.2960851,
+        -5.98472099999998,
+        -35.1208713999999,
+        -5.84981719999996
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 124005925.46203057,
+        "original_area_m2": 124005925.46203057,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2403301",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "e9e6dc71eb8aff0c4213b3113dafc62033ebc0d13e3a9a59f6cab9c6d238ee86",
+      "source_ewkb_sha256": "2884d8fcbbfae31497916198604a35aaaf8d348d1f244797972619b53a8b8710",
+      "normalized_2d_wkb_sha256": "533268b25cea87a05a96b70b925c5f515de9497124b337671feb5cfd22297fae",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 69,
+      "bounds": [
+        -38.3673458,
+        -6.20154739999998,
+        -38.249116,
+        -6.06579879999992
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 125748635.28680336,
+        "original_area_m2": 125748635.28680336,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2403400",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "b522bfcc9adba00b66feecc0423640858a95745e79c7a32a6e25b79b7e17d0ce",
+      "source_ewkb_sha256": "6ac680d72db3203f03f550dc08a584f19d08b8af54fe0d6fcdf63e6f3e36c6a8",
+      "normalized_2d_wkb_sha256": "b17e480f5e64283538dc8bb1166f7e6f8f16fccc399efdb5acdecc9a7abc2fda",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 130,
+      "bounds": [
+        -36.7665438999999,
+        -6.98273479999995,
+        -36.5601561999999,
+        -6.79977089999994
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 264985356.9412158,
+        "original_area_m2": 264985356.9412158,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2403509",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "5bd8e30f8f74b85079a90512f3125ed6ea32259dd63f9605e607d00bd68a4982",
+      "source_ewkb_sha256": "0fb92ea767337e3f2d741de3afcaf65a6a3434b8bffd00b742361b055b834909",
+      "normalized_2d_wkb_sha256": "bf61769a1b99413037eb0a562a718ac4efa0393ff75b2c04ee12e54cd1df8629",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 98,
+      "bounds": [
+        -35.3465355,
+        -6.40311219999995,
+        -35.2666912,
+        -6.19095859999993
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 135838605.42648938,
+        "original_area_m2": 135838605.42648938,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2403608",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "63ff7215120721a55b4288b139a3a7b63f113c033fd6bcc4ff2dbbf5ebdc5c51",
+      "source_ewkb_sha256": "48784f2f440e17cc68b05d671116be3c14def760b8331d468e9ca992109e86d5",
+      "normalized_2d_wkb_sha256": "f4bc10e8911a1c4cdb956ea0299eb35a5ba6fbf86e2d6212b0ec63fc0422e06b",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 384,
+      "bounds": [
+        -35.3610346999999,
+        -5.74324329999996,
+        -35.1922013999999,
+        -5.61214929999994
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 140639517.50799465,
+        "original_area_m2": 140639517.50799465,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2403707",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "a87db239ef996eb94f94a886decc96a97087a8e6165ed174f02189bca8e8cd2f",
+      "source_ewkb_sha256": "da8838d352ce24c27b595ea3e7b7a86b7255d8a5c159534a6e235faf6c613483",
+      "normalized_2d_wkb_sha256": "38c594a470b80b96c057f69a2d516b1c1ecfc2664612aff56b6a98beb00bf95e",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 38,
+      "bounds": [
+        -37.7614361999999,
+        -5.63478269999996,
+        -37.5623935,
+        -5.41588059999998
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 292183622.5086311,
+        "original_area_m2": 292183622.5086311,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2403756",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "270f3e3b3cceda5c0452aa1be09ff96d53c0851c90a86725dca8d96a1af65511",
+      "source_ewkb_sha256": "70de4f21d942a98e37eeff8dc2cdfae6f7e50a8ebfe5d2753f22c2536ef92f3e",
+      "normalized_2d_wkb_sha256": "270f3e3b3cceda5c0452aa1be09ff96d53c0851c90a86725dca8d96a1af65511",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 116,
+      "bounds": [
+        -36.5679276,
+        -5.85929149999993,
+        -36.273546,
+        -5.69096609999997
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 322621557.0037531,
+        "original_area_m2": 322621557.0037531,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2403806",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "16f177b4b9e84b76407645116096e9edd257ce4f32b1e65769924a66a1d04ec9",
+      "source_ewkb_sha256": "8911f9a3342462d321e82a34734a15658204386076eff92aac37c4871984c5b8",
+      "normalized_2d_wkb_sha256": "e28f1bfaa21db7f50777ec90ffa71c5ccc50d280f360513e9c0031632b50dbd3",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 350,
+      "bounds": [
+        -36.9573171,
+        -6.32054309999995,
+        -36.7037035,
+        -6.03928349999995
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 507892126.84379727,
+        "original_area_m2": 507892126.84379727,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2403905",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "7cd08179a1f3515c09c8e6338fec5aed8260a05c09fa7b56aecdb03b756e8a01",
+      "source_ewkb_sha256": "6ce4343de915e935b7620d3f7f9c90c3ab210bd03826f5d70f23b550a1ec98ff",
+      "normalized_2d_wkb_sha256": "8f1c078c376e3e48f29cd2f054ca44194dbf9a7161488226afd52415b019c24e",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 199,
+      "bounds": [
+        -38.1921485,
+        -6.12598929999996,
+        -38.0088087,
+        -5.95869639999995
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 181557885.8918264,
+        "original_area_m2": 181557885.8918264,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2404002",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "76a7123e64031f2a3f99cacaf189c0a4346c4f8fba9d4e27540963a0d78c0357",
+      "source_ewkb_sha256": "e481b252786165e9908cf1df2b6453c4e7e6c42b2f845b734820932cf8e5047d",
+      "normalized_2d_wkb_sha256": "76a7123e64031f2a3f99cacaf189c0a4346c4f8fba9d4e27540963a0d78c0357",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 137,
+      "bounds": [
+        -37.8894966999999,
+        -6.21726359999997,
+        -37.7956538,
+        -6.10398039999995
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 63277991.68607268,
+        "original_area_m2": 63277991.68607268,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2404101",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "069b220d7fc7bcafea5374a251d24e5b19d866c95695deb890b4d3414ed83ed1",
+      "source_ewkb_sha256": "a3f9303d46ce441a5f3fe992daebe109384d8d823f9059dfd899997e5c1e906c",
+      "normalized_2d_wkb_sha256": "069b220d7fc7bcafea5374a251d24e5b19d866c95695deb890b4d3414ed83ed1",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 342,
+      "bounds": [
+        -36.3095972,
+        -5.28947749999998,
+        -36.0994547,
+        -5.07717429999997
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 340745873.1011051,
+        "original_area_m2": 340745873.1011051,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2404200",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "698eb3973a046b5d47b3167e8e3c6a9b5601ee3b7926b9f507d9cd5fcf6cab1c",
+      "source_ewkb_sha256": "c7940773df1d65f68ab913d724f0322272a3fc7e78fdcf0e544bde6f45c88896",
+      "normalized_2d_wkb_sha256": "e95ebe650b27561a54770765bdefe20a76c1e986a1b4f027a9f9808ff687efd5",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 151,
+      "bounds": [
+        -35.2856763999999,
+        -6.37020749999994,
+        -35.1452515999999,
+        -6.20532219999996
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 192279655.431439,
+        "original_area_m2": 192279655.431439,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2404309",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "de2a2f3bde405808fb84f200d23aec714ac40ace9c5167a331aa4dfe7fb635c5",
+      "source_ewkb_sha256": "739d7ccc37871149763cb87ea71eab63f20d9cd798d3ae05cf45664869af214f",
+      "normalized_2d_wkb_sha256": "04e113c3a3391c819d7eafefa65e54dc8546c29f2f9f7b233ecfacc9e703dc5e",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 95,
+      "bounds": [
+        -37.8128022999999,
+        -5.58693339999996,
+        -37.2932850999999,
+        -5.21919739999993
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 1109324524.0540745,
+        "original_area_m2": 1109324524.0540745,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2404408",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "f87a4a13ad1e006ddd8c6fa61528d396889c458f054cfc2ced776484e747fd66",
+      "source_ewkb_sha256": "dc2701389d2f9584387370536c8ed619d21a658f9a7d0b5b90de5770eb6453b8",
+      "normalized_2d_wkb_sha256": "2558585258bebb45b94deb7bbb1a84d958d070aabbb488aadfc622b6d5305459",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 175,
+      "bounds": [
+        -37.3078475,
+        -5.01548099999997,
+        -37.1310515,
+        -4.88140279999993
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 124533938.17836362,
+        "original_area_m2": 124533938.17836362,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2404507",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "ab3d7392741acf1cc4048bbd7f8a63ac8a7845360327cce9b5b6509fff67fa2e",
+      "source_ewkb_sha256": "e886e31f37a849512accc171cda35a34350c9e609578e97da89050712f82bd11",
+      "normalized_2d_wkb_sha256": "d138f5e4732fa7b4701810f9d7162bfa24ed9162331e02b7ec0dfee16aafba03",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 241,
+      "bounds": [
+        -36.4306440999999,
+        -5.28947749999998,
+        -36.2755562,
+        -5.08069319999993
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 258302651.28147665,
+        "original_area_m2": 258302651.28147665,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2404606",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "3f05fed8cf9e60be9734960a5923ada227bc6979a02cc8f31713d888d79cddcf",
+      "source_ewkb_sha256": "197f4c5c02f45ab8f16f72cfa6b14233d48eae303d98e139754565ecb7f5c4e0",
+      "normalized_2d_wkb_sha256": "51b06b7aad25ebb9b2e3987b0a0922d9af84324855aa460f0bbda14086f53b52",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 87,
+      "bounds": [
+        -35.6564981999999,
+        -5.88180859999994,
+        -35.4468641999999,
+        -5.70274559999996
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 312026261.16202,
+        "original_area_m2": 312026261.16202,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2404705",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "e4e235a810a815629c7d2d0005465335aacac067767d0b8df09b79b46975f159",
+      "source_ewkb_sha256": "70cb045b13f66eded4c81f16e1f7ed8602da4199133f8a8773e547ff49fe181f",
+      "normalized_2d_wkb_sha256": "92f53010f583968c50ba0a39f06b3ab3e92ab5ca1cfb29663232611287179a2c",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 160,
+      "bounds": [
+        -36.9038669,
+        -5.64684849999998,
+        -36.6990453,
+        -5.44234239999997
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 374247053.4632962,
+        "original_area_m2": 374247053.4632962,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2404804",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "abdd977fb4a2138d44539b6ec545b495801b60df1e3d0021cbf113377498fd6e",
+      "source_ewkb_sha256": "289077bcbed71d1b02eb13ea691d901a4cfaeb093be8d3792ad032f99a3e26c0",
+      "normalized_2d_wkb_sha256": "abdd977fb4a2138d44539b6ec545b495801b60df1e3d0021cbf113377498fd6e",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 89,
+      "bounds": [
+        -37.2739493,
+        -6.82614009999998,
+        -37.0754171,
+        -6.72364409999994
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 127348667.8883107,
+        "original_area_m2": 127348667.8883107,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2404853",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "2f5874bd69f79564365789a3fbf3765c9bf7c764799641b205096d7d6e9a3706",
+      "source_ewkb_sha256": "4f5df6a9fce47fe4f385dc31be6ac8669752060808d9d7c5f8aeba9c82b8496e",
+      "normalized_2d_wkb_sha256": "74183fd73a1e3c70cdf07a6983ffe9c49cfb4d55c39429222b8069425a05ef8c",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 187,
+      "bounds": [
+        -36.8975260999999,
+        -5.76391779999994,
+        -36.7026797,
+        -5.60348229999994
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 203625834.82209593,
+        "original_area_m2": 203625834.82209593,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2404903",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "a5cc0d9de4a45c022e376ed48b31ac0fc1f271ad720e09ed7cca31b5289f9101",
+      "source_ewkb_sha256": "4556ecbea1df799d64008fb90afa2187c5eaf2539f0b9e8ada85bba67422225d",
+      "normalized_2d_wkb_sha256": "a5cc0d9de4a45c022e376ed48b31ac0fc1f271ad720e09ed7cca31b5289f9101",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 105,
+      "bounds": [
+        -38.0144351,
+        -5.90353499999998,
+        -37.8560841,
+        -5.69713249999995
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 133031670.10184886,
+        "original_area_m2": 133031670.10184886,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2405009",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "432e1ce6db001c0b39da37684468b714e0df9ebced5fa408adb1aeda2be4ca46",
+      "source_ewkb_sha256": "a8f9b759f425af7c5d2b435eaa5cdd25d8ad616b27bb0c02abe5dde30af33127",
+      "normalized_2d_wkb_sha256": "fed74cde39203ab4385f2efae50cb990a8730591955a3bd8fe3fb6b277ea93b4",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 96,
+      "bounds": [
+        -36.2992446,
+        -6.43735949999996,
+        -36.0964810999999,
+        -6.37041039999997
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 54562363.03559756,
+        "original_area_m2": 54562363.03559756,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2405108",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "6c0ac3c06475ea2412ec8b8cb87c94c7fb605e9a555e6a7bd283e4ad204b7308",
+      "source_ewkb_sha256": "ebd521269688848b08d332ba36dda565ee3dbbaa41f739f78bf06e4d99486a71",
+      "normalized_2d_wkb_sha256": "3a1edf04ce0671404f04b30f74a1475239c9fe7b721d9372026b653214e84e1a",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 33,
+      "bounds": [
+        -36.27584,
+        -5.46378759999993,
+        -35.9924081999999,
+        -5.25552999999996
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 442755364.85706896,
+        "original_area_m2": 442755364.85706896,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2405207",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "5c9b12234184a4fbf96a3768ec5a7ab7c00cf63e15ec9b18d9f7e36d4509b720",
+      "source_ewkb_sha256": "f3514b0146eef9b66a6b316db6093fb05c6747394225140b7761b08a47fac225",
+      "normalized_2d_wkb_sha256": "928c82bd7c250e1d522999c8e535ef335c65231958e0f612bee05e9ef39a9f23",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 167,
+      "bounds": [
+        -37.5930969999999,
+        -6.09665489999998,
+        -37.359054,
+        -5.89394949999996
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 303445604.3252123,
+        "original_area_m2": 303445604.3252123,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2405306",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "a7ce853fc0259936caf36dc20bea68791ac716ab0a316780548ee3879b9ef54f",
+      "source_ewkb_sha256": "517de1597669f720b97ea05e0e214dc407fb1305e3c19a375939be32682ac168",
+      "normalized_2d_wkb_sha256": "a7ce853fc0259936caf36dc20bea68791ac716ab0a316780548ee3879b9ef54f",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 180,
+      "bounds": [
+        -35.7406453999999,
+        -6.22221459999997,
+        -35.5317208,
+        -6.04677659999993
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 167041546.53408465,
+        "original_area_m2": 167041546.53408465,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2405405",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "9743329e226e7d068940314e1d2dd06c4a6ab54a08ae46927ead017c3200da9f",
+      "source_ewkb_sha256": "38ddcbda5e4bf8b7a7000cc4062c721a23b1e0ab2a1c764d842932e27674be29",
+      "normalized_2d_wkb_sha256": "798856a295e36060ea4b88241d74e1952cf616d7d4461e83edffa39b48b70f20",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 83,
+      "bounds": [
+        -35.9654864999999,
+        -6.49300619999997,
+        -35.7799261,
+        -6.35216629999996
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 188989108.62660912,
+        "original_area_m2": 188989108.62660912,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2405504",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "2ff82d7ea54190666212e01b73427b2126564f825f55f3318e44a47554c33428",
+      "source_ewkb_sha256": "4ff0145b591d55fbdd2ea1e4b70e6c366ef39b5a4f7801e407aab5299e65ad8d",
+      "normalized_2d_wkb_sha256": "abc419ffa38778aee501b39228d5f7b88a3b2eff9188b23d6eec752907143e72",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 47,
+      "bounds": [
+        -36.0625348,
+        -5.71487489999993,
+        -35.9112795,
+        -5.46378759999993
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 254036189.09763244,
+        "original_area_m2": 254036189.09763244,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2405603",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "6303ec75dda22a004a8501a34b5b26866e5911aac1d07ad47180d1e63964f880",
+      "source_ewkb_sha256": "8985ab1972fc4d5e26c921c3c69741ff9132fc11c53f8044557c0363079c55ed",
+      "normalized_2d_wkb_sha256": "b56d5b54e5cebc56a77a12a2b0cd9b6a8236a4d9fc37b3ab5c5d38db000529b3",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 146,
+      "bounds": [
+        -37.3976699,
+        -6.45466909999993,
+        -37.1266757,
+        -6.15060069999993
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 330528282.93631583,
+        "original_area_m2": 330528282.93631583,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2405702",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "b0c95c33edbe7100da84a0a5fd981d3f063bd1580481a64012f2d4d8de3ea916",
+      "source_ewkb_sha256": "1b87d1ef51482697d55f3afd2c99f313f3c618ee58ab1ffa2de3f5e96af201da",
+      "normalized_2d_wkb_sha256": "0ff37808c363399ea63d8a6b3d1024b831e78719750329ce1cc4b388f4f10a3a",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 227,
+      "bounds": [
+        -36.9513744,
+        -6.68231519999995,
+        -36.6690962,
+        -6.51283319999993
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 367644436.8274094,
+        "original_area_m2": 367644436.8274094,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2405801",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "8500b5e448f95b17915e65651438418f7fcb1304b6c94f5c5df0f287c05ab0eb",
+      "source_ewkb_sha256": "652f6679f65258476d81c788b95b664ea5462844a6916678babd5c0276476b48",
+      "normalized_2d_wkb_sha256": "da098e3e673e2a6c511e4c0b83b2de54499d7e23990bf82777c36a76f8b8df87",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 222,
+      "bounds": [
+        -36.0127522,
+        -5.63841759999997,
+        -35.7450602,
+        -5.30608219999993
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 714971283.9539193,
+        "original_area_m2": 714971283.9539193,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2405900",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "1761db5f0efa2a104a71a16009d632900b63aaa95f52cbad5cce8ff21780545e",
+      "source_ewkb_sha256": "3d5626ad4fe3906685b44cb1a4fcd91844481fa1d54a2d9abc44636f8bcede62",
+      "normalized_2d_wkb_sha256": "f9b51cc06a4fdaa6db18b35ecd898018aa4a0d9f56b1029e1ce372ab27fb5aff",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 86,
+      "bounds": [
+        -37.9080959999999,
+        -6.33308809999994,
+        -37.7574299999999,
+        -6.24587489999993
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 88172749.78783827,
+        "original_area_m2": 88172749.78783827,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2406007",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "6c24635c55f2dd5eaaedbd5465af2c19c57000674977f7675dee1a99aa3fe5b1",
+      "source_ewkb_sha256": "65d8a20d66f2216fa832349b62b07ae326da55db5541a6fd3b29d2963c85a7ad",
+      "normalized_2d_wkb_sha256": "fee710e4d1b2e56f3285cc1b0e87f1bdbdcfec9b8c416818fbd5792725597687",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 103,
+      "bounds": [
+        -38.3365803,
+        -6.41837549999997,
+        -38.2253266,
+        -6.27806679999998
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 117634508.5089679,
+        "original_area_m2": 117634508.5089679,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2406106",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "cfe5b38b0df3881d2d381e9b24397038d984a1872c39d05acf5b0787b4d33d86",
+      "source_ewkb_sha256": "a74758c3aa7bbd200146bfeac07d9154a3fd98c7573b6d4e3eacd3bfa1af32f8",
+      "normalized_2d_wkb_sha256": "0eb8b655451eb95879158ea0158acfb9c1be4c8a2a806f2dc85dfa44bc01e09b",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 331,
+      "bounds": [
+        -37.1755727,
+        -6.24064999999996,
+        -36.8478795,
+        -5.81362119999994
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 933731896.231756,
+        "original_area_m2": 933731896.231756,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2406155",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "7d9bd5bf1c09e8a53e280ec82617ff19dd9163b8d1e1abe84a6db368010f62bb",
+      "source_ewkb_sha256": "2baed98197b8491390a68748b0e1a0942d07b46b91033937708a3b6b1a165309",
+      "normalized_2d_wkb_sha256": "7d9bd5bf1c09e8a53e280ec82617ff19dd9163b8d1e1abe84a6db368010f62bb",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 128,
+      "bounds": [
+        -35.3674561,
+        -6.31525629999993,
+        -35.3189556999999,
+        -6.18544589999993
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 44640901.432512,
+        "original_area_m2": 44640901.432512,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2406205",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "8942c9396ca8919ea747836eed1d6a959b1d8257698ceec8b832d0cb0b6ab735",
+      "source_ewkb_sha256": "43e7ee3db5564443a14e54422bc8850d99edc68c50ce69460d10ea83f3b95e2c",
+      "normalized_2d_wkb_sha256": "dc80a2c709f3963f7026d2e8ba95bed48a1382ac6a806cd6fd404370a4c63e44",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 110,
+      "bounds": [
+        -35.6830217,
+        -6.43041969999996,
+        -35.5442429999999,
+        -6.30862579999996
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 104065465.19068567,
+        "original_area_m2": 104065465.19068567,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2406304",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "34ddffff38ace09ac234c6d45e6510ebb5e89adb849a0aa5b2e9e7e552a03fbf",
+      "source_ewkb_sha256": "84cdb660c957f8685d567ba7d821341e1d49e4f3b0a3bed6a75133b1258425c5",
+      "normalized_2d_wkb_sha256": "129be19c2f100020e3705a8610041809344ae0b0ece61f5e11ed9fe6ce74ead3",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 79,
+      "bounds": [
+        -35.5677211,
+        -6.25342649999993,
+        -35.3813898,
+        -6.13241599999998
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 117970378.00400136,
+        "original_area_m2": 117970378.00400136,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2406403",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "ea12adae7a63528ac070b7351b99945b066b02872922293111ef220e20017ad2",
+      "source_ewkb_sha256": "98737ac0813f2fff7f499f42e3adfa5d7c75f20e821c065b26a5d8c4c3df6b6a",
+      "normalized_2d_wkb_sha256": "e10ba0613319828d0ce243fa4bbf5d8c02797e9f414a752573662fb2ff274a90",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 12,
+      "bounds": [
+        -35.9248041,
+        -6.07317579999994,
+        -35.7783375,
+        -5.94709639999996
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 111608880.80842426,
+        "original_area_m2": 111608880.80842426,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2406502",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "b27e146eb09b57c361a17f9a5d195f36562658e2dd3b2df9865dd339e7b608c7",
+      "source_ewkb_sha256": "6b5b21c9b7d892ffbff6fd22eb4a55a6af163502e7fffa47db168a25ffb9c0f2",
+      "normalized_2d_wkb_sha256": "94fe6f60044019154e797dbec43e4fe5edb318efec7ed48d83587bbc9a21bfa1",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 275,
+      "bounds": [
+        -36.6387154,
+        -6.14379479999997,
+        -36.3985738,
+        -6.04141999999996
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 176302288.0295688,
+        "original_area_m2": 176302288.0295688,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2406601",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "e1cedd083d40f3eb26de1b820707fe77dafce864a4231cd6a796d539b10ec4b4",
+      "source_ewkb_sha256": "447733a08120748e02e57cc1c8e88021da38d037f1eea43cf2064099f428b82a",
+      "normalized_2d_wkb_sha256": "e1cedd083d40f3eb26de1b820707fe77dafce864a4231cd6a796d539b10ec4b4",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 135,
+      "bounds": [
+        -35.5504185,
+        -6.20141449999994,
+        -35.4436327,
+        -6.09053939999995
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 79128044.6853741,
+        "original_area_m2": 79128044.6853741,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2406700",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "7ba8747ceb41cdfa74c27f7969ac280ce92932a4db04e422c0f991408690602b",
+      "source_ewkb_sha256": "858a3237994b77a54f6c16ff92a96a83e0699918acec769539d98940d1d7842e",
+      "normalized_2d_wkb_sha256": "36b7667194d57a9a7d606896f5d08067797e3b47a8eae0f9a4aeeb84023b1c56",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 102,
+      "bounds": [
+        -36.284752,
+        -5.89995339999996,
+        -36.0625348,
+        -5.43387419999993
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 676629645.9372417,
+        "original_area_m2": 676629645.9372417,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2406809",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "76ddd88646fe2e05ec550e04fb224023531ec4f5b5ba9f93841fd95735f115e9",
+      "source_ewkb_sha256": "d4a5e328564ab0c4f7bcc4cc8673e1d896dc714bb931ad686f6b78dd92a71751",
+      "normalized_2d_wkb_sha256": "767cf8c9960e7968bfba8989af0a785d6bf55c6c1c89a37131b15afc5c34f0ac",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 97,
+      "bounds": [
+        -36.2281646,
+        -6.21057279999997,
+        -36.0766677999999,
+        -6.08878979999997
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 130210082.45155525,
+        "original_area_m2": 130210082.45155525,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2406908",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "6d25021f1e3df8d1012820013957e14a4c7ad483db4018feb40af37615ed227f",
+      "source_ewkb_sha256": "a83a2a5950351408df22aa9845d933f6a7bb7469c4c9f6fbec27222ecb76380c",
+      "normalized_2d_wkb_sha256": "87af966c84d958da5767224c954c513cddf5bb0a4281fb6e79f51f701e00a0ea",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 97,
+      "bounds": [
+        -37.8639580999999,
+        -6.15368799999993,
+        -37.7890411999999,
+        -6.05690629999998
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 30931191.070383847,
+        "original_area_m2": 30931191.070383847,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2407005",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "c1180fc29735f3ffd60f2cedb851647005259b0025308f94e48e6cd1a88c5514",
+      "source_ewkb_sha256": "67839ecdcb5071e3dac978cf965899463759083061e66564fe60b3873d5370a8",
+      "normalized_2d_wkb_sha256": "229e149f63a7db88588d816dbfa895bf18798d982facdf78ff3224af87dccdce",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 113,
+      "bounds": [
+        -38.4905342,
+        -6.46198749999996,
+        -38.3312969999999,
+        -6.29345749999993
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 166638223.9808719,
+        "original_area_m2": 166638223.9808719,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2407104",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "25eb8804abd64448af0b744ae8d09f78c766c446afd3c4ef74e068745d946821",
+      "source_ewkb_sha256": "9bbc0e806514c4a542a9e28c17304e99b37eb2e846cee36acd1e840aafacee30",
+      "normalized_2d_wkb_sha256": "b45381b93caf4efd42fbde2ded6847ebaad4ae36ea5ee492342c66f6b58c078d",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 243,
+      "bounds": [
+        -35.5722266999999,
+        -6.05395479999993,
+        -35.2807069,
+        -5.82947249999995
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 510090044.7766168,
+        "original_area_m2": 510090044.7766168,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2407203",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "e61be71b36818efb74173f32792e251cd1f789cfdcade0c8e58ba76f2518e291",
+      "source_ewkb_sha256": "695fd1c2e3cfdf09e54fa2b837a7794536bd12d8271e8b7c2ee24c6928ee0159",
+      "normalized_2d_wkb_sha256": "e61be71b36818efb74173f32792e251cd1f789cfdcade0c8e58ba76f2518e291",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 757,
+      "bounds": [
+        -36.751502,
+        -5.40223809999998,
+        -36.3681850999999,
+        -5.06179869999994
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 775289533.7299026,
+        "original_area_m2": 775289533.7299026,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2407252",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "9d752e5d44f996aab3a89cd49bb7c5bbaf1da5b2ab62d83edd70bde3b351d3a5",
+      "source_ewkb_sha256": "5d389ee761d21146eae62296390408474c803547e46fc8f170df9637c47950ff",
+      "normalized_2d_wkb_sha256": "6c7e2ead3e3689d0a79a8eeba9776d4339625955a7868a20a8f3e979e2ea5d31",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 30,
+      "bounds": [
+        -38.3475799999999,
+        -6.44801359999997,
+        -38.2752583,
+        -6.37420089999995
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 31970567.578746766,
+        "original_area_m2": 31970567.578746766,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2407302",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "c0e496158d9f0f12fef7b38edb7dbdc9bcf88b0f79c7b7f5ff2e4349ec4802a6",
+      "source_ewkb_sha256": "eac9bc49ae67a7320eac8a0f33ded9689d20071a92223f784226357ebc6448ea",
+      "normalized_2d_wkb_sha256": "343f4d89a9d0751c33cff466bb9f30400ae374da1c8f232e84bba97829c20e76",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 41,
+      "bounds": [
+        -38.2585066,
+        -6.38675629999994,
+        -38.0573036,
+        -6.17583129999997
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 345709572.9705519,
+        "original_area_m2": 345709572.9705519,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2407401",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "e8f05ac2bac460971e9c0ec5b70dc4ce562cda51e9cb95657481fc149d8750bf",
+      "source_ewkb_sha256": "7b6f4fcefaf76e34fe78d710aefca326eed8694b21f2c407dde61eaf0c7030b0",
+      "normalized_2d_wkb_sha256": "df739bd69138032e18a765e20f238761fc7a574f21a2ac39438c2a4e73d100f5",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 373,
+      "bounds": [
+        -37.9809908,
+        -6.17679179999993,
+        -37.8323788,
+        -6.00426999999996
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 169463539.30259365,
+        "original_area_m2": 169463539.30259365,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2407500",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "c0eaab9562b5b188f5443e6791ed42b9e8bfd69eba963e03555df576ce38d876",
+      "source_ewkb_sha256": "4586dbc99b102fafbbee645b01b73c689a4cd44aca961d1c7ac3dbc46efb32a9",
+      "normalized_2d_wkb_sha256": "63e27c07343f43c23c3063e7c979672af6cc2f676093ab4de94fabace696f819",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 823,
+      "bounds": [
+        -35.5018059999999,
+        -5.53060599999998,
+        -35.2534782,
+        -5.37687749999998
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 132129479.01964682,
+        "original_area_m2": 132129479.01964682,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2407609",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "b4eecad418eabb1d7b0fcfe0fe8c7c0c3a7d34c987221b2243dabcc3c8d3490c",
+      "source_ewkb_sha256": "81f9f3022201fe12713a8024ac29034a22e445c0616c0ea09e2ef2b9aecb7dab",
+      "normalized_2d_wkb_sha256": "59a5ddb2c8b160fa5162328b4a7a143abdc7ac4c2105ed8cbce544a9bd10a553",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 53,
+      "bounds": [
+        -37.5773794999999,
+        -6.15214049999997,
+        -37.359054,
+        -6.00609939999993
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 142608176.026022,
+        "original_area_m2": 142608176.026022,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2407708",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "ed526799491489012d841320d21a1d658a7e7653806a554e5335112c7dbc5c83",
+      "source_ewkb_sha256": "b6f592e33b125cf3b4c4fb5175cf92cc1bccdc28276df69aafee86797cb475ea",
+      "normalized_2d_wkb_sha256": "ed526799491489012d841320d21a1d658a7e7653806a554e5335112c7dbc5c83",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 48,
+      "bounds": [
+        -35.3412638,
+        -6.54451759999995,
+        -35.2244294,
+        -6.44686629999995
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 82214312.35720225,
+        "original_area_m2": 82214312.35720225,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2407807",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "91a50ec38c2db3013c19f2fc959613aecb7706905b70bb0cad22ad8bd4c5f301",
+      "source_ewkb_sha256": "4d681f124ee4c3dda46e43f11527d978bf98730c614dec0147679bd9b1f3eedc",
+      "normalized_2d_wkb_sha256": "96e2385ea3f5da10b738eba59075880d0ebdb5572d53da85611ef91baa2d4d6d",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 277,
+      "bounds": [
+        -35.5453886,
+        -6.18196659999995,
+        -35.2984258,
+        -6.04621719999994
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 211258699.18932825,
+        "original_area_m2": 211258699.18932825,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2407906",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "641683b203d118164dc5127804897c45795810875385402b0db8379c418f9e2d",
+      "source_ewkb_sha256": "85bf67158ce84470543d8ce7e65a819657f61f6298cf19e7f561a3abfa2f1414",
+      "normalized_2d_wkb_sha256": "a58f8fbc5f94f4877ad65ff7641d3a6216f218f63f60c0bbecca17242995e169",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 43,
+      "bounds": [
+        -35.8545738,
+        -6.48327589999997,
+        -35.7646791999999,
+        -6.37777289999997
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 71946194.52166215,
+        "original_area_m2": 71946194.52166215,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2408003",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "e262f36c45f9f6abfc2471d71b1c403fa5a635873c81c5cbae94fd99cf344651",
+      "source_ewkb_sha256": "2676bd55c955b7c7905e0fb42465ad30ec0312fcd644d97c0cbb41b66e5d3a0a",
+      "normalized_2d_wkb_sha256": "6985c715c7217871b085fa457a4c0690d52534a53441e0053a94466ba17bb854",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 262,
+      "bounds": [
+        -37.5830953999999,
+        -5.49049229999997,
+        -37.1054099,
+        -4.88096139999993
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 2099328500.2134843,
+        "original_area_m2": 2099328500.2134843,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2408102",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "4f9c981f552be66bdcd35f8905cd5b9aa6e75eed6997d920795e256dc79ada5b",
+      "source_ewkb_sha256": "fff1f65b49884e1bf26cc6a7147ca8b54d57606349e2d491474923df7108ee5d",
+      "normalized_2d_wkb_sha256": "b78ecf1ddf865181a2442fa3cbcfbbef7f2f6c23925d9e27413ebe97e77531da",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 1254,
+      "bounds": [
+        -35.2913417999999,
+        -5.89981769999997,
+        -35.152936,
+        -5.70404889999998
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 167401353.4003469,
+        "original_area_m2": 167401353.4003469,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2408201",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "a3ea70b391b36691a30601b0b016a1c0e2a6f7cff71e4f033fbfbb498dc961b2",
+      "source_ewkb_sha256": "f0ec7ef690eb3befdd0f36a22ee8fafc74cd067a3c22ac0e505cc95a51213db9",
+      "normalized_2d_wkb_sha256": "5565652083d5f1526b55f2f11d4fade492f04186acdba5281a6da952c68f4b2c",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 515,
+      "bounds": [
+        -35.2462399999999,
+        -6.17434519999995,
+        -35.0962716,
+        -5.93349429999995
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 307718853.8780147,
+        "original_area_m2": 307718853.8780147,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2408300",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "02971ab4412a7e86561b93a4c0d0a80b567514153cece59a74f7cfce530759cf",
+      "source_ewkb_sha256": "d94fabfd48b0ce6cecd7e26c68eae029f59ecf52749e8c29d6fde8e8600f90ad",
+      "normalized_2d_wkb_sha256": "78cca7a1f50df82233e6c93654ed6ddc4df1947f46462298427b647382ed0f67",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 188,
+      "bounds": [
+        -35.5813846,
+        -6.53861689999997,
+        -35.3003193,
+        -6.38151599999998
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 277318780.0023595,
+        "original_area_m2": 277318780.0023595,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2408409",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "055abe9cb9e0d41b08476a3dc6000788affb4cc7623dcff7169fc0c19f79f798",
+      "source_ewkb_sha256": "fc309446867582c0dcbaa00c5e0173ba001ced3b0192d5e2986f3b820b001728",
+      "normalized_2d_wkb_sha256": "375bb0f380171c7323c66d1592d23e54c4840a4d309888ff54bf5465c30a48ea",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 170,
+      "bounds": [
+        -37.7740757999999,
+        -6.05058199999996,
+        -37.6485762999999,
+        -5.91905529999997
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 136394425.54878694,
+        "original_area_m2": 136394425.54878694,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2408508",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "11e53c47cbcda570468e598a482fd0f7c9c885bf0803a0f5ad78d6b24b100689",
+      "source_ewkb_sha256": "9dd90b47ef1676dc3b813c3844dae58fc3d5fb2fb31cc6de3a07ac8bdf3d82c4",
+      "normalized_2d_wkb_sha256": "11e53c47cbcda570468e598a482fd0f7c9c885bf0803a0f5ad78d6b24b100689",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 119,
+      "bounds": [
+        -37.0035912,
+        -6.79047819999994,
+        -36.8166881999999,
+        -6.57759259999995
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 253210950.30613557,
+        "original_area_m2": 253210950.30613557,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2408607",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "9db24c800d3befba10b17e2ff0d86bec226b43a9030944d949ef4f95b22286a2",
+      "source_ewkb_sha256": "eae4f1d71d8f6568250fee3c36e94e9295216e1ec9f253e0526a9c599594e22e",
+      "normalized_2d_wkb_sha256": "ae03d0b0c25d3ffc8255d5d2bedb79dbad67fa5389ef70ec6ddebafc38db9a0b",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 74,
+      "bounds": [
+        -38.3475799999999,
+        -6.50561729999993,
+        -38.2290219,
+        -6.39175709999995
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 81391123.36624807,
+        "original_area_m2": 81391123.36624807,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2408706",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "c9d3a9ab93bab1538b41c57e4e4463a2742bf0a394f20561f6e7d9e3ef6d01fb",
+      "source_ewkb_sha256": "a56c13989638b15ed73c2d9ccbfc9dd7363296907a79e97430ca74f0a88b41b2",
+      "normalized_2d_wkb_sha256": "5bdba2b8002dcf0dc09fdb919f203e73948d0ce1ba2893aa0e7cf8fd7f2e8851",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 52,
+      "bounds": [
+        -37.2254043,
+        -5.89100859999996,
+        -36.9940975,
+        -5.65622149999996
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 383208538.35954434,
+        "original_area_m2": 383208538.35954434,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2408805",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "d0545792c8b63075ebaf066979ccb0517fb99090bd761b576d2473a36ea74a5e",
+      "source_ewkb_sha256": "72ba80d9469a2b9f7756b8708b82b466c95df44d02c951cf4a1f56f708d1b990",
+      "normalized_2d_wkb_sha256": "d0545792c8b63075ebaf066979ccb0517fb99090bd761b576d2473a36ea74a5e",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 56,
+      "bounds": [
+        -36.0508177,
+        -5.39905009999995,
+        -35.8318646,
+        -5.21002439999995
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 231006475.24215198,
+        "original_area_m2": 231006475.24215198,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2408904",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "720bb922fb8c5ce65146be1f6061989297c418e89890ac045dd23e434e4ac56a",
+      "source_ewkb_sha256": "1181acaaa6c7839f6f6aa2df2d6698b8206a128136da66871add32b40b7c9617",
+      "normalized_2d_wkb_sha256": "85d6ec18f2129d1766b8e0eedad2f3cea9645dea3bf1242b22486cf4c32eaf03",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 225,
+      "bounds": [
+        -36.7342103,
+        -6.84355119999998,
+        -36.5013048,
+        -6.57934919999997
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 513506790.73444873,
+        "original_area_m2": 513506790.73444873,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2408953",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "1bd93d98b1720895d62c5d76d59808ba915a435dd33177d7b7c2b76fa1ca70a7",
+      "source_ewkb_sha256": "dae1ff01c468ccc3ee0c388653005a35154c69343de96e3c58a66ecc47fbcd26",
+      "normalized_2d_wkb_sha256": "49e821a45862c80d557334fd60c9183acdf319daebe834f48e5991c74664d018",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 311,
+      "bounds": [
+        -35.4815783,
+        -5.45336559999993,
+        -35.3259919,
+        -5.26904889999997
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 151097757.14087254,
+        "original_area_m2": 151097757.14087254,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2409100",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "e5c7d8d85221e58837b116607ba8a44940c43fdca48449f984a47130decae084",
+      "source_ewkb_sha256": "bd1f0f02d96c285e17a88a3c2ca29a5a7860a5d6a48f01bc83aca2de50720804",
+      "normalized_2d_wkb_sha256": "8ecc60f8d7adbfb2a8c07313871b78707766516c07f0e8ff7bb99691239bd171",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 196,
+      "bounds": [
+        -35.6713008999999,
+        -6.48405799999995,
+        -35.5584357,
+        -6.41410359999998
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 44105441.568073325,
+        "original_area_m2": 44105441.568073325,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2409209",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "10fab28bd8b4459c660b12a6f19e05cb569a2e223c855ae8f6119ece8c1c45e3",
+      "source_ewkb_sha256": "f414efa72dd8b8170e4d466ea98525e9118c31fd36ac62e2ce17b6f2ba176899",
+      "normalized_2d_wkb_sha256": "10fab28bd8b4459c660b12a6f19e05cb569a2e223c855ae8f6119ece8c1c45e3",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 38,
+      "bounds": [
+        -35.4255507,
+        -6.32284519999996,
+        -35.3581296,
+        -6.24538999999993
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 41214964.05144703,
+        "original_area_m2": 41214964.05144703,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2409308",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "e39749d11f93c7aea09e399ab26c8464ce11384a08d56311afa1ef088fed14a8",
+      "source_ewkb_sha256": "42bec2109a3f521947e9581b6de37be02f9d45d2653a66118263f3ccdc19ef30",
+      "normalized_2d_wkb_sha256": "182fa821260a6065c45ad8e39a12452b2bb4ef7a0315acccb9bc2610ad66f122",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 55,
+      "bounds": [
+        -37.7089966,
+        -6.19101839999996,
+        -37.5218768999999,
+        -5.94131209999995
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 319140023.4022676,
+        "original_area_m2": 319140023.4022676,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2409332",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "8040c45cf6eb4f310716f2ccd883b792ffe321b09a31b1d9768af85b5dbae6c7",
+      "source_ewkb_sha256": "67ab219ea55a5f72c2ef383146f355c9012d7c999f4fd4f51bc85eacdbb0a32d",
+      "normalized_2d_wkb_sha256": "8040c45cf6eb4f310716f2ccd883b792ffe321b09a31b1d9768af85b5dbae6c7",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 122,
+      "bounds": [
+        -35.7968180999999,
+        -5.87227299999995,
+        -35.6387698,
+        -5.71638599999994
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 219572722.10808662,
+        "original_area_m2": 219572722.10808662,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2409407",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "a5b7259ce6da1c3d0c8f3eac8caed3e55ca39df8431a24a9ca9d56a0b3031164",
+      "source_ewkb_sha256": "b31b22a7789bc854c2284e1e9131d0eef25759c1d5f95c7e9f28eff3aa3bfab4",
+      "normalized_2d_wkb_sha256": "31c4031869959018f5bb51d01af0f8237ba4eb10f00c77352deb4aa662505a29",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 87,
+      "bounds": [
+        -38.2749004,
+        -6.19573319999995,
+        -38.0416602999999,
+        -6.01015759999996
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 259959437.2868745,
+        "original_area_m2": 259959437.2868745,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2409506",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "38c81ae1b87b90da697f186be382f86d3722fa65786e659843e2d3a89b73aa89",
+      "source_ewkb_sha256": "31dd0c29ac7fbec13b2181b72b08e0c7a60bb4d37a4bfc35be88519e63eefcb2",
+      "normalized_2d_wkb_sha256": "5e49832f1ef7fc8b35cbab1acf40d10f9ef7bd946d734a85381076c49651ad0f",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 192,
+      "bounds": [
+        -35.9521544,
+        -5.23738089999995,
+        -35.79092,
+        -5.05947799999996
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 221165954.60927686,
+        "original_area_m2": 221165954.60927686,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2409605",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "6479e2c9413464ce596898b04dd403b11449860b5a8f6f821c4ca1be351bb897",
+      "source_ewkb_sha256": "7b45835b6eadff7e87f6fe64c437bfd8c110c901c64966da6a3a5de536919eb7",
+      "normalized_2d_wkb_sha256": "8ba8ae5afc3faa5c09ce724ed704ffeb4fe8e406cba3ebf3297666940b4c3e44",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 14,
+      "bounds": [
+        -36.1719788,
+        -5.65528679999994,
+        -35.9924081999999,
+        -5.40539869999998
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 294968400.0961961,
+        "original_area_m2": 294968400.0961961,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2409704",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "ae37bb19ad611be1e00d1db9d10c1a1feca3872e8f9ce1a219378a0864ba77ec",
+      "source_ewkb_sha256": "29f85a177c33a9629168f344d4b03c3ff50da4b48b5e1f39b50093cb81ce5fc9",
+      "normalized_2d_wkb_sha256": "ae37bb19ad611be1e00d1db9d10c1a1feca3872e8f9ce1a219378a0864ba77ec",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 104,
+      "bounds": [
+        -36.4699072999999,
+        -5.68022329999997,
+        -36.1797285,
+        -5.25078169999995
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 952746998.9831789,
+        "original_area_m2": 952746998.9831789,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2409803",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "6c864c33f2cc6c3d94097ce2b4de05e1de0b0981db2c36c59f2a50d341215724",
+      "source_ewkb_sha256": "67c9d78089a2dabdeadd13f3baa08ee5dea5b7267d2db6155839bd4b4707289c",
+      "normalized_2d_wkb_sha256": "0e0db501156f889432e6e95c2ef8a92587193838ab529a1dc050ea1f1bc85c28",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 122,
+      "bounds": [
+        -35.3151690999999,
+        -6.55839259999993,
+        -35.1458071,
+        -6.37078069999995
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 192709148.4018327,
+        "original_area_m2": 192709148.4018327,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2409902",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "9faf1364f300bda435b2e2ed8f0a83433a7f2031a7ad6d2bc8ac85618d0acf73",
+      "source_ewkb_sha256": "bb08e029248c0da139e07f1497ad5d14c8423cd2c07bbeae46c2e9e88b6472c6",
+      "normalized_2d_wkb_sha256": "c84eca2beeb3ccdb218458080ec0d599aaced7f5c18d61627c274e92928310e4",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 137,
+      "bounds": [
+        -36.754561,
+        -5.41279569999995,
+        -36.5147749,
+        -5.17502949999994
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 419143267.01285106,
+        "original_area_m2": 419143267.01285106,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2410009",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "3e858109a86843171cf3b023b6e693726e342b1a14c02c506adcb57d37967aec",
+      "source_ewkb_sha256": "25fd24e0f13cf1465e17ac5f67e0eb800e9942e8cda57c1e43ce31bf5b11e9c4",
+      "normalized_2d_wkb_sha256": "3e858109a86843171cf3b023b6e693726e342b1a14c02c506adcb57d37967aec",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 42,
+      "bounds": [
+        -38.0998415,
+        -6.33313479999993,
+        -37.9633304,
+        -6.25361319999996
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 82692142.97567838,
+        "original_area_m2": 82692142.97567838,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2410108",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "02cdf5fa6209709c237254c6352c70ff58d63abc50229a9cac30dd037dd4003c",
+      "source_ewkb_sha256": "0fa16f00f0707fae2507eefba459245cf466fcb86b31f98388ba9b6c5e5ed62a",
+      "normalized_2d_wkb_sha256": "bd7e24eea8a1ca3c9b946d389c42428c541d6b7991673e1ec97bce457651d68c",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 107,
+      "bounds": [
+        -35.7477691999999,
+        -5.71443239999996,
+        -35.6256413999999,
+        -5.45759069999997
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 230399635.85906586,
+        "original_area_m2": 230399635.85906586,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2410207",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "e1d091ffcad6109fb9cf61e8b5525580f487677764f58874ab54f24d9400d9d2",
+      "source_ewkb_sha256": "92085fe0ff93fc2b79a1552800b5df4b2ed0e64d9797aef1bbfbaa469ed2012d",
+      "normalized_2d_wkb_sha256": "216c9ae14494394b06c327a4033bbf15576420753a472a69b031bb6031c9b171",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 331,
+      "bounds": [
+        -38.0867294,
+        -6.09637319999996,
+        -37.9544159,
+        -5.96289209999998
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 110053665.6113049,
+        "original_area_m2": 110053665.6113049,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2410256",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "f8fa56d9960579c7a854176dfd2050a1734e21f6c21485c355554a9a4e939261",
+      "source_ewkb_sha256": "8ecc95da99ec941591a16cf3b4e1a88ef89f146af60d11154dbc5971be257600",
+      "normalized_2d_wkb_sha256": "cc7ddfc1b283c08c94c33e4caaddf6303e3a7a573e4698fb5f367ddc0efa0a96",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 292,
+      "bounds": [
+        -36.9751213,
+        -5.17502949999994,
+        -36.7155903999999,
+        -4.97176529999996
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 361235305.76174533,
+        "original_area_m2": 361235305.76174533,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2410306",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "d0fd071929b81eec3d2d9780a89281ea1f2edc227ff47d00dfc146927fc3f6e8",
+      "source_ewkb_sha256": "b20834c7715d88c94a874d9a5ee0a81e37ca53650e13deb66c3997808b383662",
+      "normalized_2d_wkb_sha256": "1d8607a23c5beddd03c8e002d655a1027ff65aa6bbcfee048cc909111404527a",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 40,
+      "bounds": [
+        -35.8258003999999,
+        -6.17719409999995,
+        -35.5888724,
+        -6.03903279999997
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 230038729.9485806,
+        "original_area_m2": 230038729.9485806,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2410405",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "101d09d7c26a382f2e9120d192ed69c5525fb0e550e25308bfff6a33e734c766",
+      "source_ewkb_sha256": "5586b50f4edfd76736635775b7dcb05190cf9857ba379f9c5f634a0e5678f925",
+      "normalized_2d_wkb_sha256": "a7cf613fd2aeecbbcf2dfb20e1b9b24eda8914a79466ad4f376f54e0ef2f3047",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 334,
+      "bounds": [
+        -35.7643788999999,
+        -5.51254079999995,
+        -35.418538,
+        -5.30034549999993
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 504294011.8970589,
+        "original_area_m2": 504294011.8970589,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2410504",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "a3fb0a702935589c7541e363b5fffaf60c0b22377b3169ef5f830fd5f6b83c98",
+      "source_ewkb_sha256": "e466150721878dc843e54586d33f0e3aa02b19d0310a9dc3d6e8f918bc465090",
+      "normalized_2d_wkb_sha256": "8bd3e96e51b0f3a1f9a5403ea8595fe5ab1cafbf9101c4bec170671744ea3d9e",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 36,
+      "bounds": [
+        -38.277554,
+        -6.24925789999998,
+        -38.1617269,
+        -6.15557029999997
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 78231016.67315267,
+        "original_area_m2": 78231016.67315267,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2410603",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "35e47621578237c183eaccbf3350d8865bbbfb079c835019c1112551a8911ccd",
+      "source_ewkb_sha256": "c48e6707e63767b4cba636d3d6bae6d2c876b4f975696be376db1dd6f6094820",
+      "normalized_2d_wkb_sha256": "1d8645b57e52603be963f32de8b32c9110184df3da0e276397fadd13be9c1f3c",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 148,
+      "bounds": [
+        -37.7840897999999,
+        -6.13081649999998,
+        -37.6724495999999,
+        -6.00184219999994
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 100072560.07294022,
+        "original_area_m2": 100072560.07294022,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2410702",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "bd11a98c09ad56c3d43893e4823aeaace06813fe7935da00853dfe02e13ed8a6",
+      "source_ewkb_sha256": "919aaa3e3234dafae783b3f434bf9446ea91cf33469c0be3ac367c9c561d55a4",
+      "normalized_2d_wkb_sha256": "bd11a98c09ad56c3d43893e4823aeaace06813fe7935da00853dfe02e13ed8a6",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 198,
+      "bounds": [
+        -38.044901,
+        -5.99104899999998,
+        -37.8960799,
+        -5.85266859999996
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 127222156.18762055,
+        "original_area_m2": 127222156.18762055,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2410801",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "1c3bdced8f2217eccccedb1e03e092942aad65a8d7face0cd833ba21ca195dba",
+      "source_ewkb_sha256": "d28506cf33f67ec4a59b2f4142254f1116445713ccb8e373bb04b0ec94db7923",
+      "normalized_2d_wkb_sha256": "d318fc9472f4c021495600d230fbaf49f0b452a81fe964759e7e7dc3c460a1ff",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 128,
+      "bounds": [
+        -38.4086642999999,
+        -6.34509469999995,
+        -38.2476409,
+        -6.21754869999995
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 128105819.77878948,
+        "original_area_m2": 128105819.77878948,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2410900",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "401955e758b1dc83707a1b6282dbed7c3e69e7a451e5b5d5b2b50245ddacf900",
+      "source_ewkb_sha256": "f442c847c835ac9e04b50e7f65524925598655ff2abb8b85f5d973605cc0becd",
+      "normalized_2d_wkb_sha256": "bd1e1c801d16a6cfef98ba2e24de5c4aa15a817a9f16bb361b7984ae695b1418",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 62,
+      "bounds": [
+        -35.9396394,
+        -5.91536629999996,
+        -35.7770998999999,
+        -5.71638599999994
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 262876952.69753602,
+        "original_area_m2": 262876952.69753602,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2411007",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "060c7d995331b1bc1c6134ca131c5cc051c1d2823c2229cc063a8a6a06f97c66",
+      "source_ewkb_sha256": "fa07fe263f2f2c9e249065b4413bc42b0f93729cb1f034eaea8fae0edae05091",
+      "normalized_2d_wkb_sha256": "060c7d995331b1bc1c6134ca131c5cc051c1d2823c2229cc063a8a6a06f97c66",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 79,
+      "bounds": [
+        -38.1654371999999,
+        -5.94583329999995,
+        -38.0042923999999,
+        -5.75485139999995
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 154841124.95451775,
+        "original_area_m2": 154841124.95451775,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2411056",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "0a8901f045b9c9827772b24ddf2c709cfc82bcc52df0dc9b1d9662d2e76a18ea",
+      "source_ewkb_sha256": "2b3e949b10e2a4a09d094423a153859df23aa40ea5ba68fc08ae6fb0e8a1af8f",
+      "normalized_2d_wkb_sha256": "67651f5819608ca2dfcc3a1da06fce535ba4438e1871b1d01e1fb3d6f5442116",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 167,
+      "bounds": [
+        -37.4464459,
+        -4.94560219999994,
+        -37.2209958,
+        -4.83138139999994
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 169369848.59840733,
+        "original_area_m2": 169369848.59840733,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2411106",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "faeef81df3028271a5061123fcfecb7e1121eb01e1dc0806ebf1c381fe7ae18f",
+      "source_ewkb_sha256": "637f3c935030e6f18c46a66e52a4c36fb404cc7eb8f5b1748eb10e193ff124a0",
+      "normalized_2d_wkb_sha256": "3da8d5cb8b632f36d713618ef543d4b6d6ca94d59c51f24f08c173c969f6b87b",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 138,
+      "bounds": [
+        -36.0139253,
+        -5.91333369999995,
+        -35.8510974,
+        -5.79465929999998
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 125818074.66286436,
+        "original_area_m2": 125818074.66286436,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2411205",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "99313de26306d23c73b4107e80cafea7dd939b14bc20406b14b787fd1715e561",
+      "source_ewkb_sha256": "65faf75c3c50f0f45a2e71daac613e094e4254a0afbd5b44f18804e9d4f69605",
+      "normalized_2d_wkb_sha256": "60195f3f157cc4f6827fa1009a60c2a0fde86f7699266ea9cf8b3582a3fa8983",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 216,
+      "bounds": [
+        -36.1537635999999,
+        -6.47097199999996,
+        -35.8705459,
+        -6.06938639999993
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 624356070.996393,
+        "original_area_m2": 624356070.996393,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2411403",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "867551e30ec79b2c86765620dd30572a4a539bdafecd6fc32650f77fd3b41381",
+      "source_ewkb_sha256": "beef952f08d2fc3458d8dceea04dfcbd057bb0c36dd3d939700900eea48cd5e6",
+      "normalized_2d_wkb_sha256": "f94146f47ddbc1a93a6b2575d7d1a8e11e212d84c6e5f83804224dc01b3d1057",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 339,
+      "bounds": [
+        -36.8937283,
+        -6.11233859999993,
+        -36.284752,
+        -5.69578679999995
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 1422272997.4179811,
+        "original_area_m2": 1422272997.4179811,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2411429",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "cd8226b5d65aba6e7f3a1b5c42a5bef73a03d99d1d039537b7285f14542af2c5",
+      "source_ewkb_sha256": "df833240642df2457a488a11f2ea04cda915a99462648055235e9caaadcd2b63",
+      "normalized_2d_wkb_sha256": "cd8226b5d65aba6e7f3a1b5c42a5bef73a03d99d1d039537b7285f14542af2c5",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 110,
+      "bounds": [
+        -36.850764,
+        -6.83874809999998,
+        -36.7016202,
+        -6.64671299999998
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 188402350.55577374,
+        "original_area_m2": 188402350.55577374,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2411502",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "5a0faa702f028f054a9f0573434005a9363acb1d74df332c32a7356d7631fdb2",
+      "source_ewkb_sha256": "f931bfc8e275f2cb0690cf9d1cc983039087a401625b45629d77232f26dbe3b9",
+      "normalized_2d_wkb_sha256": "44d9310a7f4ebbe20ae82a09f174b0ef278506c697a3a2de7100a8346f1e9c37",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 168,
+      "bounds": [
+        -35.6432257,
+        -6.41737929999994,
+        -35.3884803999999,
+        -6.23074859999997
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 301081306.20649076,
+        "original_area_m2": 301081306.20649076,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2411601",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "bad4fc81ca94186708f6036897ee4fd3314c83596cf54dc53828a9cd3721cdb0",
+      "source_ewkb_sha256": "b0ceba70addede6d66a49c23dedc668fcf97545cb4a49f0436d9a6b3dd5e98ea",
+      "normalized_2d_wkb_sha256": "04ddccc0ff6cae6beab7aa28a11c0be534e86091d2dbc67e7a3592242c8df1b2",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 356,
+      "bounds": [
+        -36.0659342,
+        -5.25610929999993,
+        -35.9082574,
+        -5.04154319999998
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 288758757.6874276,
+        "original_area_m2": 288758757.6874276,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2411700",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "92eb7484a35d1109ecaea61e9db090520225eff69b16ee2b8cb4895202116993",
+      "source_ewkb_sha256": "c5bc89f6b40f1a4cb0f5d7c0b0b493c3a1a1a29ecd5b37400503f142c7069ca9",
+      "normalized_2d_wkb_sha256": "65a8440e64df22125f897403fa2ac73633ba7318ac26b4f605b6c0a25749a110",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 112,
+      "bounds": [
+        -36.1394372,
+        -6.48890579999994,
+        -35.9652414999999,
+        -6.29932059999993
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 190818285.32851171,
+        "original_area_m2": 190818285.32851171,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2411809",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "679c3ba4057e9fe1fe6bb012ffada066df73a4be44242d199fa37bd8f44c42f0",
+      "source_ewkb_sha256": "08289bc2ec353e73f54a596fa3240bf7715618e2819066770867de0ff5a97363",
+      "normalized_2d_wkb_sha256": "3106ccbf148de2b128d5ade4aff2bc4377b14428f26bdb94315b00ed75d6a185",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 174,
+      "bounds": [
+        -37.2608992999999,
+        -6.44848089999994,
+        -37.0457155999999,
+        -6.18095179999995
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 404427047.0130665,
+        "original_area_m2": 404427047.0130665,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2411908",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "b88fc82854bdc4c9837aeb3a119bc8e0f0d78314ec2e1a663717f086709d9233",
+      "source_ewkb_sha256": "45e45cf2140dc9982de6b9a89c956cfccbec45adc51141e41d8d875308f229d5",
+      "normalized_2d_wkb_sha256": "b88fc82854bdc4c9837aeb3a119bc8e0f0d78314ec2e1a663717f086709d9233",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 122,
+      "bounds": [
+        -38.2521719,
+        -6.04628099999996,
+        -38.1145311999999,
+        -5.93639189999993
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 75587431.48997433,
+        "original_area_m2": 75587431.48997433,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2412005",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "98f78c4ef291e8e22de27d80e1a98f2035fd50628af547921c9b96f37946bc32",
+      "source_ewkb_sha256": "e42bbd9ad78b72a7748b221e7c3a77be4bec3171ca7102b4a60fe75b5695fac1",
+      "normalized_2d_wkb_sha256": "80933a18b8fd4d2a6d3e365cbd4d576017dbad55f84c1cb97034b5f69aecf81c",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 413,
+      "bounds": [
+        -35.4715851,
+        -5.84523609999997,
+        -35.2475613999999,
+        -5.70062149999995
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 249799840.31765515,
+        "original_area_m2": 249799840.31765515,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2412104",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "b5236a2616822d0629fbfa4201132552f32871d64da0bc41ff7a004560c54dcd",
+      "source_ewkb_sha256": "5d0b6cf5fc3567bc47857ef86e845aeb9e87b1f8807689718be3d2310f728526",
+      "normalized_2d_wkb_sha256": "01c055b871bf330e0708ea2ad17b547bc87f9ab326e5a91b3163f37328ac313e",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 135,
+      "bounds": [
+        -37.3142989,
+        -6.76173299999994,
+        -37.0352606,
+        -6.61378379999996
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 277011484.44252694,
+        "original_area_m2": 277011484.44252694,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2412203",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "02a8ae24d0960c59a328346e8bcfca091067ec245dbe981e3502097c35e5dd00",
+      "source_ewkb_sha256": "5e0e4a7d36df98e0f9e63c850690023bd3f0fa421e81001cef9d910d1eeef766",
+      "normalized_2d_wkb_sha256": "0102381591f9a5513d140d90b5f65932013de2f0215438c4fa9caf472b6373d4",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 261,
+      "bounds": [
+        -35.3822329999999,
+        -6.20532219999996,
+        -35.2202690999999,
+        -5.95135899999997
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 289987228.3295972,
+        "original_area_m2": 289987228.3295972,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2412302",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "954652b0393d24221e472b44f4328e6fd7aca153ee4a6b3e4a8adffa4d999c53",
+      "source_ewkb_sha256": "944d34570a90fd5d40abc4179b9acfb75677c5158d243d42d155b96965d784a1",
+      "normalized_2d_wkb_sha256": "da1e438d029b2784bed06d173706f928a9d5600245ee3ccc2d24d7e030c60ad4",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 222,
+      "bounds": [
+        -35.8705459,
+        -6.41861359999996,
+        -35.6432257,
+        -6.18267529999997
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 341115180.38104177,
+        "original_area_m2": 341115180.38104177,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2412401",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "db43f6d913851b7097987b28931e24fb9e0090a2da082981bc12c8288c5e3994",
+      "source_ewkb_sha256": "d2413f9c9f3738d5c089428eba36c8ef6aa96f76985eb87068855b5d023ded45",
+      "normalized_2d_wkb_sha256": "ddc6b2a962d10d76af107fba90680319204bcc32ca98910d559df37d2bb97565",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 157,
+      "bounds": [
+        -36.9627181,
+        -6.53864909999993,
+        -36.7610018999999,
+        -6.41867129999997
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 174506006.79129735,
+        "original_area_m2": 174506006.79129735,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2412500",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "561d095c60627cc92776a0bfe79881bf4ebe1b3937d51a5a2ead5c328405facc",
+      "source_ewkb_sha256": "766e706fed4325fd9071467cede5b789e68047772d11f29d966f57ee822c2521",
+      "normalized_2d_wkb_sha256": "561d095c60627cc92776a0bfe79881bf4ebe1b3937d51a5a2ead5c328405facc",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 178,
+      "bounds": [
+        -38.5795457,
+        -6.30439859999996,
+        -38.3490009999999,
+        -6.12144389999997
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 166230599.2438856,
+        "original_area_m2": 166230599.2438856,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2412559",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "c6b94bdab0cdc1fb324b3730f93f229b0fbb543b486c809bce664929225f0363",
+      "source_ewkb_sha256": "9985d8e9cac70de8cff1b7f168b448f6841eacaa49a3098b94f4dc3a25ebc48b",
+      "normalized_2d_wkb_sha256": "35f64fff3742ace048c5e49d1680635e5ffd8cc40fac5dc7a0837f57dc315c42",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 309,
+      "bounds": [
+        -35.8402247999999,
+        -5.30608219999993,
+        -35.6170566,
+        -5.07499489999998
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 431442403.93040115,
+        "original_area_m2": 431442403.93040115,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2412609",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "55067076ce84e94608eabb0156a8515d45607d70df649c8795ae91bd034bb116",
+      "source_ewkb_sha256": "a65891b8c12ef8d81087897bb8877560e6087ad6a961eab94d9efa161140c94a",
+      "normalized_2d_wkb_sha256": "81d0e33749b646e968c3a4a432938662d3a1c09f2335e142cea9945a755dbaa3",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 103,
+      "bounds": [
+        -35.8498180999999,
+        -6.01587499999994,
+        -35.6684059999999,
+        -5.85321389999996
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 240421905.9088814,
+        "original_area_m2": 240421905.9088814,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2412708",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "7246b17352802cc2d07f69d55c776bcb9c974738c90176ae8d6e5f2b39198179",
+      "source_ewkb_sha256": "b16fc427a4bdd59574038e4d6e472a1946612ac6133fe0bf52f1458a6fad5bc8",
+      "normalized_2d_wkb_sha256": "7246b17352802cc2d07f69d55c776bcb9c974738c90176ae8d6e5f2b39198179",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 48,
+      "bounds": [
+        -35.6874521,
+        -5.98388869999997,
+        -35.5290102,
+        -5.78904129999995
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 195237317.9075276,
+        "original_area_m2": 195237317.9075276,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2412807",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "fb3325fb8c7781f0a72edd3ad590715c60056737188bfb02331fccf90fb7ff05",
+      "source_ewkb_sha256": "883fe271ad8139cae9257451cad3e7f59227fbbd9fef46efe51952ebae7520e8",
+      "normalized_2d_wkb_sha256": "633b09e82cdc48ce9fac9d95a4788d956796200dec1d00a0d50482777b36168c",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 190,
+      "bounds": [
+        -36.9801146999999,
+        -5.97575889999996,
+        -36.7686560999999,
+        -5.71083609999994
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 469100533.25009966,
+        "original_area_m2": 469100533.25009966,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2412906",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "38c7f66e312b22a1d135b5777b3957ef4180f592cdd40da8ef8d4213174abb3e",
+      "source_ewkb_sha256": "4ba253ed67ba3cad176fffb75033900b0709449e80f020c7c6fb3fa06faf335c",
+      "normalized_2d_wkb_sha256": "7dc796ffd95343b87451cc5a5d61861f8be6654af704d2dbf2612c5e542b11d9",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 288,
+      "bounds": [
+        -36.3022169,
+        -6.16480259999997,
+        -35.9627025999999,
+        -5.82991139999996
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 862587353.0152144,
+        "original_area_m2": 862587353.0152144,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2413003",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "fca6f393847cbe73ae287c3b5621ee47612367f5f9e1e19fcbb09878925b0000",
+      "source_ewkb_sha256": "602bbce3edc303c14b1b117bcebe224e56e41fd64dfc06a07658d9ee00389477",
+      "normalized_2d_wkb_sha256": "fca6f393847cbe73ae287c3b5621ee47612367f5f9e1e19fcbb09878925b0000",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 180,
+      "bounds": [
+        -36.7433617,
+        -6.30752119999994,
+        -36.591646,
+        -6.08900819999997
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 197817358.23957542,
+        "original_area_m2": 197817358.23957542,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2413102",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "c345a3a533161822a04d1d5336f8bbfff053f2dafaff42647f95f71940096f69",
+      "source_ewkb_sha256": "9ecdbc1ccf98f8973136c472b62bd396dd62979cc75a642e1df4aef8935f1255",
+      "normalized_2d_wkb_sha256": "a873ed0178eb465b125e86d5a3f722ece4c657f6a5de3aab0b634d37813c6a22",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 38,
+      "bounds": [
+        -35.7986908,
+        -6.09679869999997,
+        -35.5707786,
+        -5.97643519999997
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 143573022.5610445,
+        "original_area_m2": 143573022.5610445,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2413201",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "e439d102792f765d7430ba74926c590fca2f358aff78c7611e1321f644501919",
+      "source_ewkb_sha256": "5337b16c3a2de16287139c1460b23fe1ca27d654743a13f67cc3f3166890e7cb",
+      "normalized_2d_wkb_sha256": "6436f7752dfb81abf74443c2532f7eb0637957ed2dc3c453450785223dee18c2",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 117,
+      "bounds": [
+        -35.1631409,
+        -6.18880489999998,
+        -35.0938867,
+        -6.13458289999994
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 26100485.614464205,
+        "original_area_m2": 26100485.614464205,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2413300",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "fabe9cdbca1620e7599b7352932f4424828849e892c151aafa5d5430f74923b3",
+      "source_ewkb_sha256": "bc346ca3bc5bd013fa90fea6a728ab1e134366993f9604c08ab3a317252fe116",
+      "normalized_2d_wkb_sha256": "fabe9cdbca1620e7599b7352932f4424828849e892c151aafa5d5430f74923b3",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 182,
+      "bounds": [
+        -35.7762276,
+        -6.48284409999997,
+        -35.6645915999999,
+        -6.35810659999993
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 96585633.71518187,
+        "original_area_m2": 96585633.71518187,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2413359",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "7b6ea6c2a53302a07e37a5fde3257a264c27496439d3b085c58f93ce2c9b9fe1",
+      "source_ewkb_sha256": "e32bb32a7bb8ff22f4135c7bb4b7ea3ec1d577d12fd8cd673d2b092d685e6681",
+      "normalized_2d_wkb_sha256": "dd40fa6092f598f65ce69e580416f2fe2898a27a8e968248bd5ef51b36c196fc",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 43,
+      "bounds": [
+        -37.1564878999999,
+        -5.29408279999996,
+        -36.9082604,
+        -4.98589029999994
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 620234716.0032554,
+        "original_area_m2": 620234716.0032554,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2413409",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "0e95270eb1236cda583532dcaf60419a58d907e25537ce711a8cb065e18893c1",
+      "source_ewkb_sha256": "8e67e1ac74e3fcf2e88d264405795925c4773727453698a55c6dd22c66dd00f4",
+      "normalized_2d_wkb_sha256": "c0a1ca4d3a2f3ceb487a61c1e6d433d7896d2aeb1b5f4b800384fc68f7397ee8",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 107,
+      "bounds": [
+        -37.4846995,
+        -6.71003739999998,
+        -37.2183626999999,
+        -6.43709649999994
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 562397874.7890408,
+        "original_area_m2": 562397874.7890408,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2413508",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "c08e8b44bfafa7c297cd11774eb999c02dcd4916ee13ae91b47640cccd19019e",
+      "source_ewkb_sha256": "ea1f293bb0b4cf3386b5c7bd393d9821f49494e91a74bab32a23d351390f5d98",
+      "normalized_2d_wkb_sha256": "78a6712b612f598f5d0cc8d0d8a3a767f933ae61d16986c2713c943cc5dd2cad",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 210,
+      "bounds": [
+        -35.6664120999999,
+        -6.32575639999993,
+        -35.4684999999999,
+        -6.19744189999994
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 193350684.7288768,
+        "original_area_m2": 193350684.7288768,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2413557",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "72972125c8aa1bb3b972d2d10d0ebcb94d9ee669d2f04e05473aaba09795670e",
+      "source_ewkb_sha256": "8d547b4b4c897b7f13a446c4125edb1e822094ef774886abe989633cb3d36b08",
+      "normalized_2d_wkb_sha256": "72972125c8aa1bb3b972d2d10d0ebcb94d9ee669d2f04e05473aaba09795670e",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 130,
+      "bounds": [
+        -38.0474268999999,
+        -6.21122829999996,
+        -37.9374817,
+        -6.07555489999993
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 122375589.75934874,
+        "original_area_m2": 122375589.75934874,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2413607",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "4b5e8d0716e4fbda1a66e79aa9dc97f1ac44be4458251ed7730186e342d41272",
+      "source_ewkb_sha256": "3c6f488c851f811891f83e64559c7dba67e2848b8fdfd3b10f2699ace8642e63",
+      "normalized_2d_wkb_sha256": "e8efc1c5c527308dbfe8137ddbc3e8fafaea39b673b16811db19fbd0e23fa5bf",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 61,
+      "bounds": [
+        -38.0585927999999,
+        -5.85407629999997,
+        -37.8812263999999,
+        -5.69694619999996
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 157849937.8758242,
+        "original_area_m2": 157849937.8758242,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2413706",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "1afe40a6a2bdac521b81985a231f5fd36a7b09532789ff51af1796ac6563fec4",
+      "source_ewkb_sha256": "ce14fbdbf260b49e6f469632ed33f2b833fe530df2df22fc1990c82504ad149d",
+      "normalized_2d_wkb_sha256": "0272548ffd57a9f109e427d5b2733a6b56e651aa6d6a138c390a35a051113cf9",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 102,
+      "bounds": [
+        -36.031832,
+        -6.17181719999996,
+        -35.8225270999999,
+        -6.01063249999993
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 213454962.68304554,
+        "original_area_m2": 213454962.68304554,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2413805",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "d31f37967809b965f4e11a3cc74e87f97dd4561cdbe51df8b6f69d16f7a47163",
+      "source_ewkb_sha256": "e5bf60a119acf5870c5bb8751ec4e4d55d7acdd0ef00ac77853b7ba92780b247",
+      "normalized_2d_wkb_sha256": "d31f37967809b965f4e11a3cc74e87f97dd4561cdbe51df8b6f69d16f7a47163",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 127,
+      "bounds": [
+        -38.1215407,
+        -6.01496769999994,
+        -37.9510038999999,
+        -5.85685979999994
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 124094401.60640061,
+        "original_area_m2": 124094401.60640061,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2413904",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "17265789e9e4244e7ab49d90cd4da6ff490cd7136280c57c74f07246a3276143",
+      "source_ewkb_sha256": "476b18cb57f817d002b0d8c88feb3fb8d6f66de27a95b4e27a02c24ad764a47b",
+      "normalized_2d_wkb_sha256": "bb43e7b5b7e34f1de1913442aec3e33b1dce2c100eecfd8b69a1683fcb8a7202",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 119,
+      "bounds": [
+        -35.6681811999999,
+        -5.72113009999993,
+        -35.4944457,
+        -5.48769199999998
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 352816139.02215177,
+        "original_area_m2": 352816139.02215177,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2414001",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "447d3a47a8454f830d5d9de503e99a90f48008b04a3e26b7992d89c749a3f96c",
+      "source_ewkb_sha256": "98b99e38f40ac7c36d46f85b685ed65b185c053cfe5034c9448c7b62600c3f80",
+      "normalized_2d_wkb_sha256": "ebde626f4b25d531994b673639f70198d43b0178bd06456d39603b6dd57900ef",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 167,
+      "bounds": [
+        -35.9182066,
+        -6.36282489999996,
+        -35.7213801,
+        -6.07436279999996
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 339487766.19188315,
+        "original_area_m2": 339487766.19188315,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2414100",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "c37bd4b9ff35f62570b0457574bce4b2d289ae362387c87a8819fcf05aa94ce2",
+      "source_ewkb_sha256": "2a2bbe9623b4c1af28935bbc085e38343f2116200cbd597f5595fa5b9ba38366",
+      "normalized_2d_wkb_sha256": "5f35ed6df87f2de35ae47a6de95f68223f314d8de93e68d5c775b92f672de2fe",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 77,
+      "bounds": [
+        -38.2526778,
+        -6.52266849999995,
+        -38.0708660999999,
+        -6.36173459999998
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 223671940.87630656,
+        "original_area_m2": 223671940.87630656,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2414159",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "e1be5218371bf8e4dc0551be10f18dd31f25f4ef2c37dad49a2439c7f47c2cab",
+      "source_ewkb_sha256": "71c930a2685210a8071517faedeca6d763d74c8c359e83b6ae14b8529693565d",
+      "normalized_2d_wkb_sha256": "4783704fc4f50be34c1324e7ffb088de51d825053a127dc64552a137322f833b",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 126,
+      "bounds": [
+        -36.7867586,
+        -6.22086689999998,
+        -36.6531816999999,
+        -6.09525619999994
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 68555558.49078186,
+        "original_area_m2": 68555558.49078186,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2414209",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "f807d2e1d8be85f28da3baeaaaadc0527e99bb3ac11cc676ff7354cdbbee47ff",
+      "source_ewkb_sha256": "e3d7e3dc1053c9e45e087ec85f43d484be5b97aac0323b7485c3eb2592e09276",
+      "normalized_2d_wkb_sha256": "9b0f8669f0eee6951a41268b7ee8ccc4cd77430e30bc321fa4236ca6e3644d28",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 315,
+      "bounds": [
+        -35.1559973999999,
+        -6.29902759999993,
+        -35.0330496999999,
+        -6.18002899999993
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 102680053.33639616,
+        "original_area_m2": 102680053.33639616,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2414308",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "467f6f0f1c2049db8967fbd3838b9662f4baff81e4b837c9319f9dabf815d7f8",
+      "source_ewkb_sha256": "07f41fc77c5c0086a677fc2db3b094216c48d4177c053bf2fb7513964536ad85",
+      "normalized_2d_wkb_sha256": "467f6f0f1c2049db8967fbd3838b9662f4baff81e4b837c9319f9dabf815d7f8",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 85,
+      "bounds": [
+        -37.3184792,
+        -6.56945209999998,
+        -37.1884689,
+        -6.40432339999995
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 135454771.86702046,
+        "original_area_m2": 135454771.86702046,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2414407",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "cfbdc6e5413f99980653ebfd3df213c0c6fec389c43b98aa56019f2cdbff9f94",
+      "source_ewkb_sha256": "2f345b5c4e91f461362bcdcc00048335e49375c52f009532dd78b8adb573a453",
+      "normalized_2d_wkb_sha256": "cfbdc6e5413f99980653ebfd3df213c0c6fec389c43b98aa56019f2cdbff9f94",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 774,
+      "bounds": [
+        -35.8318886,
+        -5.46571079999995,
+        -35.3823578,
+        -5.11398439999994
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 753958112.2208912,
+        "original_area_m2": 753958112.2208912,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2414456",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "39b4417660d7cf6ced5158e4c0d279aafca8b3bbd7990c4bcf73c38a5abab523",
+      "source_ewkb_sha256": "97afd00ed499681b66296a6dc12bcc47d5f6390c69199d360fcdd238a7dc20dc",
+      "normalized_2d_wkb_sha256": "735cf50d3efea8423ffaf0f704e3a46b8b11105c69251de368f9f0d7a1a61ccc",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 30,
+      "bounds": [
+        -37.2604532999999,
+        -6.02117119999997,
+        -37.0355751,
+        -5.82374069999997
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 268721254.81883115,
+        "original_area_m2": 268721254.81883115,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2414506",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "67dbdaa1a7ca5accd3f0e0375f73e186de0f239ef9f2b7b15e726c43147290f6",
+      "source_ewkb_sha256": "fba926c429718e792de7245c8ea95ed779caad55f5854f8e6b213f670459ebb9",
+      "normalized_2d_wkb_sha256": "e142f9340279021297e54b1742f5662f0d1af760523263195af68ef24cf96ffb",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 187,
+      "bounds": [
+        -37.9340089999999,
+        -6.09089399999993,
+        -37.7129947999999,
+        -5.89556589999995
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 249610728.9444153,
+        "original_area_m2": 249610728.9444153,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2414605",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "f15dfd68bbb94706d069b4fb60efae49ca6be40a7792f41f36af0b11e80e3ddd",
+      "source_ewkb_sha256": "ba216895f1bae385345dad2de2a7deda073ffb9b726f1143643b5a868ba4f72a",
+      "normalized_2d_wkb_sha256": "f15dfd68bbb94706d069b4fb60efae49ca6be40a7792f41f36af0b11e80e3ddd",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 129,
+      "bounds": [
+        -37.4674525999999,
+        -5.75228049999993,
+        -37.104594,
+        -5.47789879999993
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 873154911.3584726,
+        "original_area_m2": 873154911.3584726,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2414704",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "59a6920e9357d26d8515658cd0bdee0d3d1469d0fc171ec2f8ae4c511043dec6",
+      "source_ewkb_sha256": "bd2e2389c31e40efe9675789688d7c617266215195cb648a3ff4ef1b70c4f086",
+      "normalized_2d_wkb_sha256": "c36b25c4c99ca47ed66f4fec97be7ac1a1cf209ebf2dc2abd69f89d088ce2d8c",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 125,
+      "bounds": [
+        -35.4092084,
+        -6.40881529999996,
+        -35.3096188,
+        -6.22487929999994
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 72684520.73486543,
+        "original_area_m2": 72684520.73486543,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2414753",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "5b66273f9cc6de2cafa33c038ff1f8034f21180b2d62ebd1e97896fb3f9a474b",
+      "source_ewkb_sha256": "6d32f77a3264ee93831c898de484c705f8ad33137690e94040ad7351e8c9b7fc",
+      "normalized_2d_wkb_sha256": "090a8014af697d99b6ba20bc3c38c2e2baf3c82b544e6df764fe9c980a3438a2",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 78,
+      "bounds": [
+        -38.5820985,
+        -6.35650979999997,
+        -38.4564116999999,
+        -6.28616239999997
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 71621862.91122109,
+        "original_area_m2": 71621862.91122109,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2414803",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "710e1208e069a390dc14b7ff2f12a6939878ca9c609c0d794146f79f363f55e6",
+      "source_ewkb_sha256": "0acbcaf56dfbdd42ec697adb9c6d785cda12c0fd2664be0433d634f955b7d4ca",
+      "normalized_2d_wkb_sha256": "ece60e21821ddad2bdaa81f350df4ac12b3fffbdf1509c8b41b0ae02471cc42d",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 220,
+      "bounds": [
+        -35.546735,
+        -6.07844979999993,
+        -35.3651373,
+        -5.98737639999996
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 84130418.88168481,
+        "original_area_m2": 84130418.88168481,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2414902",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "19de7fe6f1e0f28777175ad65a48cd0a378690b7a7934fe43b19613b4368765e",
+      "source_ewkb_sha256": "3db129721d883bca2e944604c9120f7e298e37d6584c2b73343db4d5d1469532",
+      "normalized_2d_wkb_sha256": "19de7fe6f1e0f28777175ad65a48cd0a378690b7a7934fe43b19613b4368765e",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 97,
+      "bounds": [
+        -37.9915058,
+        -6.02955209999993,
+        -37.9211941999999,
+        -5.95586339999994
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 37904430.639745146,
+        "original_area_m2": 37904430.639745146,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "2415008",
+      "kind": "municipio",
+      "srid": 4326,
+      "geometry_sha256": "78a39b6f18af9256928591a02f4ad1ecab86c2accf6a30f447370a4b79ff75ed",
+      "source_ewkb_sha256": "7aaeee9aea5778bbaa3e0999168e76610e2e75b5fec9de45ebf80aa8a1598cd5",
+      "normalized_2d_wkb_sha256": "78a39b6f18af9256928591a02f4ad1ecab86c2accf6a30f447370a4b79ff75ed",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 79,
+      "bounds": [
+        -35.1189072999999,
+        -6.33993419999996,
+        -35.0442889,
+        -6.26583229999994
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 47656258.73269884,
+        "original_area_m2": 47656258.73269884,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    },
+    {
+      "code": "24",
+      "kind": "uf",
+      "srid": 4326,
+      "geometry_sha256": "b31193a54e191e11c24b0d7d6bbd2299555744688be7f719c128f845dd9660f1",
+      "source_ewkb_sha256": "b7fcf4571e9ff640f335c2dcddee87d59e711c7363d4f57dff51f476b60ada24",
+      "normalized_2d_wkb_sha256": "accfdf7e14e9288d7b6a6152dbc378a01cc93ffd3fb75090c84015115fefb4c5",
+      "geometry_type": "MultiPolygon",
+      "coordinates": 8035,
+      "bounds": [
+        -38.5820985,
+        -6.98273479999995,
+        -34.968454,
+        -4.81635919999997
+      ],
+      "valid": true,
+      "empty": false,
+      "repair": {
+        "accepted": true,
+        "derived_area_m2": 52809600946.63323,
+        "original_area_m2": 52809600946.63323,
+        "original_valid": true,
+        "relative_area_change": 0.0,
+        "repaired": false,
+        "validity_reason": "Valid Geometry"
+      }
+    }
+  ],
+  "all_numeric_geometries_equal": false,
+  "comparison_state": "pendente_aquisicao",
+  "software": {
+    "gdal": "3040100",
+    "shapely": "2.1.2"
+  },
+  "derived_geojson_sha256": "1208aad7d1faf85dfdabed0b0bbe58695e6f3fe96fa268c6a03867e0c154fcd2"
+}

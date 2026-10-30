@@ -1,0 +1,5 @@
+B_technical,C_technical,cases,B_correct,C_correct,net_correct_C_minus_B,contribution_to_full_difference
+False,False,57,48,54,6,0.05
+True,False,56,0,50,50,0.4166666666666667
+False,True,1,1,0,-1,-0.008333333333333333
+True,True,6,0,0,0,0.0

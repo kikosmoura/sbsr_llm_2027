@@ -1,0 +1,156 @@
+{
+  "schema_version": "controle-contrato-caso-v1",
+  "run_id": "aa224a7d26124a8dbfa4042e50621cc7",
+  "case_id": "t19_3",
+  "family_id": "teste_pontos",
+  "territory_codes": [
+    "2412005"
+  ],
+  "condition": "B_eq",
+  "repeat": 0,
+  "integration_kind": "gateway_real",
+  "created_at": "2026-10-21T15:04:03.860415+00:00",
+  "freeze_sha256": "55593ae2e52cbd2890ddce5bfed4183977a20b43a9c95123ba43f53e2b1332f0",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 4096,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "native_tools": false,
+    "native_response_format": false,
+    "workers": 3
+  },
+  "question": "Dê a mudança de participação de Área Urbanizada em São Gonçalo do Amarante/RN de 2015 para 2025 em pontos percentuais, com área observada como denominador.",
+  "fixed_plan": {
+    "operation": "comparacao_temporal",
+    "metric": "diferenca_pontos_percentuais",
+    "unit": "pontos_percentuais",
+    "territory_codes": [
+      "2412005"
+    ],
+    "scope_uf": "RN",
+    "class_codes": [
+      24
+    ],
+    "years": [
+      2015,
+      2025
+    ],
+    "denominator": "participacao_por_ano",
+    "direction": "desc",
+    "limit": null
+  },
+  "common_input_sha256": "2af6ae44a1f756a9894b6c80ebdaf3eb7952ba1ec6c83262a83109e09ea4dc3d",
+  "output_contract_sha256": "7cb672668bdaf0cb31f785651d91ec6475f990de121edab04b748bd0da63c955",
+  "system_sha256": "2805f7312e5288c2499d8bc4b6fd55f3a0adc3b8d5ea53aab2533894c62b290d",
+  "messages_sha256": "67667243178ead80bd26c69360d4abf15d29343821df88e0fb16754246f19771",
+  "execution_observations": [],
+  "executor_result": null,
+  "observed": {
+    "status": "respondida",
+    "values": [
+      {
+        "territory_code": "2412005",
+        "years": [
+          2015,
+          2025
+        ],
+        "value": 3.5983640059,
+        "unit": "pontos_percentuais",
+        "undefined_reason": null,
+        "denominators_ha": [
+          24979.984031764205,
+          24979.984031764205
+        ],
+        "rank": null
+      }
+    ],
+    "reason": "consulta_executada",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_pontos_percentuais",
+      "unit": "pontos_percentuais",
+      "territory_codes": [
+        "2412005"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        24
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": "participacao_por_ano",
+      "direction": "desc",
+      "limit": null
+    },
+    "clarification_field": null
+  },
+  "final_answer": "{\"reason\":\"consulta_executada\",\"status\":\"respondida\",\"values\":[{\"denominators_ha\":[24979.984031764205,24979.984031764205],\"rank\":null,\"territory_code\":\"2412005\",\"undefined_reason\":null,\"unit\":\"pontos_percentuais\",\"value\":3.5983640059,\"years\":[2015,2025]}]}",
+  "attempts": [
+    {
+      "number": 1,
+      "messages_sha256": "67667243178ead80bd26c69360d4abf15d29343821df88e0fb16754246f19771",
+      "usage": {
+        "prompt_tokens": 5684,
+        "total_tokens": 9076,
+        "completion_tokens": 3392
+      },
+      "issues": [],
+      "latency_seconds": 36.68500158889219,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "a68b64afe3f5e634cee1a981adeb1b4479ec2c6a052aef848bbd8191e30d2b7e",
+      "output_chars": 256,
+      "state": "valida"
+    }
+  ],
+  "latency_seconds": 36.688085463945754,
+  "model_seconds": 36.68535737297498,
+  "http_events": [
+    {
+      "endpoint": "oauth",
+      "http_status": 200,
+      "bytes_read": 91,
+      "body_complete": true,
+      "response_metadata": null,
+      "elapsed_seconds": 0.20713906502351165
+    },
+    {
+      "endpoint": "chat",
+      "http_status": 200,
+      "bytes_read": 10185,
+      "body_complete": true,
+      "response_metadata": {
+        "json_object": true,
+        "choices_count": 1,
+        "finish_reason": "stop",
+        "content_state": "texto",
+        "final_content_chars": 256,
+        "reasoning_field_present": true,
+        "usage": {
+          "prompt_tokens": 5684,
+          "total_tokens": 9076,
+          "completion_tokens": 3392
+        },
+        "reasoning_tokens": null
+      },
+      "elapsed_seconds": 36.47778768907301
+    }
+  ],
+  "executor_seconds": 0,
+  "scores": {
+    "status": true,
+    "plan": true,
+    "values": true,
+    "clarification": null,
+    "correct": true
+  },
+  "cost": null,
+  "source_geo_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+}

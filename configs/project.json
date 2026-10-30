@@ -1,0 +1,45 @@
+{
+  "collection": 11,
+  "candidate_years": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "base_url": "https://storage.example.invalid/BUCKET_NAME",
+  "filename_template": "brazil_coverage-col{colecao}_{ano}.tif",
+  "catalog_schema": "mapbiomas-catalogo-v1",
+  "pilot_uf": "RN",
+  "pilot_years": [
+    2015,
+    2025
+  ],
+  "source_revision": null,
+  "territorial_edition": null,
+  "data_dir": "data",
+  "cache_dir": "cache",
+  "artifacts_dir": "artifacts",
+  "http_timeout_seconds": 10,
+  "max_bytes_per_raster": 4194304,
+  "max_range_requests": 64,
+  "sample_size": 5,
+  "processing": {
+    "window_size": 512,
+    "max_memory_mb": 1024,
+    "gdal_cache_mb": 64,
+    "max_download_bytes": 268435456,
+    "max_range_requests": 20000,
+    "max_cache_bytes": 536870912,
+    "max_crop_pixels": 180000000,
+    "max_seconds": 3600,
+    "http_timeout_seconds": 30,
+    "range_block_bytes": 65536
+  }
+}

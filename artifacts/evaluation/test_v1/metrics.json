@@ -1,0 +1,226 @@
+{
+  "schema_version": "avaliacao-cientifica-v1",
+  "run_id": "fa7686659da9449d811d154641021724",
+  "split": "test",
+  "integration_kind": "gateway_real",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "metrics": {
+    "A": {
+      "expected": 120,
+      "completed": 120,
+      "missing": 0,
+      "correct": 21,
+      "accuracy_including_technical_and_missing": 0.175,
+      "coverage_answered": 0.0,
+      "precision_emitted": null,
+      "statuses": {
+        "respondida": 0,
+        "precisa_esclarecimento": 7,
+        "fora_do_escopo": 4,
+        "dados_indisponiveis": 109,
+        "erro_tecnico": 0
+      },
+      "abstention_or_clarification": 1.0,
+      "json_failures": 0,
+      "semantic_or_contract_failures": 0,
+      "latency_mean_seconds": 5.393549340888664,
+      "latency_p50_seconds": 4.465319532551803,
+      "latency_p95_seconds": 11.533154656854459,
+      "usage_observed_sum": {
+        "prompt_tokens": 420285,
+        "completion_tokens": 53996,
+        "total_tokens": 474281
+      },
+      "usage_missing_attempts": 0,
+      "cost": null,
+      "cost_reason": "preco_nao_fornecido"
+    },
+    "B": {
+      "expected": 120,
+      "completed": 120,
+      "missing": 0,
+      "correct": 49,
+      "accuracy_including_technical_and_missing": 0.4083333333333333,
+      "coverage_answered": 0.25,
+      "precision_emitted": 0.8666666666666667,
+      "statuses": {
+        "respondida": 30,
+        "precisa_esclarecimento": 13,
+        "fora_do_escopo": 4,
+        "dados_indisponiveis": 11,
+        "erro_tecnico": 62
+      },
+      "abstention_or_clarification": 0.75,
+      "json_failures": 0,
+      "semantic_or_contract_failures": 46,
+      "latency_mean_seconds": 12.388140375981068,
+      "latency_p50_seconds": 11.310760426917113,
+      "latency_p95_seconds": 24.002629500231702,
+      "usage_observed_sum": {
+        "prompt_tokens": 786591,
+        "completion_tokens": 87935,
+        "total_tokens": 874526
+      },
+      "usage_missing_attempts": 29,
+      "cost": null,
+      "cost_reason": "preco_nao_fornecido"
+    },
+    "C": {
+      "expected": 120,
+      "completed": 120,
+      "missing": 0,
+      "correct": 104,
+      "accuracy_including_technical_and_missing": 0.8666666666666667,
+      "coverage_answered": 0.6083333333333333,
+      "precision_emitted": 1.0,
+      "statuses": {
+        "respondida": 73,
+        "precisa_esclarecimento": 24,
+        "fora_do_escopo": 4,
+        "dados_indisponiveis": 12,
+        "erro_tecnico": 7
+      },
+      "abstention_or_clarification": 0.39166666666666666,
+      "json_failures": 0,
+      "semantic_or_contract_failures": 10,
+      "latency_mean_seconds": 10.205724643810148,
+      "latency_p50_seconds": 8.511158362554852,
+      "latency_p95_seconds": 21.43230740970466,
+      "usage_observed_sum": {
+        "prompt_tokens": 590417,
+        "completion_tokens": 110734,
+        "total_tokens": 701151
+      },
+      "usage_missing_attempts": 0,
+      "cost": null,
+      "cost_reason": "preco_nao_fornecido"
+    }
+  },
+  "paired_C_minus_B": {
+    "state": "verificado",
+    "estimator": "diferenca de proporcoes por caso; clusters reamostrados",
+    "difference_C_minus_B": 0.4583333333333333,
+    "ci95": [
+      0.25,
+      0.6481553819444443
+    ],
+    "groups": 15,
+    "cases": 120,
+    "replicas": 10000,
+    "seed": 20271019,
+    "method": "percentil; numpy PCG64; quantile linear",
+    "group_key": "family_id"
+  },
+  "paired_numeric_subset": {
+    "state": "verificado",
+    "estimator": "diferenca de proporcoes por caso; clusters reamostrados",
+    "difference_C_minus_B": 0.5340909090909091,
+    "ci95": [
+      0.3,
+      0.7638888888888888
+    ],
+    "groups": 8,
+    "cases": 88,
+    "replicas": 10000,
+    "seed": 20271019,
+    "method": "percentil; numpy PCG64; quantile linear",
+    "group_key": "family_id"
+  },
+  "territory_sensitivity": {
+    "state": "verificado",
+    "estimator": "diferenca de proporcoes por caso; clusters reamostrados",
+    "difference_C_minus_B": 0.4891304347826087,
+    "ci95": [
+      0.32954545454545453,
+      0.6477272727272727
+    ],
+    "groups": 22,
+    "cases": 92,
+    "replicas": 10000,
+    "seed": 20271019,
+    "method": "percentil; numpy PCG64; quantile linear",
+    "group_key": "territory"
+  },
+  "territory_sensitivity_excluded_cases": 28,
+  "repeatability": [
+    {
+      "case_id": "t01_1",
+      "condition": "A",
+      "same_normalized_answer": true,
+      "same_correctness": true
+    },
+    {
+      "case_id": "t01_1",
+      "condition": "B",
+      "same_normalized_answer": true,
+      "same_correctness": true
+    },
+    {
+      "case_id": "t01_1",
+      "condition": "C",
+      "same_normalized_answer": true,
+      "same_correctness": true
+    },
+    {
+      "case_id": "t15_1",
+      "condition": "A",
+      "same_normalized_answer": true,
+      "same_correctness": true
+    },
+    {
+      "case_id": "t15_1",
+      "condition": "B",
+      "same_normalized_answer": true,
+      "same_correctness": true
+    },
+    {
+      "case_id": "t15_1",
+      "condition": "C",
+      "same_normalized_answer": true,
+      "same_correctness": true
+    },
+    {
+      "case_id": "t25_1",
+      "condition": "A",
+      "same_normalized_answer": true,
+      "same_correctness": true
+    },
+    {
+      "case_id": "t25_1",
+      "condition": "B",
+      "same_normalized_answer": true,
+      "same_correctness": true
+    },
+    {
+      "case_id": "t25_1",
+      "condition": "C",
+      "same_normalized_answer": true,
+      "same_correctness": true
+    },
+    {
+      "case_id": "t28_1",
+      "condition": "A",
+      "same_normalized_answer": false,
+      "same_correctness": false
+    },
+    {
+      "case_id": "t28_1",
+      "condition": "B",
+      "same_normalized_answer": true,
+      "same_correctness": true
+    },
+    {
+      "case_id": "t28_1",
+      "condition": "C",
+      "same_normalized_answer": true,
+      "same_correctness": true
+    }
+  ],
+  "limitations": [
+    "Familias compartilham malha, revisao e uma UF; independencia territorial nao garantida.",
+    "Rankings reais positivos indisponiveis por cobertura RN incompleta.",
+    "IC descreve acerto de consulta, nao incerteza de area ou acuracia tematica.",
+    "Gabaritos independentes no calculo compartilham os derivados geoespaciais.",
+    "Sem revisao humana; amostra revisada por IA e invariantes deterministas."
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "fa7686659da9449d811d154641021724",
+  "case_id": "t05_4",
+  "family_id": "teste_area_direta",
+  "territory_codes": [
+    "2403103"
+  ],
+  "condition": "B",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:39:44.599804+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Apresente, em km2, a área mapeada de grupo Floresta código 1 no território municipal de Currais Novos/RN para 2025.",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": "68006276912b453fa02e59321414d511f7220b9741d49071eab94d95e3bca999",
+  "messages_sha256": "cc6bb8ea8283b082cbe5e1f6939e0a63b7f5fb71ea1c03fd000b290834c70839",
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "respondida",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "km2",
+      "territory_codes": [
+        "2403103"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        1
+      ],
+      "years": [
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2403103",
+        "years": [
+          2025
+        ],
+        "value": 640.9963083355101,
+        "unit": "km2",
+        "undefined_reason": null,
+        "denominators_ha": [],
+        "rank": null
+      }
+    ],
+    "clarification_field": null,
+    "reason": "ok"
+  },
+  "final_answer": "{\"status\": \"respondida\", \"plan\": {\"operation\": \"area\", \"metric\": \"area\", \"unit\": \"km2\", \"territory_codes\": [\"2403103\"], \"scope_uf\": \"RN\", \"class_codes\": [1], \"years\": [2025], \"denominator\": null, \"direction\": \"desc\", \"limit\": null}, \"values\": [{\"territory_code\": \"2403103\", \"years\": [2025], \"value\": 640.9963083355101, \"unit\": \"km2\", \"undefined_reason\": null, \"denominators_ha\": [], \"rank\": null}], \"clarification_field\": null, \"reason\": \"ok\"}",
+  "plan": {
+    "operation": "area",
+    "metric": "area",
+    "unit": "km2",
+    "territory_codes": [
+      "2403103"
+    ],
+    "scope_uf": "RN",
+    "class_codes": [
+      1
+    ],
+    "years": [
+      2025
+    ],
+    "denominator": null,
+    "direction": "desc",
+    "limit": null
+  },
+  "result": [
+    {
+      "territory_code": "2403103",
+      "years": [
+        2025
+      ],
+      "value": 640.9963083355101,
+      "unit": "km2",
+      "undefined_reason": null,
+      "denominators_ha": [],
+      "rank": null
+    }
+  ],
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "messages_sha256": "cc6bb8ea8283b082cbe5e1f6939e0a63b7f5fb71ea1c03fd000b290834c70839",
+      "issues": [
+        {
+          "path": [],
+          "code": "value_error"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 5792,
+        "total_tokens": 6664,
+        "completion_tokens": 872
+      },
+      "latency_seconds": 8.115983205032535,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "b204b755751bc6ac1de8ba0b3cd1a27ecd1c5bf564f28b60cf3cc8050e7f6760",
+      "output_chars": 236,
+      "state": "invalida"
+    },
+    {
+      "number": 2,
+      "kind": "reparo",
+      "messages_sha256": "3b959787e818c6debf6b3bdd77bc6f7b10b5a1b76024c9703267705aad88fe7f",
+      "issues": [],
+      "usage": {
+        "prompt_tokens": 5827,
+        "total_tokens": 6556,
+        "completion_tokens": 729
+      },
+      "latency_seconds": 7.209283842006698,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "5cf9c38ce162635bc2078b16844139e17dd8f8b6070789184db4e1241fb9fc34",
+      "output_chars": 555,
+      "state": "valida"
+    }
+  ],
+  "latency_seconds": 15.32985324494075,
+  "scores": {
+    "status": true,
+    "plan": true,
+    "values": true,
+    "clarification": null,
+    "correct": true
+  },
+  "cost": null,
+  "source_context": {
+    "data_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+  },
+  "C_session_id": null,
+  "C_turn_id": null,
+  "C_candidate_intent": null,
+  "C_decision": null
+}

@@ -1,0 +1,239 @@
+{
+  "checked_at": "2026-10-19T16:34:59.304696+00:00",
+  "full": {
+    "area_records": 22176,
+    "classes": 33,
+    "complete_municipality_universe": true,
+    "manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+    "max_conservation_error_m2": 0.0015716552734375,
+    "quality_records": 672,
+    "ranking_eligible": false,
+    "ranking_produced": false,
+    "resources": {
+      "download_bytes": 8192,
+      "elapsed_seconds": 36.377198385074735,
+      "peak_rss_bytes": 407183360,
+      "range_requests": 2
+    },
+    "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+    "staging_resources": {
+      "download_bytes": 23470080,
+      "elapsed_seconds": 59.2177568069892,
+      "peak_rss_bytes": 256843776,
+      "range_requests": 360
+    },
+    "territories": 168,
+    "uf_direct_sample_m2": [
+      {
+        "area_m2": 805324752.0611124,
+        "class_code": 3,
+        "support": "anual",
+        "year": 2015
+      },
+      {
+        "area_m2": 861616819.3604662,
+        "class_code": 3,
+        "support": "anual",
+        "year": 2025
+      },
+      {
+        "area_m2": 805324752.0611124,
+        "class_code": 3,
+        "support": "comum",
+        "year": 2015
+      },
+      {
+        "area_m2": 861616819.3604662,
+        "class_code": 3,
+        "support": "comum",
+        "year": 2025
+      },
+      {
+        "area_m2": 14573278548.401373,
+        "class_code": 15,
+        "support": "anual",
+        "year": 2015
+      },
+      {
+        "area_m2": 14665385571.836082,
+        "class_code": 15,
+        "support": "anual",
+        "year": 2025
+      },
+      {
+        "area_m2": 14573278548.401373,
+        "class_code": 15,
+        "support": "comum",
+        "year": 2015
+      },
+      {
+        "area_m2": 14665385571.836082,
+        "class_code": 15,
+        "support": "comum",
+        "year": 2025
+      },
+      {
+        "area_m2": 643005166.0258753,
+        "class_code": 24,
+        "support": "anual",
+        "year": 2015
+      },
+      {
+        "area_m2": 774311054.3916719,
+        "class_code": 24,
+        "support": "anual",
+        "year": 2025
+      },
+      {
+        "area_m2": 643005166.0258753,
+        "class_code": 24,
+        "support": "comum",
+        "year": 2015
+      },
+      {
+        "area_m2": 774311054.3916719,
+        "class_code": 24,
+        "support": "comum",
+        "year": 2025
+      },
+      {
+        "area_m2": 504804335.95424277,
+        "class_code": 33,
+        "support": "anual",
+        "year": 2015
+      },
+      {
+        "area_m2": 838947006.1203988,
+        "class_code": 33,
+        "support": "anual",
+        "year": 2025
+      },
+      {
+        "area_m2": 504804335.95424277,
+        "class_code": 33,
+        "support": "comum",
+        "year": 2015
+      },
+      {
+        "area_m2": 838947006.1203988,
+        "class_code": 33,
+        "support": "comum",
+        "year": 2025
+      }
+    ],
+    "units_with_partial_quality": [
+      "24",
+      "2401107"
+    ],
+    "unknown_code_0_area_m2": 26610.201101753726,
+    "unknown_codes": [
+      "0"
+    ],
+    "years": [
+      2015,
+      2025
+    ]
+  },
+  "history": {
+    "correction": "insercao_tipificada_em_lote_em_vez_de_executemany",
+    "first_full_attempt": "interrompido_no_limite_de_memoria_apos_oito_unidades",
+    "national_full_download": false
+  },
+  "mesh": {
+    "municipalities": 167,
+    "repairs": 0,
+    "sha256": "3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+    "source_read_only": true,
+    "srid": 4326,
+    "territorial_edition": null,
+    "uf_polygons": 1
+  },
+  "package_version": "0.3.0",
+  "pending": [
+    {
+      "reason": "edicao_territorial_desconhecida",
+      "state": "pendente"
+    },
+    {
+      "reason": "revisao_oficial_do_espelho_nao_comprovada",
+      "state": "pendente"
+    },
+    {
+      "reason": "significado_do_codigo_0_nao_documentado_na_legenda_sem_nodata_declarado",
+      "state": "pendente"
+    },
+    {
+      "reason": "ranking_conservador_bloqueado_por_cobertura_parcial",
+      "state": "pendente"
+    },
+    {
+      "reason": "motor_de_consultas_etapa4_nao_implementado",
+      "state": "pendente"
+    },
+    {
+      "reason": "nenhuma_comparacao_com_estatisticas_oficiais",
+      "state": "pendente"
+    }
+  ],
+  "pilot": {
+    "independent_checks": 133,
+    "independent_max_difference_m2": 0.0001577768416609615,
+    "resources": {
+      "download_bytes": 8192,
+      "elapsed_seconds": 1.3708911440335214,
+      "peak_rss_bytes": 227311616,
+      "range_requests": 2
+    },
+    "run_id": "5160c953d2b78f3133455bf9a63c9c5d9bf36931bcac9189e58787e2f3c31644",
+    "state": "verificado",
+    "territory_codes": [
+      "2408102",
+      "2410900"
+    ]
+  },
+  "schema_version": "validacao-etapa3-v1",
+  "security": {
+    "env_not_read": true,
+    "llm_not_called": true,
+    "private_connection_not_in_artifacts": true,
+    "source_database_not_modified": true
+  },
+  "software": {
+    "dependencies": {
+      "duckdb": "1.4.1",
+      "numpy": "2.2.6",
+      "psutil": "7.0.0",
+      "psycopg2-binary": "2.9.11",
+      "pyproj": "3.3.0",
+      "rasterio": "1.4.3",
+      "shapely": "2.1.2"
+    },
+    "gdal": "3.9.3",
+    "geos": "3.13.1",
+    "implementation_sha256": "815398820da84590ccf55d451115ff6b23d3517a870f4a8bdb340541094cd79c",
+    "proj": "8.2.1",
+    "python": "3.10.12"
+  },
+  "state": "verificado",
+  "target_install_verification": {
+    "checked_at": "2026-10-19T16:38:05.699088+00:00",
+    "cli_help_verified": true,
+    "installed_software_matches_manifest": true,
+    "manifest_unchanged": true,
+    "proj_database_available": true,
+    "proj_database_sha256": "065c57118d8667bc434a0de0e7551b27e6fdc6f4d8e6d7167eb78f5746e1229c",
+    "proj_venv_fix": "referencia_local_.venv/share/proj_para_base_instalada_do_sistema",
+    "quantitative_checksum_unchanged": "bb09ad5f94ba3695d450448f5d412a37ec8a0080f165222b6e23e61e9e87f4a1",
+    "real_partition_resume_count": 168,
+    "state": "verificado",
+    "tests_passed": 120,
+    "warnings": 0
+  },
+  "tests": {
+    "network_in_test_suite": false,
+    "passed": 120,
+    "state": "verificado",
+    "synthetic_and_mocks": true
+  },
+  "wheel_sha256": "dd9ec5ddd478f6be9f2cd928084861dfb28c6248f8dbf628195cced9b764a260"
+}

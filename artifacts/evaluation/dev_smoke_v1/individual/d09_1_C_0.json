@@ -1,0 +1,214 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "9f9225242f404ef29eefe630dd614d0b",
+  "case_id": "d09_1",
+  "family_id": "d09",
+  "territory_codes": [
+    "2410900"
+  ],
+  "condition": "C",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:34:59.705645+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Qual a área de Pastagem de Riachuelo/RN em 2020, em ha?",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": null,
+  "messages_sha256": null,
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "dados_indisponiveis",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2410900"
+      ],
+      "scope_uf": null,
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2020
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [],
+    "clarification_field": null,
+    "reason": "estatisticas_nao_materializadas"
+  },
+  "final_answer": "As estatisticas completas necessarias ainda nao foram materializadas.",
+  "plan": {
+    "operation": "area",
+    "metric": "area",
+    "unit": "ha",
+    "territory_codes": [
+      "2410900"
+    ],
+    "scope_uf": null,
+    "class_codes": [
+      15
+    ],
+    "years": [
+      2020
+    ],
+    "denominator": null,
+    "direction": "desc",
+    "limit": null
+  },
+  "result": null,
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "state": "valida",
+      "latency_seconds": 6.360209029982798,
+      "usage": {
+        "prompt_tokens": 4678,
+        "total_tokens": 5480,
+        "completion_tokens": 802
+      },
+      "chat_requests": 1,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "output_sha256": "aefda04e2547876254003fd0b0a856ff53ceadc8945266bc355166a83acd4a8e",
+      "output_chars": 491,
+      "candidate": {
+        "action": "consultar",
+        "intent": {
+          "operation": "area",
+          "territories": [
+            {
+              "mention": "riachuelo",
+              "uf_mention": "RN",
+              "kind": "municipio"
+            }
+          ],
+          "scope_uf_mention": "RN",
+          "classes": [
+            {
+              "mention": "pastagem"
+            }
+          ],
+          "years": [
+            2020
+          ],
+          "metric": "area",
+          "metric_mention": "área",
+          "unit_mention": "ha",
+          "denominator": null,
+          "direction": null,
+          "limit": null
+        },
+        "clarification_fields": []
+      },
+      "issues": [],
+      "gateway_error": null,
+      "http_status": null,
+      "messages_sha256": "d8ca92c0cf1c851658046c94baaa8294b8486afcefc8fae487a570c065de5eff",
+      "explanation_fallback": null
+    }
+  ],
+  "latency_seconds": 6.459984580986202,
+  "scores": {
+    "status": true,
+    "plan": true,
+    "values": null,
+    "clarification": null,
+    "correct": true
+  },
+  "cost": null,
+  "source_context": {
+    "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+    "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+    "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+    "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+  },
+  "C_session_id": "06ed831713a3478983d510b70c8144cf",
+  "C_turn_id": "3f152981eb88420d9d2cfcfa463c1363",
+  "C_candidate_intent": {
+    "schema_version": "intencao-semantica-v1",
+    "operation": "area",
+    "territories": [
+      {
+        "code": "2410900",
+        "name": null,
+        "uf": null,
+        "kind": null
+      }
+    ],
+    "scope_uf": null,
+    "classes": [
+      {
+        "code": 15,
+        "term": null
+      }
+    ],
+    "years": [
+      2020
+    ],
+    "metric": "area",
+    "metric_term": null,
+    "unit": "ha",
+    "unit_term": null,
+    "denominator": null,
+    "direction": "desc",
+    "limit": null,
+    "requested_concept": "cobertura"
+  },
+  "C_decision": {
+    "status": "dados_indisponiveis",
+    "reason": "estatisticas_nao_materializadas",
+    "message": "As estatisticas completas necessarias ainda nao foram materializadas.",
+    "normalized_plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2410900"
+      ],
+      "scope_uf": null,
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2020
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "territory_candidates": [],
+    "class_candidates": [],
+    "notes": [
+      "Selecoes sem cobertura completa: 1."
+    ],
+    "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+    "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9",
+    "capabilities_sha256": "91d83a3973e66c772f3db8942bee78b526e737d54ae89d464cd9d0385eb92321"
+  }
+}

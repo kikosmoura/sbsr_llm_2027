@@ -1,0 +1,16 @@
+{
+  "class_codes": [
+    24
+  ],
+  "denominator": "area_inicial",
+  "metric": "variacao_percentual",
+  "operation": "comparacao_temporal",
+  "territory_codes": [
+    "2408102"
+  ],
+  "unit": "percentual",
+  "years": [
+    2015,
+    2025
+  ]
+}

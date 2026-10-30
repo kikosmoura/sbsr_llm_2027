@@ -1,0 +1,136 @@
+{
+  "schema_version": "validacao-revisao-v2",
+  "checked_at": "2026-10-20T14:16:06.147760+00:00",
+  "state": "verificado_com_pendencias",
+  "source_test_run_id": "fa7686659da9449d811d154641021724",
+  "source_geo_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "commands": [
+    ".venv/bin/python -B scripts/revisar_rascunhos_v2.py --env-file .env",
+    ".venv/bin/python -B -m pytest -q"
+  ],
+  "tests": {
+    "passed": 291,
+    "failed": 0,
+    "elapsed_seconds": 37.85,
+    "new_synthetic_mock_tests": 13,
+    "nature": "testes locais e mocks; a verificacao publica de rasters e uma execucao real separada"
+  },
+  "real_public_provenance": {
+    "state": "verificado_intervalos_utilizados",
+    "checked_at": "2026-10-20T13:55:05.087918+00:00",
+    "intervals": 389,
+    "matched": 389,
+    "range_body_bytes": 25493504,
+    "elapsed_seconds": 60.81522447592579,
+    "full_national_download": false,
+    "full_national_sha256": null,
+    "reported_gee_asset_is_not_assumed_geotiff_revision": true
+  },
+  "database_comments": {
+    "checked_at": "2026-10-20T13:56:05.923256+00:00",
+    "state": "indisponivel",
+    "scope": "comentarios de catalogo de sbsr.municipios e sbsr.uf; nenhuma geometria; rollback",
+    "read_only_confirmed": false,
+    "tables": [],
+    "creation_or_edition_date_inferred": false,
+    "reason": "configuracao_ausente"
+  },
+  "local_metadata_investigation": {
+    "candidate_kind": "GeoPackage municipal local de outro projeto; nao usado como prova de origem",
+    "metadata_format": "QGIS XML",
+    "metadata_sha256": "63f4eae88ecefc05cf8e5c75469ba1e8d6ac106ca7babdfcd30d46c0dce34085",
+    "edition_or_license_identified": false,
+    "personal_paths_omitted": true
+  },
+  "primary_metrics_unchanged": true,
+  "primary_scores_unchanged": true,
+  "new_model_calls": false,
+  "equivalent_contract_condition_executed": false,
+  "sensitivity_kind": "exploratoria_pos_hoc; nao substitui o protocolo principal congelado",
+  "sensitivity_common": {
+    "analysis": "ambas_sem_erro_tecnico",
+    "cases": 57,
+    "excluded": 63,
+    "B_correct": 48,
+    "C_correct": 54,
+    "B_accuracy": 0.8421052631578947,
+    "C_accuracy": 0.9473684210526315,
+    "paired": {
+      "state": "verificado",
+      "estimator": "diferenca de proporcoes por caso; clusters reamostrados",
+      "difference_C_minus_B": 0.10526315789473684,
+      "ci95": [
+        -0.05,
+        0.31581140350877157
+      ],
+      "groups": 13,
+      "cases": 57,
+      "replicas": 10000,
+      "seed": 20271020,
+      "method": "percentil; numpy PCG64; quantile linear",
+      "group_key": "family_id"
+    },
+    "exploratory": true,
+    "conditioned_on_observed_outcome": true
+  },
+  "publication_scan": {
+    "generated": "verificado",
+    "new_or_updated_files_scanned": 13,
+    "known_secret_values_used_only_in_memory": true,
+    "candidate_findings": 0,
+    "output_hashes_verified": 69
+  },
+  "document_validation": {
+    "pdf": {
+      "state": "verificado",
+      "pages": 4,
+      "max_pages": 4,
+      "times_new_roman_observed": true,
+      "renderer": "perfil e grupo temporarios exclusivos; EOF/tamanho estavel/pdfinfo; somente grupo proprio encerrado"
+    },
+    "author_status": "marcadores; revisao humana pendente",
+    "abstract_word_counts": {
+      "resumo": 139,
+      "abstract": 130
+    },
+    "template_sha256": "eefc9652829ea074fed27092caf7a96573249e2e00dfeaa0e3c5cae218af9581"
+  },
+  "visual_review": {
+    "reviewer": "IA assistente; nao revisao humana",
+    "pages_inspected": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "figures_inspected": [
+      "fig10_fluxo_componentes_v2",
+      "fig11_sensibilidade_v2",
+      "fig12_diagnosticos_v2"
+    ],
+    "observations": "sem cortes visiveis; JSON completo e legivel; referencias numeradas por ocorrencia; autoria como marcador"
+  },
+  "preservation": {
+    "files_checked": 1658,
+    "unchanged": 1655,
+    "authorized_append_only_documents": [
+      "README.md",
+      "docs/ESTADO_IMPLEMENTACAO.md",
+      "docs/DECISOES.md"
+    ],
+    "previous_delivery_files_preserved": 52,
+    "source_and_example_env_unchanged": true,
+    "production_prompts_benchmark_and_evaluation_unchanged": true,
+    "sar_repository_unchanged": true
+  },
+  "pending": [
+    "Contrato equivalente nao executado; analise exploratoria condicionada ao sucesso nao identifica efeito causal",
+    "Edicao, provedor/arquivo originais, data de publicacao e licenca da malha",
+    "Revisao tematica dos GeoTIFFs e igualdade integral nacional nao verificadas",
+    "Revisao humana, autoria/afiliacoes e direitos de redistribuicao"
+  ],
+  "submission_performed": false,
+  "publication_performed": false,
+  "deployment_performed": false
+}

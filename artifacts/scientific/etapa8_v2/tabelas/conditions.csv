@@ -1,0 +1,4 @@
+condition,cases,correct,accuracy,answered,coverage_answered,precision_emitted,clarification,abstention_nontechnical,nonanswer_including_technical,technical_errors,latency_mean_seconds,latency_median_seconds,latency_p95_seconds,attempts,tokens_observed,usage_missing_attempts,cost,cost_note
+A,120,21,0.175,0,0.0,,7,120,120,0,5.393549340888664,4.465319532551803,11.533154656854459,116,"{""prompt_tokens"": 420285, ""completion_tokens"": 53996, ""total_tokens"": 474281}",0,,preco_nao_fornecido
+B,120,49,0.4083333333333333,30,0.25,0.8666666666666667,13,28,90,62,12.388140375981068,11.310760426917113,24.002629500231702,162,"{""prompt_tokens"": 786591, ""completion_tokens"": 87935, ""total_tokens"": 874526}",29,,preco_nao_fornecido
+C,120,104,0.8666666666666667,73,0.6083333333333333,1.0,24,40,47,7,10.205724643810148,8.511158362554852,21.43230740970466,126,"{""prompt_tokens"": 590417, ""completion_tokens"": 110734, ""total_tokens"": 701151}",0,,preco_nao_fornecido

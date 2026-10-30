@@ -1,0 +1,154 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "fa7686659da9449d811d154641021724",
+  "case_id": "t06_2",
+  "family_id": "teste_t06",
+  "territory_codes": [
+    "2409407"
+  ],
+  "condition": "B",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:39:58.061514+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Em Pau dos Ferros/RN, some por união Floresta código 1 e Formação Florestal código 3, área em ha de 2015, sem contar pixels duas vezes.",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": "cf2437a9c10f8550153bed0836fb11cf5fae64d5e0639cea2eea6931be520564",
+  "messages_sha256": "bacebcd4431fef9e2cdd1be5a679c024a88b050bf1c494f6501545bb48b16c74",
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "respondida",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2409407"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        49
+      ],
+      "years": [
+        2015
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2409407",
+        "years": [
+          2015
+        ],
+        "value": 5871.298187965349,
+        "unit": "ha",
+        "undefined_reason": null,
+        "denominators_ha": [],
+        "rank": null
+      }
+    ],
+    "clarification_field": null,
+    "reason": "ok"
+  },
+  "final_answer": "{\"status\": \"respondida\", \"plan\": {\"operation\": \"area\", \"metric\": \"area\", \"unit\": \"ha\", \"territory_codes\": [\"2409407\"], \"scope_uf\": \"RN\", \"class_codes\": [3, 4, 5, 6, 7, 49], \"years\": [2015], \"denominator\": null, \"direction\": \"desc\", \"limit\": null}, \"values\": [{\"territory_code\": \"2409407\", \"years\": [2015], \"value\": 5871.298187965349, \"unit\": \"ha\", \"undefined_reason\": null, \"denominators_ha\": [], \"rank\": null}], \"clarification_field\": null, \"reason\": \"ok\"}",
+  "plan": {
+    "operation": "area",
+    "metric": "area",
+    "unit": "ha",
+    "territory_codes": [
+      "2409407"
+    ],
+    "scope_uf": "RN",
+    "class_codes": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      49
+    ],
+    "years": [
+      2015
+    ],
+    "denominator": null,
+    "direction": "desc",
+    "limit": null
+  },
+  "result": [
+    {
+      "territory_code": "2409407",
+      "years": [
+        2015
+      ],
+      "value": 5871.298187965349,
+      "unit": "ha",
+      "undefined_reason": null,
+      "denominators_ha": [],
+      "rank": null
+    }
+  ],
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "messages_sha256": "bacebcd4431fef9e2cdd1be5a679c024a88b050bf1c494f6501545bb48b16c74",
+      "issues": [],
+      "usage": {
+        "prompt_tokens": 5768,
+        "total_tokens": 6600,
+        "completion_tokens": 832
+      },
+      "latency_seconds": 8.497083680005744,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "e23fde2ebca02226a0fa92eb90f74b5e3fcc2fa8070d8e6e7afc991144500f73",
+      "output_chars": 569,
+      "state": "valida"
+    }
+  ],
+  "latency_seconds": 8.501569210086018,
+  "scores": {
+    "status": true,
+    "plan": true,
+    "values": true,
+    "clarification": null,
+    "correct": true
+  },
+  "cost": null,
+  "source_context": {
+    "data_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+  },
+  "C_session_id": null,
+  "C_turn_id": null,
+  "C_candidate_intent": null,
+  "C_decision": null
+}

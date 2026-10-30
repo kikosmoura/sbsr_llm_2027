@@ -1,0 +1,113 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "fa7686659da9449d811d154641021724",
+  "case_id": "t03_1",
+  "family_id": "teste_area_direta",
+  "territory_codes": [
+    "2408003"
+  ],
+  "condition": "B",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:38:26.508702+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Em 2025, quantos metros quadrados de Área Urbanizada foram mapeados no município de Mossoró/RN?",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": "133654dc60f9d1e64325d0648e94e30f331bccb04cd7bedb141503ec0041f94c",
+  "messages_sha256": "2c9d6d09425d0a96ee3289a4a4c9bad3afd010fbedd6f7c3f739453c496367f2",
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "erro_tecnico",
+    "plan": null,
+    "values": [],
+    "clarification_field": null,
+    "reason": "saida_invalida_apos_reparo"
+  },
+  "final_answer": "{\"status\": \"erro_tecnico\", \"plan\": null, \"values\": [], \"clarification_field\": null, \"reason\": \"saida_invalida_apos_reparo\"}",
+  "plan": null,
+  "result": [],
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "messages_sha256": "2c9d6d09425d0a96ee3289a4a4c9bad3afd010fbedd6f7c3f739453c496367f2",
+      "issues": [
+        {
+          "path": [],
+          "code": "value_error"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 5825,
+        "total_tokens": 6309,
+        "completion_tokens": 484
+      },
+      "latency_seconds": 5.164809267967939,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "dd56465483eb67c576c2f059e122e7dc3be5841ea73d39e31e3543f716ba4715",
+      "output_chars": 316,
+      "state": "invalida"
+    },
+    {
+      "number": 2,
+      "kind": "reparo",
+      "messages_sha256": "614e049427d8925f14afd2b3eb935cf42bb80aae6d6c09c953f46ec962f1ce4e",
+      "issues": [
+        {
+          "path": [],
+          "code": "value_error"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 5860,
+        "total_tokens": 6453,
+        "completion_tokens": 593
+      },
+      "latency_seconds": 5.235447810031474,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "55ec88dd257dbc9faa750fc9fd028124861b1e6db04a509131c787e2837fe267",
+      "output_chars": 269,
+      "state": "invalida"
+    }
+  ],
+  "latency_seconds": 10.403441127040423,
+  "scores": {
+    "status": false,
+    "plan": null,
+    "values": null,
+    "clarification": null,
+    "correct": false
+  },
+  "cost": null,
+  "source_context": {
+    "data_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+  },
+  "C_session_id": null,
+  "C_turn_id": null,
+  "C_candidate_intent": null,
+  "C_decision": null
+}

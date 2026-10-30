@@ -1,0 +1,135 @@
+{
+  "schema_version": "controle-contrato-caso-v1",
+  "run_id": "7dfe5ecbd3944e4dbde409763d23cbf3",
+  "case_id": "t15_1",
+  "family_id": "teste_variacao",
+  "territory_codes": [
+    "2412500"
+  ],
+  "condition": "B_eq",
+  "repeat": 0,
+  "integration_kind": "gateway_real",
+  "created_at": "2026-10-21T13:39:31.442302+00:00",
+  "freeze_sha256": "784d7e714d514197d4d07f3c82a000724b1671a64295a13616e6b9c6134beb2c",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "native_tools": false,
+    "native_response_format": false,
+    "workers": 3
+  },
+  "question": "Em relação à área inicial de 2015, qual a variação percentual de Formação Florestal em São Miguel/RN até 2025?",
+  "fixed_plan": {
+    "operation": "comparacao_temporal",
+    "metric": "variacao_percentual",
+    "unit": "percentual",
+    "territory_codes": [
+      "2412500"
+    ],
+    "scope_uf": "RN",
+    "class_codes": [
+      3
+    ],
+    "years": [
+      2015,
+      2025
+    ],
+    "denominator": "area_inicial",
+    "direction": "desc",
+    "limit": null
+  },
+  "common_input_sha256": "4140453d98ccdca34b880890a1669d72238ad1535baea1bbabf1ee04431c741e",
+  "output_contract_sha256": "7cb672668bdaf0cb31f785651d91ec6475f990de121edab04b748bd0da63c955",
+  "system_sha256": "2805f7312e5288c2499d8bc4b6fd55f3a0adc3b8d5ea53aab2533894c62b290d",
+  "messages_sha256": "904e3303eb6530815b846407c41359bdf8f6ca13e7bf1ec90dfb4422a9a88983",
+  "execution_observations": [],
+  "executor_result": null,
+  "observed": {
+    "status": "erro_tecnico",
+    "values": [],
+    "reason": "saida_invalida_apos_reparo",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "variacao_percentual",
+      "unit": "percentual",
+      "territory_codes": [
+        "2412500"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": "area_inicial",
+      "direction": "desc",
+      "limit": null
+    },
+    "clarification_field": null
+  },
+  "final_answer": "{\"reason\":\"saida_invalida_apos_reparo\",\"status\":\"erro_tecnico\",\"values\":[]}",
+  "attempts": [
+    {
+      "number": 1,
+      "messages_sha256": "904e3303eb6530815b846407c41359bdf8f6ca13e7bf1ec90dfb4422a9a88983",
+      "usage": {
+        "prompt_tokens": 5433,
+        "total_tokens": 7481,
+        "completion_tokens": 2048
+      },
+      "issues": [
+        {
+          "path": [],
+          "code": "json_invalido_ou_redigido"
+        }
+      ],
+      "latency_seconds": 35.09364201291464,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "0b7aa2eee34e6fb6fdad7d82b5e218acb5908cf933aa31e3f63d7c948a6a8c62",
+      "output_chars": 117,
+      "state": "invalida"
+    },
+    {
+      "number": 2,
+      "messages_sha256": "cf747044c0e1d69eca7c3838ea05553fe6f73b7138d616b0a6f365eb25295fc9",
+      "usage": {
+        "prompt_tokens": 5470,
+        "total_tokens": 7518,
+        "completion_tokens": 2048
+      },
+      "issues": [
+        {
+          "path": [],
+          "code": "json_invalido_ou_redigido"
+        }
+      ],
+      "latency_seconds": 16.773163235979155,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "417d9ab7df754687ced1c2657e93a595a1be027be1eb3e54a729bc01e01f8957",
+      "output_chars": 179,
+      "state": "invalida"
+    }
+  ],
+  "latency_seconds": 51.871623186045326,
+  "model_seconds": 51.86763851705473,
+  "executor_seconds": 0,
+  "scores": {
+    "status": false,
+    "plan": null,
+    "values": null,
+    "clarification": null,
+    "correct": false
+  },
+  "cost": null,
+  "source_geo_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+}

@@ -1,0 +1,470 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "fa7686659da9449d811d154641021724",
+  "case_id": "t04_1",
+  "family_id": "teste_area_direta",
+  "territory_codes": [
+    "2402006"
+  ],
+  "condition": "C",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:38:50.420274+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Em 2015, quantos hectares de Rio, Lago e Oceano foram mapeados no município de Caicó/RN?",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": null,
+  "messages_sha256": null,
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "respondida",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2402006"
+      ],
+      "scope_uf": null,
+      "class_codes": [
+        33
+      ],
+      "years": [
+        2015
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2402006",
+        "years": [
+          2015
+        ],
+        "value": 542.6574332982508,
+        "unit": "ha",
+        "undefined_reason": null,
+        "denominators_ha": [],
+        "rank": null
+      }
+    ],
+    "clarification_field": null,
+    "reason": "consulta_executada"
+  },
+  "final_answer": "CaicÃ³/RN (IBGE 2402006): área mapeada de Rio, Lago e Oceano [33], em 2015: 542,66 ha.\nColeção 11; revisão desconhecida; malha edição desconhecida; método ellipsoid-linear-lonlat-fractional-v1; execução a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802.\nMudança observada na classificação não comprova mudança real específica no terreno, causas ou ilegalidade.",
+  "plan": {
+    "operation": "area",
+    "metric": "area",
+    "unit": "ha",
+    "territory_codes": [
+      "2402006"
+    ],
+    "scope_uf": null,
+    "class_codes": [
+      33
+    ],
+    "years": [
+      2015
+    ],
+    "denominator": null,
+    "direction": "desc",
+    "limit": null
+  },
+  "result": {
+    "schema_version": "resposta-consulta-v1",
+    "status": "respondida",
+    "reason": "consulta_executada",
+    "message": "CaicÃ³/RN (IBGE 2402006): área mapeada de Rio, Lago e Oceano [33], em 2015: 542,66 ha.\nColeção 11; revisão desconhecida; malha edição desconhecida; método ellipsoid-linear-lonlat-fractional-v1; execução a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802.",
+    "answer_id": "63a09efa45defc9fbc98f0e5ee9ad1afd3b773725f481525b6d9708332d95609",
+    "plan_id": "f2c4140daefd430c3af7579d5aef8601dfc71a3980cb2d8a60cba8d1c342c374",
+    "executor_sha256": "64bb18ecbfecf2fd623d8fd10e616a1f816bbf529feeec5749f554ac7d4ed81a",
+    "requested_plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2402006"
+      ],
+      "scope_uf": null,
+      "class_codes": [
+        33
+      ],
+      "years": [
+        2015
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2402006"
+      ],
+      "scope_uf": null,
+      "class_codes": [
+        33
+      ],
+      "years": [
+        2015
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "evidence": [
+      {
+        "evidence_id": "94d641b442f6627e734e3895bf35d10346994c63c0d677380f631283b6d77aa6",
+        "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+        "territory": {
+          "kind": "municipio",
+          "code": "2402006",
+          "name": "CaicÃ³",
+          "uf": "RN",
+          "geometry_hash": "581a136759972b4e26a9c4d32e50ac8105465718c37b39148ceb0fbfba7abb25",
+          "edition": null
+        },
+        "class_codes": [
+          33
+        ],
+        "years": [
+          2015
+        ],
+        "collection": 11,
+        "source_revision": null,
+        "source_ids": [
+          "run:a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+          "mesh:3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+          "classes:04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+          "areas.parquet:5e8977144109484a23bf0293e96aaa0530e1698a6aff5b22d5ef13b51893d481",
+          "quality.parquet:9885d39d6f4d89bc36e2e72fbcb460b871ebb79ad8d63bb63d8f50def62865bb",
+          "mirror:fd0a4f02551f26230b156d60f6f409dcadb9d198bb56de37ec055b47e2d1076e",
+          "crop:99c7a24c07d0b6cf29969ea2385592b9f3e0845b667b1877c7e163e3fd17739a"
+        ],
+        "area_method": "ellipsoid-linear-lonlat-fractional-v1",
+        "quality": {
+          "state": "completo",
+          "observed_area_ha": 122858.24308861236,
+          "nodata_area_ha": 0.0,
+          "unknown_codes": [],
+          "common_support_id": null,
+          "area_method": "ellipsoid-linear-lonlat-fractional-v1",
+          "notes": [
+            "Revisao oficial do espelho e edicao territorial nao comprovadas."
+          ]
+        },
+        "plan_id": "f2c4140daefd430c3af7579d5aef8601dfc71a3980cb2d8a60cba8d1c342c374",
+        "metric": "area",
+        "requested_class_codes": [
+          33
+        ],
+        "class_names": [
+          "Rio, Lago e Oceano [33]"
+        ],
+        "observations": [
+          {
+            "year": 2015,
+            "class_area_ha": 542.6574332982508,
+            "observed_area_ha": 122858.24308861236,
+            "support": "anual",
+            "nodata_area_ha": 0.0,
+            "unknown_area_ha": 0.0,
+            "outside_raster_area_ha": 0.0
+          }
+        ],
+        "denominator_definition": null,
+        "denominator_values_ha": [],
+        "provenance": "municipio_direto",
+        "mesh_sha256": "3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+        "catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+        "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+        "sources": [
+          {
+            "source_id": "run:a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+            "kind": "execucao",
+            "sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "mesh:3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+            "kind": "malha",
+            "sha256": "3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "classes:04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+            "kind": "catalogo",
+            "sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "areas.parquet:5e8977144109484a23bf0293e96aaa0530e1698a6aff5b22d5ef13b51893d481",
+            "kind": "particao_areas",
+            "sha256": "5e8977144109484a23bf0293e96aaa0530e1698a6aff5b22d5ef13b51893d481",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "quality.parquet:9885d39d6f4d89bc36e2e72fbcb460b871ebb79ad8d63bb63d8f50def62865bb",
+            "kind": "particao_qualidade",
+            "sha256": "9885d39d6f4d89bc36e2e72fbcb460b871ebb79ad8d63bb63d8f50def62865bb",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "mirror:fd0a4f02551f26230b156d60f6f409dcadb9d198bb56de37ec055b47e2d1076e",
+            "kind": "raster_espelho",
+            "sha256": null,
+            "year": 2015,
+            "public_url": "https://storage.example.invalid/BUCKET_NAME/brazil_coverage-col11_2015.tif",
+            "etag": "\"c0f687289217d0c8c7da1caa33827855-138\""
+          },
+          {
+            "source_id": "crop:99c7a24c07d0b6cf29969ea2385592b9f3e0845b667b1877c7e163e3fd17739a",
+            "kind": "recorte",
+            "sha256": "99c7a24c07d0b6cf29969ea2385592b9f3e0845b667b1877c7e163e3fd17739a",
+            "year": 2015,
+            "public_url": null,
+            "etag": null
+          }
+        ]
+      }
+    ],
+    "values": [
+      {
+        "evidence_id": "94d641b442f6627e734e3895bf35d10346994c63c0d677380f631283b6d77aa6",
+        "value": 542.6574332982508,
+        "unit": "ha",
+        "denominator_value": null,
+        "undefined_reason": null,
+        "metric": "area",
+        "area_value_ha": 542.6574332982508,
+        "denominator_unit": null,
+        "rank": null
+      }
+    ],
+    "execution": {
+      "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+      "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+      "collection": 11,
+      "source_revision": null,
+      "territorial_edition": null,
+      "method": "ellipsoid-linear-lonlat-fractional-v1",
+      "mesh_sha256": "3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+      "catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+      "years": [
+        2015
+      ],
+      "class_names": [
+        "Rio, Lago e Oceano [33]"
+      ],
+      "sources": [
+        {
+          "source_id": "run:a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+          "kind": "execucao",
+          "sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+          "year": null,
+          "public_url": null,
+          "etag": null
+        },
+        {
+          "source_id": "mesh:3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+          "kind": "malha",
+          "sha256": "3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+          "year": null,
+          "public_url": null,
+          "etag": null
+        },
+        {
+          "source_id": "classes:04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+          "kind": "catalogo",
+          "sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+          "year": null,
+          "public_url": null,
+          "etag": null
+        },
+        {
+          "source_id": "mirror:fd0a4f02551f26230b156d60f6f409dcadb9d198bb56de37ec055b47e2d1076e",
+          "kind": "raster_espelho",
+          "sha256": null,
+          "year": 2015,
+          "public_url": "https://storage.example.invalid/BUCKET_NAME/brazil_coverage-col11_2015.tif",
+          "etag": "\"c0f687289217d0c8c7da1caa33827855-138\""
+        },
+        {
+          "source_id": "crop:99c7a24c07d0b6cf29969ea2385592b9f3e0845b667b1877c7e163e3fd17739a",
+          "kind": "recorte",
+          "sha256": "99c7a24c07d0b6cf29969ea2385592b9f3e0845b667b1877c7e163e3fd17739a",
+          "year": 2015,
+          "public_url": null,
+          "etag": null
+        }
+      ]
+    },
+    "ranking": null,
+    "notes": [
+      "Valores sem arredondamento no JSON/CSV; texto com duas casas decimais.",
+      "Diferenca liquida nao mede perda bruta, desmatamento ou causas."
+    ]
+  },
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "state": "valida",
+      "latency_seconds": 7.184469711966813,
+      "usage": {
+        "prompt_tokens": 4644,
+        "total_tokens": 5391,
+        "completion_tokens": 747
+      },
+      "chat_requests": 1,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "output_sha256": "f0562b75da3285bb1f0b20c82aa3743d22d312a8bb88fbde3d0f4b5f16872c19",
+      "output_chars": 506,
+      "candidate": {
+        "action": "consultar",
+        "intent": {
+          "operation": "area",
+          "territories": [
+            {
+              "mention": "Caicó",
+              "uf_mention": "RN",
+              "kind": "municipio"
+            }
+          ],
+          "scope_uf_mention": "RN",
+          "classes": [
+            {
+              "mention": "rio lago e oceano"
+            }
+          ],
+          "years": [
+            2015
+          ],
+          "metric": "area",
+          "metric_mention": "hectares",
+          "unit_mention": "hectares",
+          "denominator": null,
+          "direction": null,
+          "limit": null
+        },
+        "clarification_fields": []
+      },
+      "issues": [],
+      "gateway_error": null,
+      "http_status": null,
+      "messages_sha256": "13298404dccc06650ef52d91af327a1b36c32e9de14aba451c0e86afb1bd9744",
+      "explanation_fallback": null
+    }
+  ],
+  "latency_seconds": 7.495614655083045,
+  "scores": {
+    "status": true,
+    "plan": true,
+    "values": true,
+    "clarification": null,
+    "correct": true
+  },
+  "cost": null,
+  "source_context": {
+    "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+    "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+    "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+    "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+  },
+  "C_session_id": "4caa873a4cc5471d8f64959aa86f4de7",
+  "C_turn_id": "c2887f90c3834c8aac92550911c66647",
+  "C_candidate_intent": {
+    "schema_version": "intencao-semantica-v1",
+    "operation": "area",
+    "territories": [
+      {
+        "code": "2402006",
+        "name": null,
+        "uf": null,
+        "kind": null
+      }
+    ],
+    "scope_uf": null,
+    "classes": [
+      {
+        "code": 33,
+        "term": null
+      }
+    ],
+    "years": [
+      2015
+    ],
+    "metric": "area",
+    "metric_term": null,
+    "unit": "ha",
+    "unit_term": null,
+    "denominator": null,
+    "direction": "desc",
+    "limit": null,
+    "requested_concept": "cobertura"
+  },
+  "C_decision": {
+    "status": "plano_validado",
+    "reason": "selecoes_e_capacidades_validadas",
+    "message": "Plano pronto para o motor; nenhum resultado quantitativo foi calculado nesta etapa.",
+    "normalized_plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2402006"
+      ],
+      "scope_uf": null,
+      "class_codes": [
+        33
+      ],
+      "years": [
+        2015
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "territory_candidates": [],
+    "class_candidates": [],
+    "notes": [],
+    "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+    "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9",
+    "capabilities_sha256": "91d83a3973e66c772f3db8942bee78b526e737d54ae89d464cd9d0385eb92321"
+  }
+}

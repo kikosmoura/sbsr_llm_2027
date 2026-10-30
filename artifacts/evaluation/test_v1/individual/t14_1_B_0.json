@@ -1,0 +1,170 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "fa7686659da9449d811d154641021724",
+  "case_id": "t14_1",
+  "family_id": "teste_delta",
+  "territory_codes": [
+    "2402600"
+  ],
+  "condition": "B",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:45:38.769116+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Calcule em ha a diferença líquida, área final menos inicial, de Área Urbanizada em Ceará-Mirim/RN entre 2015 e 2025.",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": "916812e5f9122306bfe4db0eadd465cb9b2681fbadf7e66015c563c9a53dfb28",
+  "messages_sha256": "4fa015695c81cc0a963e323636479bb5e75f2eff3c10bb4f9f346811a3d24ca0",
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_liquida",
+      "unit": "ha",
+      "territory_codes": [
+        "2402600"
+      ],
+      "scope_uf": null,
+      "class_codes": [
+        24
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2402600",
+        "years": [
+          2015,
+          2025
+        ],
+        "value": 414.0651247880696,
+        "unit": "ha",
+        "undefined_reason": null,
+        "denominators_ha": [],
+        "rank": null
+      }
+    ],
+    "clarification_field": null,
+    "reason": "calculo_concluido"
+  },
+  "final_answer": "{\"status\": \"respondida\", \"plan\": {\"operation\": \"comparacao_temporal\", \"metric\": \"diferenca_liquida\", \"unit\": \"ha\", \"territory_codes\": [\"2402600\"], \"scope_uf\": null, \"class_codes\": [24], \"years\": [2015, 2025], \"denominator\": null, \"direction\": \"desc\", \"limit\": null}, \"values\": [{\"territory_code\": \"2402600\", \"years\": [2015, 2025], \"value\": 414.0651247880696, \"unit\": \"ha\", \"undefined_reason\": null, \"denominators_ha\": [], \"rank\": null}], \"clarification_field\": null, \"reason\": \"calculo_concluido\"}",
+  "plan": {
+    "operation": "comparacao_temporal",
+    "metric": "diferenca_liquida",
+    "unit": "ha",
+    "territory_codes": [
+      "2402600"
+    ],
+    "scope_uf": null,
+    "class_codes": [
+      24
+    ],
+    "years": [
+      2015,
+      2025
+    ],
+    "denominator": null,
+    "direction": "desc",
+    "limit": null
+  },
+  "result": [
+    {
+      "territory_code": "2402600",
+      "years": [
+        2015,
+        2025
+      ],
+      "value": 414.0651247880696,
+      "unit": "ha",
+      "undefined_reason": null,
+      "denominators_ha": [],
+      "rank": null
+    }
+  ],
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "messages_sha256": "4fa015695c81cc0a963e323636479bb5e75f2eff3c10bb4f9f346811a3d24ca0",
+      "issues": [
+        {
+          "path": [],
+          "code": "value_error"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 5861,
+        "total_tokens": 6508,
+        "completion_tokens": 647
+      },
+      "latency_seconds": 5.96741777099669,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "7b223745c644b0729efbccf88aba7f830046e384c950d37a3f332977ba854438",
+      "output_chars": 332,
+      "state": "invalida"
+    },
+    {
+      "number": 2,
+      "kind": "reparo",
+      "messages_sha256": "c058c84520aea3376c4f21386e09937d92b67b09a36743cd5b60a1a03174166c",
+      "issues": [],
+      "usage": {
+        "prompt_tokens": 5896,
+        "total_tokens": 6980,
+        "completion_tokens": 1084
+      },
+      "latency_seconds": 9.208358540083282,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "77d548e3d21d24e9a2799d57a5111c16f54ed071dd6d84643637416d54fcfc59",
+      "output_chars": 518,
+      "state": "valida"
+    }
+  ],
+  "latency_seconds": 15.1803074789932,
+  "scores": {
+    "status": true,
+    "plan": true,
+    "values": true,
+    "clarification": null,
+    "correct": true
+  },
+  "cost": null,
+  "source_context": {
+    "data_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+  },
+  "C_session_id": null,
+  "C_turn_id": null,
+  "C_candidate_intent": null,
+  "C_decision": null
+}

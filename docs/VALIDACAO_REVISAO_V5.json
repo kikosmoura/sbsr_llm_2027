@@ -1,0 +1,322 @@
+{
+  "schema_version": "validacao-revisao-v5-v1",
+  "recorded_at": "2026-10-21T15:24:58.536258+00:00",
+  "state": "verificado_com_pendencia_de_aquisicao_IBGE",
+  "tests": {
+    "command": ".venv/bin/python -B -m pytest -q",
+    "passed": 328,
+    "failed": 0,
+    "new_tests": 10,
+    "observed_elapsed_seconds": 39.97,
+    "kind": "testes locais/mocks/sinteticos separados das execucoes reais"
+  },
+  "generation": {
+    "command": ".venv/bin/python -B scripts/revisar_rascunhos_v5.py --env-file .env",
+    "model_calls": false,
+    "database_calls": false,
+    "network_calls": false,
+    "national_raster_download": false,
+    "code_hashes_checked": 29,
+    "output_hashes_checked": 110
+  },
+  "document": {
+    "pdf": {
+      "state": "verificado",
+      "pages": 4,
+      "max_pages": 4,
+      "times_new_roman_observed": true,
+      "renderer": "perfil e grupo temporarios exclusivos; EOF/tamanho estavel/pdfinfo; somente grupo proprio encerrado"
+    },
+    "abstract_word_counts": {
+      "resumo": 124,
+      "abstract": 128
+    },
+    "references": 11,
+    "human_review": "declaracao do autor, perguntas e gabaritos; nao revisao independente",
+    "authors": "a preencher"
+  },
+  "visual_inspection": {
+    "performed_by": "IA",
+    "pages": 4,
+    "human_author_approval": false,
+    "checks": [
+      "dois orcamentos no mesmo grafico",
+      "contagens/IC correspondem aos JSONs",
+      "subtitulos distinguem ponta a ponta, plano fixo e sensibilidade",
+      "referencias inteiras e renumeradas por citacao",
+      "JSON de exemplo mantido, sem renumerar arrays",
+      "fonte e margens oficiais preservadas; autoria pendente"
+    ]
+  },
+  "real_sensitivity": {
+    "run_id": "aa224a7d26124a8dbfa4042e50621cc7",
+    "freeze_sha256": "55593ae2e52cbd2890ddce5bfed4183977a20b43a9c95123ba43f53e2b1332f0",
+    "primary_records": 176,
+    "repeat_records": 8,
+    "development_records": 16,
+    "total_new_records": 200,
+    "requested_model": "MODEL_ID",
+    "returned_models": [
+      "RETURNED_MODEL_ID_1"
+    ],
+    "configuration": {
+      "requested_model": "MODEL_ID",
+      "temperature": 0.0,
+      "max_tokens": 4096,
+      "timeout_seconds": 60.0,
+      "http_max_attempts": 2,
+      "max_repairs": 1,
+      "stream": false,
+      "tls_verified": true,
+      "native_tools": false,
+      "native_response_format": false,
+      "workers": 3
+    },
+    "conditions": [
+      {
+        "condition": "B_eq",
+        "cases": 88,
+        "correct": 78,
+        "accuracy": 0.8863636363636364,
+        "answered": 79,
+        "technical_errors": 9,
+        "coverage": 0.8977272727272727,
+        "precision_emitted": 0.9873417721518988,
+        "latency_mean_seconds": 14.090175927035903,
+        "latency_median_seconds": 6.40912585350452,
+        "latency_p95_seconds": 38.72152605305891,
+        "model_seconds_mean": 14.086501033505721,
+        "executor_seconds_mean": 0,
+        "usage_observed_sum": {
+          "prompt_tokens": 453989,
+          "completion_tokens": 92378,
+          "total_tokens": 546367
+        },
+        "usage_missing_attempts": 9,
+        "cost": null
+      },
+      {
+        "condition": "C_eq",
+        "cases": 88,
+        "correct": 88,
+        "accuracy": 1.0,
+        "answered": 88,
+        "technical_errors": 0,
+        "coverage": 1.0,
+        "precision_emitted": 1.0,
+        "latency_mean_seconds": 5.276721786690442,
+        "latency_median_seconds": 4.097234211512841,
+        "latency_p95_seconds": 10.178247989836375,
+        "model_seconds_mean": 5.13344757815569,
+        "executor_seconds_mean": 0.14010666009297976,
+        "usage_observed_sum": {
+          "prompt_tokens": 510399,
+          "completion_tokens": 42564,
+          "total_tokens": 552963
+        },
+        "usage_missing_attempts": 0,
+        "cost": null
+      }
+    ],
+    "paired_effect": {
+      "state": "verificado",
+      "estimator": "diferenca de proporcoes por caso; clusters reamostrados",
+      "difference_C_minus_B": 0.11363636363636363,
+      "ci95": [
+        0.01850198412698414,
+        0.25
+      ],
+      "groups": 8,
+      "cases": 88,
+      "replicas": 10000,
+      "seed": 20271021,
+      "method": "percentil; numpy PCG64; quantile linear",
+      "group_key": "family_id"
+    },
+    "errors": [
+      {
+        "condition": "B_eq",
+        "type": "acerto",
+        "count": 78
+      },
+      {
+        "condition": "B_eq",
+        "type": "texto_final_ausente",
+        "count": 9
+      },
+      {
+        "condition": "B_eq",
+        "type": "valores_ou_estrutura_incorretos",
+        "count": 1
+      },
+      {
+        "condition": "C_eq",
+        "type": "acerto",
+        "count": 88
+      }
+    ],
+    "http_events": [
+      {
+        "condition": "B_eq",
+        "cases": 88,
+        "http_chat_requests": 88,
+        "http_status_counts": {
+          "200": 88
+        },
+        "transport_error_counts": {},
+        "finish_reason_counts": {
+          "stop": 79,
+          "length": 9
+        },
+        "usage_missing_responses": 0,
+        "usage_sum_observed_in_transport": {
+          "prompt_tokens": 503951,
+          "completion_tokens": 129242,
+          "total_tokens": 633193
+        },
+        "completion_equals_4096": 9,
+        "reasoning_tokens_missing": 88,
+        "cost": null
+      },
+      {
+        "condition": "C_eq",
+        "cases": 88,
+        "http_chat_requests": 88,
+        "http_status_counts": {
+          "200": 88
+        },
+        "transport_error_counts": {},
+        "finish_reason_counts": {
+          "stop": 88
+        },
+        "usage_missing_responses": 0,
+        "usage_sum_observed_in_transport": {
+          "prompt_tokens": 510399,
+          "completion_tokens": 42564,
+          "total_tokens": 552963
+        },
+        "completion_equals_4096": 0,
+        "reasoning_tokens_missing": 88,
+        "cost": null
+      }
+    ],
+    "numeric_discrepancies": [
+      {
+        "case_id": "t17_4",
+        "condition": "B_eq",
+        "observed_values": [
+          {
+            "territory_code": "2403608",
+            "years": [
+              2015,
+              2025
+            ],
+            "value": 65.138398,
+            "unit": "percentual",
+            "undefined_reason": null,
+            "denominators_ha": [
+              1707.029328258777
+            ],
+            "rank": null
+          }
+        ],
+        "reference_values": [
+          {
+            "territory_code": "2403608",
+            "years": [
+              2015,
+              2025
+            ],
+            "unit": "percentual",
+            "rank": null,
+            "value": "65.19697822394888669782782955618686813267",
+            "undefined_reason": null,
+            "denominators_ha": [
+              "1707.029328258777"
+            ]
+          }
+        ],
+        "value_outside_frozen_tolerance": true,
+        "interpretation": "discrepancia observada; nao se infere processo cognitivo ou causa interna"
+      }
+    ],
+    "same_messages_plans_schema_criteria": true,
+    "only_payload_parameter_changed": "max_tokens 2048 para 4096",
+    "source_records_replaced": false,
+    "same_bootstrap_policy_and_seed": true,
+    "repeat_answers_equal": 7,
+    "repeat_scores_equal": 8,
+    "scope": "sensibilidade adicional, casos reutilizados e plano fornecido; nao teste externo novo",
+    "interpretation": "vantagem observada menor mas IC95% acima de zero; taxa valida/correta, sem alegar melhora cognitiva intrinseca"
+  },
+  "mesh_provenance": {
+    "provider_and_edition_reported": "IBGE 2025",
+    "declaration_received_on": "2026-10-21",
+    "scope": [
+      "municipios",
+      "uf"
+    ],
+    "official_archive_comparison": "pendente_aquisicao",
+    "acquisition_states": [
+      {
+        "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2025/UFs/RN/RN_Municipios_2025.zip",
+        "state": "indisponivel",
+        "reason": "timeout",
+        "http_status": null
+      },
+      {
+        "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2025/UFs/RN/RN_UF_2025.zip",
+        "state": "indisponivel",
+        "reason": "timeout",
+        "http_status": null
+      }
+    ],
+    "snapshot_file_sha256": "42850b2d17fbfe9279f09e25417ec94a679b3d4080705a18374feaeceaf98b11",
+    "mesh_logical_sha256": "3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+    "derived_geojson_sha256": "1208aad7d1faf85dfdabed0b0bbe58695e6f3fe96fa268c6a03867e0c154fcd2",
+    "features": 168,
+    "valid": 168,
+    "empty": 0,
+    "repaired": 0,
+    "all_derived_geometries_equal_to_snapshot": true,
+    "snapshot_crs": "EPSG:4326",
+    "official_product_crs_documented": "SIRGAS 2000",
+    "import_or_datum_history_supplied": false,
+    "specific_archive_license_verified": false,
+    "snapshot_changed": false,
+    "areas_reprocessed": false,
+    "OGR_GDAL_available": "3040100",
+    "official_zip_read_test": "pendente_por_timeout_de_aquisicao"
+  },
+  "preservation": {
+    "files_checked": 2535,
+    "unchanged": 2532,
+    "append_only_documents": [
+      "README.md",
+      "docs/DECISOES.md",
+      "docs/ESTADO_IMPLEMENTACAO.md"
+    ],
+    "unexpected_changes": 0,
+    "historical_scientific_files_preserved": 297,
+    "old_data_and_evaluations_unchanged": true,
+    "production_prompts_env_and_example_unchanged": true,
+    "SAR_project_unchanged": true
+  },
+  "privacy": {
+    "new_code_docs_tests_scanned": 18,
+    "known_secret_values_scan": "verificado",
+    "generated_material_scan": "verificado",
+    "env_values_exported": false,
+    "raw_http_or_reasoning_text_stored": false
+  },
+  "limitations": [
+    "Oito familias e dependencia territorial; questoes/planos reutilizados.",
+    "Execucoes de orcamento em momentos diferentes; modelo/infraestrutura remota nao inteiramente observaveis.",
+    "Origem e edicao da malha informadas pelo autor; ZIP importado/licenca/data/historico de datum sem autenticacao.",
+    "GeoJSON reproduz limites usados, nao valida verdade de campo ou acuracia tematica.",
+    "Autoria/afiliacoes a preencher e direitos de publicacao a confirmar."
+  ],
+  "submission_performed": false,
+  "publication_performed": false,
+  "deployment_performed": false
+}

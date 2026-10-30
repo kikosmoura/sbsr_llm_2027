@@ -1,0 +1,133 @@
+{
+  "schema_version": "controle-contrato-caso-v1",
+  "run_id": "aa224a7d26124a8dbfa4042e50621cc7",
+  "case_id": "t17_1",
+  "family_id": "teste_variacao",
+  "territory_codes": [
+    "2403608"
+  ],
+  "condition": "B_eq",
+  "repeat": 0,
+  "integration_kind": "gateway_real",
+  "created_at": "2026-10-21T15:02:22.366656+00:00",
+  "freeze_sha256": "55593ae2e52cbd2890ddce5bfed4183977a20b43a9c95123ba43f53e2b1332f0",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 4096,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "native_tools": false,
+    "native_response_format": false,
+    "workers": 3
+  },
+  "question": "Em relação à área inicial de 2015, qual a variação percentual de Área Urbanizada em Extremoz/RN até 2025?",
+  "fixed_plan": {
+    "operation": "comparacao_temporal",
+    "metric": "variacao_percentual",
+    "unit": "percentual",
+    "territory_codes": [
+      "2403608"
+    ],
+    "scope_uf": "RN",
+    "class_codes": [
+      24
+    ],
+    "years": [
+      2015,
+      2025
+    ],
+    "denominator": "area_inicial",
+    "direction": "desc",
+    "limit": null
+  },
+  "common_input_sha256": "5e02a435eb5615d6d3b62a3c5f93019370ddfa73b22484ed4512f458a86b9bbe",
+  "output_contract_sha256": "7cb672668bdaf0cb31f785651d91ec6475f990de121edab04b748bd0da63c955",
+  "system_sha256": "2805f7312e5288c2499d8bc4b6fd55f3a0adc3b8d5ea53aab2533894c62b290d",
+  "messages_sha256": "eacc45f91e2edec3e4a41ce7ea9958fd22ae1b06fd4f0700ef85e53d5328ad8a",
+  "execution_observations": [],
+  "executor_result": null,
+  "observed": {
+    "status": "erro_tecnico",
+    "values": [],
+    "reason": "falha_gateway",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "variacao_percentual",
+      "unit": "percentual",
+      "territory_codes": [
+        "2403608"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        24
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": "area_inicial",
+      "direction": "desc",
+      "limit": null
+    },
+    "clarification_field": null
+  },
+  "final_answer": "{\"reason\":\"falha_gateway\",\"status\":\"erro_tecnico\",\"values\":[]}",
+  "attempts": [
+    {
+      "number": 1,
+      "messages_sha256": "eacc45f91e2edec3e4a41ce7ea9958fd22ae1b06fd4f0700ef85e53d5328ad8a",
+      "usage": null,
+      "issues": [],
+      "state": "falha_gateway",
+      "gateway_error": "texto_final_ausente",
+      "http_status": null
+    }
+  ],
+  "latency_seconds": 33.86326166999061,
+  "model_seconds": 33.86018805997446,
+  "http_events": [
+    {
+      "endpoint": "oauth",
+      "http_status": 200,
+      "bytes_read": 91,
+      "body_complete": true,
+      "response_metadata": null,
+      "elapsed_seconds": 0.19307468296028674
+    },
+    {
+      "endpoint": "chat",
+      "http_status": 200,
+      "bytes_read": 12077,
+      "body_complete": true,
+      "response_metadata": {
+        "json_object": true,
+        "choices_count": 1,
+        "finish_reason": "length",
+        "content_state": "null",
+        "final_content_chars": null,
+        "reasoning_field_present": true,
+        "usage": {
+          "prompt_tokens": 5556,
+          "total_tokens": 9652,
+          "completion_tokens": 4096
+        },
+        "reasoning_tokens": null
+      },
+      "elapsed_seconds": 33.66683642193675
+    }
+  ],
+  "executor_seconds": 0,
+  "scores": {
+    "status": false,
+    "plan": null,
+    "values": null,
+    "clarification": null,
+    "correct": false
+  },
+  "cost": null,
+  "source_geo_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+}

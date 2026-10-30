@@ -1,0 +1,523 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "fa7686659da9449d811d154641021724",
+  "case_id": "t12_2",
+  "family_id": "teste_delta",
+  "territory_codes": [
+    "2400802"
+  ],
+  "condition": "C",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:44:29.482936+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Para Angicos/RN, quanto mudou a área de Pastagem de 2015 a 2025, em km2, preservando o sinal?",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": null,
+  "messages_sha256": null,
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_liquida",
+      "unit": "km2",
+      "territory_codes": [
+        "2400802"
+      ],
+      "scope_uf": null,
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2400802",
+        "years": [
+          2015,
+          2025
+        ],
+        "value": -8.70333933044487,
+        "unit": "km2",
+        "undefined_reason": null,
+        "denominators_ha": [],
+        "rank": null
+      }
+    ],
+    "clarification_field": null,
+    "reason": "consulta_executada"
+  },
+  "final_answer": "Angicos/RN (IBGE 2400802): diferença líquida (final menos inicial) de Pastagem [15], em 2015–2025: -8,70 km². Calculada no suporte válido comum dos dois anos.\nColeção 11; revisão desconhecida; malha edição desconhecida; método ellipsoid-linear-lonlat-fractional-v1; execução a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802.\nMudança observada na classificação não comprova mudança real específica no terreno, causas ou ilegalidade.",
+  "plan": {
+    "operation": "comparacao_temporal",
+    "metric": "diferenca_liquida",
+    "unit": "km2",
+    "territory_codes": [
+      "2400802"
+    ],
+    "scope_uf": null,
+    "class_codes": [
+      15
+    ],
+    "years": [
+      2015,
+      2025
+    ],
+    "denominator": null,
+    "direction": "desc",
+    "limit": null
+  },
+  "result": {
+    "schema_version": "resposta-consulta-v1",
+    "status": "respondida",
+    "reason": "consulta_executada",
+    "message": "Angicos/RN (IBGE 2400802): diferença líquida (final menos inicial) de Pastagem [15], em 2015–2025: -8,70 km². Calculada no suporte válido comum dos dois anos.\nColeção 11; revisão desconhecida; malha edição desconhecida; método ellipsoid-linear-lonlat-fractional-v1; execução a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802.",
+    "answer_id": "a5a8e57851b0d2a7ee765313d11eb395d9657f7363c997a9c080981cac2ce381",
+    "plan_id": "5cda39b26ca7d4f1a5f5b934942349743329080049b837be433675ffa3cf3b06",
+    "executor_sha256": "64bb18ecbfecf2fd623d8fd10e616a1f816bbf529feeec5749f554ac7d4ed81a",
+    "requested_plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_liquida",
+      "unit": "km2",
+      "territory_codes": [
+        "2400802"
+      ],
+      "scope_uf": null,
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_liquida",
+      "unit": "km2",
+      "territory_codes": [
+        "2400802"
+      ],
+      "scope_uf": null,
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "evidence": [
+      {
+        "evidence_id": "fc18d01df96165367faa4d6c0581ea22a956ef1303a97ce0263e7e1703d503e4",
+        "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+        "territory": {
+          "kind": "municipio",
+          "code": "2400802",
+          "name": "Angicos",
+          "uf": "RN",
+          "geometry_hash": "ddbfce407a4294eb553849e537c45095698f6aa36d17b8e64410ea29c55d4d64",
+          "edition": null
+        },
+        "class_codes": [
+          15
+        ],
+        "years": [
+          2015,
+          2025
+        ],
+        "collection": 11,
+        "source_revision": null,
+        "source_ids": [
+          "run:a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+          "mesh:3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+          "classes:04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+          "areas.parquet:7a2fa22a243226e534fe1b2638abd271b279c7ccbf2a937a4181365dd7c5ba48",
+          "quality.parquet:99392f4e4e25f40cb1ea929381a4e63e07481fa45db5f9da0ccffc9740c62547",
+          "mirror:fd0a4f02551f26230b156d60f6f409dcadb9d198bb56de37ec055b47e2d1076e",
+          "crop:99c7a24c07d0b6cf29969ea2385592b9f3e0845b667b1877c7e163e3fd17739a",
+          "mirror:37322ac02043f652f60aeff0a68acfba418ae2e43dff412f89cd0ad6e525a336",
+          "crop:8b848eb7e2592f26160835b9b256987e985fd39d1dbb2681aa722b9aa8e355b7"
+        ],
+        "area_method": "ellipsoid-linear-lonlat-fractional-v1",
+        "quality": {
+          "state": "completo",
+          "observed_area_ha": 74159.63159873658,
+          "nodata_area_ha": 0.0,
+          "unknown_codes": [],
+          "common_support_id": "27bfdf423fc35442aebb20e7512ed1ab5234e4b8d80ce53dfa91a6b93c4f5364",
+          "area_method": "ellipsoid-linear-lonlat-fractional-v1",
+          "notes": [
+            "Revisao oficial do espelho e edicao territorial nao comprovadas."
+          ]
+        },
+        "plan_id": "5cda39b26ca7d4f1a5f5b934942349743329080049b837be433675ffa3cf3b06",
+        "metric": "diferenca_liquida",
+        "requested_class_codes": [
+          15
+        ],
+        "class_names": [
+          "Pastagem [15]"
+        ],
+        "observations": [
+          {
+            "year": 2015,
+            "class_area_ha": 32615.356381226735,
+            "observed_area_ha": 74159.63159873658,
+            "support": "comum",
+            "nodata_area_ha": 0.0,
+            "unknown_area_ha": 0.0,
+            "outside_raster_area_ha": 1.1920928955078126e-11
+          },
+          {
+            "year": 2025,
+            "class_area_ha": 31745.022448182248,
+            "observed_area_ha": 74159.63159873658,
+            "support": "comum",
+            "nodata_area_ha": 0.0,
+            "unknown_area_ha": 0.0,
+            "outside_raster_area_ha": 1.1920928955078126e-11
+          }
+        ],
+        "denominator_definition": null,
+        "denominator_values_ha": [],
+        "provenance": "municipio_direto",
+        "mesh_sha256": "3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+        "catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+        "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+        "sources": [
+          {
+            "source_id": "run:a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+            "kind": "execucao",
+            "sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "mesh:3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+            "kind": "malha",
+            "sha256": "3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "classes:04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+            "kind": "catalogo",
+            "sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "areas.parquet:7a2fa22a243226e534fe1b2638abd271b279c7ccbf2a937a4181365dd7c5ba48",
+            "kind": "particao_areas",
+            "sha256": "7a2fa22a243226e534fe1b2638abd271b279c7ccbf2a937a4181365dd7c5ba48",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "quality.parquet:99392f4e4e25f40cb1ea929381a4e63e07481fa45db5f9da0ccffc9740c62547",
+            "kind": "particao_qualidade",
+            "sha256": "99392f4e4e25f40cb1ea929381a4e63e07481fa45db5f9da0ccffc9740c62547",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "mirror:fd0a4f02551f26230b156d60f6f409dcadb9d198bb56de37ec055b47e2d1076e",
+            "kind": "raster_espelho",
+            "sha256": null,
+            "year": 2015,
+            "public_url": "https://storage.example.invalid/BUCKET_NAME/brazil_coverage-col11_2015.tif",
+            "etag": "\"c0f687289217d0c8c7da1caa33827855-138\""
+          },
+          {
+            "source_id": "crop:99c7a24c07d0b6cf29969ea2385592b9f3e0845b667b1877c7e163e3fd17739a",
+            "kind": "recorte",
+            "sha256": "99c7a24c07d0b6cf29969ea2385592b9f3e0845b667b1877c7e163e3fd17739a",
+            "year": 2015,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "mirror:37322ac02043f652f60aeff0a68acfba418ae2e43dff412f89cd0ad6e525a336",
+            "kind": "raster_espelho",
+            "sha256": null,
+            "year": 2025,
+            "public_url": "https://storage.example.invalid/BUCKET_NAME/brazil_coverage-col11_2025.tif",
+            "etag": "\"df7c25264b8e600567bd82c2a4a072a3-146\""
+          },
+          {
+            "source_id": "crop:8b848eb7e2592f26160835b9b256987e985fd39d1dbb2681aa722b9aa8e355b7",
+            "kind": "recorte",
+            "sha256": "8b848eb7e2592f26160835b9b256987e985fd39d1dbb2681aa722b9aa8e355b7",
+            "year": 2025,
+            "public_url": null,
+            "etag": null
+          }
+        ]
+      }
+    ],
+    "values": [
+      {
+        "evidence_id": "fc18d01df96165367faa4d6c0581ea22a956ef1303a97ce0263e7e1703d503e4",
+        "value": -8.70333933044487,
+        "unit": "km2",
+        "denominator_value": null,
+        "undefined_reason": null,
+        "metric": "diferenca_liquida",
+        "area_value_ha": -870.3339330444869,
+        "denominator_unit": null,
+        "rank": null
+      }
+    ],
+    "execution": {
+      "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+      "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+      "collection": 11,
+      "source_revision": null,
+      "territorial_edition": null,
+      "method": "ellipsoid-linear-lonlat-fractional-v1",
+      "mesh_sha256": "3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+      "catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+      "years": [
+        2015,
+        2025
+      ],
+      "class_names": [
+        "Pastagem [15]"
+      ],
+      "sources": [
+        {
+          "source_id": "run:a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+          "kind": "execucao",
+          "sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+          "year": null,
+          "public_url": null,
+          "etag": null
+        },
+        {
+          "source_id": "mesh:3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+          "kind": "malha",
+          "sha256": "3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+          "year": null,
+          "public_url": null,
+          "etag": null
+        },
+        {
+          "source_id": "classes:04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+          "kind": "catalogo",
+          "sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+          "year": null,
+          "public_url": null,
+          "etag": null
+        },
+        {
+          "source_id": "mirror:fd0a4f02551f26230b156d60f6f409dcadb9d198bb56de37ec055b47e2d1076e",
+          "kind": "raster_espelho",
+          "sha256": null,
+          "year": 2015,
+          "public_url": "https://storage.example.invalid/BUCKET_NAME/brazil_coverage-col11_2015.tif",
+          "etag": "\"c0f687289217d0c8c7da1caa33827855-138\""
+        },
+        {
+          "source_id": "crop:99c7a24c07d0b6cf29969ea2385592b9f3e0845b667b1877c7e163e3fd17739a",
+          "kind": "recorte",
+          "sha256": "99c7a24c07d0b6cf29969ea2385592b9f3e0845b667b1877c7e163e3fd17739a",
+          "year": 2015,
+          "public_url": null,
+          "etag": null
+        },
+        {
+          "source_id": "mirror:37322ac02043f652f60aeff0a68acfba418ae2e43dff412f89cd0ad6e525a336",
+          "kind": "raster_espelho",
+          "sha256": null,
+          "year": 2025,
+          "public_url": "https://storage.example.invalid/BUCKET_NAME/brazil_coverage-col11_2025.tif",
+          "etag": "\"df7c25264b8e600567bd82c2a4a072a3-146\""
+        },
+        {
+          "source_id": "crop:8b848eb7e2592f26160835b9b256987e985fd39d1dbb2681aa722b9aa8e355b7",
+          "kind": "recorte",
+          "sha256": "8b848eb7e2592f26160835b9b256987e985fd39d1dbb2681aa722b9aa8e355b7",
+          "year": 2025,
+          "public_url": null,
+          "etag": null
+        }
+      ]
+    },
+    "ranking": null,
+    "notes": [
+      "Valores sem arredondamento no JSON/CSV; texto com duas casas decimais.",
+      "Diferenca liquida nao mede perda bruta, desmatamento ou causas."
+    ]
+  },
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "state": "valida",
+      "latency_seconds": 9.513696511043236,
+      "usage": {
+        "prompt_tokens": 4692,
+        "total_tokens": 5665,
+        "completion_tokens": 973
+      },
+      "chat_requests": 1,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "output_sha256": "a1530c8e28dfdb9dab4956d683852cc410080ee68135d0b4be67f209961b2b84",
+      "output_chars": 580,
+      "candidate": {
+        "action": "consultar",
+        "intent": {
+          "operation": "comparacao_temporal",
+          "territories": [
+            {
+              "mention": "Angicos",
+              "uf_mention": "RN",
+              "kind": "municipio"
+            }
+          ],
+          "scope_uf_mention": "RN",
+          "classes": [
+            {
+              "mention": "pastagem"
+            }
+          ],
+          "years": [
+            2015,
+            2025
+          ],
+          "metric": "diferenca_liquida",
+          "metric_mention": "mudou a área",
+          "unit_mention": "km2",
+          "denominator": null,
+          "direction": null,
+          "limit": null
+        },
+        "clarification_fields": []
+      },
+      "issues": [],
+      "gateway_error": null,
+      "http_status": null,
+      "messages_sha256": "6639fc45488dda9c6b26258d0157139a857ed2f9df7c0b28a2c2eda50e9772cf",
+      "explanation_fallback": null
+    }
+  ],
+  "latency_seconds": 9.717100576031953,
+  "scores": {
+    "status": true,
+    "plan": true,
+    "values": true,
+    "clarification": null,
+    "correct": true
+  },
+  "cost": null,
+  "source_context": {
+    "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+    "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+    "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+    "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+  },
+  "C_session_id": "ee53a73628454f7a8d8b20c7d8013aa9",
+  "C_turn_id": "2c7ca240854a491fabc4eb0d70799976",
+  "C_candidate_intent": {
+    "schema_version": "intencao-semantica-v1",
+    "operation": "comparacao_temporal",
+    "territories": [
+      {
+        "code": "2400802",
+        "name": null,
+        "uf": null,
+        "kind": null
+      }
+    ],
+    "scope_uf": null,
+    "classes": [
+      {
+        "code": 15,
+        "term": null
+      }
+    ],
+    "years": [
+      2015,
+      2025
+    ],
+    "metric": "diferenca_liquida",
+    "metric_term": null,
+    "unit": "km2",
+    "unit_term": null,
+    "denominator": null,
+    "direction": "desc",
+    "limit": null,
+    "requested_concept": "cobertura"
+  },
+  "C_decision": {
+    "status": "plano_validado",
+    "reason": "selecoes_e_capacidades_validadas",
+    "message": "Plano pronto para o motor; nenhum resultado quantitativo foi calculado nesta etapa.",
+    "normalized_plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_liquida",
+      "unit": "km2",
+      "territory_codes": [
+        "2400802"
+      ],
+      "scope_uf": null,
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "territory_candidates": [],
+    "class_candidates": [],
+    "notes": [],
+    "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+    "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9",
+    "capabilities_sha256": "91d83a3973e66c772f3db8942bee78b526e737d54ae89d464cd9d0385eb92321"
+  }
+}

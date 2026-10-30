@@ -1,0 +1,155 @@
+{
+  "schema_version": "controle-contrato-caso-v1",
+  "run_id": "4b61f2ecb5454fce9cf4325f3b3d43fd",
+  "case_id": "d04_1",
+  "family_id": "d04",
+  "territory_codes": [
+    "2410900"
+  ],
+  "condition": "B_eq",
+  "repeat": 0,
+  "integration_kind": "gateway_real",
+  "created_at": "2026-10-21T14:54:58.819605+00:00",
+  "freeze_sha256": "55593ae2e52cbd2890ddce5bfed4183977a20b43a9c95123ba43f53e2b1332f0",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 4096,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "native_tools": false,
+    "native_response_format": false,
+    "workers": 3
+  },
+  "question": "Qual a variação percentual de Mangue em Riachuelo/RN entre 2015 e 2025, em relação à área inicial?",
+  "fixed_plan": {
+    "operation": "comparacao_temporal",
+    "metric": "variacao_percentual",
+    "unit": "percentual",
+    "territory_codes": [
+      "2410900"
+    ],
+    "scope_uf": "RN",
+    "class_codes": [
+      5
+    ],
+    "years": [
+      2015,
+      2025
+    ],
+    "denominator": "area_inicial",
+    "direction": "desc",
+    "limit": null
+  },
+  "common_input_sha256": "efd2df8e285b862a7828f1ce3e87dc8f61197a64a591af709dcc257512af9d01",
+  "output_contract_sha256": "7cb672668bdaf0cb31f785651d91ec6475f990de121edab04b748bd0da63c955",
+  "system_sha256": "2805f7312e5288c2499d8bc4b6fd55f3a0adc3b8d5ea53aab2533894c62b290d",
+  "messages_sha256": "edb9603d04b628fd5080a4e644d570c6bc8f83c95744aa84ad50d8b675023b53",
+  "execution_observations": [],
+  "executor_result": null,
+  "observed": {
+    "status": "respondida",
+    "values": [
+      {
+        "territory_code": "2410900",
+        "years": [
+          2015,
+          2025
+        ],
+        "value": null,
+        "unit": "percentual",
+        "undefined_reason": "base_inicial_zero",
+        "denominators_ha": [
+          0.0
+        ],
+        "rank": null
+      }
+    ],
+    "reason": "consulta_executada",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "variacao_percentual",
+      "unit": "percentual",
+      "territory_codes": [
+        "2410900"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        5
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": "area_inicial",
+      "direction": "desc",
+      "limit": null
+    },
+    "clarification_field": null
+  },
+  "final_answer": "{\"reason\":\"consulta_executada\",\"status\":\"respondida\",\"values\":[{\"denominators_ha\":[0.0],\"rank\":null,\"territory_code\":\"2410900\",\"undefined_reason\":\"base_inicial_zero\",\"unit\":\"percentual\",\"value\":null,\"years\":[2015,2025]}]}",
+  "attempts": [
+    {
+      "number": 1,
+      "messages_sha256": "edb9603d04b628fd5080a4e644d570c6bc8f83c95744aa84ad50d8b675023b53",
+      "usage": {
+        "prompt_tokens": 5485,
+        "total_tokens": 5959,
+        "completion_tokens": 474
+      },
+      "issues": [],
+      "latency_seconds": 5.0348387660924345,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "39b30446d9980ba884919581a72dbc32399fb039a3a5d3f8f4cb13dcb3a56247",
+      "output_chars": 219,
+      "state": "valida"
+    }
+  ],
+  "latency_seconds": 5.038074295967817,
+  "model_seconds": 5.035207353066653,
+  "http_events": [
+    {
+      "endpoint": "oauth",
+      "http_status": 200,
+      "bytes_read": 91,
+      "body_complete": true,
+      "response_metadata": null,
+      "elapsed_seconds": 0.29596212308388203
+    },
+    {
+      "endpoint": "chat",
+      "http_status": 200,
+      "bytes_read": 2604,
+      "body_complete": true,
+      "response_metadata": {
+        "json_object": true,
+        "choices_count": 1,
+        "finish_reason": "stop",
+        "content_state": "texto",
+        "final_content_chars": 219,
+        "reasoning_field_present": true,
+        "usage": {
+          "prompt_tokens": 5485,
+          "total_tokens": 5959,
+          "completion_tokens": 474
+        },
+        "reasoning_tokens": null
+      },
+      "elapsed_seconds": 4.738820673082955
+    }
+  ],
+  "executor_seconds": 0,
+  "scores": {
+    "status": true,
+    "plan": true,
+    "values": true,
+    "clarification": null,
+    "correct": true
+  },
+  "cost": null,
+  "source_geo_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+}

@@ -1,0 +1,122 @@
+{
+  "schema_version": "controle-contrato-caso-v1",
+  "run_id": "7dfe5ecbd3944e4dbde409763d23cbf3",
+  "case_id": "t12_2",
+  "family_id": "teste_delta",
+  "territory_codes": [
+    "2400802"
+  ],
+  "condition": "B_eq",
+  "repeat": 0,
+  "integration_kind": "gateway_real",
+  "created_at": "2026-10-21T13:37:42.950295+00:00",
+  "freeze_sha256": "784d7e714d514197d4d07f3c82a000724b1671a64295a13616e6b9c6134beb2c",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "native_tools": false,
+    "native_response_format": false,
+    "workers": 3
+  },
+  "question": "Para Angicos/RN, quanto mudou a área de Pastagem de 2015 a 2025, em km2, preservando o sinal?",
+  "fixed_plan": {
+    "operation": "comparacao_temporal",
+    "metric": "diferenca_liquida",
+    "unit": "km2",
+    "territory_codes": [
+      "2400802"
+    ],
+    "scope_uf": "RN",
+    "class_codes": [
+      15
+    ],
+    "years": [
+      2015,
+      2025
+    ],
+    "denominator": null,
+    "direction": "desc",
+    "limit": null
+  },
+  "common_input_sha256": "b87e8f2e79ad62be04aeceafe5de22d8ec06a7a9f5a408d92be37491a1985cf1",
+  "output_contract_sha256": "7cb672668bdaf0cb31f785651d91ec6475f990de121edab04b748bd0da63c955",
+  "system_sha256": "2805f7312e5288c2499d8bc4b6fd55f3a0adc3b8d5ea53aab2533894c62b290d",
+  "messages_sha256": "df3eacddd2eece1dcdb7424fb0bc0197ecdd9b04746dc7ea306051e380793a6a",
+  "execution_observations": [],
+  "executor_result": null,
+  "observed": {
+    "status": "respondida",
+    "values": [
+      {
+        "territory_code": "2400802",
+        "years": [
+          2015,
+          2025
+        ],
+        "value": -8.70333933044486,
+        "unit": "km2",
+        "undefined_reason": null,
+        "denominators_ha": [],
+        "rank": null
+      }
+    ],
+    "reason": "consulta_executada",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_liquida",
+      "unit": "km2",
+      "territory_codes": [
+        "2400802"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "clarification_field": null
+  },
+  "final_answer": "{\"reason\":\"consulta_executada\",\"status\":\"respondida\",\"values\":[{\"denominators_ha\":[],\"rank\":null,\"territory_code\":\"2400802\",\"undefined_reason\":null,\"unit\":\"km2\",\"value\":-8.70333933044486,\"years\":[2015,2025]}]}",
+  "attempts": [
+    {
+      "number": 1,
+      "messages_sha256": "df3eacddd2eece1dcdb7424fb0bc0197ecdd9b04746dc7ea306051e380793a6a",
+      "usage": {
+        "prompt_tokens": 5554,
+        "total_tokens": 6180,
+        "completion_tokens": 626
+      },
+      "issues": [],
+      "latency_seconds": 6.975610821973532,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "a2edfeea64187bf3de57be17e31c32b7e0bc0e3a7094cc829c1abe4c71bfa3d7",
+      "output_chars": 209,
+      "state": "valida"
+    }
+  ],
+  "latency_seconds": 6.9802753299009055,
+  "model_seconds": 6.976089732022956,
+  "executor_seconds": 0,
+  "scores": {
+    "status": true,
+    "plan": true,
+    "values": true,
+    "clarification": null,
+    "correct": true
+  },
+  "cost": null,
+  "source_geo_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+}

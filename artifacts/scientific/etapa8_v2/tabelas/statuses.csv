@@ -1,0 +1,16 @@
+condition,status,count,denominator
+A,respondida,0,120
+A,precisa_esclarecimento,7,120
+A,fora_do_escopo,4,120
+A,dados_indisponiveis,109,120
+A,erro_tecnico,0,120
+B,respondida,30,120
+B,precisa_esclarecimento,13,120
+B,fora_do_escopo,4,120
+B,dados_indisponiveis,11,120
+B,erro_tecnico,62,120
+C,respondida,73,120
+C,precisa_esclarecimento,24,120
+C,fora_do_escopo,4,120
+C,dados_indisponiveis,12,120
+C,erro_tecnico,7,120

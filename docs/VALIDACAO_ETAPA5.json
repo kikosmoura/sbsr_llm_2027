@@ -1,0 +1,488 @@
+{
+  "schema_version": "validacao-etapa5-v1",
+  "checked_at": "2026-10-19T19:34:50.167358+00:00",
+  "package_version": "0.5.2",
+  "implementation_state": "verificado",
+  "real_gateway_state": "verificado",
+  "tests": {
+    "passed": 211,
+    "new_interpretation_tests": 51,
+    "kind": "sinteticos_e_mocks",
+    "network_called": false
+  },
+  "real_data_contract": {
+    "state": "verificado",
+    "kind": "mock_http_com_dados_derivados_reais",
+    "case_count": 9,
+    "turn_count": 11,
+    "report_path": "reports/etapa5/contrato_dados_reais.json",
+    "report_sha256": "46e50f5142f7378b6ac31958afa546ba407b4d826b817b1669cf234dfec64cab",
+    "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+    "cases": [
+      {
+        "case": "area_pastagem",
+        "checks_passed": true,
+        "mock_http_chat_calls": 1,
+        "mock_http_token_calls": 1,
+        "real_gateway_called": false,
+        "turns": [
+          {
+            "answer_id": "537955b183713f10ab550e98d9e72fc4ff1ecdea799615c4918346f623f7ac4a",
+            "attempt_count": 1,
+            "audit_path": "artifacts/dialogues/17d187016b974de79e2c22b65980cff0/f7658b489fa74e93967827325a4ac000.json",
+            "fallback": null,
+            "message": "Riachuelo/RN (IBGE 2410900): área mapeada de Pastagem [15], em 2015: 8.684,04 ha.\nColeção 11; revisão desconhecida; malha edição desconhecida; método ellipsoid-linear-lonlat-fractional-v1; execução a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802.\nMudança observada na classificação não comprova mudança real específica no terreno, causas ou ilegalidade.",
+            "reason": "consulta_executada",
+            "session_id": "17d187016b974de79e2c22b65980cff0",
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "status": "respondida",
+            "turn_id": "f7658b489fa74e93967827325a4ac000",
+            "values": [
+              {
+                "area_value_ha": 8684.038153762798,
+                "denominator_unit": null,
+                "denominator_value": null,
+                "evidence_id": "ac32b0f023c150320cd583918bb4d3932cf2e3b0d86706ca0439b0319d0aff03",
+                "metric": "area",
+                "rank": null,
+                "undefined_reason": null,
+                "unit": "ha",
+                "value": 8684.038153762798
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "case": "diferenca_urbana",
+        "checks_passed": true,
+        "mock_http_chat_calls": 1,
+        "mock_http_token_calls": 1,
+        "real_gateway_called": false,
+        "turns": [
+          {
+            "answer_id": "149f4782f778570698291e9a7dfbf8dc3b1b73e90cc4ce68f7e110cec7c12ea1",
+            "attempt_count": 1,
+            "audit_path": "artifacts/dialogues/17147b7ec37a4e669e4f7735c6762d16/b4bf0707a43d4fcf80e59c9b657d9538.json",
+            "fallback": null,
+            "message": "Natal/RN (IBGE 2408102): diferença líquida (final menos inicial) de Área Urbanizada [24], em 2015–2025: 358,03 ha. Calculada no suporte válido comum dos dois anos.\nColeção 11; revisão desconhecida; malha edição desconhecida; método ellipsoid-linear-lonlat-fractional-v1; execução a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802.\nMudança observada na classificação não comprova mudança real específica no terreno, causas ou ilegalidade.",
+            "reason": "consulta_executada",
+            "session_id": "17147b7ec37a4e669e4f7735c6762d16",
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "status": "respondida",
+            "turn_id": "b4bf0707a43d4fcf80e59c9b657d9538",
+            "values": [
+              {
+                "area_value_ha": 358.0270931022533,
+                "denominator_unit": null,
+                "denominator_value": null,
+                "evidence_id": "48bcb242ec568ab4a81ae0ffc668731bce7674e6c5ca607ce22ac92ed0dcbf7a",
+                "metric": "diferenca_liquida",
+                "rank": null,
+                "undefined_reason": null,
+                "unit": "ha",
+                "value": 358.0270931022533
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "case": "homonimo_e_esclarecimento",
+        "checks_passed": true,
+        "mock_http_chat_calls": 2,
+        "mock_http_token_calls": 1,
+        "real_gateway_called": false,
+        "turns": [
+          {
+            "answer_id": null,
+            "attempt_count": 1,
+            "audit_path": "artifacts/dialogues/ef72f781213f48239ad840680ac7296f/641ce5dc4aa14fe095cf4ac7e511595a.json",
+            "fallback": null,
+            "message": "Qual território? Informe código IBGE ou nome e UF, escolhendo um dos candidatos quando houver.",
+            "reason": "territorio_homonimo",
+            "session_id": "ef72f781213f48239ad840680ac7296f",
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "status": "precisa_esclarecimento",
+            "turn_id": "641ce5dc4aa14fe095cf4ac7e511595a",
+            "values": []
+          },
+          {
+            "answer_id": "36b6df1638ce0a18d12cdefd3c07f2348154fbce86ca3503cd360b020efcb513",
+            "attempt_count": 1,
+            "audit_path": "artifacts/dialogues/ef72f781213f48239ad840680ac7296f/76f34fd116bf47c490fd55d4f0e6509b.json",
+            "fallback": null,
+            "message": "Santa Cruz/RN (IBGE 2411205): área mapeada de Pastagem [15], em 2015: 23.703,55 ha.\nColeção 11; revisão desconhecida; malha edição desconhecida; método ellipsoid-linear-lonlat-fractional-v1; execução a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802.\nMudança observada na classificação não comprova mudança real específica no terreno, causas ou ilegalidade.",
+            "reason": "consulta_executada",
+            "session_id": "ef72f781213f48239ad840680ac7296f",
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "status": "respondida",
+            "turn_id": "76f34fd116bf47c490fd55d4f0e6509b",
+            "values": [
+              {
+                "area_value_ha": 23703.548752555733,
+                "denominator_unit": null,
+                "denominator_value": null,
+                "evidence_id": "b1820e2e0f1b68fb4bc862777dd2bcba8a725f122940797ac2a8585c8c7437cf",
+                "metric": "area",
+                "rank": null,
+                "undefined_reason": null,
+                "unit": "ha",
+                "value": 23703.548752555733
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "case": "classe_ambigua_e_esclarecimento",
+        "checks_passed": true,
+        "mock_http_chat_calls": 2,
+        "mock_http_token_calls": 1,
+        "real_gateway_called": false,
+        "turns": [
+          {
+            "answer_id": null,
+            "attempt_count": 1,
+            "audit_path": "artifacts/dialogues/59a41b7c6f3b459aaf74c96e581f1131/185d27054c564d688e1040bf902afa84.json",
+            "fallback": null,
+            "message": "Qual classe ou grupo da legenda você pretende consultar? Confirme nome ou código.",
+            "reason": "classe_ambigua",
+            "session_id": "59a41b7c6f3b459aaf74c96e581f1131",
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "status": "precisa_esclarecimento",
+            "turn_id": "185d27054c564d688e1040bf902afa84",
+            "values": []
+          },
+          {
+            "answer_id": "54f637dafc0bcb734568610f1e612e6c1275aaf905cdbbd27958fded725b8d34",
+            "attempt_count": 1,
+            "audit_path": "artifacts/dialogues/59a41b7c6f3b459aaf74c96e581f1131/6eb4c5375130453fbbbf4529cf209908.json",
+            "fallback": null,
+            "message": "Riachuelo/RN (IBGE 2410900): área mapeada de Formação Florestal [3], em 2015: 6,94 ha.\nColeção 11; revisão desconhecida; malha edição desconhecida; método ellipsoid-linear-lonlat-fractional-v1; execução a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802.\nMudança observada na classificação não comprova mudança real específica no terreno, causas ou ilegalidade.",
+            "reason": "consulta_executada",
+            "session_id": "59a41b7c6f3b459aaf74c96e581f1131",
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "status": "respondida",
+            "turn_id": "6eb4c5375130453fbbbf4529cf209908",
+            "values": [
+              {
+                "area_value_ha": 6.93814770997649,
+                "denominator_unit": null,
+                "denominator_value": null,
+                "evidence_id": "d7d8caa18c41153dd85156e2dd785217f9eb33427b7508f8116e5fd2076dfa61",
+                "metric": "area",
+                "rank": null,
+                "undefined_reason": null,
+                "unit": "ha",
+                "value": 6.93814770997649
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "case": "ano_ausente",
+        "checks_passed": true,
+        "mock_http_chat_calls": 1,
+        "mock_http_token_calls": 1,
+        "real_gateway_called": false,
+        "turns": [
+          {
+            "answer_id": null,
+            "attempt_count": 1,
+            "audit_path": "artifacts/dialogues/d6da37c2961540079819c56ca0c87bdd/c93afa2c672d48ee90f2071ed2a0c472.json",
+            "fallback": null,
+            "message": "As estatisticas completas necessarias ainda nao foram materializadas.",
+            "reason": "estatisticas_nao_materializadas",
+            "session_id": "d6da37c2961540079819c56ca0c87bdd",
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "status": "dados_indisponiveis",
+            "turn_id": "c93afa2c672d48ee90f2071ed2a0c472",
+            "values": []
+          }
+        ]
+      },
+      {
+        "case": "sql_recusado",
+        "checks_passed": true,
+        "mock_http_chat_calls": 0,
+        "mock_http_token_calls": 0,
+        "real_gateway_called": false,
+        "turns": [
+          {
+            "answer_id": null,
+            "attempt_count": 0,
+            "audit_path": "artifacts/dialogues/d494b2d5ad574bfe857c7d6279ada14f/66b9c80c2cd34579987b74a529c90320.json",
+            "fallback": null,
+            "message": "A interface aceita consultas ambientais tipadas; não executa SQL, expressões ou código da pergunta.",
+            "reason": "codigo_ou_sql_nao_permitido",
+            "session_id": "d494b2d5ad574bfe857c7d6279ada14f",
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "status": "fora_do_escopo",
+            "turn_id": "66b9c80c2cd34579987b74a529c90320",
+            "values": []
+          }
+        ]
+      },
+      {
+        "case": "nao_json_e_reparo",
+        "checks_passed": true,
+        "mock_http_chat_calls": 2,
+        "mock_http_token_calls": 1,
+        "real_gateway_called": false,
+        "turns": [
+          {
+            "answer_id": "537955b183713f10ab550e98d9e72fc4ff1ecdea799615c4918346f623f7ac4a",
+            "attempt_count": 2,
+            "audit_path": "artifacts/dialogues/b7f4218d40864af5a56297527c6dce1d/392c1e20a9794a42afa80ea0edf8fd62.json",
+            "fallback": null,
+            "message": "Riachuelo/RN (IBGE 2410900): área mapeada de Pastagem [15], em 2015: 8.684,04 ha.\nColeção 11; revisão desconhecida; malha edição desconhecida; método ellipsoid-linear-lonlat-fractional-v1; execução a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802.\nMudança observada na classificação não comprova mudança real específica no terreno, causas ou ilegalidade.",
+            "reason": "consulta_executada",
+            "session_id": "b7f4218d40864af5a56297527c6dce1d",
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "status": "respondida",
+            "turn_id": "392c1e20a9794a42afa80ea0edf8fd62",
+            "values": [
+              {
+                "area_value_ha": 8684.038153762798,
+                "denominator_unit": null,
+                "denominator_value": null,
+                "evidence_id": "ac32b0f023c150320cd583918bb4d3932cf2e3b0d86706ca0439b0319d0aff03",
+                "metric": "area",
+                "rank": null,
+                "undefined_reason": null,
+                "unit": "ha",
+                "value": 8684.038153762798
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "case": "campo_extra_e_reparo",
+        "checks_passed": true,
+        "mock_http_chat_calls": 2,
+        "mock_http_token_calls": 1,
+        "real_gateway_called": false,
+        "turns": [
+          {
+            "answer_id": "537955b183713f10ab550e98d9e72fc4ff1ecdea799615c4918346f623f7ac4a",
+            "attempt_count": 2,
+            "audit_path": "artifacts/dialogues/9ae8d9735ca247ec9b029fe25d710f9b/55fa4396d43f4116bfd8fc9883c10b75.json",
+            "fallback": null,
+            "message": "Riachuelo/RN (IBGE 2410900): área mapeada de Pastagem [15], em 2015: 8.684,04 ha.\nColeção 11; revisão desconhecida; malha edição desconhecida; método ellipsoid-linear-lonlat-fractional-v1; execução a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802.\nMudança observada na classificação não comprova mudança real específica no terreno, causas ou ilegalidade.",
+            "reason": "consulta_executada",
+            "session_id": "9ae8d9735ca247ec9b029fe25d710f9b",
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "status": "respondida",
+            "turn_id": "55fa4396d43f4116bfd8fc9883c10b75",
+            "values": [
+              {
+                "area_value_ha": 8684.038153762798,
+                "denominator_unit": null,
+                "denominator_value": null,
+                "evidence_id": "ac32b0f023c150320cd583918bb4d3932cf2e3b0d86706ca0439b0319d0aff03",
+                "metric": "area",
+                "rank": null,
+                "undefined_reason": null,
+                "unit": "ha",
+                "value": 8684.038153762798
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "case": "explicacao_sem_evidencia_descartada",
+        "checks_passed": true,
+        "mock_http_chat_calls": 1,
+        "mock_http_token_calls": 1,
+        "real_gateway_called": false,
+        "turns": [
+          {
+            "answer_id": "537955b183713f10ab550e98d9e72fc4ff1ecdea799615c4918346f623f7ac4a",
+            "attempt_count": 1,
+            "audit_path": "artifacts/dialogues/20c0abefb3664e1992307e34273efb53/cd375dffb548456cb7ac7ea153282130.json",
+            "fallback": "texto_livre_nao_verificado_substituido_pelo_template",
+            "message": "Riachuelo/RN (IBGE 2410900): área mapeada de Pastagem [15], em 2015: 8.684,04 ha.\nColeção 11; revisão desconhecida; malha edição desconhecida; método ellipsoid-linear-lonlat-fractional-v1; execução a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802.\nMudança observada na classificação não comprova mudança real específica no terreno, causas ou ilegalidade.",
+            "reason": "consulta_executada",
+            "session_id": "20c0abefb3664e1992307e34273efb53",
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "status": "respondida",
+            "turn_id": "cd375dffb548456cb7ac7ea153282130",
+            "values": [
+              {
+                "area_value_ha": 8684.038153762798,
+                "denominator_unit": null,
+                "denominator_value": null,
+                "evidence_id": "ac32b0f023c150320cd583918bb4d3932cf2e3b0d86706ca0439b0319d0aff03",
+                "metric": "area",
+                "rank": null,
+                "undefined_reason": null,
+                "unit": "ha",
+                "value": 8684.038153762798
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "real_gateway_called": false,
+    "interpretation_accuracy_measured": false
+  },
+  "real_gateway": {
+    "state": "verificado",
+    "attempted": true,
+    "configuration_source": "arquivo_env_carregado_explicitamente_com_autorizacao",
+    "tls_verified": true,
+    "validation_path": "docs/VALIDACAO_ETAPA5_REAL.json"
+  },
+  "missing_configuration_cli": {
+    "state": "verificado",
+    "gateway_called": false,
+    "status": "erro_tecnico",
+    "reason": "configuracao_llm_ausente",
+    "session_id": "0516edba23ce46918e1bf72c7a95633b",
+    "turn_id": "cf7cfddf7afc4bab976b9157b2365614"
+  },
+  "prompt_hashes": {
+    "system.txt": "2ca6b6759b1f552dbf001d9bfe072959df9c4d554ae4b525b9b33b9de912bf10",
+    "user.txt": "30be6fbfc5e8822eeb6b315765b3fb5747ca3197b867746b7ed7808c9e7169ed",
+    "repair.txt": "ed730b22ca7209aad127f6ad9b425a91d2098c623c98c6158e71bd513efaf08b",
+    "proposal.schema.json": "9787a21f662d0ab8c0243201d6a65ec3770d865556f2d9a4f31d02b1864a44e3"
+  },
+  "interpreter_sha256": "d5606e6fe0c23c8e0619dafcb4f8cda5b07d30a7a967df652d73bcf1f9ac2fde",
+  "executor_sha256": "64bb18ecbfecf2fd623d8fd10e616a1f816bbf529feeec5749f554ac7d4ed81a",
+  "executor_matches_stage4": true,
+  "wheel_sha256": "db56b440f78748c1c5a48e0221b09a5b19513782e3b399e709a0d98573772a20",
+  "network_called": true,
+  "source_database_called": false,
+  "target_install_verification": {
+    "state": "verificado",
+    "checked_at": "2026-10-19T19:34:50.167358+00:00",
+    "installed_version": "0.5.2",
+    "tests_passed": 211,
+    "installed_prompts_verified": true,
+    "real_gateway_verified": true,
+    "real_scenarios": 26,
+    "real_scenarios_passed": 26,
+    "source_partitions_verified": 336,
+    "dotenv_unchanged": true,
+    "upstream_inputs_unchanged": true,
+    "executor_matches_stage4": true,
+    "installed_cli_real_json_csv_verified": true,
+    "installed_cli_real_chat_requests": 1
+  },
+  "limitations": [
+    "validacao de desenvolvimento; interpretacao de modelo sujeita a variacao",
+    "2015 e 2025 materializados; ranking RN bloqueado por cobertura parcial/codigo 0",
+    "edicao territorial e revisao oficial desconhecidas",
+    "sem matriz de transicao; sem inferencia causal ou qualidade tematica"
+  ],
+  "changed_files": [
+    "README.md",
+    "configs/examples/perguntas_etapa5.json",
+    "docs/DECISOES.md",
+    "docs/ESTADO_IMPLEMENTACAO.md",
+    "docs/INTERPRETACAO_TEXTO.md",
+    "docs/VALIDACAO_ETAPA5.json",
+    "docs/VALIDACAO_ETAPA5_REAL.json",
+    "docs/VALIDACAO_LLM_REAL.md",
+    "docs/history/VALIDACAO_ETAPA5_0.5.0.json",
+    "requirements-verified.txt",
+    "schemas/ask_answer-v1.json",
+    "schemas/model_proposal-v1.json",
+    "scripts/requirements-validacao-real.txt",
+    "scripts/validar_etapa5_contrato.py",
+    "scripts/validar_etapa5_real.py",
+    "setup.cfg",
+    "src/consultas_ambientais/__init__.py",
+    "src/consultas_ambientais/cli.py",
+    "src/consultas_ambientais/llm/clarifying.py",
+    "src/consultas_ambientais/llm/client.py",
+    "src/consultas_ambientais/llm/commands.py",
+    "src/consultas_ambientais/llm/context.py",
+    "src/consultas_ambientais/llm/conversation.py",
+    "src/consultas_ambientais/llm/dialogue_models.py",
+    "src/consultas_ambientais/llm/grounding.py",
+    "src/consultas_ambientais/llm/interpreting.py",
+    "src/consultas_ambientais/llm/privacy.py",
+    "src/consultas_ambientais/llm/prompting.py",
+    "src/consultas_ambientais/llm/prompts/pt_v1/proposal.schema.json",
+    "src/consultas_ambientais/llm/prompts/pt_v1/repair.txt",
+    "src/consultas_ambientais/llm/prompts/pt_v1/system.txt",
+    "src/consultas_ambientais/llm/prompts/pt_v1/user.txt",
+    "src/consultas_ambientais/llm/prompts/pt_v2/proposal.schema.json",
+    "src/consultas_ambientais/llm/prompts/pt_v2/repair.txt",
+    "src/consultas_ambientais/llm/prompts/pt_v2/system.txt",
+    "src/consultas_ambientais/llm/prompts/pt_v2/user.txt",
+    "src/consultas_ambientais/llm/prompts/pt_v3/proposal.schema.json",
+    "src/consultas_ambientais/llm/prompts/pt_v3/repair.txt",
+    "src/consultas_ambientais/llm/prompts/pt_v3/system.txt",
+    "src/consultas_ambientais/llm/prompts/pt_v3/user.txt",
+    "src/consultas_ambientais/storage/dialogues.py",
+    "tests/test_interpretation.py"
+  ],
+  "previous_validation": {
+    "path": "docs/history/VALIDACAO_ETAPA5_0.5.0.json",
+    "sha256": "04a972e13083df83d106ca9c2295d520c784c89236aa7423cab966deff2a99b3"
+  },
+  "prompt_version": "pt_v3",
+  "real_integration_all_checks_passed": true
+}

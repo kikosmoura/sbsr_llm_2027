@@ -1,0 +1,13 @@
+{
+  "source_sha256": "48d41d34afc3fd87944a2e87ada3c79518e82ab83da8c5412f2e8f4e23eea6bb",
+  "matplotlib": "3.5.1",
+  "files": [
+    "fig13_controle_contrato_v3.png",
+    "fig13_controle_contrato_v3.svg",
+    "fig13_controle_contrato_v3.pdf",
+    "fig14_resultados_controle_v3.png",
+    "fig14_resultados_controle_v3.svg",
+    "fig14_resultados_controle_v3.pdf"
+  ],
+  "manual_numeric_editing": false
+}

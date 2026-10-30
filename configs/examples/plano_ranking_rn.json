@@ -1,0 +1,15 @@
+{
+  "class_codes": [
+    3
+  ],
+  "limit": 5,
+  "metric": "reducao_liquida",
+  "operation": "ranking_delimitado",
+  "scope_uf": "RN",
+  "territory_codes": [],
+  "unit": "ha",
+  "years": [
+    2015,
+    2025
+  ]
+}

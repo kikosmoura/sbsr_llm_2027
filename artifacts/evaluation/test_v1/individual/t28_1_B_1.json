@@ -1,0 +1,112 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "fa7686659da9449d811d154641021724",
+  "case_id": "t28_1",
+  "family_id": "teste_t28",
+  "territory_codes": [
+    "2201903",
+    "2401701",
+    "2502201",
+    "4202537",
+    "4302303"
+  ],
+  "condition": "B",
+  "repeat": 1,
+  "created_at": "2026-10-19T20:56:15.931467+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Quantos hectares de Pastagem existem no município de Bom Jesus em 2025?",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": "153dc14b22a15f7431cbb114b2141b0f7fd57c44d768c4f61aef29a9e2247096",
+  "messages_sha256": "24d72fec1f62ab3b0c7db50eb0084e873c2f33d735eeff3aebf34ef30a899a2e",
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "precisa_esclarecimento",
+    "plan": null,
+    "values": [],
+    "clarification_field": "territorio",
+    "reason": "territorio_ambiguidade"
+  },
+  "final_answer": "{\"status\": \"precisa_esclarecimento\", \"plan\": null, \"values\": [], \"clarification_field\": \"territorio\", \"reason\": \"territorio_ambiguidade\"}",
+  "plan": null,
+  "result": [],
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "messages_sha256": "24d72fec1f62ab3b0c7db50eb0084e873c2f33d735eeff3aebf34ef30a899a2e",
+      "issues": [
+        {
+          "path": [],
+          "code": "value_error"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 5825,
+        "total_tokens": 6285,
+        "completion_tokens": 460
+      },
+      "latency_seconds": 4.340564582962543,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "4fa7ef2ca0a19d687ca888b15c115150f8fbae52aad2eab2d16b646abfbc6d9f",
+      "output_chars": 316,
+      "state": "invalida"
+    },
+    {
+      "number": 2,
+      "kind": "reparo",
+      "messages_sha256": "525fc4e42283d1b7f503ebac2532ad009a97d360b2a7e8872120c20da2ef3db5",
+      "issues": [],
+      "usage": {
+        "prompt_tokens": 5860,
+        "total_tokens": 6162,
+        "completion_tokens": 302
+      },
+      "latency_seconds": 2.351520678959787,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "4c0c7c255e51beef64646dda944f11f9869ea6c1d6c4e64f29bca172dcf4e686",
+      "output_chars": 128,
+      "state": "valida"
+    }
+  ],
+  "latency_seconds": 6.695001150015742,
+  "scores": {
+    "status": true,
+    "plan": null,
+    "values": null,
+    "clarification": true,
+    "correct": true
+  },
+  "cost": null,
+  "source_context": {
+    "data_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+  },
+  "C_session_id": null,
+  "C_turn_id": null,
+  "C_candidate_intent": null,
+  "C_decision": null
+}

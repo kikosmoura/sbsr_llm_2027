@@ -1,0 +1,9 @@
+{
+  "figure": "fig05_latencia.png",
+  "sha256": "e96fdec4234c670722d95d9f476d08f5712622ad307ceab0158d5cc7d5a32a72",
+  "reuse": "bytes identicos a V5",
+  "original_generator": "scripts/science/plots.py",
+  "source_metric_sha256": "9c912af84a7ac281acb8dca3670a2a45e10a34e1fc106e19ec7fe909f0dbe302",
+  "original_figure_provenance_sha256": "68efde3394cf6a8ccdb731c59e1be6575a3413212ece684ad4b51bc21dea8cf9",
+  "no_manual_numeric_editing": true
+}

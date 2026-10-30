@@ -1,0 +1,640 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "fa7686659da9449d811d154641021724",
+  "case_id": "t22_4",
+  "family_id": "teste_serie",
+  "territory_codes": [
+    "2402303"
+  ],
+  "condition": "C",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:52:19.190040+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Mostre a série disponível nos dois anos 2015 e 2025 para a área de Formação Florestal em Caraúbas/RN, em hectares.",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": null,
+  "messages_sha256": null,
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "respondida",
+    "plan": {
+      "operation": "serie_disponivel",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2402303"
+      ],
+      "scope_uf": null,
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2402303",
+        "years": [
+          2015
+        ],
+        "value": 241.61593238465403,
+        "unit": "ha",
+        "undefined_reason": null,
+        "denominators_ha": [],
+        "rank": null
+      },
+      {
+        "territory_code": "2402303",
+        "years": [
+          2025
+        ],
+        "value": 244.17318566668294,
+        "unit": "ha",
+        "undefined_reason": null,
+        "denominators_ha": [],
+        "rank": null
+      }
+    ],
+    "clarification_field": null,
+    "reason": "consulta_executada"
+  },
+  "final_answer": "Série restrita aos anos solicitados e materializados; sem interpolação de anos ausentes.\nCaraÃºbas/RN (IBGE 2402303): área mapeada de Formação Florestal [3], em 2015: 241,62 ha.\nCaraÃºbas/RN (IBGE 2402303): área mapeada de Formação Florestal [3], em 2025: 244,17 ha.\nColeção 11; revisão desconhecida; malha edição desconhecida; método ellipsoid-linear-lonlat-fractional-v1; execução a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802.\nMudança observada na classificação não comprova mudança real específica no terreno, causas ou ilegalidade.",
+  "plan": {
+    "operation": "serie_disponivel",
+    "metric": "area",
+    "unit": "ha",
+    "territory_codes": [
+      "2402303"
+    ],
+    "scope_uf": null,
+    "class_codes": [
+      3
+    ],
+    "years": [
+      2015,
+      2025
+    ],
+    "denominator": null,
+    "direction": "desc",
+    "limit": null
+  },
+  "result": {
+    "schema_version": "resposta-consulta-v1",
+    "status": "respondida",
+    "reason": "consulta_executada",
+    "message": "Série restrita aos anos solicitados e materializados; sem interpolação de anos ausentes.\nCaraÃºbas/RN (IBGE 2402303): área mapeada de Formação Florestal [3], em 2015: 241,62 ha.\nCaraÃºbas/RN (IBGE 2402303): área mapeada de Formação Florestal [3], em 2025: 244,17 ha.\nColeção 11; revisão desconhecida; malha edição desconhecida; método ellipsoid-linear-lonlat-fractional-v1; execução a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802.",
+    "answer_id": "8493b9da9ac4a98bc0f292cbacebb4f4cb6e766741977b763bf53003b1979de1",
+    "plan_id": "ac8129a1034fe9367af6d80d3191de831dbe547f1d338462c0aaa2f99e3e7dc1",
+    "executor_sha256": "64bb18ecbfecf2fd623d8fd10e616a1f816bbf529feeec5749f554ac7d4ed81a",
+    "requested_plan": {
+      "operation": "serie_disponivel",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2402303"
+      ],
+      "scope_uf": null,
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "plan": {
+      "operation": "serie_disponivel",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2402303"
+      ],
+      "scope_uf": null,
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "evidence": [
+      {
+        "evidence_id": "5e8a234be90ca7e63934ff06fbc60f88cb0c0dd75dd7bf8ba0c01a44873a28ec",
+        "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+        "territory": {
+          "kind": "municipio",
+          "code": "2402303",
+          "name": "CaraÃºbas",
+          "uf": "RN",
+          "geometry_hash": "1c7f14b2c71d5e0ebb6f45e83b3161d995514271eebba950665ffe9e409fb4eb",
+          "edition": null
+        },
+        "class_codes": [
+          3
+        ],
+        "years": [
+          2015
+        ],
+        "collection": 11,
+        "source_revision": null,
+        "source_ids": [
+          "run:a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+          "mesh:3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+          "classes:04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+          "areas.parquet:7b2a0f1cecf7a8f0f0b040af99d4c2b1692843ddd950acc994a50e96a766c75f",
+          "quality.parquet:30b64393b02816f2735c17de309bc14b16de190aa3a6a988aa2606a25c2e61f7",
+          "mirror:fd0a4f02551f26230b156d60f6f409dcadb9d198bb56de37ec055b47e2d1076e",
+          "crop:99c7a24c07d0b6cf29969ea2385592b9f3e0845b667b1877c7e163e3fd17739a"
+        ],
+        "area_method": "ellipsoid-linear-lonlat-fractional-v1",
+        "quality": {
+          "state": "completo",
+          "observed_area_ha": 109448.8670250869,
+          "nodata_area_ha": 0.0,
+          "unknown_codes": [],
+          "common_support_id": null,
+          "area_method": "ellipsoid-linear-lonlat-fractional-v1",
+          "notes": [
+            "Revisao oficial do espelho e edicao territorial nao comprovadas."
+          ]
+        },
+        "plan_id": "ac8129a1034fe9367af6d80d3191de831dbe547f1d338462c0aaa2f99e3e7dc1",
+        "metric": "area",
+        "requested_class_codes": [
+          3
+        ],
+        "class_names": [
+          "Formação Florestal [3]"
+        ],
+        "observations": [
+          {
+            "year": 2015,
+            "class_area_ha": 241.61593238465403,
+            "observed_area_ha": 109448.8670250869,
+            "support": "anual",
+            "nodata_area_ha": 0.0,
+            "unknown_area_ha": 0.0,
+            "outside_raster_area_ha": 0.0
+          }
+        ],
+        "denominator_definition": null,
+        "denominator_values_ha": [],
+        "provenance": "municipio_direto",
+        "mesh_sha256": "3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+        "catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+        "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+        "sources": [
+          {
+            "source_id": "run:a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+            "kind": "execucao",
+            "sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "mesh:3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+            "kind": "malha",
+            "sha256": "3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "classes:04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+            "kind": "catalogo",
+            "sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "areas.parquet:7b2a0f1cecf7a8f0f0b040af99d4c2b1692843ddd950acc994a50e96a766c75f",
+            "kind": "particao_areas",
+            "sha256": "7b2a0f1cecf7a8f0f0b040af99d4c2b1692843ddd950acc994a50e96a766c75f",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "quality.parquet:30b64393b02816f2735c17de309bc14b16de190aa3a6a988aa2606a25c2e61f7",
+            "kind": "particao_qualidade",
+            "sha256": "30b64393b02816f2735c17de309bc14b16de190aa3a6a988aa2606a25c2e61f7",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "mirror:fd0a4f02551f26230b156d60f6f409dcadb9d198bb56de37ec055b47e2d1076e",
+            "kind": "raster_espelho",
+            "sha256": null,
+            "year": 2015,
+            "public_url": "https://storage.example.invalid/BUCKET_NAME/brazil_coverage-col11_2015.tif",
+            "etag": "\"c0f687289217d0c8c7da1caa33827855-138\""
+          },
+          {
+            "source_id": "crop:99c7a24c07d0b6cf29969ea2385592b9f3e0845b667b1877c7e163e3fd17739a",
+            "kind": "recorte",
+            "sha256": "99c7a24c07d0b6cf29969ea2385592b9f3e0845b667b1877c7e163e3fd17739a",
+            "year": 2015,
+            "public_url": null,
+            "etag": null
+          }
+        ]
+      },
+      {
+        "evidence_id": "a2c34e5003c0fc65b275e43352b82b10562119f557ef69bb14617138839f22b7",
+        "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+        "territory": {
+          "kind": "municipio",
+          "code": "2402303",
+          "name": "CaraÃºbas",
+          "uf": "RN",
+          "geometry_hash": "1c7f14b2c71d5e0ebb6f45e83b3161d995514271eebba950665ffe9e409fb4eb",
+          "edition": null
+        },
+        "class_codes": [
+          3
+        ],
+        "years": [
+          2025
+        ],
+        "collection": 11,
+        "source_revision": null,
+        "source_ids": [
+          "run:a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+          "mesh:3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+          "classes:04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+          "areas.parquet:7b2a0f1cecf7a8f0f0b040af99d4c2b1692843ddd950acc994a50e96a766c75f",
+          "quality.parquet:30b64393b02816f2735c17de309bc14b16de190aa3a6a988aa2606a25c2e61f7",
+          "mirror:37322ac02043f652f60aeff0a68acfba418ae2e43dff412f89cd0ad6e525a336",
+          "crop:8b848eb7e2592f26160835b9b256987e985fd39d1dbb2681aa722b9aa8e355b7"
+        ],
+        "area_method": "ellipsoid-linear-lonlat-fractional-v1",
+        "quality": {
+          "state": "completo",
+          "observed_area_ha": 109448.8670250869,
+          "nodata_area_ha": 0.0,
+          "unknown_codes": [],
+          "common_support_id": null,
+          "area_method": "ellipsoid-linear-lonlat-fractional-v1",
+          "notes": [
+            "Revisao oficial do espelho e edicao territorial nao comprovadas."
+          ]
+        },
+        "plan_id": "ac8129a1034fe9367af6d80d3191de831dbe547f1d338462c0aaa2f99e3e7dc1",
+        "metric": "area",
+        "requested_class_codes": [
+          3
+        ],
+        "class_names": [
+          "Formação Florestal [3]"
+        ],
+        "observations": [
+          {
+            "year": 2025,
+            "class_area_ha": 244.17318566668294,
+            "observed_area_ha": 109448.8670250869,
+            "support": "anual",
+            "nodata_area_ha": 0.0,
+            "unknown_area_ha": 0.0,
+            "outside_raster_area_ha": 0.0
+          }
+        ],
+        "denominator_definition": null,
+        "denominator_values_ha": [],
+        "provenance": "municipio_direto",
+        "mesh_sha256": "3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+        "catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+        "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+        "sources": [
+          {
+            "source_id": "run:a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+            "kind": "execucao",
+            "sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "mesh:3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+            "kind": "malha",
+            "sha256": "3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "classes:04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+            "kind": "catalogo",
+            "sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "areas.parquet:7b2a0f1cecf7a8f0f0b040af99d4c2b1692843ddd950acc994a50e96a766c75f",
+            "kind": "particao_areas",
+            "sha256": "7b2a0f1cecf7a8f0f0b040af99d4c2b1692843ddd950acc994a50e96a766c75f",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "quality.parquet:30b64393b02816f2735c17de309bc14b16de190aa3a6a988aa2606a25c2e61f7",
+            "kind": "particao_qualidade",
+            "sha256": "30b64393b02816f2735c17de309bc14b16de190aa3a6a988aa2606a25c2e61f7",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "mirror:37322ac02043f652f60aeff0a68acfba418ae2e43dff412f89cd0ad6e525a336",
+            "kind": "raster_espelho",
+            "sha256": null,
+            "year": 2025,
+            "public_url": "https://storage.example.invalid/BUCKET_NAME/brazil_coverage-col11_2025.tif",
+            "etag": "\"df7c25264b8e600567bd82c2a4a072a3-146\""
+          },
+          {
+            "source_id": "crop:8b848eb7e2592f26160835b9b256987e985fd39d1dbb2681aa722b9aa8e355b7",
+            "kind": "recorte",
+            "sha256": "8b848eb7e2592f26160835b9b256987e985fd39d1dbb2681aa722b9aa8e355b7",
+            "year": 2025,
+            "public_url": null,
+            "etag": null
+          }
+        ]
+      }
+    ],
+    "values": [
+      {
+        "evidence_id": "5e8a234be90ca7e63934ff06fbc60f88cb0c0dd75dd7bf8ba0c01a44873a28ec",
+        "value": 241.61593238465403,
+        "unit": "ha",
+        "denominator_value": null,
+        "undefined_reason": null,
+        "metric": "area",
+        "area_value_ha": 241.61593238465403,
+        "denominator_unit": null,
+        "rank": null
+      },
+      {
+        "evidence_id": "a2c34e5003c0fc65b275e43352b82b10562119f557ef69bb14617138839f22b7",
+        "value": 244.17318566668294,
+        "unit": "ha",
+        "denominator_value": null,
+        "undefined_reason": null,
+        "metric": "area",
+        "area_value_ha": 244.17318566668294,
+        "denominator_unit": null,
+        "rank": null
+      }
+    ],
+    "execution": {
+      "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+      "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+      "collection": 11,
+      "source_revision": null,
+      "territorial_edition": null,
+      "method": "ellipsoid-linear-lonlat-fractional-v1",
+      "mesh_sha256": "3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+      "catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+      "years": [
+        2015,
+        2025
+      ],
+      "class_names": [
+        "Formação Florestal [3]"
+      ],
+      "sources": [
+        {
+          "source_id": "run:a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+          "kind": "execucao",
+          "sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+          "year": null,
+          "public_url": null,
+          "etag": null
+        },
+        {
+          "source_id": "mesh:3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+          "kind": "malha",
+          "sha256": "3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+          "year": null,
+          "public_url": null,
+          "etag": null
+        },
+        {
+          "source_id": "classes:04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+          "kind": "catalogo",
+          "sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+          "year": null,
+          "public_url": null,
+          "etag": null
+        },
+        {
+          "source_id": "mirror:fd0a4f02551f26230b156d60f6f409dcadb9d198bb56de37ec055b47e2d1076e",
+          "kind": "raster_espelho",
+          "sha256": null,
+          "year": 2015,
+          "public_url": "https://storage.example.invalid/BUCKET_NAME/brazil_coverage-col11_2015.tif",
+          "etag": "\"c0f687289217d0c8c7da1caa33827855-138\""
+        },
+        {
+          "source_id": "crop:99c7a24c07d0b6cf29969ea2385592b9f3e0845b667b1877c7e163e3fd17739a",
+          "kind": "recorte",
+          "sha256": "99c7a24c07d0b6cf29969ea2385592b9f3e0845b667b1877c7e163e3fd17739a",
+          "year": 2015,
+          "public_url": null,
+          "etag": null
+        },
+        {
+          "source_id": "mirror:37322ac02043f652f60aeff0a68acfba418ae2e43dff412f89cd0ad6e525a336",
+          "kind": "raster_espelho",
+          "sha256": null,
+          "year": 2025,
+          "public_url": "https://storage.example.invalid/BUCKET_NAME/brazil_coverage-col11_2025.tif",
+          "etag": "\"df7c25264b8e600567bd82c2a4a072a3-146\""
+        },
+        {
+          "source_id": "crop:8b848eb7e2592f26160835b9b256987e985fd39d1dbb2681aa722b9aa8e355b7",
+          "kind": "recorte",
+          "sha256": "8b848eb7e2592f26160835b9b256987e985fd39d1dbb2681aa722b9aa8e355b7",
+          "year": 2025,
+          "public_url": null,
+          "etag": null
+        }
+      ]
+    },
+    "ranking": null,
+    "notes": [
+      "Valores sem arredondamento no JSON/CSV; texto com duas casas decimais.",
+      "Diferenca liquida nao mede perda bruta, desmatamento ou causas."
+    ]
+  },
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "state": "valida",
+      "latency_seconds": 11.21804622001946,
+      "usage": {
+        "prompt_tokens": 4755,
+        "total_tokens": 5819,
+        "completion_tokens": 1064
+      },
+      "chat_requests": 1,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "output_sha256": "65321173b71fc48b3d7cb36edc0bc62576a50cb7a1097582b47886f4d80ae932",
+      "output_chars": 554,
+      "candidate": {
+        "action": "consultar",
+        "intent": {
+          "operation": "serie_disponivel",
+          "territories": [
+            {
+              "mention": "Caraúbas",
+              "uf_mention": "RN",
+              "kind": "municipio"
+            }
+          ],
+          "scope_uf_mention": "RN",
+          "classes": [
+            {
+              "mention": "formacao florestal"
+            }
+          ],
+          "years": [
+            2015,
+            2025
+          ],
+          "metric": "area",
+          "metric_mention": "área",
+          "unit_mention": "hectares",
+          "denominator": null,
+          "direction": null,
+          "limit": null
+        },
+        "clarification_fields": []
+      },
+      "issues": [],
+      "gateway_error": null,
+      "http_status": null,
+      "messages_sha256": "f94d962edbbde28c32d4fb67cc326a3b9745b52de2ea4d34e50e48bc3056212d",
+      "explanation_fallback": null
+    }
+  ],
+  "latency_seconds": 11.513246853020974,
+  "scores": {
+    "status": true,
+    "plan": true,
+    "values": true,
+    "clarification": null,
+    "correct": true
+  },
+  "cost": null,
+  "source_context": {
+    "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+    "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+    "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+    "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+  },
+  "C_session_id": "34113f9e72b74c7f847a404a7ba180c6",
+  "C_turn_id": "955f77bf54b6441aac74fd359ea7dc5a",
+  "C_candidate_intent": {
+    "schema_version": "intencao-semantica-v1",
+    "operation": "serie_disponivel",
+    "territories": [
+      {
+        "code": "2402303",
+        "name": null,
+        "uf": null,
+        "kind": null
+      }
+    ],
+    "scope_uf": null,
+    "classes": [
+      {
+        "code": 3,
+        "term": null
+      }
+    ],
+    "years": [
+      2015,
+      2025
+    ],
+    "metric": "area",
+    "metric_term": null,
+    "unit": "ha",
+    "unit_term": null,
+    "denominator": null,
+    "direction": "desc",
+    "limit": null,
+    "requested_concept": "cobertura"
+  },
+  "C_decision": {
+    "status": "plano_validado",
+    "reason": "selecoes_e_capacidades_validadas",
+    "message": "Plano pronto para o motor; nenhum resultado quantitativo foi calculado nesta etapa.",
+    "normalized_plan": {
+      "operation": "serie_disponivel",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2402303"
+      ],
+      "scope_uf": null,
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "territory_candidates": [],
+    "class_candidates": [],
+    "notes": [],
+    "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+    "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9",
+    "capabilities_sha256": "91d83a3973e66c772f3db8942bee78b526e737d54ae89d464cd9d0385eb92321"
+  }
+}

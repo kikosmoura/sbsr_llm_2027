@@ -1,0 +1,232 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "9f9225242f404ef29eefe630dd614d0b",
+  "case_id": "d04_1",
+  "family_id": "d04",
+  "territory_codes": [
+    "2410900"
+  ],
+  "condition": "C",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:34:25.577022+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Qual a variação percentual de Mangue em Riachuelo/RN entre 2015 e 2025, em relação à área inicial?",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": null,
+  "messages_sha256": null,
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "erro_tecnico",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "variacao_percentual",
+      "unit": "percentual",
+      "territory_codes": [
+        "2410900"
+      ],
+      "scope_uf": null,
+      "class_codes": [
+        5
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": "area_inicial",
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [],
+    "clarification_field": null,
+    "reason": "artefato_derivado_inconsistente"
+  },
+  "final_answer": "Falha tecnica ao verificar ou consultar os artefatos locais; nenhum valor foi publicado.",
+  "plan": {
+    "operation": "comparacao_temporal",
+    "metric": "variacao_percentual",
+    "unit": "percentual",
+    "territory_codes": [
+      "2410900"
+    ],
+    "scope_uf": null,
+    "class_codes": [
+      5
+    ],
+    "years": [
+      2015,
+      2025
+    ],
+    "denominator": "area_inicial",
+    "direction": "desc",
+    "limit": null
+  },
+  "result": {
+    "schema_version": "resposta-consulta-v1",
+    "status": "erro_tecnico",
+    "reason": "artefato_derivado_inconsistente",
+    "message": "Falha tecnica ao verificar ou consultar os artefatos locais; nenhum valor foi publicado.",
+    "answer_id": null,
+    "plan_id": null,
+    "executor_sha256": null,
+    "requested_plan": null,
+    "plan": null,
+    "evidence": [],
+    "values": [],
+    "execution": null,
+    "ranking": null,
+    "notes": []
+  },
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "state": "valida",
+      "latency_seconds": 7.515641654026695,
+      "usage": {
+        "prompt_tokens": 4688,
+        "total_tokens": 5368,
+        "completion_tokens": 680
+      },
+      "chat_requests": 1,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "output_sha256": "3b967c55165690af547a5e37a7664b2970345559cc221b0f7b33181bdc8b89db",
+      "output_chars": 580,
+      "candidate": {
+        "action": "consultar",
+        "intent": {
+          "operation": "comparacao_temporal",
+          "territories": [
+            {
+              "mention": "Riachuelo",
+              "uf_mention": "RN",
+              "kind": "municipio"
+            }
+          ],
+          "scope_uf_mention": "RN",
+          "classes": [
+            {
+              "mention": "mangue"
+            }
+          ],
+          "years": [
+            2015,
+            2025
+          ],
+          "metric": "variacao_percentual",
+          "metric_mention": "variação percentual",
+          "unit_mention": null,
+          "denominator": "area_inicial",
+          "direction": null,
+          "limit": null
+        },
+        "clarification_fields": []
+      },
+      "issues": [],
+      "gateway_error": null,
+      "http_status": null,
+      "messages_sha256": "7f6d5ee255bbff11026d5c7ab57f24708e467d35732d5366c25034b47f67aaf7",
+      "explanation_fallback": null
+    }
+  ],
+  "latency_seconds": 7.718009253963828,
+  "scores": {
+    "status": false,
+    "plan": null,
+    "values": null,
+    "clarification": null,
+    "correct": false
+  },
+  "cost": null,
+  "source_context": {
+    "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+    "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+    "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+    "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+  },
+  "C_session_id": "e1ca874a8b8d453e871735ee70fb5c57",
+  "C_turn_id": "a18e879198dd49459c84b6c7ee0e268d",
+  "C_candidate_intent": {
+    "schema_version": "intencao-semantica-v1",
+    "operation": "comparacao_temporal",
+    "territories": [
+      {
+        "code": "2410900",
+        "name": null,
+        "uf": null,
+        "kind": null
+      }
+    ],
+    "scope_uf": null,
+    "classes": [
+      {
+        "code": 5,
+        "term": null
+      }
+    ],
+    "years": [
+      2015,
+      2025
+    ],
+    "metric": "variacao_percentual",
+    "metric_term": null,
+    "unit": "percentual",
+    "unit_term": null,
+    "denominator": "area_inicial",
+    "direction": "desc",
+    "limit": null,
+    "requested_concept": "cobertura"
+  },
+  "C_decision": {
+    "status": "plano_validado",
+    "reason": "selecoes_e_capacidades_validadas",
+    "message": "Plano pronto para o motor; nenhum resultado quantitativo foi calculado nesta etapa.",
+    "normalized_plan": {
+      "operation": "comparacao_temporal",
+      "metric": "variacao_percentual",
+      "unit": "percentual",
+      "territory_codes": [
+        "2410900"
+      ],
+      "scope_uf": null,
+      "class_codes": [
+        5
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": "area_inicial",
+      "direction": "desc",
+      "limit": null
+    },
+    "territory_candidates": [],
+    "class_candidates": [],
+    "notes": [],
+    "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+    "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9",
+    "capabilities_sha256": "91d83a3973e66c772f3db8942bee78b526e737d54ae89d464cd9d0385eb92321"
+  }
+}

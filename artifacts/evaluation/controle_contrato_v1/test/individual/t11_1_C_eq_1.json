@@ -1,0 +1,434 @@
+{
+  "schema_version": "controle-contrato-caso-v1",
+  "run_id": "7dfe5ecbd3944e4dbde409763d23cbf3",
+  "case_id": "t11_1",
+  "family_id": "teste_delta",
+  "territory_codes": [
+    "2406700"
+  ],
+  "condition": "C_eq",
+  "repeat": 1,
+  "integration_kind": "gateway_real",
+  "created_at": "2026-10-21T13:43:39.293537+00:00",
+  "freeze_sha256": "784d7e714d514197d4d07f3c82a000724b1671a64295a13616e6b9c6134beb2c",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "native_tools": false,
+    "native_response_format": false,
+    "workers": 3
+  },
+  "question": "Calcule em ha a diferença líquida, área final menos inicial, de Formação Florestal em Lajes/RN entre 2015 e 2025.",
+  "fixed_plan": {
+    "operation": "comparacao_temporal",
+    "metric": "diferenca_liquida",
+    "unit": "ha",
+    "territory_codes": [
+      "2406700"
+    ],
+    "scope_uf": "RN",
+    "class_codes": [
+      3
+    ],
+    "years": [
+      2015,
+      2025
+    ],
+    "denominator": null,
+    "direction": "desc",
+    "limit": null
+  },
+  "common_input_sha256": "b58b697f112ea68f82101f7c3b7c8f265630557882feb74be5915ba889a452a0",
+  "output_contract_sha256": "7cb672668bdaf0cb31f785651d91ec6475f990de121edab04b748bd0da63c955",
+  "system_sha256": "2805f7312e5288c2499d8bc4b6fd55f3a0adc3b8d5ea53aab2533894c62b290d",
+  "messages_sha256": "7910e1421b524c8f1752530a9f76d9743442f33493b4ab2e52d8b52bf9845fce",
+  "execution_observations": [
+    {
+      "status": "respondida",
+      "values": [
+        {
+          "territory_code": "2406700",
+          "years": [
+            2015,
+            2025
+          ],
+          "value": 1.601421987628938,
+          "unit": "ha",
+          "undefined_reason": null,
+          "denominators_ha": [],
+          "rank": null
+        }
+      ],
+      "reason": "consulta_executada"
+    }
+  ],
+  "executor_result": {
+    "schema_version": "resposta-consulta-v1",
+    "status": "respondida",
+    "reason": "consulta_executada",
+    "message": "Lajes/RN (IBGE 2406700): diferença líquida (final menos inicial) de Formação Florestal [3], em 2015–2025: 1,60 ha. Calculada no suporte válido comum dos dois anos.\nColeção 11; revisão desconhecida; malha edição desconhecida; método ellipsoid-linear-lonlat-fractional-v1; execução a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802.",
+    "answer_id": "b8208a5657b0e6511587acaef0c80203536015c66c6fe555c2180b4450b0ec8c",
+    "plan_id": "a02f5cb2ffc4fbf7f6a06a41a77b8551dd377e2c48ff197dcd8ad92895e12a6e",
+    "executor_sha256": "64bb18ecbfecf2fd623d8fd10e616a1f816bbf529feeec5749f554ac7d4ed81a",
+    "requested_plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_liquida",
+      "unit": "ha",
+      "territory_codes": [
+        "2406700"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_liquida",
+      "unit": "ha",
+      "territory_codes": [
+        "2406700"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "evidence": [
+      {
+        "evidence_id": "1b4a8fb74b72241624fac41bb3ee2b195ebbf20bba63c00d07d3302925fcf380",
+        "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+        "territory": {
+          "kind": "municipio",
+          "code": "2406700",
+          "name": "Lajes",
+          "uf": "RN",
+          "geometry_hash": "7ba8747ceb41cdfa74c27f7969ac280ce92932a4db04e422c0f991408690602b",
+          "edition": null
+        },
+        "class_codes": [
+          3
+        ],
+        "years": [
+          2015,
+          2025
+        ],
+        "collection": 11,
+        "source_revision": null,
+        "source_ids": [
+          "run:a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+          "mesh:3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+          "classes:04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+          "areas.parquet:c45a7ec062ecaefe1bd464bdfc7b2e5da3470b2ada7ba6d47f9ccc27dce1a1b5",
+          "quality.parquet:5c802474df023cebdbf9e65316470c751d1c7cbcafa2dc78f3e567622941f17a",
+          "mirror:fd0a4f02551f26230b156d60f6f409dcadb9d198bb56de37ec055b47e2d1076e",
+          "crop:99c7a24c07d0b6cf29969ea2385592b9f3e0845b667b1877c7e163e3fd17739a",
+          "mirror:37322ac02043f652f60aeff0a68acfba418ae2e43dff412f89cd0ad6e525a336",
+          "crop:8b848eb7e2592f26160835b9b256987e985fd39d1dbb2681aa722b9aa8e355b7"
+        ],
+        "area_method": "ellipsoid-linear-lonlat-fractional-v1",
+        "quality": {
+          "state": "completo",
+          "observed_area_ha": 67662.96459372179,
+          "nodata_area_ha": 0.0,
+          "unknown_codes": [],
+          "common_support_id": "dd463616b06948b6e5d4e83f6052ba49bcc4e1bbf22dd70a6c11e5cb03fc7add",
+          "area_method": "ellipsoid-linear-lonlat-fractional-v1",
+          "notes": [
+            "Revisao oficial do espelho e edicao territorial nao comprovadas."
+          ]
+        },
+        "plan_id": "a02f5cb2ffc4fbf7f6a06a41a77b8551dd377e2c48ff197dcd8ad92895e12a6e",
+        "metric": "diferenca_liquida",
+        "requested_class_codes": [
+          3
+        ],
+        "class_names": [
+          "Formação Florestal [3]"
+        ],
+        "observations": [
+          {
+            "year": 2015,
+            "class_area_ha": 0.5337336740169669,
+            "observed_area_ha": 67662.96459372179,
+            "support": "comum",
+            "nodata_area_ha": 0.0,
+            "unknown_area_ha": 0.0,
+            "outside_raster_area_ha": 0.0
+          },
+          {
+            "year": 2025,
+            "class_area_ha": 2.135155661645905,
+            "observed_area_ha": 67662.96459372179,
+            "support": "comum",
+            "nodata_area_ha": 0.0,
+            "unknown_area_ha": 0.0,
+            "outside_raster_area_ha": 0.0
+          }
+        ],
+        "denominator_definition": null,
+        "denominator_values_ha": [],
+        "provenance": "municipio_direto",
+        "mesh_sha256": "3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+        "catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+        "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+        "sources": [
+          {
+            "source_id": "run:a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+            "kind": "execucao",
+            "sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "mesh:3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+            "kind": "malha",
+            "sha256": "3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "classes:04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+            "kind": "catalogo",
+            "sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "areas.parquet:c45a7ec062ecaefe1bd464bdfc7b2e5da3470b2ada7ba6d47f9ccc27dce1a1b5",
+            "kind": "particao_areas",
+            "sha256": "c45a7ec062ecaefe1bd464bdfc7b2e5da3470b2ada7ba6d47f9ccc27dce1a1b5",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "quality.parquet:5c802474df023cebdbf9e65316470c751d1c7cbcafa2dc78f3e567622941f17a",
+            "kind": "particao_qualidade",
+            "sha256": "5c802474df023cebdbf9e65316470c751d1c7cbcafa2dc78f3e567622941f17a",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "mirror:fd0a4f02551f26230b156d60f6f409dcadb9d198bb56de37ec055b47e2d1076e",
+            "kind": "raster_espelho",
+            "sha256": null,
+            "year": 2015,
+            "public_url": "https://storage.example.invalid/BUCKET_NAME/brazil_coverage-col11_2015.tif",
+            "etag": "\"c0f687289217d0c8c7da1caa33827855-138\""
+          },
+          {
+            "source_id": "crop:99c7a24c07d0b6cf29969ea2385592b9f3e0845b667b1877c7e163e3fd17739a",
+            "kind": "recorte",
+            "sha256": "99c7a24c07d0b6cf29969ea2385592b9f3e0845b667b1877c7e163e3fd17739a",
+            "year": 2015,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "mirror:37322ac02043f652f60aeff0a68acfba418ae2e43dff412f89cd0ad6e525a336",
+            "kind": "raster_espelho",
+            "sha256": null,
+            "year": 2025,
+            "public_url": "https://storage.example.invalid/BUCKET_NAME/brazil_coverage-col11_2025.tif",
+            "etag": "\"df7c25264b8e600567bd82c2a4a072a3-146\""
+          },
+          {
+            "source_id": "crop:8b848eb7e2592f26160835b9b256987e985fd39d1dbb2681aa722b9aa8e355b7",
+            "kind": "recorte",
+            "sha256": "8b848eb7e2592f26160835b9b256987e985fd39d1dbb2681aa722b9aa8e355b7",
+            "year": 2025,
+            "public_url": null,
+            "etag": null
+          }
+        ]
+      }
+    ],
+    "values": [
+      {
+        "evidence_id": "1b4a8fb74b72241624fac41bb3ee2b195ebbf20bba63c00d07d3302925fcf380",
+        "value": 1.601421987628938,
+        "unit": "ha",
+        "denominator_value": null,
+        "undefined_reason": null,
+        "metric": "diferenca_liquida",
+        "area_value_ha": 1.601421987628938,
+        "denominator_unit": null,
+        "rank": null
+      }
+    ],
+    "execution": {
+      "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+      "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+      "collection": 11,
+      "source_revision": null,
+      "territorial_edition": null,
+      "method": "ellipsoid-linear-lonlat-fractional-v1",
+      "mesh_sha256": "3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+      "catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+      "years": [
+        2015,
+        2025
+      ],
+      "class_names": [
+        "Formação Florestal [3]"
+      ],
+      "sources": [
+        {
+          "source_id": "run:a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+          "kind": "execucao",
+          "sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+          "year": null,
+          "public_url": null,
+          "etag": null
+        },
+        {
+          "source_id": "mesh:3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+          "kind": "malha",
+          "sha256": "3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+          "year": null,
+          "public_url": null,
+          "etag": null
+        },
+        {
+          "source_id": "classes:04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+          "kind": "catalogo",
+          "sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+          "year": null,
+          "public_url": null,
+          "etag": null
+        },
+        {
+          "source_id": "mirror:fd0a4f02551f26230b156d60f6f409dcadb9d198bb56de37ec055b47e2d1076e",
+          "kind": "raster_espelho",
+          "sha256": null,
+          "year": 2015,
+          "public_url": "https://storage.example.invalid/BUCKET_NAME/brazil_coverage-col11_2015.tif",
+          "etag": "\"c0f687289217d0c8c7da1caa33827855-138\""
+        },
+        {
+          "source_id": "crop:99c7a24c07d0b6cf29969ea2385592b9f3e0845b667b1877c7e163e3fd17739a",
+          "kind": "recorte",
+          "sha256": "99c7a24c07d0b6cf29969ea2385592b9f3e0845b667b1877c7e163e3fd17739a",
+          "year": 2015,
+          "public_url": null,
+          "etag": null
+        },
+        {
+          "source_id": "mirror:37322ac02043f652f60aeff0a68acfba418ae2e43dff412f89cd0ad6e525a336",
+          "kind": "raster_espelho",
+          "sha256": null,
+          "year": 2025,
+          "public_url": "https://storage.example.invalid/BUCKET_NAME/brazil_coverage-col11_2025.tif",
+          "etag": "\"df7c25264b8e600567bd82c2a4a072a3-146\""
+        },
+        {
+          "source_id": "crop:8b848eb7e2592f26160835b9b256987e985fd39d1dbb2681aa722b9aa8e355b7",
+          "kind": "recorte",
+          "sha256": "8b848eb7e2592f26160835b9b256987e985fd39d1dbb2681aa722b9aa8e355b7",
+          "year": 2025,
+          "public_url": null,
+          "etag": null
+        }
+      ]
+    },
+    "ranking": null,
+    "notes": [
+      "Valores sem arredondamento no JSON/CSV; texto com duas casas decimais.",
+      "Diferenca liquida nao mede perda bruta, desmatamento ou causas."
+    ]
+  },
+  "observed": {
+    "status": "respondida",
+    "values": [
+      {
+        "territory_code": "2406700",
+        "years": [
+          2015,
+          2025
+        ],
+        "value": 1.601421987628938,
+        "unit": "ha",
+        "undefined_reason": null,
+        "denominators_ha": [],
+        "rank": null
+      }
+    ],
+    "reason": "consulta_executada",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_liquida",
+      "unit": "ha",
+      "territory_codes": [
+        "2406700"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "clarification_field": null
+  },
+  "final_answer": "{\"reason\":\"consulta_executada\",\"status\":\"respondida\",\"values\":[{\"denominators_ha\":[],\"rank\":null,\"territory_code\":\"2406700\",\"undefined_reason\":null,\"unit\":\"ha\",\"value\":1.601421987628938,\"years\":[2015,2025]}]}",
+  "attempts": [
+    {
+      "number": 1,
+      "messages_sha256": "7910e1421b524c8f1752530a9f76d9743442f33493b4ab2e52d8b52bf9845fce",
+      "usage": {
+        "prompt_tokens": 5557,
+        "total_tokens": 5928,
+        "completion_tokens": 371
+      },
+      "issues": [],
+      "latency_seconds": 3.3863624799996614,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "729c05bfecae3ee64bb22c166ef6fc99e08112072173d803ea1afc6f60e171ad",
+      "output_chars": 208,
+      "state": "valida"
+    }
+  ],
+  "latency_seconds": 3.546330217970535,
+  "model_seconds": 3.386681659030728,
+  "executor_seconds": 0.15681273699738085,
+  "scores": {
+    "status": true,
+    "plan": true,
+    "values": true,
+    "clarification": null,
+    "correct": true
+  },
+  "cost": null,
+  "source_geo_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+}

@@ -1,0 +1,120 @@
+{
+  "$defs": {
+    "NumericValue": {
+      "additionalProperties": false,
+      "properties": {
+        "territory_code": {
+          "pattern": "^(?:[0-9]{2}|[0-9]{7})$",
+          "title": "Territory Code",
+          "type": "string"
+        },
+        "years": {
+          "items": {
+            "type": "integer"
+          },
+          "maxItems": 2,
+          "minItems": 1,
+          "title": "Years",
+          "type": "array"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Value"
+        },
+        "unit": {
+          "$ref": "#/$defs/Unit"
+        },
+        "undefined_reason": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Undefined Reason"
+        },
+        "denominators_ha": {
+          "items": {
+            "type": "number"
+          },
+          "title": "Denominators Ha",
+          "type": "array"
+        },
+        "rank": {
+          "anyOf": [
+            {
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Rank"
+        }
+      },
+      "required": [
+        "territory_code",
+        "years",
+        "value",
+        "unit"
+      ],
+      "title": "NumericValue",
+      "type": "object"
+    },
+    "Unit": {
+      "enum": [
+        "ha",
+        "km2",
+        "m2",
+        "percentual",
+        "pontos_percentuais"
+      ],
+      "title": "Unit",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "status": {
+      "enum": [
+        "respondida",
+        "dados_indisponiveis",
+        "erro_tecnico"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "values": {
+      "items": {
+        "$ref": "#/$defs/NumericValue"
+      },
+      "maxItems": 200,
+      "title": "Values",
+      "type": "array"
+    },
+    "reason": {
+      "default": "consulta_executada",
+      "maxLength": 160,
+      "pattern": "^[a-z][a-z0-9_]*$",
+      "title": "Reason",
+      "type": "string"
+    }
+  },
+  "required": [
+    "status"
+  ],
+  "title": "EquivalentAnswer",
+  "type": "object"
+}

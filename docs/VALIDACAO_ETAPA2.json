@@ -1,0 +1,81 @@
+{
+  "stage": 2,
+  "package_version": "0.2.0",
+  "tests_total": 98,
+  "tests_kind": "infraestrutura, fontes reais, cenarios semanticos sinteticos",
+  "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+  "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9",
+  "territory_entries": 5600,
+  "legend_nodes": 41,
+  "legend_leaves": 33,
+  "legend_discrepancies": 6,
+  "available_raster_years": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "materializations": 0,
+  "engine_ready": false,
+  "llm_calls": 0,
+  "real_checks": {
+    "homonimo": {
+      "status": "precisa_esclarecimento",
+      "reason": "territorio_homonimo"
+    },
+    "municipio_uf": {
+      "status": "resolvido",
+      "reason": "territorio_identificado"
+    },
+    "nome_com_acento": {
+      "status": "resolvido",
+      "reason": "territorio_identificado"
+    },
+    "consulta_area": {
+      "status": "dados_indisponiveis",
+      "reason": "estatisticas_nao_materializadas"
+    },
+    "classe_ambigua": {
+      "status": "precisa_esclarecimento",
+      "reason": "classe_ambigua"
+    }
+  },
+  "wheel_data_verified": true,
+  "wheel_sha256": "211485d4a7589174a31b243630eb897dbb41f14a171036842be9ba0f5b007ba4",
+  "source_hashes": {
+    "src/consultas_ambientais/__init__.py": "220665135ccd2a9093ccc7e63d5fee5ac99cc00a81d69a989aa6d0bd2b97310c",
+    "src/consultas_ambientais/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "src/consultas_ambientais/answers/__init__.py": "ea7caace0aaea8795ce5481d904980d3609c284c51e53a3ae10568baffa2281d",
+    "src/consultas_ambientais/cli.py": "752213c738d3271e4c3d34bf53877ce8fe8e492af122b5078e2bd4902e45f378",
+    "src/consultas_ambientais/contracts.py": "0c103ed5e891e8cac9314afd7db86686fb9a0084af2abc98f1618d5fddfb508f",
+    "src/consultas_ambientais/errors.py": "ce2d0f11ccdecfd3dc572a79fe4a4f6c61d63dc8badac1daf5e7af70d98c5b15",
+    "src/consultas_ambientais/evaluation/__init__.py": "1c4cc68ba61f0a3005881ad300d3b0328ebd449e5eebc06dbc49323e51e3e1a2",
+    "src/consultas_ambientais/llm/__init__.py": "10df4e470d484e5ce4512c366dffec7fed7a65979084ca64504648e1efdb109b",
+    "src/consultas_ambientais/llm/client.py": "5a9ba9b4e819b409a8e738c1bd73b203f7d0dd2e6c9f9e8c37d33bee9c618cfa",
+    "src/consultas_ambientais/processing/__init__.py": "2dce11122ab94447d123afc0e9d5fe6c86a2b2598bb214a5ad6b1a49754e725e",
+    "src/consultas_ambientais/queries/__init__.py": "9703f34f8e05876c2f8baf7e879cd9e7c7cb992d3224032f31ee3b0d3b58a221",
+    "src/consultas_ambientais/queries/metrics.py": "7ef3dfc124be92b7c09c8cdf310f1093549086bae68a5693d2c41693e3bc5615",
+    "src/consultas_ambientais/semantics/__init__.py": "4385398ffd9a701d69bbfa472912b11bd2a965c4ce324cf82952a5462adc2890",
+    "src/consultas_ambientais/semantics/capabilities.py": "ed2f0d39f2492d87eec6bdc76b965666b097582dc8340d216eecda65547b8bb5",
+    "src/consultas_ambientais/semantics/catalog.py": "79e1e8000ef4bf3a5f29840dc250f410daa3bea4bc7de63700c61ff4c75af5c1",
+    "src/consultas_ambientais/semantics/commands.py": "5dd11687adcd19f9533b31a657d214bae03b1740921d48b132293e9c531b5083",
+    "src/consultas_ambientais/semantics/models.py": "e980c534f9ede3611aa9bc5eb4368661e2a35387b0730eef2efe1c0c5780c4dd",
+    "src/consultas_ambientais/semantics/normalization.py": "f604f6c228e035ab68d91c5f8ac7403f9684a04f7e56013ef4202e103fbb870d",
+    "src/consultas_ambientais/semantics/territories.py": "9a2e400222f55930708799e155db83374e51f9568da71e57eca9c1c9a094d547",
+    "src/consultas_ambientais/semantics/validation.py": "42c2fdd8916fa274d9d4f2f05817446f97dc71823a4ede6583d49ab0b062d0f1",
+    "src/consultas_ambientais/settings.py": "2b4e7f1f3239e7971b415480d9c14450149dff832fc7df37c61bb40db4e06840",
+    "src/consultas_ambientais/sources/__init__.py": "f04cf14c24d134ce5eef205e4dd3280e95d96525ec0860b30817763dd46f9490",
+    "src/consultas_ambientais/sources/postgis.py": "83c6dab314dabc5cd3adae398464c30d8aaf3286fddcc6073f7427e855b798a6",
+    "src/consultas_ambientais/sources/rasters.py": "6bac5e4eb58ce159ee2b332cb2e57619492863e6163484d6008d84a92b7afff3",
+    "src/consultas_ambientais/sources/territories.py": "adefb8cbe8a060101154008c8d36a2de9f01e81b27c12b3fc15e511d0ac07347",
+    "src/consultas_ambientais/storage/__init__.py": "df8da45e84884acfa87a765d107f4e9a6a2cd55f502fa0b3fc417db47afdfae0",
+    "src/consultas_ambientais/storage/reports.py": "cb350cc82981894d764a1f39bbb531c1e80236cb557970aa7f845e3b75f7c9ce"
+  }
+}

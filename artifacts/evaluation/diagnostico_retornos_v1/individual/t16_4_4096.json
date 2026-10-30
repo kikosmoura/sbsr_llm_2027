@@ -1,0 +1,63 @@
+{
+  "case_id": "t16_4",
+  "run_id": "c0552f63a2ca4607a82fd1716b7fe84b",
+  "max_tokens": 4096,
+  "freeze_sha256": "7aae0db1b42a873ee4cee79f410ec2e011f5c1cebeece707bcb725008c63bbfe",
+  "created_at": "2026-10-21T14:19:08.447837+00:00",
+  "messages_sha256": "a171fa189f683da1c8aed66fdc3273a8318fa2ec976ebe04454b502fc9b0431f",
+  "error": null,
+  "observed": {
+    "status": "respondida",
+    "values": [
+      {
+        "territory_code": "2400505",
+        "years": [
+          2015,
+          2025
+        ],
+        "value": -0.0344118702,
+        "unit": "percentual",
+        "undefined_reason": null,
+        "denominators_ha": [
+          17657.582522383058
+        ],
+        "rank": null
+      }
+    ],
+    "reason": "consulta_executada"
+  },
+  "events": [
+    {
+      "endpoint": "oauth",
+      "http_status": 200,
+      "bytes_read": 91,
+      "body_complete": true,
+      "response_metadata": null,
+      "elapsed_seconds": 0.21361512795556337
+    },
+    {
+      "endpoint": "chat",
+      "http_status": 200,
+      "bytes_read": 6802,
+      "body_complete": true,
+      "response_metadata": {
+        "json_object": true,
+        "choices_count": 1,
+        "finish_reason": "stop",
+        "content_state": "texto",
+        "final_content_chars": 230,
+        "reasoning_field_present": true,
+        "usage": {
+          "prompt_tokens": 5469,
+          "total_tokens": 7598,
+          "completion_tokens": 2129
+        },
+        "reasoning_tokens": null
+      },
+      "elapsed_seconds": 18.62548202998005
+    }
+  ],
+  "latency_seconds": 18.840229574940167,
+  "reasoning_text_stored": false,
+  "raw_response_stored": false
+}

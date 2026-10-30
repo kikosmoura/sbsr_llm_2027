@@ -1,0 +1,156 @@
+{
+  "schema_version": "controle-contrato-caso-v1",
+  "run_id": "aa224a7d26124a8dbfa4042e50621cc7",
+  "case_id": "t20_4",
+  "family_id": "teste_pontos",
+  "territory_codes": [
+    "2407203"
+  ],
+  "condition": "B_eq",
+  "repeat": 0,
+  "integration_kind": "gateway_real",
+  "created_at": "2026-10-21T15:05:00.824522+00:00",
+  "freeze_sha256": "55593ae2e52cbd2890ddce5bfed4183977a20b43a9c95123ba43f53e2b1332f0",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 4096,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "native_tools": false,
+    "native_response_format": false,
+    "workers": 3
+  },
+  "question": "Em Macau/RN, calcule a diferença de participação de Rio, Lago e Oceano, final menos inicial, em pontos percentuais: 2015 e 2025, sobre a área observada.",
+  "fixed_plan": {
+    "operation": "comparacao_temporal",
+    "metric": "diferenca_pontos_percentuais",
+    "unit": "pontos_percentuais",
+    "territory_codes": [
+      "2407203"
+    ],
+    "scope_uf": "RN",
+    "class_codes": [
+      33
+    ],
+    "years": [
+      2015,
+      2025
+    ],
+    "denominator": "participacao_por_ano",
+    "direction": "desc",
+    "limit": null
+  },
+  "common_input_sha256": "cda80ecd15e858d5b52751b5007f67c4f3626546fd20be90582771da1b6b650d",
+  "output_contract_sha256": "7cb672668bdaf0cb31f785651d91ec6475f990de121edab04b748bd0da63c955",
+  "system_sha256": "2805f7312e5288c2499d8bc4b6fd55f3a0adc3b8d5ea53aab2533894c62b290d",
+  "messages_sha256": "1ad378836d6714408583866df913827687d3fcc5664fabfb02a5c62f89514771",
+  "execution_observations": [],
+  "executor_result": null,
+  "observed": {
+    "status": "respondida",
+    "values": [
+      {
+        "territory_code": "2407203",
+        "years": [
+          2015,
+          2025
+        ],
+        "value": 1.61829843,
+        "unit": "pontos_percentuais",
+        "undefined_reason": null,
+        "denominators_ha": [
+          77528.95337298771,
+          77528.95337298771
+        ],
+        "rank": null
+      }
+    ],
+    "reason": "consulta_executada",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_pontos_percentuais",
+      "unit": "pontos_percentuais",
+      "territory_codes": [
+        "2407203"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        33
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": "participacao_por_ano",
+      "direction": "desc",
+      "limit": null
+    },
+    "clarification_field": null
+  },
+  "final_answer": "{\"reason\":\"consulta_executada\",\"status\":\"respondida\",\"values\":[{\"denominators_ha\":[77528.95337298771,77528.95337298771],\"rank\":null,\"territory_code\":\"2407203\",\"undefined_reason\":null,\"unit\":\"pontos_percentuais\",\"value\":1.61829843,\"years\":[2015,2025]}]}",
+  "attempts": [
+    {
+      "number": 1,
+      "messages_sha256": "1ad378836d6714408583866df913827687d3fcc5664fabfb02a5c62f89514771",
+      "usage": {
+        "prompt_tokens": 5591,
+        "total_tokens": 8625,
+        "completion_tokens": 3034
+      },
+      "issues": [],
+      "latency_seconds": 25.813200828037225,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "4de8157d132a9e830d84a76d90b283d083bf714e009f83773f2a3182a1f6ac2f",
+      "output_chars": 252,
+      "state": "valida"
+    }
+  ],
+  "latency_seconds": 25.81810019502882,
+  "model_seconds": 25.813776794006117,
+  "http_events": [
+    {
+      "endpoint": "oauth",
+      "http_status": 200,
+      "bytes_read": 91,
+      "body_complete": true,
+      "response_metadata": null,
+      "elapsed_seconds": 0.22974009497556835
+    },
+    {
+      "endpoint": "chat",
+      "http_status": 200,
+      "bytes_read": 9335,
+      "body_complete": true,
+      "response_metadata": {
+        "json_object": true,
+        "choices_count": 1,
+        "finish_reason": "stop",
+        "content_state": "texto",
+        "final_content_chars": 252,
+        "reasoning_field_present": true,
+        "usage": {
+          "prompt_tokens": 5591,
+          "total_tokens": 8625,
+          "completion_tokens": 3034
+        },
+        "reasoning_tokens": null
+      },
+      "elapsed_seconds": 25.583396228030324
+    }
+  ],
+  "executor_seconds": 0,
+  "scores": {
+    "status": true,
+    "plan": true,
+    "values": true,
+    "clarification": null,
+    "correct": true
+  },
+  "cost": null,
+  "source_geo_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+}

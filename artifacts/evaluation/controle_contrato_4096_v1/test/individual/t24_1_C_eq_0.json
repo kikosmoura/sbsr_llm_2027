@@ -1,0 +1,576 @@
+{
+  "schema_version": "controle-contrato-caso-v1",
+  "run_id": "aa224a7d26124a8dbfa4042e50621cc7",
+  "case_id": "t24_1",
+  "family_id": "teste_territorial",
+  "territory_codes": [
+    "2401206",
+    "2402204"
+  ],
+  "condition": "C_eq",
+  "repeat": 0,
+  "integration_kind": "gateway_real",
+  "created_at": "2026-10-21T15:05:42.998913+00:00",
+  "freeze_sha256": "55593ae2e52cbd2890ddce5bfed4183977a20b43a9c95123ba43f53e2b1332f0",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 4096,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "native_tools": false,
+    "native_response_format": false,
+    "workers": 3
+  },
+  "question": "Compare as áreas de Área Urbanizada em Arez/RN e Canguaretama/RN no ano 2025, em ha, listando cada município.",
+  "fixed_plan": {
+    "operation": "comparacao_territorial",
+    "metric": "area",
+    "unit": "ha",
+    "territory_codes": [
+      "2401206",
+      "2402204"
+    ],
+    "scope_uf": "RN",
+    "class_codes": [
+      24
+    ],
+    "years": [
+      2025
+    ],
+    "denominator": null,
+    "direction": "desc",
+    "limit": null
+  },
+  "common_input_sha256": "0325b022fac34545dd8ee5d7b4f07ac03d4c2a2c132706d7c990f40a4fc3410c",
+  "output_contract_sha256": "7cb672668bdaf0cb31f785651d91ec6475f990de121edab04b748bd0da63c955",
+  "system_sha256": "2805f7312e5288c2499d8bc4b6fd55f3a0adc3b8d5ea53aab2533894c62b290d",
+  "messages_sha256": "d940a593e0c7ebc6e60e7dacb77eafb7abaa85ed7dfe24c11784fff9143429c5",
+  "execution_observations": [
+    {
+      "status": "respondida",
+      "values": [
+        {
+          "territory_code": "2401206",
+          "years": [
+            2025
+          ],
+          "value": 217.93167490038513,
+          "unit": "ha",
+          "undefined_reason": null,
+          "denominators_ha": [],
+          "rank": null
+        },
+        {
+          "territory_code": "2402204",
+          "years": [
+            2025
+          ],
+          "value": 814.1841191629143,
+          "unit": "ha",
+          "undefined_reason": null,
+          "denominators_ha": [],
+          "rank": null
+        }
+      ],
+      "reason": "consulta_executada"
+    }
+  ],
+  "executor_result": {
+    "schema_version": "resposta-consulta-v1",
+    "status": "respondida",
+    "reason": "consulta_executada",
+    "message": "Arez/RN (IBGE 2401206): área mapeada de Área Urbanizada [24], em 2025: 217,93 ha.\nCanguaretama/RN (IBGE 2402204): área mapeada de Área Urbanizada [24], em 2025: 814,18 ha.\nColeção 11; revisão desconhecida; malha edição desconhecida; método ellipsoid-linear-lonlat-fractional-v1; execução a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802.",
+    "answer_id": "825781e1ed7c7cbe0ee6ec2a34d3dbf76b0fac6affecf9e34cc406b084822d2c",
+    "plan_id": "73d1bcc0b9fa9fd15538fcba7c309fb4553b1e56ac561d61be8b2034e2fc2198",
+    "executor_sha256": "64bb18ecbfecf2fd623d8fd10e616a1f816bbf529feeec5749f554ac7d4ed81a",
+    "requested_plan": {
+      "operation": "comparacao_territorial",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2401206",
+        "2402204"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        24
+      ],
+      "years": [
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "plan": {
+      "operation": "comparacao_territorial",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2401206",
+        "2402204"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        24
+      ],
+      "years": [
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "evidence": [
+      {
+        "evidence_id": "a3b34f6d09ee7dbe922673a3aaa158eee2fce38aff7388c4dfec5b80c39cc29a",
+        "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+        "territory": {
+          "kind": "municipio",
+          "code": "2401206",
+          "name": "Arez",
+          "uf": "RN",
+          "geometry_hash": "4f47f88f8449e8062363a7427cdf6f1d1d22312d068ba824ae25688161129de1",
+          "edition": null
+        },
+        "class_codes": [
+          24
+        ],
+        "years": [
+          2025
+        ],
+        "collection": 11,
+        "source_revision": null,
+        "source_ids": [
+          "run:a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+          "mesh:3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+          "classes:04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+          "areas.parquet:89a51ee6a54cd1b6eb8a71d54f59860b3729d2f6083c616eb128e7e26a4f143a",
+          "quality.parquet:b6b335fbfc7f395e9467e26ddbb02343178be49e0d7713181a2f0a6afa483deb",
+          "mirror:37322ac02043f652f60aeff0a68acfba418ae2e43dff412f89cd0ad6e525a336",
+          "crop:8b848eb7e2592f26160835b9b256987e985fd39d1dbb2681aa722b9aa8e355b7"
+        ],
+        "area_method": "ellipsoid-linear-lonlat-fractional-v1",
+        "quality": {
+          "state": "completo",
+          "observed_area_ha": 11540.553538596168,
+          "nodata_area_ha": 0.0,
+          "unknown_codes": [],
+          "common_support_id": null,
+          "area_method": "ellipsoid-linear-lonlat-fractional-v1",
+          "notes": [
+            "Revisao oficial do espelho e edicao territorial nao comprovadas."
+          ]
+        },
+        "plan_id": "73d1bcc0b9fa9fd15538fcba7c309fb4553b1e56ac561d61be8b2034e2fc2198",
+        "metric": "area",
+        "requested_class_codes": [
+          24
+        ],
+        "class_names": [
+          "Área Urbanizada [24]"
+        ],
+        "observations": [
+          {
+            "year": 2025,
+            "class_area_ha": 217.93167490038513,
+            "observed_area_ha": 11540.553538596168,
+            "support": "anual",
+            "nodata_area_ha": 0.0,
+            "unknown_area_ha": 0.0,
+            "outside_raster_area_ha": 2.9802322387695314e-12
+          }
+        ],
+        "denominator_definition": null,
+        "denominator_values_ha": [],
+        "provenance": "municipio_direto",
+        "mesh_sha256": "3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+        "catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+        "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+        "sources": [
+          {
+            "source_id": "run:a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+            "kind": "execucao",
+            "sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "mesh:3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+            "kind": "malha",
+            "sha256": "3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "classes:04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+            "kind": "catalogo",
+            "sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "areas.parquet:89a51ee6a54cd1b6eb8a71d54f59860b3729d2f6083c616eb128e7e26a4f143a",
+            "kind": "particao_areas",
+            "sha256": "89a51ee6a54cd1b6eb8a71d54f59860b3729d2f6083c616eb128e7e26a4f143a",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "quality.parquet:b6b335fbfc7f395e9467e26ddbb02343178be49e0d7713181a2f0a6afa483deb",
+            "kind": "particao_qualidade",
+            "sha256": "b6b335fbfc7f395e9467e26ddbb02343178be49e0d7713181a2f0a6afa483deb",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "mirror:37322ac02043f652f60aeff0a68acfba418ae2e43dff412f89cd0ad6e525a336",
+            "kind": "raster_espelho",
+            "sha256": null,
+            "year": 2025,
+            "public_url": "https://storage.example.invalid/BUCKET_NAME/brazil_coverage-col11_2025.tif",
+            "etag": "\"df7c25264b8e600567bd82c2a4a072a3-146\""
+          },
+          {
+            "source_id": "crop:8b848eb7e2592f26160835b9b256987e985fd39d1dbb2681aa722b9aa8e355b7",
+            "kind": "recorte",
+            "sha256": "8b848eb7e2592f26160835b9b256987e985fd39d1dbb2681aa722b9aa8e355b7",
+            "year": 2025,
+            "public_url": null,
+            "etag": null
+          }
+        ]
+      },
+      {
+        "evidence_id": "baaccc5342a996f1d731f5466102e337318f177d886ea606cc2b199dbce20129",
+        "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+        "territory": {
+          "kind": "municipio",
+          "code": "2402204",
+          "name": "Canguaretama",
+          "uf": "RN",
+          "geometry_hash": "091bbf1d1d92ee6ae34343f67d8fbea8b096b501cfeaeae130df3009ab1cf128",
+          "edition": null
+        },
+        "class_codes": [
+          24
+        ],
+        "years": [
+          2025
+        ],
+        "collection": 11,
+        "source_revision": null,
+        "source_ids": [
+          "run:a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+          "mesh:3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+          "classes:04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+          "areas.parquet:440f4951fe1d472ce0eceaac435758e19ff5949a6c7fa0140997ba5cfd8c5bc3",
+          "quality.parquet:666a5937c2cb5f3ccd0f4641651f7ab8619caaa8ab669f721d43a6d431dcb388",
+          "mirror:37322ac02043f652f60aeff0a68acfba418ae2e43dff412f89cd0ad6e525a336",
+          "crop:8b848eb7e2592f26160835b9b256987e985fd39d1dbb2681aa722b9aa8e355b7"
+        ],
+        "area_method": "ellipsoid-linear-lonlat-fractional-v1",
+        "quality": {
+          "state": "completo",
+          "observed_area_ha": 24548.47519211159,
+          "nodata_area_ha": 0.0,
+          "unknown_codes": [],
+          "common_support_id": null,
+          "area_method": "ellipsoid-linear-lonlat-fractional-v1",
+          "notes": [
+            "Revisao oficial do espelho e edicao territorial nao comprovadas."
+          ]
+        },
+        "plan_id": "73d1bcc0b9fa9fd15538fcba7c309fb4553b1e56ac561d61be8b2034e2fc2198",
+        "metric": "area",
+        "requested_class_codes": [
+          24
+        ],
+        "class_names": [
+          "Área Urbanizada [24]"
+        ],
+        "observations": [
+          {
+            "year": 2025,
+            "class_area_ha": 814.1841191629143,
+            "observed_area_ha": 24548.47519211159,
+            "support": "anual",
+            "nodata_area_ha": 0.0,
+            "unknown_area_ha": 0.0,
+            "outside_raster_area_ha": 0.0
+          }
+        ],
+        "denominator_definition": null,
+        "denominator_values_ha": [],
+        "provenance": "municipio_direto",
+        "mesh_sha256": "3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+        "catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+        "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+        "sources": [
+          {
+            "source_id": "run:a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+            "kind": "execucao",
+            "sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "mesh:3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+            "kind": "malha",
+            "sha256": "3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "classes:04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+            "kind": "catalogo",
+            "sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "areas.parquet:440f4951fe1d472ce0eceaac435758e19ff5949a6c7fa0140997ba5cfd8c5bc3",
+            "kind": "particao_areas",
+            "sha256": "440f4951fe1d472ce0eceaac435758e19ff5949a6c7fa0140997ba5cfd8c5bc3",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "quality.parquet:666a5937c2cb5f3ccd0f4641651f7ab8619caaa8ab669f721d43a6d431dcb388",
+            "kind": "particao_qualidade",
+            "sha256": "666a5937c2cb5f3ccd0f4641651f7ab8619caaa8ab669f721d43a6d431dcb388",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "mirror:37322ac02043f652f60aeff0a68acfba418ae2e43dff412f89cd0ad6e525a336",
+            "kind": "raster_espelho",
+            "sha256": null,
+            "year": 2025,
+            "public_url": "https://storage.example.invalid/BUCKET_NAME/brazil_coverage-col11_2025.tif",
+            "etag": "\"df7c25264b8e600567bd82c2a4a072a3-146\""
+          },
+          {
+            "source_id": "crop:8b848eb7e2592f26160835b9b256987e985fd39d1dbb2681aa722b9aa8e355b7",
+            "kind": "recorte",
+            "sha256": "8b848eb7e2592f26160835b9b256987e985fd39d1dbb2681aa722b9aa8e355b7",
+            "year": 2025,
+            "public_url": null,
+            "etag": null
+          }
+        ]
+      }
+    ],
+    "values": [
+      {
+        "evidence_id": "a3b34f6d09ee7dbe922673a3aaa158eee2fce38aff7388c4dfec5b80c39cc29a",
+        "value": 217.93167490038513,
+        "unit": "ha",
+        "denominator_value": null,
+        "undefined_reason": null,
+        "metric": "area",
+        "area_value_ha": 217.93167490038513,
+        "denominator_unit": null,
+        "rank": null
+      },
+      {
+        "evidence_id": "baaccc5342a996f1d731f5466102e337318f177d886ea606cc2b199dbce20129",
+        "value": 814.1841191629143,
+        "unit": "ha",
+        "denominator_value": null,
+        "undefined_reason": null,
+        "metric": "area",
+        "area_value_ha": 814.1841191629143,
+        "denominator_unit": null,
+        "rank": null
+      }
+    ],
+    "execution": {
+      "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+      "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+      "collection": 11,
+      "source_revision": null,
+      "territorial_edition": null,
+      "method": "ellipsoid-linear-lonlat-fractional-v1",
+      "mesh_sha256": "3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+      "catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+      "years": [
+        2025
+      ],
+      "class_names": [
+        "Área Urbanizada [24]"
+      ],
+      "sources": [
+        {
+          "source_id": "run:a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+          "kind": "execucao",
+          "sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+          "year": null,
+          "public_url": null,
+          "etag": null
+        },
+        {
+          "source_id": "mesh:3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+          "kind": "malha",
+          "sha256": "3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+          "year": null,
+          "public_url": null,
+          "etag": null
+        },
+        {
+          "source_id": "classes:04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+          "kind": "catalogo",
+          "sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+          "year": null,
+          "public_url": null,
+          "etag": null
+        },
+        {
+          "source_id": "mirror:37322ac02043f652f60aeff0a68acfba418ae2e43dff412f89cd0ad6e525a336",
+          "kind": "raster_espelho",
+          "sha256": null,
+          "year": 2025,
+          "public_url": "https://storage.example.invalid/BUCKET_NAME/brazil_coverage-col11_2025.tif",
+          "etag": "\"df7c25264b8e600567bd82c2a4a072a3-146\""
+        },
+        {
+          "source_id": "crop:8b848eb7e2592f26160835b9b256987e985fd39d1dbb2681aa722b9aa8e355b7",
+          "kind": "recorte",
+          "sha256": "8b848eb7e2592f26160835b9b256987e985fd39d1dbb2681aa722b9aa8e355b7",
+          "year": 2025,
+          "public_url": null,
+          "etag": null
+        }
+      ]
+    },
+    "ranking": null,
+    "notes": [
+      "Valores sem arredondamento no JSON/CSV; texto com duas casas decimais.",
+      "Diferenca liquida nao mede perda bruta, desmatamento ou causas."
+    ]
+  },
+  "observed": {
+    "status": "respondida",
+    "values": [
+      {
+        "territory_code": "2401206",
+        "years": [
+          2025
+        ],
+        "value": 217.93167490038513,
+        "unit": "ha",
+        "undefined_reason": null,
+        "denominators_ha": [],
+        "rank": null
+      },
+      {
+        "territory_code": "2402204",
+        "years": [
+          2025
+        ],
+        "value": 814.1841191629143,
+        "unit": "ha",
+        "undefined_reason": null,
+        "denominators_ha": [],
+        "rank": null
+      }
+    ],
+    "reason": "consulta_executada",
+    "plan": {
+      "operation": "comparacao_territorial",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2401206",
+        "2402204"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        24
+      ],
+      "years": [
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "clarification_field": null
+  },
+  "final_answer": "{\"reason\":\"consulta_executada\",\"status\":\"respondida\",\"values\":[{\"denominators_ha\":[],\"rank\":null,\"territory_code\":\"2401206\",\"undefined_reason\":null,\"unit\":\"ha\",\"value\":217.93167490038513,\"years\":[2025]},{\"denominators_ha\":[],\"rank\":null,\"territory_code\":\"2402204\",\"undefined_reason\":null,\"unit\":\"ha\",\"value\":814.1841191629143,\"years\":[2025]}]}",
+  "attempts": [
+    {
+      "number": 1,
+      "messages_sha256": "d940a593e0c7ebc6e60e7dacb77eafb7abaa85ed7dfe24c11784fff9143429c5",
+      "usage": {
+        "prompt_tokens": 7892,
+        "total_tokens": 8312,
+        "completion_tokens": 420
+      },
+      "issues": [],
+      "latency_seconds": 4.23111237201374,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "b77468fbb74afcc33e36482df7f7e6257c1560213f8367148ce1c58ac2295138",
+      "output_chars": 343,
+      "state": "valida"
+    }
+  ],
+  "latency_seconds": 4.3473526779562235,
+  "model_seconds": 4.231562325032428,
+  "http_events": [
+    {
+      "endpoint": "oauth",
+      "http_status": 200,
+      "bytes_read": 91,
+      "body_complete": true,
+      "response_metadata": null,
+      "elapsed_seconds": 0.21375267300754786
+    },
+    {
+      "endpoint": "chat",
+      "http_status": 200,
+      "bytes_read": 2186,
+      "body_complete": true,
+      "response_metadata": {
+        "json_object": true,
+        "choices_count": 1,
+        "finish_reason": "stop",
+        "content_state": "texto",
+        "final_content_chars": 343,
+        "reasoning_field_present": true,
+        "usage": {
+          "prompt_tokens": 7892,
+          "total_tokens": 8312,
+          "completion_tokens": 420
+        },
+        "reasoning_tokens": null
+      },
+      "elapsed_seconds": 4.01730346691329
+    }
+  ],
+  "executor_seconds": 0.11187952593900263,
+  "scores": {
+    "status": true,
+    "plan": true,
+    "values": true,
+    "clarification": null,
+    "correct": true
+  },
+  "cost": null,
+  "source_geo_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+}

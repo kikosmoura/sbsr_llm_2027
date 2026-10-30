@@ -1,0 +1,102 @@
+{
+  "schema_version": "controle-contrato-caso-v1",
+  "run_id": "7dfe5ecbd3944e4dbde409763d23cbf3",
+  "case_id": "t16_4",
+  "family_id": "teste_variacao",
+  "territory_codes": [
+    "2400505"
+  ],
+  "condition": "B_eq",
+  "repeat": 0,
+  "integration_kind": "gateway_real",
+  "created_at": "2026-10-21T13:40:09.163681+00:00",
+  "freeze_sha256": "784d7e714d514197d4d07f3c82a000724b1671a64295a13616e6b9c6134beb2c",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "native_tools": false,
+    "native_response_format": false,
+    "workers": 3
+  },
+  "question": "Quanto foi a variação percentual de Pastagem entre 2015 e 2025 em Alexandria/RN, tendo a área inicial como base?",
+  "fixed_plan": {
+    "operation": "comparacao_temporal",
+    "metric": "variacao_percentual",
+    "unit": "percentual",
+    "territory_codes": [
+      "2400505"
+    ],
+    "scope_uf": "RN",
+    "class_codes": [
+      15
+    ],
+    "years": [
+      2015,
+      2025
+    ],
+    "denominator": "area_inicial",
+    "direction": "desc",
+    "limit": null
+  },
+  "common_input_sha256": "41bc3ec9077465763dbf845935e53cf64c585f4e71438c1ae147a3716504d46c",
+  "output_contract_sha256": "7cb672668bdaf0cb31f785651d91ec6475f990de121edab04b748bd0da63c955",
+  "system_sha256": "2805f7312e5288c2499d8bc4b6fd55f3a0adc3b8d5ea53aab2533894c62b290d",
+  "messages_sha256": "a171fa189f683da1c8aed66fdc3273a8318fa2ec976ebe04454b502fc9b0431f",
+  "execution_observations": [],
+  "executor_result": null,
+  "observed": {
+    "status": "erro_tecnico",
+    "values": [],
+    "reason": "falha_gateway",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "variacao_percentual",
+      "unit": "percentual",
+      "territory_codes": [
+        "2400505"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": "area_inicial",
+      "direction": "desc",
+      "limit": null
+    },
+    "clarification_field": null
+  },
+  "final_answer": "{\"reason\":\"falha_gateway\",\"status\":\"erro_tecnico\",\"values\":[]}",
+  "attempts": [
+    {
+      "number": 1,
+      "messages_sha256": "a171fa189f683da1c8aed66fdc3273a8318fa2ec976ebe04454b502fc9b0431f",
+      "usage": null,
+      "issues": [],
+      "state": "falha_gateway",
+      "gateway_error": "texto_final_ausente",
+      "http_status": null
+    }
+  ],
+  "latency_seconds": 19.140571843949147,
+  "model_seconds": 19.13631545996759,
+  "executor_seconds": 0,
+  "scores": {
+    "status": false,
+    "plan": null,
+    "values": null,
+    "clarification": null,
+    "correct": false
+  },
+  "cost": null,
+  "source_geo_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+}

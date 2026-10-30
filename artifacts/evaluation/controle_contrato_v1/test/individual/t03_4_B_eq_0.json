@@ -1,0 +1,119 @@
+{
+  "schema_version": "controle-contrato-caso-v1",
+  "run_id": "7dfe5ecbd3944e4dbde409763d23cbf3",
+  "case_id": "t03_4",
+  "family_id": "teste_area_direta",
+  "territory_codes": [
+    "2408003"
+  ],
+  "condition": "B_eq",
+  "repeat": 0,
+  "integration_kind": "gateway_real",
+  "created_at": "2026-10-21T13:35:08.007697+00:00",
+  "freeze_sha256": "784d7e714d514197d4d07f3c82a000724b1671a64295a13616e6b9c6134beb2c",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "native_tools": false,
+    "native_response_format": false,
+    "workers": 3
+  },
+  "question": "Apresente, em m2, a área mapeada de Área Urbanizada no território municipal de Mossoró/RN para 2025.",
+  "fixed_plan": {
+    "operation": "area",
+    "metric": "area",
+    "unit": "m2",
+    "territory_codes": [
+      "2408003"
+    ],
+    "scope_uf": "RN",
+    "class_codes": [
+      24
+    ],
+    "years": [
+      2025
+    ],
+    "denominator": null,
+    "direction": "desc",
+    "limit": null
+  },
+  "common_input_sha256": "824a51a43a855e7b7b24efa8bd404ed86b0486260e892c914ce4add7865944a7",
+  "output_contract_sha256": "7cb672668bdaf0cb31f785651d91ec6475f990de121edab04b748bd0da63c955",
+  "system_sha256": "2805f7312e5288c2499d8bc4b6fd55f3a0adc3b8d5ea53aab2533894c62b290d",
+  "messages_sha256": "5b88c303b1f9396582ac2c9346718c0a4d60649ae147f07d14bd00f5606497c2",
+  "execution_observations": [],
+  "executor_result": null,
+  "observed": {
+    "status": "respondida",
+    "values": [
+      {
+        "territory_code": "2408003",
+        "years": [
+          2025
+        ],
+        "value": 65454455.98091298,
+        "unit": "m2",
+        "undefined_reason": null,
+        "denominators_ha": [],
+        "rank": null
+      }
+    ],
+    "reason": "consulta_executada",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "m2",
+      "territory_codes": [
+        "2408003"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        24
+      ],
+      "years": [
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "clarification_field": null
+  },
+  "final_answer": "{\"reason\":\"consulta_executada\",\"status\":\"respondida\",\"values\":[{\"denominators_ha\":[],\"rank\":null,\"territory_code\":\"2408003\",\"undefined_reason\":null,\"unit\":\"m2\",\"value\":65454455.98091298,\"years\":[2025]}]}",
+  "attempts": [
+    {
+      "number": 1,
+      "messages_sha256": "5b88c303b1f9396582ac2c9346718c0a4d60649ae147f07d14bd00f5606497c2",
+      "usage": {
+        "prompt_tokens": 5603,
+        "total_tokens": 6239,
+        "completion_tokens": 636
+      },
+      "issues": [],
+      "latency_seconds": 6.830771537963301,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "2cacc96c9853a318eaa39591a26edfa3ad49afb6bb94c4002a13c1477950b34d",
+      "output_chars": 203,
+      "state": "valida"
+    }
+  ],
+  "latency_seconds": 6.835568035021424,
+  "model_seconds": 6.8312559929909185,
+  "executor_seconds": 0,
+  "scores": {
+    "status": true,
+    "plan": true,
+    "values": true,
+    "clarification": null,
+    "correct": true
+  },
+  "cost": null,
+  "source_geo_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+}

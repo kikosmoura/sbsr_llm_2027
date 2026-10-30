@@ -1,0 +1,2 @@
+# Leitura explicita de .env apenas no validador real; versao verificada.
+python-dotenv==1.2.2

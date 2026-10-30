@@ -1,0 +1,116 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "89968af8c62a49b3b9d5999fd6b5ddbf",
+  "case_id": "d04_1",
+  "family_id": "d04",
+  "territory_codes": [
+    "2410900"
+  ],
+  "condition": "B",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:36:16.484105+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Qual a variação percentual de Mangue em Riachuelo/RN entre 2015 e 2025, em relação à área inicial?",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": "d8744718d7d317ffab5bd6b738b67ed7f45489fbf76cc062c06a2d70186ac9fb",
+  "messages_sha256": "f4198ed844c878c09856049333cff17399625fd82d6540b594d1168322f8c59b",
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "erro_tecnico",
+    "plan": null,
+    "values": [],
+    "clarification_field": null,
+    "reason": "saida_invalida_apos_reparo"
+  },
+  "final_answer": "{\"status\": \"erro_tecnico\", \"plan\": null, \"values\": [], \"clarification_field\": null, \"reason\": \"saida_invalida_apos_reparo\"}",
+  "plan": null,
+  "result": [],
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "messages_sha256": "f4198ed844c878c09856049333cff17399625fd82d6540b594d1168322f8c59b",
+      "issues": [
+        {
+          "path": [
+            "values",
+            0
+          ],
+          "code": "value_error"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 5739,
+        "total_tokens": 6716,
+        "completion_tokens": 977
+      },
+      "latency_seconds": 8.097931249067187,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "cb107268dde3c2546037f752a19afd370c4d1ce3c50b060a0bcc5bf39059d7bb",
+      "output_chars": 303,
+      "state": "invalida"
+    },
+    {
+      "number": 2,
+      "kind": "reparo",
+      "messages_sha256": "8b1500057aad22a27886b05fed68dc3482cd0cf8e1d62bf5e5c517d8d9abcbc0",
+      "issues": [
+        {
+          "path": [],
+          "code": "value_error"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 5777,
+        "total_tokens": 6445,
+        "completion_tokens": 668
+      },
+      "latency_seconds": 5.322589503019117,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "e1ae5408279d233bb539813702a06184d4c46e47a14483da197229752d8fc99b",
+      "output_chars": 332,
+      "state": "invalida"
+    }
+  ],
+  "latency_seconds": 13.423717780970037,
+  "scores": {
+    "status": false,
+    "plan": null,
+    "values": null,
+    "clarification": null,
+    "correct": false
+  },
+  "cost": null,
+  "source_context": {
+    "data_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+  },
+  "C_session_id": null,
+  "C_turn_id": null,
+  "C_candidate_intent": null,
+  "C_decision": null
+}

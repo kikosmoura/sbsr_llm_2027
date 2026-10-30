@@ -1,0 +1,44 @@
+{
+  "case_id": "t19_1",
+  "run_id": "c0552f63a2ca4607a82fd1716b7fe84b",
+  "max_tokens": 4096,
+  "freeze_sha256": "7aae0db1b42a873ee4cee79f410ec2e011f5c1cebeece707bcb725008c63bbfe",
+  "created_at": "2026-10-21T14:17:00.396309+00:00",
+  "messages_sha256": "034e25b55e0b6eed7bf37fdd87d7ebc4953d89c1c82821d51dbc552fc1a80a97",
+  "error": "texto_final_ausente",
+  "observed": null,
+  "events": [
+    {
+      "endpoint": "oauth",
+      "http_status": 200,
+      "bytes_read": 91,
+      "body_complete": true,
+      "response_metadata": null,
+      "elapsed_seconds": 0.21121308393776417
+    },
+    {
+      "endpoint": "chat",
+      "http_status": 200,
+      "bytes_read": 12492,
+      "body_complete": true,
+      "response_metadata": {
+        "json_object": true,
+        "choices_count": 1,
+        "finish_reason": "length",
+        "content_state": "null",
+        "final_content_chars": null,
+        "reasoning_field_present": true,
+        "usage": {
+          "prompt_tokens": 5643,
+          "total_tokens": 9739,
+          "completion_tokens": 4096
+        },
+        "reasoning_tokens": null
+      },
+      "elapsed_seconds": 34.956741695990786
+    }
+  ],
+  "latency_seconds": 35.169089175062254,
+  "reasoning_text_stored": false,
+  "raw_response_stored": false
+}

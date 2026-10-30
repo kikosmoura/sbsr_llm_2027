@@ -1,0 +1,113 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "fa7686659da9449d811d154641021724",
+  "case_id": "t05_3",
+  "family_id": "teste_area_direta",
+  "territory_codes": [
+    "2403103"
+  ],
+  "condition": "B",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:39:35.211342+00:00",
+  "integration_kind": "gateway_real",
+  "question": "No ano 2025, a área classificada como grupo Floresta código 1 em Currais Novos/RN corresponde a quantos quilômetros quadrados?",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": "85147bd373d0e742761bf3904decbf6a50df75058949ef209d51d896f859c6fe",
+  "messages_sha256": "3eddbbe8128514bc4dab07f707008a25cb2efcb8208f4e375d4e848d78f018be",
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "erro_tecnico",
+    "plan": null,
+    "values": [],
+    "clarification_field": null,
+    "reason": "saida_invalida_apos_reparo"
+  },
+  "final_answer": "{\"status\": \"erro_tecnico\", \"plan\": null, \"values\": [], \"clarification_field\": null, \"reason\": \"saida_invalida_apos_reparo\"}",
+  "plan": null,
+  "result": [],
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "messages_sha256": "3eddbbe8128514bc4dab07f707008a25cb2efcb8208f4e375d4e848d78f018be",
+      "issues": [
+        {
+          "path": [],
+          "code": "value_error"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 5749,
+        "total_tokens": 6391,
+        "completion_tokens": 642
+      },
+      "latency_seconds": 5.352757622022182,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "1cb7812db6dc9b59541654d67bf6cda8541fe59f71e500cb6a76e9d571c0e22f",
+      "output_chars": 317,
+      "state": "invalida"
+    },
+    {
+      "number": 2,
+      "kind": "reparo",
+      "messages_sha256": "6ef2ad709be3f953bbb7b3e7019a1995cf2d107071378a4abb32428705f08312",
+      "issues": [
+        {
+          "path": [],
+          "code": "value_error"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 5784,
+        "total_tokens": 6576,
+        "completion_tokens": 792
+      },
+      "latency_seconds": 6.326930351089686,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "1cb7812db6dc9b59541654d67bf6cda8541fe59f71e500cb6a76e9d571c0e22f",
+      "output_chars": 317,
+      "state": "invalida"
+    }
+  ],
+  "latency_seconds": 11.684502179035917,
+  "scores": {
+    "status": false,
+    "plan": null,
+    "values": null,
+    "clarification": null,
+    "correct": false
+  },
+  "cost": null,
+  "source_context": {
+    "data_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+  },
+  "C_session_id": null,
+  "C_turn_id": null,
+  "C_candidate_intent": null,
+  "C_decision": null
+}

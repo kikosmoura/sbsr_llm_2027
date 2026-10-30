@@ -1,0 +1,18 @@
+{
+  "metrics_sha256": "9c912af84a7ac281acb8dca3670a2a45e10a34e1fc106e19ec7fe909f0dbe302",
+  "sensitivity_sha256": "cea00ce74ff40e37269803d21c1d7a82e70b6ec3b0b67f668da8674e5c64d7c6",
+  "matplotlib": "3.5.1",
+  "numpy": "1.21.5",
+  "files": [
+    "fig10_fluxo_componentes_v2.png",
+    "fig10_fluxo_componentes_v2.svg",
+    "fig10_fluxo_componentes_v2.pdf",
+    "fig11_sensibilidade_v2.png",
+    "fig11_sensibilidade_v2.svg",
+    "fig11_sensibilidade_v2.pdf",
+    "fig12_diagnosticos_v2.png",
+    "fig12_diagnosticos_v2.svg",
+    "fig12_diagnosticos_v2.pdf"
+  ],
+  "manual_numeric_editing": false
+}

@@ -1,0 +1,240 @@
+{
+  "state": "verificado",
+  "scope": "auditoria local; sem nova consulta ao banco, raster remoto ou LLM",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "run_id": "fa7686659da9449d811d154641021724",
+  "data_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+  "data_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+  "mesh_sha256": "3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+  "snapshot_file_sha256": "42850b2d17fbfe9279f09e25417ec94a679b3d4080705a18374feaeceaf98b11",
+  "catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+  "catalog_sources": [
+    {
+      "source_id": "legend.pdf",
+      "url": "https://brasil.mapbiomas.org/wp-content/uploads/sites/3/2026/08/CodigosDeLegenda_LegendCodes_MapBiomas_Brazil_Collection11_PDF.pdf",
+      "sha256": "19ddb657d66ce1039be8aba31f20689d9ab66af7d39b86d976727dc3265b7865",
+      "retrieved_at": "2026-10-19T15:32:15.965230+00:00"
+    },
+    {
+      "source_id": "legend.csv",
+      "url": "https://brasil.mapbiomas.org/wp-content/uploads/sites/3/2026/08/legend_code_mapbiomas_brazil_collection_11.csv",
+      "sha256": "603239c5de7cca95799c788ab553a73ec3fc16477f681f63bb5af191d2f54dbe",
+      "retrieved_at": "2026-10-19T15:32:16.196887+00:00"
+    },
+    {
+      "source_id": "official_page.html",
+      "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/",
+      "sha256": "d636bfda2f495871d49445e4e69495d67ddeab294d0624f2d7fcf0d3a5b598c7",
+      "retrieved_at": "2026-10-19T15:34:04.360412+00:00"
+    }
+  ],
+  "collection": 11,
+  "years": [
+    2015,
+    2025
+  ],
+  "crs": "EPSG:4326",
+  "official_source_revision": null,
+  "territorial_edition": null,
+  "municipalities": 167,
+  "municipalities_eligible_common": 166,
+  "territories": 168,
+  "area_records": 22176,
+  "quality_records": 672,
+  "partitions_checked": 336,
+  "repaired_geometries": 0,
+  "unknown_code_diagnostics": [
+    {
+      "territory_code": "2401107",
+      "year": 2015,
+      "support": "anual",
+      "unknown_codes_m2": {
+        "0": 26610.201101881597
+      }
+    },
+    {
+      "territory_code": "2401107",
+      "year": 2025,
+      "support": "anual",
+      "unknown_codes_m2": {
+        "0": 26610.201101881597
+      }
+    },
+    {
+      "territory_code": "2401107",
+      "year": 2015,
+      "support": "comum",
+      "unknown_codes_m2": {
+        "0": 26610.20110188159
+      }
+    },
+    {
+      "territory_code": "2401107",
+      "year": 2025,
+      "support": "comum",
+      "unknown_codes_m2": {
+        "0": 26610.20110188159
+      }
+    },
+    {
+      "territory_code": "24",
+      "year": 2015,
+      "support": "anual",
+      "unknown_codes_m2": {
+        "0": 26610.201101753726
+      }
+    },
+    {
+      "territory_code": "24",
+      "year": 2025,
+      "support": "anual",
+      "unknown_codes_m2": {
+        "0": 26610.201101753726
+      }
+    },
+    {
+      "territory_code": "24",
+      "year": 2015,
+      "support": "comum",
+      "unknown_codes_m2": {
+        "0": 26610.201101753726
+      }
+    },
+    {
+      "territory_code": "24",
+      "year": 2025,
+      "support": "comum",
+      "unknown_codes_m2": {
+        "0": 26610.201101753726
+      }
+    }
+  ],
+  "ranking_eligible": false,
+  "area_method": "ellipsoid-linear-lonlat-fractional-v1",
+  "software": {
+    "dependencies": {
+      "duckdb": "1.4.1",
+      "numpy": "2.2.6",
+      "psutil": "7.0.0",
+      "psycopg2-binary": "2.9.11",
+      "pyproj": "3.3.0",
+      "rasterio": "1.4.3",
+      "shapely": "2.1.2"
+    },
+    "gdal": "3.9.3",
+    "geos": "3.13.1",
+    "implementation_sha256": "815398820da84590ccf55d451115ff6b23d3517a870f4a8bdb340541094cd79c",
+    "proj": "8.2.1",
+    "python": "3.10.12"
+  },
+  "raster_sources": [
+    {
+      "etag": "\"c0f687289217d0c8c7da1caa33827855-138\"",
+      "last_modified": "Sun, 27 Sep 2026 16:31:02 GMT",
+      "official_revision_verified": false,
+      "size": 720792833,
+      "url": "https://storage.example.invalid/BUCKET_NAME/brazil_coverage-col11_2015.tif"
+    },
+    {
+      "etag": "\"df7c25264b8e600567bd82c2a4a072a3-146\"",
+      "last_modified": "Sun, 27 Sep 2026 16:31:23 GMT",
+      "official_revision_verified": false,
+      "size": 763286575,
+      "url": "https://storage.example.invalid/BUCKET_NAME/brazil_coverage-col11_2025.tif"
+    }
+  ],
+  "crop_hashes": [
+    "99c7a24c07d0b6cf29969ea2385592b9f3e0845b667b1877c7e163e3fd17739a",
+    "8b848eb7e2592f26160835b9b256987e985fd39d1dbb2681aa722b9aa8e355b7"
+  ],
+  "native_grids": [
+    {
+      "count": 1,
+      "crs": "EPSG:4326",
+      "dtype": "uint8",
+      "height": 146501,
+      "nodata": null,
+      "transform": [
+        0.00026949458523585647,
+        0.0,
+        -74.02099974839176,
+        0.0,
+        -0.00026949458523585647,
+        5.42303953870114
+      ],
+      "width": 154470
+    },
+    {
+      "count": 1,
+      "crs": "EPSG:4326",
+      "dtype": "uint8",
+      "height": 146501,
+      "nodata": null,
+      "transform": [
+        0.00026949458523585647,
+        0.0,
+        -74.02099974839176,
+        0.0,
+        -0.00026949458523585647,
+        5.42303953870114
+      ],
+      "width": 154470
+    }
+  ],
+  "returned_models": [
+    "RETURNED_MODEL_ID_1"
+  ],
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "production_prompt_hashes": {
+    "system.txt": "2ca6b6759b1f552dbf001d9bfe072959df9c4d554ae4b525b9b33b9de912bf10",
+    "user.txt": "30be6fbfc5e8822eeb6b315765b3fb5747ca3197b867746b7ed7808c9e7169ed",
+    "repair.txt": "ed730b22ca7209aad127f6ad9b425a91d2098c623c98c6158e71bd513efaf08b",
+    "proposal.schema.json": "9787a21f662d0ab8c0243201d6a65ec3770d865556f2d9a4f31d02b1864a44e3"
+  },
+  "baseline_prompt_hashes": {
+    "documentation.txt": "39ebb023aa9696ae1e938ec30b6b3d26b322e9b914ebec834901d32811456db0",
+    "baseline.txt": "bb29f8b1c339b20139565da145229845face272bd6032c61a4ca4dfc01605b47"
+  },
+  "executor_sha256": "64bb18ecbfecf2fd623d8fd10e616a1f816bbf529feeec5749f554ac7d4ed81a",
+  "interpreter_sha256": "d5606e6fe0c23c8e0619dafcb4f8cda5b07d30a7a967df652d73bcf1f9ac2fde",
+  "primary_records": 360,
+  "repeat_records": 12,
+  "all_scores_recomputed": true,
+  "all_B_tables_reconciled": true,
+  "all_C_lineage_reconciled": true,
+  "status_of_evidence": {
+    "real": "teste principal, desenvolvimento e diagnostico de contexto do gateway",
+    "synthetic": "testes unitarios/mocks; excluidos das metricas cientificas",
+    "pending": [
+      "verdade de campo e acuracia tematica",
+      "revisao oficial do espelho",
+      "edicao e licenca da malha territorial",
+      "revisao humana do benchmark",
+      "revisao dos pesos do modelo",
+      "ranking positivo completo RN",
+      "autoria/afiliacoes e licencas do codigo/benchmark"
+    ]
+  }
+}

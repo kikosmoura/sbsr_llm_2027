@@ -1,0 +1,150 @@
+{
+  "$defs": {
+    "Materialization": {
+      "additionalProperties": false,
+      "properties": {
+        "territory_code": {
+          "pattern": "^(?:[0-9]{2}|[0-9]{7})$",
+          "title": "Territory Code",
+          "type": "string"
+        },
+        "years": {
+          "items": {
+            "type": "integer"
+          },
+          "maxItems": 2,
+          "minItems": 1,
+          "title": "Years",
+          "type": "array"
+        },
+        "class_codes": {
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 1,
+          "title": "Class Codes",
+          "type": "array"
+        },
+        "complete": {
+          "title": "Complete",
+          "type": "boolean"
+        },
+        "common_support_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Common Support Id"
+        },
+        "run_id": {
+          "title": "Run Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "territory_code",
+        "years",
+        "class_codes",
+        "complete",
+        "run_id"
+      ],
+      "title": "Materialization",
+      "type": "object"
+    },
+    "Operation": {
+      "enum": [
+        "area",
+        "participacao",
+        "comparacao_temporal",
+        "serie_disponivel",
+        "comparacao_territorial",
+        "ranking_delimitado"
+      ],
+      "title": "Operation",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "capacidades-semantica-v1",
+      "default": "capacidades-semantica-v1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "created_at": {
+      "format": "date-time",
+      "title": "Created At",
+      "type": "string"
+    },
+    "class_catalog_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "title": "Class Catalog Sha256",
+      "type": "string"
+    },
+    "territory_catalog_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "title": "Territory Catalog Sha256",
+      "type": "string"
+    },
+    "diagnostic_sha256": {
+      "anyOf": [
+        {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Diagnostic Sha256"
+    },
+    "available_raster_years": {
+      "items": {
+        "type": "integer"
+      },
+      "title": "Available Raster Years",
+      "type": "array"
+    },
+    "supported_operations": {
+      "items": {
+        "$ref": "#/$defs/Operation"
+      },
+      "title": "Supported Operations",
+      "type": "array"
+    },
+    "materializations": {
+      "items": {
+        "$ref": "#/$defs/Materialization"
+      },
+      "title": "Materializations",
+      "type": "array"
+    },
+    "engine_ready": {
+      "default": false,
+      "title": "Engine Ready",
+      "type": "boolean"
+    },
+    "observed_samples": {
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Observed Samples",
+      "type": "array"
+    }
+  },
+  "required": [
+    "class_catalog_sha256",
+    "territory_catalog_sha256",
+    "available_raster_years"
+  ],
+  "title": "Capabilities",
+  "type": "object"
+}

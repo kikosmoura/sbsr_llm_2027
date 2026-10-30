@@ -1,0 +1,113 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "fa7686659da9449d811d154641021724",
+  "case_id": "t22_1",
+  "family_id": "teste_serie",
+  "territory_codes": [
+    "2402303"
+  ],
+  "condition": "B",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:51:44.368290+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Liste a série de área de Formação Florestal em Caraúbas/RN em hectares, limitada aos anos 2015 e 2025.",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": "b8ca88b124b7da40b362e5f2015fd8026babb0c65962855f5e96dec089d2bf25",
+  "messages_sha256": "3d9dc96536392bfa0b635ec720cf0b326960ce068174b238e7130aa869345cf6",
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "erro_tecnico",
+    "plan": null,
+    "values": [],
+    "clarification_field": null,
+    "reason": "saida_invalida_apos_reparo"
+  },
+  "final_answer": "{\"status\": \"erro_tecnico\", \"plan\": null, \"values\": [], \"clarification_field\": null, \"reason\": \"saida_invalida_apos_reparo\"}",
+  "plan": null,
+  "result": [],
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "messages_sha256": "3d9dc96536392bfa0b635ec720cf0b326960ce068174b238e7130aa869345cf6",
+      "issues": [
+        {
+          "path": [],
+          "code": "value_error"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 5787,
+        "total_tokens": 6568,
+        "completion_tokens": 781
+      },
+      "latency_seconds": 7.102917592041194,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "bc20e4353a036f78f97f54a4b4138acece2d7a290cadd3d7867ebb437589d4f6",
+      "output_chars": 459,
+      "state": "invalida"
+    },
+    {
+      "number": 2,
+      "kind": "reparo",
+      "messages_sha256": "c61d9607e744b7fea9c31eae26380b6377f68e0106a1da2f475166f373ec25a2",
+      "issues": [
+        {
+          "path": [],
+          "code": "value_error"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 5822,
+        "total_tokens": 6506,
+        "completion_tokens": 684
+      },
+      "latency_seconds": 9.495270273997448,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "2a1728453f3d0f48851c3a0d8d052c2a8b1741658d402bb0b349826e5f6a20f4",
+      "output_chars": 523,
+      "state": "invalida"
+    }
+  ],
+  "latency_seconds": 16.60134241497144,
+  "scores": {
+    "status": false,
+    "plan": null,
+    "values": null,
+    "clarification": null,
+    "correct": false
+  },
+  "cost": null,
+  "source_context": {
+    "data_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+  },
+  "C_session_id": null,
+  "C_turn_id": null,
+  "C_candidate_intent": null,
+  "C_decision": null
+}

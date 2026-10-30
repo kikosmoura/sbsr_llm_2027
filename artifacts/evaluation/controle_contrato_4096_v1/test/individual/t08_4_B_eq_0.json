@@ -1,0 +1,152 @@
+{
+  "schema_version": "controle-contrato-caso-v1",
+  "run_id": "aa224a7d26124a8dbfa4042e50621cc7",
+  "case_id": "t08_4",
+  "family_id": "teste_participacao",
+  "territory_codes": [
+    "2406106"
+  ],
+  "condition": "B_eq",
+  "repeat": 0,
+  "integration_kind": "gateway_real",
+  "created_at": "2026-10-21T14:59:18.011248+00:00",
+  "freeze_sha256": "55593ae2e52cbd2890ddce5bfed4183977a20b43a9c95123ba43f53e2b1332f0",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 4096,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "native_tools": false,
+    "native_response_format": false,
+    "workers": 3
+  },
+  "question": "Qual participação, em percentual da área observada, corresponde a Pastagem em Jucurutu/RN no ano 2015?",
+  "fixed_plan": {
+    "operation": "participacao",
+    "metric": "participacao",
+    "unit": "percentual",
+    "territory_codes": [
+      "2406106"
+    ],
+    "scope_uf": "RN",
+    "class_codes": [
+      15
+    ],
+    "years": [
+      2015
+    ],
+    "denominator": "area_observada",
+    "direction": "desc",
+    "limit": null
+  },
+  "common_input_sha256": "d2d849bcdc4c6e19599d11d211ac5a20205ad8e4e998bd0987f84e38db950a20",
+  "output_contract_sha256": "7cb672668bdaf0cb31f785651d91ec6475f990de121edab04b748bd0da63c955",
+  "system_sha256": "2805f7312e5288c2499d8bc4b6fd55f3a0adc3b8d5ea53aab2533894c62b290d",
+  "messages_sha256": "0a8b8737eddaf6fd1fe09864d561eb4d155f42de2b620702768b551a7bd32ce0",
+  "execution_observations": [],
+  "executor_result": null,
+  "observed": {
+    "status": "respondida",
+    "values": [
+      {
+        "territory_code": "2406106",
+        "years": [
+          2015
+        ],
+        "value": 27.10558164,
+        "unit": "percentual",
+        "undefined_reason": null,
+        "denominators_ha": [
+          93373.18962317286
+        ],
+        "rank": null
+      }
+    ],
+    "reason": "consulta_executada",
+    "plan": {
+      "operation": "participacao",
+      "metric": "participacao",
+      "unit": "percentual",
+      "territory_codes": [
+        "2406106"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2015
+      ],
+      "denominator": "area_observada",
+      "direction": "desc",
+      "limit": null
+    },
+    "clarification_field": null
+  },
+  "final_answer": "{\"reason\":\"consulta_executada\",\"status\":\"respondida\",\"values\":[{\"denominators_ha\":[93373.18962317286],\"rank\":null,\"territory_code\":\"2406106\",\"undefined_reason\":null,\"unit\":\"percentual\",\"value\":27.10558164,\"years\":[2015]}]}",
+  "attempts": [
+    {
+      "number": 1,
+      "messages_sha256": "0a8b8737eddaf6fd1fe09864d561eb4d155f42de2b620702768b551a7bd32ce0",
+      "usage": {
+        "prompt_tokens": 5485,
+        "total_tokens": 8119,
+        "completion_tokens": 2634
+      },
+      "issues": [],
+      "latency_seconds": 23.169247183948755,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "9e8bcef28836f2f5584cc0663f747297b1af7194ad237b27ede0ff999477e0bf",
+      "output_chars": 304,
+      "state": "valida"
+    }
+  ],
+  "latency_seconds": 23.17273958399892,
+  "model_seconds": 23.169685238040984,
+  "http_events": [
+    {
+      "endpoint": "oauth",
+      "http_status": 200,
+      "bytes_read": 91,
+      "body_complete": true,
+      "response_metadata": null,
+      "elapsed_seconds": 0.19559721206314862
+    },
+    {
+      "endpoint": "chat",
+      "http_status": 200,
+      "bytes_read": 7939,
+      "body_complete": true,
+      "response_metadata": {
+        "json_object": true,
+        "choices_count": 1,
+        "finish_reason": "stop",
+        "content_state": "texto",
+        "final_content_chars": 304,
+        "reasoning_field_present": true,
+        "usage": {
+          "prompt_tokens": 5485,
+          "total_tokens": 8119,
+          "completion_tokens": 2634
+        },
+        "reasoning_tokens": null
+      },
+      "elapsed_seconds": 22.9735976010561
+    }
+  ],
+  "executor_seconds": 0,
+  "scores": {
+    "status": true,
+    "plan": true,
+    "values": true,
+    "clarification": null,
+    "correct": true
+  },
+  "cost": null,
+  "source_geo_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+}

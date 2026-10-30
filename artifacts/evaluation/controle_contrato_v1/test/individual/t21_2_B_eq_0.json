@@ -1,0 +1,132 @@
+{
+  "schema_version": "controle-contrato-caso-v1",
+  "run_id": "7dfe5ecbd3944e4dbde409763d23cbf3",
+  "case_id": "t21_2",
+  "family_id": "teste_serie",
+  "territory_codes": [
+    "2401453"
+  ],
+  "condition": "B_eq",
+  "repeat": 0,
+  "integration_kind": "gateway_real",
+  "created_at": "2026-10-21T13:42:32.825907+00:00",
+  "freeze_sha256": "784d7e714d514197d4d07f3c82a000724b1671a64295a13616e6b9c6134beb2c",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "native_tools": false,
+    "native_response_format": false,
+    "workers": 3
+  },
+  "question": "Quero uma série com apenas 2015 e 2025: área de Pastagem em Baraúna/RN, em ha.",
+  "fixed_plan": {
+    "operation": "serie_disponivel",
+    "metric": "area",
+    "unit": "ha",
+    "territory_codes": [
+      "2401453"
+    ],
+    "scope_uf": "RN",
+    "class_codes": [
+      15
+    ],
+    "years": [
+      2015,
+      2025
+    ],
+    "denominator": null,
+    "direction": "desc",
+    "limit": null
+  },
+  "common_input_sha256": "17ff98d8dd465364b99292e3a94b47c1b4a3d8af2d0709b038a34b2a5f2dc835",
+  "output_contract_sha256": "7cb672668bdaf0cb31f785651d91ec6475f990de121edab04b748bd0da63c955",
+  "system_sha256": "2805f7312e5288c2499d8bc4b6fd55f3a0adc3b8d5ea53aab2533894c62b290d",
+  "messages_sha256": "2999e03f6e098e24a485f9423c70bb2ff5dd85877ccffa2144a7ef9c49f9e29a",
+  "execution_observations": [],
+  "executor_result": null,
+  "observed": {
+    "status": "respondida",
+    "values": [
+      {
+        "territory_code": "2401453",
+        "years": [
+          2015
+        ],
+        "value": 4422.801997864103,
+        "unit": "ha",
+        "undefined_reason": null,
+        "denominators_ha": [],
+        "rank": null
+      },
+      {
+        "territory_code": "2401453",
+        "years": [
+          2025
+        ],
+        "value": 4474.79391183788,
+        "unit": "ha",
+        "undefined_reason": null,
+        "denominators_ha": [],
+        "rank": null
+      }
+    ],
+    "reason": "consulta_executada",
+    "plan": {
+      "operation": "serie_disponivel",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2401453"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "clarification_field": null
+  },
+  "final_answer": "{\"reason\":\"consulta_executada\",\"status\":\"respondida\",\"values\":[{\"denominators_ha\":[],\"rank\":null,\"territory_code\":\"2401453\",\"undefined_reason\":null,\"unit\":\"ha\",\"value\":4422.801997864103,\"years\":[2015]},{\"denominators_ha\":[],\"rank\":null,\"territory_code\":\"2401453\",\"undefined_reason\":null,\"unit\":\"ha\",\"value\":4474.79391183788,\"years\":[2025]}]}",
+  "attempts": [
+    {
+      "number": 1,
+      "messages_sha256": "2999e03f6e098e24a485f9423c70bb2ff5dd85877ccffa2144a7ef9c49f9e29a",
+      "usage": {
+        "prompt_tokens": 5545,
+        "total_tokens": 6188,
+        "completion_tokens": 643
+      },
+      "issues": [],
+      "latency_seconds": 5.71626884303987,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "9381ef05c919f2d5b78b623581b8de78369e310cc3b30aa346f94651b063a45b",
+      "output_chars": 343,
+      "state": "valida"
+    }
+  ],
+  "latency_seconds": 5.721198881976306,
+  "model_seconds": 5.716790714999661,
+  "executor_seconds": 0,
+  "scores": {
+    "status": true,
+    "plan": true,
+    "values": true,
+    "clarification": null,
+    "correct": true
+  },
+  "cost": null,
+  "source_geo_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+}

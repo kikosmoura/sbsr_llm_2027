@@ -1,0 +1,125 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "9f9225242f404ef29eefe630dd614d0b",
+  "case_id": "d07_1",
+  "family_id": "d07",
+  "territory_codes": [
+    "2411205",
+    "2513208",
+    "2612455"
+  ],
+  "condition": "C",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:34:48.439300+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Qual a área de Pastagem em Santa Cruz em 2015, em ha?",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": null,
+  "messages_sha256": null,
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "precisa_esclarecimento",
+    "plan": null,
+    "values": [],
+    "clarification_field": "territorio",
+    "reason": "territorio_homonimo"
+  },
+  "final_answer": "Qual território? Informe código IBGE ou nome e UF, escolhendo um dos candidatos quando houver.",
+  "plan": null,
+  "result": null,
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "state": "precisa_esclarecimento",
+      "latency_seconds": 8.00563394301571,
+      "usage": {
+        "prompt_tokens": 4676,
+        "total_tokens": 5561,
+        "completion_tokens": 885
+      },
+      "chat_requests": 1,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "output_sha256": "d618e744b9e417c73e5f36a4bea0c5ed55e7bf0ea3ef2c7606871b3e45041d63",
+      "output_chars": 548,
+      "candidate": {
+        "action": "esclarecer",
+        "intent": {
+          "operation": "area",
+          "territories": [
+            {
+              "mention": "santa cruz",
+              "uf_mention": null,
+              "kind": null
+            }
+          ],
+          "scope_uf_mention": null,
+          "classes": [
+            {
+              "mention": "pastagem"
+            }
+          ],
+          "years": [
+            2015
+          ],
+          "metric": "area",
+          "metric_mention": "área",
+          "unit_mention": "ha",
+          "denominator": null,
+          "direction": null,
+          "limit": null
+        },
+        "clarification_fields": [
+          "territorio"
+        ]
+      },
+      "issues": [],
+      "gateway_error": null,
+      "http_status": null,
+      "messages_sha256": "84233cf1e3df6333f9ea5ee0beac77fc51eddf7f970383b43e5e6ac5f001b91e",
+      "explanation_fallback": null
+    }
+  ],
+  "latency_seconds": 8.076666590990499,
+  "scores": {
+    "status": true,
+    "plan": null,
+    "values": null,
+    "clarification": true,
+    "correct": true
+  },
+  "cost": null,
+  "source_context": {
+    "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+    "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+    "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+    "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+  },
+  "C_session_id": "35affdb44f47457fae2378c041c6dcea",
+  "C_turn_id": "4d0b2ddf5c3847d6b7536404d895d208",
+  "C_candidate_intent": null,
+  "C_decision": null
+}

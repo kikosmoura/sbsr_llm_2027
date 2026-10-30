@@ -1,0 +1,144 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "9f9225242f404ef29eefe630dd614d0b",
+  "case_id": "d01_1",
+  "family_id": "d01",
+  "territory_codes": [
+    "2410900"
+  ],
+  "condition": "B",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:34:14.114034+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Qual era a área de Pastagem em Riachuelo/RN em 2015, em hectares?",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": "e236dae528ec624ff864ca78c3158a4e592a1c238623f8f8e385a1e090586138",
+  "messages_sha256": "e25a2da5bc9e8a7df5518ed6b8b3029cbdbaccb16f1c14b5aea5b85bea59ea98",
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "respondida",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2410900"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2015
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2410900",
+        "years": [
+          2015
+        ],
+        "value": 8684.038153762798,
+        "unit": "ha",
+        "undefined_reason": null,
+        "denominators_ha": [],
+        "rank": null
+      }
+    ],
+    "clarification_field": null,
+    "reason": "area_obtida"
+  },
+  "final_answer": "{\"status\": \"respondida\", \"plan\": {\"operation\": \"area\", \"metric\": \"area\", \"unit\": \"ha\", \"territory_codes\": [\"2410900\"], \"scope_uf\": \"RN\", \"class_codes\": [15], \"years\": [2015], \"denominator\": null, \"direction\": \"desc\", \"limit\": null}, \"values\": [{\"territory_code\": \"2410900\", \"years\": [2015], \"value\": 8684.038153762798, \"unit\": \"ha\", \"undefined_reason\": null, \"denominators_ha\": [], \"rank\": null}], \"clarification_field\": null, \"reason\": \"area_obtida\"}",
+  "plan": {
+    "operation": "area",
+    "metric": "area",
+    "unit": "ha",
+    "territory_codes": [
+      "2410900"
+    ],
+    "scope_uf": "RN",
+    "class_codes": [
+      15
+    ],
+    "years": [
+      2015
+    ],
+    "denominator": null,
+    "direction": "desc",
+    "limit": null
+  },
+  "result": [
+    {
+      "territory_code": "2410900",
+      "years": [
+        2015
+      ],
+      "value": 8684.038153762798,
+      "unit": "ha",
+      "undefined_reason": null,
+      "denominators_ha": [],
+      "rank": null
+    }
+  ],
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "messages_sha256": "e25a2da5bc9e8a7df5518ed6b8b3029cbdbaccb16f1c14b5aea5b85bea59ea98",
+      "issues": [],
+      "usage": {
+        "prompt_tokens": 5730,
+        "total_tokens": 6582,
+        "completion_tokens": 852
+      },
+      "latency_seconds": 9.321416680933908,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "f34b39737763b48ae69930b3da59ef2767a13798d7697d2221d8e8b07c35f269",
+      "output_chars": 532,
+      "state": "valida"
+    }
+  ],
+  "latency_seconds": 9.327617094037123,
+  "scores": {
+    "status": true,
+    "plan": true,
+    "values": true,
+    "clarification": null,
+    "correct": true
+  },
+  "cost": null,
+  "source_context": {
+    "data_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+  },
+  "C_session_id": null,
+  "C_turn_id": null,
+  "C_candidate_intent": null,
+  "C_decision": null
+}

@@ -1,0 +1,309 @@
+{
+  "$defs": {
+    "ClassCandidate": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "title": "Code",
+          "type": "integer"
+        },
+        "kind": {
+          "enum": [
+            "grupo",
+            "classe_folha"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "code",
+        "name",
+        "kind"
+      ],
+      "title": "ClassCandidate",
+      "type": "object"
+    },
+    "Metric": {
+      "enum": [
+        "area",
+        "participacao",
+        "diferenca_liquida",
+        "reducao_liquida",
+        "variacao_percentual",
+        "diferenca_pontos_percentuais"
+      ],
+      "title": "Metric",
+      "type": "string"
+    },
+    "Operation": {
+      "enum": [
+        "area",
+        "participacao",
+        "comparacao_temporal",
+        "serie_disponivel",
+        "comparacao_territorial",
+        "ranking_delimitado"
+      ],
+      "title": "Operation",
+      "type": "string"
+    },
+    "QueryPlan": {
+      "additionalProperties": false,
+      "properties": {
+        "class_codes": {
+          "items": {
+            "type": "integer"
+          },
+          "maxItems": 41,
+          "minItems": 1,
+          "title": "Class Codes",
+          "type": "array"
+        },
+        "denominator": {
+          "anyOf": [
+            {
+              "enum": [
+                "area_observada",
+                "area_inicial",
+                "participacao_por_ano"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Denominator"
+        },
+        "direction": {
+          "default": "desc",
+          "enum": [
+            "asc",
+            "desc"
+          ],
+          "title": "Direction",
+          "type": "string"
+        },
+        "limit": {
+          "anyOf": [
+            {
+              "maximum": 100,
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Limit"
+        },
+        "metric": {
+          "$ref": "#/$defs/Metric"
+        },
+        "operation": {
+          "$ref": "#/$defs/Operation"
+        },
+        "scope_uf": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Z]{2}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Scope Uf"
+        },
+        "territory_codes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Territory Codes",
+          "type": "array"
+        },
+        "unit": {
+          "$ref": "#/$defs/Unit"
+        },
+        "years": {
+          "items": {
+            "type": "integer"
+          },
+          "maxItems": 11,
+          "minItems": 1,
+          "title": "Years",
+          "type": "array"
+        }
+      },
+      "required": [
+        "operation",
+        "metric",
+        "unit",
+        "class_codes",
+        "years"
+      ],
+      "title": "QueryPlan",
+      "type": "object"
+    },
+    "TerritoryCandidate": {
+      "additionalProperties": false,
+      "properties": {
+        "alias_notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Alias Notes",
+          "type": "array"
+        },
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "municipio",
+            "uf"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "name_original": {
+          "title": "Name Original",
+          "type": "string"
+        },
+        "uf": {
+          "title": "Uf",
+          "type": "string"
+        }
+      },
+      "required": [
+        "code",
+        "name_original",
+        "kind",
+        "uf",
+        "alias_notes"
+      ],
+      "title": "TerritoryCandidate",
+      "type": "object"
+    },
+    "Unit": {
+      "enum": [
+        "ha",
+        "km2",
+        "m2",
+        "percentual",
+        "pontos_percentuais"
+      ],
+      "title": "Unit",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "capabilities_sha256": {
+      "anyOf": [
+        {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Capabilities Sha256"
+    },
+    "class_candidates": {
+      "items": {
+        "$ref": "#/$defs/ClassCandidate"
+      },
+      "title": "Class Candidates",
+      "type": "array"
+    },
+    "class_catalog_sha256": {
+      "anyOf": [
+        {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Class Catalog Sha256"
+    },
+    "message": {
+      "title": "Message",
+      "type": "string"
+    },
+    "normalized_plan": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/QueryPlan"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "notes": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Notes",
+      "type": "array"
+    },
+    "reason": {
+      "title": "Reason",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "plano_validado",
+        "precisa_esclarecimento",
+        "fora_do_escopo",
+        "dados_indisponiveis",
+        "erro_tecnico"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "territory_candidates": {
+      "items": {
+        "$ref": "#/$defs/TerritoryCandidate"
+      },
+      "title": "Territory Candidates",
+      "type": "array"
+    },
+    "territory_catalog_sha256": {
+      "anyOf": [
+        {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Territory Catalog Sha256"
+    }
+  },
+  "required": [
+    "status",
+    "reason",
+    "message"
+  ],
+  "title": "SemanticDecision",
+  "type": "object"
+}

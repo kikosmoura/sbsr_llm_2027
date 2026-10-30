@@ -1,0 +1,3 @@
+condition,original_cases,original_technical_errors,nontechnical_cases,correct,accuracy_conditional_on_own_success,numeric_semantics_assessable,isolated_numeric_errors
+B,120,62,58,49,0.8448275862068966,26,0
+C,120,7,113,104,0.9203539823008849,73,0

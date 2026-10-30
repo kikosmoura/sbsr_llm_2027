@@ -1,0 +1,25 @@
+{
+  "created_at": "2026-10-19T20:36:54.719399+00:00",
+  "test_started": false,
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "upstream_metadata_sha256": {
+    "data/territories_v1.json": "a2a44be7b5959733a487c784df0470b888f391f1a5848b2bffac638c6543305c",
+    "data/capabilities_stage3.json": "7bf7b1c78691e28e38ca9f908de3a8dd3fa6f3a04f78a83bd5e36dcf371ba644",
+    "configs/project.json": "3c84e96083ed502c76e852a5d9df3b61ae1b90e8f534328b3aef0a0bbaa3dae5",
+    "configs/evaluation.json": "6922758ebe85c5409306e5910b69bbfd6c1e99a86cc22921550f99c6c8704dd3"
+  },
+  "executor_sha256": "64bb18ecbfecf2fd623d8fd10e616a1f816bbf529feeec5749f554ac7d4ed81a",
+  "interpreter_sha256": "d5606e6fe0c23c8e0619dafcb4f8cda5b07d30a7a967df652d73bcf1f9ac2fde",
+  "test_cases": 120,
+  "test_groups": 15,
+  "replicas": 10000,
+  "seed": 20271019,
+  "planned_repeats": [
+    "t01_1",
+    "t15_1",
+    "t25_1",
+    "t28_1"
+  ],
+  "development_only_environment_correction": "Substituidos symlinks por copias locais identicas dos Parquets. Prompts, benchmark e codigo de producao preservados.",
+  "test_tuning": "nenhum; proibido alterar prompts/sistema pelos resultados de teste"
+}

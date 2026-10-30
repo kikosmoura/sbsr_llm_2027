@@ -1,0 +1,150 @@
+{
+  "schema_version": "controle-contrato-caso-v1",
+  "run_id": "aa224a7d26124a8dbfa4042e50621cc7",
+  "case_id": "t01_2",
+  "family_id": "teste_area_direta",
+  "territory_codes": [
+    "2400109"
+  ],
+  "condition": "B_eq",
+  "repeat": 0,
+  "integration_kind": "gateway_real",
+  "created_at": "2026-10-21T14:56:33.510136+00:00",
+  "freeze_sha256": "55593ae2e52cbd2890ddce5bfed4183977a20b43a9c95123ba43f53e2b1332f0",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 4096,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "native_tools": false,
+    "native_response_format": false,
+    "workers": 3
+  },
+  "question": "Dê a extensão de Formação Florestal em Acari/RN, ano 2015, como área em ha.",
+  "fixed_plan": {
+    "operation": "area",
+    "metric": "area",
+    "unit": "ha",
+    "territory_codes": [
+      "2400109"
+    ],
+    "scope_uf": "RN",
+    "class_codes": [
+      3
+    ],
+    "years": [
+      2015
+    ],
+    "denominator": null,
+    "direction": "desc",
+    "limit": null
+  },
+  "common_input_sha256": "8be82c28d574ffc807e8e8a1c07132aadfe66af914e83d7fd71ba3a47d057879",
+  "output_contract_sha256": "7cb672668bdaf0cb31f785651d91ec6475f990de121edab04b748bd0da63c955",
+  "system_sha256": "2805f7312e5288c2499d8bc4b6fd55f3a0adc3b8d5ea53aab2533894c62b290d",
+  "messages_sha256": "d94ff1c6b520c68a474b15c9b3114450937151c6f44bcf3a6438e61a272ffb71",
+  "execution_observations": [],
+  "executor_result": null,
+  "observed": {
+    "status": "respondida",
+    "values": [
+      {
+        "territory_code": "2400109",
+        "years": [
+          2015
+        ],
+        "value": 14.69290777929301,
+        "unit": "ha",
+        "undefined_reason": null,
+        "denominators_ha": [],
+        "rank": null
+      }
+    ],
+    "reason": "consulta_executada",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2400109"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2015
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "clarification_field": null
+  },
+  "final_answer": "{\"reason\":\"consulta_executada\",\"status\":\"respondida\",\"values\":[{\"denominators_ha\":[],\"rank\":null,\"territory_code\":\"2400109\",\"undefined_reason\":null,\"unit\":\"ha\",\"value\":14.69290777929301,\"years\":[2015]}]}",
+  "attempts": [
+    {
+      "number": 1,
+      "messages_sha256": "d94ff1c6b520c68a474b15c9b3114450937151c6f44bcf3a6438e61a272ffb71",
+      "usage": {
+        "prompt_tokens": 5461,
+        "total_tokens": 5959,
+        "completion_tokens": 498
+      },
+      "issues": [],
+      "latency_seconds": 4.7908577339258045,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "7adae7804580504d4f4b04c5f3abde7c6004f31b7d647d6fed1fd90f9a10446a",
+      "output_chars": 203,
+      "state": "valida"
+    }
+  ],
+  "latency_seconds": 4.794493140070699,
+  "model_seconds": 4.791278698947281,
+  "http_events": [
+    {
+      "endpoint": "oauth",
+      "http_status": 200,
+      "bytes_read": 91,
+      "body_complete": true,
+      "response_metadata": null,
+      "elapsed_seconds": 0.19619828998111188
+    },
+    {
+      "endpoint": "chat",
+      "http_status": 200,
+      "bytes_read": 2554,
+      "body_complete": true,
+      "response_metadata": {
+        "json_object": true,
+        "choices_count": 1,
+        "finish_reason": "stop",
+        "content_state": "texto",
+        "final_content_chars": 203,
+        "reasoning_field_present": true,
+        "usage": {
+          "prompt_tokens": 5461,
+          "total_tokens": 5959,
+          "completion_tokens": 498
+        },
+        "reasoning_tokens": null
+      },
+      "elapsed_seconds": 4.594591239001602
+    }
+  ],
+  "executor_seconds": 0,
+  "scores": {
+    "status": true,
+    "plan": true,
+    "values": true,
+    "clarification": null,
+    "correct": true
+  },
+  "cost": null,
+  "source_geo_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+}

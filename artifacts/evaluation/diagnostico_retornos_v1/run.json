@@ -1,0 +1,293 @@
+{
+  "run_id": "c0552f63a2ca4607a82fd1716b7fe84b",
+  "created_at": "2026-10-21T14:12:17.032731+00:00",
+  "freeze_sha256": "7aae0db1b42a873ee4cee79f410ec2e011f5c1cebeece707bcb725008c63bbfe",
+  "state": "concluida",
+  "integration_kind": "gateway_real",
+  "tasks": [
+    [
+      "t08_3",
+      4096
+    ],
+    [
+      "t20_1",
+      4096
+    ],
+    [
+      "t16_1",
+      4096
+    ],
+    [
+      "t17_1",
+      4096
+    ],
+    [
+      "t17_4",
+      4096
+    ],
+    [
+      "t01_1",
+      4096
+    ],
+    [
+      "t20_3",
+      4096
+    ],
+    [
+      "t16_1",
+      2048
+    ],
+    [
+      "t17_2",
+      2048
+    ],
+    [
+      "t19_3",
+      2048
+    ],
+    [
+      "t19_4",
+      2048
+    ],
+    [
+      "t07_1",
+      2048
+    ],
+    [
+      "t08_1",
+      4096
+    ],
+    [
+      "t17_2",
+      4096
+    ],
+    [
+      "t20_2",
+      2048
+    ],
+    [
+      "t07_1",
+      4096
+    ],
+    [
+      "t08_1",
+      2048
+    ],
+    [
+      "t20_1",
+      2048
+    ],
+    [
+      "t16_2",
+      2048
+    ],
+    [
+      "t16_4",
+      2048
+    ],
+    [
+      "t08_4",
+      4096
+    ],
+    [
+      "t15_4",
+      2048
+    ],
+    [
+      "t07_4",
+      2048
+    ],
+    [
+      "t07_2",
+      2048
+    ],
+    [
+      "t15_3",
+      4096
+    ],
+    [
+      "t19_2",
+      2048
+    ],
+    [
+      "t08_2",
+      2048
+    ],
+    [
+      "t20_4",
+      4096
+    ],
+    [
+      "t07_3",
+      2048
+    ],
+    [
+      "t15_3",
+      2048
+    ],
+    [
+      "t07_4",
+      4096
+    ],
+    [
+      "t17_3",
+      4096
+    ],
+    [
+      "t01_1",
+      2048
+    ],
+    [
+      "t19_1",
+      4096
+    ],
+    [
+      "t15_4",
+      4096
+    ],
+    [
+      "t08_2",
+      4096
+    ],
+    [
+      "t08_3",
+      2048
+    ],
+    [
+      "t20_3",
+      2048
+    ],
+    [
+      "t20_4",
+      2048
+    ],
+    [
+      "t20_2",
+      4096
+    ],
+    [
+      "t07_3",
+      4096
+    ],
+    [
+      "t08_4",
+      2048
+    ],
+    [
+      "t19_4",
+      4096
+    ],
+    [
+      "t17_4",
+      2048
+    ],
+    [
+      "t07_2",
+      4096
+    ],
+    [
+      "t16_3",
+      2048
+    ],
+    [
+      "t19_2",
+      4096
+    ],
+    [
+      "t19_3",
+      4096
+    ],
+    [
+      "t19_1",
+      2048
+    ],
+    [
+      "t15_2",
+      2048
+    ],
+    [
+      "t16_4",
+      4096
+    ],
+    [
+      "t17_3",
+      2048
+    ],
+    [
+      "t16_3",
+      4096
+    ],
+    [
+      "t15_2",
+      4096
+    ],
+    [
+      "t17_1",
+      2048
+    ],
+    [
+      "t16_2",
+      4096
+    ]
+  ],
+  "model": "MODEL_ID",
+  "completed_at": "2026-10-21T14:19:45.306427+00:00",
+  "individual_hashes": {
+    "t01_1_2048.json": "dec7ab35eed0aba6918911169575e64596e1e8dc22c98af757841cc48b0d52cb",
+    "t01_1_4096.json": "050e1e855bce2d2850ddf9968b5658ca3e698d92bc5859e10a0387f78af1224f",
+    "t07_1_2048.json": "7b89595c1ab617dc327d4de51d635bc02b9baa945fcaad4bce8294f0f02acd90",
+    "t07_1_4096.json": "8ed483bae930f05718d4934f6502e184eec54fd6dbed3284acd8b29554f182b4",
+    "t07_2_2048.json": "6648399f14f2330e124e29c64eddad3ab9ff2ff45b498cfb74f3e9662f016bb7",
+    "t07_2_4096.json": "3b2974cfeec9df19f1c52a54b9393445e4e9596fe42ab95354e79c9b3b05358a",
+    "t07_3_2048.json": "f0f33365bbceaaea1440a2bdda94d561ef86a5e2238e7b758d5df6d05f7c5583",
+    "t07_3_4096.json": "a527671610ebbb61b48634620e83da90c2d1c19043744ad08c1f3426b908db17",
+    "t07_4_2048.json": "f98f334a9f40c96de1dba674b59d0f8ce7fc10b197101c5244d4124073926c8b",
+    "t07_4_4096.json": "ed6d1d4b6fc1a3ddcd5d6c230af06399d9fbff14873a8872f70be68930c88710",
+    "t08_1_2048.json": "2a1c55ebb111c53482fd8d35121c8fa355e57bfeccc89013e2ebffdeca419af2",
+    "t08_1_4096.json": "d44d65fe71ba3ebaec27b215a3521aec5a03005834b5ced4f74ddbb75d7c7dc1",
+    "t08_2_2048.json": "47b858d8eefdd093b714d5702636368a0867879f0a7a2a6d3b68f170a329d7ce",
+    "t08_2_4096.json": "d9a6edddeac482c7a06d923ac72d9d5cf06d481e83f5c4046db531987495dcd4",
+    "t08_3_2048.json": "02738dc8e0fcea8ac36b99d160b1d1a4e93b458fca8d3456d30b31d880bfd834",
+    "t08_3_4096.json": "0a67898521974fe82d5bd21e3326ea5026bdffa326f1c64f12b40243e39b8058",
+    "t08_4_2048.json": "2971c6250d09e2853d06d28a774ec0c9a141cbe8c2583548e9f968ac0a8dac00",
+    "t08_4_4096.json": "4393bdd3ce1d4c1a710edbdf5d2597a1f508599932bea62e6cbe9d5cffe1602e",
+    "t15_2_2048.json": "90caa8dda61d01e3567eb939501167a1d35aefcd9c7d4c969abf8a7e67c4e764",
+    "t15_2_4096.json": "000a41377b18bda2d35f3043a6171e59c54ecc2a8b1cb3f68bfca00397bd3727",
+    "t15_3_2048.json": "e1bc5d86e82fa5668bc71c92c0b2fcff0699e542f607ccb9fa60d9bf8fdc9c6d",
+    "t15_3_4096.json": "3a9ebea0c38645aceb6fba5468c176b832cbdcccdb25f1aa8c8f4325b36131a8",
+    "t15_4_2048.json": "81735963b7a71b2e368698a5b7b1198f8ef4b0015dffaeae3d5b146d57949be3",
+    "t15_4_4096.json": "b54d959edf99d4a16bf20548f6b3dcafb6a3b0054e547421e4867ca2abe8ab2a",
+    "t16_1_2048.json": "ed44f18b1e6bfbed0d39a6e1c113530611bc32c57dbff31a273a2a845c25552f",
+    "t16_1_4096.json": "2a555b5690d37ac594328d47ecfc951e7ecc071f6ffed6b919c1188a93e8b5d8",
+    "t16_2_2048.json": "e65931a20da7cdafb709d895a81ccb0bf3c096b72f6dc86caff9f72078456be5",
+    "t16_2_4096.json": "67af572f3153e4afa2dcb592fab445e3e95c9e58568d199fa911ae1354f0a703",
+    "t16_3_2048.json": "e46599aee36e18a7f7ebbcf853a133d6c522c83df8a7a38be844a2bfd4079806",
+    "t16_3_4096.json": "2bad5cfe813482c462013424d33617485cd00bf89cd684a7d060bb2215d7b503",
+    "t16_4_2048.json": "981e519e775928bee55628dcca23bdcd3bf2eeb0459f2c5a14165f4f5e30088b",
+    "t16_4_4096.json": "78bdd9909b89b199d97f1d4c8091c9c92f379c2e28054378c9f0e1709168d71b",
+    "t17_1_2048.json": "77571323fc6bcbc05ee6453257e3e224868f4a0fb04709ffb6f20d382c881159",
+    "t17_1_4096.json": "20dd653db7bb9923da7cfd7e850df421aeb5dfd05eb30922ed0554c2552bf6d9",
+    "t17_2_2048.json": "9ece4356d6413c3d6ed66164ce171678e6655950af98e5dc982e391fb0cb0dc5",
+    "t17_2_4096.json": "a4051e0e4c9f000a9f2b65515329df77bd8894036d270ba7b4fbc8146d9b998d",
+    "t17_3_2048.json": "25ea94c7ada7983fe6a53042dc6f5a94528c9d69f6d5923b0c6bcadc01e28031",
+    "t17_3_4096.json": "26aca7eb4d142e25ec325d069613bb7581081efd872c03866764b5ba6a35ee80",
+    "t17_4_2048.json": "62375201937f64a6c78743bec4d069534c1f4738b35cf70d5a6355d6f770840a",
+    "t17_4_4096.json": "1a19744390e848891220b8bd593348a17aa2ed7675e2378304ee0180c4728c61",
+    "t19_1_2048.json": "6fa1a800aaaf4c63bf0efb2d2ae0bb610a0b576aa367cb3c29c2af05109b648e",
+    "t19_1_4096.json": "aa40ead9329aecac20ce38e129ccf42d1babbfbbe8a1b1105d044afc5a69c317",
+    "t19_2_2048.json": "7db7dfe66fccf4b10af7d729311f4620574217ef7ebe55da330dc9281141dca5",
+    "t19_2_4096.json": "cf03375b5faac67ed997edc9bb44f696b127cf470f9c82f047422b9f586aa7cb",
+    "t19_3_2048.json": "57b7d5e6e15e371bac8cb397ca12f5667df8968e8009f5897064b9b4dbe623e1",
+    "t19_3_4096.json": "2fd127cf1baccf32c8b47368cc54294fde11dad4c8bae03edfb53793e3928e34",
+    "t19_4_2048.json": "02c8693955443abe2b641fd6bf1106b933da7a6efc9cdd6cc561ce66ead87d11",
+    "t19_4_4096.json": "2e3892dbfb91e036248d2e06e317ae5d4d4cf172de89702c02f106051efc3310",
+    "t20_1_2048.json": "e08966cdf04dd5bdcd035f149245da7214c0baf4bf2eb697bd7d8764ff587f27",
+    "t20_1_4096.json": "eaa34f20e339388c7a8b87db16290192c3c03aa4a9da6efdcd573df447afda24",
+    "t20_2_2048.json": "bb353778285c85c5849da1dc0142f3871e8307d5b3f45b01bd94f4973e2e1568",
+    "t20_2_4096.json": "69164c87edfab14ab0372e806f6e3b4c5dab85bfc35db5c526f5868f6df5a891",
+    "t20_3_2048.json": "d7d93c3e29ed297505a89502c5a183919bbe5c75f951dfac36627233ded43d6b",
+    "t20_3_4096.json": "f95fd864c2cedd0a162e005d192a64cc2a093255de607f9e53f3f74fd51d3353",
+    "t20_4_2048.json": "24521cfe8ccee52415d64d5634e40de48743bd7e5c18b586f978bb45ad3f73d0",
+    "t20_4_4096.json": "c66a864b51160d0742d7031767ec667b51c8fb08749f1513e3b1486d3a3e7677"
+  }
+}

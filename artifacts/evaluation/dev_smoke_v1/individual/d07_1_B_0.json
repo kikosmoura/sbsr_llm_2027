@@ -1,0 +1,110 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "9f9225242f404ef29eefe630dd614d0b",
+  "case_id": "d07_1",
+  "family_id": "d07",
+  "territory_codes": [
+    "2411205",
+    "2513208",
+    "2612455"
+  ],
+  "condition": "B",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:34:44.746259+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Qual a área de Pastagem em Santa Cruz em 2015, em ha?",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": "63ff4775c8bc3018a3d4f5163eaa1f68e34ac111edb6fb56faad6d590783d5a2",
+  "messages_sha256": "4e00a1babd31c41f999ba212eeb00c4b4ea53bdee277d046f76e428c5c7783db",
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "precisa_esclarecimento",
+    "plan": null,
+    "values": [],
+    "clarification_field": "territorio",
+    "reason": "ambiguidade_territorio"
+  },
+  "final_answer": "{\"status\": \"precisa_esclarecimento\", \"plan\": null, \"values\": [], \"clarification_field\": \"territorio\", \"reason\": \"ambiguidade_territorio\"}",
+  "plan": null,
+  "result": [],
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "messages_sha256": "4e00a1babd31c41f999ba212eeb00c4b4ea53bdee277d046f76e428c5c7783db",
+      "issues": [
+        {
+          "path": [],
+          "code": "value_error"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 5737,
+        "total_tokens": 6328,
+        "completion_tokens": 591
+      },
+      "latency_seconds": 5.827132305013947,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "a35ef0c2b556d689ffb4768b090be0f6c0606f188800ce5bc6c3de7b1e8509e7",
+      "output_chars": 317,
+      "state": "invalida"
+    },
+    {
+      "number": 2,
+      "kind": "reparo",
+      "messages_sha256": "c590a0386355d99aa0869fdd22f11badcd2a00924cfcf7a038185845086ebf19",
+      "issues": [],
+      "usage": {
+        "prompt_tokens": 5772,
+        "total_tokens": 6123,
+        "completion_tokens": 351
+      },
+      "latency_seconds": 3.75298793904949,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "8106778fdabba412361e5cd3e84ca31c64bef1e954299eef9cfe3b7873f7549c",
+      "output_chars": 133,
+      "state": "valida"
+    }
+  ],
+  "latency_seconds": 9.584706724970601,
+  "scores": {
+    "status": true,
+    "plan": null,
+    "values": null,
+    "clarification": true,
+    "correct": true
+  },
+  "cost": null,
+  "source_context": {
+    "data_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+  },
+  "C_session_id": null,
+  "C_turn_id": null,
+  "C_candidate_intent": null,
+  "C_decision": null
+}

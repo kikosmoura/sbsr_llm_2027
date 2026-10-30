@@ -1,0 +1,119 @@
+{
+  "schema_version": "controle-contrato-caso-v1",
+  "run_id": "be1b52a4f868406e917879873a5581fe",
+  "case_id": "d01_3",
+  "family_id": "d01",
+  "territory_codes": [
+    "2410900"
+  ],
+  "condition": "B_eq",
+  "repeat": 0,
+  "integration_kind": "gateway_real",
+  "created_at": "2026-10-21T13:32:09.307573+00:00",
+  "freeze_sha256": "784d7e714d514197d4d07f3c82a000724b1671a64295a13616e6b9c6134beb2c",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "native_tools": false,
+    "native_response_format": false,
+    "workers": 3
+  },
+  "question": "Para Riachuelo/RN, preciso da área em ha de Pastagem em 2015.",
+  "fixed_plan": {
+    "operation": "area",
+    "metric": "area",
+    "unit": "ha",
+    "territory_codes": [
+      "2410900"
+    ],
+    "scope_uf": "RN",
+    "class_codes": [
+      15
+    ],
+    "years": [
+      2015
+    ],
+    "denominator": null,
+    "direction": "desc",
+    "limit": null
+  },
+  "common_input_sha256": "ec38fb98e77123dc72d584506661ae0b27f3e1216160723d42f365427f964cc7",
+  "output_contract_sha256": "7cb672668bdaf0cb31f785651d91ec6475f990de121edab04b748bd0da63c955",
+  "system_sha256": "2805f7312e5288c2499d8bc4b6fd55f3a0adc3b8d5ea53aab2533894c62b290d",
+  "messages_sha256": "ed1b63614d13b4d41405fdbaee3703db23be01072a8d84d97d52ba6f1ee5f923",
+  "execution_observations": [],
+  "executor_result": null,
+  "observed": {
+    "status": "respondida",
+    "values": [
+      {
+        "territory_code": "2410900",
+        "years": [
+          2015
+        ],
+        "value": 8684.038153762798,
+        "unit": "ha",
+        "undefined_reason": null,
+        "denominators_ha": [],
+        "rank": null
+      }
+    ],
+    "reason": "consulta_executada",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2410900"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2015
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "clarification_field": null
+  },
+  "final_answer": "{\"reason\":\"consulta_executada\",\"status\":\"respondida\",\"values\":[{\"denominators_ha\":[],\"rank\":null,\"territory_code\":\"2410900\",\"undefined_reason\":null,\"unit\":\"ha\",\"value\":8684.038153762798,\"years\":[2015]}]}",
+  "attempts": [
+    {
+      "number": 1,
+      "messages_sha256": "ed1b63614d13b4d41405fdbaee3703db23be01072a8d84d97d52ba6f1ee5f923",
+      "usage": {
+        "prompt_tokens": 5503,
+        "total_tokens": 5890,
+        "completion_tokens": 387
+      },
+      "issues": [],
+      "latency_seconds": 4.536029073991813,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "6ac42560d056938d0d404b7ea41ceff8257d8581fcc0cc8ff04efa2671d6ce8a",
+      "output_chars": 285,
+      "state": "valida"
+    }
+  ],
+  "latency_seconds": 4.53935381595511,
+  "model_seconds": 4.536396127077751,
+  "executor_seconds": 0,
+  "scores": {
+    "status": true,
+    "plan": true,
+    "values": true,
+    "clarification": null,
+    "correct": true
+  },
+  "cost": null,
+  "source_geo_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+}

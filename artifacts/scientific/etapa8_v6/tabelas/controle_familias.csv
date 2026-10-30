@@ -1,0 +1,17 @@
+condition,family_id,cases,correct
+B_eq,teste_area_direta,20,20
+B_eq,teste_delta,16,16
+B_eq,teste_participacao,8,0
+B_eq,teste_pontos,8,0
+B_eq,teste_serie,8,8
+B_eq,teste_t06,4,4
+B_eq,teste_territorial,8,8
+B_eq,teste_variacao,16,5
+C_eq,teste_area_direta,20,20
+C_eq,teste_delta,16,16
+C_eq,teste_participacao,8,8
+C_eq,teste_pontos,8,8
+C_eq,teste_serie,8,8
+C_eq,teste_t06,4,4
+C_eq,teste_territorial,8,8
+C_eq,teste_variacao,16,16

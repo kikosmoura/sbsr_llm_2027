@@ -1,0 +1,155 @@
+{
+  "schema_version": "controle-contrato-caso-v1",
+  "run_id": "aa224a7d26124a8dbfa4042e50621cc7",
+  "case_id": "t16_3",
+  "family_id": "teste_variacao",
+  "territory_codes": [
+    "2400505"
+  ],
+  "condition": "B_eq",
+  "repeat": 0,
+  "integration_kind": "gateway_real",
+  "created_at": "2026-10-21T15:02:01.557189+00:00",
+  "freeze_sha256": "55593ae2e52cbd2890ddce5bfed4183977a20b43a9c95123ba43f53e2b1332f0",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 4096,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "native_tools": false,
+    "native_response_format": false,
+    "workers": 3
+  },
+  "question": "Para Alexandria/RN, obtenha a variação percentual da área de Pastagem de 2015 para 2025 com base em 2015.",
+  "fixed_plan": {
+    "operation": "comparacao_temporal",
+    "metric": "variacao_percentual",
+    "unit": "percentual",
+    "territory_codes": [
+      "2400505"
+    ],
+    "scope_uf": "RN",
+    "class_codes": [
+      15
+    ],
+    "years": [
+      2015,
+      2025
+    ],
+    "denominator": "area_inicial",
+    "direction": "desc",
+    "limit": null
+  },
+  "common_input_sha256": "fd8fa1580a8ec51faf83d9d521249fc43fb7542cfc7010feaa9c13eb9df0cddb",
+  "output_contract_sha256": "7cb672668bdaf0cb31f785651d91ec6475f990de121edab04b748bd0da63c955",
+  "system_sha256": "2805f7312e5288c2499d8bc4b6fd55f3a0adc3b8d5ea53aab2533894c62b290d",
+  "messages_sha256": "79df3a06db1c1ff294725520051191c543bd32ca061083766bc41ba4d795c83a",
+  "execution_observations": [],
+  "executor_result": null,
+  "observed": {
+    "status": "respondida",
+    "values": [
+      {
+        "territory_code": "2400505",
+        "years": [
+          2015,
+          2025
+        ],
+        "value": -0.03441187015,
+        "unit": "percentual",
+        "undefined_reason": null,
+        "denominators_ha": [
+          17657.582522383058
+        ],
+        "rank": null
+      }
+    ],
+    "reason": "consulta_executada",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "variacao_percentual",
+      "unit": "percentual",
+      "territory_codes": [
+        "2400505"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": "area_inicial",
+      "direction": "desc",
+      "limit": null
+    },
+    "clarification_field": null
+  },
+  "final_answer": "{\"reason\":\"consulta_executada\",\"status\":\"respondida\",\"values\":[{\"denominators_ha\":[17657.582522383058],\"rank\":null,\"territory_code\":\"2400505\",\"undefined_reason\":null,\"unit\":\"percentual\",\"value\":-0.03441187015,\"years\":[2015,2025]}]}",
+  "attempts": [
+    {
+      "number": 1,
+      "messages_sha256": "79df3a06db1c1ff294725520051191c543bd32ca061083766bc41ba4d795c83a",
+      "usage": {
+        "prompt_tokens": 5521,
+        "total_tokens": 9387,
+        "completion_tokens": 3866
+      },
+      "issues": [],
+      "latency_seconds": 34.912927213008516,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "15d22f7a11c130d921400eded5bbcb6e17418ebc7b81b0cd142c6915cca2d156",
+      "output_chars": 231,
+      "state": "valida"
+    }
+  ],
+  "latency_seconds": 34.91740265500266,
+  "model_seconds": 34.913334883982316,
+  "http_events": [
+    {
+      "endpoint": "oauth",
+      "http_status": 200,
+      "bytes_read": 91,
+      "body_complete": true,
+      "response_metadata": null,
+      "elapsed_seconds": 0.19309401093050838
+    },
+    {
+      "endpoint": "chat",
+      "http_status": 200,
+      "bytes_read": 11322,
+      "body_complete": true,
+      "response_metadata": {
+        "json_object": true,
+        "choices_count": 1,
+        "finish_reason": "stop",
+        "content_state": "texto",
+        "final_content_chars": 231,
+        "reasoning_field_present": true,
+        "usage": {
+          "prompt_tokens": 5521,
+          "total_tokens": 9387,
+          "completion_tokens": 3866
+        },
+        "reasoning_tokens": null
+      },
+      "elapsed_seconds": 34.71978537796531
+    }
+  ],
+  "executor_seconds": 0,
+  "scores": {
+    "status": true,
+    "plan": true,
+    "values": true,
+    "clarification": null,
+    "correct": true
+  },
+  "cost": null,
+  "source_geo_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+}

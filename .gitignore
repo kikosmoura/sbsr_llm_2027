@@ -1,0 +1,112 @@
+# Repositório do código e dos contratos do experimento.
+# Regras com / inicial referem-se somente à raiz deste projeto.
+# Nenhuma destas regras apaga os arquivos locais.
+
+# Apoio ao assistente durante a implementação e a redação.
+/.agents/
+/.codex/
+/.claude/
+/.cursor/
+/AGENTS.md
+/AGENTS.override.md
+/CLAUDE.md
+/docs/PROMPTS_IMPLEMENTACAO.md
+/docs/PLANEJAMENTO.md
+/docs/ESTADO_IMPLEMENTACAO.md
+/docs/DECISOES.md
+/docs/history/
+
+# Histórico exclusivamente editorial: revisões de rascunhos e sua validação.
+# Protocolos, declarações de revisão humana e validações do experimento ficam.
+/docs/REVISAO_RASCUNHOS_V*.md
+/docs/VALIDACAO_ETAPA8.json
+/docs/VALIDACAO_REVISAO_V6.json
+
+# Entradas de automação da redação, modelos e conversão de documentos.
+# Os cálculos, controles, diagnósticos e análises em scripts/science/ ficam.
+# Módulos compartilhados com testes científicos (inclusive writing*,
+# documents.py e obter_template_etapa8.py) ficam para preservar suas
+# importações e verificações.
+/scripts/consolidar_etapa8.py
+/scripts/revisar_rascunhos_v*.py
+/scripts/science/documents_v4.py
+/scripts/science/documents_v5.py
+
+# Materiais editoriais gerados, fontes baixadas e pacotes antigos.
+/artifacts/scientific/etapa8*/manuscrito/
+/artifacts/scientific/etapa8*/publicacao/
+/artifacts/scientific/etapa8*/blocos_artigo.json
+/artifacts/scientific/etapa8*/bibliografia*.json
+/artifacts/scientific/etapa8*/normas*.json
+/artifacts/scientific/etapa8*/validacao_documento.json
+/artifacts/scientific/fontes_sbsr2027/
+/artifacts/scientific/fontes_v2/cfp_*.html
+/artifacts/scientific/fontes_v3/cfp_*.html
+/artifacts/releases/
+
+# Saídas locais de execução, diálogos, chaves de sessão e diagnósticos.
+# Não são os prompts versionados nem os casos/gabaritos do benchmark.
+/artifacts/dialogues/
+/artifacts/local_service/
+/artifacts/queries/
+/artifacts/processing/
+/artifacts/staging/
+/reports/
+/cache/
+
+# Snapshots locais, bancos e derivados: gerados pelo processamento descrito
+# em docs/PROCESSAMENTO_GEOESPACIAL.md; não são distribuídos por este Git.
+# A ancoragem evita excluir semantics/data/ dentro do pacote Python.
+/data/
+*.duckdb
+*.duckdb.wal
+*.sqlite
+*.sqlite3
+
+# Evidências científicas preservadas:
+#   /benchmarks/, /configs/, /schemas/, /tests/ e /src/
+#   /artifacts/evaluation/ e relatórios analíticos em /artifacts/scientific/
+#   /scripts/science/ (exceto conversores editoriais acima)
+# Não adicionar regras genéricas como prompts/, *.json, *.csv ou *.pdf:
+# elas também atingiriam insumos, referências e contratos do experimento.
+
+# Credenciais e configurações privadas; exemplos públicos são permitidos.
+/.aws/
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+
+# Ambientes Python, caches e metadados gerados de instalação/compilação.
+.venv/
+.venv-*/
+venv/
+venv-*/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+/build/
+/dist/
+*.whl
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+/htmlcov/
+coverage.xml
+.ipynb_checkpoints/
+
+# Preferências pessoais de editor e arquivos temporários.
+/.idea/
+/.vscode/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~

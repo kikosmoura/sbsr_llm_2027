@@ -1,0 +1,13 @@
+{
+  "created_at": "2026-10-21T14:12:02.609535+00:00",
+  "files": {
+    "historical.json": "e8199d88975a7c9a0ecfc5d24f030e7330be0eed6bad80bcc0aa42131f5ad732",
+    "protocol.json": "fbebfbc2991071a7b0a9dc9d73d1924e7ef31635f2411ee04960b4e3bd7b3710"
+  },
+  "V3_freeze_sha256": "784d7e714d514197d4d07f3c82a000724b1671a64295a13616e6b9c6134beb2c",
+  "runtime": {
+    "observer": "69224bf61a87660cf92fb1c16e4548d7f57f614b219b441de7fb232199f2d00f",
+    "entrypoint": "dfe493e07eff66af1d1775340dab088ef492d458b84fed9c807bebb63c0cdb89",
+    "client": "32dcae7999b1fbd81e996d4c865184efea9fbbb4d5c57951f7e1255678ecba0e"
+  }
+}

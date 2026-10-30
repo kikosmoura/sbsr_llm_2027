@@ -1,0 +1,9 @@
+{
+  "schema_version": "intencao-semantica-v1",
+  "operation": "area",
+  "territories": [{"code": "2410900", "uf": "RN", "kind": "municipio"}],
+  "classes": [{"term": "Pastagem"}],
+  "years": [2015],
+  "metric": "area",
+  "unit": "ha"
+}

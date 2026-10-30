@@ -1,0 +1,74 @@
+{
+  "created_at": "2026-10-19T20:57:15.210901+00:00",
+  "territories": 20,
+  "context_bytes": 96067,
+  "context_sha256": "50b2959d12e427f98603a16e154364c9fdc7563c7078e62b11ba977571311c88",
+  "complete_tables": true,
+  "truncated": false,
+  "fits_application_limit": true,
+  "data_preparation_seconds": 0.15831928804982454,
+  "gateway_executed": true,
+  "observed": {
+    "status": "erro_tecnico",
+    "plan": null,
+    "values": [],
+    "clarification_field": null,
+    "reason": "saida_invalida_apos_reparo"
+  },
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "messages_sha256": "057c458bec4ff0f3de91b7e15501c6a47d3b98b9c35a9d4320932cd4dc41042c",
+      "issues": [
+        {
+          "path": [],
+          "code": "value_error"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 45995,
+        "total_tokens": 46747,
+        "completion_tokens": 752
+      },
+      "latency_seconds": 18.309345961082727,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "91a184c59570153f194d6dfb29e34d424c519b581b00c17b6e20984eac656104",
+      "output_chars": 316,
+      "state": "invalida"
+    },
+    {
+      "number": 2,
+      "kind": "reparo",
+      "messages_sha256": "68b61a18309d04ef4bf97be32c87ed2b531efba7ebbed1fa3a5dc6285ec694c8",
+      "issues": [
+        {
+          "path": [],
+          "code": "value_error"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 46030,
+        "total_tokens": 46664,
+        "completion_tokens": 634
+      },
+      "latency_seconds": 16.836133426986635,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "715c85ddbf7c3697ff4415b76edd2e7c4c850ba700899f23c4c14cf54d302598",
+      "output_chars": 316,
+      "state": "invalida"
+    }
+  ],
+  "scores": {
+    "status": false,
+    "plan": null,
+    "values": null,
+    "clarification": null,
+    "correct": false
+  },
+  "latency_seconds": 35.151756200008094,
+  "cost": null,
+  "messages_sha256": "057c458bec4ff0f3de91b7e15501c6a47d3b98b9c35a9d4320932cd4dc41042c"
+}

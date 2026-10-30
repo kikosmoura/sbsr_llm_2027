@@ -1,0 +1,294 @@
+{
+  "checked_at": "2026-10-19T18:10:17.373442+00:00",
+  "executor_sha256": "64bb18ecbfecf2fd623d8fd10e616a1f816bbf529feeec5749f554ac7d4ed81a",
+  "limitations": [
+    "ranking RN bloqueado por cobertura parcial/codigo 0",
+    "apenas 2015 e 2025 materializados",
+    "sem matriz de transicoes",
+    "edicao territorial desconhecida",
+    "revisao oficial do espelho nao comprovada",
+    "sem comparacao com estatisticas oficiais"
+  ],
+  "llm_called": false,
+  "network_used": false,
+  "package_version": "0.4.0",
+  "real_case_count": 12,
+  "real_cases": [
+    {
+      "answer_id": "537955b183713f10ab550e98d9e72fc4ff1ecdea799615c4918346f623f7ac4a",
+      "case": "plano_area_pastagem",
+      "checks": [
+        {
+          "absolute_difference": 0.0,
+          "actual": 8684.038153762798,
+          "metric": "area",
+          "passed": true,
+          "reference_decimal": "8684.038153762798",
+          "territory_code": "2410900",
+          "undefined_reason": null,
+          "unit": "ha",
+          "years": [
+            2015
+          ]
+        }
+      ],
+      "reason": "consulta_executada",
+      "status": "respondida"
+    },
+    {
+      "answer_id": "781a9325c23e35fcd9048a8de3c9600c25a8c0ddde5328ca71118317a748f043",
+      "case": "plano_participacao_pastagem",
+      "checks": [
+        {
+          "absolute_difference": 7.105427357601002e-15,
+          "actual": 33.03461206717101,
+          "metric": "participacao",
+          "passed": true,
+          "reference_decimal": "33.03461206717100676558266783",
+          "territory_code": "2410900",
+          "undefined_reason": null,
+          "unit": "percentual",
+          "years": [
+            2015
+          ]
+        }
+      ],
+      "reason": "consulta_executada",
+      "status": "respondida"
+    },
+    {
+      "answer_id": "149f4782f778570698291e9a7dfbf8dc3b1b73e90cc4ce68f7e110cec7c12ea1",
+      "case": "plano_mudanca_urbana_natal",
+      "checks": [
+        {
+          "absolute_difference": 7.389644451905042e-13,
+          "actual": 358.0270931022533,
+          "metric": "diferenca_liquida",
+          "passed": true,
+          "reference_decimal": "358.027093102254",
+          "territory_code": "2408102",
+          "undefined_reason": null,
+          "unit": "ha",
+          "years": [
+            2015,
+            2025
+          ]
+        }
+      ],
+      "reason": "consulta_executada",
+      "status": "respondida"
+    },
+    {
+      "answer_id": "d2a8e2b757ab291e828313671f0b79aa3dbc722f12a1e7c3f8e743fdb4b7c288",
+      "case": "plano_variacao_urbana_natal",
+      "checks": [
+        {
+          "absolute_difference": 7.549516567451064e-15,
+          "actual": 3.4635514901677538,
+          "metric": "variacao_percentual",
+          "passed": true,
+          "reference_decimal": "3.463551490167761143159401735",
+          "territory_code": "2408102",
+          "undefined_reason": null,
+          "unit": "percentual",
+          "years": [
+            2015,
+            2025
+          ]
+        }
+      ],
+      "reason": "consulta_executada",
+      "status": "respondida"
+    },
+    {
+      "answer_id": "62b35a7680484f152b63acf6cfab616fdb4a6636413d335d4e100275c9e19d72",
+      "case": "plano_pontos_percentuais_natal",
+      "checks": [
+        {
+          "absolute_difference": 4.440892098500626e-16,
+          "actual": 2.138734758291058,
+          "metric": "diferenca_pontos_percentuais",
+          "passed": true,
+          "reference_decimal": "2.13873475829105740732643932",
+          "territory_code": "2408102",
+          "undefined_reason": null,
+          "unit": "pontos_percentuais",
+          "years": [
+            2015,
+            2025
+          ]
+        }
+      ],
+      "reason": "consulta_executada",
+      "status": "respondida"
+    },
+    {
+      "answer_id": "f04169192729703409dd986ab06aa73dadf759135c08cf360c05d2690f8c34b3",
+      "case": "plano_grupo_florestas",
+      "checks": [
+        {
+          "absolute_difference": 3.637978807091713e-12,
+          "actual": 16986.240968339545,
+          "metric": "area",
+          "passed": true,
+          "reference_decimal": "16986.24096833954349",
+          "territory_code": "2410900",
+          "undefined_reason": null,
+          "unit": "ha",
+          "years": [
+            2015
+          ]
+        }
+      ],
+      "reason": "consulta_executada",
+      "status": "respondida"
+    },
+    {
+      "answer_id": "e338f6891161419d62727d8f44f694546df099b32ed8d86d1951891dfcc41786",
+      "case": "plano_serie_pastagem",
+      "checks": [
+        {
+          "absolute_difference": 0.0,
+          "actual": 8684.038153762798,
+          "metric": "area",
+          "passed": true,
+          "reference_decimal": "8684.038153762798",
+          "territory_code": "2410900",
+          "undefined_reason": null,
+          "unit": "ha",
+          "years": [
+            2015
+          ]
+        },
+        {
+          "absolute_difference": 0.0,
+          "actual": 7815.20729317619,
+          "metric": "area",
+          "passed": true,
+          "reference_decimal": "7815.20729317619",
+          "territory_code": "2410900",
+          "undefined_reason": null,
+          "unit": "ha",
+          "years": [
+            2025
+          ]
+        }
+      ],
+      "reason": "consulta_executada",
+      "status": "respondida"
+    },
+    {
+      "answer_id": "27f5ea519036c7873b0a03a3c5665e9a05309ca94a1fa4c8c9669ccbb2431bfb",
+      "case": "plano_comparacao_municipios",
+      "checks": [
+        {
+          "absolute_difference": 0.0,
+          "actual": 10695.020613152754,
+          "metric": "area",
+          "passed": true,
+          "reference_decimal": "10695.020613152754",
+          "territory_code": "2408102",
+          "undefined_reason": null,
+          "unit": "ha",
+          "years": [
+            2025
+          ]
+        },
+        {
+          "absolute_difference": 0.0,
+          "actual": 122.31084596010922,
+          "metric": "area",
+          "passed": true,
+          "reference_decimal": "122.31084596010922",
+          "territory_code": "2410900",
+          "undefined_reason": null,
+          "unit": "ha",
+          "years": [
+            2025
+          ]
+        }
+      ],
+      "reason": "consulta_executada",
+      "status": "respondida"
+    },
+    {
+      "answer_id": null,
+      "case": "plano_ranking_rn",
+      "checks": [],
+      "reason": "ranking_com_cobertura_incompleta",
+      "refusal_verified": true,
+      "status": "dados_indisponiveis"
+    },
+    {
+      "answer_id": null,
+      "case": "plano_ano_nao_materializado",
+      "checks": [],
+      "reason": "estatisticas_nao_materializadas",
+      "refusal_verified": true,
+      "status": "dados_indisponiveis"
+    },
+    {
+      "answer_id": null,
+      "case": "plano_uf_cobertura_parcial",
+      "checks": [],
+      "reason": "estatisticas_nao_materializadas",
+      "refusal_verified": true,
+      "status": "dados_indisponiveis"
+    },
+    {
+      "answer_id": "8f5c19d2ff2c144ef1bd55f33c5e1c2f665205f540064d67a73d059f6e8d5b6d",
+      "case": "plano_base_zero_real",
+      "checks": [
+        {
+          "absolute_difference": null,
+          "actual": null,
+          "metric": "variacao_percentual",
+          "passed": true,
+          "reference_decimal": null,
+          "territory_code": "2410900",
+          "undefined_reason": "base_inicial_zero",
+          "unit": "percentual",
+          "years": [
+            2015,
+            2025
+          ]
+        }
+      ],
+      "reason": "consulta_executada",
+      "status": "respondida"
+    }
+  ],
+  "real_derived_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+  "reference_method": "DuckDB somente para desserializar Parquets; filtros e formulas independentes em Python/Decimal, sem helpers do executor",
+  "reference_numeric_tolerance": {
+    "absolute": 1e-10,
+    "purpose": "representacao float64; sem arredondamento para comparar",
+    "relative": 1e-12
+  },
+  "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+  "schema_version": "validacao-etapa4-v1",
+  "source_database_called": false,
+  "state": "verificado",
+  "target_install_verification": {
+    "checked_at": "2026-10-19T18:12:55.159448+00:00",
+    "cli_help_verified": true,
+    "cli_real_json_csv_verified": true,
+    "executor_matches_report": true,
+    "installed_version": "0.4.0",
+    "llm_called": false,
+    "network_called": false,
+    "real_ranking_refusal_verified": true,
+    "source_database_called": false,
+    "source_partitions_verified": 336,
+    "stable_answer_id_verified": true,
+    "state": "verificado",
+    "tests_passed": 160,
+    "upstream_inputs_unchanged": true
+  },
+  "tests": {
+    "network_used": false,
+    "passed": 160,
+    "synthetic_and_mocks": true
+  },
+  "wheel_sha256": "5b8a080edf572bc672d1fa898c6ab6d11d9da5078e59127ffc4aa28fc023de8d"
+}

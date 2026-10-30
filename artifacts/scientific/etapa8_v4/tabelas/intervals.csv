@@ -1,0 +1,4 @@
+analysis,state,difference_pp,ci_low_pp,ci_high_pp,groups,cases,replicas,seed
+paired_C_minus_B,verificado,45.83333333333333,25.0,64.81553819444443,15,120,10000,20271019
+paired_numeric_subset,verificado,53.40909090909091,30.0,76.38888888888889,8,88,10000,20271019
+territory_sensitivity,verificado,48.91304347826087,32.95454545454545,64.77272727272727,22,92,10000,20271019

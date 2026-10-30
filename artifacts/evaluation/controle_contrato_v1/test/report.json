@@ -1,0 +1,805 @@
+{
+  "schema_version": "controle-contrato-estatisticas-v1",
+  "state": "verificado",
+  "run_id": "7dfe5ecbd3944e4dbde409763d23cbf3",
+  "split": "test",
+  "freeze_sha256": "784d7e714d514197d4d07f3c82a000724b1671a64295a13616e6b9c6134beb2c",
+  "integration_kind": "gateway_real",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "native_tools": false,
+    "native_response_format": false,
+    "workers": 3
+  },
+  "returned_models": [
+    "RETURNED_MODEL_ID_1"
+  ],
+  "primary_records": 176,
+  "repeat_records": 8,
+  "conditions": [
+    {
+      "condition": "B_eq",
+      "cases": 88,
+      "correct": 61,
+      "accuracy": 0.6931818181818182,
+      "answered": 61,
+      "technical_errors": 27,
+      "coverage": 0.6931818181818182,
+      "precision_emitted": 1.0,
+      "latency_mean_seconds": 13.07998218759762,
+      "latency_median_seconds": 7.842154010548256,
+      "latency_p95_seconds": 31.901750751119078,
+      "model_seconds_mean": 13.075932583092998,
+      "executor_seconds_mean": 0,
+      "usage_observed_sum": {
+        "prompt_tokens": 372867,
+        "completion_tokens": 42580,
+        "total_tokens": 415447
+      },
+      "usage_missing_attempts": 26,
+      "cost": null
+    },
+    {
+      "condition": "C_eq",
+      "cases": 88,
+      "correct": 88,
+      "accuracy": 1.0,
+      "answered": 88,
+      "technical_errors": 0,
+      "coverage": 1.0,
+      "precision_emitted": 1.0,
+      "latency_mean_seconds": 5.649317256854953,
+      "latency_median_seconds": 4.862448809493799,
+      "latency_p95_seconds": 10.74776547045911,
+      "model_seconds_mean": 5.490027651722564,
+      "executor_seconds_mean": 0.1559139212609311,
+      "usage_observed_sum": {
+        "prompt_tokens": 510399,
+        "completion_tokens": 38864,
+        "total_tokens": 549263
+      },
+      "usage_missing_attempts": 0,
+      "cost": null
+    }
+  ],
+  "families": [
+    {
+      "condition": "B_eq",
+      "family_id": "teste_area_direta",
+      "cases": 20,
+      "correct": 20
+    },
+    {
+      "condition": "B_eq",
+      "family_id": "teste_delta",
+      "cases": 16,
+      "correct": 16
+    },
+    {
+      "condition": "B_eq",
+      "family_id": "teste_participacao",
+      "cases": 8,
+      "correct": 0
+    },
+    {
+      "condition": "B_eq",
+      "family_id": "teste_pontos",
+      "cases": 8,
+      "correct": 0
+    },
+    {
+      "condition": "B_eq",
+      "family_id": "teste_serie",
+      "cases": 8,
+      "correct": 8
+    },
+    {
+      "condition": "B_eq",
+      "family_id": "teste_t06",
+      "cases": 4,
+      "correct": 4
+    },
+    {
+      "condition": "B_eq",
+      "family_id": "teste_territorial",
+      "cases": 8,
+      "correct": 8
+    },
+    {
+      "condition": "B_eq",
+      "family_id": "teste_variacao",
+      "cases": 16,
+      "correct": 5
+    },
+    {
+      "condition": "C_eq",
+      "family_id": "teste_area_direta",
+      "cases": 20,
+      "correct": 20
+    },
+    {
+      "condition": "C_eq",
+      "family_id": "teste_delta",
+      "cases": 16,
+      "correct": 16
+    },
+    {
+      "condition": "C_eq",
+      "family_id": "teste_participacao",
+      "cases": 8,
+      "correct": 8
+    },
+    {
+      "condition": "C_eq",
+      "family_id": "teste_pontos",
+      "cases": 8,
+      "correct": 8
+    },
+    {
+      "condition": "C_eq",
+      "family_id": "teste_serie",
+      "cases": 8,
+      "correct": 8
+    },
+    {
+      "condition": "C_eq",
+      "family_id": "teste_t06",
+      "cases": 4,
+      "correct": 4
+    },
+    {
+      "condition": "C_eq",
+      "family_id": "teste_territorial",
+      "cases": 8,
+      "correct": 8
+    },
+    {
+      "condition": "C_eq",
+      "family_id": "teste_variacao",
+      "cases": 16,
+      "correct": 16
+    }
+  ],
+  "errors": [
+    {
+      "condition": "B_eq",
+      "type": "acerto",
+      "count": 61
+    },
+    {
+      "condition": "B_eq",
+      "type": "contrato_invalido",
+      "count": 1
+    },
+    {
+      "condition": "B_eq",
+      "type": "texto_final_ausente",
+      "count": 26
+    },
+    {
+      "condition": "C_eq",
+      "type": "acerto",
+      "count": 88
+    }
+  ],
+  "paired_cases": [
+    {
+      "case_id": "t01_1",
+      "family_id": "teste_area_direta",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t01_2",
+      "family_id": "teste_area_direta",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t01_3",
+      "family_id": "teste_area_direta",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t01_4",
+      "family_id": "teste_area_direta",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t02_1",
+      "family_id": "teste_area_direta",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t02_2",
+      "family_id": "teste_area_direta",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t02_3",
+      "family_id": "teste_area_direta",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t02_4",
+      "family_id": "teste_area_direta",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t03_1",
+      "family_id": "teste_area_direta",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t03_2",
+      "family_id": "teste_area_direta",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t03_3",
+      "family_id": "teste_area_direta",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t03_4",
+      "family_id": "teste_area_direta",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t04_1",
+      "family_id": "teste_area_direta",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t04_2",
+      "family_id": "teste_area_direta",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t04_3",
+      "family_id": "teste_area_direta",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t04_4",
+      "family_id": "teste_area_direta",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t05_1",
+      "family_id": "teste_area_direta",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t05_2",
+      "family_id": "teste_area_direta",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t05_3",
+      "family_id": "teste_area_direta",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t05_4",
+      "family_id": "teste_area_direta",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t06_1",
+      "family_id": "teste_t06",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t06_2",
+      "family_id": "teste_t06",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t06_3",
+      "family_id": "teste_t06",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t06_4",
+      "family_id": "teste_t06",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t07_1",
+      "family_id": "teste_participacao",
+      "B": 0,
+      "C": 1
+    },
+    {
+      "case_id": "t07_2",
+      "family_id": "teste_participacao",
+      "B": 0,
+      "C": 1
+    },
+    {
+      "case_id": "t07_3",
+      "family_id": "teste_participacao",
+      "B": 0,
+      "C": 1
+    },
+    {
+      "case_id": "t07_4",
+      "family_id": "teste_participacao",
+      "B": 0,
+      "C": 1
+    },
+    {
+      "case_id": "t08_1",
+      "family_id": "teste_participacao",
+      "B": 0,
+      "C": 1
+    },
+    {
+      "case_id": "t08_2",
+      "family_id": "teste_participacao",
+      "B": 0,
+      "C": 1
+    },
+    {
+      "case_id": "t08_3",
+      "family_id": "teste_participacao",
+      "B": 0,
+      "C": 1
+    },
+    {
+      "case_id": "t08_4",
+      "family_id": "teste_participacao",
+      "B": 0,
+      "C": 1
+    },
+    {
+      "case_id": "t11_1",
+      "family_id": "teste_delta",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t11_2",
+      "family_id": "teste_delta",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t11_3",
+      "family_id": "teste_delta",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t11_4",
+      "family_id": "teste_delta",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t12_1",
+      "family_id": "teste_delta",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t12_2",
+      "family_id": "teste_delta",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t12_3",
+      "family_id": "teste_delta",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t12_4",
+      "family_id": "teste_delta",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t13_1",
+      "family_id": "teste_delta",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t13_2",
+      "family_id": "teste_delta",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t13_3",
+      "family_id": "teste_delta",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t13_4",
+      "family_id": "teste_delta",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t14_1",
+      "family_id": "teste_delta",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t14_2",
+      "family_id": "teste_delta",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t14_3",
+      "family_id": "teste_delta",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t14_4",
+      "family_id": "teste_delta",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t15_1",
+      "family_id": "teste_variacao",
+      "B": 0,
+      "C": 1
+    },
+    {
+      "case_id": "t15_2",
+      "family_id": "teste_variacao",
+      "B": 0,
+      "C": 1
+    },
+    {
+      "case_id": "t15_3",
+      "family_id": "teste_variacao",
+      "B": 0,
+      "C": 1
+    },
+    {
+      "case_id": "t15_4",
+      "family_id": "teste_variacao",
+      "B": 0,
+      "C": 1
+    },
+    {
+      "case_id": "t16_1",
+      "family_id": "teste_variacao",
+      "B": 0,
+      "C": 1
+    },
+    {
+      "case_id": "t16_2",
+      "family_id": "teste_variacao",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t16_3",
+      "family_id": "teste_variacao",
+      "B": 0,
+      "C": 1
+    },
+    {
+      "case_id": "t16_4",
+      "family_id": "teste_variacao",
+      "B": 0,
+      "C": 1
+    },
+    {
+      "case_id": "t17_1",
+      "family_id": "teste_variacao",
+      "B": 0,
+      "C": 1
+    },
+    {
+      "case_id": "t17_2",
+      "family_id": "teste_variacao",
+      "B": 0,
+      "C": 1
+    },
+    {
+      "case_id": "t17_3",
+      "family_id": "teste_variacao",
+      "B": 0,
+      "C": 1
+    },
+    {
+      "case_id": "t17_4",
+      "family_id": "teste_variacao",
+      "B": 0,
+      "C": 1
+    },
+    {
+      "case_id": "t18_1",
+      "family_id": "teste_variacao",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t18_2",
+      "family_id": "teste_variacao",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t18_3",
+      "family_id": "teste_variacao",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t18_4",
+      "family_id": "teste_variacao",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t19_1",
+      "family_id": "teste_pontos",
+      "B": 0,
+      "C": 1
+    },
+    {
+      "case_id": "t19_2",
+      "family_id": "teste_pontos",
+      "B": 0,
+      "C": 1
+    },
+    {
+      "case_id": "t19_3",
+      "family_id": "teste_pontos",
+      "B": 0,
+      "C": 1
+    },
+    {
+      "case_id": "t19_4",
+      "family_id": "teste_pontos",
+      "B": 0,
+      "C": 1
+    },
+    {
+      "case_id": "t20_1",
+      "family_id": "teste_pontos",
+      "B": 0,
+      "C": 1
+    },
+    {
+      "case_id": "t20_2",
+      "family_id": "teste_pontos",
+      "B": 0,
+      "C": 1
+    },
+    {
+      "case_id": "t20_3",
+      "family_id": "teste_pontos",
+      "B": 0,
+      "C": 1
+    },
+    {
+      "case_id": "t20_4",
+      "family_id": "teste_pontos",
+      "B": 0,
+      "C": 1
+    },
+    {
+      "case_id": "t21_1",
+      "family_id": "teste_serie",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t21_2",
+      "family_id": "teste_serie",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t21_3",
+      "family_id": "teste_serie",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t21_4",
+      "family_id": "teste_serie",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t22_1",
+      "family_id": "teste_serie",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t22_2",
+      "family_id": "teste_serie",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t22_3",
+      "family_id": "teste_serie",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t22_4",
+      "family_id": "teste_serie",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t23_1",
+      "family_id": "teste_territorial",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t23_2",
+      "family_id": "teste_territorial",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t23_3",
+      "family_id": "teste_territorial",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t23_4",
+      "family_id": "teste_territorial",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t24_1",
+      "family_id": "teste_territorial",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t24_2",
+      "family_id": "teste_territorial",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t24_3",
+      "family_id": "teste_territorial",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "t24_4",
+      "family_id": "teste_territorial",
+      "B": 1,
+      "C": 1
+    }
+  ],
+  "paired_Ceq_minus_Beq": {
+    "state": "verificado",
+    "estimator": "diferenca de proporcoes por caso; clusters reamostrados",
+    "difference_C_minus_B": 0.3068181818181818,
+    "ci95": [
+      0.07136699507389167,
+      0.6323529411764706
+    ],
+    "groups": 8,
+    "cases": 88,
+    "replicas": 10000,
+    "seed": 20271021,
+    "method": "percentil; numpy PCG64; quantile linear",
+    "group_key": "family_id"
+  },
+  "repeatability": [
+    {
+      "case_id": "t01_1",
+      "condition": "B_eq",
+      "same_answer": true,
+      "same_correctness": true
+    },
+    {
+      "case_id": "t01_1",
+      "condition": "C_eq",
+      "same_answer": true,
+      "same_correctness": true
+    },
+    {
+      "case_id": "t07_1",
+      "condition": "B_eq",
+      "same_answer": true,
+      "same_correctness": true
+    },
+    {
+      "case_id": "t07_1",
+      "condition": "C_eq",
+      "same_answer": true,
+      "same_correctness": true
+    },
+    {
+      "case_id": "t11_1",
+      "condition": "B_eq",
+      "same_answer": true,
+      "same_correctness": true
+    },
+    {
+      "case_id": "t11_1",
+      "condition": "C_eq",
+      "same_answer": true,
+      "same_correctness": true
+    },
+    {
+      "case_id": "t19_1",
+      "condition": "B_eq",
+      "same_answer": true,
+      "same_correctness": true
+    },
+    {
+      "case_id": "t19_1",
+      "condition": "C_eq",
+      "same_answer": true,
+      "same_correctness": true
+    }
+  ],
+  "input_audit": {
+    "same_common_facts_and_fixed_plan": true,
+    "same_system_prompt": true,
+    "same_output_contract": true,
+    "same_model_and_parameters": true,
+    "both_generate_final_json_with_llm": true,
+    "all_scores_recomputed": true,
+    "all_messages_reconstructed": true,
+    "treatment_only": "resultado real de executor inserido em execution_observations de C_eq"
+  },
+  "limitations": [
+    "Planos corretos fornecidos: nao avalia interpretacao nem ambiguidades.",
+    "Resultado estima efeito do fornecimento de calculo ao finalizador, incluindo conformidade de saida; nao habilidade cognitiva isolada.",
+    "Questões reutilizadas e protocolo complementar definido depois do teste original; nao avaliacao externa independente.",
+    "Familias compartilham territorios, classes e dados; bootstrap com poucos grupos.",
+    "Pesos/modelo/infraestrutura remota nao versionados de forma observavel; ordem aleatoria reduz mas nao elimina efeitos temporais.",
+    "Revisao humana declarada cobre perguntas; gabaritos nao tiveram validacao humana confirmada."
+  ]
+}

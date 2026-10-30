@@ -1,0 +1,21 @@
+{
+  "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+  "territories": "data/territories_v1.json",
+  "capabilities": "data/capabilities_stage3.json",
+  "storage_dir": "artifacts/local_service",
+  "bind_host": "127.0.0.1",
+  "port": 8765,
+  "max_body_bytes": 32768,
+  "body_timeout_seconds": 10.0,
+  "max_query_seconds": 90.0,
+  "llm_timeout_seconds": 60,
+  "llm_max_tokens": 2048,
+  "llm_max_attempts": 2,
+  "temperature": 0.0,
+  "max_sessions": 32,
+  "max_results_per_session": 25,
+  "session_ttl_seconds": 86400,
+  "max_storage_bytes": 134217728,
+  "max_result_bytes": 4194304,
+  "data_kind": "real"
+}

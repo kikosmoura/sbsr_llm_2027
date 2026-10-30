@@ -1,0 +1,30 @@
+[
+  {
+    "source_id": "legend.pdf",
+    "url": "https://brasil.mapbiomas.org/wp-content/uploads/sites/3/2026/08/CodigosDeLegenda_LegendCodes_MapBiomas_Brazil_Collection11_PDF.pdf",
+    "sha256": "19ddb657d66ce1039be8aba31f20689d9ab66af7d39b86d976727dc3265b7865",
+    "bytes": 117734,
+    "retrieved_at": "2026-10-19T15:32:15.965230+00:00",
+    "content_type": "application/pdf",
+    "last_modified": "Thu, 13 Aug 2026 18:01:11 GMT",
+    "status": "obtido"
+  },
+  {
+    "source_id": "legend.csv",
+    "url": "https://brasil.mapbiomas.org/wp-content/uploads/sites/3/2026/08/legend_code_mapbiomas_brazil_collection_11.csv",
+    "sha256": "603239c5de7cca95799c788ab553a73ec3fc16477f681f63bb5af191d2f54dbe",
+    "bytes": 1521,
+    "retrieved_at": "2026-10-19T15:32:16.196887+00:00",
+    "content_type": "text/csv",
+    "last_modified": "Fri, 14 Aug 2026 17:25:15 GMT",
+    "status": "obtido"
+  },
+  {
+    "source_id": "official_page.html",
+    "url": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/",
+    "sha256": "a6cbf4a44eaa5f7f82a127a0cd3865dd72f83000ef71feeeca8727c0ba8bf7d4",
+    "bytes": 473165,
+    "retrieved_at": "2026-10-19T15:34:04.360412+00:00",
+    "status": "obtido"
+  }
+]

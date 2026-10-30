@@ -1,0 +1,529 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "fa7686659da9449d811d154641021724",
+  "case_id": "t20_1",
+  "family_id": "teste_pontos",
+  "territory_codes": [
+    "2407203"
+  ],
+  "condition": "C",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:49:59.784796+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Qual a diferença em pontos percentuais da participação de Rio, Lago e Oceano em Macau/RN entre 2015 e 2025, na área observada de cada ano?",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": null,
+  "messages_sha256": null,
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_pontos_percentuais",
+      "unit": "pontos_percentuais",
+      "territory_codes": [
+        "2407203"
+      ],
+      "scope_uf": null,
+      "class_codes": [
+        33
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": "participacao_por_ano",
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2407203",
+        "years": [
+          2015,
+          2025
+        ],
+        "value": 1.6182983608822354,
+        "unit": "pontos_percentuais",
+        "undefined_reason": null,
+        "denominators_ha": [
+          77528.95337298771,
+          77528.95337298771
+        ],
+        "rank": null
+      }
+    ],
+    "clarification_field": null,
+    "reason": "consulta_executada"
+  },
+  "final_answer": "Macau/RN (IBGE 2407203): diferença de participação de Rio, Lago e Oceano [33], em 2015–2025: 1,62 pontos percentuais. Denominador: areas observadas inicial e final no mesmo suporte comum (77.528,95 ha, 77.528,95 ha). Calculada no suporte válido comum dos dois anos.\nColeção 11; revisão desconhecida; malha edição desconhecida; método ellipsoid-linear-lonlat-fractional-v1; execução a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802.\nMudança observada na classificação não comprova mudança real específica no terreno, causas ou ilegalidade.",
+  "plan": {
+    "operation": "comparacao_temporal",
+    "metric": "diferenca_pontos_percentuais",
+    "unit": "pontos_percentuais",
+    "territory_codes": [
+      "2407203"
+    ],
+    "scope_uf": null,
+    "class_codes": [
+      33
+    ],
+    "years": [
+      2015,
+      2025
+    ],
+    "denominator": "participacao_por_ano",
+    "direction": "desc",
+    "limit": null
+  },
+  "result": {
+    "schema_version": "resposta-consulta-v1",
+    "status": "respondida",
+    "reason": "consulta_executada",
+    "message": "Macau/RN (IBGE 2407203): diferença de participação de Rio, Lago e Oceano [33], em 2015–2025: 1,62 pontos percentuais. Denominador: areas observadas inicial e final no mesmo suporte comum (77.528,95 ha, 77.528,95 ha). Calculada no suporte válido comum dos dois anos.\nColeção 11; revisão desconhecida; malha edição desconhecida; método ellipsoid-linear-lonlat-fractional-v1; execução a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802.",
+    "answer_id": "220b4edd924053501c6afd795e5f84241a10a0143fdfbe6f2a2972ee585ffaa5",
+    "plan_id": "c002da3977c56c573483a6fd4444b40b7bebc905a6da28aed29a3d8b29b8061c",
+    "executor_sha256": "64bb18ecbfecf2fd623d8fd10e616a1f816bbf529feeec5749f554ac7d4ed81a",
+    "requested_plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_pontos_percentuais",
+      "unit": "pontos_percentuais",
+      "territory_codes": [
+        "2407203"
+      ],
+      "scope_uf": null,
+      "class_codes": [
+        33
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": "participacao_por_ano",
+      "direction": "desc",
+      "limit": null
+    },
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_pontos_percentuais",
+      "unit": "pontos_percentuais",
+      "territory_codes": [
+        "2407203"
+      ],
+      "scope_uf": null,
+      "class_codes": [
+        33
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": "participacao_por_ano",
+      "direction": "desc",
+      "limit": null
+    },
+    "evidence": [
+      {
+        "evidence_id": "75d8087772d11b6949e59e094c8336089bcd9b806eb81f8c2ffaacf066962b37",
+        "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+        "territory": {
+          "kind": "municipio",
+          "code": "2407203",
+          "name": "Macau",
+          "uf": "RN",
+          "geometry_hash": "e61be71b36818efb74173f32792e251cd1f789cfdcade0c8e58ba76f2518e291",
+          "edition": null
+        },
+        "class_codes": [
+          33
+        ],
+        "years": [
+          2015,
+          2025
+        ],
+        "collection": 11,
+        "source_revision": null,
+        "source_ids": [
+          "run:a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+          "mesh:3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+          "classes:04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+          "areas.parquet:ebbdbc55008e714749dff3e564a2a422690e0f24ac277793d0a4f23168d61a24",
+          "quality.parquet:e5c2b4abb529376fea9a15daee1e5bb3dfa64d0bd142c2af279d0cdc482f756e",
+          "mirror:fd0a4f02551f26230b156d60f6f409dcadb9d198bb56de37ec055b47e2d1076e",
+          "crop:99c7a24c07d0b6cf29969ea2385592b9f3e0845b667b1877c7e163e3fd17739a",
+          "mirror:37322ac02043f652f60aeff0a68acfba418ae2e43dff412f89cd0ad6e525a336",
+          "crop:8b848eb7e2592f26160835b9b256987e985fd39d1dbb2681aa722b9aa8e355b7"
+        ],
+        "area_method": "ellipsoid-linear-lonlat-fractional-v1",
+        "quality": {
+          "state": "completo",
+          "observed_area_ha": 77528.95337298771,
+          "nodata_area_ha": 0.0,
+          "unknown_codes": [],
+          "common_support_id": "6e5d3931ec2e7a5575b9110b837eacb921a3f1edac874b4227ca61008fefb667",
+          "area_method": "ellipsoid-linear-lonlat-fractional-v1",
+          "notes": [
+            "Revisao oficial do espelho e edicao territorial nao comprovadas."
+          ]
+        },
+        "plan_id": "c002da3977c56c573483a6fd4444b40b7bebc905a6da28aed29a3d8b29b8061c",
+        "metric": "diferenca_pontos_percentuais",
+        "requested_class_codes": [
+          33
+        ],
+        "class_names": [
+          "Rio, Lago e Oceano [33]"
+        ],
+        "observations": [
+          {
+            "year": 2015,
+            "class_area_ha": 5235.509241912599,
+            "observed_area_ha": 77528.95337298771,
+            "support": "comum",
+            "nodata_area_ha": 0.0,
+            "unknown_area_ha": 0.0,
+            "outside_raster_area_ha": 2.7418136596679687e-10
+          },
+          {
+            "year": 2025,
+            "class_area_ha": 6490.159023556812,
+            "observed_area_ha": 77528.95337298771,
+            "support": "comum",
+            "nodata_area_ha": 0.0,
+            "unknown_area_ha": 0.0,
+            "outside_raster_area_ha": 2.7418136596679687e-10
+          }
+        ],
+        "denominator_definition": "areas observadas inicial e final no mesmo suporte comum",
+        "denominator_values_ha": [
+          77528.95337298771,
+          77528.95337298771
+        ],
+        "provenance": "municipio_direto",
+        "mesh_sha256": "3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+        "catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+        "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+        "sources": [
+          {
+            "source_id": "run:a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+            "kind": "execucao",
+            "sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "mesh:3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+            "kind": "malha",
+            "sha256": "3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "classes:04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+            "kind": "catalogo",
+            "sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "areas.parquet:ebbdbc55008e714749dff3e564a2a422690e0f24ac277793d0a4f23168d61a24",
+            "kind": "particao_areas",
+            "sha256": "ebbdbc55008e714749dff3e564a2a422690e0f24ac277793d0a4f23168d61a24",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "quality.parquet:e5c2b4abb529376fea9a15daee1e5bb3dfa64d0bd142c2af279d0cdc482f756e",
+            "kind": "particao_qualidade",
+            "sha256": "e5c2b4abb529376fea9a15daee1e5bb3dfa64d0bd142c2af279d0cdc482f756e",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "mirror:fd0a4f02551f26230b156d60f6f409dcadb9d198bb56de37ec055b47e2d1076e",
+            "kind": "raster_espelho",
+            "sha256": null,
+            "year": 2015,
+            "public_url": "https://storage.example.invalid/BUCKET_NAME/brazil_coverage-col11_2015.tif",
+            "etag": "\"c0f687289217d0c8c7da1caa33827855-138\""
+          },
+          {
+            "source_id": "crop:99c7a24c07d0b6cf29969ea2385592b9f3e0845b667b1877c7e163e3fd17739a",
+            "kind": "recorte",
+            "sha256": "99c7a24c07d0b6cf29969ea2385592b9f3e0845b667b1877c7e163e3fd17739a",
+            "year": 2015,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "mirror:37322ac02043f652f60aeff0a68acfba418ae2e43dff412f89cd0ad6e525a336",
+            "kind": "raster_espelho",
+            "sha256": null,
+            "year": 2025,
+            "public_url": "https://storage.example.invalid/BUCKET_NAME/brazil_coverage-col11_2025.tif",
+            "etag": "\"df7c25264b8e600567bd82c2a4a072a3-146\""
+          },
+          {
+            "source_id": "crop:8b848eb7e2592f26160835b9b256987e985fd39d1dbb2681aa722b9aa8e355b7",
+            "kind": "recorte",
+            "sha256": "8b848eb7e2592f26160835b9b256987e985fd39d1dbb2681aa722b9aa8e355b7",
+            "year": 2025,
+            "public_url": null,
+            "etag": null
+          }
+        ]
+      }
+    ],
+    "values": [
+      {
+        "evidence_id": "75d8087772d11b6949e59e094c8336089bcd9b806eb81f8c2ffaacf066962b37",
+        "value": 1.6182983608822354,
+        "unit": "pontos_percentuais",
+        "denominator_value": null,
+        "undefined_reason": null,
+        "metric": "diferenca_pontos_percentuais",
+        "area_value_ha": null,
+        "denominator_unit": "ha",
+        "rank": null
+      }
+    ],
+    "execution": {
+      "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+      "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+      "collection": 11,
+      "source_revision": null,
+      "territorial_edition": null,
+      "method": "ellipsoid-linear-lonlat-fractional-v1",
+      "mesh_sha256": "3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+      "catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+      "years": [
+        2015,
+        2025
+      ],
+      "class_names": [
+        "Rio, Lago e Oceano [33]"
+      ],
+      "sources": [
+        {
+          "source_id": "run:a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+          "kind": "execucao",
+          "sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+          "year": null,
+          "public_url": null,
+          "etag": null
+        },
+        {
+          "source_id": "mesh:3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+          "kind": "malha",
+          "sha256": "3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+          "year": null,
+          "public_url": null,
+          "etag": null
+        },
+        {
+          "source_id": "classes:04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+          "kind": "catalogo",
+          "sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+          "year": null,
+          "public_url": null,
+          "etag": null
+        },
+        {
+          "source_id": "mirror:fd0a4f02551f26230b156d60f6f409dcadb9d198bb56de37ec055b47e2d1076e",
+          "kind": "raster_espelho",
+          "sha256": null,
+          "year": 2015,
+          "public_url": "https://storage.example.invalid/BUCKET_NAME/brazil_coverage-col11_2015.tif",
+          "etag": "\"c0f687289217d0c8c7da1caa33827855-138\""
+        },
+        {
+          "source_id": "crop:99c7a24c07d0b6cf29969ea2385592b9f3e0845b667b1877c7e163e3fd17739a",
+          "kind": "recorte",
+          "sha256": "99c7a24c07d0b6cf29969ea2385592b9f3e0845b667b1877c7e163e3fd17739a",
+          "year": 2015,
+          "public_url": null,
+          "etag": null
+        },
+        {
+          "source_id": "mirror:37322ac02043f652f60aeff0a68acfba418ae2e43dff412f89cd0ad6e525a336",
+          "kind": "raster_espelho",
+          "sha256": null,
+          "year": 2025,
+          "public_url": "https://storage.example.invalid/BUCKET_NAME/brazil_coverage-col11_2025.tif",
+          "etag": "\"df7c25264b8e600567bd82c2a4a072a3-146\""
+        },
+        {
+          "source_id": "crop:8b848eb7e2592f26160835b9b256987e985fd39d1dbb2681aa722b9aa8e355b7",
+          "kind": "recorte",
+          "sha256": "8b848eb7e2592f26160835b9b256987e985fd39d1dbb2681aa722b9aa8e355b7",
+          "year": 2025,
+          "public_url": null,
+          "etag": null
+        }
+      ]
+    },
+    "ranking": null,
+    "notes": [
+      "Valores sem arredondamento no JSON/CSV; texto com duas casas decimais.",
+      "Diferenca liquida nao mede perda bruta, desmatamento ou causas."
+    ]
+  },
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "state": "valida",
+      "latency_seconds": 11.303061757003888,
+      "usage": {
+        "prompt_tokens": 4647,
+        "total_tokens": 5483,
+        "completion_tokens": 836
+      },
+      "chat_requests": 1,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "output_sha256": "8f80cc93f4bb56ff7ab46a4071ad93ef227a1dd58a3622e8b0bad8379375a0ae",
+      "output_chars": 585,
+      "candidate": {
+        "action": "consultar",
+        "intent": {
+          "operation": "comparacao_temporal",
+          "territories": [
+            {
+              "mention": "macau",
+              "uf_mention": "RN",
+              "kind": "municipio"
+            }
+          ],
+          "scope_uf_mention": "RN",
+          "classes": [
+            {
+              "mention": "rio lago e oceano"
+            }
+          ],
+          "years": [
+            2015,
+            2025
+          ],
+          "metric": "diferenca_pontos_percentuais",
+          "metric_mention": "pontos percentuais",
+          "unit_mention": null,
+          "denominator": null,
+          "direction": null,
+          "limit": null
+        },
+        "clarification_fields": []
+      },
+      "issues": [],
+      "gateway_error": null,
+      "http_status": null,
+      "messages_sha256": "4f500e6423004935ec472cdce1fc2e4457d1dd10f84682f6ef60b4aa6483cb62",
+      "explanation_fallback": null
+    }
+  ],
+  "latency_seconds": 11.51398758997675,
+  "scores": {
+    "status": true,
+    "plan": true,
+    "values": true,
+    "clarification": null,
+    "correct": true
+  },
+  "cost": null,
+  "source_context": {
+    "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+    "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+    "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+    "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+  },
+  "C_session_id": "996427ce1d804c26a042cf7ef1b5b4da",
+  "C_turn_id": "a26d24e05532421694da20c8cf1c23a4",
+  "C_candidate_intent": {
+    "schema_version": "intencao-semantica-v1",
+    "operation": "comparacao_temporal",
+    "territories": [
+      {
+        "code": "2407203",
+        "name": null,
+        "uf": null,
+        "kind": null
+      }
+    ],
+    "scope_uf": null,
+    "classes": [
+      {
+        "code": 33,
+        "term": null
+      }
+    ],
+    "years": [
+      2015,
+      2025
+    ],
+    "metric": "diferenca_pontos_percentuais",
+    "metric_term": null,
+    "unit": "pontos_percentuais",
+    "unit_term": null,
+    "denominator": "participacao_por_ano",
+    "direction": "desc",
+    "limit": null,
+    "requested_concept": "cobertura"
+  },
+  "C_decision": {
+    "status": "plano_validado",
+    "reason": "selecoes_e_capacidades_validadas",
+    "message": "Plano pronto para o motor; nenhum resultado quantitativo foi calculado nesta etapa.",
+    "normalized_plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_pontos_percentuais",
+      "unit": "pontos_percentuais",
+      "territory_codes": [
+        "2407203"
+      ],
+      "scope_uf": null,
+      "class_codes": [
+        33
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": "participacao_por_ano",
+      "direction": "desc",
+      "limit": null
+    },
+    "territory_candidates": [],
+    "class_candidates": [],
+    "notes": [],
+    "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+    "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9",
+    "capabilities_sha256": "91d83a3973e66c772f3db8942bee78b526e737d54ae89d464cd9d0385eb92321"
+  }
+}

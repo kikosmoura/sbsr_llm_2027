@@ -1,0 +1,23 @@
+{
+  "created_at": "2026-10-21T13:31:43.289060+00:00",
+  "kind": "exploratory_reused_questions_fixed_plan",
+  "runtime": {
+    "runner": "ab856123e032517de77b62531666d295910ec23dbfbef029950593c7333370ea",
+    "entrypoint": "4155739934427ae3ec2b6370f4c62b4b3c37848eccc883c9e5071ca4729741e3",
+    "scorer": "6979ae151d73c499b09649b21beaffd6911b30c90faa63667b0aedec0a479cb5",
+    "client": "32dcae7999b1fbd81e996d4c865184efea9fbbb4d5c57951f7e1255678ecba0e",
+    "executor": "64bb18ecbfecf2fd623d8fd10e616a1f816bbf529feeec5749f554ac7d4ed81a",
+    "schema": "7cb672668bdaf0cb31f785651d91ec6475f990de121edab04b748bd0da63c955"
+  },
+  "files": {
+    "cases.jsonl": "9c431f066b39f5a77543b9caf37f99a8d262c030e6cb2ab14d5460740a822a86",
+    "classes.json": "b9495bdcba453561b67f45764beb21e93b546d9ffe11bf1ab32fe50e22601f28",
+    "inputs.json": "cc6db2b5ff2a6f88869f746dda5ca02c62e2465266a1a404743dd8774c508de8",
+    "output_schema.json": "bab255788e8321d5b202ab38bbfffa60a8508d3be1492608db225d7c495d166f",
+    "protocol.json": "5d8eb2a77d3cd8ccd4ab1b7477aa3e5ea97eef279684e02c27ce1ae3575e481f",
+    "reference.json": "b91ce00f4251fdfe298b7857b2bc8326c86b1a86f54064fd24c0de7fe14f8ba6",
+    "scoring_protocol.json": "315fa2ecefe9286900b43047b03ac028be6afa8163ea67a3229654d551466af1",
+    "system.txt": "2805f7312e5288c2499d8bc4b6fd55f3a0adc3b8d5ea53aab2533894c62b290d"
+  },
+  "original_freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e"
+}

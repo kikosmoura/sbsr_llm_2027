@@ -1,0 +1,454 @@
+{
+  "schema_version": "controle-contrato-caso-v1",
+  "run_id": "aa224a7d26124a8dbfa4042e50621cc7",
+  "case_id": "t06_1",
+  "family_id": "teste_t06",
+  "territory_codes": [
+    "2409407"
+  ],
+  "condition": "C_eq",
+  "repeat": 0,
+  "integration_kind": "gateway_real",
+  "created_at": "2026-10-21T14:57:41.648450+00:00",
+  "freeze_sha256": "55593ae2e52cbd2890ddce5bfed4183977a20b43a9c95123ba43f53e2b1332f0",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 4096,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "native_tools": false,
+    "native_response_format": false,
+    "workers": 3
+  },
+  "question": "Qual a área da união das classes Floresta (código 1) e Formação Florestal (código 3), sem dupla contagem, em Pau dos Ferros/RN, 2015, ha?",
+  "fixed_plan": {
+    "operation": "area",
+    "metric": "area",
+    "unit": "ha",
+    "territory_codes": [
+      "2409407"
+    ],
+    "scope_uf": "RN",
+    "class_codes": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      49
+    ],
+    "years": [
+      2015
+    ],
+    "denominator": null,
+    "direction": "desc",
+    "limit": null
+  },
+  "common_input_sha256": "3d1a0fb08af7b44997235f23b11c3032ea22a7dde619d656266196a35c637b1b",
+  "output_contract_sha256": "7cb672668bdaf0cb31f785651d91ec6475f990de121edab04b748bd0da63c955",
+  "system_sha256": "2805f7312e5288c2499d8bc4b6fd55f3a0adc3b8d5ea53aab2533894c62b290d",
+  "messages_sha256": "820b7daee6e306468f05202a1b165ef5cd3cc98122bc23a8555e71ebeaca8c1f",
+  "execution_observations": [
+    {
+      "status": "respondida",
+      "values": [
+        {
+          "territory_code": "2409407",
+          "years": [
+            2015
+          ],
+          "value": 5871.298187965349,
+          "unit": "ha",
+          "undefined_reason": null,
+          "denominators_ha": [],
+          "rank": null
+        }
+      ],
+      "reason": "consulta_executada"
+    }
+  ],
+  "executor_result": {
+    "schema_version": "resposta-consulta-v1",
+    "status": "respondida",
+    "reason": "consulta_executada",
+    "message": "Pau dos Ferros/RN (IBGE 2409407): área mapeada de Formação Florestal [3]; Formação Savânica [4]; Mangue [5]; Floresta Alagável [6]; Savana Alagada (beta) [7]; Restinga Arbórea [49], em 2015: 5.871,30 ha.\nColeção 11; revisão desconhecida; malha edição desconhecida; método ellipsoid-linear-lonlat-fractional-v1; execução a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802.",
+    "answer_id": "b0a667b7daf73ac5e2363c8002c640b4d7e66f7fd8c6fe9324b44e691b85ed83",
+    "plan_id": "2a675c03e776b85269eea20b4c08fc758abf089369160f4ed2b195006db27280",
+    "executor_sha256": "64bb18ecbfecf2fd623d8fd10e616a1f816bbf529feeec5749f554ac7d4ed81a",
+    "requested_plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2409407"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        49
+      ],
+      "years": [
+        2015
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2409407"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        49
+      ],
+      "years": [
+        2015
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "evidence": [
+      {
+        "evidence_id": "d52f8fbd2a56075fe1870f25edac6443db21eafaa251d240c2e271bac98a694c",
+        "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+        "territory": {
+          "kind": "municipio",
+          "code": "2409407",
+          "name": "Pau dos Ferros",
+          "uf": "RN",
+          "geometry_hash": "a5b7259ce6da1c3d0c8f3eac8caed3e55ca39df8431a24a9ca9d56a0b3031164",
+          "edition": null
+        },
+        "class_codes": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          49
+        ],
+        "years": [
+          2015
+        ],
+        "collection": 11,
+        "source_revision": null,
+        "source_ids": [
+          "run:a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+          "mesh:3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+          "classes:04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+          "areas.parquet:aa90ca6d5d363bd95e0d38c09749ac780295b5a1de765bff1cd085c53cc612fd",
+          "quality.parquet:2d7eaec2f8e747f65ad01fd30c6a5988adebc5c0b0ab50f27d352f0d9233889b",
+          "mirror:fd0a4f02551f26230b156d60f6f409dcadb9d198bb56de37ec055b47e2d1076e",
+          "crop:99c7a24c07d0b6cf29969ea2385592b9f3e0845b667b1877c7e163e3fd17739a"
+        ],
+        "area_method": "ellipsoid-linear-lonlat-fractional-v1",
+        "quality": {
+          "state": "completo",
+          "observed_area_ha": 25995.94372868592,
+          "nodata_area_ha": 0.0,
+          "unknown_codes": [],
+          "common_support_id": null,
+          "area_method": "ellipsoid-linear-lonlat-fractional-v1",
+          "notes": [
+            "Revisao oficial do espelho e edicao territorial nao comprovadas."
+          ]
+        },
+        "plan_id": "2a675c03e776b85269eea20b4c08fc758abf089369160f4ed2b195006db27280",
+        "metric": "area",
+        "requested_class_codes": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          49
+        ],
+        "class_names": [
+          "Formação Florestal [3]",
+          "Formação Savânica [4]",
+          "Mangue [5]",
+          "Floresta Alagável [6]",
+          "Savana Alagada (beta) [7]",
+          "Restinga Arbórea [49]"
+        ],
+        "observations": [
+          {
+            "year": 2015,
+            "class_area_ha": 5871.298187965349,
+            "observed_area_ha": 25995.94372868592,
+            "support": "anual",
+            "nodata_area_ha": 0.0,
+            "unknown_area_ha": 0.0,
+            "outside_raster_area_ha": 0.0
+          }
+        ],
+        "denominator_definition": null,
+        "denominator_values_ha": [],
+        "provenance": "municipio_direto",
+        "mesh_sha256": "3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+        "catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+        "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+        "sources": [
+          {
+            "source_id": "run:a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+            "kind": "execucao",
+            "sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "mesh:3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+            "kind": "malha",
+            "sha256": "3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "classes:04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+            "kind": "catalogo",
+            "sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "areas.parquet:aa90ca6d5d363bd95e0d38c09749ac780295b5a1de765bff1cd085c53cc612fd",
+            "kind": "particao_areas",
+            "sha256": "aa90ca6d5d363bd95e0d38c09749ac780295b5a1de765bff1cd085c53cc612fd",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "quality.parquet:2d7eaec2f8e747f65ad01fd30c6a5988adebc5c0b0ab50f27d352f0d9233889b",
+            "kind": "particao_qualidade",
+            "sha256": "2d7eaec2f8e747f65ad01fd30c6a5988adebc5c0b0ab50f27d352f0d9233889b",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "mirror:fd0a4f02551f26230b156d60f6f409dcadb9d198bb56de37ec055b47e2d1076e",
+            "kind": "raster_espelho",
+            "sha256": null,
+            "year": 2015,
+            "public_url": "https://storage.example.invalid/BUCKET_NAME/brazil_coverage-col11_2015.tif",
+            "etag": "\"c0f687289217d0c8c7da1caa33827855-138\""
+          },
+          {
+            "source_id": "crop:99c7a24c07d0b6cf29969ea2385592b9f3e0845b667b1877c7e163e3fd17739a",
+            "kind": "recorte",
+            "sha256": "99c7a24c07d0b6cf29969ea2385592b9f3e0845b667b1877c7e163e3fd17739a",
+            "year": 2015,
+            "public_url": null,
+            "etag": null
+          }
+        ]
+      }
+    ],
+    "values": [
+      {
+        "evidence_id": "d52f8fbd2a56075fe1870f25edac6443db21eafaa251d240c2e271bac98a694c",
+        "value": 5871.298187965349,
+        "unit": "ha",
+        "denominator_value": null,
+        "undefined_reason": null,
+        "metric": "area",
+        "area_value_ha": 5871.298187965349,
+        "denominator_unit": null,
+        "rank": null
+      }
+    ],
+    "execution": {
+      "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+      "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+      "collection": 11,
+      "source_revision": null,
+      "territorial_edition": null,
+      "method": "ellipsoid-linear-lonlat-fractional-v1",
+      "mesh_sha256": "3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+      "catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+      "years": [
+        2015
+      ],
+      "class_names": [
+        "Formação Florestal [3]",
+        "Formação Savânica [4]",
+        "Mangue [5]",
+        "Floresta Alagável [6]",
+        "Savana Alagada (beta) [7]",
+        "Restinga Arbórea [49]"
+      ],
+      "sources": [
+        {
+          "source_id": "run:a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+          "kind": "execucao",
+          "sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+          "year": null,
+          "public_url": null,
+          "etag": null
+        },
+        {
+          "source_id": "mesh:3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+          "kind": "malha",
+          "sha256": "3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+          "year": null,
+          "public_url": null,
+          "etag": null
+        },
+        {
+          "source_id": "classes:04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+          "kind": "catalogo",
+          "sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+          "year": null,
+          "public_url": null,
+          "etag": null
+        },
+        {
+          "source_id": "mirror:fd0a4f02551f26230b156d60f6f409dcadb9d198bb56de37ec055b47e2d1076e",
+          "kind": "raster_espelho",
+          "sha256": null,
+          "year": 2015,
+          "public_url": "https://storage.example.invalid/BUCKET_NAME/brazil_coverage-col11_2015.tif",
+          "etag": "\"c0f687289217d0c8c7da1caa33827855-138\""
+        },
+        {
+          "source_id": "crop:99c7a24c07d0b6cf29969ea2385592b9f3e0845b667b1877c7e163e3fd17739a",
+          "kind": "recorte",
+          "sha256": "99c7a24c07d0b6cf29969ea2385592b9f3e0845b667b1877c7e163e3fd17739a",
+          "year": 2015,
+          "public_url": null,
+          "etag": null
+        }
+      ]
+    },
+    "ranking": null,
+    "notes": [
+      "Valores sem arredondamento no JSON/CSV; texto com duas casas decimais.",
+      "Diferenca liquida nao mede perda bruta, desmatamento ou causas."
+    ]
+  },
+  "observed": {
+    "status": "respondida",
+    "values": [
+      {
+        "territory_code": "2409407",
+        "years": [
+          2015
+        ],
+        "value": 5871.298187965349,
+        "unit": "ha",
+        "undefined_reason": null,
+        "denominators_ha": [],
+        "rank": null
+      }
+    ],
+    "reason": "consulta_executada",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2409407"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        49
+      ],
+      "years": [
+        2015
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "clarification_field": null
+  },
+  "final_answer": "{\"reason\":\"consulta_executada\",\"status\":\"respondida\",\"values\":[{\"denominators_ha\":[],\"rank\":null,\"territory_code\":\"2409407\",\"undefined_reason\":null,\"unit\":\"ha\",\"value\":5871.298187965349,\"years\":[2015]}]}",
+  "attempts": [
+    {
+      "number": 1,
+      "messages_sha256": "820b7daee6e306468f05202a1b165ef5cd3cc98122bc23a8555e71ebeaca8c1f",
+      "usage": {
+        "prompt_tokens": 5573,
+        "total_tokens": 6169,
+        "completion_tokens": 596
+      },
+      "issues": [],
+      "latency_seconds": 10.473926631035283,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "0b4815304ff74899567329b5eec9e68c0f453012c8eb861966e0c7d0bffa2cfb",
+      "output_chars": 203,
+      "state": "valida"
+    }
+  ],
+  "latency_seconds": 10.62446677708067,
+  "model_seconds": 10.47429178096354,
+  "http_events": [
+    {
+      "endpoint": "oauth",
+      "http_status": 200,
+      "bytes_read": 91,
+      "body_complete": true,
+      "response_metadata": null,
+      "elapsed_seconds": 5.17688615701627
+    },
+    {
+      "endpoint": "chat",
+      "http_status": 200,
+      "bytes_read": 2922,
+      "body_complete": true,
+      "response_metadata": {
+        "json_object": true,
+        "choices_count": 1,
+        "finish_reason": "stop",
+        "content_state": "texto",
+        "final_content_chars": 203,
+        "reasoning_field_present": true,
+        "usage": {
+          "prompt_tokens": 5573,
+          "total_tokens": 6169,
+          "completion_tokens": 596
+        },
+        "reasoning_tokens": null
+      },
+      "elapsed_seconds": 5.2969885299680755
+    }
+  ],
+  "executor_seconds": 0.14730296400375664,
+  "scores": {
+    "status": true,
+    "plan": true,
+    "values": true,
+    "clarification": null,
+    "correct": true
+  },
+  "cost": null,
+  "source_geo_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+}

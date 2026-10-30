@@ -1,0 +1,221 @@
+{
+  "schema_version": "validacao-revisao-v4-v1",
+  "recorded_at": "2026-10-21T14:36:21.562963+00:00",
+  "state": "verificado",
+  "tests": {
+    "command": ".venv/bin/python -B -m pytest -q",
+    "passed": 318,
+    "failed": 0,
+    "new_tests": 17,
+    "observed_elapsed_seconds": 34.48,
+    "scope": "testes locais/mocks/sinteticos separados das observacoes reais do gateway"
+  },
+  "generation": {
+    "command": ".venv/bin/python -B scripts/revisar_rascunhos_v4.py --env-file .env",
+    "model_calls": false,
+    "database_calls": false,
+    "national_raster_download": false,
+    "code_hashes_checked": 22,
+    "output_hashes_checked": 93
+  },
+  "document": {
+    "pdf": {
+      "state": "verificado",
+      "pages": 4,
+      "max_pages": 4,
+      "times_new_roman_observed": true,
+      "renderer": "perfil e grupo temporarios exclusivos; EOF/tamanho estavel/pdfinfo; somente grupo proprio encerrado"
+    },
+    "abstract_word_counts": {
+      "resumo": 134,
+      "abstract": 128
+    },
+    "references": 10,
+    "human_review": "declaracao do autor, perguntas e gabaritos; nao revisao independente",
+    "authors": "a preencher"
+  },
+  "visual_inspection": {
+    "performed_by": "IA",
+    "pages": 4,
+    "human_author_approval": false,
+    "checks": [
+      "fluxo legivel em duas colunas",
+      "grafico do controle em uma coluna",
+      "resultados distintos por subtitulo/tabela",
+      "conclusoes em pagina propria com fonte/estilo preservados",
+      "referencias inteiras, sem corte entre paginas",
+      "quatro paginas; Times New Roman; abstract/resumo nos limites"
+    ]
+  },
+  "human_review": {
+    "kind": "declaracao do autor/usuario",
+    "declaration_received_on": "2026-10-21",
+    "questions": 120,
+    "quantitative_references": 88,
+    "corrections_reported": false,
+    "fields_confirmed": [
+      "territorio",
+      "classe",
+      "periodo",
+      "operacao",
+      "denominador",
+      "resultado_numerico"
+    ],
+    "individual_annotations_supplied": false,
+    "independent_reviewer_confirmed": false,
+    "actual_review_datetime_known": false,
+    "statement_sha256": "2b10d48d53c96adf1372e1ed2f7e98f284fabe01b1a7ebbb49f920f453a855e9"
+  },
+  "independent_recalculation": {
+    "cases": 88,
+    "values": 104,
+    "all_passed": true,
+    "original_tolerances_preserved": true,
+    "input_files_hashed": 49,
+    "conservation_checks": 96,
+    "engine_and_original_oracle_not_used": true,
+    "geospatial_or_field_truth_validation": false,
+    "reference_case_sheets_generated_after_declaration": true
+  },
+  "real_diagnostic": {
+    "run_id": "c0552f63a2ca4607a82fd1716b7fe84b",
+    "freeze_sha256": "7aae0db1b42a873ee4cee79f410ec2e011f5c1cebeece707bcb725008c63bbfe",
+    "records": 56,
+    "groups": [
+      {
+        "selected_on": "old_empty",
+        "max_tokens": 2048,
+        "cases": 26,
+        "nonempty_final_text": 3,
+        "valid_contract": 3,
+        "empty_final_text": 23,
+        "finish_reason_counts": {
+          "length": 23,
+          "stop": 3
+        },
+        "completion_equals_requested_limit": 23,
+        "empty_and_length": 23,
+        "missing_usage": 0,
+        "prompt_tokens_sum_observed": 144266,
+        "completion_tokens_sum_observed": 52366,
+        "latency_mean_seconds": 18.443694640577842,
+        "latency_median_seconds": 18.145867509476375
+      },
+      {
+        "selected_on": "old_empty",
+        "max_tokens": 4096,
+        "cases": 26,
+        "nonempty_final_text": 20,
+        "valid_contract": 20,
+        "empty_final_text": 6,
+        "finish_reason_counts": {
+          "stop": 20,
+          "length": 6
+        },
+        "completion_equals_requested_limit": 6,
+        "empty_and_length": 6,
+        "missing_usage": 0,
+        "prompt_tokens_sum_observed": 144266,
+        "completion_tokens_sum_observed": 84597,
+        "latency_mean_seconds": 30.33945577491809,
+        "latency_median_seconds": 31.273469476029277
+      },
+      {
+        "selected_on": "positive_control",
+        "max_tokens": 2048,
+        "cases": 2,
+        "nonempty_final_text": 2,
+        "valid_contract": 2,
+        "empty_final_text": 0,
+        "finish_reason_counts": {
+          "stop": 2
+        },
+        "completion_equals_requested_limit": 0,
+        "empty_and_length": 0,
+        "missing_usage": 0,
+        "prompt_tokens_sum_observed": 10929,
+        "completion_tokens_sum_observed": 2408,
+        "latency_mean_seconds": 12.696992266981397,
+        "latency_median_seconds": 12.696992266981397
+      },
+      {
+        "selected_on": "positive_control",
+        "max_tokens": 4096,
+        "cases": 2,
+        "nonempty_final_text": 2,
+        "valid_contract": 2,
+        "empty_final_text": 0,
+        "finish_reason_counts": {
+          "stop": 2
+        },
+        "completion_equals_requested_limit": 0,
+        "empty_and_length": 0,
+        "missing_usage": 0,
+        "prompt_tokens_sum_observed": 10929,
+        "completion_tokens_sum_observed": 3109,
+        "latency_mean_seconds": 14.185748721996788,
+        "latency_median_seconds": 14.185748721996788
+      }
+    ],
+    "http_status_counts": {
+      "oauth": {
+        "200": 56
+      },
+      "chat": {
+        "200": 56
+      }
+    },
+    "transport_errors": {},
+    "messages_identical_to_initial_Beq_verified": true,
+    "input_token_counts_equal_between_budgets": true,
+    "reasoning_token_counter_missing": 56,
+    "raw_response_stored": false,
+    "reasoning_text_stored": false,
+    "historic_missing_metadata_recovered": false,
+    "V3_records_replaced": false,
+    "principal_accuracy_updated_with_replays": false,
+    "interpretation": "Evidencia de sensibilidade ao orcamento nas novas chamadas; nao prova causa individual historica nem bug interno especifico."
+  },
+  "preservation": {
+    "files_checked": 2381,
+    "unchanged_files": 2378,
+    "append_only_documents": [
+      "README.md",
+      "docs/DECISOES.md",
+      "docs/ESTADO_IMPLEMENTACAO.md"
+    ],
+    "unexpected_changes": 0,
+    "old_scientific_files_unchanged": 203,
+    "production_client_unchanged": true,
+    "production_and_prompts_unchanged": true,
+    "original_data_and_benchmarks_unchanged": true,
+    "old_evaluations_unchanged": true,
+    "env_and_example_unchanged": true,
+    "SAR_project_unchanged": true,
+    "V3_main_metrics_unchanged": true,
+    "V4_control_metadata_only_human_review_update": true
+  },
+  "privacy": {
+    "new_code_docs_config_files_scanned": 15,
+    "known_secret_values_scan": "verificado",
+    "generated_and_diagnostic_material_scan": "verificado",
+    "env_values_exported": false,
+    "private_paths_exported": false
+  },
+  "limitations": [
+    "Replays novos e selecionados pelas falhas antigas; nao substituem o experimento V3.",
+    "Logs originais nao capturaram finish_reason/usage quando nao houve texto; a causa historica individual nao e recuperavel.",
+    "Somente o limite de saida difere entre replays; mesmo modelo identificado nao garante pesos/infraestrutura remota identicos.",
+    "length identifica encerramento por limite reportado pelo servico; nao prova a causa interna do gateway.",
+    "Sem texto de raciocinio, corpos HTTP, credenciais ou precos estimados nos registros.",
+    "Compartilha os Parquets de referencia; nao valida verdade de campo nem geracao geoespacial.",
+    "Declaracao humana global, sem fichas originais, cegamento ou revisor independente.",
+    "Recalculo valida o plano canonico; entendimento da pergunta foi revisado conforme declaracao do autor.",
+    "Controle completo B_eq/C_eq nao refeito a 4096; perguntas novas e orcamento predefinido sao necessarios.",
+    "Edicao/licenca da malha e revisao tematica ainda limitadas; direitos de redistribuicao condicionais.",
+    "Autoria e afiliacoes a preencher; revalidar paginacao apos edicao."
+  ],
+  "submission_performed": false,
+  "publication_performed": false,
+  "deployment_performed": false
+}

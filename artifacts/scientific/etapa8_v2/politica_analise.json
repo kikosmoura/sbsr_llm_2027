@@ -1,0 +1,33 @@
+{
+  "version": "revisao-cientifica-v2",
+  "requested_on": "2026-10-20",
+  "analysis_kind": "exploratoria_pos_hoc; nao substitui o protocolo principal congelado",
+  "new_model_condition_executed": false,
+  "sensitivity": {
+    "technical_definition": "observed.status == erro_tecnico; conservar escores e denominador principais",
+    "common_subset": "mesmos case_ids em que B e C nao terminaram em erro_tecnico",
+    "common_numeric_subset": "subconjunto comum e gabarito com estado respondida",
+    "condition_specific_rates": "descritivas; denominadores diferentes, nao constituem diferenca pareada",
+    "bootstrap_replicas": 10000,
+    "seed": 20271020,
+    "generic_value_error": "rejeicao de contrato de causa indeterminada; nao inferir erro JSON, semantico ou numerico",
+    "numeric_error": "valor ou denominador fora da tolerancia congelada, apos status/plano/estrutura coerentes",
+    "selection_warning": "selecionar por sucesso observado pode enviesar a comparacao; nao controla causalmente o contrato"
+  },
+  "real_example_selection": "primeiro case_id ordenado, condicao C, repeticao zero, respondida, correto, operacao area e uma evidencia",
+  "public_provenance_check": {
+    "page": "https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/",
+    "official_base": "https://storage.example.invalid/PUBLIC_BUCKET_NAME/initiatives/brasil/collection11/lulc/coverage/brazil_coverage",
+    "years": [
+      2015,
+      2025
+    ],
+    "max_bytes": 33554432,
+    "max_requests": 512,
+    "workers": 4,
+    "wall_timeout_seconds": 240,
+    "tls_verified": true,
+    "scope": "comparar todos os intervalos fonte registrados no staging; nao baixar o raster nacional completo",
+    "revision_rule": "geracao de objeto GCS nao equivale a revisao tematica; nao atribuir v3 do asset GEE aos GeoTIFFs sem vinculo explicito"
+  }
+}

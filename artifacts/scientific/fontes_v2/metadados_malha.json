@@ -1,0 +1,9 @@
+{
+  "checked_at": "2026-10-20T13:56:05.923256+00:00",
+  "state": "indisponivel",
+  "scope": "comentarios de catalogo de sbsr.municipios e sbsr.uf; nenhuma geometria; rollback",
+  "read_only_confirmed": false,
+  "tables": [],
+  "creation_or_edition_date_inferred": false,
+  "reason": "configuracao_ausente"
+}

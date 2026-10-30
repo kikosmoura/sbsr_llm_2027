@@ -1,0 +1,148 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "9f9225242f404ef29eefe630dd614d0b",
+  "case_id": "d02_1",
+  "family_id": "d02",
+  "territory_codes": [
+    "2408102"
+  ],
+  "condition": "B",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:34:17.849163+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Quanto mudou a área da classe Área Urbanizada de Natal/RN entre 2015 e 2025, em hectares?",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": "925c4c6ae0c7cd27b590d781eb3c4a8de537e48ab92b5f3006650dbd06dc82e5",
+  "messages_sha256": "6c5595253af6801b3321cec3a1761b704fe3709c273fabd05d1088933689f3f5",
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_liquida",
+      "unit": "ha",
+      "territory_codes": [
+        "2408102"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        24
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2408102",
+        "years": [
+          2015,
+          2025
+        ],
+        "value": 358.027093102254,
+        "unit": "ha",
+        "undefined_reason": null,
+        "denominators_ha": [],
+        "rank": null
+      }
+    ],
+    "clarification_field": null,
+    "reason": "ok"
+  },
+  "final_answer": "{\"status\": \"respondida\", \"plan\": {\"operation\": \"comparacao_temporal\", \"metric\": \"diferenca_liquida\", \"unit\": \"ha\", \"territory_codes\": [\"2408102\"], \"scope_uf\": \"RN\", \"class_codes\": [24], \"years\": [2015, 2025], \"denominator\": null, \"direction\": \"desc\", \"limit\": null}, \"values\": [{\"territory_code\": \"2408102\", \"years\": [2015, 2025], \"value\": 358.027093102254, \"unit\": \"ha\", \"undefined_reason\": null, \"denominators_ha\": [], \"rank\": null}], \"clarification_field\": null, \"reason\": \"ok\"}",
+  "plan": {
+    "operation": "comparacao_temporal",
+    "metric": "diferenca_liquida",
+    "unit": "ha",
+    "territory_codes": [
+      "2408102"
+    ],
+    "scope_uf": "RN",
+    "class_codes": [
+      24
+    ],
+    "years": [
+      2015,
+      2025
+    ],
+    "denominator": null,
+    "direction": "desc",
+    "limit": null
+  },
+  "result": [
+    {
+      "territory_code": "2408102",
+      "years": [
+        2015,
+        2025
+      ],
+      "value": 358.027093102254,
+      "unit": "ha",
+      "undefined_reason": null,
+      "denominators_ha": [],
+      "rank": null
+    }
+  ],
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "messages_sha256": "6c5595253af6801b3321cec3a1761b704fe3709c273fabd05d1088933689f3f5",
+      "issues": [],
+      "usage": {
+        "prompt_tokens": 5777,
+        "total_tokens": 6667,
+        "completion_tokens": 890
+      },
+      "latency_seconds": 7.932959080091678,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "05e93b6780f1db199153c38728edad343bf90409c018f429bc083c2955b3642c",
+      "output_chars": 593,
+      "state": "valida"
+    }
+  ],
+  "latency_seconds": 7.936098588979803,
+  "scores": {
+    "status": true,
+    "plan": true,
+    "values": true,
+    "clarification": null,
+    "correct": true
+  },
+  "cost": null,
+  "source_context": {
+    "data_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+  },
+  "C_session_id": null,
+  "C_turn_id": null,
+  "C_candidate_intent": null,
+  "C_decision": null
+}

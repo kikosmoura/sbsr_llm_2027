@@ -1,0 +1,80 @@
+{
+  "schema_version": "interacao-descritiva-v6",
+  "basis": "execucoes reais existentes; nenhuma chamada ou escore novo",
+  "original": [
+    {
+      "condition": "A",
+      "cases": 120,
+      "answered": 0,
+      "correct": 21,
+      "latency_mean_seconds": 5.393549340888664,
+      "latency_median_seconds": 4.465319532551803,
+      "latency_p95_seconds": 11.533154656854459
+    },
+    {
+      "condition": "B",
+      "cases": 120,
+      "answered": 30,
+      "correct": 49,
+      "latency_mean_seconds": 12.388140375981068,
+      "latency_median_seconds": 11.310760426917113,
+      "latency_p95_seconds": 24.002629500231702
+    },
+    {
+      "condition": "C",
+      "cases": 120,
+      "answered": 73,
+      "correct": 104,
+      "latency_mean_seconds": 10.205724643810148,
+      "latency_median_seconds": 8.511158362554852,
+      "latency_p95_seconds": 21.43230740970466
+    }
+  ],
+  "control_4096": [
+    {
+      "condition": "B_eq",
+      "cases": 88,
+      "answered": 79,
+      "correct": 78,
+      "latency_mean_seconds": 14.090175927035903,
+      "latency_median_seconds": 6.40912585350452,
+      "latency_p95_seconds": 38.72152605305891,
+      "executor_seconds_mean": 0,
+      "transport_usage": {
+        "prompt_tokens": 503951,
+        "completion_tokens": 129242,
+        "total_tokens": 633193
+      },
+      "usage_missing_responses": 0,
+      "cost": null
+    },
+    {
+      "condition": "C_eq",
+      "cases": 88,
+      "answered": 88,
+      "correct": 88,
+      "latency_mean_seconds": 5.276721786690442,
+      "latency_median_seconds": 4.097234211512841,
+      "latency_p95_seconds": 10.178247989836375,
+      "executor_seconds_mean": 0.14010666009297976,
+      "transport_usage": {
+        "prompt_tokens": 510399,
+        "completion_tokens": 42564,
+        "total_tokens": 552963
+      },
+      "usage_missing_responses": 0,
+      "cost": null
+    }
+  ],
+  "C_correct_nonanswers": 31,
+  "latency_population": "todos os casos primarios, inclusive erros e recusas; exclui repeticoes",
+  "p95_method": "quantil empirico com interpolacao linear (n-1)*0.95",
+  "local_concurrency": 3,
+  "limitations": [
+    "Latencias descritivas sob concorrencia local, nao benchmark de capacidade do gateway.",
+    "A/B/C originais tem contratos distintos; A nao emite respostas quantitativas.",
+    "Tokens do transporte 4096 incluem retornos vazios; uso historico no cliente e parcial.",
+    "Contagens nao estimam custo financeiro; preco e reasoning_tokens nao informados.",
+    "Sem nova comparacao inferencial, pareamento de latencia ou estimativa de throughput."
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "schema_version": "controle-contrato-caso-v1",
+  "run_id": "aa224a7d26124a8dbfa4042e50621cc7",
+  "case_id": "t18_2",
+  "family_id": "teste_variacao",
+  "territory_codes": [
+    "2403806"
+  ],
+  "condition": "B_eq",
+  "repeat": 0,
+  "integration_kind": "gateway_real",
+  "created_at": "2026-10-21T15:02:51.942936+00:00",
+  "freeze_sha256": "55593ae2e52cbd2890ddce5bfed4183977a20b43a9c95123ba43f53e2b1332f0",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 4096,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "native_tools": false,
+    "native_response_format": false,
+    "workers": 3
+  },
+  "question": "Calcule a variação percentual de Mangue em Florânia/RN entre 2015 e 2025, dividindo pela área inicial.",
+  "fixed_plan": {
+    "operation": "comparacao_temporal",
+    "metric": "variacao_percentual",
+    "unit": "percentual",
+    "territory_codes": [
+      "2403806"
+    ],
+    "scope_uf": "RN",
+    "class_codes": [
+      5
+    ],
+    "years": [
+      2015,
+      2025
+    ],
+    "denominator": "area_inicial",
+    "direction": "desc",
+    "limit": null
+  },
+  "common_input_sha256": "1ce520584f59503a5e9c144017569d06d981c32b19efa5bca22d9f93191f36b2",
+  "output_contract_sha256": "7cb672668bdaf0cb31f785651d91ec6475f990de121edab04b748bd0da63c955",
+  "system_sha256": "2805f7312e5288c2499d8bc4b6fd55f3a0adc3b8d5ea53aab2533894c62b290d",
+  "messages_sha256": "7e61f1c61b69199be017142d7bb18011e5a5626f355f303166f11bbeda966c1e",
+  "execution_observations": [],
+  "executor_result": null,
+  "observed": {
+    "status": "respondida",
+    "values": [
+      {
+        "territory_code": "2403806",
+        "years": [
+          2015,
+          2025
+        ],
+        "value": null,
+        "unit": "percentual",
+        "undefined_reason": "base_inicial_zero",
+        "denominators_ha": [
+          0.0
+        ],
+        "rank": null
+      }
+    ],
+    "reason": "consulta_executada",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "variacao_percentual",
+      "unit": "percentual",
+      "territory_codes": [
+        "2403806"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        5
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": "area_inicial",
+      "direction": "desc",
+      "limit": null
+    },
+    "clarification_field": null
+  },
+  "final_answer": "{\"reason\":\"consulta_executada\",\"status\":\"respondida\",\"values\":[{\"denominators_ha\":[0.0],\"rank\":null,\"territory_code\":\"2403806\",\"undefined_reason\":\"base_inicial_zero\",\"unit\":\"percentual\",\"value\":null,\"years\":[2015,2025]}]}",
+  "attempts": [
+    {
+      "number": 1,
+      "messages_sha256": "7e61f1c61b69199be017142d7bb18011e5a5626f355f303166f11bbeda966c1e",
+      "usage": {
+        "prompt_tokens": 5477,
+        "total_tokens": 5993,
+        "completion_tokens": 516
+      },
+      "issues": [],
+      "latency_seconds": 5.283537541050464,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "eaf22573d5aa560b1506e28ac4b0a550abaeffddbc9040c8f55715401c4ec54a",
+      "output_chars": 302,
+      "state": "valida"
+    }
+  ],
+  "latency_seconds": 5.287535296054557,
+  "model_seconds": 5.283942500012927,
+  "http_events": [
+    {
+      "endpoint": "oauth",
+      "http_status": 200,
+      "bytes_read": 91,
+      "body_complete": true,
+      "response_metadata": null,
+      "elapsed_seconds": 0.19611472904216498
+    },
+    {
+      "endpoint": "chat",
+      "http_status": 200,
+      "bytes_read": 2713,
+      "body_complete": true,
+      "response_metadata": {
+        "json_object": true,
+        "choices_count": 1,
+        "finish_reason": "stop",
+        "content_state": "texto",
+        "final_content_chars": 302,
+        "reasoning_field_present": true,
+        "usage": {
+          "prompt_tokens": 5477,
+          "total_tokens": 5993,
+          "completion_tokens": 516
+        },
+        "reasoning_tokens": null
+      },
+      "elapsed_seconds": 5.087372948997654
+    }
+  ],
+  "executor_seconds": 0,
+  "scores": {
+    "status": true,
+    "plan": true,
+    "values": true,
+    "clarification": null,
+    "correct": true
+  },
+  "cost": null,
+  "source_geo_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+}

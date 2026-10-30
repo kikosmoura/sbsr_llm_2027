@@ -1,0 +1,214 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "fa7686659da9449d811d154641021724",
+  "case_id": "t27_3",
+  "family_id": "teste_t27",
+  "territory_codes": [
+    "2409902"
+  ],
+  "condition": "C",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:54:58.474384+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Apresente a extensão em hectares de Pastagem em Pendências/RN, 2024.",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": null,
+  "messages_sha256": null,
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "dados_indisponiveis",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2409902"
+      ],
+      "scope_uf": null,
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2024
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [],
+    "clarification_field": null,
+    "reason": "estatisticas_nao_materializadas"
+  },
+  "final_answer": "As estatisticas completas necessarias ainda nao foram materializadas.",
+  "plan": {
+    "operation": "area",
+    "metric": "area",
+    "unit": "ha",
+    "territory_codes": [
+      "2409902"
+    ],
+    "scope_uf": null,
+    "class_codes": [
+      15
+    ],
+    "years": [
+      2024
+    ],
+    "denominator": null,
+    "direction": "desc",
+    "limit": null
+  },
+  "result": null,
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "state": "valida",
+      "latency_seconds": 10.01236728799995,
+      "usage": {
+        "prompt_tokens": 4632,
+        "total_tokens": 5571,
+        "completion_tokens": 939
+      },
+      "chat_requests": 1,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "output_sha256": "d26401d56ea4dd715340001374596422a769a58aae117e47f71f4f76eb0b04a8",
+      "output_chars": 514,
+      "candidate": {
+        "action": "consultar",
+        "intent": {
+          "operation": "area",
+          "territories": [
+            {
+              "mention": "Pendências",
+              "uf_mention": "RN",
+              "kind": "municipio"
+            }
+          ],
+          "scope_uf_mention": "RN",
+          "classes": [
+            {
+              "mention": "pastagem"
+            }
+          ],
+          "years": [
+            2024
+          ],
+          "metric": "area",
+          "metric_mention": "extensão",
+          "unit_mention": "hectares",
+          "denominator": null,
+          "direction": null,
+          "limit": null
+        },
+        "clarification_fields": []
+      },
+      "issues": [],
+      "gateway_error": null,
+      "http_status": null,
+      "messages_sha256": "057435d17ab18ae33770c2e6e293e8d3cbbc13f217f6dcae419a10aa9fbec4cb",
+      "explanation_fallback": null
+    }
+  ],
+  "latency_seconds": 10.095368433045223,
+  "scores": {
+    "status": true,
+    "plan": true,
+    "values": null,
+    "clarification": null,
+    "correct": true
+  },
+  "cost": null,
+  "source_context": {
+    "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+    "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+    "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+    "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+  },
+  "C_session_id": "6d61bcdef7fd413b8553f6b6d4e65021",
+  "C_turn_id": "7651db6be4924de2b8712b5146eb09f5",
+  "C_candidate_intent": {
+    "schema_version": "intencao-semantica-v1",
+    "operation": "area",
+    "territories": [
+      {
+        "code": "2409902",
+        "name": null,
+        "uf": null,
+        "kind": null
+      }
+    ],
+    "scope_uf": null,
+    "classes": [
+      {
+        "code": 15,
+        "term": null
+      }
+    ],
+    "years": [
+      2024
+    ],
+    "metric": "area",
+    "metric_term": null,
+    "unit": "ha",
+    "unit_term": null,
+    "denominator": null,
+    "direction": "desc",
+    "limit": null,
+    "requested_concept": "cobertura"
+  },
+  "C_decision": {
+    "status": "dados_indisponiveis",
+    "reason": "estatisticas_nao_materializadas",
+    "message": "As estatisticas completas necessarias ainda nao foram materializadas.",
+    "normalized_plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2409902"
+      ],
+      "scope_uf": null,
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2024
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "territory_candidates": [],
+    "class_candidates": [],
+    "notes": [
+      "Selecoes sem cobertura completa: 1."
+    ],
+    "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+    "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9",
+    "capabilities_sha256": "91d83a3973e66c772f3db8942bee78b526e737d54ae89d464cd9d0385eb92321"
+  }
+}

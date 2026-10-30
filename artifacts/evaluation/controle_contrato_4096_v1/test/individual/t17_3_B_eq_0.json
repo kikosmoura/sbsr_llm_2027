@@ -1,0 +1,155 @@
+{
+  "schema_version": "controle-contrato-caso-v1",
+  "run_id": "aa224a7d26124a8dbfa4042e50621cc7",
+  "case_id": "t17_3",
+  "family_id": "teste_variacao",
+  "territory_codes": [
+    "2403608"
+  ],
+  "condition": "B_eq",
+  "repeat": 0,
+  "integration_kind": "gateway_real",
+  "created_at": "2026-10-21T15:03:01.422037+00:00",
+  "freeze_sha256": "55593ae2e52cbd2890ddce5bfed4183977a20b43a9c95123ba43f53e2b1332f0",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 4096,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "native_tools": false,
+    "native_response_format": false,
+    "workers": 3
+  },
+  "question": "Para Extremoz/RN, obtenha a variação percentual da área de Área Urbanizada de 2015 para 2025 com base em 2015.",
+  "fixed_plan": {
+    "operation": "comparacao_temporal",
+    "metric": "variacao_percentual",
+    "unit": "percentual",
+    "territory_codes": [
+      "2403608"
+    ],
+    "scope_uf": "RN",
+    "class_codes": [
+      24
+    ],
+    "years": [
+      2015,
+      2025
+    ],
+    "denominator": "area_inicial",
+    "direction": "desc",
+    "limit": null
+  },
+  "common_input_sha256": "5041a51271a73622f05da3a863b95e091236608f51449d445a3763ea7fad815a",
+  "output_contract_sha256": "7cb672668bdaf0cb31f785651d91ec6475f990de121edab04b748bd0da63c955",
+  "system_sha256": "2805f7312e5288c2499d8bc4b6fd55f3a0adc3b8d5ea53aab2533894c62b290d",
+  "messages_sha256": "7677c2cf3c3827aa68a380a23f35d4cbf9e474320886d095c0245b8b9875e479",
+  "execution_observations": [],
+  "executor_result": null,
+  "observed": {
+    "status": "respondida",
+    "values": [
+      {
+        "territory_code": "2403608",
+        "years": [
+          2015,
+          2025
+        ],
+        "value": 65.196978224,
+        "unit": "percentual",
+        "undefined_reason": null,
+        "denominators_ha": [
+          1707.029328258777
+        ],
+        "rank": null
+      }
+    ],
+    "reason": "consulta_executada",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "variacao_percentual",
+      "unit": "percentual",
+      "territory_codes": [
+        "2403608"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        24
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": "area_inicial",
+      "direction": "desc",
+      "limit": null
+    },
+    "clarification_field": null
+  },
+  "final_answer": "{\"reason\":\"consulta_executada\",\"status\":\"respondida\",\"values\":[{\"denominators_ha\":[1707.029328258777],\"rank\":null,\"territory_code\":\"2403608\",\"undefined_reason\":null,\"unit\":\"percentual\",\"value\":65.196978224,\"years\":[2015,2025]}]}",
+  "attempts": [
+    {
+      "number": 1,
+      "messages_sha256": "7677c2cf3c3827aa68a380a23f35d4cbf9e474320886d095c0245b8b9875e479",
+      "usage": {
+        "prompt_tokens": 5610,
+        "total_tokens": 8728,
+        "completion_tokens": 3118
+      },
+      "issues": [],
+      "latency_seconds": 39.04968710395042,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "eaf070eee46e3de27ecd07768a7ce7cdfff4b57976aaeb7474d32f1ae44767c4",
+      "output_chars": 228,
+      "state": "valida"
+    }
+  ],
+  "latency_seconds": 39.052990403957665,
+  "model_seconds": 39.05012554093264,
+  "http_events": [
+    {
+      "endpoint": "oauth",
+      "http_status": 200,
+      "bytes_read": 91,
+      "body_complete": true,
+      "response_metadata": null,
+      "elapsed_seconds": 0.2072912430157885
+    },
+    {
+      "endpoint": "chat",
+      "http_status": 200,
+      "bytes_read": 9156,
+      "body_complete": true,
+      "response_metadata": {
+        "json_object": true,
+        "choices_count": 1,
+        "finish_reason": "stop",
+        "content_state": "texto",
+        "final_content_chars": 228,
+        "reasoning_field_present": true,
+        "usage": {
+          "prompt_tokens": 5610,
+          "total_tokens": 8728,
+          "completion_tokens": 3118
+        },
+        "reasoning_tokens": null
+      },
+      "elapsed_seconds": 38.84233724605292
+    }
+  ],
+  "executor_seconds": 0,
+  "scores": {
+    "status": true,
+    "plan": true,
+    "values": true,
+    "clarification": null,
+    "correct": true
+  },
+  "cost": null,
+  "source_geo_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+}

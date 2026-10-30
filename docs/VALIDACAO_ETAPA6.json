@@ -1,0 +1,605 @@
+{
+  "schema_version": "validacao-etapa6-v1",
+  "checked_at": "2026-10-19T20:14:30.983398+00:00",
+  "package_version": "0.6.0",
+  "state": "verificado",
+  "tests": {
+    "passed": 239,
+    "new_api_cli_tests": 28,
+    "kind": "sinteticos_mocks_e_referencias_deterministicas",
+    "external_gateway_called_in_unit_suite": false,
+    "asgi_requires_local_network_permission_in_sandbox": true
+  },
+  "installed_wheel_verified": true,
+  "wheel_sha256": "5ead48ea3c38033ae499d3d745c64d296c3e0e569fcb4a343c90556ada02a48b",
+  "interface_sha256": "4392a5cb3c52649e4b668f35d89ff28587324a13931d71db4defc8a6fb6162a3",
+  "executor_sha256": "64bb18ecbfecf2fd623d8fd10e616a1f816bbf529feeec5749f554ac7d4ed81a",
+  "interpreter_sha256": "d5606e6fe0c23c8e0619dafcb4f8cda5b07d30a7a967df652d73bcf1f9ac2fde",
+  "previous_executor_and_interpreter_preserved": true,
+  "prompt_hashes": {
+    "system.txt": "2ca6b6759b1f552dbf001d9bfe072959df9c4d554ae4b525b9b33b9de912bf10",
+    "user.txt": "30be6fbfc5e8822eeb6b315765b3fb5747ca3197b867746b7ed7808c9e7169ed",
+    "repair.txt": "ed730b22ca7209aad127f6ad9b425a91d2098c623c98c6158e71bd513efaf08b",
+    "proposal.schema.json": "9787a21f662d0ab8c0243201d6a65ec3770d865556f2d9a4f31d02b1864a44e3"
+  },
+  "real_demo": {
+    "state": "verificado",
+    "api_cases": 6,
+    "api_turns": 7,
+    "all_api_checks_passed": true,
+    "cli_verified": true,
+    "chat_requests_observed_in_api_and_cli": 8,
+    "models_returned": [
+      "RETURNED_MODEL_ID_1"
+    ],
+    "report_path": "reports/etapa6/demonstracao_real.json",
+    "report_sha256": "5a299911d5e88f4b173d70a185bae074201bddef43e10353b454f40d10d856b8",
+    "cross_session_denied": true,
+    "get_by_result_and_answer_ids_verified": true,
+    "individual_evidence_verified": true,
+    "json_csv_html_match_internal_values": true,
+    "reference_ids_match_stage4": true,
+    "temporary_server_stopped": true,
+    "public_deployment": false,
+    "cases": [
+      {
+        "case": "municipio",
+        "checks_passed": true,
+        "turns": [
+          {
+            "status": "respondida",
+            "reason": "consulta_executada",
+            "session_id": "b83659490a854e8f889a1331794f8915",
+            "result_id": "2097ccd059e7440f898f1335ea54cda0",
+            "answer_id": "537955b183713f10ab550e98d9e72fc4ff1ecdea799615c4918346f623f7ac4a",
+            "plan": {
+              "class_codes": [
+                15
+              ],
+              "denominator": null,
+              "direction": "desc",
+              "limit": null,
+              "metric": "area",
+              "operation": "area",
+              "scope_uf": null,
+              "territory_codes": [
+                "2410900"
+              ],
+              "unit": "ha",
+              "years": [
+                2015
+              ]
+            },
+            "values": [
+              {
+                "area_value_ha": 8684.038153762798,
+                "denominator_unit": null,
+                "denominator_value": null,
+                "evidence_id": "ac32b0f023c150320cd583918bb4d3932cf2e3b0d86706ca0439b0319d0aff03",
+                "metric": "area",
+                "rank": null,
+                "undefined_reason": null,
+                "unit": "ha",
+                "value": 8684.038153762798
+              }
+            ],
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "trace": {
+              "attempt_count": 1,
+              "dialogue_session_id": "e066c38b448d47018ce0f21088411571",
+              "integration_kind": "gateway_real",
+              "interface_sha256": "4392a5cb3c52649e4b668f35d89ff28587324a13931d71db4defc8a6fb6162a3",
+              "interface_version": "0.6.0",
+              "interpreter_sha256": "d5606e6fe0c23c8e0619dafcb4f8cda5b07d30a7a967df652d73bcf1f9ac2fde",
+              "latency_seconds": 7.598636277019978,
+              "local_config_sha256": "73d4a43fac848d5493ec61b44fc066eb18cfa071dc326ab7915eccb4e2a24782",
+              "model": "MODEL_ID",
+              "parent_turn_id": null,
+              "prompt_hashes": {
+                "proposal.schema.json": "9787a21f662d0ab8c0243201d6a65ec3770d865556f2d9a4f31d02b1864a44e3",
+                "repair.txt": "ed730b22ca7209aad127f6ad9b425a91d2098c623c98c6158e71bd513efaf08b",
+                "system.txt": "2ca6b6759b1f552dbf001d9bfe072959df9c4d554ae4b525b9b33b9de912bf10",
+                "user.txt": "30be6fbfc5e8822eeb6b315765b3fb5747ca3197b867746b7ed7808c9e7169ed"
+              },
+              "returned_models": [
+                "RETURNED_MODEL_ID_1"
+              ],
+              "turn_id": "2097ccd059e7440f898f1335ea54cda0",
+              "usage": [
+                {
+                  "completion_tokens": 892,
+                  "prompt_tokens": 4679,
+                  "total_tokens": 5571
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "case": "comparacao_2015_2025",
+        "checks_passed": true,
+        "turns": [
+          {
+            "status": "respondida",
+            "reason": "consulta_executada",
+            "session_id": "b83659490a854e8f889a1331794f8915",
+            "result_id": "4d45cbb127714f2c82dfda1f245f93cd",
+            "answer_id": "149f4782f778570698291e9a7dfbf8dc3b1b73e90cc4ce68f7e110cec7c12ea1",
+            "plan": {
+              "class_codes": [
+                24
+              ],
+              "denominator": null,
+              "direction": "desc",
+              "limit": null,
+              "metric": "diferenca_liquida",
+              "operation": "comparacao_temporal",
+              "scope_uf": null,
+              "territory_codes": [
+                "2408102"
+              ],
+              "unit": "ha",
+              "years": [
+                2015,
+                2025
+              ]
+            },
+            "values": [
+              {
+                "area_value_ha": 358.0270931022533,
+                "denominator_unit": null,
+                "denominator_value": null,
+                "evidence_id": "48bcb242ec568ab4a81ae0ffc668731bce7674e6c5ca607ce22ac92ed0dcbf7a",
+                "metric": "diferenca_liquida",
+                "rank": null,
+                "undefined_reason": null,
+                "unit": "ha",
+                "value": 358.0270931022533
+              }
+            ],
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "trace": {
+              "attempt_count": 1,
+              "dialogue_session_id": "740847683fe6427fafd5f9738382aabe",
+              "integration_kind": "gateway_real",
+              "interface_sha256": "4392a5cb3c52649e4b668f35d89ff28587324a13931d71db4defc8a6fb6162a3",
+              "interface_version": "0.6.0",
+              "interpreter_sha256": "d5606e6fe0c23c8e0619dafcb4f8cda5b07d30a7a967df652d73bcf1f9ac2fde",
+              "latency_seconds": 8.91662544105202,
+              "local_config_sha256": "73d4a43fac848d5493ec61b44fc066eb18cfa071dc326ab7915eccb4e2a24782",
+              "model": "MODEL_ID",
+              "parent_turn_id": null,
+              "prompt_hashes": {
+                "proposal.schema.json": "9787a21f662d0ab8c0243201d6a65ec3770d865556f2d9a4f31d02b1864a44e3",
+                "repair.txt": "ed730b22ca7209aad127f6ad9b425a91d2098c623c98c6158e71bd513efaf08b",
+                "system.txt": "2ca6b6759b1f552dbf001d9bfe072959df9c4d554ae4b525b9b33b9de912bf10",
+                "user.txt": "30be6fbfc5e8822eeb6b315765b3fb5747ca3197b867746b7ed7808c9e7169ed"
+              },
+              "returned_models": [
+                "RETURNED_MODEL_ID_1"
+              ],
+              "turn_id": "4d45cbb127714f2c82dfda1f245f93cd",
+              "usage": [
+                {
+                  "completion_tokens": 1085,
+                  "prompt_tokens": 4632,
+                  "total_tokens": 5717
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "case": "ranking_rn",
+        "checks_passed": true,
+        "turns": [
+          {
+            "status": "dados_indisponiveis",
+            "reason": "ranking_com_cobertura_incompleta",
+            "session_id": "b83659490a854e8f889a1331794f8915",
+            "result_id": "85ff11cd43d4402aa01b905ef4dd8dfa",
+            "answer_id": null,
+            "plan": null,
+            "values": [],
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "trace": {
+              "attempt_count": 1,
+              "dialogue_session_id": "6e30e0c3bf1f403d87bbaf1f955f2e54",
+              "integration_kind": "gateway_real",
+              "interface_sha256": "4392a5cb3c52649e4b668f35d89ff28587324a13931d71db4defc8a6fb6162a3",
+              "interface_version": "0.6.0",
+              "interpreter_sha256": "d5606e6fe0c23c8e0619dafcb4f8cda5b07d30a7a967df652d73bcf1f9ac2fde",
+              "latency_seconds": 6.0386187579715624,
+              "local_config_sha256": "73d4a43fac848d5493ec61b44fc066eb18cfa071dc326ab7915eccb4e2a24782",
+              "model": "MODEL_ID",
+              "parent_turn_id": null,
+              "prompt_hashes": {
+                "proposal.schema.json": "9787a21f662d0ab8c0243201d6a65ec3770d865556f2d9a4f31d02b1864a44e3",
+                "repair.txt": "ed730b22ca7209aad127f6ad9b425a91d2098c623c98c6158e71bd513efaf08b",
+                "system.txt": "2ca6b6759b1f552dbf001d9bfe072959df9c4d554ae4b525b9b33b9de912bf10",
+                "user.txt": "30be6fbfc5e8822eeb6b315765b3fb5747ca3197b867746b7ed7808c9e7169ed"
+              },
+              "returned_models": [
+                "RETURNED_MODEL_ID_1"
+              ],
+              "turn_id": "85ff11cd43d4402aa01b905ef4dd8dfa",
+              "usage": [
+                {
+                  "completion_tokens": 732,
+                  "prompt_tokens": 4574,
+                  "total_tokens": 5306
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "case": "homonimo",
+        "checks_passed": true,
+        "turns": [
+          {
+            "status": "precisa_esclarecimento",
+            "reason": "territorio_homonimo",
+            "session_id": "b83659490a854e8f889a1331794f8915",
+            "result_id": "28b18d3dae6a415285e220b7ac8a7fb6",
+            "answer_id": null,
+            "plan": null,
+            "values": [],
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "trace": {
+              "attempt_count": 1,
+              "dialogue_session_id": "6fcd69a04bd648d6bb27cf81d0383452",
+              "integration_kind": "gateway_real",
+              "interface_sha256": "4392a5cb3c52649e4b668f35d89ff28587324a13931d71db4defc8a6fb6162a3",
+              "interface_version": "0.6.0",
+              "interpreter_sha256": "d5606e6fe0c23c8e0619dafcb4f8cda5b07d30a7a967df652d73bcf1f9ac2fde",
+              "latency_seconds": 7.174236689927056,
+              "local_config_sha256": "73d4a43fac848d5493ec61b44fc066eb18cfa071dc326ab7915eccb4e2a24782",
+              "model": "MODEL_ID",
+              "parent_turn_id": null,
+              "prompt_hashes": {
+                "proposal.schema.json": "9787a21f662d0ab8c0243201d6a65ec3770d865556f2d9a4f31d02b1864a44e3",
+                "repair.txt": "ed730b22ca7209aad127f6ad9b425a91d2098c623c98c6158e71bd513efaf08b",
+                "system.txt": "2ca6b6759b1f552dbf001d9bfe072959df9c4d554ae4b525b9b33b9de912bf10",
+                "user.txt": "30be6fbfc5e8822eeb6b315765b3fb5747ca3197b867746b7ed7808c9e7169ed"
+              },
+              "returned_models": [
+                "RETURNED_MODEL_ID_1"
+              ],
+              "turn_id": "28b18d3dae6a415285e220b7ac8a7fb6",
+              "usage": [
+                {
+                  "completion_tokens": 889,
+                  "prompt_tokens": 4676,
+                  "total_tokens": 5565
+                }
+              ]
+            }
+          },
+          {
+            "status": "respondida",
+            "reason": "consulta_executada",
+            "session_id": "b83659490a854e8f889a1331794f8915",
+            "result_id": "6e2aee5250fa4c2491dd236ae7eb896e",
+            "answer_id": "36b6df1638ce0a18d12cdefd3c07f2348154fbce86ca3503cd360b020efcb513",
+            "plan": {
+              "class_codes": [
+                15
+              ],
+              "denominator": null,
+              "direction": "desc",
+              "limit": null,
+              "metric": "area",
+              "operation": "area",
+              "scope_uf": null,
+              "territory_codes": [
+                "2411205"
+              ],
+              "unit": "ha",
+              "years": [
+                2015
+              ]
+            },
+            "values": [
+              {
+                "area_value_ha": 23703.548752555733,
+                "denominator_unit": null,
+                "denominator_value": null,
+                "evidence_id": "b1820e2e0f1b68fb4bc862777dd2bcba8a725f122940797ac2a8585c8c7437cf",
+                "metric": "area",
+                "rank": null,
+                "undefined_reason": null,
+                "unit": "ha",
+                "value": 23703.548752555733
+              }
+            ],
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "trace": {
+              "attempt_count": 1,
+              "dialogue_session_id": "6fcd69a04bd648d6bb27cf81d0383452",
+              "integration_kind": "gateway_real",
+              "interface_sha256": "4392a5cb3c52649e4b668f35d89ff28587324a13931d71db4defc8a6fb6162a3",
+              "interface_version": "0.6.0",
+              "interpreter_sha256": "d5606e6fe0c23c8e0619dafcb4f8cda5b07d30a7a967df652d73bcf1f9ac2fde",
+              "latency_seconds": 5.36587649199646,
+              "local_config_sha256": "73d4a43fac848d5493ec61b44fc066eb18cfa071dc326ab7915eccb4e2a24782",
+              "model": "MODEL_ID",
+              "parent_turn_id": "28b18d3dae6a415285e220b7ac8a7fb6",
+              "prompt_hashes": {
+                "proposal.schema.json": "9787a21f662d0ab8c0243201d6a65ec3770d865556f2d9a4f31d02b1864a44e3",
+                "repair.txt": "ed730b22ca7209aad127f6ad9b425a91d2098c623c98c6158e71bd513efaf08b",
+                "system.txt": "2ca6b6759b1f552dbf001d9bfe072959df9c4d554ae4b525b9b33b9de912bf10",
+                "user.txt": "30be6fbfc5e8822eeb6b315765b3fb5747ca3197b867746b7ed7808c9e7169ed"
+              },
+              "returned_models": [
+                "RETURNED_MODEL_ID_1"
+              ],
+              "turn_id": "6e2aee5250fa4c2491dd236ae7eb896e",
+              "usage": [
+                {
+                  "completion_tokens": 625,
+                  "prompt_tokens": 4709,
+                  "total_tokens": 5334
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "case": "classe_ambigua",
+        "checks_passed": true,
+        "turns": [
+          {
+            "status": "precisa_esclarecimento",
+            "reason": "classe_ambigua",
+            "session_id": "b83659490a854e8f889a1331794f8915",
+            "result_id": "efeabd6964fa4a27b52f10b35eb4b9ca",
+            "answer_id": null,
+            "plan": null,
+            "values": [],
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "trace": {
+              "attempt_count": 1,
+              "dialogue_session_id": "8e7d31a5a52c4c5e8dd972c5563be461",
+              "integration_kind": "gateway_real",
+              "interface_sha256": "4392a5cb3c52649e4b668f35d89ff28587324a13931d71db4defc8a6fb6162a3",
+              "interface_version": "0.6.0",
+              "interpreter_sha256": "d5606e6fe0c23c8e0619dafcb4f8cda5b07d30a7a967df652d73bcf1f9ac2fde",
+              "latency_seconds": 6.9135004109703,
+              "local_config_sha256": "73d4a43fac848d5493ec61b44fc066eb18cfa071dc326ab7915eccb4e2a24782",
+              "model": "MODEL_ID",
+              "parent_turn_id": null,
+              "prompt_hashes": {
+                "proposal.schema.json": "9787a21f662d0ab8c0243201d6a65ec3770d865556f2d9a4f31d02b1864a44e3",
+                "repair.txt": "ed730b22ca7209aad127f6ad9b425a91d2098c623c98c6158e71bd513efaf08b",
+                "system.txt": "2ca6b6759b1f552dbf001d9bfe072959df9c4d554ae4b525b9b33b9de912bf10",
+                "user.txt": "30be6fbfc5e8822eeb6b315765b3fb5747ca3197b867746b7ed7808c9e7169ed"
+              },
+              "returned_models": [
+                "RETURNED_MODEL_ID_1"
+              ],
+              "turn_id": "efeabd6964fa4a27b52f10b35eb4b9ca",
+              "usage": [
+                {
+                  "completion_tokens": 859,
+                  "prompt_tokens": 4682,
+                  "total_tokens": 5541
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "case": "ano_ausente",
+        "checks_passed": true,
+        "turns": [
+          {
+            "status": "dados_indisponiveis",
+            "reason": "estatisticas_nao_materializadas",
+            "session_id": "b83659490a854e8f889a1331794f8915",
+            "result_id": "aedada7899ba44b4b1fe14ecf28daeaf",
+            "answer_id": null,
+            "plan": null,
+            "values": [],
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "trace": {
+              "attempt_count": 1,
+              "dialogue_session_id": "86a31d6e219241baae37966110e5e3f2",
+              "integration_kind": "gateway_real",
+              "interface_sha256": "4392a5cb3c52649e4b668f35d89ff28587324a13931d71db4defc8a6fb6162a3",
+              "interface_version": "0.6.0",
+              "interpreter_sha256": "d5606e6fe0c23c8e0619dafcb4f8cda5b07d30a7a967df652d73bcf1f9ac2fde",
+              "latency_seconds": 8.32535725098569,
+              "local_config_sha256": "73d4a43fac848d5493ec61b44fc066eb18cfa071dc326ab7915eccb4e2a24782",
+              "model": "MODEL_ID",
+              "parent_turn_id": null,
+              "prompt_hashes": {
+                "proposal.schema.json": "9787a21f662d0ab8c0243201d6a65ec3770d865556f2d9a4f31d02b1864a44e3",
+                "repair.txt": "ed730b22ca7209aad127f6ad9b425a91d2098c623c98c6158e71bd513efaf08b",
+                "system.txt": "2ca6b6759b1f552dbf001d9bfe072959df9c4d554ae4b525b9b33b9de912bf10",
+                "user.txt": "30be6fbfc5e8822eeb6b315765b3fb5747ca3197b867746b7ed7808c9e7169ed"
+              },
+              "returned_models": [
+                "RETURNED_MODEL_ID_1"
+              ],
+              "turn_id": "aedada7899ba44b4b1fe14ecf28daeaf",
+              "usage": [
+                {
+                  "completion_tokens": 1054,
+                  "prompt_tokens": 4678,
+                  "total_tokens": 5732
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "real_capabilities": {
+    "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+    "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+    "materialized_years": [
+      2015,
+      2025
+    ],
+    "processed_territories": 168,
+    "class_count": 41,
+    "ranking": [
+      {
+        "missing_or_partial_codes": [
+          "2401107"
+        ],
+        "reason": "ranking_com_cobertura_incompleta",
+        "status": "dados_indisponiveis",
+        "uf": "RN",
+        "universe_count": 167,
+        "usable_count": 166,
+        "years": [
+          2015,
+          2025
+        ]
+      }
+    ],
+    "operations": [
+      {
+        "operation": "area",
+        "restriction": "territorio_ano_com_cobertura_completa",
+        "status": "disponivel"
+      },
+      {
+        "operation": "participacao",
+        "restriction": "territorio_ano_com_cobertura_completa",
+        "status": "disponivel"
+      },
+      {
+        "operation": "comparacao_temporal",
+        "restriction": "suporte_valido_comum_materializado",
+        "status": "disponivel"
+      },
+      {
+        "operation": "serie_disponivel",
+        "restriction": "territorio_ano_com_cobertura_completa",
+        "status": "disponivel"
+      },
+      {
+        "operation": "comparacao_territorial",
+        "restriction": "territorio_ano_com_cobertura_completa",
+        "status": "disponivel"
+      },
+      {
+        "operation": "ranking_delimitado",
+        "restriction": "cobertura_completa_do_universo_da_uf",
+        "status": "dados_indisponiveis"
+      }
+    ]
+  },
+  "dependencies": {
+    "fastapi": "0.135.1",
+    "starlette": "0.52.1",
+    "uvicorn": "0.42.0",
+    "httpx": "0.28.1",
+    "anyio": "4.12.1",
+    "python-dotenv": "1.2.2",
+    "pydantic": "2.12.5",
+    "duckdb": "1.4.1"
+  },
+  "upstream_unchanged": {
+    "protected_file_count": 342,
+    "parquet_count": 336,
+    "env_unchanged": true,
+    "integration_example_unchanged": true
+  },
+  "privacy": {
+    "new_public_files_scanned": true,
+    "real_json_reports_scanned": 9,
+    "credentials_or_api_keys_published": false,
+    "private_file_mode": "0600",
+    "tokens_stored_as_hash_in_api_registry": true
+  },
+  "network": {
+    "bind_host": "127.0.0.1",
+    "default_port": 8765,
+    "public_deployment": false,
+    "one_server_worker": true,
+    "one_query_process_at_a_time": true
+  },
+  "source_database_called": false,
+  "raster_processed_on_request": false,
+  "frozen_independent_benchmark": false,
+  "limitations": [
+    "Ranking completo do RN bloqueado por cobertura parcial/codigo 0 em Areia Branca",
+    "Somente 2015 e 2025 materializados",
+    "Edicao territorial e revisao oficial desconhecidas",
+    "Sem matriz de transicao ou inferencia causal",
+    "Sessao local com prazo/cotas, sem identidade multiusuario ou implantacao externa",
+    "Processo local encerrado em timeout; computacao remota pode continuar; esclarecimento com estado incerto exige nova pergunta"
+  ],
+  "changed_files": [
+    "README.md",
+    "configs/local.json",
+    "docs/DECISOES.md",
+    "docs/DISPONIBILIZACAO_LOCAL.md",
+    "requirements-verified.txt",
+    "schemas/local_response-v1.json",
+    "schemas/local_settings-v1.json",
+    "schemas/question_request-v1.json",
+    "scripts/demonstrar_etapa6.py",
+    "setup.cfg",
+    "src/consultas_ambientais/__init__.py",
+    "src/consultas_ambientais/api.py",
+    "src/consultas_ambientais/cli.py",
+    "src/consultas_ambientais/delivery/__init__.py",
+    "src/consultas_ambientais/delivery/capabilities.py",
+    "src/consultas_ambientais/delivery/commands.py",
+    "src/consultas_ambientais/delivery/export.py",
+    "src/consultas_ambientais/delivery/models.py",
+    "src/consultas_ambientais/delivery/runtime.py",
+    "src/consultas_ambientais/delivery/sessions.py",
+    "src/consultas_ambientais/delivery/settings.py",
+    "src/consultas_ambientais/delivery/worker.py",
+    "tests/test_local_api.py",
+    "docs/ESTADO_IMPLEMENTACAO.md",
+    "docs/VALIDACAO_ETAPA6.json"
+  ]
+}

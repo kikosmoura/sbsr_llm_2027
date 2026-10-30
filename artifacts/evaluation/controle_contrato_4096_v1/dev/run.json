@@ -1,0 +1,51 @@
+{
+  "run_id": "4b61f2ecb5454fce9cf4325f3b3d43fd",
+  "created_at": "2026-10-21T14:54:33.428260+00:00",
+  "split": "dev",
+  "case_ids": [
+    "d01_1",
+    "d01_2",
+    "d01_3",
+    "d01_4",
+    "d02_1",
+    "d02_2",
+    "d03_1",
+    "d04_1"
+  ],
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 4096,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "native_tools": false,
+    "native_response_format": false,
+    "workers": 3
+  },
+  "freeze_sha256": "55593ae2e52cbd2890ddce5bfed4183977a20b43a9c95123ba43f53e2b1332f0",
+  "repeat_requested": false,
+  "state": "concluida",
+  "integration_kind": "gateway_real",
+  "completed_at": "2026-10-21T14:55:10.667071+00:00",
+  "individual_hashes": {
+    "d01_1_B_eq_0.json": "e1b683d100108944689d1468a86b5f00174c0dea5ec404f4e19f49f5af6ea4b1",
+    "d01_1_C_eq_0.json": "41dda7be0a51e9119749da7c694904c437aaa25126d2b3817c9b3a31b63b79ac",
+    "d01_2_B_eq_0.json": "874b715a55feeefe2e6ce7f8385be057df8265fbb7eb93f35010aba9095edb1d",
+    "d01_2_C_eq_0.json": "6867e5a3825db465468387f6ac63841a3c37d34fdf39577773863d55b402e592",
+    "d01_3_B_eq_0.json": "4c52d6fc169563a5febfedf65f6747b513547065762c3e7613e531e3c10e73d8",
+    "d01_3_C_eq_0.json": "08e21bebed67b23f42b1c8208b1d78cba85720e4acb8ab283c6b14db2dbe0973",
+    "d01_4_B_eq_0.json": "3082c73b87e07de3396a1507f2a6b063ea926bf7440ecbf8f10ca884878b10e5",
+    "d01_4_C_eq_0.json": "af116b5e89f736900fe16391e7af24a05b71dfd3bbc92e358012fc76753da14c",
+    "d02_1_B_eq_0.json": "cb37a9f54b880f5145b3af6dfdd42b306cc4bea638c7cc02e71c7b3ad9b54c7e",
+    "d02_1_C_eq_0.json": "26128e6eb59ba6a33b9e14ca85f6f18bbaa74e2d71d5880bc4c08665f12ad937",
+    "d02_2_B_eq_0.json": "794317949436fe7179c5d29bab03c5d11c314090c7b83e89acc72bf432e81a53",
+    "d02_2_C_eq_0.json": "3e68c05d120d8b7d9ec5e98f0886d28af5ac9964cbdc311afd86f6aed94bd885",
+    "d03_1_B_eq_0.json": "f829692871dd626749f7572f8fd17aa2a60f1b7b103ce4baf52e3b7efec7d260",
+    "d03_1_C_eq_0.json": "596512d256528514fc95efedd1967b37d3a1147e731bef3e7b6f1c9c56a5e08a",
+    "d04_1_B_eq_0.json": "be411f4abb7a2faa37f3634145fa470d213bd276c7230efd495619c21f61bf03",
+    "d04_1_C_eq_0.json": "add2b5047f0d5d6aa190ac2df9c3487274ae7eb13be204dae03e5a9248210767"
+  }
+}

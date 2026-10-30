@@ -1,0 +1,113 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "fa7686659da9449d811d154641021724",
+  "case_id": "t14_4",
+  "family_id": "teste_delta",
+  "territory_codes": [
+    "2402600"
+  ],
+  "condition": "B",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:46:03.565630+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Compare 2015 e 2025 em Ceará-Mirim/RN pela diferença de área de Área Urbanizada, em ha, final menos inicial.",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": "916812e5f9122306bfe4db0eadd465cb9b2681fbadf7e66015c563c9a53dfb28",
+  "messages_sha256": "3656b4f8368c31670b973db752d1e8693f66e0c8b35189fc66d563c5e4f1e75c",
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "erro_tecnico",
+    "plan": null,
+    "values": [],
+    "clarification_field": null,
+    "reason": "saida_invalida_apos_reparo"
+  },
+  "final_answer": "{\"status\": \"erro_tecnico\", \"plan\": null, \"values\": [], \"clarification_field\": null, \"reason\": \"saida_invalida_apos_reparo\"}",
+  "plan": null,
+  "result": [],
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "messages_sha256": "3656b4f8368c31670b973db752d1e8693f66e0c8b35189fc66d563c5e4f1e75c",
+      "issues": [
+        {
+          "path": [],
+          "code": "value_error"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 5858,
+        "total_tokens": 6414,
+        "completion_tokens": 556
+      },
+      "latency_seconds": 5.879398257937282,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "101e7252096bbbf5d18ed366eabc5596a6073b8534fa2e1bfe31ca4cf961d8e7",
+      "output_chars": 322,
+      "state": "invalida"
+    },
+    {
+      "number": 2,
+      "kind": "reparo",
+      "messages_sha256": "022787d7199e3d11fb94c3dd8f4323e1a03790f9408947f40f7ab4ac7ee98941",
+      "issues": [
+        {
+          "path": [],
+          "code": "value_error"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 5893,
+        "total_tokens": 6551,
+        "completion_tokens": 658
+      },
+      "latency_seconds": 6.197937184013426,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "aa009ad7ff2cefaa938ae65dfdf784c4b3afe37725e0237405bd364c6d38b957",
+      "output_chars": 322,
+      "state": "invalida"
+    }
+  ],
+  "latency_seconds": 12.080342891043983,
+  "scores": {
+    "status": false,
+    "plan": null,
+    "values": null,
+    "clarification": null,
+    "correct": false
+  },
+  "cost": null,
+  "source_context": {
+    "data_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+  },
+  "C_session_id": null,
+  "C_turn_id": null,
+  "C_candidate_intent": null,
+  "C_decision": null
+}

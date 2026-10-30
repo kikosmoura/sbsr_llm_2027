@@ -1,0 +1,148 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "fa7686659da9449d811d154641021724",
+  "case_id": "t11_2",
+  "family_id": "teste_delta",
+  "territory_codes": [
+    "2406700"
+  ],
+  "condition": "B",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:43:41.956175+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Para Lajes/RN, quanto mudou a área de Formação Florestal de 2015 a 2025, em ha, preservando o sinal?",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": "495c10c1bdecafd788d9ba502b79460304259152490e70a9adc5803921c1838b",
+  "messages_sha256": "4d6a28adcec859c0b3eb819b739436fec17a7c2f73abf0715cb6c5a4f1926a62",
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_liquida",
+      "unit": "ha",
+      "territory_codes": [
+        "2406700"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2406700",
+        "years": [
+          2015,
+          2025
+        ],
+        "value": 1.601421987628938,
+        "unit": "ha",
+        "undefined_reason": null,
+        "denominators_ha": [],
+        "rank": null
+      }
+    ],
+    "clarification_field": null,
+    "reason": "ok"
+  },
+  "final_answer": "{\"status\": \"respondida\", \"plan\": {\"operation\": \"comparacao_temporal\", \"metric\": \"diferenca_liquida\", \"unit\": \"ha\", \"territory_codes\": [\"2406700\"], \"scope_uf\": \"RN\", \"class_codes\": [3], \"years\": [2015, 2025], \"denominator\": null, \"direction\": \"desc\", \"limit\": null}, \"values\": [{\"territory_code\": \"2406700\", \"years\": [2015, 2025], \"value\": 1.601421987628938, \"unit\": \"ha\", \"undefined_reason\": null, \"denominators_ha\": [], \"rank\": null}], \"clarification_field\": null, \"reason\": \"ok\"}",
+  "plan": {
+    "operation": "comparacao_temporal",
+    "metric": "diferenca_liquida",
+    "unit": "ha",
+    "territory_codes": [
+      "2406700"
+    ],
+    "scope_uf": "RN",
+    "class_codes": [
+      3
+    ],
+    "years": [
+      2015,
+      2025
+    ],
+    "denominator": null,
+    "direction": "desc",
+    "limit": null
+  },
+  "result": [
+    {
+      "territory_code": "2406700",
+      "years": [
+        2015,
+        2025
+      ],
+      "value": 1.601421987628938,
+      "unit": "ha",
+      "undefined_reason": null,
+      "denominators_ha": [],
+      "rank": null
+    }
+  ],
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "messages_sha256": "4d6a28adcec859c0b3eb819b739436fec17a7c2f73abf0715cb6c5a4f1926a62",
+      "issues": [],
+      "usage": {
+        "prompt_tokens": 5790,
+        "total_tokens": 6713,
+        "completion_tokens": 923
+      },
+      "latency_seconds": 25.077393990941346,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "7f5ae5e04da188b2331e870fb225ac41571e93eab24e4d2337a48cb18c3fa008",
+      "output_chars": 593,
+      "state": "valida"
+    }
+  ],
+  "latency_seconds": 25.080276158056222,
+  "scores": {
+    "status": true,
+    "plan": true,
+    "values": true,
+    "clarification": null,
+    "correct": true
+  },
+  "cost": null,
+  "source_context": {
+    "data_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+  },
+  "C_session_id": null,
+  "C_turn_id": null,
+  "C_candidate_intent": null,
+  "C_decision": null
+}

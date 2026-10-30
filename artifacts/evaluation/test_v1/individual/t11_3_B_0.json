@@ -1,0 +1,113 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "fa7686659da9449d811d154641021724",
+  "case_id": "t11_3",
+  "family_id": "teste_delta",
+  "territory_codes": [
+    "2406700"
+  ],
+  "condition": "B",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:43:48.614400+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Dê o saldo líquido em ha de Formação Florestal em Lajes/RN: cobertura final de 2025 menos inicial de 2015.",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": "1a43afdbcafee2b42e6e07ddb8f893993cdfb73cc0458d5f958415c137ac3bc8",
+  "messages_sha256": "9d49f08581c3109e46ef2482ecf173922af75c81abd9d3a4c7bd3940556f022f",
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "erro_tecnico",
+    "plan": null,
+    "values": [],
+    "clarification_field": null,
+    "reason": "saida_invalida_apos_reparo"
+  },
+  "final_answer": "{\"status\": \"erro_tecnico\", \"plan\": null, \"values\": [], \"clarification_field\": null, \"reason\": \"saida_invalida_apos_reparo\"}",
+  "plan": null,
+  "result": [],
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "messages_sha256": "9d49f08581c3109e46ef2482ecf173922af75c81abd9d3a4c7bd3940556f022f",
+      "issues": [
+        {
+          "path": [],
+          "code": "value_error"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 5748,
+        "total_tokens": 6447,
+        "completion_tokens": 699
+      },
+      "latency_seconds": 19.26407704502344,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "47b972c06169b8cd3dc6c101582ca13cb696be7c18e9b8630f8c4222cb095bd9",
+      "output_chars": 322,
+      "state": "invalida"
+    },
+    {
+      "number": 2,
+      "kind": "reparo",
+      "messages_sha256": "4febd1ad801aea1247645db1e5ee2842fbcc392994a7a8011d603a56745a91a1",
+      "issues": [
+        {
+          "path": [],
+          "code": "value_error"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 5783,
+        "total_tokens": 6506,
+        "completion_tokens": 723
+      },
+      "latency_seconds": 6.3452753339661285,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "5cc6d5ed78a1984cac481edcd4c770382dd287ec9628b7e377b1cd2a6418bee9",
+      "output_chars": 333,
+      "state": "invalida"
+    }
+  ],
+  "latency_seconds": 25.612484640907496,
+  "scores": {
+    "status": false,
+    "plan": null,
+    "values": null,
+    "clarification": null,
+    "correct": false
+  },
+  "cost": null,
+  "source_context": {
+    "data_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+  },
+  "C_session_id": null,
+  "C_turn_id": null,
+  "C_candidate_intent": null,
+  "C_decision": null
+}

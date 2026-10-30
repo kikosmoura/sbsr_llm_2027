@@ -1,0 +1,150 @@
+{
+  "schema_version": "controle-contrato-caso-v1",
+  "run_id": "aa224a7d26124a8dbfa4042e50621cc7",
+  "case_id": "t02_4",
+  "family_id": "teste_area_direta",
+  "territory_codes": [
+    "2400208"
+  ],
+  "condition": "B_eq",
+  "repeat": 0,
+  "integration_kind": "gateway_real",
+  "created_at": "2026-10-21T14:56:50.711373+00:00",
+  "freeze_sha256": "55593ae2e52cbd2890ddce5bfed4183977a20b43a9c95123ba43f53e2b1332f0",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 4096,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "native_tools": false,
+    "native_response_format": false,
+    "workers": 3
+  },
+  "question": "Apresente, em km2, a área mapeada de Pastagem no território municipal de Assú/RN para 2025.",
+  "fixed_plan": {
+    "operation": "area",
+    "metric": "area",
+    "unit": "km2",
+    "territory_codes": [
+      "2400208"
+    ],
+    "scope_uf": "RN",
+    "class_codes": [
+      15
+    ],
+    "years": [
+      2025
+    ],
+    "denominator": null,
+    "direction": "desc",
+    "limit": null
+  },
+  "common_input_sha256": "48b3d438d564a45a07f870b6e9f9123b2ae35bd00fba45c9324bbd0a97fe5b50",
+  "output_contract_sha256": "7cb672668bdaf0cb31f785651d91ec6475f990de121edab04b748bd0da63c955",
+  "system_sha256": "2805f7312e5288c2499d8bc4b6fd55f3a0adc3b8d5ea53aab2533894c62b290d",
+  "messages_sha256": "739cb9dd458adb2fb70278b1b065d31cd73a201eebd124f394ebdf992e4fa01c",
+  "execution_observations": [],
+  "executor_result": null,
+  "observed": {
+    "status": "respondida",
+    "values": [
+      {
+        "territory_code": "2400208",
+        "years": [
+          2025
+        ],
+        "value": 331.2892037171243,
+        "unit": "km2",
+        "undefined_reason": null,
+        "denominators_ha": [],
+        "rank": null
+      }
+    ],
+    "reason": "consulta_executada",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "km2",
+      "territory_codes": [
+        "2400208"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "clarification_field": null
+  },
+  "final_answer": "{\"reason\":\"consulta_executada\",\"status\":\"respondida\",\"values\":[{\"denominators_ha\":[],\"rank\":null,\"territory_code\":\"2400208\",\"undefined_reason\":null,\"unit\":\"km2\",\"value\":331.2892037171243,\"years\":[2025]}]}",
+  "attempts": [
+    {
+      "number": 1,
+      "messages_sha256": "739cb9dd458adb2fb70278b1b065d31cd73a201eebd124f394ebdf992e4fa01c",
+      "usage": {
+        "prompt_tokens": 5541,
+        "total_tokens": 6041,
+        "completion_tokens": 500
+      },
+      "issues": [],
+      "latency_seconds": 5.218533416977152,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "a704805f8ee7d7a03a4e473aafb4136f97dec0589fe53ca99847887c5a474088",
+      "output_chars": 204,
+      "state": "valida"
+    }
+  ],
+  "latency_seconds": 5.222979689016938,
+  "model_seconds": 5.219131067977287,
+  "http_events": [
+    {
+      "endpoint": "oauth",
+      "http_status": 200,
+      "bytes_read": 91,
+      "body_complete": true,
+      "response_metadata": null,
+      "elapsed_seconds": 0.19464783708099276
+    },
+    {
+      "endpoint": "chat",
+      "http_status": 200,
+      "bytes_read": 2536,
+      "body_complete": true,
+      "response_metadata": {
+        "json_object": true,
+        "choices_count": 1,
+        "finish_reason": "stop",
+        "content_state": "texto",
+        "final_content_chars": 204,
+        "reasoning_field_present": true,
+        "usage": {
+          "prompt_tokens": 5541,
+          "total_tokens": 6041,
+          "completion_tokens": 500
+        },
+        "reasoning_tokens": null
+      },
+      "elapsed_seconds": 5.0238372180610895
+    }
+  ],
+  "executor_seconds": 0,
+  "scores": {
+    "status": true,
+    "plan": true,
+    "values": true,
+    "clarification": null,
+    "correct": true
+  },
+  "cost": null,
+  "source_geo_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+}

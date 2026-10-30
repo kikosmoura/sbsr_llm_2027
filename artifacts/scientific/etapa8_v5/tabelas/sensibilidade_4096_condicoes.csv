@@ -1,0 +1,3 @@
+condition,cases,correct,accuracy,answered,technical_errors,coverage,precision_emitted,latency_mean_seconds,latency_median_seconds,latency_p95_seconds,model_seconds_mean,executor_seconds_mean,usage_observed_sum,usage_missing_attempts,cost
+B_eq,88,78,0.8863636363636364,79,9,0.8977272727272727,0.9873417721518988,14.090175927035903,6.40912585350452,38.72152605305891,14.086501033505721,0,"{""prompt_tokens"": 453989, ""completion_tokens"": 92378, ""total_tokens"": 546367}",9,
+C_eq,88,88,1.0,88,0,1.0,1.0,5.276721786690442,4.097234211512841,10.178247989836375,5.13344757815569,0.14010666009297976,"{""prompt_tokens"": 510399, ""completion_tokens"": 42564, ""total_tokens"": 552963}",0,

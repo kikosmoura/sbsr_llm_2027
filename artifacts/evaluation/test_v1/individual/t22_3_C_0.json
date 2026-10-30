@@ -1,0 +1,188 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "fa7686659da9449d811d154641021724",
+  "case_id": "t22_3",
+  "family_id": "teste_serie",
+  "territory_codes": [
+    "2402303"
+  ],
+  "condition": "C",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:52:10.719093+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Apresente separadamente as áreas de Formação Florestal de Caraúbas/RN em 2015 e em 2025, ambas em ha.",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": null,
+  "messages_sha256": null,
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "erro_tecnico",
+    "plan": null,
+    "values": [],
+    "clarification_field": null,
+    "reason": "saida_modelo_invalida_apos_limite"
+  },
+  "final_answer": "O modelo não produziu um plano válido após o limite de reparo; nenhum número foi publicado.",
+  "plan": null,
+  "result": null,
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "state": "invalida",
+      "latency_seconds": 15.31311955791898,
+      "usage": {
+        "prompt_tokens": 4699,
+        "total_tokens": 5654,
+        "completion_tokens": 955
+      },
+      "chat_requests": 1,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "output_sha256": "298b91f333cbde6b22b7fa10fe43f68b9c9fff1ed0906585ba344efb502f3bac",
+      "output_chars": 552,
+      "candidate": {
+        "action": "consultar",
+        "intent": {
+          "operation": "comparacao_temporal",
+          "territories": [
+            {
+              "mention": "caraubas",
+              "uf_mention": "RN",
+              "kind": "municipio"
+            }
+          ],
+          "scope_uf_mention": "RN",
+          "classes": [
+            {
+              "mention": "formacao florestal"
+            }
+          ],
+          "years": [
+            2015,
+            2025
+          ],
+          "metric": "area",
+          "metric_mention": "áreas",
+          "unit_mention": "ha",
+          "denominator": null,
+          "direction": null,
+          "limit": null
+        },
+        "clarification_fields": []
+      },
+      "issues": [
+        {
+          "path": [
+            "intent",
+            "operation"
+          ],
+          "code": "operacao_diverge_da_pergunta"
+        }
+      ],
+      "gateway_error": null,
+      "http_status": null,
+      "messages_sha256": "9746dca32c6162fe9f83dbbc48a21e5cc265e97dfbdf810ef521be9471595fce",
+      "explanation_fallback": null
+    },
+    {
+      "number": 2,
+      "kind": "reparo",
+      "state": "invalida",
+      "latency_seconds": 10.896103405975737,
+      "usage": {
+        "prompt_tokens": 4799,
+        "total_tokens": 5803,
+        "completion_tokens": 1004
+      },
+      "chat_requests": 1,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "output_sha256": "8711bc0795ebb120450863bf113db29c7805e396b5f0d3440c0dbd55d61106f6",
+      "output_chars": 555,
+      "candidate": {
+        "action": "consultar",
+        "intent": {
+          "operation": "area",
+          "territories": [
+            {
+              "mention": "caraubas",
+              "uf_mention": "RN",
+              "kind": "municipio"
+            }
+          ],
+          "scope_uf_mention": "RN",
+          "classes": [
+            {
+              "mention": "formacao florestal"
+            }
+          ],
+          "years": [
+            2015,
+            2025
+          ],
+          "metric": "area",
+          "metric_mention": "áreas",
+          "unit_mention": "ha",
+          "denominator": null,
+          "direction": null,
+          "limit": null
+        },
+        "clarification_fields": []
+      },
+      "issues": [
+        {
+          "path": [
+            "intent",
+            "operation"
+          ],
+          "code": "operacao_diverge_da_pergunta"
+        }
+      ],
+      "gateway_error": null,
+      "http_status": null,
+      "messages_sha256": "bfeb84dc7d54a12e930f5cca9934bafc4bbbb83fd918012ea9bae1731281933b",
+      "explanation_fallback": null
+    }
+  ],
+  "latency_seconds": 26.334594733081758,
+  "scores": {
+    "status": false,
+    "plan": null,
+    "values": null,
+    "clarification": null,
+    "correct": false
+  },
+  "cost": null,
+  "source_context": {
+    "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+    "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+    "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+    "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+  },
+  "C_session_id": "425817339ca24a7d906e4647d398cef8",
+  "C_turn_id": "cfdbcf3826874d64a882dc6a5b29db77",
+  "C_candidate_intent": null,
+  "C_decision": null
+}

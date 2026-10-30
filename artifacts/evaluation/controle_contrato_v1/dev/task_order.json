@@ -1,0 +1,58 @@
+[
+  {
+    "case_id": "d01_1",
+    "order": [
+      "B_eq",
+      "C_eq"
+    ]
+  },
+  {
+    "case_id": "d01_2",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "d01_3",
+    "order": [
+      "B_eq",
+      "C_eq"
+    ]
+  },
+  {
+    "case_id": "d01_4",
+    "order": [
+      "B_eq",
+      "C_eq"
+    ]
+  },
+  {
+    "case_id": "d02_1",
+    "order": [
+      "B_eq",
+      "C_eq"
+    ]
+  },
+  {
+    "case_id": "d02_2",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "d03_1",
+    "order": [
+      "B_eq",
+      "C_eq"
+    ]
+  },
+  {
+    "case_id": "d04_1",
+    "order": [
+      "B_eq",
+      "C_eq"
+    ]
+  }
+]

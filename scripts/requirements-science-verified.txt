@@ -1,0 +1,8 @@
+# Processo de figuras/documento, separado do ambiente numerico congelado.
+# Verificado com /usr/bin/python3 -s, Python 3.10.12; nao e lock multiplataforma.
+numpy==1.21.5
+matplotlib==3.5.1
+Pillow==9.0.1
+lxml==4.8.0
+# Binarios externos verificados: LibreOffice 25.2.6.2; Poppler 22.02.0.
+# Times New Roman precisa estar disponivel para preservar a tipografia conferida.

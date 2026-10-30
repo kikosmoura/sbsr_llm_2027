@@ -1,0 +1,9 @@
+{
+  "schema_version": "intencao-semantica-v1",
+  "operation": "area",
+  "territories": [{"name": "Riachuelo", "uf": "RN", "kind": "municipio"}],
+  "classes": [{"term": "floresta"}],
+  "years": [2015],
+  "metric": "area",
+  "unit": "ha"
+}

@@ -1,0 +1,116 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "fa7686659da9449d811d154641021724",
+  "case_id": "t18_1",
+  "family_id": "teste_variacao",
+  "territory_codes": [
+    "2403806"
+  ],
+  "condition": "B",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:48:24.984096+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Em relação à área inicial de 2015, qual a variação percentual de Mangue em Florânia/RN até 2025?",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": "57fbe1df70aefa85e65a43dbea7d6c9943222dff1e13e23a7c9e053616098c80",
+  "messages_sha256": "9e0bfc972e9cc4850b4a312b269af5c46c38d241b2b239102875797214632fed",
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "erro_tecnico",
+    "plan": null,
+    "values": [],
+    "clarification_field": null,
+    "reason": "saida_invalida_apos_reparo"
+  },
+  "final_answer": "{\"status\": \"erro_tecnico\", \"plan\": null, \"values\": [], \"clarification_field\": null, \"reason\": \"saida_invalida_apos_reparo\"}",
+  "plan": null,
+  "result": [],
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "messages_sha256": "9e0bfc972e9cc4850b4a312b269af5c46c38d241b2b239102875797214632fed",
+      "issues": [
+        {
+          "path": [
+            "values",
+            0
+          ],
+          "code": "value_error"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 5731,
+        "total_tokens": 6334,
+        "completion_tokens": 603
+      },
+      "latency_seconds": 6.996000560000539,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "a6bd0631a7cce426dc97b5641f636dd94d8414a87cbf3fb5c7f8e33972b3040f",
+      "output_chars": 332,
+      "state": "invalida"
+    },
+    {
+      "number": 2,
+      "kind": "reparo",
+      "messages_sha256": "5a39bb851cd85b7fb97ac9771b919204e0283df2e5563d1206d45d50a16aaf96",
+      "issues": [
+        {
+          "path": [],
+          "code": "value_error"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 5769,
+        "total_tokens": 6391,
+        "completion_tokens": 622
+      },
+      "latency_seconds": 8.122305189957842,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "2d41f273e774a6095ef09bce810a54495ea30268aeb0f4cc339e4cecb2e4bcd4",
+      "output_chars": 347,
+      "state": "invalida"
+    }
+  ],
+  "latency_seconds": 15.122793987044133,
+  "scores": {
+    "status": false,
+    "plan": null,
+    "values": null,
+    "clarification": null,
+    "correct": false
+  },
+  "cost": null,
+  "source_context": {
+    "data_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+  },
+  "C_session_id": null,
+  "C_turn_id": null,
+  "C_candidate_intent": null,
+  "C_decision": null
+}

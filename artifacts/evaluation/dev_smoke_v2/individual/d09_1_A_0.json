@@ -1,0 +1,86 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "89968af8c62a49b3b9d5999fd6b5ddbf",
+  "case_id": "d09_1",
+  "family_id": "d09",
+  "territory_codes": [
+    "2410900"
+  ],
+  "condition": "A",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:36:27.492554+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Qual a área de Pastagem de Riachuelo/RN em 2020, em ha?",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": null,
+  "messages_sha256": "d86be09466f4c2d41b440b5576ef1c5172b8b011dc0cb690d438679e8443f17f",
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "dados_indisponiveis",
+    "plan": null,
+    "values": [],
+    "clarification_field": null,
+    "reason": "sem_dados"
+  },
+  "final_answer": "{\"status\": \"dados_indisponiveis\", \"plan\": null, \"values\": [], \"clarification_field\": null, \"reason\": \"sem_dados\"}",
+  "plan": null,
+  "result": [],
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "messages_sha256": "d86be09466f4c2d41b440b5576ef1c5172b8b011dc0cb690d438679e8443f17f",
+      "issues": [],
+      "usage": {
+        "prompt_tokens": 3623,
+        "total_tokens": 4115,
+        "completion_tokens": 492
+      },
+      "latency_seconds": 3.702150146011263,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "2ec79e6431d9be99da39b9fd566981b1c338558aba5462ac20651047ca4ce1eb",
+      "output_chars": 62,
+      "state": "valida"
+    }
+  ],
+  "latency_seconds": 3.7059321410488337,
+  "scores": {
+    "status": true,
+    "plan": null,
+    "values": null,
+    "clarification": null,
+    "correct": true
+  },
+  "cost": null,
+  "source_context": {
+    "data_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+  },
+  "C_session_id": null,
+  "C_turn_id": null,
+  "C_candidate_intent": null,
+  "C_decision": null
+}

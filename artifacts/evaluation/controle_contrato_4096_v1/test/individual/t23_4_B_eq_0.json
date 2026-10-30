@@ -1,0 +1,164 @@
+{
+  "schema_version": "controle-contrato-caso-v1",
+  "run_id": "aa224a7d26124a8dbfa4042e50621cc7",
+  "case_id": "t23_4",
+  "family_id": "teste_territorial",
+  "territory_codes": [
+    "2411056",
+    "2404200"
+  ],
+  "condition": "B_eq",
+  "repeat": 0,
+  "integration_kind": "gateway_real",
+  "created_at": "2026-10-21T15:05:41.012686+00:00",
+  "freeze_sha256": "55593ae2e52cbd2890ddce5bfed4183977a20b43a9c95123ba43f53e2b1332f0",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 4096,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "native_tools": false,
+    "native_response_format": false,
+    "workers": 3
+  },
+  "question": "Coloque lado a lado os valores de área de Formação Florestal de Tibau/RN e Goianinha/RN, ano 2025, em hectares.",
+  "fixed_plan": {
+    "operation": "comparacao_territorial",
+    "metric": "area",
+    "unit": "ha",
+    "territory_codes": [
+      "2404200",
+      "2411056"
+    ],
+    "scope_uf": "RN",
+    "class_codes": [
+      3
+    ],
+    "years": [
+      2025
+    ],
+    "denominator": null,
+    "direction": "desc",
+    "limit": null
+  },
+  "common_input_sha256": "c2ce5b77e51d3e7a115ff202abd0acd5fb8a97f81829b93990459776d69b7581",
+  "output_contract_sha256": "7cb672668bdaf0cb31f785651d91ec6475f990de121edab04b748bd0da63c955",
+  "system_sha256": "2805f7312e5288c2499d8bc4b6fd55f3a0adc3b8d5ea53aab2533894c62b290d",
+  "messages_sha256": "b67cd0d0e439b1ffb90bf862b4dde2c945a68b499491be81536c90c0ae6f87a1",
+  "execution_observations": [],
+  "executor_result": null,
+  "observed": {
+    "status": "respondida",
+    "values": [
+      {
+        "territory_code": "2404200",
+        "years": [
+          2025
+        ],
+        "value": 3296.242080304289,
+        "unit": "ha",
+        "undefined_reason": null,
+        "denominators_ha": [],
+        "rank": null
+      },
+      {
+        "territory_code": "2411056",
+        "years": [
+          2025
+        ],
+        "value": 43.50348778584749,
+        "unit": "ha",
+        "undefined_reason": null,
+        "denominators_ha": [],
+        "rank": null
+      }
+    ],
+    "reason": "consulta_executada",
+    "plan": {
+      "operation": "comparacao_territorial",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2404200",
+        "2411056"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "clarification_field": null
+  },
+  "final_answer": "{\"reason\":\"consulta_executada\",\"status\":\"respondida\",\"values\":[{\"denominators_ha\":[],\"rank\":null,\"territory_code\":\"2404200\",\"undefined_reason\":null,\"unit\":\"ha\",\"value\":3296.242080304289,\"years\":[2025]},{\"denominators_ha\":[],\"rank\":null,\"territory_code\":\"2411056\",\"undefined_reason\":null,\"unit\":\"ha\",\"value\":43.50348778584749,\"years\":[2025]}]}",
+  "attempts": [
+    {
+      "number": 1,
+      "messages_sha256": "b67cd0d0e439b1ffb90bf862b4dde2c945a68b499491be81536c90c0ae6f87a1",
+      "usage": {
+        "prompt_tokens": 7676,
+        "total_tokens": 8487,
+        "completion_tokens": 811
+      },
+      "issues": [],
+      "latency_seconds": 8.378849170054309,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "04bb23420b064b10c1a0fb8cabaaac8ad7e929cc1c91d2133e5070bb7d1ce2a6",
+      "output_chars": 343,
+      "state": "valida"
+    }
+  ],
+  "latency_seconds": 8.384903394966386,
+  "model_seconds": 8.37950689101126,
+  "http_events": [
+    {
+      "endpoint": "oauth",
+      "http_status": 200,
+      "bytes_read": 91,
+      "body_complete": true,
+      "response_metadata": null,
+      "elapsed_seconds": 0.20122483896557242
+    },
+    {
+      "endpoint": "chat",
+      "http_status": 200,
+      "bytes_read": 3767,
+      "body_complete": true,
+      "response_metadata": {
+        "json_object": true,
+        "choices_count": 1,
+        "finish_reason": "stop",
+        "content_state": "texto",
+        "final_content_chars": 343,
+        "reasoning_field_present": true,
+        "usage": {
+          "prompt_tokens": 7676,
+          "total_tokens": 8487,
+          "completion_tokens": 811
+        },
+        "reasoning_tokens": null
+      },
+      "elapsed_seconds": 8.177564013050869
+    }
+  ],
+  "executor_seconds": 0,
+  "scores": {
+    "status": true,
+    "plan": true,
+    "values": true,
+    "clarification": null,
+    "correct": true
+  },
+  "cost": null,
+  "source_geo_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+}

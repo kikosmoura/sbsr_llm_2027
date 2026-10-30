@@ -1,0 +1,153 @@
+{
+  "schema_version": "controle-contrato-caso-v1",
+  "run_id": "aa224a7d26124a8dbfa4042e50621cc7",
+  "case_id": "t12_3",
+  "family_id": "teste_delta",
+  "territory_codes": [
+    "2400802"
+  ],
+  "condition": "B_eq",
+  "repeat": 0,
+  "integration_kind": "gateway_real",
+  "created_at": "2026-10-21T14:59:41.162648+00:00",
+  "freeze_sha256": "55593ae2e52cbd2890ddce5bfed4183977a20b43a9c95123ba43f53e2b1332f0",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 4096,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "native_tools": false,
+    "native_response_format": false,
+    "workers": 3
+  },
+  "question": "Dê o saldo líquido em km2 de Pastagem em Angicos/RN: cobertura final de 2025 menos inicial de 2015.",
+  "fixed_plan": {
+    "operation": "comparacao_temporal",
+    "metric": "diferenca_liquida",
+    "unit": "km2",
+    "territory_codes": [
+      "2400802"
+    ],
+    "scope_uf": "RN",
+    "class_codes": [
+      15
+    ],
+    "years": [
+      2015,
+      2025
+    ],
+    "denominator": null,
+    "direction": "desc",
+    "limit": null
+  },
+  "common_input_sha256": "d421ece4c576a72bb99325907c01e3485955ccd5808d7a2fc8aa225b15f1120d",
+  "output_contract_sha256": "7cb672668bdaf0cb31f785651d91ec6475f990de121edab04b748bd0da63c955",
+  "system_sha256": "2805f7312e5288c2499d8bc4b6fd55f3a0adc3b8d5ea53aab2533894c62b290d",
+  "messages_sha256": "13963cf0e0a55ce28e1f3ca37b70c1be29db415daf1e3d4073d8cf2f87361307",
+  "execution_observations": [],
+  "executor_result": null,
+  "observed": {
+    "status": "respondida",
+    "values": [
+      {
+        "territory_code": "2400802",
+        "years": [
+          2015,
+          2025
+        ],
+        "value": -8.70333933044486,
+        "unit": "km2",
+        "undefined_reason": null,
+        "denominators_ha": [],
+        "rank": null
+      }
+    ],
+    "reason": "consulta_executada",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_liquida",
+      "unit": "km2",
+      "territory_codes": [
+        "2400802"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "clarification_field": null
+  },
+  "final_answer": "{\"reason\":\"consulta_executada\",\"status\":\"respondida\",\"values\":[{\"denominators_ha\":[],\"rank\":null,\"territory_code\":\"2400802\",\"undefined_reason\":null,\"unit\":\"km2\",\"value\":-8.70333933044486,\"years\":[2015,2025]}]}",
+  "attempts": [
+    {
+      "number": 1,
+      "messages_sha256": "13963cf0e0a55ce28e1f3ca37b70c1be29db415daf1e3d4073d8cf2f87361307",
+      "usage": {
+        "prompt_tokens": 5511,
+        "total_tokens": 6286,
+        "completion_tokens": 775
+      },
+      "issues": [],
+      "latency_seconds": 8.030071348068304,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "a2edfeea64187bf3de57be17e31c32b7e0bc0e3a7094cc829c1abe4c71bfa3d7",
+      "output_chars": 209,
+      "state": "valida"
+    }
+  ],
+  "latency_seconds": 8.033412090037018,
+  "model_seconds": 8.031201176927425,
+  "http_events": [
+    {
+      "endpoint": "oauth",
+      "http_status": 200,
+      "bytes_read": 91,
+      "body_complete": true,
+      "response_metadata": null,
+      "elapsed_seconds": 0.2561995619907975
+    },
+    {
+      "endpoint": "chat",
+      "http_status": 200,
+      "bytes_read": 3406,
+      "body_complete": true,
+      "response_metadata": {
+        "json_object": true,
+        "choices_count": 1,
+        "finish_reason": "stop",
+        "content_state": "texto",
+        "final_content_chars": 209,
+        "reasoning_field_present": true,
+        "usage": {
+          "prompt_tokens": 5511,
+          "total_tokens": 6286,
+          "completion_tokens": 775
+        },
+        "reasoning_tokens": null
+      },
+      "elapsed_seconds": 7.773817494045943
+    }
+  ],
+  "executor_seconds": 0,
+  "scores": {
+    "status": true,
+    "plan": true,
+    "values": true,
+    "clarification": null,
+    "correct": true
+  },
+  "cost": null,
+  "source_geo_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+}

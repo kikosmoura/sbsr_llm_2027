@@ -1,0 +1,618 @@
+[
+  {
+    "case_id": "t01_1",
+    "order": [
+      "B_eq",
+      "C_eq"
+    ]
+  },
+  {
+    "case_id": "t01_2",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t01_3",
+    "order": [
+      "B_eq",
+      "C_eq"
+    ]
+  },
+  {
+    "case_id": "t01_4",
+    "order": [
+      "B_eq",
+      "C_eq"
+    ]
+  },
+  {
+    "case_id": "t02_1",
+    "order": [
+      "B_eq",
+      "C_eq"
+    ]
+  },
+  {
+    "case_id": "t02_2",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t02_3",
+    "order": [
+      "B_eq",
+      "C_eq"
+    ]
+  },
+  {
+    "case_id": "t02_4",
+    "order": [
+      "B_eq",
+      "C_eq"
+    ]
+  },
+  {
+    "case_id": "t03_1",
+    "order": [
+      "B_eq",
+      "C_eq"
+    ]
+  },
+  {
+    "case_id": "t03_2",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t03_3",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t03_4",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t04_1",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t04_2",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t04_3",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t04_4",
+    "order": [
+      "B_eq",
+      "C_eq"
+    ]
+  },
+  {
+    "case_id": "t05_1",
+    "order": [
+      "B_eq",
+      "C_eq"
+    ]
+  },
+  {
+    "case_id": "t05_2",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t05_3",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t05_4",
+    "order": [
+      "B_eq",
+      "C_eq"
+    ]
+  },
+  {
+    "case_id": "t06_1",
+    "order": [
+      "B_eq",
+      "C_eq"
+    ]
+  },
+  {
+    "case_id": "t06_2",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t06_3",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t06_4",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t07_1",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t07_2",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t07_3",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t07_4",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t08_1",
+    "order": [
+      "B_eq",
+      "C_eq"
+    ]
+  },
+  {
+    "case_id": "t08_2",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t08_3",
+    "order": [
+      "B_eq",
+      "C_eq"
+    ]
+  },
+  {
+    "case_id": "t08_4",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t11_1",
+    "order": [
+      "B_eq",
+      "C_eq"
+    ]
+  },
+  {
+    "case_id": "t11_2",
+    "order": [
+      "B_eq",
+      "C_eq"
+    ]
+  },
+  {
+    "case_id": "t11_3",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t11_4",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t12_1",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t12_2",
+    "order": [
+      "B_eq",
+      "C_eq"
+    ]
+  },
+  {
+    "case_id": "t12_3",
+    "order": [
+      "B_eq",
+      "C_eq"
+    ]
+  },
+  {
+    "case_id": "t12_4",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t13_1",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t13_2",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t13_3",
+    "order": [
+      "B_eq",
+      "C_eq"
+    ]
+  },
+  {
+    "case_id": "t13_4",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t14_1",
+    "order": [
+      "B_eq",
+      "C_eq"
+    ]
+  },
+  {
+    "case_id": "t14_2",
+    "order": [
+      "B_eq",
+      "C_eq"
+    ]
+  },
+  {
+    "case_id": "t14_3",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t14_4",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t15_1",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t15_2",
+    "order": [
+      "B_eq",
+      "C_eq"
+    ]
+  },
+  {
+    "case_id": "t15_3",
+    "order": [
+      "B_eq",
+      "C_eq"
+    ]
+  },
+  {
+    "case_id": "t15_4",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t16_1",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t16_2",
+    "order": [
+      "B_eq",
+      "C_eq"
+    ]
+  },
+  {
+    "case_id": "t16_3",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t16_4",
+    "order": [
+      "B_eq",
+      "C_eq"
+    ]
+  },
+  {
+    "case_id": "t17_1",
+    "order": [
+      "B_eq",
+      "C_eq"
+    ]
+  },
+  {
+    "case_id": "t17_2",
+    "order": [
+      "B_eq",
+      "C_eq"
+    ]
+  },
+  {
+    "case_id": "t17_3",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t17_4",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t18_1",
+    "order": [
+      "B_eq",
+      "C_eq"
+    ]
+  },
+  {
+    "case_id": "t18_2",
+    "order": [
+      "B_eq",
+      "C_eq"
+    ]
+  },
+  {
+    "case_id": "t18_3",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t18_4",
+    "order": [
+      "B_eq",
+      "C_eq"
+    ]
+  },
+  {
+    "case_id": "t19_1",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t19_2",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t19_3",
+    "order": [
+      "B_eq",
+      "C_eq"
+    ]
+  },
+  {
+    "case_id": "t19_4",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t20_1",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t20_2",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t20_3",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t20_4",
+    "order": [
+      "B_eq",
+      "C_eq"
+    ]
+  },
+  {
+    "case_id": "t21_1",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t21_2",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t21_3",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t21_4",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t22_1",
+    "order": [
+      "B_eq",
+      "C_eq"
+    ]
+  },
+  {
+    "case_id": "t22_2",
+    "order": [
+      "B_eq",
+      "C_eq"
+    ]
+  },
+  {
+    "case_id": "t22_3",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t22_4",
+    "order": [
+      "B_eq",
+      "C_eq"
+    ]
+  },
+  {
+    "case_id": "t23_1",
+    "order": [
+      "B_eq",
+      "C_eq"
+    ]
+  },
+  {
+    "case_id": "t23_2",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t23_3",
+    "order": [
+      "B_eq",
+      "C_eq"
+    ]
+  },
+  {
+    "case_id": "t23_4",
+    "order": [
+      "B_eq",
+      "C_eq"
+    ]
+  },
+  {
+    "case_id": "t24_1",
+    "order": [
+      "B_eq",
+      "C_eq"
+    ]
+  },
+  {
+    "case_id": "t24_2",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t24_3",
+    "order": [
+      "C_eq",
+      "B_eq"
+    ]
+  },
+  {
+    "case_id": "t24_4",
+    "order": [
+      "B_eq",
+      "C_eq"
+    ]
+  }
+]

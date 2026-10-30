@@ -1,0 +1,50 @@
+             Códigos das classes da legenda da Coleção 11 do MapBiomas Brasil
+                   Legend classes code - MapBiomas Brazil Collection 11
+           COLEÇÃO 11 - CLASSES                        COLLECTION 11 - CLASSES       ID HEX CODE COLOR
+1. Floresta                                    1. Forest                              1 #1f8d49
+   1.1 Formação Florestal                      1.1. Forest Formation                  3 #1f8d49
+   1.2. Floresta Alagável                      1.2 Floodable Forest                   6 #007785
+   1.3. Formação Savânica                      1.3. Savanna Formation                 4 #7dc975
+   1.4. Savana Alagada (beta)                  1.4. Flooded Savanna (beta)            7 #228c70
+   1.5. Mangue                                 1.5. Mangrove                          5 #04381d
+   1.6. Restinga Arbórea                       1.6. Wooded Sandbank Vegetation       49 #02d659
+2. Vegetação Herbácea e Arbustiva              2. Herbaceous or Shrubby Vegetation   10 #d6bc74
+   2.1. Formação Campestre                     2.1. Grassland Formation              12 #d6bc74
+   2.2. Formação Herbáceo Arbustiva            2.2. Herbaceous and Shrub Formation   77 #86b074
+   2.3. Campo Alagado e Área Pantanosa         2.3 Wetland                           11 #519799
+   2.4. Marisma (beta)                         2.4. Salt Marsh (beta)                84 #81dbbf
+   2.5. Restinga Herbácea ou Arbustiva         2.5. Herbaceous Sandbank Vegetation   50 #ffaa5f
+   2.6. Apicum                                 2.6. Hypersaline Tidal Flat           32 #fc8114
+   2.7. Afloramento Rochoso                    2.7. Rocky Outcrop                    29 #ad5100
+3. Agropecuária                                3. Farming                            14 #ffefc3
+   3.1. Pastagem                               3.1. Pasture                          15 #edde8e
+   3.2. Agricultura                            3.2. Agriculture                      18 #E974ED
+      3.2.1. Lavoura Temporária                3.2.1. Temporary Crop                 19 #C27BA0
+            3.2.1.1. Soja                      3.2.1.1. Soybean                      39 #f5b3c8
+            3.2.1.2. Cana                      3.2.1.2. Sugar cane                   20 #db7093
+            3.2.1.3. Arroz                     3.2.1.3. Rice                         40 #c71585
+            3.2.1.4. Algodão (beta)            3.2.1.4. Cotton (beta)                62 #ff69b4
+            3.2.1.5. Outras Lavouras
+Temporárias                                    3.2.1.5. Other Temporary Crops        41 #f54ca9
+      3.2.2. Lavoura Perene                    3.2.2. Perennial Crop                 36 #d082de
+            3.2.2.1. Café                      3.2.2.1. Coffee                       46 #d68fe2
+            3.2.2.2. Citrus                    3.2.2.2. Citrus                       47 #9932cc
+            3.2.2.3. Dendê                     3.2.2.3. Palm Oil                     35 #9065d0
+            3.2.1.4. Outras Lavouras Perenes   3.2.1.4. Other Perennial Crops        48 #e6ccff
+   3.3. Silvicultura                           3.3. Forest Plantation                9 #7a5900
+   3.4. Mosaico de Usos                        3.4. Mosaic of Uses                   21 #ffefc3
+4. Área não vegetada                           4. Non vegetated area                 22 #d4271e
+   4.1. Praia, Duna e Areal                    4.1. Beach, Dune and Sand Spot        23 #ffa07a
+   4.2. Área Urbanizada                        4.2. Urban Area                       24 #d4271e
+   4.3. Mineração                              4.3. Mining                           30 #9c0027
+   4.4. Usina Fotovoltaica                     4.4 Photovoltaic Power Plant          75 #757272
+   4.5. Parque eólico (beta)                   4.5. Wind farm (beta)                 91 #403d3e
+   4.6. Outras Áreas não Vegetadas             4.6. Other non Vegetated Areas        25 #db4d4f
+5. Corpo D'água                                5. Water                              26 #2532e4
+   5.1 Rio, Lago e Oceano                      5.1. River, Lake and Ocean            33 #2532e4
+   5.2 Aquicultura                             5.2. Aquaculture                      31 #091077
+
+
+
+Tabela gerada e publicada em 13/08/2026 - MapBiomas Brasil
+

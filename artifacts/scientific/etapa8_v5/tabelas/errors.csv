@@ -1,0 +1,11 @@
+condition,type,count,fraction
+A,acerto,21,0.175
+A,status_incorreto,99,0.825
+B,acerto,49,0.4083333333333333
+B,status_incorreto,9,0.075
+B,texto_final_ausente,29,0.24166666666666667
+B,validacao_apos_limite,33,0.275
+C,acerto,104,0.8666666666666667
+C,esclarecimento_incorreto,1,0.008333333333333333
+C,status_incorreto,8,0.06666666666666667
+C,validacao_apos_limite,7,0.058333333333333334

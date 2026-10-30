@@ -1,0 +1,163 @@
+{
+  "schema_version": "controle-contrato-caso-v1",
+  "run_id": "aa224a7d26124a8dbfa4042e50621cc7",
+  "case_id": "t22_2",
+  "family_id": "teste_serie",
+  "territory_codes": [
+    "2402303"
+  ],
+  "condition": "B_eq",
+  "repeat": 0,
+  "integration_kind": "gateway_real",
+  "created_at": "2026-10-21T15:05:18.257132+00:00",
+  "freeze_sha256": "55593ae2e52cbd2890ddce5bfed4183977a20b43a9c95123ba43f53e2b1332f0",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 4096,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "native_tools": false,
+    "native_response_format": false,
+    "workers": 3
+  },
+  "question": "Quero uma série com apenas 2015 e 2025: área de Formação Florestal em Caraúbas/RN, em ha.",
+  "fixed_plan": {
+    "operation": "serie_disponivel",
+    "metric": "area",
+    "unit": "ha",
+    "territory_codes": [
+      "2402303"
+    ],
+    "scope_uf": "RN",
+    "class_codes": [
+      3
+    ],
+    "years": [
+      2015,
+      2025
+    ],
+    "denominator": null,
+    "direction": "desc",
+    "limit": null
+  },
+  "common_input_sha256": "1a91493adc448c9f36f2ba54ae8e81aff607723711eee8057e6c97ddf015bccd",
+  "output_contract_sha256": "7cb672668bdaf0cb31f785651d91ec6475f990de121edab04b748bd0da63c955",
+  "system_sha256": "2805f7312e5288c2499d8bc4b6fd55f3a0adc3b8d5ea53aab2533894c62b290d",
+  "messages_sha256": "1aaedf95924317fd286ec6acd79db4832aabfcda89ce952acac460aefb549656",
+  "execution_observations": [],
+  "executor_result": null,
+  "observed": {
+    "status": "respondida",
+    "values": [
+      {
+        "territory_code": "2402303",
+        "years": [
+          2015
+        ],
+        "value": 241.61593238465403,
+        "unit": "ha",
+        "undefined_reason": null,
+        "denominators_ha": [],
+        "rank": null
+      },
+      {
+        "territory_code": "2402303",
+        "years": [
+          2025
+        ],
+        "value": 244.17318566668294,
+        "unit": "ha",
+        "undefined_reason": null,
+        "denominators_ha": [],
+        "rank": null
+      }
+    ],
+    "reason": "consulta_executada",
+    "plan": {
+      "operation": "serie_disponivel",
+      "metric": "area",
+      "unit": "ha",
+      "territory_codes": [
+        "2402303"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "clarification_field": null
+  },
+  "final_answer": "{\"reason\":\"consulta_executada\",\"status\":\"respondida\",\"values\":[{\"denominators_ha\":[],\"rank\":null,\"territory_code\":\"2402303\",\"undefined_reason\":null,\"unit\":\"ha\",\"value\":241.61593238465403,\"years\":[2015]},{\"denominators_ha\":[],\"rank\":null,\"territory_code\":\"2402303\",\"undefined_reason\":null,\"unit\":\"ha\",\"value\":244.17318566668294,\"years\":[2025]}]}",
+  "attempts": [
+    {
+      "number": 1,
+      "messages_sha256": "1aaedf95924317fd286ec6acd79db4832aabfcda89ce952acac460aefb549656",
+      "usage": {
+        "prompt_tokens": 5526,
+        "total_tokens": 6130,
+        "completion_tokens": 604
+      },
+      "issues": [],
+      "latency_seconds": 6.419833241030574,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "d811c94a0addfa7e252641dde73145a3b4a9f289a9cba1a82cfbb691b319ed0d",
+      "output_chars": 492,
+      "state": "valida"
+    }
+  ],
+  "latency_seconds": 6.423293296946213,
+  "model_seconds": 6.420262095052749,
+  "http_events": [
+    {
+      "endpoint": "oauth",
+      "http_status": 200,
+      "bytes_read": 91,
+      "body_complete": true,
+      "response_metadata": null,
+      "elapsed_seconds": 0.20196998689789325
+    },
+    {
+      "endpoint": "chat",
+      "http_status": 200,
+      "bytes_read": 2953,
+      "body_complete": true,
+      "response_metadata": {
+        "json_object": true,
+        "choices_count": 1,
+        "finish_reason": "stop",
+        "content_state": "texto",
+        "final_content_chars": 492,
+        "reasoning_field_present": true,
+        "usage": {
+          "prompt_tokens": 5526,
+          "total_tokens": 6130,
+          "completion_tokens": 604
+        },
+        "reasoning_tokens": null
+      },
+      "elapsed_seconds": 6.217813215916976
+    }
+  ],
+  "executor_seconds": 0,
+  "scores": {
+    "status": true,
+    "plan": true,
+    "values": true,
+    "clarification": null,
+    "correct": true
+  },
+  "cost": null,
+  "source_geo_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+}

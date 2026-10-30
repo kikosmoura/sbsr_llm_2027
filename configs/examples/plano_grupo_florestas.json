@@ -1,0 +1,15 @@
+{
+  "class_codes": [
+    1,
+    3
+  ],
+  "metric": "area",
+  "operation": "area",
+  "territory_codes": [
+    "2410900"
+  ],
+  "unit": "ha",
+  "years": [
+    2015
+  ]
+}

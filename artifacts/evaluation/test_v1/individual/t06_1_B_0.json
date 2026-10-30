@@ -1,0 +1,113 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "fa7686659da9449d811d154641021724",
+  "case_id": "t06_1",
+  "family_id": "teste_t06",
+  "territory_codes": [
+    "2409407"
+  ],
+  "condition": "B",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:39:56.536888+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Qual a área da união das classes Floresta (código 1) e Formação Florestal (código 3), sem dupla contagem, em Pau dos Ferros/RN, 2015, ha?",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": "d0735561c0fa4038e8c3eca34813fe53deb465ea43f6bc8b3009558e42067b4a",
+  "messages_sha256": "6d0a3aded170d80fa4a832e8f76f09311e6bd262a6227e1e44a46e9925d070e3",
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "erro_tecnico",
+    "plan": null,
+    "values": [],
+    "clarification_field": null,
+    "reason": "saida_invalida_apos_reparo"
+  },
+  "final_answer": "{\"status\": \"erro_tecnico\", \"plan\": null, \"values\": [], \"clarification_field\": null, \"reason\": \"saida_invalida_apos_reparo\"}",
+  "plan": null,
+  "result": [],
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "messages_sha256": "6d0a3aded170d80fa4a832e8f76f09311e6bd262a6227e1e44a46e9925d070e3",
+      "issues": [
+        {
+          "path": [],
+          "code": "value_error"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 5769,
+        "total_tokens": 6439,
+        "completion_tokens": 670
+      },
+      "latency_seconds": 6.262653234996833,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "71e79c54ba8f984c08c780ba18b821ee3839a4126614b030b6784bc3f4dfac1d",
+      "output_chars": 316,
+      "state": "invalida"
+    },
+    {
+      "number": 2,
+      "kind": "reparo",
+      "messages_sha256": "e74fe778e7610bfe56b83b5938b3b7832421f6aeb59ab5365523003e6535af64",
+      "issues": [
+        {
+          "path": [],
+          "code": "value_error"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 5804,
+        "total_tokens": 6583,
+        "completion_tokens": 779
+      },
+      "latency_seconds": 5.6673496920848265,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "a984f3b605815490394d4f554c6a22dbfbebc1cd87e5c4f66838d8a650156323",
+      "output_chars": 316,
+      "state": "invalida"
+    }
+  ],
+  "latency_seconds": 11.934353517950512,
+  "scores": {
+    "status": false,
+    "plan": null,
+    "values": null,
+    "clarification": null,
+    "correct": false
+  },
+  "cost": null,
+  "source_context": {
+    "data_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+  },
+  "C_session_id": null,
+  "C_turn_id": null,
+  "C_candidate_intent": null,
+  "C_decision": null
+}

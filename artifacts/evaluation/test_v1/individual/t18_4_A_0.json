@@ -1,0 +1,86 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "fa7686659da9449d811d154641021724",
+  "case_id": "t18_4",
+  "family_id": "teste_variacao",
+  "territory_codes": [
+    "2403806"
+  ],
+  "condition": "A",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:48:45.338025+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Quanto foi a variação percentual de Mangue entre 2015 e 2025 em Florânia/RN, tendo a área inicial como base?",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": null,
+  "messages_sha256": "061678efd86ce15987d353d946178ea715894ba701b01f9adba501b1c8dd36fd",
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "dados_indisponiveis",
+    "plan": null,
+    "values": [],
+    "clarification_field": null,
+    "reason": "dados_faltantes"
+  },
+  "final_answer": "{\"status\": \"dados_indisponiveis\", \"plan\": null, \"values\": [], \"clarification_field\": null, \"reason\": \"dados_faltantes\"}",
+  "plan": null,
+  "result": [],
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "messages_sha256": "061678efd86ce15987d353d946178ea715894ba701b01f9adba501b1c8dd36fd",
+      "issues": [],
+      "usage": {
+        "prompt_tokens": 3600,
+        "total_tokens": 3937,
+        "completion_tokens": 337
+      },
+      "latency_seconds": 3.2068663629470393,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "b902befb4c7433b60847cdbea160080c9afa5a44fffc4b1452b00fbbfbdf7fad",
+      "output_chars": 59,
+      "state": "valida"
+    }
+  ],
+  "latency_seconds": 3.2107959939166903,
+  "scores": {
+    "status": false,
+    "plan": null,
+    "values": null,
+    "clarification": null,
+    "correct": false
+  },
+  "cost": null,
+  "source_context": {
+    "data_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+  },
+  "C_session_id": null,
+  "C_turn_id": null,
+  "C_candidate_intent": null,
+  "C_decision": null
+}

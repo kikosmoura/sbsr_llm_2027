@@ -1,0 +1,69 @@
+{
+  "created_at": "2026-10-19T20:56:59.711011+00:00",
+  "territories": 10,
+  "context_bytes": 51889,
+  "context_sha256": "772e2e08ef6d61b0996ff423085a5e6cf88d7c8109bc6ddfc86ff148c916b398",
+  "complete_tables": true,
+  "truncated": false,
+  "fits_application_limit": true,
+  "data_preparation_seconds": 0.07029666297603399,
+  "gateway_executed": true,
+  "observed": {
+    "status": "precisa_esclarecimento",
+    "plan": null,
+    "values": [],
+    "clarification_field": "territorio",
+    "reason": "ambig_territorio"
+  },
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "messages_sha256": "35c7339608bee9a4cb92e51d3c3f118a0419a794691beaec4a49d2d472111aba",
+      "issues": [
+        {
+          "path": [],
+          "code": "value_error"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 24699,
+        "total_tokens": 25220,
+        "completion_tokens": 521
+      },
+      "latency_seconds": 8.546537443995476,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "144d18f1149471b0d809a76489e164f73448da0fb4a45c5103de514ebb7410e0",
+      "output_chars": 188,
+      "state": "invalida"
+    },
+    {
+      "number": 2,
+      "kind": "reparo",
+      "messages_sha256": "85fbc0c0509cb4fdfaa13a3684f63dd882921f3b5ca63522fba312f978f96496",
+      "issues": [],
+      "usage": {
+        "prompt_tokens": 24734,
+        "total_tokens": 25051,
+        "completion_tokens": 317
+      },
+      "latency_seconds": 6.788692458998412,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "d043938760a60c5b477c8ecaaedd829f6e9671ec31db6600f3d83ab20ad8ebdc",
+      "output_chars": 143,
+      "state": "valida"
+    }
+  ],
+  "scores": {
+    "status": false,
+    "plan": null,
+    "values": null,
+    "clarification": null,
+    "correct": false
+  },
+  "latency_seconds": 15.339736524038017,
+  "cost": null,
+  "messages_sha256": "35c7339608bee9a4cb92e51d3c3f118a0419a794691beaec4a49d2d472111aba"
+}

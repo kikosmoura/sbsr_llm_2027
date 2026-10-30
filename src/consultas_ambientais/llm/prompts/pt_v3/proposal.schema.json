@@ -1,0 +1,280 @@
+{
+  "$defs": {
+    "CandidateIntent": {
+      "additionalProperties": false,
+      "properties": {
+        "operation": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Operation"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "territories": {
+          "items": {
+            "$ref": "#/$defs/TerritoryMention"
+          },
+          "maxItems": 10,
+          "title": "Territories",
+          "type": "array"
+        },
+        "scope_uf_mention": {
+          "anyOf": [
+            {
+              "maxLength": 80,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Scope Uf Mention"
+        },
+        "classes": {
+          "items": {
+            "$ref": "#/$defs/ClassMention"
+          },
+          "maxItems": 10,
+          "title": "Classes",
+          "type": "array"
+        },
+        "years": {
+          "items": {
+            "type": "integer"
+          },
+          "maxItems": 11,
+          "title": "Years",
+          "type": "array"
+        },
+        "metric": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Metric"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "metric_mention": {
+          "anyOf": [
+            {
+              "maxLength": 120,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Metric Mention"
+        },
+        "unit_mention": {
+          "anyOf": [
+            {
+              "maxLength": 80,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Unit Mention"
+        },
+        "denominator": {
+          "anyOf": [
+            {
+              "enum": [
+                "area_observada",
+                "area_inicial",
+                "participacao_por_ano"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Denominator"
+        },
+        "direction": {
+          "anyOf": [
+            {
+              "enum": [
+                "asc",
+                "desc"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Direction"
+        },
+        "limit": {
+          "anyOf": [
+            {
+              "maximum": 100,
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Limit"
+        }
+      },
+      "title": "CandidateIntent",
+      "type": "object"
+    },
+    "ClassMention": {
+      "additionalProperties": false,
+      "properties": {
+        "mention": {
+          "maxLength": 120,
+          "minLength": 1,
+          "title": "Mention",
+          "type": "string"
+        }
+      },
+      "required": [
+        "mention"
+      ],
+      "title": "ClassMention",
+      "type": "object"
+    },
+    "Metric": {
+      "enum": [
+        "area",
+        "participacao",
+        "diferenca_liquida",
+        "reducao_liquida",
+        "variacao_percentual",
+        "diferenca_pontos_percentuais"
+      ],
+      "title": "Metric",
+      "type": "string"
+    },
+    "Operation": {
+      "enum": [
+        "area",
+        "participacao",
+        "comparacao_temporal",
+        "serie_disponivel",
+        "comparacao_territorial",
+        "ranking_delimitado"
+      ],
+      "title": "Operation",
+      "type": "string"
+    },
+    "TerritoryMention": {
+      "additionalProperties": false,
+      "properties": {
+        "mention": {
+          "maxLength": 120,
+          "minLength": 1,
+          "title": "Mention",
+          "type": "string"
+        },
+        "uf_mention": {
+          "anyOf": [
+            {
+              "maxLength": 80,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Uf Mention"
+        },
+        "kind": {
+          "anyOf": [
+            {
+              "enum": [
+                "municipio",
+                "uf"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Kind"
+        }
+      },
+      "required": [
+        "mention"
+      ],
+      "title": "TerritoryMention",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "action": {
+      "enum": [
+        "consultar",
+        "esclarecer"
+      ],
+      "title": "Action",
+      "type": "string"
+    },
+    "intent": {
+      "$ref": "#/$defs/CandidateIntent"
+    },
+    "clarification_fields": {
+      "items": {
+        "enum": [
+          "territorio",
+          "classe",
+          "metrica",
+          "unidade",
+          "periodo",
+          "escopo",
+          "limite",
+          "ordenacao",
+          "operacao"
+        ],
+        "type": "string"
+      },
+      "maxItems": 3,
+      "title": "Clarification Fields",
+      "type": "array"
+    },
+    "explanation": {
+      "anyOf": [
+        {
+          "maxLength": 2000,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Explanation"
+    }
+  },
+  "required": [
+    "action",
+    "intent"
+  ],
+  "title": "ModelProposal",
+  "type": "object"
+}

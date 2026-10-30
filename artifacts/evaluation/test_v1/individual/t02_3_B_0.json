@@ -1,0 +1,166 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "fa7686659da9449d811d154641021724",
+  "case_id": "t02_3",
+  "family_id": "teste_area_direta",
+  "territory_codes": [
+    "2400208"
+  ],
+  "condition": "B",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:38:10.681604+00:00",
+  "integration_kind": "gateway_real",
+  "question": "No ano 2025, a área classificada como Pastagem em Assú/RN corresponde a quantos quilômetros quadrados?",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": "b79189ba73ae81312277bf1f9b164a3412e06ad3baf2da30ee91946219904285",
+  "messages_sha256": "228840c8f20bbacebff160c42f35ef581e55b2e846f9055bf410a7f7877cc3b0",
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "respondida",
+    "plan": {
+      "operation": "area",
+      "metric": "area",
+      "unit": "km2",
+      "territory_codes": [
+        "2400208"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2400208",
+        "years": [
+          2025
+        ],
+        "value": 331.2892037171243,
+        "unit": "km2",
+        "undefined_reason": null,
+        "denominators_ha": [],
+        "rank": null
+      }
+    ],
+    "clarification_field": null,
+    "reason": "ok"
+  },
+  "final_answer": "{\"status\": \"respondida\", \"plan\": {\"operation\": \"area\", \"metric\": \"area\", \"unit\": \"km2\", \"territory_codes\": [\"2400208\"], \"scope_uf\": \"RN\", \"class_codes\": [15], \"years\": [2025], \"denominator\": null, \"direction\": \"desc\", \"limit\": null}, \"values\": [{\"territory_code\": \"2400208\", \"years\": [2025], \"value\": 331.2892037171243, \"unit\": \"km2\", \"undefined_reason\": null, \"denominators_ha\": [], \"rank\": null}], \"clarification_field\": null, \"reason\": \"ok\"}",
+  "plan": {
+    "operation": "area",
+    "metric": "area",
+    "unit": "km2",
+    "territory_codes": [
+      "2400208"
+    ],
+    "scope_uf": "RN",
+    "class_codes": [
+      15
+    ],
+    "years": [
+      2025
+    ],
+    "denominator": null,
+    "direction": "desc",
+    "limit": null
+  },
+  "result": [
+    {
+      "territory_code": "2400208",
+      "years": [
+        2025
+      ],
+      "value": 331.2892037171243,
+      "unit": "km2",
+      "undefined_reason": null,
+      "denominators_ha": [],
+      "rank": null
+    }
+  ],
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "messages_sha256": "228840c8f20bbacebff160c42f35ef581e55b2e846f9055bf410a7f7877cc3b0",
+      "issues": [
+        {
+          "path": [],
+          "code": "value_error"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 5764,
+        "total_tokens": 6328,
+        "completion_tokens": 564
+      },
+      "latency_seconds": 7.06955407303758,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "7b0f22c99e0849174ec078ec0056587dffc56e1f867d22832975d36ce2b2d46d",
+      "output_chars": 285,
+      "state": "invalida"
+    },
+    {
+      "number": 2,
+      "kind": "reparo",
+      "messages_sha256": "6ef857c8eaa304299c79ef539300fadd4869d0d2784c67ad348e564e83924896",
+      "issues": [],
+      "usage": {
+        "prompt_tokens": 5799,
+        "total_tokens": 6481,
+        "completion_tokens": 682
+      },
+      "latency_seconds": 6.357865356956609,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "ee6db1f6c9204003ff659b3e6adc3d575d694f887fa1e201f731e0742b0df2d6",
+      "output_chars": 475,
+      "state": "valida"
+    }
+  ],
+  "latency_seconds": 13.430890346993692,
+  "scores": {
+    "status": true,
+    "plan": true,
+    "values": true,
+    "clarification": null,
+    "correct": true
+  },
+  "cost": null,
+  "source_context": {
+    "data_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+  },
+  "C_session_id": null,
+  "C_turn_id": null,
+  "C_candidate_intent": null,
+  "C_decision": null
+}

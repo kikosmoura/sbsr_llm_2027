@@ -1,0 +1,153 @@
+{
+  "schema_version": "controle-contrato-caso-v1",
+  "run_id": "aa224a7d26124a8dbfa4042e50621cc7",
+  "case_id": "t11_3",
+  "family_id": "teste_delta",
+  "territory_codes": [
+    "2406700"
+  ],
+  "condition": "B_eq",
+  "repeat": 0,
+  "integration_kind": "gateway_real",
+  "created_at": "2026-10-21T14:59:28.014643+00:00",
+  "freeze_sha256": "55593ae2e52cbd2890ddce5bfed4183977a20b43a9c95123ba43f53e2b1332f0",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 4096,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "native_tools": false,
+    "native_response_format": false,
+    "workers": 3
+  },
+  "question": "Dê o saldo líquido em ha de Formação Florestal em Lajes/RN: cobertura final de 2025 menos inicial de 2015.",
+  "fixed_plan": {
+    "operation": "comparacao_temporal",
+    "metric": "diferenca_liquida",
+    "unit": "ha",
+    "territory_codes": [
+      "2406700"
+    ],
+    "scope_uf": "RN",
+    "class_codes": [
+      3
+    ],
+    "years": [
+      2015,
+      2025
+    ],
+    "denominator": null,
+    "direction": "desc",
+    "limit": null
+  },
+  "common_input_sha256": "26bf6803f7c94fb21c01bb70efa9ff7bfcd32335b86d16131aa4012a758fb8eb",
+  "output_contract_sha256": "7cb672668bdaf0cb31f785651d91ec6475f990de121edab04b748bd0da63c955",
+  "system_sha256": "2805f7312e5288c2499d8bc4b6fd55f3a0adc3b8d5ea53aab2533894c62b290d",
+  "messages_sha256": "dc0dd86d4101fd0cfd88670d59bcff991e38baeae7c0f46f793e036e5f0583ea",
+  "execution_observations": [],
+  "executor_result": null,
+  "observed": {
+    "status": "respondida",
+    "values": [
+      {
+        "territory_code": "2406700",
+        "years": [
+          2015,
+          2025
+        ],
+        "value": 1.601421987628938,
+        "unit": "ha",
+        "undefined_reason": null,
+        "denominators_ha": [],
+        "rank": null
+      }
+    ],
+    "reason": "consulta_executada",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_liquida",
+      "unit": "ha",
+      "territory_codes": [
+        "2406700"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "clarification_field": null
+  },
+  "final_answer": "{\"reason\":\"consulta_executada\",\"status\":\"respondida\",\"values\":[{\"denominators_ha\":[],\"rank\":null,\"territory_code\":\"2406700\",\"undefined_reason\":null,\"unit\":\"ha\",\"value\":1.601421987628938,\"years\":[2015,2025]}]}",
+  "attempts": [
+    {
+      "number": 1,
+      "messages_sha256": "dc0dd86d4101fd0cfd88670d59bcff991e38baeae7c0f46f793e036e5f0583ea",
+      "usage": {
+        "prompt_tokens": 5492,
+        "total_tokens": 6149,
+        "completion_tokens": 657
+      },
+      "issues": [],
+      "latency_seconds": 6.35563511098735,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "df3a42f262100a086b4a9d28109b7a26cb3cc4c760950f702d495851b2a465ec",
+      "output_chars": 208,
+      "state": "valida"
+    }
+  ],
+  "latency_seconds": 6.360206875950098,
+  "model_seconds": 6.356089052045718,
+  "http_events": [
+    {
+      "endpoint": "oauth",
+      "http_status": 200,
+      "bytes_read": 91,
+      "body_complete": true,
+      "response_metadata": null,
+      "elapsed_seconds": 0.1906675099162385
+    },
+    {
+      "endpoint": "chat",
+      "http_status": 200,
+      "bytes_read": 3155,
+      "body_complete": true,
+      "response_metadata": {
+        "json_object": true,
+        "choices_count": 1,
+        "finish_reason": "stop",
+        "content_state": "texto",
+        "final_content_chars": 208,
+        "reasoning_field_present": true,
+        "usage": {
+          "prompt_tokens": 5492,
+          "total_tokens": 6149,
+          "completion_tokens": 657
+        },
+        "reasoning_tokens": null
+      },
+      "elapsed_seconds": 6.1649078350747
+    }
+  ],
+  "executor_seconds": 0,
+  "scores": {
+    "status": true,
+    "plan": true,
+    "values": true,
+    "clarification": null,
+    "correct": true
+  },
+  "cost": null,
+  "source_geo_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+}

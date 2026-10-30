@@ -1,0 +1,101 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "conservation_absolute_m2": {
+      "const": 0.01,
+      "default": 0.01,
+      "title": "Conservation Absolute M2",
+      "type": "number"
+    },
+    "conservation_relative_tolerance": {
+      "const": 1e-09,
+      "default": 1e-09,
+      "title": "Conservation Relative Tolerance",
+      "type": "number"
+    },
+    "gdal_cache_mb": {
+      "default": 64,
+      "maximum": 128,
+      "minimum": 8,
+      "title": "Gdal Cache Mb",
+      "type": "integer"
+    },
+    "http_timeout_seconds": {
+      "default": 30,
+      "exclusiveMinimum": 0,
+      "maximum": 120,
+      "title": "Http Timeout Seconds",
+      "type": "number"
+    },
+    "independent_absolute_m2": {
+      "const": 0.05,
+      "default": 0.05,
+      "title": "Independent Absolute M2",
+      "type": "number"
+    },
+    "independent_relative_tolerance": {
+      "const": 1e-06,
+      "default": 1e-06,
+      "title": "Independent Relative Tolerance",
+      "type": "number"
+    },
+    "max_cache_bytes": {
+      "default": 536870912,
+      "maximum": 2147483648,
+      "minimum": 1048576,
+      "title": "Max Cache Bytes",
+      "type": "integer"
+    },
+    "max_crop_pixels": {
+      "default": 180000000,
+      "maximum": 250000000,
+      "minimum": 1024,
+      "title": "Max Crop Pixels",
+      "type": "integer"
+    },
+    "max_download_bytes": {
+      "default": 268435456,
+      "maximum": 1073741824,
+      "minimum": 1048576,
+      "title": "Max Download Bytes",
+      "type": "integer"
+    },
+    "max_memory_mb": {
+      "default": 1024,
+      "maximum": 4096,
+      "minimum": 128,
+      "title": "Max Memory Mb",
+      "type": "integer"
+    },
+    "max_range_requests": {
+      "default": 20000,
+      "maximum": 50000,
+      "minimum": 10,
+      "title": "Max Range Requests",
+      "type": "integer"
+    },
+    "max_seconds": {
+      "default": 3600,
+      "maximum": 14400,
+      "minimum": 30,
+      "title": "Max Seconds",
+      "type": "integer"
+    },
+    "range_block_bytes": {
+      "default": 65536,
+      "maximum": 1048576,
+      "minimum": 16384,
+      "title": "Range Block Bytes",
+      "type": "integer"
+    },
+    "window_size": {
+      "default": 512,
+      "maximum": 1024,
+      "minimum": 32,
+      "title": "Window Size",
+      "type": "integer"
+    }
+  },
+  "title": "ProcessingConfig",
+  "type": "object"
+}

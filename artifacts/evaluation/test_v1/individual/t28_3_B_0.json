@@ -1,0 +1,90 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "fa7686659da9449d811d154641021724",
+  "case_id": "t28_3",
+  "family_id": "teste_t28",
+  "territory_codes": [
+    "2201903",
+    "2401701",
+    "2502201",
+    "4202537",
+    "4302303"
+  ],
+  "condition": "B",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:55:20.116631+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Para o município Bom Jesus, mostre a área em hectares de Pastagem de 2025.",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": "3015030a6c9ef9d178317bb8f3715bb96dc17f5c92d90d8cb0516da3df516ef4",
+  "messages_sha256": "dabaaaf1e0a5d5485a2e287af8456dfb3bc33086862079cfb4e5f51afaf9ec98",
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "precisa_esclarecimento",
+    "plan": null,
+    "values": [],
+    "clarification_field": "territorio",
+    "reason": "ambiguidade_territorio"
+  },
+  "final_answer": "{\"status\": \"precisa_esclarecimento\", \"plan\": null, \"values\": [], \"clarification_field\": \"territorio\", \"reason\": \"ambiguidade_territorio\"}",
+  "plan": null,
+  "result": [],
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "messages_sha256": "dabaaaf1e0a5d5485a2e287af8456dfb3bc33086862079cfb4e5f51afaf9ec98",
+      "issues": [],
+      "usage": {
+        "prompt_tokens": 5869,
+        "total_tokens": 6224,
+        "completion_tokens": 355
+      },
+      "latency_seconds": 4.091829058015719,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "42f0faa7dce697b4e9863c89c8f5ab41319647972981a22174c19d68dd0db703",
+      "output_chars": 149,
+      "state": "valida"
+    }
+  ],
+  "latency_seconds": 4.094562250073068,
+  "scores": {
+    "status": true,
+    "plan": null,
+    "values": null,
+    "clarification": true,
+    "correct": true
+  },
+  "cost": null,
+  "source_context": {
+    "data_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+  },
+  "C_session_id": null,
+  "C_turn_id": null,
+  "C_candidate_intent": null,
+  "C_decision": null
+}

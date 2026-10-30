@@ -1,0 +1,148 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "fa7686659da9449d811d154641021724",
+  "case_id": "t12_1",
+  "family_id": "teste_delta",
+  "territory_codes": [
+    "2400802"
+  ],
+  "condition": "B",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:44:15.252225+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Calcule em km2 a diferença líquida, área final menos inicial, de Pastagem em Angicos/RN entre 2015 e 2025.",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": "55958c5b86c42d5ce00152493f40d2868ed3de78837a3c3bd326963afdb5b069",
+  "messages_sha256": "7ccff8addb7605d6531fee39a1ffb116bf13ae00279b81c618172384f43257ba",
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_liquida",
+      "unit": "km2",
+      "territory_codes": [
+        "2400802"
+      ],
+      "scope_uf": null,
+      "class_codes": [
+        15
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2400802",
+        "years": [
+          2015,
+          2025
+        ],
+        "value": -8.70333933044486,
+        "unit": "km2",
+        "undefined_reason": null,
+        "denominators_ha": [],
+        "rank": null
+      }
+    ],
+    "clarification_field": null,
+    "reason": "success"
+  },
+  "final_answer": "{\"status\": \"respondida\", \"plan\": {\"operation\": \"comparacao_temporal\", \"metric\": \"diferenca_liquida\", \"unit\": \"km2\", \"territory_codes\": [\"2400802\"], \"scope_uf\": null, \"class_codes\": [15], \"years\": [2015, 2025], \"denominator\": null, \"direction\": \"desc\", \"limit\": null}, \"values\": [{\"territory_code\": \"2400802\", \"years\": [2015, 2025], \"value\": -8.70333933044486, \"unit\": \"km2\", \"undefined_reason\": null, \"denominators_ha\": [], \"rank\": null}], \"clarification_field\": null, \"reason\": \"success\"}",
+  "plan": {
+    "operation": "comparacao_temporal",
+    "metric": "diferenca_liquida",
+    "unit": "km2",
+    "territory_codes": [
+      "2400802"
+    ],
+    "scope_uf": null,
+    "class_codes": [
+      15
+    ],
+    "years": [
+      2015,
+      2025
+    ],
+    "denominator": null,
+    "direction": "desc",
+    "limit": null
+  },
+  "result": [
+    {
+      "territory_code": "2400802",
+      "years": [
+        2015,
+        2025
+      ],
+      "value": -8.70333933044486,
+      "unit": "km2",
+      "undefined_reason": null,
+      "denominators_ha": [],
+      "rank": null
+    }
+  ],
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "messages_sha256": "7ccff8addb7605d6531fee39a1ffb116bf13ae00279b81c618172384f43257ba",
+      "issues": [],
+      "usage": {
+        "prompt_tokens": 5768,
+        "total_tokens": 6845,
+        "completion_tokens": 1077
+      },
+      "latency_seconds": 8.736534431925975,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "71ba0f80d82d9a34b4190d8628e9e3588929813bb3ae6de0aa929c601ba76df6",
+      "output_chars": 601,
+      "state": "valida"
+    }
+  ],
+  "latency_seconds": 8.740421363036148,
+  "scores": {
+    "status": true,
+    "plan": true,
+    "values": true,
+    "clarification": null,
+    "correct": true
+  },
+  "cost": null,
+  "source_context": {
+    "data_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+  },
+  "C_session_id": null,
+  "C_turn_id": null,
+  "C_candidate_intent": null,
+  "C_decision": null
+}

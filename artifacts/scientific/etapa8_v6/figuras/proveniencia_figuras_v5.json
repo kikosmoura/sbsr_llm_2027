@@ -1,0 +1,13 @@
+{
+  "source_sha256": {
+    "2048": "aeacbb2b2d3b92e02d1ef19eb950d0bb669a46ac737571d6754b64881ed017ff",
+    "4096": "f9ded601fabb3a117a53a0fe9d25b4dd4dd279d4027d0d3b72746dc230dea36b"
+  },
+  "matplotlib": "3.5.1",
+  "manual_numeric_editing": false,
+  "files": [
+    "fig16_sensibilidade_v5.png",
+    "fig16_sensibilidade_v5.svg",
+    "fig16_sensibilidade_v5.pdf"
+  ]
+}

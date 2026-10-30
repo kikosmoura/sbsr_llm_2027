@@ -1,0 +1,113 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "fa7686659da9449d811d154641021724",
+  "case_id": "t10_1",
+  "family_id": "teste_t10",
+  "territory_codes": [
+    "2414407"
+  ],
+  "condition": "B",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:42:41.890408+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Qual a área de Rio, Lago e Oceano em Touros/RN em 2015?",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": "e7e62e6df6fa2a200e58637d32cb2d78739e6ab37c4995988cbe7798b14dd46f",
+  "messages_sha256": "9eff4d7bd85195caecda7727fd6de072fd3b8b95db9086a8927801002fb643e7",
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "erro_tecnico",
+    "plan": null,
+    "values": [],
+    "clarification_field": null,
+    "reason": "saida_invalida_apos_reparo"
+  },
+  "final_answer": "{\"status\": \"erro_tecnico\", \"plan\": null, \"values\": [], \"clarification_field\": null, \"reason\": \"saida_invalida_apos_reparo\"}",
+  "plan": null,
+  "result": [],
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "messages_sha256": "9eff4d7bd85195caecda7727fd6de072fd3b8b95db9086a8927801002fb643e7",
+      "issues": [
+        {
+          "path": [],
+          "code": "value_error"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 5801,
+        "total_tokens": 6298,
+        "completion_tokens": 497
+      },
+      "latency_seconds": 5.101670698961243,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "1c3916b75f73624b378992b4c0cd46f72cd0196307ceb890619578178732ab66",
+      "output_chars": 264,
+      "state": "invalida"
+    },
+    {
+      "number": 2,
+      "kind": "reparo",
+      "messages_sha256": "9d6f16cc7fb6ab813a47327212c10ab66ff7b91ae8c56a39a4d98c1b33518897",
+      "issues": [
+        {
+          "path": [],
+          "code": "value_error"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 5836,
+        "total_tokens": 6309,
+        "completion_tokens": 473
+      },
+      "latency_seconds": 4.610447951010428,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "c660ce34a0c48a68bca24be2e867ce85d1abedef9b4d309a8ef8b524e41dc3a2",
+      "output_chars": 240,
+      "state": "invalida"
+    }
+  ],
+  "latency_seconds": 9.716545254923403,
+  "scores": {
+    "status": false,
+    "plan": null,
+    "values": null,
+    "clarification": null,
+    "correct": false
+  },
+  "cost": null,
+  "source_context": {
+    "data_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+  },
+  "C_session_id": null,
+  "C_turn_id": null,
+  "C_candidate_intent": null,
+  "C_decision": null
+}

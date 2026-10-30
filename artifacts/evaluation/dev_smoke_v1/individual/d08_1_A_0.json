@@ -1,0 +1,87 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "9f9225242f404ef29eefe630dd614d0b",
+  "case_id": "d08_1",
+  "family_id": "d08",
+  "territory_codes": [
+    "2410900",
+    "2805901"
+  ],
+  "condition": "A",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:34:53.857194+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Qual a área de floresta em Riachuelo/RN em 2015, em hectares?",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": null,
+  "messages_sha256": "0a9cefd86c958acfe0acc7a398c62ece41cebdbbd57486c066558f43c638e894",
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "precisa_esclarecimento",
+    "plan": null,
+    "values": [],
+    "clarification_field": "classe",
+    "reason": "classe_ambigua"
+  },
+  "final_answer": "{\"status\": \"precisa_esclarecimento\", \"plan\": null, \"values\": [], \"clarification_field\": \"classe\", \"reason\": \"classe_ambigua\"}",
+  "plan": null,
+  "result": [],
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "messages_sha256": "0a9cefd86c958acfe0acc7a398c62ece41cebdbbd57486c066558f43c638e894",
+      "issues": [],
+      "usage": {
+        "prompt_tokens": 3626,
+        "total_tokens": 4043,
+        "completion_tokens": 417
+      },
+      "latency_seconds": 9.10548835399095,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "f0ee335ddeca2ebf5db691374eceb0cb6ee89c009354f3c654114d5fb384e4de",
+      "output_chars": 105,
+      "state": "valida"
+    }
+  ],
+  "latency_seconds": 9.108017842052504,
+  "scores": {
+    "status": true,
+    "plan": null,
+    "values": null,
+    "clarification": true,
+    "correct": true
+  },
+  "cost": null,
+  "source_context": {
+    "data_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+  },
+  "C_session_id": null,
+  "C_turn_id": null,
+  "C_candidate_intent": null,
+  "C_decision": null
+}

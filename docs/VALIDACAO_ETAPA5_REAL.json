@@ -1,0 +1,1613 @@
+{
+  "schema_version": "validacao-etapa5-real-revisada-v1",
+  "checked_at": "2026-10-19T19:34:50.167358+00:00",
+  "package_version": "0.5.2",
+  "state": "verificado",
+  "real_gateway_verified": true,
+  "integration_kind": "gateway_real",
+  "model_requested": "MODEL_ID",
+  "models_returned": [
+    "RETURNED_MODEL_ID_1"
+  ],
+  "tls_verified": true,
+  "dotenv_read_authorized_by_user": true,
+  "dotenv_unchanged": true,
+  "credential_values_published": false,
+  "test_configuration": {
+    "max_tokens": 2048,
+    "temperature": 0.0,
+    "timeout": 120
+  },
+  "prompt_version": "pt_v3",
+  "prompt_hashes": {
+    "system.txt": "2ca6b6759b1f552dbf001d9bfe072959df9c4d554ae4b525b9b33b9de912bf10",
+    "user.txt": "30be6fbfc5e8822eeb6b315765b3fb5747ca3197b867746b7ed7808c9e7169ed",
+    "repair.txt": "ed730b22ca7209aad127f6ad9b425a91d2098c623c98c6158e71bd513efaf08b",
+    "proposal.schema.json": "9787a21f662d0ab8c0243201d6a65ec3770d865556f2d9a4f31d02b1864a44e3"
+  },
+  "interpreter_sha256": "d5606e6fe0c23c8e0619dafcb4f8cda5b07d30a7a967df652d73bcf1f9ac2fde",
+  "executor_sha256": "64bb18ecbfecf2fd623d8fd10e616a1f816bbf529feeec5749f554ac7d4ed81a",
+  "validation_script_sha256": "7fce8e76cedb4f06a626e7d89285e2c1a245801fdda3abdfafbf798de332187c",
+  "local_suite": {
+    "passed": 211,
+    "interpretation_tests": 51,
+    "includes_synthetic_and_mocks": true,
+    "real_gateway_in_unit_tests": false
+  },
+  "final_integration": {
+    "case_count": 26,
+    "case_passed": 26,
+    "all_checks_passed": true,
+    "turn_count": 30,
+    "chat_requests_observed": 28,
+    "oauth_requests_observed": 1,
+    "locally_blocked_cases": [
+      "inducao_sql",
+      "causa_recusada",
+      "perda_bruta",
+      "inundacao"
+    ],
+    "repair_turn_count": 1,
+    "attempt_latency_seconds": {
+      "median": 6.731041103019379,
+      "max": 11.054551965091377
+    },
+    "observed_token_usage_excluding_probe": {
+      "completion_tokens": 23920,
+      "prompt_tokens": 126170,
+      "total_tokens": 150090
+    },
+    "probe": {
+      "chat_requests": 1,
+      "latency_seconds": 0.7413289210526273,
+      "model": "RETURNED_MODEL_ID_1",
+      "reply_is_ok": true,
+      "state": "verificado",
+      "tls_verified": true,
+      "usage": {
+        "completion_tokens": 58,
+        "prompt_tokens": 73,
+        "total_tokens": 131
+      }
+    },
+    "report": "reports/etapa5/real/final/resumo.json",
+    "report_sha256": "48ffcb59f9d6b890dbce4a696004ecde2c24d98a6834e871a93d7dddc0efa057",
+    "cases": [
+      {
+        "case": "area_pastagem",
+        "checks_passed": true,
+        "turns": [
+          {
+            "session_id": "b3bf38b5859d4988b1facdfa8c78c757",
+            "turn_id": "dea487be3e8a4ca498f7f77d83143fd7",
+            "status": "respondida",
+            "reason": "consulta_executada",
+            "attempt_count": 1,
+            "answer_id": "537955b183713f10ab550e98d9e72fc4ff1ecdea799615c4918346f623f7ac4a",
+            "plan": {
+              "class_codes": [
+                15
+              ],
+              "denominator": null,
+              "direction": "desc",
+              "limit": null,
+              "metric": "area",
+              "operation": "area",
+              "scope_uf": null,
+              "territory_codes": [
+                "2410900"
+              ],
+              "unit": "ha",
+              "years": [
+                2015
+              ]
+            },
+            "values": [
+              {
+                "area_value_ha": 8684.038153762798,
+                "denominator_unit": null,
+                "denominator_value": null,
+                "evidence_id": "ac32b0f023c150320cd583918bb4d3932cf2e3b0d86706ca0439b0319d0aff03",
+                "metric": "area",
+                "rank": null,
+                "undefined_reason": null,
+                "unit": "ha",
+                "value": 8684.038153762798
+              }
+            ],
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "result_file": "reports/etapa5/real/final/dea487be3e8a4ca498f7f77d83143fd7.json",
+            "audit_path": "artifacts/dialogues/b3bf38b5859d4988b1facdfa8c78c757/dea487be3e8a4ca498f7f77d83143fd7.json",
+            "result_sha256": "5dbb1096d108a8af705cd0f1726efd8b226181a4dab5c0fa4ef1d80d83895d2b",
+            "repair_issues": [],
+            "fallback": null
+          }
+        ]
+      },
+      {
+        "case": "participacao",
+        "checks_passed": true,
+        "turns": [
+          {
+            "session_id": "1f48bc60e9834f7196294e633a82e626",
+            "turn_id": "6f0dd2497b1246288aa801d894476402",
+            "status": "respondida",
+            "reason": "consulta_executada",
+            "attempt_count": 1,
+            "answer_id": "781a9325c23e35fcd9048a8de3c9600c25a8c0ddde5328ca71118317a748f043",
+            "plan": {
+              "class_codes": [
+                15
+              ],
+              "denominator": "area_observada",
+              "direction": "desc",
+              "limit": null,
+              "metric": "participacao",
+              "operation": "participacao",
+              "scope_uf": null,
+              "territory_codes": [
+                "2410900"
+              ],
+              "unit": "percentual",
+              "years": [
+                2015
+              ]
+            },
+            "values": [
+              {
+                "area_value_ha": null,
+                "denominator_unit": "ha",
+                "denominator_value": 26287.69526975249,
+                "evidence_id": "a1cfcf437b95aa98bb0b82eb47203e6dea76a4a4b9813d65963aa6a4f9f6ceb2",
+                "metric": "participacao",
+                "rank": null,
+                "undefined_reason": null,
+                "unit": "percentual",
+                "value": 33.03461206717101
+              }
+            ],
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "result_file": "reports/etapa5/real/final/6f0dd2497b1246288aa801d894476402.json",
+            "audit_path": "artifacts/dialogues/1f48bc60e9834f7196294e633a82e626/6f0dd2497b1246288aa801d894476402.json",
+            "result_sha256": "3626c81337f6c334758288d0f3fe39ca51209c7f58d4cd210a0e95149e77f593",
+            "repair_issues": [],
+            "fallback": null
+          }
+        ]
+      },
+      {
+        "case": "diferenca_urbana",
+        "checks_passed": true,
+        "turns": [
+          {
+            "session_id": "f1657e2514864ce4affca9b6f74c7237",
+            "turn_id": "d9f56e7c9f1246fdb3cf01aeaeb71050",
+            "status": "respondida",
+            "reason": "consulta_executada",
+            "attempt_count": 1,
+            "answer_id": "149f4782f778570698291e9a7dfbf8dc3b1b73e90cc4ce68f7e110cec7c12ea1",
+            "plan": {
+              "class_codes": [
+                24
+              ],
+              "denominator": null,
+              "direction": "desc",
+              "limit": null,
+              "metric": "diferenca_liquida",
+              "operation": "comparacao_temporal",
+              "scope_uf": null,
+              "territory_codes": [
+                "2408102"
+              ],
+              "unit": "ha",
+              "years": [
+                2015,
+                2025
+              ]
+            },
+            "values": [
+              {
+                "area_value_ha": 358.0270931022533,
+                "denominator_unit": null,
+                "denominator_value": null,
+                "evidence_id": "48bcb242ec568ab4a81ae0ffc668731bce7674e6c5ca607ce22ac92ed0dcbf7a",
+                "metric": "diferenca_liquida",
+                "rank": null,
+                "undefined_reason": null,
+                "unit": "ha",
+                "value": 358.0270931022533
+              }
+            ],
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "result_file": "reports/etapa5/real/final/d9f56e7c9f1246fdb3cf01aeaeb71050.json",
+            "audit_path": "artifacts/dialogues/f1657e2514864ce4affca9b6f74c7237/d9f56e7c9f1246fdb3cf01aeaeb71050.json",
+            "result_sha256": "706c6bc83ab5872de31b5c04e2e8d9dc4cc130985920654065c5dfb10ee7f911",
+            "repair_issues": [],
+            "fallback": null
+          }
+        ]
+      },
+      {
+        "case": "variacao_percentual",
+        "checks_passed": true,
+        "turns": [
+          {
+            "session_id": "d0955d24467d4a34bdaa7bd0608dc4f3",
+            "turn_id": "2b72fdb0ea07432e8e009c0bc3da10b6",
+            "status": "respondida",
+            "reason": "consulta_executada",
+            "attempt_count": 1,
+            "answer_id": "d2a8e2b757ab291e828313671f0b79aa3dbc722f12a1e7c3f8e743fdb4b7c288",
+            "plan": {
+              "class_codes": [
+                24
+              ],
+              "denominator": "area_inicial",
+              "direction": "desc",
+              "limit": null,
+              "metric": "variacao_percentual",
+              "operation": "comparacao_temporal",
+              "scope_uf": null,
+              "territory_codes": [
+                "2408102"
+              ],
+              "unit": "percentual",
+              "years": [
+                2015,
+                2025
+              ]
+            },
+            "values": [
+              {
+                "area_value_ha": null,
+                "denominator_unit": "ha",
+                "denominator_value": 10336.9935200505,
+                "evidence_id": "a3f5792a7ce51c051391cfe90fa5d11bc1b99252546b9414d958f2c90c6a5e81",
+                "metric": "variacao_percentual",
+                "rank": null,
+                "undefined_reason": null,
+                "unit": "percentual",
+                "value": 3.4635514901677538
+              }
+            ],
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "result_file": "reports/etapa5/real/final/2b72fdb0ea07432e8e009c0bc3da10b6.json",
+            "audit_path": "artifacts/dialogues/d0955d24467d4a34bdaa7bd0608dc4f3/2b72fdb0ea07432e8e009c0bc3da10b6.json",
+            "result_sha256": "342d92235c0960c50b937ca6c6f460ec280437319a622d869568b5c11eb1d87c",
+            "repair_issues": [],
+            "fallback": null
+          }
+        ]
+      },
+      {
+        "case": "pontos_percentuais",
+        "checks_passed": true,
+        "turns": [
+          {
+            "session_id": "8edb12bb8c524062b4d0052b0e44f572",
+            "turn_id": "898f8691612d45468bcaf3d86e515494",
+            "status": "respondida",
+            "reason": "consulta_executada",
+            "attempt_count": 1,
+            "answer_id": "62b35a7680484f152b63acf6cfab616fdb4a6636413d335d4e100275c9e19d72",
+            "plan": {
+              "class_codes": [
+                24
+              ],
+              "denominator": "participacao_por_ano",
+              "direction": "desc",
+              "limit": null,
+              "metric": "diferenca_pontos_percentuais",
+              "operation": "comparacao_temporal",
+              "scope_uf": null,
+              "territory_codes": [
+                "2408102"
+              ],
+              "unit": "pontos_percentuais",
+              "years": [
+                2015,
+                2025
+              ]
+            },
+            "values": [
+              {
+                "area_value_ha": null,
+                "denominator_unit": "ha",
+                "denominator_value": null,
+                "evidence_id": "4887ab6f2680c4632daef62a4157b3ccf24917c26039288b8e61bb285fe414b3",
+                "metric": "diferenca_pontos_percentuais",
+                "rank": null,
+                "undefined_reason": null,
+                "unit": "pontos_percentuais",
+                "value": 2.138734758291058
+              }
+            ],
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "result_file": "reports/etapa5/real/final/898f8691612d45468bcaf3d86e515494.json",
+            "audit_path": "artifacts/dialogues/8edb12bb8c524062b4d0052b0e44f572/898f8691612d45468bcaf3d86e515494.json",
+            "result_sha256": "bfddf550e9067c2b9caec84c619fdc518479e7b2bf38f5d51aacbb3e9b1b678b",
+            "repair_issues": [],
+            "fallback": null
+          }
+        ]
+      },
+      {
+        "case": "grupo_sem_dupla_contagem",
+        "checks_passed": true,
+        "turns": [
+          {
+            "session_id": "e25b5f77337b45da987343e52ebb8bf0",
+            "turn_id": "59ebe803b879425db3d68ee327894dd5",
+            "status": "respondida",
+            "reason": "consulta_executada",
+            "attempt_count": 2,
+            "answer_id": "a7c57923410fe4275c459b898cbec53ccd902c213f014b634d80f15709a4dcef",
+            "plan": {
+              "class_codes": [
+                3,
+                4,
+                5,
+                6,
+                7,
+                49
+              ],
+              "denominator": null,
+              "direction": "desc",
+              "limit": null,
+              "metric": "area",
+              "operation": "area",
+              "scope_uf": null,
+              "territory_codes": [
+                "2410900"
+              ],
+              "unit": "ha",
+              "years": [
+                2015
+              ]
+            },
+            "values": [
+              {
+                "area_value_ha": 16986.240968339545,
+                "denominator_unit": null,
+                "denominator_value": null,
+                "evidence_id": "53cb952b6627b80c0aec731a350e71b2c5f9536b95877d095b9551c7e9a0e569",
+                "metric": "area",
+                "rank": null,
+                "undefined_reason": null,
+                "unit": "ha",
+                "value": 16986.240968339545
+              }
+            ],
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "result_file": "reports/etapa5/real/final/59ebe803b879425db3d68ee327894dd5.json",
+            "audit_path": "artifacts/dialogues/e25b5f77337b45da987343e52ebb8bf0/59ebe803b879425db3d68ee327894dd5.json",
+            "result_sha256": "bdd188eed52ee4ba3068c17f6e00b46ae71269c979e314d3e583f5b6f0847b40",
+            "repair_issues": [
+              [
+                {
+                  "code": "esclarecimento_sem_campo_pendente",
+                  "path": [
+                    "intent",
+                    "action"
+                  ]
+                }
+              ]
+            ],
+            "fallback": null
+          }
+        ]
+      },
+      {
+        "case": "serie",
+        "checks_passed": true,
+        "turns": [
+          {
+            "session_id": "0480c5390d994234bc20958f2cb83f8a",
+            "turn_id": "eccd564aa73f411295a4a08e9a5a1855",
+            "status": "respondida",
+            "reason": "consulta_executada",
+            "attempt_count": 1,
+            "answer_id": "e338f6891161419d62727d8f44f694546df099b32ed8d86d1951891dfcc41786",
+            "plan": {
+              "class_codes": [
+                15
+              ],
+              "denominator": null,
+              "direction": "desc",
+              "limit": null,
+              "metric": "area",
+              "operation": "serie_disponivel",
+              "scope_uf": null,
+              "territory_codes": [
+                "2410900"
+              ],
+              "unit": "ha",
+              "years": [
+                2015,
+                2025
+              ]
+            },
+            "values": [
+              {
+                "area_value_ha": 8684.038153762798,
+                "denominator_unit": null,
+                "denominator_value": null,
+                "evidence_id": "116094540c96fc3b2d24256cb15f104e4474984f7054db1bc4ed60121c67e08a",
+                "metric": "area",
+                "rank": null,
+                "undefined_reason": null,
+                "unit": "ha",
+                "value": 8684.038153762798
+              },
+              {
+                "area_value_ha": 7815.20729317619,
+                "denominator_unit": null,
+                "denominator_value": null,
+                "evidence_id": "346515ab5bf1f0e93c0fcdb82d6633637ccb061aec9e5e92210f7fe00039c9ae",
+                "metric": "area",
+                "rank": null,
+                "undefined_reason": null,
+                "unit": "ha",
+                "value": 7815.20729317619
+              }
+            ],
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "result_file": "reports/etapa5/real/final/eccd564aa73f411295a4a08e9a5a1855.json",
+            "audit_path": "artifacts/dialogues/0480c5390d994234bc20958f2cb83f8a/eccd564aa73f411295a4a08e9a5a1855.json",
+            "result_sha256": "1498080922d78cb258e4ef5aa983046c81fd78fbe96aa931db776c2bbbef8a94",
+            "repair_issues": [],
+            "fallback": null
+          }
+        ]
+      },
+      {
+        "case": "comparacao_territorial",
+        "checks_passed": true,
+        "turns": [
+          {
+            "session_id": "35875afb075249eca0cf5341eb1ededf",
+            "turn_id": "b094cb445ea946fdb50dbb6afd4b1842",
+            "status": "respondida",
+            "reason": "consulta_executada",
+            "attempt_count": 1,
+            "answer_id": "b213571ac87b0ead3f04980a13b0d9ef09ebc33e4cce3e4829fb99c4c92b0022",
+            "plan": {
+              "class_codes": [
+                24
+              ],
+              "denominator": null,
+              "direction": "desc",
+              "limit": null,
+              "metric": "area",
+              "operation": "comparacao_territorial",
+              "scope_uf": null,
+              "territory_codes": [
+                "2408102",
+                "2410900"
+              ],
+              "unit": "ha",
+              "years": [
+                2025
+              ]
+            },
+            "values": [
+              {
+                "area_value_ha": 10695.020613152754,
+                "denominator_unit": null,
+                "denominator_value": null,
+                "evidence_id": "1f844f3c4ebd97acb284195d2ed6ba146876234c6907869c22c5767c02bef53d",
+                "metric": "area",
+                "rank": null,
+                "undefined_reason": null,
+                "unit": "ha",
+                "value": 10695.020613152754
+              },
+              {
+                "area_value_ha": 122.31084596010922,
+                "denominator_unit": null,
+                "denominator_value": null,
+                "evidence_id": "0b0105ff864d523b0c5bf6b44037f2aa60650619573ef7152f453ea6956c43a0",
+                "metric": "area",
+                "rank": null,
+                "undefined_reason": null,
+                "unit": "ha",
+                "value": 122.31084596010922
+              }
+            ],
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "result_file": "reports/etapa5/real/final/b094cb445ea946fdb50dbb6afd4b1842.json",
+            "audit_path": "artifacts/dialogues/35875afb075249eca0cf5341eb1ededf/b094cb445ea946fdb50dbb6afd4b1842.json",
+            "result_sha256": "f0c75a2a7c0b8e6f0b5f01df9c9c641de167d571b27619e582a1746c1598d369",
+            "repair_issues": [],
+            "fallback": null
+          }
+        ]
+      },
+      {
+        "case": "ranking_rn_bloqueado",
+        "checks_passed": true,
+        "turns": [
+          {
+            "session_id": "4c0ed67e2f9f45bab2fb27665d5e5ebc",
+            "turn_id": "127c7106da044d58bb852c90c26e7ed1",
+            "status": "dados_indisponiveis",
+            "reason": "ranking_com_cobertura_incompleta",
+            "attempt_count": 1,
+            "answer_id": null,
+            "plan": null,
+            "values": [],
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "result_file": "reports/etapa5/real/final/127c7106da044d58bb852c90c26e7ed1.json",
+            "audit_path": "artifacts/dialogues/4c0ed67e2f9f45bab2fb27665d5e5ebc/127c7106da044d58bb852c90c26e7ed1.json",
+            "result_sha256": "80c86c954e214b3dd5745cd2320fc374d737839d107170337ff073665e452301",
+            "repair_issues": [],
+            "fallback": null
+          }
+        ]
+      },
+      {
+        "case": "ano_ausente",
+        "checks_passed": true,
+        "turns": [
+          {
+            "session_id": "08f34d7ddee742c2ad43cfb45c72d0be",
+            "turn_id": "fb87c8ddc2ea4bb9910813daf7ba9bc0",
+            "status": "dados_indisponiveis",
+            "reason": "estatisticas_nao_materializadas",
+            "attempt_count": 1,
+            "answer_id": null,
+            "plan": null,
+            "values": [],
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "result_file": "reports/etapa5/real/final/fb87c8ddc2ea4bb9910813daf7ba9bc0.json",
+            "audit_path": "artifacts/dialogues/08f34d7ddee742c2ad43cfb45c72d0be/fb87c8ddc2ea4bb9910813daf7ba9bc0.json",
+            "result_sha256": "1ed77d22d6d029243ca9fc04de592e3d471dcf6a62b88a53c27713763e60951c",
+            "repair_issues": [],
+            "fallback": null
+          }
+        ]
+      },
+      {
+        "case": "uf_parcial",
+        "checks_passed": true,
+        "turns": [
+          {
+            "session_id": "e5f1e07213854fe9bef1ca7ba30c8227",
+            "turn_id": "d35faea9fd2d4455bf0269de19551c72",
+            "status": "dados_indisponiveis",
+            "reason": "estatisticas_nao_materializadas",
+            "attempt_count": 1,
+            "answer_id": null,
+            "plan": null,
+            "values": [],
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "result_file": "reports/etapa5/real/final/d35faea9fd2d4455bf0269de19551c72.json",
+            "audit_path": "artifacts/dialogues/e5f1e07213854fe9bef1ca7ba30c8227/d35faea9fd2d4455bf0269de19551c72.json",
+            "result_sha256": "78c7271fd18680a1835358753c5e12c7677a1aaa3ff01a19d8ee76b5d2aa0f44",
+            "repair_issues": [],
+            "fallback": null
+          }
+        ]
+      },
+      {
+        "case": "base_zero",
+        "checks_passed": true,
+        "turns": [
+          {
+            "session_id": "9671c8f7a5ba411c9305ae0dbe88e869",
+            "turn_id": "542861c308524473b55271a90fe270ab",
+            "status": "respondida",
+            "reason": "consulta_executada",
+            "attempt_count": 1,
+            "answer_id": "8f5c19d2ff2c144ef1bd55f33c5e1c2f665205f540064d67a73d059f6e8d5b6d",
+            "plan": {
+              "class_codes": [
+                5
+              ],
+              "denominator": "area_inicial",
+              "direction": "desc",
+              "limit": null,
+              "metric": "variacao_percentual",
+              "operation": "comparacao_temporal",
+              "scope_uf": null,
+              "territory_codes": [
+                "2410900"
+              ],
+              "unit": "percentual",
+              "years": [
+                2015,
+                2025
+              ]
+            },
+            "values": [
+              {
+                "area_value_ha": null,
+                "denominator_unit": "ha",
+                "denominator_value": 0.0,
+                "evidence_id": "090bd721e3aa9af54dc68e9476a210b123ef05ce11dc57284dce6ced5841b585",
+                "metric": "variacao_percentual",
+                "rank": null,
+                "undefined_reason": "base_inicial_zero",
+                "unit": "percentual",
+                "value": null
+              }
+            ],
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "result_file": "reports/etapa5/real/final/542861c308524473b55271a90fe270ab.json",
+            "audit_path": "artifacts/dialogues/9671c8f7a5ba411c9305ae0dbe88e869/542861c308524473b55271a90fe270ab.json",
+            "result_sha256": "99d7c1d3e713416661796413be38502058c99bbed867ab228aebd7fe8c755bf5",
+            "repair_issues": [],
+            "fallback": null
+          }
+        ]
+      },
+      {
+        "case": "area_km2",
+        "checks_passed": true,
+        "turns": [
+          {
+            "session_id": "b4930e0e563d45c1a7d15fb175e798ff",
+            "turn_id": "a851eb3458514150907308f4aeb044cd",
+            "status": "respondida",
+            "reason": "consulta_executada",
+            "attempt_count": 1,
+            "answer_id": "8aec35ff043aa7c936d2f227d1243829624912a800937872839add2077072742",
+            "plan": {
+              "class_codes": [
+                15
+              ],
+              "denominator": null,
+              "direction": "desc",
+              "limit": null,
+              "metric": "area",
+              "operation": "area",
+              "scope_uf": null,
+              "territory_codes": [
+                "2410900"
+              ],
+              "unit": "km2",
+              "years": [
+                2015
+              ]
+            },
+            "values": [
+              {
+                "area_value_ha": 8684.038153762798,
+                "denominator_unit": null,
+                "denominator_value": null,
+                "evidence_id": "dff1be0bcc15775c371ec0b9254d032b94332f5ea16806314aba0397e89fbbef",
+                "metric": "area",
+                "rank": null,
+                "undefined_reason": null,
+                "unit": "km2",
+                "value": 86.84038153762798
+              }
+            ],
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "result_file": "reports/etapa5/real/final/a851eb3458514150907308f4aeb044cd.json",
+            "audit_path": "artifacts/dialogues/b4930e0e563d45c1a7d15fb175e798ff/a851eb3458514150907308f4aeb044cd.json",
+            "result_sha256": "f8b8f6e46826f39d82fa6896e757491fc170bf15428d7a20949c9d54a785915c",
+            "repair_issues": [],
+            "fallback": null
+          }
+        ]
+      },
+      {
+        "case": "area_m2",
+        "checks_passed": true,
+        "turns": [
+          {
+            "session_id": "b5957155458441db9f956ebebb6ebb41",
+            "turn_id": "3ce012afdcc34d1a96301694337a3ba6",
+            "status": "respondida",
+            "reason": "consulta_executada",
+            "attempt_count": 1,
+            "answer_id": "6eb016b90eedb851b708202ea5d663806ddcf9108e3899b963df3fa4c29d409c",
+            "plan": {
+              "class_codes": [
+                15
+              ],
+              "denominator": null,
+              "direction": "desc",
+              "limit": null,
+              "metric": "area",
+              "operation": "area",
+              "scope_uf": null,
+              "territory_codes": [
+                "2410900"
+              ],
+              "unit": "m2",
+              "years": [
+                2015
+              ]
+            },
+            "values": [
+              {
+                "area_value_ha": 8684.038153762798,
+                "denominator_unit": null,
+                "denominator_value": null,
+                "evidence_id": "213ba7ef365cc79a39b0f4c6ba9e30e6c4866c339caed8c71f5396815197ee49",
+                "metric": "area",
+                "rank": null,
+                "undefined_reason": null,
+                "unit": "m2",
+                "value": 86840381.53762798
+              }
+            ],
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "result_file": "reports/etapa5/real/final/3ce012afdcc34d1a96301694337a3ba6.json",
+            "audit_path": "artifacts/dialogues/b5957155458441db9f956ebebb6ebb41/3ce012afdcc34d1a96301694337a3ba6.json",
+            "result_sha256": "34e6ef5bf777a68399af241a8312df1ff5b6b85cf507c809b82ba599352dc55c",
+            "repair_issues": [],
+            "fallback": null
+          }
+        ]
+      },
+      {
+        "case": "ibge",
+        "checks_passed": true,
+        "turns": [
+          {
+            "session_id": "e7533cdffa7f4e09a6b9e8786866aa12",
+            "turn_id": "fb0a6f08d93a4397a1ad0ac569cab4c6",
+            "status": "respondida",
+            "reason": "consulta_executada",
+            "attempt_count": 1,
+            "answer_id": "537955b183713f10ab550e98d9e72fc4ff1ecdea799615c4918346f623f7ac4a",
+            "plan": {
+              "class_codes": [
+                15
+              ],
+              "denominator": null,
+              "direction": "desc",
+              "limit": null,
+              "metric": "area",
+              "operation": "area",
+              "scope_uf": null,
+              "territory_codes": [
+                "2410900"
+              ],
+              "unit": "ha",
+              "years": [
+                2015
+              ]
+            },
+            "values": [
+              {
+                "area_value_ha": 8684.038153762798,
+                "denominator_unit": null,
+                "denominator_value": null,
+                "evidence_id": "ac32b0f023c150320cd583918bb4d3932cf2e3b0d86706ca0439b0319d0aff03",
+                "metric": "area",
+                "rank": null,
+                "undefined_reason": null,
+                "unit": "ha",
+                "value": 8684.038153762798
+              }
+            ],
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "result_file": "reports/etapa5/real/final/fb0a6f08d93a4397a1ad0ac569cab4c6.json",
+            "audit_path": "artifacts/dialogues/e7533cdffa7f4e09a6b9e8786866aa12/fb0a6f08d93a4397a1ad0ac569cab4c6.json",
+            "result_sha256": "7c4d0a8bf1c20be472159b87af6d81f97b92fbe7c35077911b759a75be80f518",
+            "repair_issues": [],
+            "fallback": null
+          }
+        ]
+      },
+      {
+        "case": "homonimo",
+        "checks_passed": true,
+        "turns": [
+          {
+            "session_id": "4c7a51b9d59e40fabbc949ff760b2650",
+            "turn_id": "a831337b0fec45cba4aa3376ad76e2e1",
+            "status": "precisa_esclarecimento",
+            "reason": "territorio_homonimo",
+            "attempt_count": 1,
+            "answer_id": null,
+            "plan": null,
+            "values": [],
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "result_file": "reports/etapa5/real/final/a831337b0fec45cba4aa3376ad76e2e1.json",
+            "audit_path": "artifacts/dialogues/4c7a51b9d59e40fabbc949ff760b2650/a831337b0fec45cba4aa3376ad76e2e1.json",
+            "result_sha256": "0d300aed05c8229ebf8b4b8e2f2dd2577e03d4a0c7599e2e018ebdb64a208454",
+            "repair_issues": [],
+            "fallback": null
+          },
+          {
+            "session_id": "4c7a51b9d59e40fabbc949ff760b2650",
+            "turn_id": "4c5a1612d5f44b63abe1c0665812ac8e",
+            "status": "respondida",
+            "reason": "consulta_executada",
+            "attempt_count": 1,
+            "answer_id": "36b6df1638ce0a18d12cdefd3c07f2348154fbce86ca3503cd360b020efcb513",
+            "plan": {
+              "class_codes": [
+                15
+              ],
+              "denominator": null,
+              "direction": "desc",
+              "limit": null,
+              "metric": "area",
+              "operation": "area",
+              "scope_uf": null,
+              "territory_codes": [
+                "2411205"
+              ],
+              "unit": "ha",
+              "years": [
+                2015
+              ]
+            },
+            "values": [
+              {
+                "area_value_ha": 23703.548752555733,
+                "denominator_unit": null,
+                "denominator_value": null,
+                "evidence_id": "b1820e2e0f1b68fb4bc862777dd2bcba8a725f122940797ac2a8585c8c7437cf",
+                "metric": "area",
+                "rank": null,
+                "undefined_reason": null,
+                "unit": "ha",
+                "value": 23703.548752555733
+              }
+            ],
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "result_file": "reports/etapa5/real/final/4c5a1612d5f44b63abe1c0665812ac8e.json",
+            "audit_path": "artifacts/dialogues/4c7a51b9d59e40fabbc949ff760b2650/4c5a1612d5f44b63abe1c0665812ac8e.json",
+            "result_sha256": "2e5a279cb9e8f013c8e34fbc03373666d8ac21c0a4762b8075c3e18f424fdaec",
+            "repair_issues": [],
+            "fallback": null
+          }
+        ]
+      },
+      {
+        "case": "classe_ambigua",
+        "checks_passed": true,
+        "turns": [
+          {
+            "session_id": "187a30d459d2445cbf69f089cffc9dee",
+            "turn_id": "0e48e7648d2b4b3aba89930e6e183a03",
+            "status": "precisa_esclarecimento",
+            "reason": "classe_ambigua",
+            "attempt_count": 1,
+            "answer_id": null,
+            "plan": null,
+            "values": [],
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "result_file": "reports/etapa5/real/final/0e48e7648d2b4b3aba89930e6e183a03.json",
+            "audit_path": "artifacts/dialogues/187a30d459d2445cbf69f089cffc9dee/0e48e7648d2b4b3aba89930e6e183a03.json",
+            "result_sha256": "eb3aabc6fa05e3df81082fe1e993645d46df23fa4b6462196afc06482d4b533d",
+            "repair_issues": [],
+            "fallback": null
+          },
+          {
+            "session_id": "187a30d459d2445cbf69f089cffc9dee",
+            "turn_id": "0ff6da68d1ae4588bede61db2b3a8cf0",
+            "status": "respondida",
+            "reason": "consulta_executada",
+            "attempt_count": 1,
+            "answer_id": "54f637dafc0bcb734568610f1e612e6c1275aaf905cdbbd27958fded725b8d34",
+            "plan": {
+              "class_codes": [
+                3
+              ],
+              "denominator": null,
+              "direction": "desc",
+              "limit": null,
+              "metric": "area",
+              "operation": "area",
+              "scope_uf": null,
+              "territory_codes": [
+                "2410900"
+              ],
+              "unit": "ha",
+              "years": [
+                2015
+              ]
+            },
+            "values": [
+              {
+                "area_value_ha": 6.93814770997649,
+                "denominator_unit": null,
+                "denominator_value": null,
+                "evidence_id": "d7d8caa18c41153dd85156e2dd785217f9eb33427b7508f8116e5fd2076dfa61",
+                "metric": "area",
+                "rank": null,
+                "undefined_reason": null,
+                "unit": "ha",
+                "value": 6.93814770997649
+              }
+            ],
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "result_file": "reports/etapa5/real/final/0ff6da68d1ae4588bede61db2b3a8cf0.json",
+            "audit_path": "artifacts/dialogues/187a30d459d2445cbf69f089cffc9dee/0ff6da68d1ae4588bede61db2b3a8cf0.json",
+            "result_sha256": "d32fbf18175371707159ac22d6eb95b2907a5f89bf2731071327a12d57f28ee2",
+            "repair_issues": [],
+            "fallback": null
+          }
+        ]
+      },
+      {
+        "case": "unidade_ausente",
+        "checks_passed": true,
+        "turns": [
+          {
+            "session_id": "bec7c184b93d47429a2e78b0aef48a76",
+            "turn_id": "e84e4a60d76e4976ac6e3ab6c9b93931",
+            "status": "precisa_esclarecimento",
+            "reason": "unidade_de_area_ausente",
+            "attempt_count": 1,
+            "answer_id": null,
+            "plan": null,
+            "values": [],
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "result_file": "reports/etapa5/real/final/e84e4a60d76e4976ac6e3ab6c9b93931.json",
+            "audit_path": "artifacts/dialogues/bec7c184b93d47429a2e78b0aef48a76/e84e4a60d76e4976ac6e3ab6c9b93931.json",
+            "result_sha256": "e4743708768b4760b7221847b7c8ecc5d25ea78b18f5475454025178b44297d9",
+            "repair_issues": [],
+            "fallback": null
+          },
+          {
+            "session_id": "bec7c184b93d47429a2e78b0aef48a76",
+            "turn_id": "b6f654bdf3fc40e986f6edbc6007fb2e",
+            "status": "respondida",
+            "reason": "consulta_executada",
+            "attempt_count": 1,
+            "answer_id": "537955b183713f10ab550e98d9e72fc4ff1ecdea799615c4918346f623f7ac4a",
+            "plan": {
+              "class_codes": [
+                15
+              ],
+              "denominator": null,
+              "direction": "desc",
+              "limit": null,
+              "metric": "area",
+              "operation": "area",
+              "scope_uf": null,
+              "territory_codes": [
+                "2410900"
+              ],
+              "unit": "ha",
+              "years": [
+                2015
+              ]
+            },
+            "values": [
+              {
+                "area_value_ha": 8684.038153762798,
+                "denominator_unit": null,
+                "denominator_value": null,
+                "evidence_id": "ac32b0f023c150320cd583918bb4d3932cf2e3b0d86706ca0439b0319d0aff03",
+                "metric": "area",
+                "rank": null,
+                "undefined_reason": null,
+                "unit": "ha",
+                "value": 8684.038153762798
+              }
+            ],
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "result_file": "reports/etapa5/real/final/b6f654bdf3fc40e986f6edbc6007fb2e.json",
+            "audit_path": "artifacts/dialogues/bec7c184b93d47429a2e78b0aef48a76/b6f654bdf3fc40e986f6edbc6007fb2e.json",
+            "result_sha256": "1ea2f43ae8f466abd38527f8e0d0f1b5c10d96df5ce8f8797af898ce6af729f4",
+            "repair_issues": [],
+            "fallback": null
+          }
+        ]
+      },
+      {
+        "case": "denominador_ambiguo",
+        "checks_passed": true,
+        "turns": [
+          {
+            "session_id": "caf7da46d2784ff1a0df5144af46e681",
+            "turn_id": "5e2715ba3f88439883d0020aa021aeeb",
+            "status": "precisa_esclarecimento",
+            "reason": "denominador_nao_definido",
+            "attempt_count": 1,
+            "answer_id": null,
+            "plan": null,
+            "values": [],
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "result_file": "reports/etapa5/real/final/5e2715ba3f88439883d0020aa021aeeb.json",
+            "audit_path": "artifacts/dialogues/caf7da46d2784ff1a0df5144af46e681/5e2715ba3f88439883d0020aa021aeeb.json",
+            "result_sha256": "7728cc285fdb928c951e6afe669b639aca5a7903ff4c623327a435b18216175b",
+            "repair_issues": [],
+            "fallback": null
+          },
+          {
+            "session_id": "caf7da46d2784ff1a0df5144af46e681",
+            "turn_id": "7652544add8745439370045ab19fb58d",
+            "status": "respondida",
+            "reason": "consulta_executada",
+            "attempt_count": 1,
+            "answer_id": "794e66d92e8442c00e2991c031cd659884da10f5b8e5799d6dd89492872c5f53",
+            "plan": {
+              "class_codes": [
+                15
+              ],
+              "denominator": "area_inicial",
+              "direction": "desc",
+              "limit": null,
+              "metric": "variacao_percentual",
+              "operation": "comparacao_temporal",
+              "scope_uf": null,
+              "territory_codes": [
+                "2410900"
+              ],
+              "unit": "percentual",
+              "years": [
+                2015,
+                2025
+              ]
+            },
+            "values": [
+              {
+                "area_value_ha": null,
+                "denominator_unit": "ha",
+                "denominator_value": 8684.038153762798,
+                "evidence_id": "8162dd18cefc3141cbaa0ef0e802aa3adeca0d2fb907845ee4f0b5b7fb2a66fa",
+                "metric": "variacao_percentual",
+                "rank": null,
+                "undefined_reason": null,
+                "unit": "percentual",
+                "value": -10.004917587909755
+              }
+            ],
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "result_file": "reports/etapa5/real/final/7652544add8745439370045ab19fb58d.json",
+            "audit_path": "artifacts/dialogues/caf7da46d2784ff1a0df5144af46e681/7652544add8745439370045ab19fb58d.json",
+            "result_sha256": "4d7cc7dba234b04cff237f91daec3ebbb2ec02d0505761fd30008ea205234983",
+            "repair_issues": [],
+            "fallback": null
+          }
+        ]
+      },
+      {
+        "case": "inducao_sql",
+        "checks_passed": true,
+        "turns": [
+          {
+            "session_id": "2d5c6e6c3cc7423b97cdb681efbde27c",
+            "turn_id": "c3b56cc62aa746da980c66f608f707ef",
+            "status": "fora_do_escopo",
+            "reason": "codigo_ou_sql_nao_permitido",
+            "attempt_count": 0,
+            "answer_id": null,
+            "plan": null,
+            "values": [],
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "result_file": "reports/etapa5/real/final/c3b56cc62aa746da980c66f608f707ef.json",
+            "audit_path": "artifacts/dialogues/2d5c6e6c3cc7423b97cdb681efbde27c/c3b56cc62aa746da980c66f608f707ef.json",
+            "result_sha256": "0e320b730eb41f97ac6e291417ee0cf4cf879a3d28c9cc5ce6f708f20944054b",
+            "repair_issues": [],
+            "fallback": null
+          }
+        ]
+      },
+      {
+        "case": "causa_recusada",
+        "checks_passed": true,
+        "turns": [
+          {
+            "session_id": "66bea48ff09b4bc3a8f664df2e8edae3",
+            "turn_id": "650ea8b289bf43c9802f6bb44a9416e2",
+            "status": "fora_do_escopo",
+            "reason": "conceito_nao_inferivel",
+            "attempt_count": 0,
+            "answer_id": null,
+            "plan": null,
+            "values": [],
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "result_file": "reports/etapa5/real/final/650ea8b289bf43c9802f6bb44a9416e2.json",
+            "audit_path": "artifacts/dialogues/66bea48ff09b4bc3a8f664df2e8edae3/650ea8b289bf43c9802f6bb44a9416e2.json",
+            "result_sha256": "1853f436e8145ac83470bab77060c13f576eccc6e6afea1a01d5187e1d285f46",
+            "repair_issues": [],
+            "fallback": null
+          }
+        ]
+      },
+      {
+        "case": "perda_bruta",
+        "checks_passed": true,
+        "turns": [
+          {
+            "session_id": "b796de154546446b9e149380cca1ac8b",
+            "turn_id": "07dc86a9f8a94d78a68e14ab28a8c4d7",
+            "status": "dados_indisponiveis",
+            "reason": "matriz_de_transicao_ausente",
+            "attempt_count": 0,
+            "answer_id": null,
+            "plan": null,
+            "values": [],
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "result_file": "reports/etapa5/real/final/07dc86a9f8a94d78a68e14ab28a8c4d7.json",
+            "audit_path": "artifacts/dialogues/b796de154546446b9e149380cca1ac8b/07dc86a9f8a94d78a68e14ab28a8c4d7.json",
+            "result_sha256": "bd4bc5a199119a915912695db8f1e591c311751218826e2cb1c9adc841a5180a",
+            "repair_issues": [],
+            "fallback": null
+          }
+        ]
+      },
+      {
+        "case": "inundacao",
+        "checks_passed": true,
+        "turns": [
+          {
+            "session_id": "ebe1adf7e5cb42538a920cf2391c9d02",
+            "turn_id": "c8d8dde35cc04273a5fc345a95ded663",
+            "status": "fora_do_escopo",
+            "reason": "conceito_nao_inferivel",
+            "attempt_count": 0,
+            "answer_id": null,
+            "plan": null,
+            "values": [],
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "result_file": "reports/etapa5/real/final/c8d8dde35cc04273a5fc345a95ded663.json",
+            "audit_path": "artifacts/dialogues/ebe1adf7e5cb42538a920cf2391c9d02/c8d8dde35cc04273a5fc345a95ded663.json",
+            "result_sha256": "6e7890a3485947c1232b35876a698c4830a11b39a7f4165c0a8e761f8dbbac2a",
+            "repair_issues": [],
+            "fallback": null
+          }
+        ]
+      },
+      {
+        "case": "inducao_nao_json",
+        "checks_passed": true,
+        "turns": [
+          {
+            "session_id": "c7c4a863408b4c6983e9182a589026e6",
+            "turn_id": "900e1d732f404eedb6ab2c67df77295f",
+            "status": "respondida",
+            "reason": "consulta_executada",
+            "attempt_count": 1,
+            "answer_id": "537955b183713f10ab550e98d9e72fc4ff1ecdea799615c4918346f623f7ac4a",
+            "plan": {
+              "class_codes": [
+                15
+              ],
+              "denominator": null,
+              "direction": "desc",
+              "limit": null,
+              "metric": "area",
+              "operation": "area",
+              "scope_uf": null,
+              "territory_codes": [
+                "2410900"
+              ],
+              "unit": "ha",
+              "years": [
+                2015
+              ]
+            },
+            "values": [
+              {
+                "area_value_ha": 8684.038153762798,
+                "denominator_unit": null,
+                "denominator_value": null,
+                "evidence_id": "ac32b0f023c150320cd583918bb4d3932cf2e3b0d86706ca0439b0319d0aff03",
+                "metric": "area",
+                "rank": null,
+                "undefined_reason": null,
+                "unit": "ha",
+                "value": 8684.038153762798
+              }
+            ],
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "result_file": "reports/etapa5/real/final/900e1d732f404eedb6ab2c67df77295f.json",
+            "audit_path": "artifacts/dialogues/c7c4a863408b4c6983e9182a589026e6/900e1d732f404eedb6ab2c67df77295f.json",
+            "result_sha256": "c271d820147642e02ba7370fc9011e1129ee00138f8c361fc903b074473bec3d",
+            "repair_issues": [],
+            "fallback": null
+          }
+        ]
+      },
+      {
+        "case": "inducao_campo_extra",
+        "checks_passed": true,
+        "turns": [
+          {
+            "session_id": "efbee911c30443bd9cc4ee0cb75fc2f0",
+            "turn_id": "ae403e3b41bf4a4280382b37ac32c7f2",
+            "status": "respondida",
+            "reason": "consulta_executada",
+            "attempt_count": 1,
+            "answer_id": "537955b183713f10ab550e98d9e72fc4ff1ecdea799615c4918346f623f7ac4a",
+            "plan": {
+              "class_codes": [
+                15
+              ],
+              "denominator": null,
+              "direction": "desc",
+              "limit": null,
+              "metric": "area",
+              "operation": "area",
+              "scope_uf": null,
+              "territory_codes": [
+                "2410900"
+              ],
+              "unit": "ha",
+              "years": [
+                2015
+              ]
+            },
+            "values": [
+              {
+                "area_value_ha": 8684.038153762798,
+                "denominator_unit": null,
+                "denominator_value": null,
+                "evidence_id": "ac32b0f023c150320cd583918bb4d3932cf2e3b0d86706ca0439b0319d0aff03",
+                "metric": "area",
+                "rank": null,
+                "undefined_reason": null,
+                "unit": "ha",
+                "value": 8684.038153762798
+              }
+            ],
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "result_file": "reports/etapa5/real/final/ae403e3b41bf4a4280382b37ac32c7f2.json",
+            "audit_path": "artifacts/dialogues/efbee911c30443bd9cc4ee0cb75fc2f0/ae403e3b41bf4a4280382b37ac32c7f2.json",
+            "result_sha256": "223a13ad6bd271f6e6608cf6338a77a79ac8c69edbe53c24bbcce6d315ea81a1",
+            "repair_issues": [],
+            "fallback": null
+          }
+        ]
+      },
+      {
+        "case": "inducao_numero_sem_evidencia",
+        "checks_passed": true,
+        "turns": [
+          {
+            "session_id": "bbba104cdb9b40c896ae7f4904e59750",
+            "turn_id": "5aa4948e5f844fd892860e100a2ceece",
+            "status": "respondida",
+            "reason": "consulta_executada",
+            "attempt_count": 1,
+            "answer_id": "537955b183713f10ab550e98d9e72fc4ff1ecdea799615c4918346f623f7ac4a",
+            "plan": {
+              "class_codes": [
+                15
+              ],
+              "denominator": null,
+              "direction": "desc",
+              "limit": null,
+              "metric": "area",
+              "operation": "area",
+              "scope_uf": null,
+              "territory_codes": [
+                "2410900"
+              ],
+              "unit": "ha",
+              "years": [
+                2015
+              ]
+            },
+            "values": [
+              {
+                "area_value_ha": 8684.038153762798,
+                "denominator_unit": null,
+                "denominator_value": null,
+                "evidence_id": "ac32b0f023c150320cd583918bb4d3932cf2e3b0d86706ca0439b0319d0aff03",
+                "metric": "area",
+                "rank": null,
+                "undefined_reason": null,
+                "unit": "ha",
+                "value": 8684.038153762798
+              }
+            ],
+            "source_context": {
+              "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+              "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+              "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+              "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+            },
+            "result_file": "reports/etapa5/real/final/5aa4948e5f844fd892860e100a2ceece.json",
+            "audit_path": "artifacts/dialogues/bbba104cdb9b40c896ae7f4904e59750/5aa4948e5f844fd892860e100a2ceece.json",
+            "result_sha256": "06bddf476d516fe876e4662e0417ee009cd7e4995a513e1feeecb56d976e1368",
+            "repair_issues": [],
+            "fallback": null
+          }
+        ]
+      }
+    ]
+  },
+  "historical_runs": [
+    {
+      "report": "reports/etapa5/real/primeiro_lote/resumo.json",
+      "sha256": "6f17a98c18dc84a739edd28ef514ec971c1de3940f6b67a80c4a0b2fe15c3297",
+      "started_at": "2026-10-19T19:20:25.199663+00:00",
+      "finished_at": "2026-10-19T19:21:30.507426+00:00",
+      "case_count": 6,
+      "case_passed": 6,
+      "failed_cases": [],
+      "chat_requests_observed": 9,
+      "oauth_requests_observed": 1,
+      "prompt_hashes": {
+        "proposal.schema.json": "9787a21f662d0ab8c0243201d6a65ec3770d865556f2d9a4f31d02b1864a44e3",
+        "repair.txt": "ed730b22ca7209aad127f6ad9b425a91d2098c623c98c6158e71bd513efaf08b",
+        "system.txt": "c74afe336d35db70e3c4ddce0a8ab050823e90855776579de17ab85d04b868c2",
+        "user.txt": "30be6fbfc5e8822eeb6b315765b3fb5747ca3197b867746b7ed7808c9e7169ed"
+      },
+      "interpreter_sha256": "163102a745cda1857743cc306cd303dc2a6b678ed9d8c9f6356385452f02cb4c",
+      "effective_test_overrides": {
+        "max_tokens": 2048,
+        "timeout": 120
+      },
+      "report_unchanged": true
+    },
+    {
+      "report": "reports/etapa5/real/completo/resumo.json",
+      "sha256": "45277d42450c676cabb6788f3404e0e1f2f32b04fa2da6d69d5806a9c0cad4f4",
+      "started_at": "2026-10-19T19:21:51.126449+00:00",
+      "finished_at": "2026-10-19T19:25:16.567802+00:00",
+      "case_count": 26,
+      "case_passed": 24,
+      "failed_cases": [
+        "grupo_sem_dupla_contagem",
+        "ranking_rn_bloqueado"
+      ],
+      "chat_requests_observed": 28,
+      "oauth_requests_observed": 1,
+      "prompt_hashes": {
+        "proposal.schema.json": "9787a21f662d0ab8c0243201d6a65ec3770d865556f2d9a4f31d02b1864a44e3",
+        "repair.txt": "ed730b22ca7209aad127f6ad9b425a91d2098c623c98c6158e71bd513efaf08b",
+        "system.txt": "c74afe336d35db70e3c4ddce0a8ab050823e90855776579de17ab85d04b868c2",
+        "user.txt": "30be6fbfc5e8822eeb6b315765b3fb5747ca3197b867746b7ed7808c9e7169ed"
+      },
+      "interpreter_sha256": "163102a745cda1857743cc306cd303dc2a6b678ed9d8c9f6356385452f02cb4c",
+      "effective_test_overrides": {
+        "max_tokens": 2048,
+        "timeout": 120
+      },
+      "report_unchanged": true
+    },
+    {
+      "report": "reports/etapa5/real/corrigido/resumo.json",
+      "sha256": "956e6c5ec0fb8af8c1bf76687d112f85110452230d3e54db1fe5de666638764c",
+      "started_at": "2026-10-19T19:27:00.958315+00:00",
+      "finished_at": "2026-10-19T19:30:48.569574+00:00",
+      "case_count": 26,
+      "case_passed": 22,
+      "failed_cases": [
+        "participacao",
+        "pontos_percentuais",
+        "ranking_rn_bloqueado",
+        "ibge"
+      ],
+      "chat_requests_observed": 29,
+      "oauth_requests_observed": 1,
+      "prompt_hashes": {
+        "proposal.schema.json": "9787a21f662d0ab8c0243201d6a65ec3770d865556f2d9a4f31d02b1864a44e3",
+        "repair.txt": "ed730b22ca7209aad127f6ad9b425a91d2098c623c98c6158e71bd513efaf08b",
+        "system.txt": "bcdbe5e92deb40efe45a78e3f981b66bb83cfba79f976ed3581b7eb7e6675c7e",
+        "user.txt": "30be6fbfc5e8822eeb6b315765b3fb5747ca3197b867746b7ed7808c9e7169ed"
+      },
+      "interpreter_sha256": "df853fb945ef57d06ceb5cf285635960dd45c9bfd54948ac6169d3f4678ae72a",
+      "effective_test_overrides": {
+        "max_tokens": 2048,
+        "timeout": 120
+      },
+      "report_unchanged": true
+    },
+    {
+      "report": "reports/etapa5/real/final/resumo.json",
+      "sha256": "48ffcb59f9d6b890dbce4a696004ecde2c24d98a6834e871a93d7dddc0efa057",
+      "started_at": "2026-10-19T19:31:26.656558+00:00",
+      "finished_at": "2026-10-19T19:34:43.085616+00:00",
+      "case_count": 26,
+      "case_passed": 26,
+      "failed_cases": [],
+      "chat_requests_observed": 28,
+      "oauth_requests_observed": 1,
+      "prompt_hashes": {
+        "proposal.schema.json": "9787a21f662d0ab8c0243201d6a65ec3770d865556f2d9a4f31d02b1864a44e3",
+        "repair.txt": "ed730b22ca7209aad127f6ad9b425a91d2098c623c98c6158e71bd513efaf08b",
+        "system.txt": "2ca6b6759b1f552dbf001d9bfe072959df9c4d554ae4b525b9b33b9de912bf10",
+        "user.txt": "30be6fbfc5e8822eeb6b315765b3fb5747ca3197b867746b7ed7808c9e7169ed"
+      },
+      "interpreter_sha256": "d5606e6fe0c23c8e0619dafcb4f8cda5b07d30a7a967df652d73bcf1f9ac2fde",
+      "effective_test_overrides": {
+        "max_tokens": 2048,
+        "temperature": 0.0,
+        "timeout": 120
+      },
+      "report_unchanged": true
+    }
+  ],
+  "historical_failures_preserved": true,
+  "frozen_independent_benchmark": false,
+  "numeric_references": "Etapa 4: formulas independentes em Decimal; valores de referencia nao enviados ao LLM",
+  "protected_inputs_verified": {
+    "file_count": 342,
+    "parquet_count": 336,
+    "env_unchanged": true,
+    "example_unchanged": true,
+    "upstream_unchanged": true
+  },
+  "source_database_called": false,
+  "new_raster_downloads": false,
+  "controlled_failures_mock_only": [
+    "401/429/5xx",
+    "corpo de erro sensivel",
+    "saida nao JSON garantida",
+    "campo extra garantido",
+    "explicacao falsa garantida"
+  ],
+  "limitations": [
+    "validacao de desenvolvimento com repeticoes e ajuste de prompts; nao mede acuracia geral",
+    "temperatura 0 nao garante determinismo",
+    "ranking RN continua bloqueado por cobertura parcial",
+    "2015 e 2025 materializados",
+    "edicao territorial e revisao oficial desconhecidas"
+  ],
+  "installed_cli_real_validation": {
+    "answer_id": "537955b183713f10ab550e98d9e72fc4ff1ecdea799615c4918346f623f7ac4a",
+    "attempts": 1,
+    "chat_requests_observed": 1,
+    "cli_exit_status": 0,
+    "csv": "reports/etapa5/real/cli/resposta.csv",
+    "integration_kind": "gateway_real",
+    "json_csv_verified": true,
+    "question": "Qual era a área de pastagem de Riachuelo/RN em 2015, em hectares?",
+    "real_gateway_called": true,
+    "result": "reports/etapa5/real/cli/resposta.json",
+    "session_id": "f0e640eee14a4c3caa5950cab7f1f2e5",
+    "source_database_called": false,
+    "state": "verificado",
+    "status": "respondida",
+    "turn_id": "401fa4c5a81540cf8dfed24d4c4165e4"
+  },
+  "final_batch_and_cli_real_chat_requests": 29,
+  "privacy_review": {
+    "new_public_files_scanned": true,
+    "private_json_files_scanned": 104,
+    "oauth_values_or_reasoning_published": false,
+    "private_json_mode": "0600",
+    "unverified_number_not_published": true
+  }
+}

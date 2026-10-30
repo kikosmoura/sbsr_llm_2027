@@ -1,0 +1,420 @@
+{
+  "schema_version": "controle-contrato-caso-v1",
+  "run_id": "aa224a7d26124a8dbfa4042e50621cc7",
+  "case_id": "t07_2",
+  "family_id": "teste_participacao",
+  "territory_codes": [
+    "2412203"
+  ],
+  "condition": "C_eq",
+  "repeat": 0,
+  "integration_kind": "gateway_real",
+  "created_at": "2026-10-21T14:57:51.604208+00:00",
+  "freeze_sha256": "55593ae2e52cbd2890ddce5bfed4183977a20b43a9c95123ba43f53e2b1332f0",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 4096,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "native_tools": false,
+    "native_response_format": false,
+    "workers": 3
+  },
+  "question": "Quanto representa Formação Florestal na área observada de São José de Mipibu/RN em 2025, como participação percentual?",
+  "fixed_plan": {
+    "operation": "participacao",
+    "metric": "participacao",
+    "unit": "percentual",
+    "territory_codes": [
+      "2412203"
+    ],
+    "scope_uf": "RN",
+    "class_codes": [
+      3
+    ],
+    "years": [
+      2025
+    ],
+    "denominator": "area_observada",
+    "direction": "desc",
+    "limit": null
+  },
+  "common_input_sha256": "387a88e0b4b2d59c10a977a59033b6f9fc8427f9de4b9b67359ec2aeff09f4fe",
+  "output_contract_sha256": "7cb672668bdaf0cb31f785651d91ec6475f990de121edab04b748bd0da63c955",
+  "system_sha256": "2805f7312e5288c2499d8bc4b6fd55f3a0adc3b8d5ea53aab2533894c62b290d",
+  "messages_sha256": "3487dffdc582b680ac0c5549cfc4cdbd240323592067c76ad41264fb5082ea1a",
+  "execution_observations": [
+    {
+      "status": "respondida",
+      "values": [
+        {
+          "territory_code": "2412203",
+          "years": [
+            2025
+          ],
+          "value": 13.68441140179476,
+          "unit": "percentual",
+          "undefined_reason": null,
+          "denominators_ha": [
+            28998.722832958036
+          ],
+          "rank": null
+        }
+      ],
+      "reason": "consulta_executada"
+    }
+  ],
+  "executor_result": {
+    "schema_version": "resposta-consulta-v1",
+    "status": "respondida",
+    "reason": "consulta_executada",
+    "message": "SÃ£o JosÃ© de Mipibu/RN (IBGE 2412203): participação na área observada de Formação Florestal [3], em 2025: 13,68 %. Denominador: area observada no ano e suporte selecionados (28.998,72 ha).\nColeção 11; revisão desconhecida; malha edição desconhecida; método ellipsoid-linear-lonlat-fractional-v1; execução a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802.",
+    "answer_id": "418b30118f382b33bba84ee4ab6b9679851aba1f9ebc4b913e825f959fbc04b7",
+    "plan_id": "045cd86943830e50a55bad36bcf3442b0b776a22f2caab8eaf2b6bcc38daa031",
+    "executor_sha256": "64bb18ecbfecf2fd623d8fd10e616a1f816bbf529feeec5749f554ac7d4ed81a",
+    "requested_plan": {
+      "operation": "participacao",
+      "metric": "participacao",
+      "unit": "percentual",
+      "territory_codes": [
+        "2412203"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2025
+      ],
+      "denominator": "area_observada",
+      "direction": "desc",
+      "limit": null
+    },
+    "plan": {
+      "operation": "participacao",
+      "metric": "participacao",
+      "unit": "percentual",
+      "territory_codes": [
+        "2412203"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2025
+      ],
+      "denominator": "area_observada",
+      "direction": "desc",
+      "limit": null
+    },
+    "evidence": [
+      {
+        "evidence_id": "6adc52023d786ebedd886c0024c5a7cf3c69f4f30e55b65b104c6f896e2f690c",
+        "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+        "territory": {
+          "kind": "municipio",
+          "code": "2412203",
+          "name": "SÃ£o JosÃ© de Mipibu",
+          "uf": "RN",
+          "geometry_hash": "02a8ae24d0960c59a328346e8bcfca091067ec245dbe981e3502097c35e5dd00",
+          "edition": null
+        },
+        "class_codes": [
+          3
+        ],
+        "years": [
+          2025
+        ],
+        "collection": 11,
+        "source_revision": null,
+        "source_ids": [
+          "run:a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+          "mesh:3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+          "classes:04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+          "areas.parquet:1ca81450e97a445af9117a27f6363815443e2c4451ebf15dd79e34cf8f33f7d0",
+          "quality.parquet:2ccf1bdfd4ac2177844ca50907630fa27e18d6f7de221eca1d57a815b3362d3d",
+          "mirror:37322ac02043f652f60aeff0a68acfba418ae2e43dff412f89cd0ad6e525a336",
+          "crop:8b848eb7e2592f26160835b9b256987e985fd39d1dbb2681aa722b9aa8e355b7"
+        ],
+        "area_method": "ellipsoid-linear-lonlat-fractional-v1",
+        "quality": {
+          "state": "completo",
+          "observed_area_ha": 28998.722832958036,
+          "nodata_area_ha": 0.0,
+          "unknown_codes": [],
+          "common_support_id": null,
+          "area_method": "ellipsoid-linear-lonlat-fractional-v1",
+          "notes": [
+            "Revisao oficial do espelho e edicao territorial nao comprovadas."
+          ]
+        },
+        "plan_id": "045cd86943830e50a55bad36bcf3442b0b776a22f2caab8eaf2b6bcc38daa031",
+        "metric": "participacao",
+        "requested_class_codes": [
+          3
+        ],
+        "class_names": [
+          "Formação Florestal [3]"
+        ],
+        "observations": [
+          {
+            "year": 2025,
+            "class_area_ha": 3968.3045337281696,
+            "observed_area_ha": 28998.722832958036,
+            "support": "anual",
+            "nodata_area_ha": 0.0,
+            "unknown_area_ha": 0.0,
+            "outside_raster_area_ha": 0.0
+          }
+        ],
+        "denominator_definition": "area observada no ano e suporte selecionados",
+        "denominator_values_ha": [
+          28998.722832958036
+        ],
+        "provenance": "municipio_direto",
+        "mesh_sha256": "3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+        "catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+        "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+        "sources": [
+          {
+            "source_id": "run:a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+            "kind": "execucao",
+            "sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "mesh:3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+            "kind": "malha",
+            "sha256": "3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "classes:04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+            "kind": "catalogo",
+            "sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "areas.parquet:1ca81450e97a445af9117a27f6363815443e2c4451ebf15dd79e34cf8f33f7d0",
+            "kind": "particao_areas",
+            "sha256": "1ca81450e97a445af9117a27f6363815443e2c4451ebf15dd79e34cf8f33f7d0",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "quality.parquet:2ccf1bdfd4ac2177844ca50907630fa27e18d6f7de221eca1d57a815b3362d3d",
+            "kind": "particao_qualidade",
+            "sha256": "2ccf1bdfd4ac2177844ca50907630fa27e18d6f7de221eca1d57a815b3362d3d",
+            "year": null,
+            "public_url": null,
+            "etag": null
+          },
+          {
+            "source_id": "mirror:37322ac02043f652f60aeff0a68acfba418ae2e43dff412f89cd0ad6e525a336",
+            "kind": "raster_espelho",
+            "sha256": null,
+            "year": 2025,
+            "public_url": "https://storage.example.invalid/BUCKET_NAME/brazil_coverage-col11_2025.tif",
+            "etag": "\"df7c25264b8e600567bd82c2a4a072a3-146\""
+          },
+          {
+            "source_id": "crop:8b848eb7e2592f26160835b9b256987e985fd39d1dbb2681aa722b9aa8e355b7",
+            "kind": "recorte",
+            "sha256": "8b848eb7e2592f26160835b9b256987e985fd39d1dbb2681aa722b9aa8e355b7",
+            "year": 2025,
+            "public_url": null,
+            "etag": null
+          }
+        ]
+      }
+    ],
+    "values": [
+      {
+        "evidence_id": "6adc52023d786ebedd886c0024c5a7cf3c69f4f30e55b65b104c6f896e2f690c",
+        "value": 13.68441140179476,
+        "unit": "percentual",
+        "denominator_value": 28998.722832958036,
+        "undefined_reason": null,
+        "metric": "participacao",
+        "area_value_ha": null,
+        "denominator_unit": "ha",
+        "rank": null
+      }
+    ],
+    "execution": {
+      "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+      "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+      "collection": 11,
+      "source_revision": null,
+      "territorial_edition": null,
+      "method": "ellipsoid-linear-lonlat-fractional-v1",
+      "mesh_sha256": "3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+      "catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+      "years": [
+        2025
+      ],
+      "class_names": [
+        "Formação Florestal [3]"
+      ],
+      "sources": [
+        {
+          "source_id": "run:a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+          "kind": "execucao",
+          "sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+          "year": null,
+          "public_url": null,
+          "etag": null
+        },
+        {
+          "source_id": "mesh:3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+          "kind": "malha",
+          "sha256": "3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+          "year": null,
+          "public_url": null,
+          "etag": null
+        },
+        {
+          "source_id": "classes:04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+          "kind": "catalogo",
+          "sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+          "year": null,
+          "public_url": null,
+          "etag": null
+        },
+        {
+          "source_id": "mirror:37322ac02043f652f60aeff0a68acfba418ae2e43dff412f89cd0ad6e525a336",
+          "kind": "raster_espelho",
+          "sha256": null,
+          "year": 2025,
+          "public_url": "https://storage.example.invalid/BUCKET_NAME/brazil_coverage-col11_2025.tif",
+          "etag": "\"df7c25264b8e600567bd82c2a4a072a3-146\""
+        },
+        {
+          "source_id": "crop:8b848eb7e2592f26160835b9b256987e985fd39d1dbb2681aa722b9aa8e355b7",
+          "kind": "recorte",
+          "sha256": "8b848eb7e2592f26160835b9b256987e985fd39d1dbb2681aa722b9aa8e355b7",
+          "year": 2025,
+          "public_url": null,
+          "etag": null
+        }
+      ]
+    },
+    "ranking": null,
+    "notes": [
+      "Valores sem arredondamento no JSON/CSV; texto com duas casas decimais.",
+      "Diferenca liquida nao mede perda bruta, desmatamento ou causas."
+    ]
+  },
+  "observed": {
+    "status": "respondida",
+    "values": [
+      {
+        "territory_code": "2412203",
+        "years": [
+          2025
+        ],
+        "value": 13.68441140179476,
+        "unit": "percentual",
+        "undefined_reason": null,
+        "denominators_ha": [
+          28998.722832958036
+        ],
+        "rank": null
+      }
+    ],
+    "reason": "consulta_executada",
+    "plan": {
+      "operation": "participacao",
+      "metric": "participacao",
+      "unit": "percentual",
+      "territory_codes": [
+        "2412203"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2025
+      ],
+      "denominator": "area_observada",
+      "direction": "desc",
+      "limit": null
+    },
+    "clarification_field": null
+  },
+  "final_answer": "{\"reason\":\"consulta_executada\",\"status\":\"respondida\",\"values\":[{\"denominators_ha\":[28998.722832958036],\"rank\":null,\"territory_code\":\"2412203\",\"undefined_reason\":null,\"unit\":\"percentual\",\"value\":13.68441140179476,\"years\":[2025]}]}",
+  "attempts": [
+    {
+      "number": 1,
+      "messages_sha256": "3487dffdc582b680ac0c5549cfc4cdbd240323592067c76ad41264fb5082ea1a",
+      "usage": {
+        "prompt_tokens": 5605,
+        "total_tokens": 5945,
+        "completion_tokens": 340
+      },
+      "issues": [],
+      "latency_seconds": 3.619682078016922,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "d2373d003fc2b7b9223bc7b98ddee80dc5327c580948bcbf404d95af56557253",
+      "output_chars": 229,
+      "state": "valida"
+    }
+  ],
+  "latency_seconds": 3.763279312988743,
+  "model_seconds": 3.6200085129821673,
+  "http_events": [
+    {
+      "endpoint": "oauth",
+      "http_status": 200,
+      "bytes_read": 91,
+      "body_complete": true,
+      "response_metadata": null,
+      "elapsed_seconds": 0.18055172206368297
+    },
+    {
+      "endpoint": "chat",
+      "http_status": 200,
+      "bytes_read": 1941,
+      "body_complete": true,
+      "response_metadata": {
+        "json_object": true,
+        "choices_count": 1,
+        "finish_reason": "stop",
+        "content_state": "texto",
+        "final_content_chars": 229,
+        "reasoning_field_present": true,
+        "usage": {
+          "prompt_tokens": 5605,
+          "total_tokens": 5945,
+          "completion_tokens": 340
+        },
+        "reasoning_tokens": null
+      },
+      "elapsed_seconds": 3.4390653029549867
+    }
+  ],
+  "executor_seconds": 0.14052909892052412,
+  "scores": {
+    "status": true,
+    "plan": true,
+    "values": true,
+    "clarification": null,
+    "correct": true
+  },
+  "cost": null,
+  "source_geo_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+}

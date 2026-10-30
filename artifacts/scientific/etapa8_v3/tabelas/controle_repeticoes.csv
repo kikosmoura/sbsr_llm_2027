@@ -1,0 +1,9 @@
+case_id,condition,same_answer,same_correctness
+t01_1,B_eq,True,True
+t01_1,C_eq,True,True
+t07_1,B_eq,True,True
+t07_1,C_eq,True,True
+t11_1,B_eq,True,True
+t11_1,C_eq,True,True
+t19_1,B_eq,True,True
+t19_1,C_eq,True,True

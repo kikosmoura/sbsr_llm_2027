@@ -1,0 +1,114 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "fa7686659da9449d811d154641021724",
+  "case_id": "t23_2",
+  "family_id": "teste_territorial",
+  "territory_codes": [
+    "2411056",
+    "2404200"
+  ],
+  "condition": "B",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:52:44.465776+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Em 2025, qual a área em hectares de Formação Florestal em cada um destes municípios: Tibau/RN e Goianinha/RN?",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": "8367b641f09baf9698e5b8cc6c1c6933be6960c196f9501990e7ce6eb33244a8",
+  "messages_sha256": "d7def5ce902585266bdcf4c5beea366e92afd3a800769616f37f13d51024620b",
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "erro_tecnico",
+    "plan": null,
+    "values": [],
+    "clarification_field": null,
+    "reason": "saida_invalida_apos_reparo"
+  },
+  "final_answer": "{\"status\": \"erro_tecnico\", \"plan\": null, \"values\": [], \"clarification_field\": null, \"reason\": \"saida_invalida_apos_reparo\"}",
+  "plan": null,
+  "result": [],
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "messages_sha256": "d7def5ce902585266bdcf4c5beea366e92afd3a800769616f37f13d51024620b",
+      "issues": [
+        {
+          "path": [],
+          "code": "value_error"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 7933,
+        "total_tokens": 8598,
+        "completion_tokens": 665
+      },
+      "latency_seconds": 12.785527531988919,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "9f8e3b7c8e1110b2d5eb82a05f925b5a72ccaf18b333fcdc541f3df0d64a1df9",
+      "output_chars": 360,
+      "state": "invalida"
+    },
+    {
+      "number": 2,
+      "kind": "reparo",
+      "messages_sha256": "34d0c09f539ab0e897cbb3f0df13c8f3d9726b7c887ae156025bec6be16f83b5",
+      "issues": [
+        {
+          "path": [],
+          "code": "value_error"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 7968,
+        "total_tokens": 8626,
+        "completion_tokens": 658
+      },
+      "latency_seconds": 4.961862519965507,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "b121f5a88d971786e0c6595e78ea267dfc1e3cec5fbaeba2c33d4e03d8845d59",
+      "output_chars": 522,
+      "state": "invalida"
+    }
+  ],
+  "latency_seconds": 17.751639669993892,
+  "scores": {
+    "status": false,
+    "plan": null,
+    "values": null,
+    "clarification": null,
+    "correct": false
+  },
+  "cost": null,
+  "source_context": {
+    "data_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+  },
+  "C_session_id": null,
+  "C_turn_id": null,
+  "C_candidate_intent": null,
+  "C_decision": null
+}

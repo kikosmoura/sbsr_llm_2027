@@ -1,0 +1,291 @@
+{
+  "$defs": {
+    "ClassReference": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Code"
+        },
+        "term": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Term"
+        }
+      },
+      "title": "ClassReference",
+      "type": "object"
+    },
+    "Metric": {
+      "enum": [
+        "area",
+        "participacao",
+        "diferenca_liquida",
+        "reducao_liquida",
+        "variacao_percentual",
+        "diferenca_pontos_percentuais"
+      ],
+      "title": "Metric",
+      "type": "string"
+    },
+    "Operation": {
+      "enum": [
+        "area",
+        "participacao",
+        "comparacao_temporal",
+        "serie_disponivel",
+        "comparacao_territorial",
+        "ranking_delimitado"
+      ],
+      "title": "Operation",
+      "type": "string"
+    },
+    "TerritoryReference": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "anyOf": [
+            {
+              "pattern": "^(?:[0-9]{2}|[0-9]{7})$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Code"
+        },
+        "name": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Name"
+        },
+        "uf": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Z]{2}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Uf"
+        },
+        "kind": {
+          "anyOf": [
+            {
+              "enum": [
+                "municipio",
+                "uf"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Kind"
+        }
+      },
+      "title": "TerritoryReference",
+      "type": "object"
+    },
+    "Unit": {
+      "enum": [
+        "ha",
+        "km2",
+        "m2",
+        "percentual",
+        "pontos_percentuais"
+      ],
+      "title": "Unit",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "intencao-semantica-v1",
+      "default": "intencao-semantica-v1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "operation": {
+      "$ref": "#/$defs/Operation"
+    },
+    "territories": {
+      "items": {
+        "$ref": "#/$defs/TerritoryReference"
+      },
+      "title": "Territories",
+      "type": "array"
+    },
+    "scope_uf": {
+      "anyOf": [
+        {
+          "pattern": "^[A-Z]{2}$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Scope Uf"
+    },
+    "classes": {
+      "items": {
+        "$ref": "#/$defs/ClassReference"
+      },
+      "minItems": 1,
+      "title": "Classes",
+      "type": "array"
+    },
+    "years": {
+      "items": {
+        "type": "integer"
+      },
+      "minItems": 1,
+      "title": "Years",
+      "type": "array"
+    },
+    "metric": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Metric"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "metric_term": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Metric Term"
+    },
+    "unit": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Unit"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "unit_term": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Unit Term"
+    },
+    "denominator": {
+      "anyOf": [
+        {
+          "enum": [
+            "area_observada",
+            "area_inicial",
+            "participacao_por_ano"
+          ],
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Denominator"
+    },
+    "direction": {
+      "default": "desc",
+      "enum": [
+        "asc",
+        "desc"
+      ],
+      "title": "Direction",
+      "type": "string"
+    },
+    "limit": {
+      "anyOf": [
+        {
+          "maximum": 100,
+          "minimum": 1,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Limit"
+    },
+    "requested_concept": {
+      "default": "cobertura",
+      "enum": [
+        "cobertura",
+        "perda_bruta",
+        "ganho_bruto",
+        "evento_inundacao",
+        "desmatamento",
+        "vegetacao_nativa",
+        "causa",
+        "ilegalidade",
+        "projecao"
+      ],
+      "title": "Requested Concept",
+      "type": "string"
+    }
+  },
+  "required": [
+    "operation",
+    "classes",
+    "years"
+  ],
+  "title": "QueryIntent",
+  "type": "object"
+}

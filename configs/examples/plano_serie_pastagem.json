@@ -1,0 +1,15 @@
+{
+  "class_codes": [
+    15
+  ],
+  "metric": "area",
+  "operation": "serie_disponivel",
+  "territory_codes": [
+    "2410900"
+  ],
+  "unit": "ha",
+  "years": [
+    2015,
+    2025
+  ]
+}

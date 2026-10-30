@@ -1,0 +1,138 @@
+{
+  "$defs": {
+    "Metric": {
+      "enum": [
+        "area",
+        "participacao",
+        "diferenca_liquida",
+        "reducao_liquida",
+        "variacao_percentual",
+        "diferenca_pontos_percentuais"
+      ],
+      "title": "Metric",
+      "type": "string"
+    },
+    "Operation": {
+      "enum": [
+        "area",
+        "participacao",
+        "comparacao_temporal",
+        "serie_disponivel",
+        "comparacao_territorial",
+        "ranking_delimitado"
+      ],
+      "title": "Operation",
+      "type": "string"
+    },
+    "Unit": {
+      "enum": [
+        "ha",
+        "km2",
+        "m2",
+        "percentual",
+        "pontos_percentuais"
+      ],
+      "title": "Unit",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "class_codes": {
+      "items": {
+        "type": "integer"
+      },
+      "maxItems": 41,
+      "minItems": 1,
+      "title": "Class Codes",
+      "type": "array"
+    },
+    "denominator": {
+      "anyOf": [
+        {
+          "enum": [
+            "area_observada",
+            "area_inicial",
+            "participacao_por_ano"
+          ],
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Denominator"
+    },
+    "direction": {
+      "default": "desc",
+      "enum": [
+        "asc",
+        "desc"
+      ],
+      "title": "Direction",
+      "type": "string"
+    },
+    "limit": {
+      "anyOf": [
+        {
+          "maximum": 100,
+          "minimum": 1,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Limit"
+    },
+    "metric": {
+      "$ref": "#/$defs/Metric"
+    },
+    "operation": {
+      "$ref": "#/$defs/Operation"
+    },
+    "scope_uf": {
+      "anyOf": [
+        {
+          "pattern": "^[A-Z]{2}$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Scope Uf"
+    },
+    "territory_codes": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Territory Codes",
+      "type": "array"
+    },
+    "unit": {
+      "$ref": "#/$defs/Unit"
+    },
+    "years": {
+      "items": {
+        "type": "integer"
+      },
+      "maxItems": 11,
+      "minItems": 1,
+      "title": "Years",
+      "type": "array"
+    }
+  },
+  "required": [
+    "operation",
+    "metric",
+    "unit",
+    "class_codes",
+    "years"
+  ],
+  "title": "QueryPlan",
+  "type": "object"
+}

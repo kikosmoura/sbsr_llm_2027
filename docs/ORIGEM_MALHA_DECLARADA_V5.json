@@ -1,0 +1,17 @@
+{
+  "received_on": "2026-10-21",
+  "provider": "IBGE",
+  "edition": 2025,
+  "scope": [
+    "municipios",
+    "uf"
+  ],
+  "basis": "usuario confirmou origem IBGE e respondeu 2025 ao esclarecimento de ano para municipios/UF",
+  "original_archive_or_import_log_supplied": false,
+  "schema_version": "origem-malha-declarada-v1",
+  "snapshot_file_sha256": "42850b2d17fbfe9279f09e25417ec94a679b3d4080705a18374feaeceaf98b11",
+  "mesh_logical_sha256": "3207282d98e5fc1d01d48008dbe5264150728a4c62d3ba41e0ead57a48444bd0",
+  "comparison_state": "pendente_aquisicao",
+  "license_verified": false,
+  "raster_provider_reported": "MapBiomas"
+}

@@ -1,0 +1,86 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "fa7686659da9449d811d154641021724",
+  "case_id": "t06_2",
+  "family_id": "teste_t06",
+  "territory_codes": [
+    "2409407"
+  ],
+  "condition": "A",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:39:54.764987+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Em Pau dos Ferros/RN, some por união Floresta código 1 e Formação Florestal código 3, área em ha de 2015, sem contar pixels duas vezes.",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": null,
+  "messages_sha256": "8bd833a165f11a67758cd5f4a4d5c15ecf31b5b1344b969c4f7d6f0ef7b372c1",
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "dados_indisponiveis",
+    "plan": null,
+    "values": [],
+    "clarification_field": null,
+    "reason": "dados_faltantes"
+  },
+  "final_answer": "{\"status\": \"dados_indisponiveis\", \"plan\": null, \"values\": [], \"clarification_field\": null, \"reason\": \"dados_faltantes\"}",
+  "plan": null,
+  "result": [],
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "messages_sha256": "8bd833a165f11a67758cd5f4a4d5c15ecf31b5b1344b969c4f7d6f0ef7b372c1",
+      "issues": [],
+      "usage": {
+        "prompt_tokens": 3672,
+        "total_tokens": 4284,
+        "completion_tokens": 612
+      },
+      "latency_seconds": 6.087187786935829,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "53dc0d9131893738623bff7d29b0b69d9a4b859ef207ed14c12ee78f6ffbd88f",
+      "output_chars": 100,
+      "state": "valida"
+    }
+  ],
+  "latency_seconds": 6.089729902101681,
+  "scores": {
+    "status": false,
+    "plan": null,
+    "values": null,
+    "clarification": null,
+    "correct": false
+  },
+  "cost": null,
+  "source_context": {
+    "data_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+  },
+  "C_session_id": null,
+  "C_turn_id": null,
+  "C_candidate_intent": null,
+  "C_decision": null
+}

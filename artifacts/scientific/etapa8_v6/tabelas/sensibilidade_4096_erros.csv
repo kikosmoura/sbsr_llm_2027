@@ -1,0 +1,5 @@
+condition,type,count
+B_eq,acerto,78
+B_eq,texto_final_ausente,9
+B_eq,valores_ou_estrutura_incorretos,1
+C_eq,acerto,88

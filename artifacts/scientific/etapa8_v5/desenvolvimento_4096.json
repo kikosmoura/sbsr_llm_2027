@@ -1,0 +1,218 @@
+{
+  "schema_version": "controle-contrato-estatisticas-v1",
+  "state": "verificado",
+  "run_id": "4b61f2ecb5454fce9cf4325f3b3d43fd",
+  "split": "dev",
+  "freeze_sha256": "55593ae2e52cbd2890ddce5bfed4183977a20b43a9c95123ba43f53e2b1332f0",
+  "integration_kind": "gateway_real",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 4096,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "native_tools": false,
+    "native_response_format": false,
+    "workers": 3
+  },
+  "returned_models": [
+    "RETURNED_MODEL_ID_1"
+  ],
+  "primary_records": 16,
+  "repeat_records": 0,
+  "conditions": [
+    {
+      "condition": "B_eq",
+      "cases": 8,
+      "correct": 8,
+      "accuracy": 1.0,
+      "answered": 8,
+      "technical_errors": 0,
+      "coverage": 1.0,
+      "precision_emitted": 1.0,
+      "latency_mean_seconds": 6.971633995519369,
+      "latency_median_seconds": 5.218888889008667,
+      "latency_p95_seconds": 15.385516258107955,
+      "model_seconds_mean": 6.967891209278605,
+      "executor_seconds_mean": 0,
+      "usage_observed_sum": {
+        "prompt_tokens": 43936,
+        "completion_tokens": 6229,
+        "total_tokens": 50165
+      },
+      "usage_missing_attempts": 0,
+      "cost": null
+    },
+    {
+      "condition": "C_eq",
+      "cases": 8,
+      "correct": 8,
+      "accuracy": 1.0,
+      "answered": 8,
+      "technical_errors": 0,
+      "coverage": 1.0,
+      "precision_emitted": 1.0,
+      "latency_mean_seconds": 3.996674267895287,
+      "latency_median_seconds": 4.074881470995024,
+      "latency_p95_seconds": 4.331520446279319,
+      "model_seconds_mean": 3.8032858518708963,
+      "executor_seconds_mean": 0.19044234351895284,
+      "usage_observed_sum": {
+        "prompt_tokens": 44434,
+        "completion_tokens": 2813,
+        "total_tokens": 47247
+      },
+      "usage_missing_attempts": 0,
+      "cost": null
+    }
+  ],
+  "families": [
+    {
+      "condition": "B_eq",
+      "family_id": "d01",
+      "cases": 4,
+      "correct": 4
+    },
+    {
+      "condition": "B_eq",
+      "family_id": "d02",
+      "cases": 2,
+      "correct": 2
+    },
+    {
+      "condition": "B_eq",
+      "family_id": "d03",
+      "cases": 1,
+      "correct": 1
+    },
+    {
+      "condition": "B_eq",
+      "family_id": "d04",
+      "cases": 1,
+      "correct": 1
+    },
+    {
+      "condition": "C_eq",
+      "family_id": "d01",
+      "cases": 4,
+      "correct": 4
+    },
+    {
+      "condition": "C_eq",
+      "family_id": "d02",
+      "cases": 2,
+      "correct": 2
+    },
+    {
+      "condition": "C_eq",
+      "family_id": "d03",
+      "cases": 1,
+      "correct": 1
+    },
+    {
+      "condition": "C_eq",
+      "family_id": "d04",
+      "cases": 1,
+      "correct": 1
+    }
+  ],
+  "errors": [
+    {
+      "condition": "B_eq",
+      "type": "acerto",
+      "count": 8
+    },
+    {
+      "condition": "C_eq",
+      "type": "acerto",
+      "count": 8
+    }
+  ],
+  "paired_cases": [
+    {
+      "case_id": "d01_1",
+      "family_id": "d01",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "d01_2",
+      "family_id": "d01",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "d01_3",
+      "family_id": "d01",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "d01_4",
+      "family_id": "d01",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "d02_1",
+      "family_id": "d02",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "d02_2",
+      "family_id": "d02",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "d03_1",
+      "family_id": "d03",
+      "B": 1,
+      "C": 1
+    },
+    {
+      "case_id": "d04_1",
+      "family_id": "d04",
+      "B": 1,
+      "C": 1
+    }
+  ],
+  "paired_Ceq_minus_Beq": {
+    "state": "verificado",
+    "estimator": "diferenca de proporcoes por caso; clusters reamostrados",
+    "difference_C_minus_B": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "groups": 4,
+    "cases": 8,
+    "replicas": 10000,
+    "seed": 20271021,
+    "method": "percentil; numpy PCG64; quantile linear",
+    "group_key": "family_id"
+  },
+  "repeatability": [],
+  "input_audit": {
+    "same_common_facts_and_fixed_plan": true,
+    "same_system_prompt": true,
+    "same_output_contract": true,
+    "same_model_and_parameters": true,
+    "both_generate_final_json_with_llm": true,
+    "all_scores_recomputed": true,
+    "all_messages_reconstructed": true,
+    "treatment_only": "resultado real de executor inserido em execution_observations de C_eq"
+  },
+  "limitations": [
+    "Planos corretos fornecidos: nao avalia interpretacao nem ambiguidades.",
+    "Resultado estima efeito do fornecimento de calculo ao finalizador, incluindo conformidade de saida; nao habilidade cognitiva isolada.",
+    "Questões reutilizadas e protocolo complementar definido depois do teste original; nao avaliacao externa independente.",
+    "Familias compartilham territorios, classes e dados; bootstrap com poucos grupos.",
+    "Pesos/modelo/infraestrutura remota nao versionados de forma observavel; ordem aleatoria reduz mas nao elimina efeitos temporais.",
+    "Revisao humana declarada cobre perguntas; gabaritos nao tiveram validacao humana confirmada."
+  ]
+}

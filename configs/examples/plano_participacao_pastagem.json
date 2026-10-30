@@ -1,0 +1,15 @@
+{
+  "class_codes": [
+    15
+  ],
+  "denominator": "area_observada",
+  "metric": "participacao",
+  "operation": "participacao",
+  "territory_codes": [
+    "2410900"
+  ],
+  "unit": "percentual",
+  "years": [
+    2015
+  ]
+}

@@ -1,0 +1,4 @@
+A saída anterior falhou na validação local. Esta é a única tentativa de reparo. Não há gabarito numérico nem resposta esperada nesta mensagem. Revise o objeto usando a mesma pergunta, contexto e contrato.
+Erros seguros de validação:
+$issues_json
+Retorne somente o objeto JSON completo. Não adicione explicação, SQL ou raciocínio.

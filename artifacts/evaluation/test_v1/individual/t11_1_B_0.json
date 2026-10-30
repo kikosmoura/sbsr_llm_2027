@@ -1,0 +1,170 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "fa7686659da9449d811d154641021724",
+  "case_id": "t11_1",
+  "family_id": "teste_delta",
+  "territory_codes": [
+    "2406700"
+  ],
+  "condition": "B",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:43:10.563624+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Calcule em ha a diferença líquida, área final menos inicial, de Formação Florestal em Lajes/RN entre 2015 e 2025.",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": "1a43afdbcafee2b42e6e07ddb8f893993cdfb73cc0458d5f958415c137ac3bc8",
+  "messages_sha256": "3f94e6128d7bf9b99b751c66eaf1cb73fc24adc51a711b75580fbc842c3e2113",
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "respondida",
+    "plan": {
+      "operation": "comparacao_temporal",
+      "metric": "diferenca_liquida",
+      "unit": "ha",
+      "territory_codes": [
+        "2406700"
+      ],
+      "scope_uf": "RN",
+      "class_codes": [
+        3
+      ],
+      "years": [
+        2015,
+        2025
+      ],
+      "denominator": null,
+      "direction": "desc",
+      "limit": null
+    },
+    "values": [
+      {
+        "territory_code": "2406700",
+        "years": [
+          2015,
+          2025
+        ],
+        "value": 1.601421987628938,
+        "unit": "ha",
+        "undefined_reason": null,
+        "denominators_ha": [],
+        "rank": null
+      }
+    ],
+    "clarification_field": null,
+    "reason": "ok"
+  },
+  "final_answer": "{\"status\": \"respondida\", \"plan\": {\"operation\": \"comparacao_temporal\", \"metric\": \"diferenca_liquida\", \"unit\": \"ha\", \"territory_codes\": [\"2406700\"], \"scope_uf\": \"RN\", \"class_codes\": [3], \"years\": [2015, 2025], \"denominator\": null, \"direction\": \"desc\", \"limit\": null}, \"values\": [{\"territory_code\": \"2406700\", \"years\": [2015, 2025], \"value\": 1.601421987628938, \"unit\": \"ha\", \"undefined_reason\": null, \"denominators_ha\": [], \"rank\": null}], \"clarification_field\": null, \"reason\": \"ok\"}",
+  "plan": {
+    "operation": "comparacao_temporal",
+    "metric": "diferenca_liquida",
+    "unit": "ha",
+    "territory_codes": [
+      "2406700"
+    ],
+    "scope_uf": "RN",
+    "class_codes": [
+      3
+    ],
+    "years": [
+      2015,
+      2025
+    ],
+    "denominator": null,
+    "direction": "desc",
+    "limit": null
+  },
+  "result": [
+    {
+      "territory_code": "2406700",
+      "years": [
+        2015,
+        2025
+      ],
+      "value": 1.601421987628938,
+      "unit": "ha",
+      "undefined_reason": null,
+      "denominators_ha": [],
+      "rank": null
+    }
+  ],
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "messages_sha256": "3f94e6128d7bf9b99b751c66eaf1cb73fc24adc51a711b75580fbc842c3e2113",
+      "issues": [
+        {
+          "path": [],
+          "code": "value_error"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 5750,
+        "total_tokens": 6472,
+        "completion_tokens": 722
+      },
+      "latency_seconds": 6.283924650051631,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "d67fd14ed48de46c73bd0a9110456c018a570375ebdafb14b46735409f9cd0ff",
+      "output_chars": 341,
+      "state": "invalida"
+    },
+    {
+      "number": 2,
+      "kind": "reparo",
+      "messages_sha256": "bb1f9dbc302ba2b050c77035783231af9f5ef95d33c7b04847b8043410f20085",
+      "issues": [],
+      "usage": {
+        "prompt_tokens": 5785,
+        "total_tokens": 6536,
+        "completion_tokens": 751
+      },
+      "latency_seconds": 6.41820358496625,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "60bcc13bbc6411ca3ec8338f5b17a9f79703fb87146fae1cb76f2f9ed99b66c4",
+      "output_chars": 561,
+      "state": "valida"
+    }
+  ],
+  "latency_seconds": 12.70563934801612,
+  "scores": {
+    "status": true,
+    "plan": true,
+    "values": true,
+    "clarification": null,
+    "correct": true
+  },
+  "cost": null,
+  "source_context": {
+    "data_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+  },
+  "C_session_id": null,
+  "C_turn_id": null,
+  "C_candidate_intent": null,
+  "C_decision": null
+}

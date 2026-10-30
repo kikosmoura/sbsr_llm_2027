@@ -1,0 +1,122 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "89968af8c62a49b3b9d5999fd6b5ddbf",
+  "case_id": "d08_1",
+  "family_id": "d08",
+  "territory_codes": [
+    "2410900",
+    "2805901"
+  ],
+  "condition": "C",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:36:27.905650+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Qual a área de floresta em Riachuelo/RN em 2015, em hectares?",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": null,
+  "messages_sha256": null,
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "precisa_esclarecimento",
+    "plan": null,
+    "values": [],
+    "clarification_field": "classe",
+    "reason": "classe_ambigua"
+  },
+  "final_answer": "Qual classe ou grupo da legenda você pretende consultar? Confirme nome ou código.",
+  "plan": null,
+  "result": null,
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "state": "precisa_esclarecimento",
+      "latency_seconds": 7.816864924039692,
+      "usage": {
+        "prompt_tokens": 4682,
+        "total_tokens": 5545,
+        "completion_tokens": 863
+      },
+      "chat_requests": 1,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "output_sha256": "c180fd4a4d0f32f27b5266799cd8fd212da78391cf4965955afa6fe24bc50734",
+      "output_chars": 527,
+      "candidate": {
+        "action": "consultar",
+        "intent": {
+          "operation": "area",
+          "territories": [
+            {
+              "mention": "Riachuelo",
+              "uf_mention": "RN",
+              "kind": "municipio"
+            }
+          ],
+          "scope_uf_mention": "RN",
+          "classes": [
+            {
+              "mention": "floresta"
+            }
+          ],
+          "years": [
+            2015
+          ],
+          "metric": "area",
+          "metric_mention": "área",
+          "unit_mention": "hectares",
+          "denominator": null,
+          "direction": null,
+          "limit": null
+        },
+        "clarification_fields": []
+      },
+      "issues": [],
+      "gateway_error": null,
+      "http_status": null,
+      "messages_sha256": "cfe4ace82a66307958ff7fe8d4918042b5657d03a9f17ff4777e5728276ea17b",
+      "explanation_fallback": null
+    }
+  ],
+  "latency_seconds": 7.912259362987243,
+  "scores": {
+    "status": true,
+    "plan": null,
+    "values": null,
+    "clarification": true,
+    "correct": true
+  },
+  "cost": null,
+  "source_context": {
+    "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+    "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+    "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+    "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+  },
+  "C_session_id": "ee8d425d7abc4971856aa4d6d190c7ab",
+  "C_turn_id": "ac12022f4fc34764850a32cfb56ed112",
+  "C_candidate_intent": null,
+  "C_decision": null
+}

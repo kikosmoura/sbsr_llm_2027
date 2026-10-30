@@ -1,0 +1,188 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "fa7686659da9449d811d154641021724",
+  "case_id": "t21_3",
+  "family_id": "teste_serie",
+  "territory_codes": [
+    "2401453"
+  ],
+  "condition": "C",
+  "repeat": 0,
+  "created_at": "2026-10-19T20:51:27.763750+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Apresente separadamente as áreas de Pastagem de Baraúna/RN em 2015 e em 2025, ambas em ha.",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": null,
+  "messages_sha256": null,
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "erro_tecnico",
+    "plan": null,
+    "values": [],
+    "clarification_field": null,
+    "reason": "saida_modelo_invalida_apos_limite"
+  },
+  "final_answer": "O modelo não produziu um plano válido após o limite de reparo; nenhum número foi publicado.",
+  "plan": null,
+  "result": null,
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "state": "invalida",
+      "latency_seconds": 8.675913022016175,
+      "usage": {
+        "prompt_tokens": 4694,
+        "total_tokens": 5575,
+        "completion_tokens": 881
+      },
+      "chat_requests": 1,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "output_sha256": "e581e15a27c5bdd90ed133f69f58f57c62f591f6ccde3ff43db231eae11653ff",
+      "output_chars": 541,
+      "candidate": {
+        "action": "consultar",
+        "intent": {
+          "operation": "comparacao_temporal",
+          "territories": [
+            {
+              "mention": "barauna",
+              "uf_mention": "RN",
+              "kind": "municipio"
+            }
+          ],
+          "scope_uf_mention": "RN",
+          "classes": [
+            {
+              "mention": "pastagem"
+            }
+          ],
+          "years": [
+            2015,
+            2025
+          ],
+          "metric": "area",
+          "metric_mention": "áreas",
+          "unit_mention": "ha",
+          "denominator": null,
+          "direction": null,
+          "limit": null
+        },
+        "clarification_fields": []
+      },
+      "issues": [
+        {
+          "path": [
+            "intent",
+            "operation"
+          ],
+          "code": "operacao_diverge_da_pergunta"
+        }
+      ],
+      "gateway_error": null,
+      "http_status": null,
+      "messages_sha256": "28bebe8514e5f4b38f411538047606607b716f0ba215a0c8f202f6cbb89532eb",
+      "explanation_fallback": null
+    },
+    {
+      "number": 2,
+      "kind": "reparo",
+      "state": "invalida",
+      "latency_seconds": 8.756366945104674,
+      "usage": {
+        "prompt_tokens": 4794,
+        "total_tokens": 5813,
+        "completion_tokens": 1019
+      },
+      "chat_requests": 1,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "output_sha256": "062ac99aec3a9e399462440e61eb96f22b7011ffbac884ce00ab63639a2ede94",
+      "output_chars": 559,
+      "candidate": {
+        "action": "consultar",
+        "intent": {
+          "operation": "comparacao_temporal",
+          "territories": [
+            {
+              "mention": "Baraúna",
+              "uf_mention": "RN",
+              "kind": "municipio"
+            }
+          ],
+          "scope_uf_mention": "RN",
+          "classes": [
+            {
+              "mention": "Pastagem"
+            }
+          ],
+          "years": [
+            2015,
+            2025
+          ],
+          "metric": "area",
+          "metric_mention": "áreas",
+          "unit_mention": "ha",
+          "denominator": null,
+          "direction": null,
+          "limit": null
+        },
+        "clarification_fields": []
+      },
+      "issues": [
+        {
+          "path": [
+            "intent",
+            "operation"
+          ],
+          "code": "operacao_diverge_da_pergunta"
+        }
+      ],
+      "gateway_error": null,
+      "http_status": null,
+      "messages_sha256": "44d502534c1baedf658adf143c646ba9d01222441e190d8ca4932b8b4c14e1b1",
+      "explanation_fallback": null
+    }
+  ],
+  "latency_seconds": 17.513027807930484,
+  "scores": {
+    "status": false,
+    "plan": null,
+    "values": null,
+    "clarification": null,
+    "correct": false
+  },
+  "cost": null,
+  "source_context": {
+    "run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802",
+    "run_manifest_sha256": "8a4e7a1af6e36dc5f7eb7ad0fd2a58c33b351516660c32bc3f7e05b527dbda5b",
+    "class_catalog_sha256": "04f699fe08ce817f759c9923d38cb71d817722bee37c3f2322d8419e32963660",
+    "territory_catalog_sha256": "b3d33fab1df3e64f5c6be014d24dbc040964fa3ecc71ca88456031c6c3e3f4d9"
+  },
+  "C_session_id": "8ae0740322a143f38b4d60051526e3e9",
+  "C_turn_id": "a829d56347234bfa91c876405fd0bf5b",
+  "C_candidate_intent": null,
+  "C_decision": null
+}

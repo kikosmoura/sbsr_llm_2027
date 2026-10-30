@@ -1,0 +1,17 @@
+{
+  "created_at": "2026-10-19T20:57:50.678434+00:00",
+  "territories": 40,
+  "context_bytes": 183255,
+  "context_sha256": "1a2180e0ec16a5d52a2787b635f3bc3b3e2fb7c06fd019599c8196b9355fe932",
+  "complete_tables": true,
+  "truncated": false,
+  "fits_application_limit": false,
+  "data_preparation_seconds": 0.3139849290018901,
+  "gateway_executed": false,
+  "observed": null,
+  "attempts": [],
+  "scores": null,
+  "latency_seconds": null,
+  "cost": null,
+  "reason": "contexto_excede_limite_da_aplicacao; nenhuma chamada, nenhum truncamento"
+}

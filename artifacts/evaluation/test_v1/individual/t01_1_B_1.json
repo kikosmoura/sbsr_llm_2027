@@ -1,0 +1,113 @@
+{
+  "schema_version": "avaliacao-caso-v1",
+  "run_id": "fa7686659da9449d811d154641021724",
+  "case_id": "t01_1",
+  "family_id": "teste_area_direta",
+  "territory_codes": [
+    "2400109"
+  ],
+  "condition": "B",
+  "repeat": 1,
+  "created_at": "2026-10-19T20:55:55.620132+00:00",
+  "integration_kind": "gateway_real",
+  "question": "Em 2015, quantos hectares de Formação Florestal foram mapeados no município de Acari/RN?",
+  "freeze_sha256": "3a84b29bb29b63ae7a6848c5e5be116f62734f21b8315cd0ccdfcda73d9ae24e",
+  "configuration": {
+    "requested_model": "MODEL_ID",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "timeout_seconds": 60.0,
+    "http_max_attempts": 2,
+    "max_repairs": 1,
+    "stream": false,
+    "tls_verified": true,
+    "custom_ca": false,
+    "native_tools": false,
+    "native_response_format": false,
+    "llm_seed_sent": false,
+    "workers": 3,
+    "C_interpretation": {
+      "max_repairs": 1,
+      "max_output_tokens": 2048,
+      "max_question_chars": 4000,
+      "max_candidates": 40,
+      "max_context_bytes": 65536,
+      "max_turns": 10
+    }
+  },
+  "facts_sha256": "410edf50ec7b8f71d3a5236c95843d69ebe8dcc5b81db143585cf40a1e196daa",
+  "messages_sha256": "83675d4db76bf50d98d6c7ff5a56d6a0ed6167897eb1aa30daddbe38311442e0",
+  "model": "MODEL_ID",
+  "observed": {
+    "status": "erro_tecnico",
+    "plan": null,
+    "values": [],
+    "clarification_field": null,
+    "reason": "saida_invalida_apos_reparo"
+  },
+  "final_answer": "{\"status\": \"erro_tecnico\", \"plan\": null, \"values\": [], \"clarification_field\": null, \"reason\": \"saida_invalida_apos_reparo\"}",
+  "plan": null,
+  "result": [],
+  "attempts": [
+    {
+      "number": 1,
+      "kind": "inicial",
+      "messages_sha256": "83675d4db76bf50d98d6c7ff5a56d6a0ed6167897eb1aa30daddbe38311442e0",
+      "issues": [
+        {
+          "path": [],
+          "code": "value_error"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 5728,
+        "total_tokens": 6219,
+        "completion_tokens": 491
+      },
+      "latency_seconds": 4.611445059999824,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "567f7e7469b1e7afc6f11c0849c7c10a54ba93ff6d0214bee7fdff4abf2dcb80",
+      "output_chars": 284,
+      "state": "invalida"
+    },
+    {
+      "number": 2,
+      "kind": "reparo",
+      "messages_sha256": "3acee83d110ced481afe282afb1e7f62a831255eafffe0080edf7a09694df43b",
+      "issues": [
+        {
+          "path": [],
+          "code": "value_error"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 5763,
+        "total_tokens": 6294,
+        "completion_tokens": 531
+      },
+      "latency_seconds": 4.234328321064822,
+      "returned_model": "RETURNED_MODEL_ID_1",
+      "chat_requests": 1,
+      "output_sha256": "90de9201dbdbb85487c75b8dcda356bf7206a09a9bcb81f08335d60cf649300f",
+      "output_chars": 237,
+      "state": "invalida"
+    }
+  ],
+  "latency_seconds": 8.848903032951057,
+  "scores": {
+    "status": false,
+    "plan": null,
+    "values": null,
+    "clarification": null,
+    "correct": false
+  },
+  "cost": null,
+  "source_context": {
+    "data_run_id": "a98ccf54c8c82ceeb601ce126cdb379add4de253912a46267601cdc7d9a29802"
+  },
+  "C_session_id": null,
+  "C_turn_id": null,
+  "C_candidate_intent": null,
+  "C_decision": null
+}
